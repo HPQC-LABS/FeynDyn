@@ -4,7 +4,7 @@ kb=1.3806504*10^(-23);        % Joules / Kelvin
 hbar=1.054571628*10^(-34);    % Joule * seconds
 
 %% 2. temperature
-temperature=25;
+temperature=100;
 beta=1/(kb*temperature);
 
 %% 3. system hamiltonian
@@ -16,8 +16,9 @@ V=[1 0 ; 0 -1];
 
 %% 4. spectral distribution function
 alpha=0.027*pi;               % prefactor. In ps^2 / rad^2
+alpha=0.0054*pi;
 wc=2.2;                       % cutoff frequency. In rad/ps
-dw=0.01;                      % stepsize for w in J(w). In rad/ps
+dw=2;                       % stepsize for w in J(w). In rad/ps
 w_beforeExpand=dw:dw:14;      % must start with dw because coth(0)=infinity. In rad/ps
 w_beforeExpand=[-fliplr(w_beforeExpand) w_beforeExpand];   % need to get rid of middle value (w=0 occurs twice)
 w=w_beforeExpand;
@@ -26,39 +27,34 @@ w=w_beforeExpand;
 J=alpha*exp(-(w/wc).^2).*w.^3;% spectral density. In rad/ps
 
 J=J*1e12*hbar;                % spectral distribution function. In Joules
+%J=0*J;
 
 w=w*1e12;                     % w in s-1
 dw=dw*1e12;                   % dw in s-1
 
-ThetaRe=(1/hbar)*J.*coth(beta*hbar*w/2);
-ThetaIm=(1/hbar)*J;
+ThetaRe=(1/hbar)*J.*coth(beta*hbar*w/2); % in s-1
+ThetaIm=(1/hbar)*J;                      % in s-1
 
 %H=repmat(H,1,length(w)/M);
 %V=repmat(V,1,1,length(w)/M);
 
 %% 5. time mesh
-finalPoint=1000;           % number of timesteps in total
-totalT=30/1e12;           % total time for the simulation, in seconds
+finalPoint=150;           % number of timesteps in total
+totalT=10/1e12;            % total time for the simulation, in seconds
 dt=totalT/finalPoint;
 t=0:dt:totalT;
 
 %% 6. intialize rho and ADOs
 rho=zeros(M,M,length(t));rho(1)=1;
-%rho_beforeReshape=zeros(M,M,length(t),length(w)/M);rho_beforeReshape(1)=1;
-%rho_w1=zeros(M,M,length(w)/M);
 rho_w1=zeros(M,M,length(w));
 rho_w1_next=rho_w1;
 integrand=rho_w1;
 
-%rho_w1=reshape(rho_w1_beforeReshape,M,[]);
+%% 7. propagation
+%w=w/1e12; % only for debugging because right now the units don't make sense
 for ii=1:length(t)
-    %     rho=reshape(rho_beforeReshape(:,:,ii,:),M,[]);
-    
-    %     rho_w1_next=rho_w1+(dt/hbar)*(-1i*(ThetaRe.*(V.*rho-rho.*V)+ThetaIm.*(V.*rho+rho.*V)+H.*rho_w1-rho_w1.*H+w.*rho_w1)); %ThetaRe*(V*rho(:,:,ii) takes up more memory than needed
-    %     rho_beforeReshape(:,:,ii+1,:)=reshape(rho-(1i*dt/hbar)*(H.*rho-rho.*H+hbar*expand(reshape(trapz(w_beforeExpand,reshape(V.*rho_w1,length(w_beforeExpand),[])),M,M),[1,length(w)/M])-hbar*expand(reshape(trapz(w_beforeExpand,reshape(rho_w1.*V,length(w_beforeExpand),[])),M,M),[1,length(w)/M])),M,M,[]);
-    
-    for jj=1:length(w)/M
-        rho_w1_next(:,:,jj)=rho_w1(:,:,jj)-(dt*1i/hbar)*(hbar*ThetaRe(jj)*rho(:,:,ii)+H*rho_w1(:,:,jj)-rho_w1(:,:,jj)*H+1i*rho_w1(:,:,jj));
+    for jj=1:length(w)
+        rho_w1_next(:,:,jj)=rho_w1(:,:,jj)-(dt*1i/hbar)*(hbar*ThetaRe(jj)*(V*rho(:,:,ii)-rho(:,:,ii)*V)+hbar*ThetaIm(jj)*(V*rho(:,:,ii)+rho(:,:,ii)*V)+H*rho_w1(:,:,jj)-rho_w1(:,:,jj)*H-hbar*w(jj)*rho_w1(:,:,jj));
         integrand(:,:,jj)=V*rho_w1(:,:,jj)-rho_w1(:,:,jj)*V;
     end
     rho(:,:,ii+1)=rho(:,:,ii)-(dt*1i/hbar)*(H*rho(:,:,ii)-rho(:,:,ii)*H+hbar*(trapz(w,integrand,3)));
