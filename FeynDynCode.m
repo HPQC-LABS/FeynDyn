@@ -1,8 +1,7 @@
 %% Bearing in mind the effort that went into the development of FeynDyn,
-%% the author would indeed appreciate being offerred authorship on papers in which
-%% the calculations from this program were useful. Alternatively, please cite:
-%% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , AND
-%% 2) The code: N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
+%% the author would indeed appreciate if users can please cite:
+%% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , and
+%% 2) The code:  N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
 
 %% To make sure your code is the most updated version, please e-mail dattani.nike@gmail.com
 %% Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
@@ -135,7 +134,7 @@ if finalPoint>deltaKmax
                     rho(diagonals(end),J+1)=1-sum(rho(:,J+1));                 % last diagonal obtained by trace(rho)=1
                 otherwise
                     rho(upperTriangle(1:end-1),J+1)=sum(Aend(upperTriangle(1:end-1),:),2); % all of the upper-right triangle of the matrix, except for the last diagonal
-                    rho(diagonals(end),J+1)=1-sum(rho(:,J+1));                             % last diagonal obtained by trace(rho)=1
+                    rho(diagonals(end),J+1)=1-sum(rho(diagonals(1:end-1),J+1));            % last diagonal obtained by trace(rho)=1
                     rho(lowerTriangle,J+1)=conj(rho(upperTriangle,J+1));                   % lower-left diagonal obtained by hermiticity: rho = rho + rho' - diag(rho)
             end
         end
