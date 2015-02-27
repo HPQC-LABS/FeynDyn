@@ -47,7 +47,7 @@ for k=2:deltaKmax+1 %k=1 is a dummy index for the eta_00 case, which is covered 
 end
 for NminusK=1:deltaKmax%-1 %because eta6 isn't meant to go up to deltaKmax, that's what eta 3 is for
     eta6(NminusK)=sum(2*MakMak.*sin(w*dt/4).*sin(w*dt/2).*exp(-1i*w*((NminusK)*dt-dt/4)))*dw;
-end
+end;
 etaK=zeros(1,deltaKmax+1);etaK(1)=eta2;etaK(2:deltaKmax+1)=eta1;%etaK(deltaKmax+1)=eta5(deltaKmax);
 etaN=zeros(1,deltaKmax+1);etaN(1)=eta4;
 etaN(2:deltaKmax+1)=eta6;%etaN(deltaKmax+1)=eta3(deltaKmax);
@@ -139,10 +139,9 @@ if finalPoint>deltaKmax
                     rho(diagonals(end),J+1)=1-sum(rho(:,J+1));                 % last diagonal obtained by trace(rho)=1
                 otherwise
                     rho(upperTriangle(1:end-1),J+1)=sum(Aend(upperTriangle(1:end-1),:),2); % all of the upper-right triangle of the matrix, except for the last diagonal
-                    rho(diagonals(end),J+1)=1-sum(rho(:,J+1));                             % last diagonal obtained by trace(rho)=1
-                    rho(lowerTriangle,J+1)=conj(rho(upperTriangle,J+1));                   % lower-left diagonal obtained by hermiticity: rho = rho + rho' - diag(rho)
-                    disp([ 'Time step ' num2str(J) '/' num2str(finalPoint) ' has completed successfully!'])
+                    rho(diagonals(end),J+1)=1-sum(rho(diagonals(1:end-1),J+1));            % last diagonal obtained by trace(rho)=1
             end
+            disp(['Time step ' num2str(J) '/' num2str(finalPoint) ' has completed successfully!'])
         end
     end
 end

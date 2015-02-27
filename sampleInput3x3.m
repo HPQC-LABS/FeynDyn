@@ -70,5 +70,5 @@ xlabel('time');
 
 %% Plot figure 6 of Eunji Sim's paper: just rho(2,3)
 figure(6);hold('on')
-plot(0:totalT/finalPoint:totalT,real(rho(3,:)));
+plot(0:totalT/finalPoint:totalT,real(rho(8,:)));
 xlabel('time');
