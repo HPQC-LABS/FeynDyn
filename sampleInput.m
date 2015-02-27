@@ -1,8 +1,7 @@
 %% Bearing in mind the effort that went into the development of FeynDyn,
-%% the author would indeed appreciate being offerred authorship on papers in which
-%% the calculations from this program were useful. Alternatively, please cite:
-%% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , AND
-%% 2) The code: N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
+%% the author would indeed appreciate if users can please cite:
+%% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , and
+%% 2) The code:  N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
 
 %% To make sure your code is the most updated version, please e-mail dattani.nike@gmail.com
 %% Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
@@ -46,9 +45,10 @@ w=w*1e12;                     % w in s-1
 dw=dw*1e12;                   % dw in s-1
 
 %% 7. numerical parameters for Feynman integral
-finalPoint=100;           % number of timesteps in total
-deltaKmax=10;             % number of time steps before memory kernel dies
-totalT=30/1e12;           % total time for the simulation, in seconds
+deltaKmax=9;                  % number of time steps before memory kernel dies
+totalT=10/1e12;               % total time for the simulation, in seconds
+dt=33/totalT;                 % size of time step (delta t)
+finalPoint=round(dt*totalT);  % number of timesteps in total
 allPointsORjustFinalPoint='allPoints'; % do you just want the density matrix at time=totalT ? or do you want it at every point until then
 cpuORgpu='cpu'; 
 
@@ -60,7 +60,6 @@ rho(:,1)=reshape(rhoInitial.',[],1); % I'm not sure about the transpose, since I
 wholeDensityMatrixOrJustDiagonals='justDiagonals';
 
 [rho_onlyDiagonals,elapsedTime_onlyDiagonals]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
-%[rho_onlyDiagonals,elapsedTime_onlyDiagonals]=FeynDynCode(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 figure(1);hold('on')
 plot(0:totalT/finalPoint:totalT,real(rho_onlyDiagonals(1,:)));
@@ -71,11 +70,10 @@ xlabel('time (seconds)');
 wholeDensityMatrixOrJustDiagonals='wholeDensityMatrix';
 
 [rho_allElements,elapsedTime_allElements]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
-%[rho_allElements,elapsedTime_allElements]=FeynDynCode(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 figure(2);hold('on')
 plot(0:totalT/finalPoint:totalT,real(rho_allElements(1,:)));
-plot(0:totalT/finalPoint:totalT,real(rho_allElements(2,:)),'r');plot(0:totalT/finalPoint:totalT,imag(rho_allElements(2,:)),'--r');
 plot(0:totalT/finalPoint:totalT,real(rho_allElements(3,:)),'r');plot(0:totalT/finalPoint:totalT,imag(rho_allElements(3,:)),'--r');
+plot(0:totalT/finalPoint:totalT,real(rho_allElements(3,:)),'r');plot(0:totalT/finalPoint:totalT,-imag(rho_allElements(3,:)),'--r');
 plot(0:totalT/finalPoint:totalT,real(rho_allElements(4,:)));
 xlabel('time (seconds)');
