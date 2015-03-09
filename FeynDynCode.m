@@ -19,15 +19,14 @@ kb=1.3806504*10^(-23); % Joules / Kelvin
 hbar=1.054571628*10^(-34); % Joules * seconds
 beta=1/(kb*temperature);
 %% 2. Setup arrays
-M=length(H);M2=M^2;Mvector=1:M;Svector=eig(systemCouplingMatrix).';
+M=length(H);M2=M^2;Svector=eig(systemCouplingMatrix).';
 diagonals=diag(reshape(1:M2,M,M));
 upperTriangle=find(triu(reshape(1:M2,M,M)));
-lowerTriangle=find(tril(reshape(1:M2,M,M)));
 initialPoint=0;
 dt=totalT/finalPoint;
 gridOfTimeIndices=initialPoint:1:finalPoint; % to determine how big to make the K array. This is only necessary for time-dependent OQS hamiltonians.
 U=expm(-1i*H*dt/hbar);
-Uconj=conj(U);
+Uback=U';
 %% 3. Calculation of eta coefficients
 
 w=[-fliplr(w) w];J=[-fliplr(J) J];
@@ -58,7 +57,7 @@ kernelTD(1)=eta4;kernelTDend(1)=eta4;
 indicesForF=npermutek(1:M,4); %The way that the indices are defined for the influence functional
 indicesForK=[indicesForF(:,3) , indicesForF(:,1) , indicesForF(:,2) ,indicesForF(:,4)];
 
-K=U(indicesForK(:,1)+M*(indicesForK(:,2)-1)).*Uconj(indicesForK(:,3)+M*(indicesForK(:,4)-1)); %row indicesForK(:,1) of U and column indicesForK(:,2) of U .. see page 8 of lab book
+K=U(indicesForK(:,1)+M*(indicesForK(:,2)-1)).*Uback(indicesForK(:,3)+M*(indicesForK(:,4)-1)); %row indicesForK(:,1) of U and column indicesForK(:,2) of U .. see page 8 of lab book
 K=repmat(K,1,length(gridOfTimeIndices)); % for time dependent OQS hamiltonians
 
 [ia,ib] = ndgrid(1:M);
