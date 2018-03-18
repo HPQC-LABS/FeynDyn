@@ -1,19 +1,13 @@
-%% Bearing in mind the effort that went into the development of FeynDyn,
-%% the author would indeed appreciate being offerred authorship on papers in which
-%% the calculations from this program were useful. Alternatively, please cite:
 %% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , AND
 %% 2) The code: N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
 
-%% To make sure your code is the most updated version, please e-mail dattani.nike@gmail.com
 %% Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
-
-%% This program is protected by copyright law. Nike S. Dattani , 13/8/12
 
 %% FEYN DYN, VERSION 2013.11.28
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [rho,elapsedTime]=FeynDynCode(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
-
+Nbath=7;
 %% 1. Fundamental constansts
 kb=1.3806504*10^(-23); % Joules / Kelvin
 hbar=1.054571628*10^(-34); % Joules * seconds
@@ -75,14 +69,15 @@ for deltaK=1:deltaKmax; %should go up to deltaKmax-1  and deltaKmax should be tr
 end %kernel(1)=eta_kk, kernel(2)=eta_{k+1,k}
 %% 5. Propagation of rho for the first deltaKmax timesteps
 A=K(:,1).*I_mkTD(:,1+1).*I_mk(:,1).*I_00.*expand(rho(:,1),[M2,1]); %I_mkTD=I_k0,k=1  I_mk=I_kk, k=1 , I_00=I_NN,k=0
+
 Aend=K(:,1).*I_mkTDend(:,1+1).*I_mkEnd(:,1).*I_00.*expand(rho(:,1),[M2,1]); %I_mkTD=I_N0,N=1  I_mkEnd=I_NN, k=1 , I_00=I_NN,N=0
-K(:,1)=[]; %why is this here ?
+%K(:,1)=[]; %why is this here ?
 
 rho(:,2)=sum(reshape(Aend,M2,M2).'); Aend=[];
 
-indices=int8(npermutek(cast(1:M2,'single'),1+1)); %makes 1:4 single precision. One can make them int(8) but then you'd have to use Jan simons's thing (or you could use Matt Fig's MEX, since you're storing it anyway)
+indices=uint64(npermutek(cast(1:M2,'single'),1+1)); %makes 1:4 single precision. One can make them int(8) but then you'd have to use Jan simons's thing (or you could use Matt Fig's MEX, since you're storing it anyway)
 
-for J=2:deltaKmax; %could probably just go to deltaKmax-1 and incorporate the deltaKmax case into the next forloop, but there might be a difference and that's that the first time you get to deltaKmax, you still have to use eta_k0 or eta_N0 , but in the next forloop those get ignored because eta_{deltaKmax+1,0}=1 (?)
+for J=2:deltaKmax; %could go to deltaKmax-1 and incorporate the deltaKmax case into the next forloop, but the former way uses I_mkTD and the latter does not. 
     
     indices=horzcat(expand(indices,[M2,1]),repmat((1:M2)',size(indices,1),1));% Making 1:M single precision might help
     A=(expand(A,[M2,1]));
@@ -96,6 +91,7 @@ for J=2:deltaKmax; %could probably just go to deltaKmax-1 and incorporate the de
     end
     A=A.*I_mkTD((indices(:,end-J)-1)*M2+indices(:,end),J+1); %the k=J case for forloop above. uses eta_k0
     Aend=Aend.*I_mkTDend((indices(:,end-J)-1)*M2+indices(:,end),J+1); %the k=J case for forloop above. uses eta_N0
+    whos('A','Aend','indices')
     
     %weakPaths=find(abs(A)<tol); %in 2001 Sim, it's <=
     %A(weakPaths)=0;indices(weakPaths,:)=0; % might be better to just remove these rows completely, and then calculate rho using information in the leftover INDICES array. If you remove rows of A, you have to also remove rows of indices to allow A.*I_mk(indices) to work
@@ -109,10 +105,10 @@ end
 %% 6. Propagation of rho for the timesteps after deltaKmax
 tic;
 if finalPoint>deltaKmax
-    if strcmp(cpuORgpu,'GPU');gpuIndex=gpuDevice(1);end
+    if strcmpi(cpuORgpu,'GPU');gpuIndex=gpuDevice(1);end
     KtimesIpermanent=K((indices(:,end-1)-1)*M2+indices(:,end),1); %predefine ?
     KtimesIpermanentEnd=KtimesIpermanent;
-    
+whos    
     for k=0:deltaKmax; % it's probably faster if this tensor is just built as A is in the above forloop ... in fact it seems reading indices is slow, so perhaps even the previous iterations should be done like the tensor propagator below:
         KtimesIpermanent=KtimesIpermanent.*I_mk((indices(:,end-k)-1)*M2+indices(:,end),k+1); %when k=deltaKmax, we're using I_mk(:,1+deltaKmax) which used kernel(1+deltaK) which uses eta 5
         KtimesIpermanentEnd=KtimesIpermanentEnd.*I_mkEnd((indices(:,end-k)-1)*M2+indices(:,end),k+1);%when k=deltaKmax, we're using I_mkEnd(:,1+deltaKmax) which used kernelEnd(1+deltaK) which uses eta 3
@@ -123,7 +119,7 @@ if finalPoint>deltaKmax
     KtimesIpermanent=reshape(KtimesIpermanent,M2,[]);
     KtimesIpermanentEnd=reshape(KtimesIpermanentEnd,M2,[]);
     
-    if strcmp(cpuORgpu,'GPU');
+    if strcmpi(cpuORgpu,'GPU');
         KtimesIpermanent=gpuArray(KtimesIpermanent);KtimesIpermanentEnd=gpuArray(KtimesIpermanentEnd);A=gpuArray(A);rho=gpuArray(rho(1,:));
     end
     for J=deltaKmax+1:finalPoint
@@ -140,12 +136,13 @@ if finalPoint>deltaKmax
                     rho(upperTriangle(1:end-1),J+1)=sum(Aend(upperTriangle(1:end-1),:),2); % all of the upper-right triangle of the matrix, except for the last diagonal
                     rho(diagonals(end),J+1)=1-sum(rho(diagonals(1:end-1),J+1));            % last diagonal obtained by trace(rho)=1
             end
-            disp(['Time step ' num2str(J) '/' num2str(finalPoint) ' has completed successfully!'])
+            %disp(['Time step ' num2str(J) '/' num2str(finalPoint) ' has completed successfully after ' num2str(round(toc)) ' seconds! L=' num2str(length(find(A)))]);
         end
     end
 end
+
 elapsedTime=toc;
-if strcmp(cpuORgpu,'GPU');
+if strcmpi(cpuORgpu,'GPU');
     rho=gather(rho);reset(gpuIndex);
 end
 
