@@ -1,5 +1,5 @@
-%% This sample input file, upon pressing F5, plots the real and imaginary parts of <i|rho|j> as a function 
-%  of time for the hamiltonian presented in Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833
+%% Press F5. The real and imaginary parts of <i|rho|j> will be plotted as a function of time 
+%  for the hamiltonian presented in Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833
 
 %% 1. fundamental constants
 kb=1.3806504*10^(-23);        % Joules / Kelvin

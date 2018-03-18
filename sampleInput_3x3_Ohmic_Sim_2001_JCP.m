@@ -1,18 +1,5 @@
-%% Bearing in mind the effort that went into the development of FeynDyn,
-% the author would indeed appreciate if users can please cite:
-% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , and
-% 2) The code:  N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
-
-%% To make sure your code is the most updated version, please e-mail dattani.nike@gmail.com
-%  Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
-
-%% This program is protected by copyright law. Nike S. Dattani , 13/8/12
-
-%% This sample input file, upon pressing F5, plots Figures 5 and 6 of 
-%  Eunji Sim (2001) "Quantum dynamics for a system coupled to slow baths:
+%% Press F5. Figures 5 and 6 will be plotted from Eunji Sim (2001) "Quantum dynamics for a system coupled to slow baths:
 %  On-the-fly filtered propagator method", J. Chem. Phys. 115, 10, pg. 4450 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% fundamental constants
 kb=1.3806504*10^(-23);            % Joules / Kelvin
