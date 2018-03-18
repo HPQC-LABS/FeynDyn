@@ -6,8 +6,8 @@
 %% FEYN DYN, VERSION 2013.11.28
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [rho,elapsedTime]=FeynDynCode(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
-Nbath=7;
+function [rho,elapsedTime]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
+
 %% 1. Fundamental constansts
 kb=1.3806504*10^(-23); % Joules / Kelvin
 hbar=1.054571628*10^(-34); % Joules * seconds
