@@ -3,7 +3,7 @@
 
 %% Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
 
-%% FEYN DYN, VERSION 2013.11.28
+%% FEYN DYN, VERSION 2018.03.19
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [rho,elapsedTime]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
@@ -15,7 +15,7 @@ beta=1/(kb*temperature);
 %% 2. Setup arrays
 M=length(H);M2=M^2;
 Svector=eig(systemCouplingMatrix).';
-Svectors=diag(ones(Nbaths,1));
+Svectors=eye(Nbaths);
 diagonals=diag(reshape(1:M2,M,M));
 upperTriangle=find(triu(reshape(1:M2,M,M)));
 initialPoint=0;
