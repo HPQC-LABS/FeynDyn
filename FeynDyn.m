@@ -6,14 +6,16 @@
 %% FEYN DYN, VERSION 2013.11.28
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [rho,elapsedTime]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
+function [rho,elapsedTime]=FeynDyn(Nbath,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
 
 %% 1. Fundamental constansts
 kb=1.3806504*10^(-23); % Joules / Kelvin
 hbar=1.054571628*10^(-34); % Joules * seconds
 beta=1/(kb*temperature);
 %% 2. Setup arrays
-M=length(H);M2=M^2;Svector=eig(systemCouplingMatrix).';
+M=length(H);M2=M^2;
+Svector=eig(systemCouplingMatrix).';
+Svectors=diag(ones(Nbath,1));
 diagonals=diag(reshape(1:M2,M,M));
 upperTriangle=find(triu(reshape(1:M2,M,M)));
 initialPoint=0;
@@ -55,29 +57,55 @@ K=U(indicesForK(:,1)+M*(indicesForK(:,2)-1)).*Uback(indicesForK(:,3)+M*(indicesF
 K=repmat(K,1,length(gridOfTimeIndices)); % for time dependent OQS hamiltonians
 
 [ia,ib] = ndgrid(1:M);
+
 Sdiff=(kron(Svector,ones(1,M))-kron(ones(1,M),Svector))'; % would not need to transpose the things in the next three lines if Mvector was already a column vector (1:M)'
 
 I_00=expand(exp(-Sdiff.*(kernelEnd(1)*Svector(1,ib)-kernelEndConj(1)*Svector(1,ia)).'),[M2,1]); %eq(14) on pg 4601 of tensor prop. I. repeated values are for n=1, changing values are for n=0
 I_mk=zeros(M2^2,deltaKmax+1);I_mkEnd=I_mk;I_mkTD=I_mk;I_mkTDend=I_mk; %I_00 means I0(sk), I_mk means I(sk,s minus k) ?
 I_mk(:,1)=kron(ones(M2,1),exp(-Sdiff.*(kernel(1)*Svector(1,ib)-kernelConj(1)*Svector(1,ia)).')); %eq(14) on pg 4601 of tensor prop. I. repeated values are for 0 (or just n-1?), changing values are for n %might be better to rearrange stuff so that you can use kron if repmat is slow in fortran, %is it better computationally to do this in one line or separate calcs ? This is delatK=0, ie, eq 14 on pg 4604 of Tensor Prop. I, the diff btwn this and the line above is that this is for sk>=1 while line above is for sk=0 ? eta+kk ?
 I_mkEnd(:,1)=kron(ones(M2,1),exp(-Sdiff.*(kernelEnd(1)*Svector(1,ib)-kernelEndConj(1)*Svector(1,ia)).')); %repeated values are for 0, changing values are for n %might be better to rearrange stuff so that you can use kron if repmat is slow in fortran, %is it better computationally to do this in one line or separate calcs ? This is delatK=0, eta_NN ?
+
 for deltaK=1:deltaKmax %should go up to deltaKmax-1  and deltaKmax should be treated separately
     I_mk(:,1+deltaK)=exp(-kron((kernel(1+deltaK)*Svector(1,ib)-kernelConj(1+deltaK)*Svector(1,ia)).',Sdiff)); %can't we just make kernel a vector and use kernel(deltaK) ? , %saving kernelConj reduces number of times 'conj.m' has to be called, but adds another variable, which is worse ?  %is it bad to have such a big argument in kron ? or should i save it and make 2 lines, depending on your units for kernel, you might need to factor  the argument by 1/hbar. The reshaping afterwards must be redundant, we must be able to use kron in such a way that the answer ends up in matrix form ,
     I_mkTD(:,1+deltaK)=exp(-kron((kernelTD(1+deltaK)*Svector(1,ib)-kernelTDConj(1+deltaK)*Svector(1,ia)).',Sdiff)); %can't we just make kernel a vector and use kernel(deltaK) ? , %saving kernelConj reduces number of times 'conj.m' has to be called, but adds another variable, which is worse ?  %is it bad to have such a big argument in kron ? or should i save it and make 2 lines, depending on your units for kernel, you might need to factor  the argument by 1/hbar. The reshaping afterwards must be redundant, we must be able to use kron in such a way that the answer ends up in matrix form ,
     I_mkEnd(:,1+deltaK)=exp(-kron((kernelEnd(1+deltaK)*Svector(1,ib)-kernelEndConj(1+deltaK)*Svector(1,ia)).',Sdiff)); %can't we just make kernel a vector and use kernel(deltaK) ? , %saving kernelConj reduces number of times 'conj.m' has to be called, but adds another variable, which is worse ?  %is it bad to have such a big argument in kron ? or should i save it and make 2 lines, depending on your units for kernel, you might need to factor  the argument by 1/hbar. The reshaping afterwards must be redundant, we must be able to use kron in such a way that the answer ends up in matrix form ,
     I_mkTDend(:,1+deltaK)=exp(-kron((kernelTDend(1+deltaK)*Svector(1,ib)-kernelTDendConj(1+deltaK)*Svector(1,ia)).',Sdiff)); %can't we just make kernel a vector and use kernel(deltaK) ? , %saving kernelConj reduces number of times 'conj.m' has to be called, but adds another variable, which is worse ?  %is it bad to have such a big argument in kron ? or should i save it and make 2 lines, depending on your units for kernel, you might need to factor  the argument by 1/hbar. The reshaping afterwards must be redundant, we must be able to use kron in such a way that the answer ends up in matrix form ,
 end %kernel(1)=eta_kk, kernel(2)=eta_{k+1,k}
+
+%% 4.1 Calculation of I tensors with N identical baths
+for jj=2:Nbath
+Svector2=Svectors(Nbath+1-jj,:); %relationship between Svector and Svector2 
+Sdiff2=(kron(Svector2,ones(1,M))-kron(ones(1,M),Svector2))';
+
+Ij_00=expand(exp(-Sdiff2.*(kernelEnd(1)*Svector2(1,ib)-kernelEndConj(1)*Svector2(1,ia)).'),[M2,1]);
+Ij_mk=zeros(M2^2,deltaKmax+1);Ij_mkEnd=Ij_mk;Ij_mkTD=Ij_mk;Ij_mkTDend=Ij_mk;
+Ij_mk(:,1)=kron(ones(M2,1),exp(-Sdiff2.*(kernel(1)*Svector2(1,ib)-kernelConj(1)*Svector2(1,ia)).'));
+Ij_mkEnd(:,1)=kron(ones(M2,1),exp(-Sdiff2.*(kernelEnd(1)*Svector2(1,ib)-kernelEndConj(1)*Svector2(1,ia)).'));
+
+for deltaK=1:deltaKmax 
+    Ij_mk(:,1+deltaK)=exp(-kron((kernel(1+deltaK)*Svector2(1,ib)-kernelConj(1+deltaK)*Svector2(1,ia)).',Sdiff2)); 
+    Ij_mkTD(:,1+deltaK)=exp(-kron((kernelTD(1+deltaK)*Svector2(1,ib)-kernelTDConj(1+deltaK)*Svector2(1,ia)).',Sdiff2)); 
+    Ij_mkEnd(:,1+deltaK)=exp(-kron((kernelEnd(1+deltaK)*Svector2(1,ib)-kernelEndConj(1+deltaK)*Svector2(1,ia)).',Sdiff2)); 
+    Ij_mkTDend(:,1+deltaK)=exp(-kron((kernelTDend(1+deltaK)*Svector2(1,ib)-kernelTDendConj(1+deltaK)*Svector2(1,ia)).',Sdiff2)); 
+end %kernel(1)=eta_kk, kernel(2)=eta_{k+1,k}
+
+I_00=I_00.*Ij_00;
+I_mk=I_mk.*Ij_mk;
+I_mkTD=I_mkTD.*Ij_mkTD;
+I_mkEnd(:,1)=I_mkEnd(:,1).*Ij_mkEnd(:,1);
+I_mkTDend=I_mkTDend.*Ij_mkTDend;
+end
+
 %% 5. Propagation of rho for the first deltaKmax timesteps
 A=K(:,1).*I_mkTD(:,1+1).*I_mk(:,1).*I_00.*expand(rho(:,1),[M2,1]); %I_mkTD=I_k0,k=1  I_mk=I_kk, k=1 , I_00=I_NN,k=0
-
 Aend=K(:,1).*I_mkTDend(:,1+1).*I_mkEnd(:,1).*I_00.*expand(rho(:,1),[M2,1]); %I_mkTD=I_N0,N=1  I_mkEnd=I_NN, k=1 , I_00=I_NN,N=0
-%K(:,1)=[]; %why is this here ?
+%K(:,1)=[]; % only for time-dependent system Hamiltonians
 
 rho(:,2)=sum(reshape(Aend,M2,M2).'); Aend=[];
 
-indices=uint64(npermutek(cast(1:M2,'single'),1+1)); %makes 1:4 single precision. One can make them int(8) but then you'd have to use Jan simons's thing (or you could use Matt Fig's MEX, since you're storing it anyway)
+indices=uint32(npermutek(cast(1:M2,'single'),1+1)); %makes 1:4 single precision. One can make them int(8) but then you'd have to use Jan simons's thing (or you could use Matt Fig's MEX, since you're storing it anyway)
 
-for J=2:deltaKmax %could go to deltaKmax-1 and incorporate the deltaKmax case into the next forloop, but the former way uses I_mkTD and the latter does not. 
+for J=2:deltaKmax %could go to deltaKmax-1 and incorporate the deltaKmax case into the next forloop, but the former way uses I_mkTD and the latter does not.
     
     indices=horzcat(expand(indices,[M2,1]),repmat((1:M2)',size(indices,1),1));% Making 1:M single precision might help
     A=(expand(A,[M2,1]));
@@ -91,8 +119,8 @@ for J=2:deltaKmax %could go to deltaKmax-1 and incorporate the deltaKmax case in
     end
     A=A.*I_mkTD((indices(:,end-J)-1)*M2+indices(:,end),J+1); %the k=J case for forloop above. uses eta_k0
     Aend=Aend.*I_mkTDend((indices(:,end-J)-1)*M2+indices(:,end),J+1); %the k=J case for forloop above. uses eta_N0
-    %whos('A','Aend','indices')
-    
+    %whos('A','Aend','indices') 
+
     %weakPaths=find(abs(A)<tol); %in 2001 Sim, it's <=
     %A(weakPaths)=0;indices(weakPaths,:)=0; % might be better to just remove these rows completely, and then calculate rho using information in the leftover INDICES array. If you remove rows of A, you have to also remove rows of indices to allow A.*I_mk(indices) to work
     %A=sparse(A);indices=sparse(indices); %now there's a problem with indices=horzcat.... above. Not only does size(indices,1) have to be changed into length(find(indices(:,1)), but expand will also expand the 0's even though you don't want that.
@@ -108,7 +136,7 @@ if finalPoint>deltaKmax
     if strcmpi(cpuORgpu,'GPU');gpuIndex=gpuDevice(1);end
     KtimesIpermanent=K((indices(:,end-1)-1)*M2+indices(:,end),1); %predefine ?
     KtimesIpermanentEnd=KtimesIpermanent;
-%whos    
+%whos
     for k=0:deltaKmax % it's probably faster if this tensor is just built as A is in the above forloop ... in fact it seems reading indices is slow, so perhaps even the previous iterations should be done like the tensor propagator below:
         KtimesIpermanent=KtimesIpermanent.*I_mk((indices(:,end-k)-1)*M2+indices(:,end),k+1); %when k=deltaKmax, we're using I_mk(:,1+deltaKmax) which used kernel(1+deltaK) which uses eta 5
         KtimesIpermanentEnd=KtimesIpermanentEnd.*I_mkEnd((indices(:,end-k)-1)*M2+indices(:,end),k+1);%when k=deltaKmax, we're using I_mkEnd(:,1+deltaKmax) which used kernelEnd(1+deltaK) which uses eta 3
@@ -127,7 +155,7 @@ if finalPoint>deltaKmax
         A=reshape(bsxfun(@times,reshape(sum(reshape(A,[],M2),2),1,[]),KtimesIpermanent),[],1); %could be sped up by using some of the calculations in line above
         
         Aend=reshape(Aend,M2,[]); % for some reason, switching the M2 and [] and removing the ,2 in the line below alters the beginning
-        if or(strcmp(allPointsORjustFinalPoint,'allPoints'),and(strcmp(allPointsORjustFinalPoint,'justFinalPoint'),J==finalPoint));
+        if or(strcmpi(allPointsORjustFinalPoint,'allPoints'),and(strcmpi(allPointsORjustFinalPoint,'justFinalPoint'),J==finalPoint));
             switch wholeDensityMatrixOrJustDiagonals
                 case 'justDiagonals'
                     rho(diagonals(1:M-1),J+1)=sum(Aend(diagonals(1:M-1),:),2); % all diagonals but the last
@@ -140,7 +168,6 @@ if finalPoint>deltaKmax
         end
     end
 end
-
 elapsedTime=toc;
 if strcmpi(cpuORgpu,'GPU')
     rho=gather(rho);reset(gpuIndex);
@@ -150,7 +177,7 @@ end
 function B = expand(A,S) % Compact version of: http://www.mathworks.co.uk/matlabcentral/fileexchange/24536-expand
 
 SA = size(A);                     % Get the size (and number of dimensions) of input.
-if length(SA)~=length(S);error('Length of size vector must equal ndims(A).  See help.');
+if length(SA)~=length(S);error('Length of size vector must equal ndims(A).  See help.')
 elseif any(S~=floor(S));error('The size vector must contain integers only.  See help.')
 end
 for ii = length(SA):-1:1

@@ -23,6 +23,7 @@ rhoInitial=[1 0 0;
             0 0 0];
 
 %% system coupling matrix
+Nbaths=1;                      % Number of baths.
 systemCouplingMatrix=diag([-1 0 1]);   
 
 %% spectral distribution function
@@ -46,7 +47,7 @@ rho(:,1)=reshape(rhoInitial.',[],1);
 %% run the program to calculate all density matrix elements
 wholeDensityMatrixOrJustDiagonals='wholeMatrix';
 
-[rho,elapsedTime]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
+[rho,elapsedTime]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 %% Plot figure 5 of Eunji Sim's paper: just diagonals
 figure(5);hold('on')

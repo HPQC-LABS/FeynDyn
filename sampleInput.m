@@ -17,6 +17,7 @@ H=[0 Omega/2; Omega/2 0];     % System hamiltonian in Joules
 rhoInitial=[0 0; 0 1];
 
 %% 5. system coupling matrix
+Nbaths=1;                         % Number of baths
 systemCouplingMatrix=[0 0;0 1];   % The system is coupled to the bath via |1X1|
 %systemCouplingMatrix=[1 0;0 -1]; % The system is coupled to the bath via sigma_z
 
@@ -47,7 +48,7 @@ rho(:,1)=reshape(rhoInitial.',[],1); % I'm not sure about the transpose, since I
 %% 9. run the program and plot only <0|rho|0> and <1|rho|1> as a function of time
 wholeDensityMatrixOrJustDiagonals='justDiagonals';
 
-[rho_onlyDiagonals,elapsedTime_onlyDiagonals]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
+[rho_onlyDiagonals,elapsedTime_onlyDiagonals]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 figure(1);hold('on')
 plot(0:totalT/finalPoint:totalT,real(rho_onlyDiagonals(1,:)));
@@ -57,7 +58,7 @@ xlabel('time (seconds)');
 %% 10. run the program and plot all elements of the density matrix as a function of time
 wholeDensityMatrixOrJustDiagonals='wholeDensityMatrix';
 
-[rho_allElements,elapsedTime_allElements]=FeynDyn(finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
+[rho_allElements,elapsedTime_allElements]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 figure(2);hold('on')
 plot(0:totalT/finalPoint:totalT,real(rho_allElements(1,:)));
