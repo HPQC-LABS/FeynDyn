@@ -6,7 +6,7 @@
 %% FEYN DYN, VERSION 2013.11.28
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [rho,elapsedTime]=FeynDyn(Nbath,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
+function [rho,elapsedTime]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu)
 
 %% 1. Fundamental constansts
 kb=1.3806504*10^(-23); % Joules / Kelvin
@@ -15,7 +15,7 @@ beta=1/(kb*temperature);
 %% 2. Setup arrays
 M=length(H);M2=M^2;
 Svector=eig(systemCouplingMatrix).';
-Svectors=diag(ones(Nbath,1));
+Svectors=diag(ones(Nbaths,1));
 diagonals=diag(reshape(1:M2,M,M));
 upperTriangle=find(triu(reshape(1:M2,M,M)));
 initialPoint=0;
@@ -73,8 +73,8 @@ for deltaK=1:deltaKmax %should go up to deltaKmax-1  and deltaKmax should be tre
 end %kernel(1)=eta_kk, kernel(2)=eta_{k+1,k}
 
 %% 4.1 Calculation of I tensors with N identical baths
-for jj=2:Nbath
-Svector2=Svectors(Nbath+1-jj,:); %relationship between Svector and Svector2 
+for jj=2:Nbaths
+Svector2=Svectors(Nbaths+1-jj,:); %relationship between Svector and Svector2 
 Sdiff2=(kron(Svector2,ones(1,M))-kron(ones(1,M),Svector2))';
 
 Ij_00=expand(exp(-Sdiff2.*(kernelEnd(1)*Svector2(1,ib)-kernelEndConj(1)*Svector2(1,ia)).'),[M2,1]);
