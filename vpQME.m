@@ -21,7 +21,7 @@ options=odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4 1e-4 1e-4]);
 [T,Y]=ode113(@phononm,[0 Time],[A(1,1) real(A(1,2)) imag(A(1,2)) 0],options);    %Time and initial conditions  
 
 
-%PLot of the quantum evolution of the density matrix
+%Plot of the quantum evolution of the density matrix
 
 figure(1);hold('on')
 plotHandle(1)=plot(T,Y(:,1),'k','LineWidth',5);
