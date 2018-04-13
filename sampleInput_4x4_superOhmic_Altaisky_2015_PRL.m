@@ -101,7 +101,7 @@ rho(:,1)=reshape(rhoInitial.',[],1); % I'm not sure about the transpose, since I
 
 %% 10. run the program and plot all elements of the density matrix as a function of time
 wholeDensityMatrixOrJustDiagonals='wholeDensityMatrix';
-[rho,elapsedTime_allElements]=FeynDynCode(Nbath,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
+[rho,elapsedTime]=FeynDyn(Nbath,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);  
 splineMesh=(totalT/finalPoint)/5;
 %% 11. Make plots
 
