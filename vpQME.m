@@ -1,3 +1,5 @@
+%1) Function variational polaron quantum master equation
+
 function dy = phononm(t,y)
 Omega=1     %Pulse area      
 tau=14      %Full width half maximum
@@ -8,6 +10,9 @@ dy(2)=-K*y(2);                                              %Re(p10)
 dy(3)=((Omega/(2*tau*sqrt(pi)))*exp(-(t./tau)^2))*(1/2)*(1-2*y(1))+K*y(3);   %Re(p10)
 dy(4)=0
 end
+
+
+%2) Dynamics visualization 
 
 Time=2    %Time of evolution in ps
 A=[0.5 0.5; 0.5 0.5]; %Initial density matrix
