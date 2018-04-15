@@ -1,45 +1,15 @@
-%1) Function variational polaron quantum master equation
+function drho = VPQME(t,rho)
 
-function dy = phononm(t,y)
-Omega=1     %Pulse area      
-tau=14      %Full width half maximum
-K=3         %Spectral density (On construction)
-dy = zeros (4,1);
-dy(1)=-((Omega/(2*tau*sqrt(pi)))*exp(-(t./tau)^2))*y(3);    %p11 
-dy(2)=-K*y(2);                                              %Re(p10)  
-dy(3)=((Omega/(2*tau*sqrt(pi)))*exp(-(t./tau)^2))*(1/2)*(1-2*y(1))+K*y(3);   %Re(p10)
-dy(4)=0
+Theta=30                                                   
+tau=14e-12                                            %Full width half maximum in s
+hbar=1.0545718e-34                                    %Planck constant  J.s
+T=25                                                  %Temperature in K
+kb=1.38064852e-23                                     %Boltzmann constant J/K
+wc=2.2e12                                             %1/s
+A=pi*0.027*1e-24                                      %s^2
+Omega=(Theta/(2*tau*sqrt(pi)))*exp(-(t./(2*tau))^2)    %1/s
+K=coth(hbar*Omega/(2*kb*T))*A*((Omega)^3)*exp(-(Omega/wc)^2)*pi/2   %Spectral density                 
+
+drho = zeros (3,1);        
+drho=[0 0 -Omega;0 -K 0; Omega 0 -K]*rho+[0;0;-Omega/2]
 end
-
-
-%2) Dynamics visualization 
-
-Time=2    %Time of evolution in ps
-A=[0.5 0.5; 0.5 0.5]; %Initial density matrix
-
-options=odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4 1e-4 1e-4]);
-[T,Y]=ode113(@phononm,[0 Time],[A(1,1) real(A(1,2)) imag(A(1,2)) 0],options);    %Time and initial conditions  
-
-
-%Plot of the quantum evolution of the density matrix
-
-figure(1);hold('on')
-plotHandle(1)=plot(T,Y(:,1),'k','LineWidth',5);
-plotHandle(2)=plot(T,Y(:,2),'r','LineWidth',5);
-plotHandle(3)=plot(T,Y(:,3),'b','LineWidth',5);
-plotHandle(4)=plot(T,1-Y(:,1),'color',[0.5 0.5 0.5],'LineWidth',5);
-
-legendHandle=legend(plotHandle,'$\langle1|\rho(t)|1\rangle$','$\Re\langle1|\rho(t)|0\rangle$','$\Im\langle1|\rho(t)|0\rangle$','$\langle0|\rho(t)|0\rangle$');
-set(legendHandle,'Interpreter','latex','FontSize',32,'LineWidth',2)
-
-axis([0 Time min(min(Y)) max(max((Y)))]);
-box('on');grid('on')
-set(gca,'XMinorTick','on','YMinorTick','on','LineWidth',2,'FontSize',16);
-title('Photon Induced Dephasing','interpreter','latex','FontSize',56)
-ylabel('Elements of $\rho(t)$','Interpreter','latex','FontSize',40)
-xlabel('Time (pico-seconds)','Interpreter','latex','FontSize',40);
-yticklabels('auto');
-
-set(gcf, 'Color', 'w');
-set(gcf,'renderer','Painters')
-
