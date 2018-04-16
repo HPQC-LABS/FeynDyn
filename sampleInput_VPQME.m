@@ -2,7 +2,7 @@
 
 totalT=4/1e11              %Time of evolution in s     
 rho=[0 0; 0 1];            %Initial density matrix, by defect the code evolves the state |0><0|
-
+        
 options=odeset('RelTol',1e-4,'AbsTol',[1e-4 1e-4 1e-4]);
 [T,RHO]=ode45(@VPQME,[0 totalT],[rho(1,1) real(rho(1,2)) imag(rho(1,2))],options);    %Time and initial conditions  
 %[T,RHO]=ode113(@VPQME,[0 totalT],[rho(1,1) real(rho(1,2)) imag(rho(1,2))],options);
