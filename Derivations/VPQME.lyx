@@ -1,0 +1,2796 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\begin_preamble
+\usepackage{amsfonts}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!100!black},
+    urlcolor={blue!100!black}
+}
+%\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\end_preamble
+\options prl,notitlepage
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A general non-Markovian master equation for time-dependent Hamiltonians
+ with coupling that is weak, strong, or anything in between
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Nike Dattani
+\end_layout
+
+\begin_layout Author Email
+
+n.dattani@cfa.harvard.edu
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+Harvard-Smithsonian 
+\lang english
+Center
+\lang british
+ for Astrophysics
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Camilo Chaparro Sogamoso
+\end_layout
+
+\begin_layout Author Email
+
+	edcchaparroso@unal.edu.co
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+National University of Columbia
+\end_layout
+
+\begin_layout Section
+The Hamltonian
+\end_layout
+
+\begin_layout Standard
+We start with a time-dependent Hamiltonian of the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H(t) & =H_{S}(t)+H_{I}+H_{B},\\
+H_{S}(t) & =ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|,\\
+H_{I} & =s\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right),\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.
+\end{align}
+
+\end_inset
+
+We will start with a system-bath coupling operator of the form 
+\begin_inset Formula $s=|1\rangle\langle1|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Variational Transformation
+\end_layout
+
+\begin_layout Standard
+We consider the following canonical transformation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H}\equiv{\rm e}^{V}H{\rm e}^{-V},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+{\rm e}^{\pm V} & \equiv\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{\pm},\\
+B_{\pm} & \equiv\prod_{\mathbf{k}}D\left(\pm\alpha{}_{\mathbf{k}}\right),\\
+D\left(\pm\alpha{}_{\mathbf{k}}\right) & \equiv\ensuremath{{\rm {exp}}}\left(\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right),\\
+\alpha_{\mathbf{k}} & \equiv\nicefrac{f_{\mathbf{k}}}{\omega_{\mathbf{k}}},
+\end{align}
+
+\end_inset
+
+Here 
+\begin_inset Formula $\{f_{\mathbf{k}}\}$
+\end_inset
+
+, which we assume to be real, represent a set of variational parameters
+ that we will optimize to make our master equation as accurate as possible.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+As we can see the operators 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $B_{+}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and 
+\begin_inset Formula $B_{-}$
+\end_inset
+
+ are inverse of each other so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $B_{+}B_{-}=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The results obtained from the application of the mentioned canonical transformat
+ion to each part of the Hamiltonian of the equation 
+\begin_inset Formula $(5)$
+\end_inset
+
+ can be evaluated using the linear nature of the transformation, for a given
+ operator 
+\begin_inset Formula $A$
+\end_inset
+
+ we have the following result for the transformation:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)A\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We use the following identities:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{\left|0\right\rangle \left\langle 0\right|} & ={\rm e}^{V}\left|0\right\rangle \left\langle 0\right|{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|0\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =B_{+}\left|0\right\rangle \left\langle 0\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{\left|1\right\rangle \left\langle 1\right|} & ={\rm e}^{V}\left|1\right\rangle \left\langle 1\right|{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|1\right\rangle \left\langle 1\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =B_{+}\left|1\right\rangle \left\langle 1\right|B_{-}\\
+ & =\left|1\right\rangle \left\langle 1\right|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{\left|0\right\rangle \left\langle 1\right|} & ={\rm e}^{V}\left|0\right\rangle \left\langle 1\right|{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|0\right\rangle \left\langle 1\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 1\right|\left|1\right\rangle \left\langle 1\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 1\right|B_{-}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{\left|1\right\rangle \left\langle 0\right|} & ={\rm e}^{V}\left|1\right\rangle \left\langle 0\right|{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|1\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|1\right\rangle \left\langle 1\right|B_{+}\left|1\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\\
+ & =\left|1\right\rangle \left\langle 0\right|B_{+}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{b_{\mathbf{k}}} & ={\rm e}^{V}b_{\mathbf{k}}{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)b_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}b_{\mathbf{k}}\left|1\right\rangle \left\langle 1\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{b_{\mathbf{k}}}^{\dagger} & ={\rm e}^{V}b_{\mathbf{k}}^{\dagger}{\rm e}^{-V}\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)b_{\mathbf{k}}^{\dagger}\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}b_{\mathbf{k}}^{\dagger}\left|1\right\rangle \left\langle 1\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+We have used the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+B_{+}b_{\mathbf{k}}B_{-} & =b_{\mathbf{k}}-\alpha_{\mathbf{k}}\\
+B_{+}b_{\mathbf{k}}^{\dagger}B_{-} & =b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}
+\end{align}
+
+\end_inset
+
+We therefore have the following relationships: 
+\color red
+CAMILO, PLEASE EXPLAIN THE LAST ONE BETTER:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|} & =ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|\\
+\overline{ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|} & =ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|\\
+\overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|} & =V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}\\
+\overline{V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|} & =V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}\\
+\overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
+\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|1\right\rangle \left\langle 1\right|}\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(-\alpha{}_{\mathbf{k}}\right)D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right| & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-2\alpha\right)\left|1\right\rangle \left\langle 1\right|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}\left|1\right\rangle \left\langle 1\right|-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Respect to 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $H_{S}$
+\end_inset
+
+, 
+\begin_inset Formula $H_{I}$
+\end_inset
+
+, 
+\begin_inset Formula $H_{B}$
+\end_inset
+
+ as shown in 
+\begin_inset Formula $(2)$
+\end_inset
+
+, 
+\begin_inset Formula $(3)$
+\end_inset
+
+ and 
+\begin_inset Formula $(4)$
+\end_inset
+
+ the transformed hamiltonian of each one of these terms is:
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color red
+CAMILO, PLEASE EXPLAIN THESE IN TERMS OF EPSILON RATHER THAN DELTA:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{H_{S}} & =\delta_{x}\left(t\right)\overline{\sigma_{x}}+\delta_{y}\left(t\right)\overline{\sigma_{y}}+\delta_{z}\left(t\right)\overline{\sigma_{z}}+\delta_{1}\left(t\right)\\
+ & =\delta_{x}\left(t\right)\left(\left|1\right\rangle \left\langle 0\right|B_{+}+\left|0\right\rangle \left\langle 1\right|B_{-}\right)+\delta_{y}\left(t\right){\rm i}\left(\left|0\right\rangle \left\langle 1\right|B_{-}-\left|1\right\rangle \left\langle 0\right|B_{+}\right)+\delta_{z}\left(t\right)\left(\left|1\right\rangle \left\langle 1\right|-\left|0\right\rangle \left\langle 0\right|\right)+\delta_{1}\left(t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\overline{H_{I}} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\overline{b}{}_{\mathbf{k}}^{\dagger}+\overline{b}{}_{\mathbf{k}}\right)|1\rangle\langle1|\\
+ & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)+\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\left|1\right\rangle \left\langle 1\right|\\
+ & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
+\overline{H_{B}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\alpha_{\mathbf{k}}\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally merging these expressions gives the transformed Hamiltonian:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\overline{H} & =ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}\left|1\right\rangle \left\langle 1\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also we may write this transformed Hamiltonian as a sum of the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H}=\overline{H_{S}}+\overline{H_{B}}+\overline{H_{I}}
+\end{equation}
+
+\end_inset
+
+Let's define:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+R_{1} & \equiv\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\alpha_{\mathbf{k}}g_{\mathbf{k}}\right)\\
+B_{z} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+We assume that the bath is at equilibrium with inverse temperature 
+\begin_inset Formula $\beta=1/k_{B}T$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\rho_{B} & =\frac{e^{-\beta H_{B}}}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}
+\end{align}
+
+\end_inset
+
+We can show that:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\left\langle B_{z}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{z}\right)\\
+ & ={\rm {Tr}}\frac{\left(e^{-\beta H_{B}}B_{z}\right)}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}\\
+ & =0,
+\end{align}
+
+\end_inset
+
+and:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{\pm}\right)\\
+ & =\ensuremath{{\rm {exp}}}\left(-\left(1/2\right)\sum_{\mathbf{k}}\left(\alpha_{\mathbf{k}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
+ & \equiv B
+\end{align}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+In order to (i) ensure that 
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{H_{B}}=0$
+\end_inset
+
+ which simplifies the form of the master equation to be derived; (ii) introduce
+ the bath renormalizing driving in 
+\begin_inset Formula $\overline{H_{S}}$
+\end_inset
+
+ to treat it non-perturbatively in the subsequent formalism, we associate
+ the terms related with 
+\begin_inset Formula $B_{+}\sigma_{+}$
+\end_inset
+
+and 
+\begin_inset Formula $B_{-}\sigma_{\text{-}}$
+\end_inset
+
+ to the interaction part of the Hamiltonian 
+\begin_inset Formula $\overline{H_{I}}$
+\end_inset
+
+ and we subtract their expected value in order to satisfy 
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{H_{B}}=0$
+\end_inset
+
+.
+ Furthermore we add the subtracted terms to the 
+\begin_inset Formula $\overline{H_{S}}$
+\end_inset
+
+.
+ The final form of the terms of the splitted Hamiltonian 
+\begin_inset Formula $\overline{H}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{S}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
+\overline{H_{I}} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The following convention give us the form of the Pauli matrices to be used:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma_{x}=\left|1\right\rangle \left\langle 0\right|+\left|0\right\rangle \left\langle 1\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma_{y}=-{\rm i}\left|1\right\rangle \left\langle 0\right|+{\rm i}\left|0\right\rangle \left\langle 1\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma_{z}=-\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's consider the following Hermitian combinations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+B_{x} & =\frac{B_{+}+B_{\text{-}}-2B}{2}\\
+B_{y} & =\frac{B_{\text{-}}-B_{\text{+}}}{2{\rm {i}}}\\
+B_{z} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma_{+}=\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\sigma_{-}=\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Writing the equations 
+\begin_inset Formula $(30)$
+\end_inset
+
+ and 
+\begin_inset Formula $(31)$
+\end_inset
+
+ 
+\color red
+[CAMILO, PLEASE USE 
+\begin_inset Quotes eld
+\end_inset
+
+INSERT -> LABEL
+\begin_inset Quotes erd
+\end_inset
+
+ TO LABEL THE EQUATIONS, THEN DO INSERT-> CROSS-REFERENCE TO CITE THOSE
+ EQUATIONS.
+ THIS TYPE OF HARD-CODED REFERENCING DOESN'T WORK WHEN THE EQUATIONS CHANGE
+ ALL THE TIME]
+\color inherit
+ using the previous combinations we obtain that:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+\overline{H_{S}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
+ & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}+V_{01}\left(t\right)B\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}\\
+ & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+\frac{B\sigma_{x}}{2}\left(V_{10}\left(t\right)+V_{01}\left(t\right)\right)+\frac{{\rm {i}}B\sigma_{y}}{2}\left(V_{10}\left(t\right)-V_{01}\left(t\right)\right)\\
+\overline{H_{I}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
+ & =B_{z}\left|1\right\rangle \left\langle 1\right|+\Re\left(V_{10}\left(t\right)\right)\left(\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B_{+}-\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B+\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B_{-}-\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B\right)\\
+ & +{\rm {i}}\Im\left(V_{10}\left(t\right)\right)\left(\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B_{+}-\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B-\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B_{-}+\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B\right)\\
+ & =B_{z}\left|1\right\rangle \left\langle 1\right|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)+{\rm {i}}\Im\left(V_{10}\left(t\right)\right)\left({\rm {i}}B_{x}\sigma_{y}-{\rm {i}}B_{y}\sigma_{x}\right)\\
+ & =B_{z}\left|1\right\rangle \left\langle 1\right|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-\Im\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Free-energy minimization
+\end_layout
+
+\begin_layout Standard
+The true free energy 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded by the Bogoliubov inequality:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left(\ensuremath{{\rm Tr}}\left(e^{-\beta(\overline{H_{S}+H_{B}})}\right)\right)+\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}-\frac{1}{\beta}\left(??\right)+O^{?}\left(\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}\right).
+\end{equation}
+
+\end_inset
+
+We will optimize the set of variational parameters 
+\begin_inset Formula $\{f_{\mathbf{k}}\}$
+\end_inset
+
+ in order to minimize 
+\begin_inset Formula $A_{\text{B}}$
+\end_inset
+
+ (i.e.
+ to make it as close to the true free energy 
+\begin_inset Formula $A$
+\end_inset
+
+ as possible).
+ Neglecting the higher order terms and using 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}=0$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ we can obtain the following condition to obtain the set 
+\begin_inset Formula $\{f_{\mathbf{k}}\}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial A_{{\rm {\rm {B}}}}}{\partial f_{\mathbf{k}}}=0.
+\end{equation}
+
+\end_inset
+
+Using this condition and given that 
+\begin_inset Formula $\left[\overline{H_{S}},H_{B}\right]=0$
+\end_inset
+
+ then 
+\begin_inset Formula $e^{-\beta\left(\overline{H_{S}}+H_{B}\right)}=e^{-\beta\overline{H_{S}}}e^{-\beta H_{B}}$
+\end_inset
+
+, furthermore 
+\begin_inset Formula $\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{S}}}e^{-\beta H_{B}}\right)=\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{S}}}\right)\ensuremath{{\rm {Tr}}}\left(e^{-\beta H_{B}}\right)$
+\end_inset
+
+ from the fact that 
+\begin_inset Formula $\overline{H_{S}}$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{B}$
+\end_inset
+
+ relate to different Hilbert spaces.
+ Given that 
+\begin_inset Formula $\frac{\partial\ensuremath{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}}{\partial f_{\mathbf{k}}}=0$
+\end_inset
+
+ then it's possible to write the equation 
+\begin_inset Formula $(44)$
+\end_inset
+
+ in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\ensuremath{{\rm \partial{Tr}}}\left(e^{-\beta\overline{H_{S}}}\right)}{\partial f_{\mathbf{k}}}=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The variational parameters are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{\mathbf{k}}=\frac{g_{\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(\varepsilon_{1}\left(t\right)+R_{1}-\varepsilon_{0}\left(t\right)\right)\right)}{1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(\varepsilon_{1}\left(t\right)+R_{1}-\varepsilon_{0}\left(t\right)-\frac{2|V_{10}\left(t\right)|^{2}B^{2}}{\omega_{\mathbf{k}}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)}
+\end{equation}
+
+\end_inset
+
+Where 
+\begin_inset Formula $\eta=\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{\mathbf{k}}=\alpha_{\mathbf{k}}\omega_{\mathbf{k}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Master equation
+\end_layout
+
+\begin_layout Standard
+In order to describe the dynamics of the QD under the influence of the phonon
+ environment, we use the time-convolutionless projection operator technique.
+ We consider the QD in its ground state.
+ The initial density operator 
+\begin_inset Formula $\rho\left(0\right)=\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}$
+\end_inset
+
+, the transformed density operator is equal to:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+e^{V}\rho\left(0\right)e^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & =\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\\
+ & =\rho\left(0\right).
+\end{align}
+
+\end_inset
+
+We transform any operator 
+\begin_inset Formula $O$
+\end_inset
+
+ into the initeraction picture in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{O} & \equiv U^{\dagger}(t)OU(t)\\
+U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{S}}\left(v\right)\right).
+\end{align}
+
+\end_inset
+
+Therefore:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{\overline{\rho_{S}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t),\,\text{where\ensuremath{}}\\
+\overline{\rho_{S}}(t) & ={\rm Tr}_{B}\left(\bar{\rho}(t)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We define 
+\begin_inset Formula $A_{1}=\sigma_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}=\sigma_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{3}=\frac{I+\sigma_{z}}{2}$
+\end_inset
+
+ , 
+\begin_inset Formula $A_{4}=\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{5}=-\sigma_{y}$
+\end_inset
+
+.
+ Furthermore we label 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $B_{1}\left(t\right)=B_{x}=-B_{5}\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $B_{2}\left(t\right)=B_{y}=B_{4}\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{3}\left(t\right)=B_{z}$
+\end_inset
+
+, also 
+\begin_inset Formula $C_{1}\left(t\right)=\Re\left(V_{10}\left(t\right)\right)=C_{2}\left(t\right)$
+\end_inset
+
+, 
+\begin_inset Formula $C_{3}\left(t\right)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{4}\left(t\right)=\Im\left(V_{10}\left(t\right)\right)=-C_{5}\left(t\right)$
+\end_inset
+
+ .
+ The precedent notation allows us to write the interaction Hamiltonian in
+ 
+\begin_inset Formula $\left(42\right)$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{I}\left(t\right)=\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Taking as reference state 
+\begin_inset Formula $\rho_{B}$
+\end_inset
+
+ and truncating at second order in 
+\begin_inset Formula $H_{I}$
+\end_inset
+
+, we obtain our master equation in the interaction picture:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t}=-\int_{0}^{t}{\rm Tr}_{B}\left[\tilde{H_{I}}\left(t\right),\left[\tilde{H_{I}}\left(s\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s
+\end{equation}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+From the equation 
+\begin_inset Formula $\left(48\right)$
+\end_inset
+
+ and the interaction picture applied on 
+\begin_inset Formula $H_{I}$
+\end_inset
+
+ we find:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{H_{I}}\left(t\right)=U^{\dagger}\left(t\right)H_{I}\left(t\right)U\left(t\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In this case the Schrödinger and the interaction picture coincide at 
+\begin_inset Formula $t=0$
+\end_inset
+
+, we use the time-ordering operator 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ because in general 
+\begin_inset Formula $\overline{H_{S}}\left(t\right)$
+\end_inset
+
+ doesn't conmute with itself at two different times.
+ We write the interaction Hamiltonian as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{H_{I}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\tilde{A_{i}}\otimes\tilde{B_{i}}\left(t\right)\right)\\
+\tilde{A_{i}}(t) & =U_{S}^{\dagger}\left(t\right)A_{i}U_{S}\left(t\right)\\
+\tilde{B_{i}}\left(t\right) & ={\rm e}^{{\rm i}H_{B}t}B_{i}{\rm \left(t\right)e}^{{\rm -i}H_{B}t}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Using the equation 
+\begin_inset Formula $(42)$
+\end_inset
+
+ and returning to the Schrödinger picture, we then obtain:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t} & =-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}(t)\right]-\sum_{ij}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},\tilde{A_{j}}\left(t-\tau,t\right)\overline{\rho}_{S}\left(t\right)\right]\right.\\
+ & \left.+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho}_{S}\left(t\right)\tilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $i,j\in\{1,2,3,4,5\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
+\begin_inset Formula $\tilde{A_{j}}\left(s,t\right)=U_{S}\left(t\right)U_{S}^{\dagger}\left(s\right)A_{j}U_{S}\left(s\right)U_{S}^{\dagger}\left(t\right)$
+\end_inset
+
+.
+ The equation 
+\begin_inset Formula $\left(55\right)$
+\end_inset
+
+ is a non-Markovian master equation which describes the QD exciton dynamics
+ in the variational frame with a general time-dependent Hamiltonian, and
+ valid at second order in 
+\begin_inset Formula $H_{I}(t)$
+\end_inset
+
+.
+ The environmental correlation functions are given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Lambda_{ij}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{i}}\left(t\right)\tilde{B_{j}}\left(s\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{i}}\left(\tau\right)\tilde{B_{j}}\left(0\right)\rho_{B}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Using the coherent-state representation of the bath density operator we
+ find that the correlation functions are equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\\
+ & =\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
+\Lambda_{22}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\\
+ & =\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\\
+\Lambda_{33}\left(\tau\right) & =\int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-F\left(\omega\right)\right)^{2}G_{+}\left(\tau\right)\\
+\Lambda_{32}\left(\tau\right) & =B\left(\tau\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)}{\omega}F\left(\omega\right)\left(1-F\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right)\\
+\Lambda_{32}\left(\tau\right) & =-\Lambda_{23}\left(\tau\right)\\
+\Lambda_{12}\left(\tau\right) & =\Lambda_{21}\left(\tau\right)=\Lambda_{13}\left(\tau\right)=\Lambda_{31}\left(\tau\right)=0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ With the phonon propagator given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi\left(\tau\right)=\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)}{\omega^{2}}F\left(\omega\right)^{2}G_{+}\left(\tau\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ defined in terms of 
+\begin_inset Formula $G_{\pm}\left(\tau\right)=\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}\tau\omega}\pm n\left(\omega\right)e^{-{\rm i}\tau\omega}$
+\end_inset
+
+ with 
+\begin_inset Formula $n\left(\omega\right)=\left({\rm e}^{\beta\omega}-1\right)^{-1}$
+\end_inset
+
+ the occupation number.
+ The matrix 
+\begin_inset Formula $\Lambda\left(\tau\right)$
+\end_inset
+
+ called correlation matrix defined in terms of the equation 
+\begin_inset Formula $\left(56\right)$
+\end_inset
+
+ allows us to write all the correlations functions as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Lambda\left(\tau\right)=\begin{pmatrix}\Lambda_{11}\left(\tau\right) & 0 & 0 & 0 & -\Lambda_{11}\left(\tau\right)\\
+0 & \Lambda_{22}\left(\tau\right) & -\Lambda_{32}\left(\tau\right) & \Lambda_{22}\left(\tau\right) & 0\\
+0 & \Lambda_{32}\left(\tau\right) & \Lambda_{33}\left(\tau\right) & \Lambda_{32}\left(\tau\right) & 0\\
+0 & \Lambda_{22}\left(\tau\right) & {\rm -}\Lambda_{32}\left(\tau\right) & \Lambda_{22}\left(\tau\right) & 0\\
+-\Lambda_{11}\left(\tau\right) & 0 & 0 & 0 & {\rm \Lambda_{11}\left(\tau\right)}
+\end{pmatrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The eigenvalues of the Hamiltonian 
+\begin_inset Formula $H_{S}$
+\end_inset
+
+ are given by the solution of the following algebraic equation: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda^{2}-{\rm Tr}\left(\overline{H_{S}}\right)\lambda+{\rm Det}\left(\overline{H_{S}}\right)=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The solutions of this equation written in terms of 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi$
+\end_inset
+
+ as defined in the precedent section are given by 
+\begin_inset Formula $\lambda_{\pm}=\frac{\xi\pm\eta}{2}$
+\end_inset
+
+ and they satisfy 
+\begin_inset Formula $H_{S}\left|\pm\right\rangle =\lambda_{\pm}\left|\pm\right\rangle $
+\end_inset
+
+.
+ Using this notation is possible to write 
+\begin_inset Formula $H_{S}=\lambda_{+}\left|+\right\rangle \left\langle +\right|+\lambda_{-}\left|-\right\rangle \left\langle -\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The time-dependence of the system operators 
+\begin_inset Formula $\tilde{A_{i}}\left(t\right)$
+\end_inset
+
+ may be made explicit using the Fourier decomposition:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{A_{i}}\left(\tau\right)=e^{{\rm i}\overline{H_{S}}\tau}A_{i}e^{-{\rm i}\overline{H_{S}}\tau}=\sum_{\zeta}e^{-{\rm {i}\zeta\tau}}A_{i}\left(\zeta\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Where the sum is defined on the set of all the differences between the
+ eigenvalues of the system, in our case 
+\begin_inset Formula $\zeta\in\left\{ 0,\pm\eta\right\} $
+\end_inset
+
+.
+ In order to show the explicit form of the matrices present in the RHS of
+ the equation 
+\begin_inset Formula $(65)$
+\end_inset
+
+ for a general 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix let's write the matrix 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ in the base 
+\begin_inset Formula $\text{V}=\left\{ \left|+\right\rangle ,\left|-\right\rangle \right\} $
+\end_inset
+
+ in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A_{i}=\sum_{\alpha,\beta\text{\in V}}\left\langle \alpha\right|A_{i}\left|\beta\right\rangle \left|\alpha\right\rangle \left\langle \beta\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $\left[\left|+\right\rangle \left\langle +\right|,\left|-\right\rangle \left\langle -\right|\right]=0,$
+\end_inset
+
+ then using the Zassenhaus formula we obtain: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+e^{{\rm i}\overline{H_{S}}\tau} & =e^{{\rm i}\left(\lambda_{+}\left|+\right\rangle \left\langle +\right|+\lambda_{-}\left|-\right\rangle \left\langle -\right|\right)\tau}\\
+ & =e^{{\rm i}\lambda_{+}\left|+\right\rangle \left\langle +\right|\tau}e^{{\rm i}\lambda_{-}\left|-\right\rangle \left\langle -\right|\tau}\\
+ & =\left(\left|-\right\rangle \left\langle -\right|+e^{{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|\right)\left(\left|+\right\rangle \left\langle +\right|+e^{{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|\right)\\
+ & =e^{{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|+e^{{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Calculating the transformation 
+\begin_inset Formula $\left(65\right)$
+\end_inset
+
+ directly using 
+\begin_inset Formula $\left(67\right)$
+\end_inset
+
+ we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\tilde{A_{i}}\left(\tau\right) & =\left(e^{{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|+e^{{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|\right)\left(\sum_{\alpha,\beta\text{\in V}}\left\langle \alpha\right|A_{i}\left|\beta\right\rangle \left|\alpha\right\rangle \left\langle \beta\right|\right)\left(e^{-{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|+e^{-{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|\right)\\
+ & =\left\langle +\right|A_{i}\left|+\right\rangle \left|+\right\rangle \left\langle +\right|+e^{{\rm i}\eta\tau}\left\langle +\right|A_{i}\left|-\right\rangle \left|+\right\rangle \left\langle -\right|+e^{-{\rm i}\eta\tau}\left\langle -\right|A_{i}\left|+\right\rangle \left|-\right\rangle \left\langle +\right|+\left\langle -\right|A_{i}\left|-\right\rangle \left|-\right\rangle \left\langle -\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
+\begin_inset Formula $\eta=\lambda_{+}-\lambda-$
+\end_inset
+
+.
+ Comparing the RHS of the equations 
+\begin_inset Formula $\left(65\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(68\right)$
+\end_inset
+
+ we obtain the form of the expansion matrices of the Fourier decomposition
+ for a general 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{i}\left(0\right) & =\left\langle +\right|A_{i}\left|+\right\rangle \left|+\right\rangle \left\langle +\right|+\left\langle -\right|A_{i}\left|-\right\rangle \left|-\right\rangle \left\langle -\right|\\
+A_{i}\left(\zeta\right) & =\left\langle +\right|A_{i}\left|-\right\rangle \left|+\right\rangle \left\langle -\right|\\
+A_{i}\left(-\zeta\right) & =\left\langle -\right|A_{i}\left|+\right\rangle \left|-\right\rangle \left\langle +\right|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For a decomposition of the interaction Hamiltonian in terms of Hermitian
+ operators, i.e.
+ 
+\begin_inset Formula $\tilde{A_{i}}\left(\tau\right)=\tilde{A_{i}}^{\dagger}\left(\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{B_{i}}\left(\tau\right)=\tilde{B_{i}}^{\dagger}\left(\tau\right)$
+\end_inset
+
+ we can use the equation 
+\begin_inset Formula $\left(65\right)$
+\end_inset
+
+ to write the master equation 
+\begin_inset Formula $\left(55\right)$
+\end_inset
+
+ in the following neater form:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\color black
+\begin_inset Formula 
+\[
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right))\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta}\gamma_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $A_{j}^{\dagger}\left(\zeta\right)=A\left(-\zeta\right)$
+\end_inset
+
+ as expected from the equation 
+\begin_inset Formula $\left(71\right)$
+\end_inset
+
+, as we can see the equation 
+\begin_inset Formula $\left(72\right)$
+\end_inset
+
+ contains the rates and energy shifts 
+\begin_inset Formula $\gamma_{ij}\left(\zeta,t\right)=2\Re\left(K_{ij}\left(\zeta,t\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{ij}\left(\zeta,t\right)=\Im\left(K_{ij}\left(\zeta,t\right)\right)$
+\end_inset
+
+, respectively, defined in terms of the response functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ij}\left(\zeta,t\right)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\zeta\tau}{\rm {d}\tau}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ If we extend the upper limit of integration to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $\left(73\right)$
+\end_inset
+
+ then the system will be independent of any preparation at 
+\begin_inset Formula $t=0$
+\end_inset
+
+, so the evolution of the system will depend only on its present state as
+ expected in the Markovian approximation.
+ 
+\end_layout
+
+\begin_layout Section
+Limit cases
+\end_layout
+
+\begin_layout Standard
+In order to show the plausibility of the master equation 
+\begin_inset Formula $\left(72\right)$
+\end_inset
+
+ for a time-dependent Hamiltonian we will show that this equation reproduces
+ the following cases under certain limits conditions that will be pointed
+ in each subsection.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Time-independent variational quantum master equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At first let's show that the master equation 
+\begin_inset Formula $\left(72\right)$
+\end_inset
+
+ reproduces the results of the reference 
+\begin_inset Formula $[1]$
+\end_inset
+
+, for the latter case we have that 
+\begin_inset Formula $i,j\in\{1,2,3\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega\in\left(0,\pm\eta\right)$
+\end_inset
+
+.
+ The Hamiltonian of the system considered in this reference written in the
+ same basis than the Hamiltonian 
+\begin_inset Formula $\left(5\right)$
+\end_inset
+
+ is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\left(\delta+\sum_{j}g_{k}\left(b_{k}^{\dagger}+b_{k}\right)\right)\left|1\right\rangle \left\langle 1\right|+\frac{\Omega}{2}\sigma_{x}+\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ After performing the transformation 
+\begin_inset Formula $\left(7\right)$
+\end_inset
+
+ on the Hamiltonian 
+\begin_inset Formula $\left(74\right)$
+\end_inset
+
+ it's possible to split that result in the following set of Hamiltonians:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{S}} & =\left(\delta+R\right)\left|1\right\rangle \left\langle 1\right|+\frac{\Omega_{r}}{2}\sigma_{x}\\
+\overline{H_{{\rm {I}}}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+\frac{\Omega}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)\\
+H_{B} & =\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In this Hamiltonian we can write 
+\begin_inset Formula $A_{i}=\sigma_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}=\sigma_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{3}=\frac{I+\sigma_{z}}{2}$
+\end_inset
+
+.
+ In order to find the decomposition matrices of the Fourier decomposition
+ let's obtain the eigenvalues and eigenvectors of the matrix 
+\begin_inset Formula $H_{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\lambda_{+} & =\frac{\varepsilon+\eta}{2}\\
+\lambda_{-} & =\frac{\varepsilon-\eta}{2}\\
+\left|-\right\rangle  & =\frac{1}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}-\Omega_{r}\\
+\varepsilon+\eta
+\end{pmatrix}\\
+\left|+\right\rangle  & =\frac{1}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}\varepsilon+\eta\\
+\Omega_{r}
+\end{pmatrix}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Using this basis we can find the decomposition matrices using the equation
+ 
+\begin_inset Formula $\left(65\right)$
+\end_inset
+
+ and the fact that 
+\begin_inset Formula $\left|+\right\rangle =\cos\left(\theta\right)\left|1\right\rangle +\sin\left(\theta\right)\left|0\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|-\right\rangle =-\sin\left(\theta\right)\left|1\right\rangle +\cos\left(\theta\right)\left|0\right\rangle $
+\end_inset
+
+ with
+\begin_inset Formula $\sin\left(\theta\right)=\frac{\Omega_{r}}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos\left(\theta\right)=\frac{\varepsilon+\eta}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left\langle \text{+}\right|\sigma_{x}\left|+\right\rangle  & =\begin{pmatrix}\cos\left(\theta\right) & \sin\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}=2\sin\left(\theta\right)\cos\left(\theta\right)=\sin\left(2\theta\right)\\
+\left\langle -\right|\sigma_{x}\left|-\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}-\sin\left(\theta\right)\\
+\cos\left(\theta\right)
+\end{pmatrix}=-2\sin\left(\theta\right)\cos\left(\theta\right)=-\sin\left(2\theta\right)\\
+\left\langle -\right|\sigma_{x}\left|+\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}=\cos^{2}\left(\theta\right)-\sin^{2}\left(\theta\right)=\cos\left(2\theta\right)\\
+\left\langle +\right|\sigma_{y}\left|+\right\rangle  & =\begin{pmatrix}\cos\left(\theta\right) & \sin\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & -{\rm {i}}\\
+{\rm {i}} & 0
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}={\rm {i}\sin\left(\theta\right)\cos\left(\theta\right)-{\rm {i}\sin\left(\theta\right)\cos\left(\theta\right)=0}}\\
+\left\langle -\right|\sigma_{y}\left|-\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & -{\rm {i}}\\
+{\rm {i}} & 0
+\end{pmatrix}\begin{pmatrix}-\sin\left(\theta\right)\\
+\cos\left(\theta\right)
+\end{pmatrix}=-{\rm {i}\sin\left(\theta\right)\cos\left(\theta\right)+{\rm {i}\sin\left(\theta\right)\cos\left(\theta\right)=0}}\\
+\left\langle -\right|\sigma_{y}\left|+\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}0 & -{\rm {i}}\\
+{\rm {i}} & 0
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}={\rm {i}\cos^{2}\left(\theta\right)+{\rm {i}\sin^{2}\left(\theta\right)={\rm {i}}}}\\
+\left\langle +\right|\sigma_{z}\left|+\right\rangle  & =\begin{pmatrix}\cos\left(\theta\right) & \sin\left(\theta\right)\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}=\cos^{2}\left(\theta\right)-\sin^{2}\left(\theta\right)=\cos\left(2\theta\right)\\
+\left\langle -\right|\sigma_{z}\left|-\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}\begin{pmatrix}-\sin\left(\theta\right)\\
+\cos\left(\theta\right)
+\end{pmatrix}=-\cos^{2}\left(\theta\right)+\sin^{2}\left(\theta\right)=-\cos\left(2\theta\right)\\
+\left\langle -\right|\sigma_{z}\left|+\right\rangle  & =\begin{pmatrix}-\sin\left(\theta\right) & \cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}\begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)
+\end{pmatrix}=-2\sin\left(\theta\right)\cos\left(\theta\right)=-\sin\left(2\theta\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Composing the parts shown give us the Fourier decomposition matrices for
+ this case:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{1}\left(0\right) & =\sin\left(2\theta\right)\left(\left|+\right\rangle \left\langle +\right|-\left|-\right\rangle \left\langle -\right|\right)\\
+A_{1}\left(\eta\right) & =\cos\left(2\theta\right)\left|-\right\rangle \left\langle +\right|\\
+A_{2}\left(0\right) & =0\\
+A_{2}\left(\eta\right) & ={\rm {i}\left|-\right\rangle \left\langle +\right|}\\
+A_{3}\left(0\right) & =\cos\left(2\theta\right)\left(\left|+\right\rangle \left\langle +\right|-\left|-\right\rangle \left\langle -\right|\right)\\
+A_{3}\left(\eta\right) & =-\sin\left(2\theta\right){\rm \left|-\right\rangle \left\langle +\right|}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Now to make comparisons between the model obtained and the model of the
+ system under discussion we will define that the correlation functions of
+ the reference 
+\begin_inset Formula $\left[1\right]$
+\end_inset
+
+ denoted by 
+\begin_inset Formula $\Lambda'_{ij}\left(\tau\right)$
+\end_inset
+
+ relate with the correlation functions defined in the equation 
+\begin_inset Formula $\left(56\right)$
+\end_inset
+
+ in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Lambda'_{ij}\left(\tau\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Using the notation of the master equation 
+\begin_inset Formula $\left(72\right)$
+\end_inset
+
+, we can say that 
+\begin_inset Formula $C_{1}\left(t\right)=\frac{\Omega}{2}=C_{2}\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{3}\left(t\right)=1$
+\end_inset
+
+, being 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ a constant.
+ Furthermore given that 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $H_{S}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is time-independent then 
+\begin_inset Formula $B\left(t\right)=B$
+\end_inset
+
+.
+ Taking the equations
+\begin_inset Formula $\left(57\right)-\left(62\right)$
+\end_inset
+
+ we find that the correlation functions of the reference 
+\begin_inset Formula $\left[1\right]$
+\end_inset
+
+ written in terms of the RHS of the equation 
+\begin_inset Formula $\left(56\right)$
+\end_inset
+
+ are equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Lambda'_{11}\left(\tau\right) & =\left(\frac{\Omega}{2}\right)^{2}{\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)=\left(\frac{\Omega}{2}\right)^{2}\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
+ & =\frac{\left(\Omega B\right)^{2}}{8}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)=\frac{\Omega_{r}^{2}}{8}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+\Lambda'_{22}\left(\tau\right) & =\left(\frac{\Omega}{2}\right)^{2}{\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)=\left(\frac{\Omega}{2}\right)^{2}\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\\
+ & =\frac{\Omega_{r}^{2}}{8}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\\
+\Lambda'_{33}\left(\tau\right) & =\int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-F\left(\omega\right)\right)^{2}G_{+}\left(\tau\right)\\
+\Lambda'_{32}\left(\tau\right) & =\frac{\Omega}{2}B\left(\tau\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)}{\omega}F\left(\omega\right)\left(1-F\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right)\\
+ & =\frac{\Omega_{r}}{2}\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)}{\omega}F\left(\omega\right)\left(1-F\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right)\\
+\Lambda'_{32}\left(\tau\right) & =-\Lambda'_{23}\left(\tau\right)\\
+\Lambda'_{12}\left(\tau\right) & =\Lambda'_{21}\left(\tau\right)=\Lambda'_{13}\left(\tau\right)=\Lambda'_{31}\left(\tau\right)=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Finally taking the Hamiltonian 
+\begin_inset Formula $\left(74\right)$
+\end_inset
+
+ and given that to reproduce this Hamiltonian we need to impose in 
+\begin_inset Formula $\left(5\right)$
+\end_inset
+
+ that 
+\begin_inset Formula $V_{10}(t)=\frac{\Omega}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{0}(t)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{1}\left(t\right)=\delta$
+\end_inset
+
+, then we obtain using the equation 
+\begin_inset Formula $(30)$
+\end_inset
+
+ that 
+\begin_inset Formula $\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)=-\left(\frac{\Omega B}{2}\right)^{2}=-\frac{\Omega_{r}^{2}}{4}$
+\end_inset
+
+, 
+\begin_inset Formula ${\rm {Tr}}\left(\overline{H_{S}}\right)=\delta+R=\epsilon$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $\eta=\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}=\sqrt{\epsilon^{2}+\Omega_{r}^{2}}$
+\end_inset
+
+ and using the equation 
+\begin_inset Formula $\left(33\right)$
+\end_inset
+
+ we have that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{k}=\frac{g_{k}\left(1-\frac{\epsilon\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\right)}{1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(\epsilon-\frac{\Omega_{r}^{2}\coth\left(\frac{\beta\omega_{k}}{2}\right)}{2\omega_{k}}\right)}=\frac{g_{k}\left(1-\frac{\epsilon\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\right)}{1-\frac{\epsilon\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(1-\frac{\Omega_{r}^{2}\coth\left(\frac{\beta\omega_{k}}{2}\right)}{2\epsilon\omega_{k}}\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This shows that the expression obtained reproduces the variational parameters
+ of the time-independent model of the reference.
+ In general we can see that the time-independent model studied can be reproduced
+ using the master equation 
+\begin_inset Formula $(42)$
+\end_inset
+
+ under a time-independent approach providing similar results.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Time-dependent polaron quantum master equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Following the reference [1], when 
+\begin_inset Formula $\Omega_{k}\ll\omega_{k}$
+\end_inset
+
+ then 
+\begin_inset Formula $f_{k}\approx g_{k}$
+\end_inset
+
+ so we recover the full polaron transformation.
+ It means from the equation 
+\begin_inset Formula $\left(38\right)$
+\end_inset
+
+ that 
+\begin_inset Formula $B_{z}=0$
+\end_inset
+
+.
+ The Hamiltonian studied is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\left(\delta+\sum_{j}\left(g_{k}b_{k}^{\dagger}+g_{k}^{*}b_{k}\right)\right)\left|1\right\rangle \left\langle 1\right|+\frac{\Omega(t)}{2}\sigma_{x}+\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection{Master equation for a time-dependent Multi-Site model}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In order to generalize the precedent master equation for a system of n-qubits
+ let's consider that the n-qubits system can be modeled as a m-sites system.
+ The Hamiltonian for the combined system and environment is given by
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align*}
+H & =H_{S}+H_{B}+H_{I}\\
+H_{S} & =\sum_{j=1}^{m}\left(\delta_{1j}\left(t\right)+\delta_{xj}\sigma_{xj}+\delta_{yj}\left(t\right)\sigma_{yj}+\delta_{zj}\left(t\right)\sigma_{zj}\right)+\sum_{i,j,p\neq n}V_{np}|i_{n}\rangle\langle j_{p}|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H_{I} & =\sum_{\mathbf{k},n}g_{\mathbf{k},n}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1_{n}\rangle\langle1_{n}|,\\
+H_{B} & =\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
+\end{align}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This model considers that the system of qubits is coupled to the same bath,
+ also 
+\begin_inset Formula $i,j\in\left\{ 0,1\right\} $
+\end_inset
+
+and 
+\begin_inset Formula $n,p\in\left\{ 1,..,m\right\} $
+\end_inset
+
+.
+ Furthemore the model considers that the interaction between sites depends
+ of the sites but not of the states of each site.
+ The notation selected to represent our system is the following: i) 
+\begin_inset Formula $|0_{j}\rangle$
+\end_inset
+
+ and 
+\begin_inset Formula $|1_{j}\rangle$
+\end_inset
+
+ represent the state 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ state of the j-site respectively .
+ ii) The Pauli matrices associated to each site or qubits are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma_{xj}=\left|1_{n}\right\rangle \left\langle 0_{n}\right|+\left|0_{n}\right\rangle \left\langle 1_{n}\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma_{yj}=-{\rm i}\left|1_{n}\right\rangle \left\langle 0_{n}\right|+{\rm i}\left|0_{n}\right\rangle \left\langle 1_{n}\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sigma_{zj}=-\left|0_{n}\right\rangle \left\langle 0_{n}\right|+\left|1_{n}\right\rangle \left\langle 1_{n}\right|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bibliography.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+[1] McCutcheon D P S, Dattani N S, Gauger E M, Lovett B W and Nazir A 2011
+ Phys.
+ Rev.
+ B 84 081305
+\end_layout
+
+\end_body
+\end_document
