@@ -2154,13 +2154,13 @@ noindent
 \end_inset
 
 
-\size small
+\size scriptsize
 \color black
 
 \begin_inset Formula 
-\[
+\begin{equation}
 \frac{{\rm d}\overline{\rho}_{{\rm {S}}}}{{\rm d}t}=-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\overline{\rho}_{{\rm {S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)-\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)+\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]
-\]
+\end{equation}
 
 \end_inset
 
