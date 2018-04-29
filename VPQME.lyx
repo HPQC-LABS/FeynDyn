@@ -821,7 +821,7 @@ We can show that:
 \begin_inset Formula 
 \begin{align}
 \left\langle B_{z}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{z}\right)\\
- & ={\rm {Tr}}\frac{\left(e^{-\beta H_{B}}B_{z}\right)}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}\\
+ & ={\rm {Tr}}\frac{e^{-\beta H_{B}}}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}B_{z}\\
  & =0,
 \end{align}
 
