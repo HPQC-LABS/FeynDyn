@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -294,7 +296,11 @@ We use the following identities:
 \begin{align}
 \overline{\left|0\right\rangle \left\langle 0\right|} & ={\rm e}^{V}\left|0\right\rangle \left\langle 0\right|{\rm e}^{-V}\\
  & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|0\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
- & =\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\\
+ & =\left(\left|0\right\rangle \left\langle 0\right|0\rangle\left\langle 0\right|+\left|1\right\rangle \langle1|0\rangle\left\langle 0\right|B_{+}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|0\rangle\left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|+\left|0\right\rangle \left\langle 0\right|\left|1\right\rangle \left\langle 1\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\\
  & =\left|0\right\rangle \left\langle 0\right|
 \end{align}
 
