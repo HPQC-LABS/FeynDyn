@@ -123,7 +123,7 @@ Camilo Chaparro Sogamoso
 \begin_layout Affiliation
 
 \lang british
-National University of Columbia
+National University of Colombia
 \end_layout
 
 \begin_layout Section
@@ -131,16 +131,16 @@ The Hamiltonian
 \end_layout
 
 \begin_layout Standard
-We start with a time-dependent Hamiltonian of the form:
+We start with a time-dependent Hamiltonian of the form: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 H(t) & =H_{S}(t)+H_{I}+H_{B},\label{eq:H(t)}\\
-H_{{\rm {S}}}(t) & =ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|,\label{eq:Hs(t)}\\
-H_{{\rm {I}}} & =s\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right),\label{eq:HI1}\\
-H_{{\rm {B}}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB1}
+H_{S}(t) & =\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|,\label{eq:Hs(t)}\\
+H_{I} & =s\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right),\label{eq:HI1}\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB1}
 \end{align}
 
 \end_inset
@@ -157,23 +157,13 @@ Variational Transformation
 \end_layout
 
 \begin_layout Standard
-We consider the following canonical transformation:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\overline{H}\equiv{\rm e}^{V}H{\rm e}^{-V},\label{eq:Trans}
-\end{equation}
-
-\end_inset
-
-
+We consider the following canonical transformation
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H} & \equiv{\rm e}^{V}H{\rm e}^{-V},\label{eq:Trans}\\
 {\rm e}^{\pm V} & \equiv\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{\pm},\\
 B_{\pm} & \equiv\prod_{\mathbf{k}}D\left(\pm\alpha{}_{\mathbf{k}}\right),\\
 D\left(\pm\alpha{}_{\mathbf{k}}\right) & \equiv\ensuremath{{\rm {exp}}}\left(\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right),\label{eq:displaoper}\\
@@ -182,6 +172,10 @@ D\left(\pm\alpha{}_{\mathbf{k}}\right) & \equiv\ensuremath{{\rm {exp}}}\left(\pm
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Here 
 \begin_inset Formula $\{f_{\mathbf{k}}\}$
 \end_inset
@@ -300,7 +294,7 @@ We use the following identities:
 \begin{align}
 \overline{\left|0\right\rangle \left\langle 0\right|} & ={\rm e}^{V}\left|0\right\rangle \left\langle 0\right|{\rm e}^{-V}\\
  & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left|0\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
- & =B_{+}\left|0\right\rangle \left\langle 0\right|B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\left|0\right\rangle \left\langle 0\right|\\
  & =\left|0\right\rangle \left\langle 0\right|
 \end{align}
 
@@ -478,13 +472,13 @@ We therefore have the following relationships:
 \color none
 \begin_inset Formula 
 \begin{align}
-\overline{ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|} & =ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|\label{eq:transformation e1(t)|1><1|}\\
-\overline{ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|} & =ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|\\
+\overline{\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|} & =\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|\label{eq:transformation e1(t)|1><1|}\\
+\overline{\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|} & =\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|\\
 \overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|} & =V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}\\
 \overline{V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|} & =V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}\\
 \overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
 \overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|1\right\rangle \left\langle 1\right|}\\
- & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|\label{eq:bath transformation}
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\label{eq:bath transformation}
 \end{align}
 
 \end_inset
@@ -549,8 +543,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(-\alpha{}_{\mathbf{k}}\right)D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right| & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-2\alpha\right)\left|1\right\rangle \left\langle 1\right|\\
- & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}\left|1\right\rangle \left\langle 1\right|-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|
+\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(-\alpha{}_{\mathbf{k}}\right)D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right| & =\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|1\right\rangle \left\langle 1\right|+\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}\left|1\right\rangle \left\langle 1\right|-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|
 \end{align}
 
 \end_inset
@@ -584,15 +578,15 @@ noindent
 \noun off
 \color none
 
-\begin_inset Formula $H_{{\rm {S}}}$
+\begin_inset Formula $H_{S}$
 \end_inset
 
 , 
-\begin_inset Formula $H_{{\rm {I}}}$
+\begin_inset Formula $H_{I}$
 \end_inset
 
 , 
-\begin_inset Formula $H_{{\rm {B}}}$
+\begin_inset Formula $H_{B}$
 \end_inset
 
  as shown in 
@@ -716,48 +710,14 @@ noindent
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \begin_inset Formula 
 \begin{align}
-\overline{H_{{\rm {S}}}} & =ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+ε_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|\\
- & =\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\left|1\right\rangle \left\langle 0\right|+V_{01}\left(t\right)B\left|0\right\rangle \left\langle 1\right|
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula 
-\begin{align}
-\overline{H_{{\rm {I}}}} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\overline{b}{}_{\mathbf{k}}^{\dagger}+\overline{b}{}_{\mathbf{k}}\right)|1\rangle\langle1|\\
+\overline{H_{S}} & =\overline{\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|}+\overline{\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|}+\overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|}+\overline{V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|}\\
+ & =\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}\\
+\overline{H_{I}} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\overline{b}{}_{\mathbf{k}}^{\dagger}+\overline{b}{}_{\mathbf{k}}\right)|1\rangle\langle1|\\
  & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)+\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\left|1\right\rangle \left\langle 1\right|\\
  & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
-\overline{H_{{\rm {B}}}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+\overline{H_{B}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\\
  & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
  & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\left|1\right\rangle \left\langle 1\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\alpha_{\mathbf{k}}\\
@@ -788,7 +748,7 @@ Finally merging these expressions gives the transformed Hamiltonian:
 \color none
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+ε_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
+\overline{H} & =\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
  & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}\left|1\right\rangle \left\langle 1\right|
 \end{align}
 
@@ -804,7 +764,7 @@ Also we may write this transformed Hamiltonian as a sum of the form:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H}=\overline{H_{{\rm {S}}}}+\overline{H_{{\rm {B}}}}+\overline{H_{{\rm {I}}}}
+\overline{H}=\overline{H_{S}}+\overline{H_{B}}+\overline{H_{I}}
 \end{equation}
 
 \end_inset
@@ -831,7 +791,7 @@ We assume that the bath is at equilibrium with inverse temperature
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\rho_{{\rm {B}}} & =\frac{e^{-\beta H_{{\rm {B}}}}}{{\rm {Tr}}\left(e^{-\beta H_{{\rm {B}}}}\right)}
+\rho_{B} & =\frac{e^{-\beta H_{B}}}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}
 \end{align}
 
 \end_inset
@@ -854,8 +814,8 @@ We can show that:
 \color none
 \begin_inset Formula 
 \begin{align}
-\left\langle B_{z}\right\rangle _{H_{{\rm {B}}}} & ={\rm Tr}\left(\rho_{{\rm {B}}}B_{z}\right)\\
- & ={\rm {Tr}}\frac{\left(e^{-\beta H_{{\rm {B}}}}B_{z}\right)}{{\rm {Tr}}\left(e^{-\beta H_{{\rm {B}}}}\right)}\\
+\left\langle B_{z}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{z}\right)\\
+ & ={\rm {Tr}}\frac{\left(e^{-\beta H_{B}}B_{z}\right)}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}\\
  & =0,
 \end{align}
 
@@ -867,7 +827,7 @@ and:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{{\rm {B}}}} & ={\rm Tr}\left(\rho_{{\rm {B}}}B_{\pm}\right)\\
+\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{\pm}\right)\\
  & =\ensuremath{{\rm {exp}}}\left(-\left(1/2\right)\sum_{\mathbf{k}}\left(\alpha_{\mathbf{k}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
  & \equiv B
 \end{align}
@@ -887,12 +847,12 @@ and:
 \noun off
 \color none
 In order to (i) ensure that 
-\begin_inset Formula $\left\langle \overline{H_{{\rm {I}}}}\right\rangle _{H_{{\rm {B}}}}=0$
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{H_{B}}=0$
 \end_inset
 
  which simplifies the form of the master equation to be derived; (ii) introduce
  the bath renormalizing driving in 
-\begin_inset Formula $\overline{H_{{\rm {S}}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
  to treat it non-perturbatively in the subsequent formalism, we associate
@@ -905,16 +865,16 @@ and
 \end_inset
 
  to the interaction part of the Hamiltonian 
-\begin_inset Formula $\overline{H_{{\rm {I}}}}$
+\begin_inset Formula $\overline{H_{I}}$
 \end_inset
 
  and we subtract their expected value in order to satisfy 
-\begin_inset Formula $\left\langle \overline{H_{{\rm {I}}}}\right\rangle _{H_{{\rm {B}}}}=0$
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{H_{B}}=0$
 \end_inset
 
 .
  Furthermore we add the subtracted terms to the 
-\begin_inset Formula $\overline{H_{{\rm {S}}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
 .
@@ -928,9 +888,9 @@ and
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{{\rm {S}}}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\label{eq:barHs}\\
-\overline{H_{{\rm {I}}}} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\label{eq:barHI}\\
-H_{{\rm {B}}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}
+\overline{H_{S}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\label{eq:barHs}\\
+\overline{H_{I}} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\label{eq:barHI}\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}
 \end{align}
 
 \end_inset
@@ -1083,10 +1043,10 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{{\rm {S}}}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
+\overline{H_{S}} & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
  & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+V_{10}\left(t\right)B\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}+V_{01}\left(t\right)B\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}\\
  & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+\frac{B\sigma_{x}}{2}\left(V_{10}\left(t\right)+V_{01}\left(t\right)\right)+\frac{{\rm {i}}B\sigma_{y}}{2}\left(V_{10}\left(t\right)-V_{01}\left(t\right)\right)\label{eq:Hs1}\\
-\overline{H_{{\rm {I}}}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
+\overline{H_{I}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
  & =B_{z}\left|1\right\rangle \left\langle 1\right|+\Re\left(V_{10}\left(t\right)\right)\left(\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B_{+}-\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B+\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B_{-}-\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B\right)\\
  & +{\rm {i}}\Im\left(V_{10}\left(t\right)\right)\left(\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B_{+}-\frac{\sigma_{x}+{\rm {i}}\sigma_{y}}{2}B-\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B_{-}+\frac{\sigma_{x}-{\rm {i}}\sigma_{y}}{2}B\right)\\
  & =B_{z}\left|1\right\rangle \left\langle 1\right|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)+{\rm {i}}\Im\left(V_{10}\left(t\right)\right)\left({\rm {i}}B_{x}\sigma_{y}-{\rm {i}}B_{y}\sigma_{x}\right)\\
@@ -1125,7 +1085,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left(\ensuremath{{\rm Tr}}\left(e^{-\beta(\overline{H_{{\rm {S}}}+H_{{\rm {B}}}})}\right)\right)+\left\langle \overline{H_{{\rm {I}}}}\right\rangle _{\overline{H_{{\rm {S}}}+H_{{\rm {B}}}}}-\frac{1}{\beta}\left(??\right)+O^{?}\left(\left\langle \overline{H_{{\rm {I}}}}\right\rangle _{\overline{H_{{\rm {S}}}+H_{{\rm {B}}}}}\right).
+A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left(\ensuremath{{\rm Tr}}\left(e^{-\beta(\overline{H_{S}+H_{B}})}\right)\right)+\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}-\frac{1}{\beta}\left(??\right)+O^{?}\left(\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}\right).
 \end{equation}
 
 \end_inset
@@ -1170,7 +1130,7 @@ noindent
 \noun off
 \color none
 
-\begin_inset Formula $\left\langle \overline{H_{{\rm {I}}}}\right\rangle _{\overline{H_{{\rm {S}}}+H_{{\rm {B}}}}}=0$
+\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}=0$
 \end_inset
 
 
@@ -1195,7 +1155,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial A_{{\rm {\rm {B}}}}}{\partial f_{\mathbf{k}}}=0.\label{eq:minimization condition}
+\frac{\partial A_{{\rm B}}}{\partial f_{\mathbf{k}}}=0.\label{eq:minimization condition}
 \end{equation}
 
 \end_inset
@@ -1214,28 +1174,28 @@ noindent
 \end_inset
 
  Using this condition and given that 
-\begin_inset Formula $\left[\overline{H_{{\rm {S}}}},H_{{\rm {B}}}\right]=0$
+\begin_inset Formula $\left[\overline{H_{S}},H_{B}\right]=0$
 \end_inset
 
  then 
-\begin_inset Formula $e^{-\beta\left(\overline{H_{{\rm {S}}}}+H_{{\rm {B}}}\right)}=e^{-\beta\overline{H_{{\rm {S}}}}}e^{-\beta H_{{\rm {B}}}}$
+\begin_inset Formula $e^{-\beta\left(\overline{H_{S}}+H_{B}\right)}=e^{-\beta\overline{H_{S}}}e^{-\beta H_{B}}$
 \end_inset
 
 , furthermore 
-\begin_inset Formula $\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{{\rm {S}}}}}e^{-\beta H_{{\rm {B}}}}\right)=\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{{\rm {S}}}}}\right)\ensuremath{{\rm {Tr}}}\left(e^{-\beta H_{{\rm {B}}}}\right)$
+\begin_inset Formula $\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{S}}}e^{-\beta H_{B}}\right)=\ensuremath{{\rm {Tr}}}\left(e^{-\beta\overline{H_{S}}}\right)\ensuremath{{\rm {Tr}}}\left(e^{-\beta H_{B}}\right)$
 \end_inset
 
  from the fact that 
-\begin_inset Formula $\overline{H_{{\rm {S}}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
  and 
-\begin_inset Formula $H_{{\rm {B}}}$
+\begin_inset Formula $H_{B}$
 \end_inset
 
  relate to different Hilbert spaces.
  Given that 
-\begin_inset Formula $\frac{\partial\ensuremath{{\rm {Tr}}\left(e^{-\beta H_{{\rm {B}}}}\right)}}{\partial f_{\mathbf{k}}}=0$
+\begin_inset Formula $\frac{\partial\ensuremath{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}}{\partial f_{\mathbf{k}}}=0$
 \end_inset
 
  then it's possible to write the equation 
@@ -1248,7 +1208,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\ensuremath{{\rm \partial{Tr}}}\left(e^{-\beta\overline{H_{{\rm {S}}}}}\right)}{\partial f_{\mathbf{k}}}=0
+\frac{\ensuremath{{\rm \partial{Tr}}}\left(e^{-\beta\overline{H_{S}}}\right)}{\partial f_{\mathbf{k}}}=0
 \end{equation}
 
 \end_inset
@@ -1281,7 +1241,7 @@ f_{\mathbf{k}}=\frac{g_{\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta}{2}\
 \end_inset
 
 where 
-\begin_inset Formula $\eta=\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{{\rm {S}}}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{{\rm {S}}}}\right)}$
+\begin_inset Formula $\eta=\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}$
 \end_inset
 
  and 
@@ -1318,22 +1278,15 @@ noindent
 \end_inset
 
 , the transformed density operator is equal to:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\end_layout
 
+\begin_layout Standard
 \begin_inset Formula 
-\[
-e^{V}\rho\left(0\right)e^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\right)
-\]
+\begin{align}
+e^{V}\rho\left(0\right)e^{-V} & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\right)\\
+0 & =\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\\
+0 & =\rho\left(0\right)\label{eq: initial state transformed}
+\end{align}
 
 \end_inset
 
@@ -1341,14 +1294,6 @@ e^{V}\rho\left(0\right)e^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{align}
- & =\left|0\right\rangle \left\langle 0\right|\otimes\rho_{{\rm {B}}}\\
- & =\rho\left(0\right).
-\end{align}
-
-\end_inset
-
 We transform any operator 
 \begin_inset Formula $O$
 \end_inset
@@ -1360,7 +1305,7 @@ We transform any operator
 \begin_inset Formula 
 \begin{align}
 \tilde{O} & \equiv U^{\dagger}(t)OU(t)\\
-U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{{\rm {S}}}}\left(v\right)\right).
+U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{S}}\left(v\right)\right).
 \end{align}
 
 \end_inset
@@ -1371,8 +1316,8 @@ Therefore:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\widetilde{\overline{\rho_{{\rm {S}}}}}(t) & =U^{\dagger}(t)\overline{\rho_{{\rm {S}}}}(t)U(t),\,\text{where\ensuremath{}}\\
-\overline{\rho_{{\rm {S}}}}(t) & ={\rm Tr}_{{\rm {B}}}\left(\bar{\rho}(t)\right)
+\widetilde{\overline{\rho_{S}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t),\,\text{where\ensuremath{}}\\
+\overline{\rho_{S}}(t) & ={\rm Tr}_{B}\left(\bar{\rho}(t)\right)
 \end{align}
 
 \end_inset
@@ -1453,7 +1398,7 @@ noindent
  .
  The precedent notation allows us to write the interaction Hamiltonian in
  
-\begin_inset Formula $\overline{H_{{\rm {I}}}}$
+\begin_inset Formula $H_{I}(t)$
 \end_inset
 
  as:
@@ -1484,11 +1429,11 @@ noindent
 \end_inset
 
  Taking as reference state 
-\begin_inset Formula $\rho_{{\rm {B}}}$
+\begin_inset Formula $\rho_{B}$
 \end_inset
 
  and truncating at second order in 
-\begin_inset Formula $H_{{\rm {I}}}$
+\begin_inset Formula $H_{I}(t)$
 \end_inset
 
 , we obtain our master equation in the interaction picture:
@@ -1497,7 +1442,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\widetilde{\overline{\rho_{{\rm {S}}}}}(t)}{{\rm d}t}=-\int_{0}^{t}{\rm Tr}_{{\rm {B}}}\left[\tilde{H_{{\rm {I}}}}\left(t\right),\left[\tilde{H_{{\rm {I}}}}\left(s\right),\widetilde{\overline{\rho_{{\rm {S}}}}}(t)\rho_{{\rm {B}}}\right]\right]{\rm d}s
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t}=-\int_{0}^{t}{\rm Tr}_{B}\left[\tilde{H_{I}}\left(t\right),\left[\tilde{H_{I}}\left(s\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s
 \end{equation}
 
 \end_inset
@@ -1516,7 +1461,7 @@ noindent
 \end_inset
 
  From the interaction picture applied on 
-\begin_inset Formula $H_{{\rm {I}}}$
+\begin_inset Formula $H_{{\rm I}}$
 \end_inset
 
  we find:
@@ -1525,7 +1470,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\tilde{H_{{\rm {I}}}}\left(t\right)=U^{\dagger}\left(t\right)H_{{\rm {I}}}\left(t\right)U\left(t\right)
+\tilde{H_{I}}\left(t\right)=U^{\dagger}\left(t\right)H_{I}\left(t\right)U\left(t\right)
 \end{equation}
 
 \end_inset
@@ -1546,7 +1491,7 @@ noindent
 
 \end_inset
 
- In this case the Schrödinger and the interaction picture coincide at 
+
 \begin_inset Formula $t=0$
 \end_inset
 
@@ -1555,7 +1500,7 @@ noindent
 \end_inset
 
  because in general 
-\begin_inset Formula $\overline{H_{{\rm {S}}}}\left(t\right)$
+\begin_inset Formula $\overline{H_{S}}\left(t\right)$
 \end_inset
 
  doesn't conmute with itself at two different times.
@@ -1565,7 +1510,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\tilde{H_{I}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\tilde{A_{i}}\otimes\tilde{B_{i}}\left(t\right)\right)\\
+\tilde{H_{I}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\tilde{A_{i}}\otimes\tilde{B_{i}}\left(t\right)\right)\label{eq:Hi exp}\\
 \tilde{A_{i}}(t) & =U_{S}^{\dagger}\left(t\right)A_{i}U_{S}\left(t\right)\\
 \tilde{B_{i}}\left(t\right) & ={\rm e}^{{\rm i}H_{B}t}B_{i}{\rm \left(t\right)e}^{{\rm -i}H_{B}t}
 \end{align}
@@ -1592,11 +1537,11 @@ noindent
 \begin_inset space ~
 \end_inset
 
-Using the expression for 
-\begin_inset Formula $\overline{H_{I}}$
+Using the expression 
+\begin_inset Formula $\eqref{eq:Hi exp}$
 \end_inset
 
- and returning to the Schrödinger picture, we then obtain:
+ we have
 \end_layout
 
 \begin_layout Standard
@@ -1663,8 +1608,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{ij}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{i}}\left(t\right)\tilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function}\\
- & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{i}}\left(\tau\right)\tilde{B_{j}}\left(0\right)\rho_{B}\right)\label{eq:correlation function 1}
+\Lambda_{ij}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{i}}\left(t\right)\tilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function}\\
+ & ={\rm Tr}_{B}\left(\tilde{B_{i}}\left(\tau\right)\tilde{B_{j}}\left(0\right)\rho_{B}\right)\label{eq:correlation function 1}
 \end{align}
 
 \end_inset
@@ -1692,9 +1637,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\label{eq:A11 general master}\\
+\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\label{eq:A11 general master}\\
  & =\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
-\Lambda_{22}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\\
+\Lambda_{22}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{2}}\left(\tau\right)\tilde{B_{2}}\left(0\right)\rho_{B}\right)\\
  & =\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\\
 \Lambda_{33}\left(\tau\right) & =\int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-F\left(\omega\right)\right)^{2}G_{+}\left(\tau\right)\\
 \Lambda_{32}\left(\tau\right) & =B\left(\tau\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)}{\omega}F\left(\omega\right)\left(1-F\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right)\\
@@ -1797,7 +1742,7 @@ noindent
 \end_inset
 
  The eigenvalues of the Hamiltonian 
-\begin_inset Formula $H_{S}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
  are given by the solution of the following algebraic equation: 
@@ -1927,7 +1872,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\tilde{A_{j}}\left(t-\tau,t\right) & =U_{{\rm {S}}}\left(t-\tau\right)U_{{\rm {S}}}^{\dagger}\left(t\right)A_{j}U_{{\rm {S}}}\left(t\right)U_{{\rm {S}}}^{\dagger}\left(t-\tau\right)\\
+\tilde{A_{j}}\left(t-\tau,t\right) & =U_{S}\left(t-\tau\right)U_{S}^{\dagger}\left(t\right)A_{j}U_{S}\left(t\right)U_{S}^{\dagger}\left(t-\tau\right)\\
  & =\sum_{\zeta,\zeta'}e^{{\rm -{i}\zeta\tau+{i}t\left(\zeta-\zeta'\right)}}A_{i}\left(\zeta,\zeta'\right)
 \end{align}
 
@@ -1947,11 +1892,11 @@ where
 
  belongs to the set of the differences of the eigenvalues of the Hamiltonian
  
-\begin_inset Formula $H_{{\rm {S}}}\left(t-\tau\right)$
+\begin_inset Formula $H_{S}\left(t-\tau\right)$
 \end_inset
 
  and 
-\begin_inset Formula $H_{{\rm {S}}}\left(t\right)$
+\begin_inset Formula $H_{S}\left(t\right)$
 \end_inset
 
  respectively.
@@ -2024,7 +1969,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{{\rm i}\overline{H_{{\rm {S}}}}\tau} & =e^{{\rm i}\left(\lambda_{+}\left|+\right\rangle \left\langle +\right|+\lambda_{-}\left|-\right\rangle \left\langle -\right|\right)\tau}\\
+e^{{\rm i}\overline{H_{S}}\tau} & =e^{{\rm i}\left(\lambda_{+}\left|+\right\rangle \left\langle +\right|+\lambda_{-}\left|-\right\rangle \left\langle -\right|\right)\tau}\\
  & =e^{{\rm i}\lambda_{+}\left|+\right\rangle \left\langle +\right|\tau}e^{{\rm i}\lambda_{-}\left|-\right\rangle \left\langle -\right|\tau}\\
  & =\left(\left|-\right\rangle \left\langle -\right|+e^{{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|\right)\left(\left|+\right\rangle \left\langle +\right|+e^{{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|\right)\label{expansion}\\
  & =e^{{\rm i}\lambda_{+}\tau}\left|+\right\rangle \left\langle +\right|+e^{{\rm i}\lambda_{-}\tau}\left|-\right\rangle \left\langle -\right|
@@ -2145,21 +2090,12 @@ noindent
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\frac{{\rm d}\overline{\rho_{{\rm {S}}}}(t)}{{\rm d}t} & =-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\overline{\rho_{{\rm {S}}}}(t)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)-\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]\label{eq:mastereq1}\\
- & -\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)+\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]\label{eq:mastereq2}
-\end{align}
-
-\end_inset
-
 
 \size scriptsize
 \color black
-
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho}_{{\rm {S}}}}{{\rm d}t}=-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\overline{\rho}_{{\rm {S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)-\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{{\rm {S}}}\left(t\right)+\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]
 \end{equation}
 
 \end_inset
@@ -2339,9 +2275,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{{\rm {S}}}} & =\left(\delta+R\right)\left|1\right\rangle \left\langle 1\right|+\frac{\Omega_{r}}{2}\sigma_{x}\label{eq:Hs 2011 Hamiltonian}\\
-\overline{H_{{\rm {I}}}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+\frac{\Omega}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)\\
-H_{{\rm {B}}} & =\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
+\overline{H_{S}} & =\left(\delta+R\right)\left|1\right\rangle \left\langle 1\right|+\frac{\Omega_{r}}{2}\sigma_{x}\label{eq:Hs 2011 Hamiltonian}\\
+\overline{H_{I}} & =B_{z}\left|1\right\rangle \left\langle 1\right|+\frac{\Omega}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)\\
+H_{B} & =\sum_{k}\omega_{k}b_{k}^{\dagger}b_{k}
 \end{align}
 
 \end_inset
@@ -2367,19 +2303,47 @@ noindent
 \end_inset
 
  differs from the transformed Hamiltonian 
-\begin_inset Formula $H_{{\rm {\rm {S}}}}$
+\begin_inset Formula $H_{S}$
 \end_inset
 
  of the reference written like 
-\begin_inset Formula $H_{{\rm {\rm {S}}}}=\frac{R}{2}\mathbb{I}+\frac{\epsilon}{2}\sigma_{z}+\frac{\Omega_{r}}{2}\sigma_{x}$
+\begin_inset Formula $H_{S}=\frac{R}{2}\mathbb{I}+\frac{\epsilon}{2}\sigma_{z}+\frac{\Omega_{r}}{2}\sigma_{x}$
 \end_inset
 
  by a term proportional to the identity, this can be seen in the following
- way 
-\begin_inset Formula $\left(\delta+R\right)\left|1\right\rangle \left\langle 1\right|-\frac{\delta}{2}\mathbb{I}+\frac{\Omega_{r}}{2}\sigma_{x}=\frac{R}{2}\mathbb{I}+\frac{\varepsilon}{2}\sigma_{z}+\frac{\Omega_{r}}{2}\sigma_{x}$
+ way taking 
+\begin_inset Formula $\epsilon=\delta+R$
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left(\delta+R\right)\left|1\right\rangle \left\langle 1\right|-\frac{\delta}{2}\mathbb{I} & =\left(\frac{\delta}{2}+R\right)\left|1\right\rangle \left\langle 1\right|-\frac{\delta}{2}\left|0\right\rangle \left\langle 0\right|\label{eq:equivalence hamilt}\\
+ & =\frac{R}{2}\mathbb{I}+\frac{\delta+R}{2}\sigma_{z}\\
+ & =\frac{R}{2}\mathbb{I}+\frac{\epsilon}{2}\sigma_{z}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
  In this Hamiltonian we can write 
 \begin_inset Formula $A_{i}=\sigma_{x}$
 \end_inset
@@ -2395,7 +2359,7 @@ noindent
 .
  In order to find the decomposition matrices of the Fourier decomposition
  let's obtain the eigenvalues and eigenvectors of the matrix 
-\begin_inset Formula $H_{{\rm {\rm {S}}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
 .
@@ -2404,13 +2368,13 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\lambda_{+} & =\frac{\varepsilon+\eta}{2}\\
-\lambda_{-} & =\frac{\varepsilon-\eta}{2}\\
-\left|-\right\rangle  & =\frac{1}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}-\Omega_{r}\\
-\varepsilon+\eta
-\end{pmatrix}\\
-\left|+\right\rangle  & =\frac{1}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}\varepsilon+\eta\\
+\lambda_{+} & =\frac{\epsilon+\eta}{2}\\
+\lambda_{-} & =\frac{\epsilon-\eta}{2}\\
+\left|+\right\rangle  & =\frac{1}{\sqrt{\left(\epsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}\epsilon+\eta\\
 \Omega_{r}
+\end{pmatrix}\\
+\left|-\right\rangle  & =\frac{1}{\sqrt{\left(\epsilon+\eta\right)^{2}+\Omega_{r}^{2}}}\begin{pmatrix}-\Omega_{r}\\
+\epsilon+\eta
 \end{pmatrix}
 \end{align}
 
@@ -2450,11 +2414,11 @@ noindent
 \end_inset
 
  with
-\begin_inset Formula $\sin\left(\theta\right)=\frac{\Omega_{r}}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
+\begin_inset Formula $\sin\left(\theta\right)=\frac{\Omega_{r}}{\sqrt{\left(\epsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
 \end_inset
 
  and 
-\begin_inset Formula $\cos\left(\theta\right)=\frac{\varepsilon+\eta}{\sqrt{\left(\varepsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
+\begin_inset Formula $\cos\left(\theta\right)=\frac{\epsilon+\eta}{\sqrt{\left(\epsilon+\eta\right)^{2}+\Omega_{r}^{2}}}$
 \end_inset
 
 :
@@ -2670,7 +2634,7 @@ noindent
 \noun off
 \color none
 
-\begin_inset Formula $H_{{\rm {S}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
 
@@ -2765,16 +2729,16 @@ noindent
 \end_inset
 
  that 
-\begin_inset Formula $\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)=-\left(\frac{\Omega B}{2}\right)^{2}=-\frac{\Omega_{r}^{2}}{4}$
+\begin_inset Formula $\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)=-\frac{\Omega_{r}^{2}}{4}$
 \end_inset
 
 , 
-\begin_inset Formula ${\rm {Tr}}\left(\overline{H_{S}}\right)=\delta+R=\epsilon$
+\begin_inset Formula ${\rm {Tr}}\left(\overline{H_{S}}\right)=\epsilon$
 \end_inset
 
 .
  Now 
-\begin_inset Formula $\eta=\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}=\sqrt{\epsilon^{2}+\Omega_{r}^{2}}$
+\begin_inset Formula $\eta=\sqrt{\epsilon^{2}+\Omega_{r}^{2}}$
 \end_inset
 
  and using the equation 
@@ -2845,7 +2809,7 @@ noindent
 \noun off
 \color none
 
-\begin_inset Formula $U_{{\rm {S}}}\left(t\right)U_{{\rm {S}}}^{\dagger}\left(t-\tau\right)=U_{{\rm {S}}}\left(\tau\right)$
+\begin_inset Formula $U_{S}\left(t\right)U_{S}^{\dagger}\left(t-\tau\right)=U_{S}\left(\tau\right)$
 \end_inset
 
 .
@@ -2866,15 +2830,28 @@ From the equation
 \end_inset
 
  and using the fact that 
-\begin_inset Formula $\tilde{A_{j}}\left(t-\tau,t\right)=U_{{\rm {S}}}\left(\tau\right)A_{j}U_{{\rm {S}}}\left(-\tau\right)=\sum_{\zeta}e^{{i}\zeta\tau}A_{i}\left(-\zeta\right)=\sum_{\zeta}e^{-{i}\zeta\tau}A_{i}\left(\zeta\right)$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{A_{j}}\left(t-\tau,t\right) & =U_{S}\left(\tau\right)A_{j}U_{S}\left(-\tau\right)\label{eq:operador trans}\\
+ & =\sum_{\zeta}e^{{i}\zeta\tau}A_{i}\left(-\zeta\right)\\
+ & =\sum_{\zeta}e^{-{i}\zeta\tau}A_{i}\left(\zeta\right)
+\end{align}
+
 \end_inset
 
- because the matrices 
-\begin_inset Formula $U_{{\rm {S}}}\left(t\right)$
+
+\end_layout
+
+\begin_layout Standard
+because the matrices 
+\begin_inset Formula $U_{S}\left(t\right)$
 \end_inset
 
  and 
-\begin_inset Formula $U_{{\rm {S}}}\left(t-\tau\right)$
+\begin_inset Formula $U_{S}\left(t-\tau\right)$
 \end_inset
 
  commute from the fact that 
@@ -2892,8 +2869,8 @@ From the equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{{\rm {S}}}}(t)}{{\rm d}t} & =-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\overline{\rho_{{\rm {S}}}}(t)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta}\gamma_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{{\rm {S}}}\left(t\right)-\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]\label{eq:master equation 2011}\\
- & -\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{{\rm {S}}}\left(t\right)+\overline{\rho}_{{\rm {S}}}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]\label{eq:master equation 2011 1}
+\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t} & =-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}(t)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta}\gamma_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]\label{eq:master equation 2011}\\
+ & -\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,t\right)\left[A_{i},A_{j}\left(\zeta\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta\right)\right]\label{eq:master equation 2011 1}
 \end{align}
 
 \end_inset
@@ -2924,7 +2901,7 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-K_{ij}\left(\zeta,t\right)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\zeta\tau}{\rm {d}\tau}
+K_{ij}\left(\zeta,t\right)=\int_{0}^{t}\Lambda'_{ij}\left(\tau\right)e^{{\rm i}\zeta\tau}{\rm {d}\tau}
 \end{equation}
 
 \end_inset
@@ -3028,11 +3005,11 @@ noindent
 \end_inset
 
  we can say that 
-\begin_inset Formula $\delta=ε_{1}\left(t\right)$
+\begin_inset Formula $\delta=\varepsilon_{1}\left(t\right)$
 \end_inset
 
 , 
-\begin_inset Formula $ε_{0}\left(t\right)=0$
+\begin_inset Formula $\varepsilon_{0}\left(t\right)=0$
 \end_inset
 
 , 
@@ -3055,8 +3032,8 @@ noindent
  we obtain the following transformed Hamiltonians:
 \begin_inset Formula 
 \begin{align}
-H_{{\rm {\rm {S}}}} & =\left(\delta+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\frac{B\sigma_{x}}{2}\Omega(t)\\
-\overline{H_{{\rm {\rm {I}}}}} & =\frac{\Omega(t)}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)\label{eq:Hi polaron}
+\overline{H_{S}} & =\left(\delta+R_{1}\right)\left|1\right\rangle \left\langle 1\right|+\frac{B\sigma_{x}}{2}\Omega(t)\\
+\overline{H_{{\rm I}}} & =\frac{\Omega(t)}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)\label{eq:Hi polaron}
 \end{align}
 
 \end_inset
@@ -3109,7 +3086,7 @@ noindent
 \begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}^{-1}|g_{\mathbf{k}}|^{2}\right)=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}|\alpha_{\mathbf{k}}|^{2}\right)$
 \end_inset
 
- as expected, so 
+ as expected, take 
 \begin_inset Formula $\delta+R_{1}=\delta'$
 \end_inset
 
@@ -3153,7 +3130,7 @@ If
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}G_{+}\left(\tau\right){\rm {d}\omega}
+\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}G_{+}\left(\tau\right){\rm {d}\omega}\label{eq:phonon propagator}
 \end{equation}
 
 \end_inset
@@ -3178,7 +3155,11 @@ noindent
 \begin_inset Formula $G_{+}\left(\tau\right)=\coth\left(\frac{\beta\omega}{2}\right)\cos\left(\omega\tau\right)-i\sin\left(\omega\tau\right)$
 \end_inset
 
-so the phonon propagator is given by:
+so 
+\begin_inset Formula $\eqref{eq:phonon propagator}$
+\end_inset
+
+ can be written as:
 \end_layout
 
 \begin_layout Standard
@@ -3256,7 +3237,7 @@ noindent
 
  help us to reproduce the hamiltonian of the reference [2].
  Then 
-\begin_inset Formula $H_{{\rm {S}}}$
+\begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
 is equal to:
@@ -3265,7 +3246,7 @@ is equal to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H_{{\rm {\rm {S}}}}}=\frac{\delta'}{2}\sigma_{z}+\frac{B\sigma_{x}}{2}\Omega(t)
+\overline{H_{S}}=\frac{\delta'}{2}\sigma_{z}+\frac{B\sigma_{x}}{2}\Omega(t)
 \end{equation}
 
 \end_inset
@@ -3322,9 +3303,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{{\rm {\rm {B}}}}\right)\\
+\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\\
  & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\label{eq:A11(tau)}\\
-\Lambda{}_{22}\left(\tau\right) & ={\rm Tr}_{{\rm {\rm {B}}}}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{{\rm {\rm {B}}}}\right)\\
+\Lambda{}_{22}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{2}}\left(\tau\right)\tilde{B_{2}}\left(0\right)\rho_{B}\right)\\
  & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\label{eq:A22(tau)}
 \end{align}
 
@@ -3377,8 +3358,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{{\rm {\rm {S}}}}}(t)}{{\rm d}t} & =-{\rm i}\left[\frac{\delta'}{2}\sigma_{z}+\frac{\Omega_{r}(t)\sigma_{x}}{2},\rho_{{\rm {\rm {S}}}}\left(t\right)\right]-\sum_{i=1}^{2}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(\tau\right)\left[A_{i},\tilde{A_{i}}\left(t-\tau,t\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]\right.\\
- & \left.+C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(-\tau\right)\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\tilde{A_{i}}\left(t-\tau,t\right),A_{i}\right]\right)\label{eq:master equation polaron d}
+\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t} & =-{\rm i}\left[\frac{\delta'}{2}\sigma_{z}+\frac{\Omega_{r}(t)\sigma_{x}}{2},\rho_{S}\left(t\right)\right]-\sum_{i=1}^{2}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(\tau\right)\left[A_{i},\tilde{A_{i}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\right.\\
+ & \left.+C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(-\tau\right)\left[\rho_{S}\left(t\right)\tilde{A_{i}}\left(t-\tau,t\right),A_{i}\right]\right)\label{eq:master equation polaron d}
 \end{align}
 
 \end_inset
@@ -3425,8 +3406,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{{\rm {\rm {S}}}}}(t)}{{\rm d}t} & =-\frac{{\rm i}}{2}\left[\delta'\sigma_{z}+\Omega_{r}(t)\sigma_{x},\rho_{{\rm {\rm {S}}}}\left(t\right)\right]-\frac{\Omega(t)}{4}\int_{0}^{t}{\rm d}\tau\Omega\left(t-\tau\right)\left(\left[\sigma_{x},\tilde{\sigma_{x}}\left(t-\tau,t\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]\Lambda_{x}\left(\tau\right)\right.\\
- & \left.+\left[\sigma_{y},\tilde{\sigma_{y}}\left(t-\tau,t\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]\Lambda_{y}\left(\tau\right)+\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\tilde{\sigma_{x}}\left(t-\tau,t\right),\sigma_{x}\right]\Lambda_{x}\left(\tau\right)+\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\tilde{\sigma_{y}}\left(t-\tau,t\right),\sigma_{y}\right]\Lambda_{y}\left(\tau\right)\right)\label{eq:master equation polaron d-1}
+\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t} & =-\frac{{\rm i}}{2}\left[\delta'\sigma_{z}+\Omega_{r}(t)\sigma_{x},\rho_{S}\left(t\right)\right]-\frac{\Omega(t)}{4}\int_{0}^{t}{\rm d}\tau\Omega\left(t-\tau\right)\left(\left[\sigma_{x},\tilde{\sigma_{x}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\Lambda_{x}\left(\tau\right)\right.\\
+ & \left.+\left[\sigma_{y},\tilde{\sigma_{y}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\Lambda_{y}\left(\tau\right)+\left[\rho_{S}\left(t\right)\tilde{\sigma_{x}}\left(t-\tau,t\right),\sigma_{x}\right]\Lambda_{x}\left(\tau\right)+\left[\rho_{S}\left(t\right)\tilde{\sigma_{y}}\left(t-\tau,t\right),\sigma_{y}\right]\Lambda_{y}\left(\tau\right)\right)\label{eq:master equation polaron d-1}
 \end{align}
 
 \end_inset
@@ -3448,7 +3429,7 @@ noindent
 \end_inset
 
  As we can see 
-\begin_inset Formula $\left[A_{j},\tilde{A_{i}}\left(t-\tau,t\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]^{\dagger}=\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\tilde{A_{i}}\left(t-\tau,t\right),A_{j}\right]$
+\begin_inset Formula $\left[A_{j},\tilde{A_{i}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]^{\dagger}=\left[\rho_{S}\left(t\right)\tilde{A_{i}}\left(t-\tau,t\right),A_{j}\right]$
 \end_inset
 
 , 
@@ -3560,8 +3541,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\rho_{{\rm {\rm {S}}}}}{{\rm d}t} & =-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\rho_{{\rm {\rm {S}}}}\left(t\right)),\rho_{{\rm {\rm {S}}}}\left(t\right)\right]-\frac{1}{2}\sum_{\zeta}\gamma_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{{\rm {\rm {S}}}}\left(t\right)-\rho_{{\rm {\rm {S}}}}\left(t\right)A_{3}^{\dagger}\left(\zeta\right)\right]\label{eq:weak coupling eq 1}\\
- & \left.-\sum_{\zeta}S_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{{\rm {\rm {S}}}}\left(t\right)+\rho_{{\rm {\rm {S}}}}\left(t\right)A_{3}^{\dagger}\left(\zeta\right)\right]\right)\label{eq:master equation weakcoupling2}
+\frac{{\rm d}\rho_{S}}{{\rm d}t} & =-{\rm i}\left[H_{S}\left(t\right),\rho_{S}\left(t\right)),\rho_{S}\left(t\right)\right]-\frac{1}{2}\sum_{\zeta}\gamma_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{S}\left(t\right)-\rho_{S}\left(t\right)A_{3}^{\dagger}\left(\zeta\right)\right]\label{eq:weak coupling eq 1}\\
+ & \left.-\sum_{\zeta}S_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{S}\left(t\right)+\rho_{S}\left(t\right)A_{3}^{\dagger}\left(\zeta\right)\right]\right)\label{eq:master equation weakcoupling2}
 \end{align}
 
 \end_inset
@@ -3627,10 +3608,9 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align}
-\frac{{\rm d}\rho_{{\rm {\rm {S}}}}}{{\rm d}t} & =-{\rm i}\left[H_{{\rm {S}}}\left(t\right),\rho_{{\rm {\rm {S}}}}\left(t\right))\right]-\sum_{\zeta}\left(K_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]\right.\\
- & \left.+K_{33}^{*}\left(\zeta,t\right)\left[\rho_{{\rm {\rm {S}}}}\left(t\right)A_{3}\left(\zeta\right),A_{3}\right]\right)\label{eq:master equation weakcoupling}
-\end{align}
+\begin{equation}
+\frac{{\rm d}\rho_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\rho_{S}\left(t\right))\right]-\sum_{\zeta}\left(K_{33}\left(\zeta,t\right)\left[A_{3},A_{3}\left(\zeta\right)\rho_{S}\left(t\right)\right]+K_{33}^{*}\left(\zeta,t\right)\left[\rho_{S}\left(t\right)A_{3}\left(\zeta\right),A_{3}\right]\right)
+\end{equation}
 
 \end_inset
 
@@ -3667,7 +3647,7 @@ noindent
 \end_inset
 
 , we have to remember that 
-\begin_inset Formula $H_{{\rm {S}}}=\frac{\Omega\left(t\right)}{2}\left(\left|1\right\rangle \left\langle 0\right|+\left|0\right\rangle \left\langle 1\right|\right)$
+\begin_inset Formula $H_{S}=\frac{\Omega\left(t\right)}{2}\left(\left|1\right\rangle \left\langle 0\right|+\left|0\right\rangle \left\langle 1\right|\right)$
 \end_inset
 
 , this Hamiltonian have the following eigenvalues and eigenvectors:
@@ -3706,19 +3686,19 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle +\right|\frac{1+\sigma_{z}}{2}\left|+\right\rangle = & \frac{1}{2}\begin{pmatrix}1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
+\left\langle +\right|\frac{1+\sigma_{z}}{2}\left|+\right\rangle  & =\frac{1}{2}\begin{pmatrix}1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
 0 & 0
 \end{pmatrix}\begin{pmatrix}1\\
 1
 \end{pmatrix}\\
  & =\frac{1}{2}\\
-\left\langle -\right|\frac{1+\sigma_{z}}{2}\left|-\right\rangle = & \frac{1}{2}\begin{pmatrix}-1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
+\left\langle -\right|\frac{1+\sigma_{z}}{2}\left|-\right\rangle  & =\frac{1}{2}\begin{pmatrix}-1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
 0 & 0
 \end{pmatrix}\begin{pmatrix}-1\\
 1
 \end{pmatrix}\\
  & ={\rm \frac{1}{2}}\\
-\left\langle -\right|\frac{1+\sigma_{z}}{2}\left|+\right\rangle = & \frac{1}{2}\begin{pmatrix}-1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
+\left\langle -\right|\frac{1+\sigma_{z}}{2}\left|+\right\rangle  & =\frac{1}{2}\begin{pmatrix}-1 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
 0 & 0
 \end{pmatrix}\begin{pmatrix}1\\
 1
@@ -3750,11 +3730,11 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-A_{3}\left(0\right)= & \frac{1}{2}\left|+\right\rangle \left\langle +\right|+\frac{1}{2}\left|-\right\rangle \left\langle -\right|\\
+A_{3}\left(0\right) & =\frac{1}{2}\left|+\right\rangle \left\langle +\right|+\frac{1}{2}\left|-\right\rangle \left\langle -\right|\\
  & =\frac{\mathbb{I}}{2}\\
-A_{3}\left(\eta\right)= & -\frac{1}{2}{\rm \left|-\right\rangle \left\langle +\right|}\\
- & ={\rm \frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)}\\
-A_{3}\left(-\eta\right)= & -\frac{1}{2}{\rm \left|+\right\rangle \left\langle -\right|}\\
+A_{3}\left(\eta\right) & =-\frac{1}{2}{\rm \left|-\right\rangle \left\langle +\right|}\\
+ & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)}}\\
+A_{3}\left(-\eta\right) & =-\frac{1}{2}{\rm \left|+\right\rangle \left\langle -\right|}\\
  & =\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)
 \end{align}
 
@@ -3783,9 +3763,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\rho_{{\rm S}}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{{\rm {\rm {S}}}}\left(t\right))\right]-K_{33}\left(\tilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]\label{eq:master re}\\
- & -K_{33}\left(\tilde{-\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{{\rm {\rm {S}}}}\left(t\right)\right]-K_{33}^{*}\left(\tilde{\Omega},t\right)\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]\\
- & -K_{33}^{*}\left(\tilde{-\Omega},t\right)\left[\rho_{{\rm {\rm {S}}}}\left(t\right)\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]
+\frac{{\rm d}\rho_{S}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-K_{33}\left(\tilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]-K_{33}\left(\tilde{-\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\\
+ & -K_{33}^{*}\left(\tilde{\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]-K_{33}^{*}\left(\tilde{-\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]
 \end{align}
 
 \end_inset
@@ -3820,7 +3799,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-K_{33}\left(\tilde{\Omega}\right)= & \int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm i}\tilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
+K_{33}\left(\tilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm i}\tilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)e^{{\rm i}\tilde{\Omega}\tau}\left(\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}\tau\omega}+n\left(\omega\right)e^{{\rm i}\tau\omega}\right){\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)e^{{\rm i}\tilde{\Omega}\tau}\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}\tau\omega}{\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)\left(n\left(\omega\right)+1\right){\rm e}^{{\rm i}\tilde{\Omega}\tau-{\rm i}\tau\omega}{\rm d}\tau{\rm d}\omega\\
@@ -3836,7 +3815,7 @@ K_{33}\left(\tilde{\Omega}\right)= & \int_{0}^{\infty}\int_{0}^{\infty}J\left(\o
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-K_{33}\left(-\tilde{\Omega}\right)= & \int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm -i}\tilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
+K_{33}\left(-\tilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm -i}\tilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)e^{-{\rm i}\tilde{\Omega}\tau}\left(\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}\tau\omega}+n\left(\omega\right)e^{{\rm i}\tau\omega}\right){\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)e^{\text{.-}{\rm i}\tilde{\Omega}\tau}n\left(\omega\right){\rm e}^{{\rm i}\tau\omega}{\rm d}\tau{\rm d}\omega\\
  & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)n\left(\omega\right){\rm e}^{{\rm -i}\tilde{\Omega}\tau+{\rm i}\tau\omega}{\rm d}\tau{\rm d}\omega\\
@@ -3863,7 +3842,7 @@ noindent
 \end_inset
 
  Here we have used 
-\begin_inset Formula $\int_{0}^{\infty}{\rm d}s\:e^{\pm i\varepsilon s}=\pi\delta\left(\varepsilon\right)\pm{\rm i}\frac{V.P.}{\epsilon}$
+\begin_inset Formula $\int_{0}^{\infty}{\rm d}s\:e^{\pm i\varepsilon s}=\pi\delta\left(\varepsilon\right)\pm{\rm i}\frac{V.P.}{\varepsilon}$
 \end_inset
 
 , where 
@@ -3896,9 +3875,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\rho_{{\rm S}}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{{\rm {\rm {S}}}}\left(t\right))\right]-\label{master weak}\\
- & -\frac{\pi}{8}J\left(\tilde{\Omega}\right)\left(\left(n\left(\tilde{\Omega}\right)+1\right)\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{{\rm {\rm {V}}}}\left(t\right)\right]+n\left(\tilde{\Omega}\right)\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{{\rm {\rm {V}}}}\left(t\right)\right]\right)\label{Master weak final}\\
- & -\frac{\pi}{8}J\left(\tilde{\Omega}\right)\left(\left(n\left(\tilde{\Omega}\right)+1\right)\left[\rho_{{\rm {\rm {V}}}}\left(t\right)\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\sigma_{z}\right]+n\left(\tilde{\Omega}\right)\left[\rho_{{\rm {\rm {V}}}}\left(t\right)\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\sigma_{z}\right]\right)
+\frac{{\rm d}\rho_{S}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-\frac{\pi}{8}J\left(\tilde{\Omega}\right)\left(\left(n\left(\tilde{\Omega}\right)+1\right)\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]+n\left(\tilde{\Omega}\right)\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\right)\\
+ & -\frac{\pi}{8}J\left(\tilde{\Omega}\right)\left(\left(n\left(\tilde{\Omega}\right)+1\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\sigma_{z}\right]+n\left(\tilde{\Omega}\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\sigma_{z}\right]\right)
 \end{align}
 
 \end_inset
@@ -3925,6 +3903,19 @@ noindent
 
 , so we have proved that our general master equation allows to reproduce
  the results of the weak-coupling time-dependent.
+ Now the master equation in the evolution time is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}(t)}{{\rm d}t} & =-{\rm i\frac{\Omega\left(t\right)}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-\frac{\pi}{8}J\left(\Omega\left(t\right)\right)\left(\left(n\left(\Omega\left(t\right)\right)+1\right)\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]+n\left(\Omega\left(t\right)\right)\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\right)\\
+ & -\frac{\pi}{8}J\left(\Omega\left(t\right)\right)\left(\left(n\left(\Omega\left(t\right)\right)+1\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\sigma_{z}\right]+n\left(\Omega\left(t\right)\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\sigma_{z}\right]\right)
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
