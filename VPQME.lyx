@@ -1308,7 +1308,7 @@ We transform any operator
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\tilde{O} & \equiv U^{\dagger}(t)OU(t)\\
+\widetilde{O} & \equiv U^{\dagger}(t)OU(t)\\
 U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{S}}\left(v\right)\right).
 \end{align}
 
