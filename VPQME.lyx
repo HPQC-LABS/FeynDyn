@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -867,7 +865,7 @@ In order to (i) ensure that
 \end_inset
 
 and 
-\begin_inset Formula $B_{-}\sigma_{\text{-}}$
+\begin_inset Formula $B_{-}\sigma_{-}$
 \end_inset
 
  to the interaction part of the Hamiltonian 
@@ -981,9 +979,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-B_{x} & =\frac{B_{+}+B_{\text{-}}-2B}{2}\\
-B_{y} & =\frac{B_{\text{-}}-B_{\text{+}}}{2{\rm {i}}}\\
-B_{z} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq: Bz}
+B_{x} & =B_{x}^{\dagger}=\frac{B_{+}+B_{-}-2B}{2}\\
+B_{y} & =B_{y}^{\dagger}=\frac{B_{-}-B_{+}}{2{\rm {i}}}\\
+B_{z} & =B_{z}^{\dagger}=\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq: Bz}
 \end{align}
 
 \end_inset
@@ -1289,7 +1287,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{V}\rho\left(0\right)e^{-V} & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\prod_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\right)\\
+e^{V}\rho\left(0\right)e^{-V} & =\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{-}\right)\\
 0 & =\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\\
 0 & =\rho\left(0\right)\label{eq: initial state transformed}
 \end{align}
