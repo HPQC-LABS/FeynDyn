@@ -885,16 +885,6 @@ We can show using the coherence representation that:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\begin{pmatrix}0 & 0 & 0 & \cdots & 0 & \cdots\\
-\sqrt{1} & 0 & 0 & \dots & 0 & \cdots\\
-0 & \sqrt{2} & 0 & \cdots & 0 & \cdots\\
-0 & 0 & \sqrt{3} & \cdots & 0 & \cdots\\
-\vdots & \vdots & \vdots & \ddots & \vdots & \cdots\\
-0 & 0 & 0 & \cdots & \sqrt{n} & \cdots\\
-\vdots & \vdots & \vdots & \vdots & \vdots & \vdots
-\end{pmatrix}$
-\end_inset
-
 
 \end_layout
 
