@@ -157,6 +157,98 @@ Variational Transformation
 \end_layout
 
 \begin_layout Standard
+We define the operator: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V=\left|1\right\rangle \left\langle 1\right|\left(\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator 0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ At first let's obtain 
+\begin_inset Formula $e^{V}$
+\end_inset
+
+ under the transformation 
+\begin_inset Formula $\eqref{eq: Tranformation operator 0}$
+\end_inset
+
+, consider 
+\begin_inset Formula $\varphi=\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{V} & =e^{\left|1\right\rangle \left\langle 1\right|\varphi}\\
+ & =\mathbb{I}+\left|1\right\rangle \left\langle 1\right|\varphi+\frac{\left(\left|1\right\rangle \left\langle 1\right|\varphi\right)^{2}}{2!}+...\\
+ & =\mathbb{I}+\left|1\right\rangle \left\langle 1\right|\varphi+\frac{\left|1\right\rangle \left\langle 1\right|\varphi^{2}}{2!}+...\\
+ & =\mathbb{I}-\left|1\right\rangle \left\langle 1\right|+\left|1\right\rangle \left\langle 1\right|\left(\mathbb{I}+\varphi+\frac{\varphi^{2}}{2!}+...\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|e^{\varphi}\\
+ & =\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|B_{+}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given that 
+\begin_inset Formula $\left[b_{\mathbf{k^{'}}}^{\dagger}-b_{\mathbf{k^{'}}},b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right]=0$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{k^{'}}\neq\mathbf{k}$
+\end_inset
+
+ then we can proof using the Zassenhaus formula and defining 
+\begin_inset Formula $D\left(\pm\alpha_{\mathbf{k}}\right)=e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}$
+\end_inset
+
+ in the same way than 
+\begin_inset Formula $\eqref{eq:displaoper}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{\sum_{\mathbf{k}}\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)} & =\prod_{\mathbf{k}}e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\label{eq:B+0}\\
+ & =\prod_{\mathbf{k}}D\left(\pm\alpha_{\mathbf{k}}\right)\\
+ & =B_{\pm}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 We consider the following canonical transformation
 \end_layout
 
@@ -462,26 +554,15 @@ We therefore have the following relationships:
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \begin_inset Formula 
 \begin{align}
 \overline{\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|} & =\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|\label{eq:transformation e1(t)|1><1|}\\
 \overline{\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|} & =\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|\\
-\overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|} & =V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}\\
+\overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|} & =V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}\label{eq:V10 transf}\\
 \overline{V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|} & =V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}\\
 \overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
-\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|1\right\rangle \left\langle 1\right|}\\
+\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\left(\left|0\right\rangle \left\langle 0\right|+\left|1\right\rangle \left\langle 1\right|\right)\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+ & =\overline{\left|0\right\rangle \left\langle 0\right|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}+\overline{\left|1\right\rangle \left\langle 1\right|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle \left\langle 0\right|+\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\label{eq:bath transformation}
 \end{align}
 
@@ -718,8 +799,8 @@ noindent
 \begin{align}
 \overline{H_{S}} & =\overline{\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|}+\overline{\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|}+\overline{V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|}+\overline{V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|}\\
  & =\varepsilon_{0}\left(t\right)\left|0\right\rangle \left\langle 0\right|+\varepsilon_{1}\left(t\right)\left|1\right\rangle \left\langle 1\right|+V_{10}\left(t\right)\left|1\right\rangle \left\langle 0\right|B_{+}+V_{01}\left(t\right)\left|0\right\rangle \left\langle 1\right|B_{-}\\
-\overline{H_{I}} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\overline{b}{}_{\mathbf{k}}^{\dagger}+\overline{b}{}_{\mathbf{k}}\right)|1\rangle\langle1|\\
- & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)+\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\left|1\right\rangle \left\langle 1\right|\\
+\overline{H_{I}} & =\overline{\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|}\\
+ & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)+\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\left|1\right\rangle \left\langle 1\right|\\
  & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\left|1\right\rangle \left\langle 1\right|\\
 \overline{H_{B}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}^{\dagger}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\right)\left(\left|0\right\rangle \left\langle 0\right|b_{\mathbf{k}}+\left|1\right\rangle \left\langle 1\right|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\\
@@ -800,7 +881,21 @@ We assume that the bath is at equilibrium with inverse temperature
 
 \end_inset
 
-We can show that:
+We can show using the coherence representation that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{pmatrix}0 & 0 & 0 & \cdots & 0 & \cdots\\
+\sqrt{1} & 0 & 0 & \dots & 0 & \cdots\\
+0 & \sqrt{2} & 0 & \cdots & 0 & \cdots\\
+0 & 0 & \sqrt{3} & \cdots & 0 & \cdots\\
+\vdots & \vdots & \vdots & \ddots & \vdots & \cdots\\
+0 & 0 & 0 & \cdots & \sqrt{n} & \cdots\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots
+\end{pmatrix}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2099,7 +2194,7 @@ noindent
 \color black
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{\zeta,\zeta'}\gamma_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]-\sum_{ij}\sum_{\zeta}S_{ij}\left(\zeta,\zeta',t\right)\left[A_{i},A_{j}\left(\zeta,\zeta'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(\zeta,\zeta'\right)\right]\label{eq:mastereq2}
 \end{equation}
 
 \end_inset
@@ -3159,7 +3254,7 @@ noindent
 \begin_inset Formula $G_{+}\left(\tau\right)=\coth\left(\frac{\beta\omega}{2}\right)\cos\left(\omega\tau\right)-i\sin\left(\omega\tau\right)$
 \end_inset
 
-so 
+ so 
 \begin_inset Formula $\eqref{eq:phonon propagator}$
 \end_inset
 
@@ -3307,7 +3402,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\\
+\Lambda_{11}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{1}}\left(\tau\right)\tilde{B_{1}}\left(0\right)\rho_{B}\right)\label{eq:A11}\\
  & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\label{eq:A11(tau)}\\
 \Lambda{}_{22}\left(\tau\right) & ={\rm Tr}_{B}\left(\tilde{B_{2}}\left(\tau\right)\tilde{B_{2}}\left(0\right)\rho_{B}\right)\\
  & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\label{eq:A22(tau)}
@@ -3393,7 +3488,7 @@ noindent
 \end_inset
 
 , also using the equations 
-\begin_inset Formula $\eqref{eq:A11(tau)}$
+\begin_inset Formula $\eqref{eq:A11}$
 \end_inset
 
  and 
@@ -3767,8 +3862,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\rho_{S}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-K_{33}\left(\tilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]-K_{33}\left(\tilde{-\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\\
- & -K_{33}^{*}\left(\tilde{\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]-K_{33}^{*}\left(\tilde{-\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]
+\frac{{\rm d}\rho_{S}(t)}{{\rm d}t} & =-{\rm i\frac{\tilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-K_{33}\left(\tilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]-K_{33}\left(\tilde{-\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\label{eq:Expanded weak coupling 0}\\
+ & -K_{33}^{*}\left(\tilde{\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]-K_{33}^{*}\left(\tilde{-\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]\label{eq:Expanded weak coupling}
 \end{align}
 
 \end_inset
@@ -3846,11 +3941,11 @@ noindent
 \end_inset
 
  Here we have used 
-\begin_inset Formula $\int_{0}^{\infty}{\rm d}s\:e^{\pm i\varepsilon s}=\pi\delta\left(\varepsilon\right)\pm{\rm i}\frac{V.P.}{\varepsilon}$
+\begin_inset Formula $\int_{0}^{\infty}{\rm d}s\:e^{\pm i\varepsilon s}=\pi\delta\left(\varepsilon\right)\pm{\rm i}\frac{{\rm V.P}.}{\varepsilon}$
 \end_inset
 
 , where 
-\begin_inset Formula $V.P.$
+\begin_inset Formula ${\rm V.P.}$
 \end_inset
 
  denotes the Cauchy's principal value.
@@ -3870,7 +3965,7 @@ noindent
 
 .
  Replacing in the equation 
-\begin_inset Formula $\eqref{eq:master re}$
+\begin_inset Formula $\eqref{eq:Expanded weak coupling 0}$
 \end_inset
 
  lead us to obtain:
@@ -3919,6 +4014,279 @@ noindent
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Section
+Time-dependent multi-site model
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's consider the following Hamiltonian for a system of d-levels (qudit).
+ We start with a time-dependent Hamiltonian of the form: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H(t) & =H_{S}(t)+H_{I}+H_{B},\label{eq:Multisite Hamiltonian}\\
+H_{S}(t) & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)\left|n\right\rangle \left\langle n\right|+\sum_{n\neq m}V_{nm}\left(t\right)\left|n\right\rangle \left\langle m\right|,\label{eq:Hs(t) Multisite}\\
+H_{I} & =\left(\sum_{n=0}^{d-1}\mu_{n}\left(t\right)\left|n\right\rangle \left\langle n\right|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right),\label{eq:HI Multisite}\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB Multisite}
+\end{align}
+
+\end_inset
+
+We will start with a system-bath coupling operator of the form 
+\begin_inset Formula $\sum_{n=0}^{d-1}\mu_{n}\left(t\right)\left|n\right\rangle \left\langle n\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Variational Transformation
+\end_layout
+
+\begin_layout Standard
+We consider the following operator: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V=\left(\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\right)\left(\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ At first let's obtain 
+\begin_inset Formula $e^{V}$
+\end_inset
+
+ under the transformation 
+\begin_inset Formula $\eqref{eq: Tranformation operator}$
+\end_inset
+
+, consider 
+\begin_inset Formula $\varphi=\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{V} & =e^{\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\varphi}\\
+ & =\mathbb{I}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\varphi+\frac{\left(\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\varphi\right)^{2}}{2!}+...\\
+ & =\mathbb{I}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\varphi+\frac{\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\varphi^{2}}{2!}+...\\
+ & =\mathbb{I}-\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\left(\mathbb{I}+\varphi+\frac{\varphi^{2}}{2!}+...\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|e^{\varphi}\\
+ & =\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Given that 
+\begin_inset Formula $\left[b_{\mathbf{k^{'}}}^{\dagger}-b_{\mathbf{k^{'}}},b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right]=0$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{k^{'}}\neq\mathbf{k}$
+\end_inset
+
+ then we can proof using the Zassenhaus formula and defining 
+\begin_inset Formula $D\left(\pm\alpha_{\mathbf{k}}\right)=e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}$
+\end_inset
+
+ in the same way than 
+\begin_inset Formula $\eqref{eq:displaoper}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{\sum_{\mathbf{k}}\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)} & =\prod_{\mathbf{k}}e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\label{eq:B+}\\
+ & =\prod_{\mathbf{k}}D\left(\pm\alpha_{\mathbf{k}}\right)\\
+ & =B_{\pm}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As we can see 
+\begin_inset Formula $e^{-V}=\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{\text{-}}$
+\end_inset
+
+ because this form imposes that 
+\series bold
+
+\begin_inset Formula $e^{-V}e^{V}=\mathbb{I}$
+\end_inset
+
+ 
+\series default
+and the inverse of a operator is unique.
+ This allows us to write the canonical transformation in the following explicit
+ way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+e^{V}Ae^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)A\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right)\label{eq:Canonical Transformation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The results obtained from the application of the mentioned canonical transformat
+ion to each part of the Hamiltonian 
+\begin_inset Formula $\eqref{eq:Multisite Hamiltonian}$
+\end_inset
+
+: of the equation can be evaluated using the linear nature of the transformation
+, for a given operator 
+\begin_inset Formula $A$
+\end_inset
+
+ we have the following result for the transformation:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)A\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Now let's obtain the canonical transformation of the principal elements
+ of the Hamiltonian 
+\begin_inset Formula $\eqref{eq:Multisite Hamiltonian}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{\left|0\right\rangle \left\langle 0\right|} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\left|0\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right),\\
+ & =\left|0\right\rangle \left\langle 0\right|,\\
+\overline{\left|m\right\rangle \left\langle n\right|} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\left|m\right\rangle \left\langle n\right|\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right),\\
+ & =\left|m\right\rangle \left\langle m\right|B_{+}\left|m\right\rangle \left\langle n\right|\left|n\right\rangle \left\langle n\right|B_{-},\\
+ & =\left|m\right\rangle \left\langle n\right|,\:m\neq0,\:n\neq0,\\
+\overline{\left|0\right\rangle \left\langle m\right|} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\left|0\right\rangle \left\langle m\right|\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right),\\
+ & =\left|0\right\rangle \left\langle m\right|B_{-}\:m\neq0,\\
+\overline{\left|m\right\rangle \left\langle 0\right|} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\left|m\right\rangle \left\langle 0\right|\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle m\right|B_{+}\:m\neq0,\\
+\overline{\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}B_{+}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}B_{-}\\
+ & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(B_{+}b_{\mathbf{k}}^{\dagger}B_{-}\right)\left(B_{+}b_{\mathbf{k}}B_{-}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
+ & =\left|0\right\rangle \left\langle 0\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\alpha_{\mathbf{k}}^{2}\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\alpha_{\mathbf{k}}^{2}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
