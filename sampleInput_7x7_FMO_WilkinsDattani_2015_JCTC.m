@@ -63,7 +63,7 @@ rho(:,1)=reshape(rhoInitial.',[],1);          % I'm not sure about the transpose
 
 %% 9. run the program and plot all diagoal elements of the density matrix as a function of time
 wholeDensityMatrixOrJustDiagonals='justDiagonals';
-[rho,elapsedTime]=FeynDynCode(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
+[rho,elapsedTime]=FeynDyn(Nbaths,finalPoint,deltaKmax,totalT,rho,H,systemCouplingMatrix,w,dw,J,temperature,wholeDensityMatrixOrJustDiagonals,allPointsORjustFinalPoint,cpuORgpu);
 
 %%
 figure(1);hold('on');box('on')
