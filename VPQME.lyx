@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -4795,6 +4797,497 @@ F_{\mathbf{k}}=\frac{2\omega_{\mathbf{k}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\r
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Master Equation
+\end_layout
+
+\begin_layout Standard
+Let's consider that the initial state of the system is given by 
+\begin_inset Formula $\rho\left(0\right)=\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}$
+\end_inset
+
+, as we can see this state is independent of the variational transformation:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{V}\rho\left(0\right)e^{-V} & =\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{+}\right)\left(\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\right)\left(\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left|n\right\rangle \left\langle n\right|B_{-}\right)\\
+0 & =\left|0\right\rangle \left\langle 0\right|\otimes\rho_{B}\\
+0 & =\rho\left(0\right)\label{eq: initial state multisite transf}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We transform any operator 
+\begin_inset Formula $O$
+\end_inset
+
+ into the interaction picture in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{O} & \equiv U^{\dagger}(t)OU(t)\label{eq:operator transf}\\
+U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{S}}\left(v\right)\right).
+\end{align}
+
+\end_inset
+
+Therefore:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{\overline{\rho_{S}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t),\,\text{where\ensuremath{}}\\
+\overline{\rho_{S}}(t) & ={\rm Tr}_{B}\left(\bar{\rho}(t)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We can re-write the transformed interaction Hamiltonian operator like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{I}\left(t\right)} & =B_{z,0}\left|0\right\rangle \left\langle 0\right|+\sum_{n=1}^{d-1}\left(\Re\left(V_{0n}\left(t\right)\right)B_{x}\sigma_{0n,x}+\Re\left(V_{0n}\left(t\right)\right)B_{y}\sigma_{0n,y}+B_{z,n}\left|n\right\rangle \left\langle n\right|\right.\\
+ & \left.+\Im\left(V_{0n}\left(t\right)\right)B_{x}\sigma_{0n,y}-\Im\left(V_{0n}\left(t\right)\right)B_{y}\sigma_{0n,x}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align}
+B_{z,0} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\mu_{0}\left(t\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+B_{z,n} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\:\text{if\ensuremath{}}n\neq0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Now consider the following set of operators:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{1n}\left(t\right) & =\sigma_{0n,x}\\
+A_{2n}\left(t\right) & =\sigma_{0n,y}\\
+A_{3n}\left(t\right) & =\left|n\right\rangle \left\langle n\right|\\
+A_{4n}\left(t\right) & =A_{2n}\left(t\right)\\
+A_{5n}\left(t\right) & =A_{1n}\left(t\right)\\
+B_{1n}\left(t\right) & =B_{x}\\
+B_{2n}\left(t\right) & =B_{y}\\
+B_{3n}\left(t\right) & =B_{z,n}\\
+B_{4n}\left(t\right) & =B_{1n}\left(t\right)\\
+B_{5n}\left(t\right) & =B_{2n}\left(t\right)\\
+C_{10}\left(t\right) & =0\\
+C_{20}\left(t\right) & =0\\
+C_{40}\left(t\right) & =0\\
+C_{50}\left(t\right) & =0\\
+C_{30}\left(t\right) & =1\\
+C_{1n}\left(t\right) & =\Re\left(V_{0n}\left(t\right)\right)\\
+C_{2n}\left(t\right) & =C_{1n}\left(t\right)\\
+C_{3n}\left(t\right) & =1\\
+C_{4n}\left(t\right) & =\Im\left(V_{0n}\left(t\right)\right)\\
+C_{5n}\left(t\right) & =-\Im\left(V_{0n}\left(t\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+The precedent notation allows us to write the interaction Hamiltonian in
+ 
+\begin_inset Formula $\tilde{H_{I}}\left(t\right)$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H_{I}}=\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(A_{jn}\otimes B_{jn}\left(t\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here 
+\begin_inset Formula $J=\left\{ 1,2,3,4,5\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We write the interaction Hamiltonian transformed under 
+\begin_inset Formula $\eqref{eq:operator transf}$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{H_{I}}\left(t\right) & =\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right)\label{eq:Hi trans multi}\\
+\tilde{A_{i}}(t) & =U_{S}^{\dagger}\left(t\right)A_{i}U_{S}\left(t\right)\\
+\tilde{B_{i}}\left(t\right) & ={\rm e}^{{\rm i}H_{B}t}B_{i}{\rm \left(t\right)e}^{{\rm -i}H_{B}t}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Taking as reference state 
+\begin_inset Formula $\rho_{B}$
+\end_inset
+
+ and truncating at second order in 
+\begin_inset Formula $H_{I}\left(t\right))$
+\end_inset
+
+, we obtain our master equation in the interaction picture:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t}=-\int_{0}^{t}{\rm Tr}_{B}\left[\tilde{H_{I}}\left(t\right),\left[\tilde{H_{I}}\left(s\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\label{eq:master}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing the equation 
+\begin_inset Formula $\eqref{eq:Hi trans multi}$
+\end_inset
+
+in 
+\begin_inset Formula $\eqref{eq:master}$
+\end_inset
+
+we can obtain:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}{\rm Tr}_{B}\left[\tilde{H_{I}}\left(t\right),\left[\tilde{H_{I}}\left(s\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\label{eq:master equation}\\
+ & =-\int_{0}^{t}{\rm Tr}_{B}\left[\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right),\left[\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\\
+ & =-\int_{0}^{t}{\rm Tr}_{B}\left[\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right),\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
+ & \left.-\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\right]{\rm d}s\\
+ & =-\int_{0}^{t}{\rm Tr}_{B}\left(\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right)\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
+ & -\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\\
+ & -\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right)\\
+ & \left.+\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\tilde{A_{j'n'}}\left(s\right)\otimes\tilde{B_{j'n'}}\left(s\right)\right)\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\tilde{A_{jn}}\left(t\right)\otimes\tilde{B_{jn}}\left(t\right)\right)\right){\rm d}s\label{eq:master equation 1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In order to calculate the correlation functions we define:
+\begin_inset Formula 
+\begin{align}
+\Lambda_{jnj'n'}\left(\tau\right) & =\left\langle \tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\right\rangle _{B}\\
+ & =\left\langle \tilde{B_{jn}}\left(\tau\right)\tilde{B_{j'n'}}\left(0\right)\right\rangle _{B}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
+\begin_inset Formula $s\rightarrow t-\tau$
+\end_inset
+
+ and 
+\begin_inset Formula ${\rm Tr}_{B}\left(\tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\rho_{B}\right)=\left\langle \tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\right\rangle _{B}$
+\end_inset
+
+.
+ To evaluate the trace respect to the bath we need to recall that our master
+ equation depends of elements related to the bath and represented by the
+ operators 
+\begin_inset Formula $\tilde{B_{jn}}\left(t\right)$
+\end_inset
+
+ and elements related to the system given by 
+\begin_inset Formula $\tilde{A_{jn}}\left(t\right)$
+\end_inset
+
+.
+ The systems considered are in different Hilbert spaces so 
+\begin_inset Formula ${\rm Tr}\left(\tilde{A_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(t\right)\right)={\rm Tr}\left(\tilde{A_{jn}}\left(t\right)\right){\rm Tr}\left(\tilde{B_{j'n'}}\left(t\right)\right)$
+\end_inset
+
+.
+ The correlation functions relevant of the master equation 
+\begin_inset Formula $\eqref{eq:master equation 1}$
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+{\rm Tr}_{B}\left(\tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\rho_{B}\right) & =\left\langle \tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\right\rangle _{B}\label{eq:corr1}\\
+ & =\left\langle \tilde{B_{jn}}\left(\tau\right)\tilde{B_{j'n'}}\left(0\right)\right\rangle _{B}\\
+ & =\Lambda_{jnj'n'}\left(\tau\right)\\
+{\rm Tr}_{B}\left(\tilde{B_{jn}}\left(t\right)\rho_{B}\tilde{B_{j'n'}}\left(s\right)\right) & ={\rm Tr}_{B}\left(\tilde{B_{j'n'}}\left(s\right)\tilde{B_{jn}}\left(t\right)\rho_{B}\right)\\
+ & =\left\langle \tilde{B_{j'n'}}\left(s\right)\tilde{B_{jn}}\left(t\right)\right\rangle _{B}\\
+ & =\left\langle \tilde{B_{j'n'}}\left(-\tau\right)\tilde{B_{jn}}\left(0\right)\right\rangle _{B}\\
+ & =\Lambda_{j'n'jn}\left(-\tau\right)\\
+{\rm Tr}_{B}\left(\tilde{B_{j'n'}}\left(s\right)\rho_{B}\tilde{B_{jn}}\left(t\right)\right) & ={\rm Tr}_{B}\left(\tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\rho_{B}\right)\\
+ & =\left\langle \tilde{B_{jn}}\left(t\right)\tilde{B_{j'n'}}\left(s\right)\right\rangle _{B}\\
+ & =\left\langle \tilde{B_{jn}}\left(\tau\right)\tilde{B_{j'n'}}\left(0\right)\right\rangle _{B}\\
+ & =\Lambda_{jnj'n'}\left(\tau\right)\\
+{\rm Tr}_{B}\left(\rho_{B}\tilde{B_{j'n'}}\left(s\right)\tilde{B_{jn}}\left(t\right)\right) & ={\rm Tr}_{B}\left(\tilde{B_{j'n'}}\left(s\right)\tilde{B_{jn}}\left(t\right)\rho_{B}\right)\\
+ & =\left\langle \tilde{B_{j'n'}}\left(s\right)\tilde{B_{jn}}\left(t\right)\right\rangle _{B}\\
+ & =\left\langle \tilde{B_{j'n'}}\left(-\tau\right)\tilde{B_{jn}}\left(0\right)\right\rangle _{B}\\
+ & =\Lambda_{j'n'jn}\left(-\tau\right)\label{eq:corr2}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We made use of the cyclic property for the trace to evaluate the correlation
+ functions, from the equations obtained in 
+\begin_inset Formula $\eqref{eq:master equation}$
+\end_inset
+
+and 
+\begin_inset Formula $\eqref{eq:master equation 1}$
+\end_inset
+
+ and using the equations 
+\begin_inset Formula $\eqref{eq:corr1}$
+\end_inset
+
+-
+\begin_inset Formula $\eqref{eq:corr2}$
+\end_inset
+
+ we can re-write:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}\sum_{j,j',n,n'}\left(C_{jn}\left(t\right)C_{j'n'}\left(s\right)\left(\Lambda_{jnj'n'}\left(\tau\right)\tilde{A_{jn}}\left(t\right)\tilde{A_{j'n'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)-\Lambda_{j'n'jn}\left(-\tau\right)\tilde{A_{jn}}\left(t\right)\widetilde{\overline{\rho_{S}}}(t)\tilde{A_{j'n'}}\left(s\right)\right)\right.\\
+ & \left.+C_{jn}\left(t\right)C_{j'n'}\left(s\right)\left(\Lambda_{j'n'jn}\left(-\tau\right)\widetilde{\overline{\rho_{S}}}(t)\tilde{A_{j'n'}}\left(s\right)\tilde{A_{jn}}\left(t\right)-\Lambda_{jnj'n'}\left(\tau\right)\tilde{A_{j'n'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\tilde{A_{jn}}\left(t\right)\right)\right){\rm d}s\\
+ & =-\int_{0}^{t}\sum_{j,j',n,n'}\left(C_{jn}\left(t\right)C_{j'n'}\left(s\right)\left(\Lambda_{jnj'n'}\left(\tau\right)\left[\tilde{A_{jn}}\left(t\right),\tilde{A_{j'n'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\right]+\Lambda_{j'n'jn}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}(t)\tilde{A_{j'n'}}\left(s\right),\tilde{A_{jn}}\left(t\right)\right]\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Returning to the Schrödinger picture we obtain the master equation 
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\color black
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\int_{0}^{t}\sum_{j,j',n,n'}\left(C_{jn}\left(t\right)C_{j'n'}\left(t-\tau\right)\left(\Lambda_{jnj'n'}\left(\tau\right)\left[A_{jn}\left(t\right),A_{j'n'}\left(t-\tau,t\right)\overline{\rho_{S}}(t)\right]+\Lambda_{j'n'jn}\left(-\tau\right)\left[\overline{\rho_{S}}(t)A_{j'n'}\left(t-\tau,t\right),A_{jn}\left(t\right)\right]\right)\right){\rm d}\tau\label{eq:mastereq2-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For this case we used that 
+\begin_inset Formula $A_{jn}\left(t-\tau,t\right)=U_{S}\left(t\right)U_{S}^{\dagger}\left(t-\tau\right)A_{jn}\left(t\right)U_{S}\left(t-\tau\right)U_{S}^{\dagger}\left(t\right)$
+\end_inset
+
+.
+ This is a non-Markovian equation and if we take 
+\begin_inset Formula $n=2$
+\end_inset
+
+ (two sites), 
+\begin_inset Formula $\mu_{0}\left(t\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\mu_{1}\left(t\right)=1$
+\end_inset
+
+ then we can reproduce a similar expression to 
+\begin_inset Formula $\eqref{eq:master equation prim}$
+\end_inset
+
+ as expected.
 \end_layout
 
 \begin_layout Section
