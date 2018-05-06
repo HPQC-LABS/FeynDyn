@@ -4795,15 +4795,15 @@ noindent
 \begin_inset Formula 
 \begin{align}
 H(t) & =H_{S}(t)+H_{I}+H_{B},\label{eq:Multisite Hamiltonian}\\
-H_{S}(t) & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|,\label{eq:Hs(t) Multisite}\\
-H_{I} & =\left(\sum_{n=0}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right),\label{eq:HI Multisite}\\
+H_{S}(t) & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|,\label{eq:Hs(t) Multisite}\\
+H_{I} & =\left(\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right),\label{eq:HI Multisite}\\
 H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB Multisite}
 \end{align}
 
 \end_inset
 
 We will start with a system-bath coupling operator of the form 
-\begin_inset Formula $\sum_{n=0}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|$
+\begin_inset Formula $\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|$
 \end_inset
 
 .
@@ -4820,7 +4820,7 @@ We consider the following operator:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V=\left(\sum_{n=1}^{d-1}|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator}
+V=\left(\sum_{n=1}|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator}
 \end{equation}
 
 \end_inset
@@ -4859,12 +4859,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{V} & =e^{\sum_{n=1}^{d-1}|n\rangle\langle n|\varphi}\\
- & =\mathbb{I}+\sum_{n=1}^{d-1}|n\rangle\langle n|\varphi+\frac{\left(\sum_{n=1}^{d-1}|n\rangle\langle n|\varphi\right)^{2}}{2!}+...\\
- & =\mathbb{I}+\sum_{n=1}^{d-1}|n\rangle\langle n|\varphi+\frac{\sum_{n=1}^{d-1}|n\rangle\langle n|\varphi^{2}}{2!}+...\\
- & =\mathbb{I}-\sum_{n=1}^{d-1}|n\rangle\langle n|+\sum_{n=1}^{d-1}|n\rangle\langle n|\left(\mathbb{I}+\varphi+\frac{\varphi^{2}}{2!}+...\right)\\
- & =|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|e^{\varphi}\\
- & =|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}
+e^{V} & =e^{\sum_{n=1}|n\rangle\langle n|\varphi}\\
+ & =\mathbb{I}+\sum_{n=1}|n\rangle\langle n|\varphi+\frac{\left(\sum_{n=1}|n\rangle\langle n|\varphi\right)^{2}}{2!}+...\\
+ & =\mathbb{I}+\sum_{n=1}|n\rangle\langle n|\varphi+\frac{\sum_{n=1}|n\rangle\langle n|\varphi^{2}}{2!}+...\\
+ & =\mathbb{I}-\sum_{n=1}|n\rangle\langle n|+\sum_{n=1}|n\rangle\langle n|\left(\mathbb{I}+\varphi+\frac{\varphi^{2}}{2!}+...\right)\\
+ & =|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|e^{\varphi}\\
+ & =|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}
 \end{align}
 
 \end_inset
@@ -4931,7 +4931,7 @@ noindent
 \end_inset
 
  As we can see 
-\begin_inset Formula $e^{-V}=|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{\text{-}}$
+\begin_inset Formula $e^{-V}=|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{\text{-}}$
 \end_inset
 
  because this form imposes that 
@@ -4950,7 +4950,7 @@ and the inverse of a operator is unique.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-e^{V}Ae^{-V}=\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)A\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\label{eq:Canonical Transformation}
+e^{V}Ae^{-V}=\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)A\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\label{eq:Canonical Transformation}
 \end{equation}
 
 \end_inset
@@ -4979,7 +4979,7 @@ ion to each part of the Hamiltonian
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)A\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)
+\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)A\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)
 \end{equation}
 
 \end_inset
@@ -5016,22 +5016,22 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{|0\rangle\langle0|} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)|0\rangle\langle0|\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right),\label{eq:Multi 00}\\
+\overline{|0\rangle\langle0|} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)|0\rangle\langle0|\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right),\label{eq:Multi 00}\\
  & =|0\rangle\langle0|,\\
-\overline{|m\rangle\langle n|} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)|m\rangle\langle n|\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right),\\
+\overline{|m\rangle\langle n|} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)|m\rangle\langle n|\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right),\\
  & =|m\rangle\langle m|B_{+}|m\rangle\langle n||n\rangle\langle n|B_{-},\\
  & =|m\rangle\langle n|,\:m\neq0,\:n\neq0,\\
-\overline{|0\rangle\langle m|} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)|0\rangle\langle m|\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right),\\
+\overline{|0\rangle\langle m|} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)|0\rangle\langle m|\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right),\\
  & =|0\rangle\langle m|B_{-}\:m\neq0,\\
-\overline{|m\rangle\langle0|} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)|m\rangle\langle0|\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\\
+\overline{|m\rangle\langle0|} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)|m\rangle\langle0|\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
  & =|0\rangle\langle m|B_{+}\:m\neq0,\\
-\overline{\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}B_{+}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}B_{-}\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(B_{+}b_{\mathbf{k}}^{\dagger}B_{-}\right)\left(B_{+}b_{\mathbf{k}}B_{-}\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\alpha_{\mathbf{k}}^{2}\right)\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\alpha_{\mathbf{k}}^{2}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}^{d-1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:bath multi}
+\overline{\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}B_{+}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}B_{-}\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(B_{+}b_{\mathbf{k}}^{\dagger}B_{-}\right)\left(B_{+}b_{\mathbf{k}}B_{-}\right)\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\alpha_{\mathbf{k}}^{2}\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\alpha_{\mathbf{k}}^{2}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:bath multi}
 \end{align}
 
 \end_inset
@@ -5074,17 +5074,17 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{S}\left(t\right)} & =\overline{\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|}\\
- & =\overline{\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|}+\overline{\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|}\\
- & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\overline{\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)}+\overline{\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|}\\
- & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)\overline{|0\rangle\langle n|}+V_{n0}\left(t\right)\overline{|n\rangle\langle0|}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)\overline{|m\rangle\langle n|}\\
- & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)B_{-}|0\rangle\langle n|+V_{n0}\left(t\right)B_{+}|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
-\overline{H_{I}} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)\left(\left(\sum_{n=0}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\\
- & =\left(\mu_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|B_{+}\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\\
- & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}B_{+}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)B_{-}\\
- & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\\
-\overline{H_{B}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}^{d-1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
+\overline{H_{S}\left(t\right)} & =\overline{\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|}\\
+ & =\overline{\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|}+\overline{\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\langle m|}\\
+ & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\overline{\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)}+\overline{\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|}\\
+ & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)\overline{|0\rangle\langle n|}+V_{n0}\left(t\right)\overline{|n\rangle\langle0|}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)\overline{|m\rangle\langle n|}\\
+ & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)B_{-}|0\rangle\langle n|+V_{n0}\left(t\right)B_{+}|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+ & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+\overline{H_{I}} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)\left(\left(\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
+ & =\left(\mu_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|B_{+}\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
+ & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}B_{+}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)B_{-}\\
+ & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\\
+\overline{H_{B}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
 \end{align}
 
 \end_inset
@@ -5108,12 +5108,12 @@ noindent
  Joining this terms allow us to write:
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}^{d-1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & +\sum_{n=0}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-\sum_{n=1}^{d-1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}2g_{\mathbf{k}}\alpha_{\mathbf{k}}\\
- & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\alpha_{\mathbf{k}}\right)+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & \text{+}\sum_{n=1}^{d-1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H multisite transf}
+\overline{H} & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+ & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+ & +\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}2g_{\mathbf{k}}\alpha_{\mathbf{k}}\\
+ & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+ & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\alpha_{\mathbf{k}}\right)+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+ & \text{+}\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H multisite transf}
 \end{align}
 
 \end_inset
@@ -5173,8 +5173,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}^{d-1}R_{n}|n\rangle\langle n|+\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H trans multisite}
+\overline{H} & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+ & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}R_{n}|n\rangle\langle n|+\sum_{n=1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H trans multisite}
 \end{align}
 
 \end_inset
@@ -5213,8 +5213,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{S}\left(t\right)} & =\sum_{n=0}^{d-1}\varepsilon_{n}\left(t\right)|n\rangle\langle n|\text{+}B\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|+\sum_{n=1}^{d-1}R_{n}|n\rangle\langle n|\\
-\overline{H_{I}} & =\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|\left(B_{-}-B\right)+V_{n0}\left(t\right)|n\rangle\langle0|\left(B_{+}-B\right)\right),\\
+\overline{H_{S}\left(t\right)} & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|\text{+}B\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|+\sum_{n=1}R_{n}|n\rangle\langle n|\\
+\overline{H_{I}} & =\sum_{n=1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|\left(B_{-}-B\right)+V_{n0}\left(t\right)|n\rangle\langle0|\left(B_{+}-B\right)\right),\\
 \overline{H_{B}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}
 \end{align}
 
@@ -5285,24 +5285,24 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{S}\left(t\right)} & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}^{d-1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\text{+}B\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+B\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{0<m<n}\left(V_{mn}\left(t\right)|m\rangle\langle n|+V_{nm}\left(t\right)|n\rangle\langle m|\right)\\
- & +\sum_{n=1}^{d-1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
+\overline{H_{S}\left(t\right)} & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\text{+}B\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
+ & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+B\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{0<m<n}\left(V_{mn}\left(t\right)|m\rangle\langle n|+V_{nm}\left(t\right)|n\rangle\langle m|\right)\\
+ & +\sum_{n=1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
  & =\sum_{0<m<n}\left(\left(\Re\left(V_{mn}\left(t\right)\right)+{\rm i}\Im\left(V_{mn}\left(t\right)\right)\right)|m\rangle\langle n|+\left(\Re\left(V_{mn}\left(t\right)\right)-{\rm i}\Im\left(V_{mn}\left(t\right)\right)\right)|n\rangle\langle m|\right)+\varepsilon_{0}\left(t\right)|0\rangle\langle0|\\
- & +B\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{n=1}^{d-1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
+ & +B\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|+V_{n0}\left(t\right)|n\rangle\langle0|\right)+\sum_{n=1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
  & =\sum_{0<m<n}\left(\left(\Re\left(V_{nm}\left(t\right)\right)+{\rm i}\Im\left(V_{mn}\left(t\right)\right)\right)\frac{\sigma_{nm,x}-{\rm i}\sigma_{nm,y}}{2}+\left(\Re\left(V_{nm}\left(t\right)\right)-{\rm i}\Im\left(V_{mn}\left(t\right)\right)\right)\frac{\sigma_{nm,x}+{\rm i}\sigma_{nm,y}}{2}\right)\\
- & +B\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)\frac{\sigma_{0n,x}-{\rm i}\sigma_{0n,y}}{2}+V_{n0}\left(t\right)\frac{\sigma_{0n,x}+{\rm i}\sigma_{0n,y}}{2}\right)+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}^{d-1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
- & =\sum_{0<m<n}\left(\Re\left(V_{nm}\left(t\right)\right)\sigma_{nm,x}+\Im\left(V_{nm}\left(t\right)\right)\sigma_{nm,y}\right)+B\sum_{n=1}^{d-1}\left(\Re\left(V_{0n}\left(t\right)\right)\sigma_{0n,x}+\Im\left(V_{mn}\left(t\right)\right)\sigma_{0n,y}\right)\\
- & +\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}^{d-1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
-\overline{H_{I}\left(t\right)} & =\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\left(V_{0n}\left(t\right)|0\rangle\langle n|\left(B_{-}-B\right)+V_{n0}\left(t\right)|n\rangle\langle0|\left(B_{+}-B\right)\right)\\
- & =\sum_{n=1}^{d-1}\left(\left(\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\left(B_{-}-B\right)\frac{\sigma_{0n,x}-{\rm i}\sigma_{0n,y}}{2}+\left(\Re\left(V_{0n}\left(t\right)\right)-{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\left(B_{+}-B\right)\frac{\sigma_{0n,x}+{\rm i}\sigma_{0n,y}}{2}\right)\\
- & +\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & =\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\sum_{n=1}^{d-1}\left(\frac{\sigma_{0n,x}}{2}\left(\left(B_{-}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)+\left(B_{+}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)-{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\right)\right.\\
+ & +B\sum_{n=1}\left(V_{0n}\left(t\right)\frac{\sigma_{0n,x}-{\rm i}\sigma_{0n,y}}{2}+V_{n0}\left(t\right)\frac{\sigma_{0n,x}+{\rm i}\sigma_{0n,y}}{2}\right)+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
+ & =\sum_{0<m<n}\left(\Re\left(V_{nm}\left(t\right)\right)\sigma_{nm,x}+\Im\left(V_{nm}\left(t\right)\right)\sigma_{nm,y}\right)+B\sum_{n=1}\left(\Re\left(V_{0n}\left(t\right)\right)\sigma_{0n,x}+\Im\left(V_{mn}\left(t\right)\right)\sigma_{0n,y}\right)\\
+ & +\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\langle n|\\
+\overline{H_{I}\left(t\right)} & =\sum_{n=1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|\left(B_{-}-B\right)+V_{n0}\left(t\right)|n\rangle\langle0|\left(B_{+}-B\right)\right)\\
+ & =\sum_{n=1}\left(\left(\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\left(B_{-}-B\right)\frac{\sigma_{0n,x}-{\rm i}\sigma_{0n,y}}{2}+\left(\Re\left(V_{0n}\left(t\right)\right)-{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\left(B_{+}-B\right)\frac{\sigma_{0n,x}+{\rm i}\sigma_{0n,y}}{2}\right)\\
+ & +\sum_{n=1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+ & =\sum_{n=1}B_{z,n}|n\rangle\langle n|+\sum_{n=1}\left(\frac{\sigma_{0n,x}}{2}\left(\left(B_{-}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)+\left(B_{+}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)-{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\right)\right.\\
  & \left.+\frac{{\rm i}\sigma_{0n,y}}{2}\left(\left(B_{+}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)-{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)-\left(B_{-}-B\right)\left(\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\Im\left(V_{0n}\left(t\right)\right)\right)\right)\right)\\
  & +\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\left(\frac{\sigma_{0n,x}}{2}\left(B_{+}+B_{-}-2B\right)\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\left(B_{-}-B-B_{+}+B\right)\Im\left(V_{0n}\left(t\right)\right)\right.\\
- & \left.+\frac{{\rm i}\sigma_{0n,y}}{2}\left(\left(B_{+}-B-B_{-}+B\right)\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\left(B-B_{-}+B-B_{+}\right)\Im\left(V_{0n}\left(t\right)\right)\right)\right)+\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|\\
- & =\sum_{n=1}^{d-1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}^{d-1}\left(\sigma_{0n,x}\left(B_{x}\Re\left(V_{0n}\left(t\right)\right)-B_{y}\Im\left(V_{0n}\left(t\right)\right)\right)\right.\\
+ & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\left(\frac{\sigma_{0n,x}}{2}\left(B_{+}+B_{-}-2B\right)\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\left(B_{-}-B-B_{+}+B\right)\Im\left(V_{0n}\left(t\right)\right)\right.\\
+ & \left.+\frac{{\rm i}\sigma_{0n,y}}{2}\left(\left(B_{+}-B-B_{-}+B\right)\Re\left(V_{0n}\left(t\right)\right)+{\rm i}\left(B-B_{-}+B-B_{+}\right)\Im\left(V_{0n}\left(t\right)\right)\right)\right)+\sum_{n=1}B_{z,n}|n\rangle\langle n|\\
+ & =\sum_{n=1}B_{z,n}|n\rangle\langle n|+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\left(\sigma_{0n,x}\left(B_{x}\Re\left(V_{0n}\left(t\right)\right)-B_{y}\Im\left(V_{0n}\left(t\right)\right)\right)\right.\\
  & \left.+\sigma_{0n,y}\left(B_{y}\Re\left(V_{0n}\left(t\right)\right)+B_{x}\Im\left(V_{0n}\left(t\right)\right)\right)\right)
 \end{align}
 
@@ -5391,7 +5391,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{\mathbf{k}}} & =\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\:\frac{{\rm \partial}B}{\partial f_{\mathbf{k}}}+\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\:\frac{{\rm \partial}R_{n}}{\partial f_{\mathbf{k}}},\label{eq:extreme}\\
+\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{\mathbf{k}}} & =\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\:\frac{{\rm \partial}B}{\partial f_{\mathbf{k}}}+\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\:\frac{{\rm \partial}R_{n}}{\partial f_{\mathbf{k}}},\label{eq:extreme}\\
  & =0
 \end{align}
 
@@ -5488,8 +5488,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{\mathbf{k}}} & =\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\left(-\frac{f_{\mathbf{k}}}{\omega_{\mathbf{k}}^{2}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)B\right)+\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\:\omega_{\mathbf{k}}^{-1}\left(2f_{\mathbf{k}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\right)\\
- & =f_{\mathbf{k}}\left(\frac{2}{\omega_{\mathbf{k}}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-\frac{\coth\left(\beta\omega_{\mathbf{k}}/2\right)B}{\omega_{\mathbf{k}}^{2}}\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\right)-\frac{2g_{\mathbf{k}}}{\omega_{\mathbf{k}}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)
+\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{\mathbf{k}}} & =\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\left(-\frac{f_{\mathbf{k}}}{\omega_{\mathbf{k}}^{2}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)B\right)+\sum_{n=1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\:\omega_{\mathbf{k}}^{-1}\left(2f_{\mathbf{k}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\right)\\
+ & =f_{\mathbf{k}}\left(\frac{2}{\omega_{\mathbf{k}}}\sum_{n=1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-\frac{\coth\left(\beta\omega_{\mathbf{k}}/2\right)B}{\omega_{\mathbf{k}}^{2}}\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}\right)-\frac{2g_{\mathbf{k}}}{\omega_{\mathbf{k}}}\sum_{n=1}\frac{{\rm \partial}{\rm {Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)
 \end{align}
 
 \end_inset
@@ -5513,8 +5513,8 @@ noindent
  We can obtain the variational parameters:
 \begin_inset Formula 
 \begin{align}
-f_{\mathbf{k}} & =\frac{\frac{2g_{\mathbf{k}}}{\omega_{\mathbf{k}}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{\frac{2}{\omega_{\mathbf{k}}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-\frac{\coth\left(\beta\omega_{\mathbf{k}}/2\right)B}{\omega_{\mathbf{k}}^{2}}\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}\\
- & =\frac{2g_{\mathbf{k}}\omega_{\mathbf{k}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{2\omega_{\mathbf{k}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-B\coth\left(\beta\omega_{\mathbf{k}}/2\right)\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}
+f_{\mathbf{k}} & =\frac{\frac{2g_{\mathbf{k}}}{\omega_{\mathbf{k}}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{\frac{2}{\omega_{\mathbf{k}}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-\frac{\coth\left(\beta\omega_{\mathbf{k}}/2\right)B}{\omega_{\mathbf{k}}^{2}}\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}\\
+ & =\frac{2g_{\mathbf{k}}\omega_{\mathbf{k}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{2\omega_{\mathbf{k}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-B\coth\left(\beta\omega_{\mathbf{k}}/2\right)\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}
 \end{align}
 
 \end_inset
@@ -5549,7 +5549,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F_{\mathbf{k}}=\frac{2\omega_{\mathbf{k}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{2\omega_{\mathbf{k}}\sum_{n=1}^{d-1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-B\coth\left(\beta\omega_{\mathbf{k}}/2\right)\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}.
+F_{\mathbf{k}}=\frac{2\omega_{\mathbf{k}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}\mu_{n}\left(t\right)}{2\omega_{\mathbf{k}}\sum_{n=1}\frac{{\rm \partial}{\rm {\rm {\rm {Tr}}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n}}-B\coth\left(\beta\omega_{\mathbf{k}}/2\right)\:\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B}}.
 \end{equation}
 
 \end_inset
@@ -5573,7 +5573,7 @@ Let's consider that the initial state of the system is given by
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{V}\rho\left(0\right)e^{-V} & =\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{+}\right)\left(|0\rangle\langle0|\otimes\rho_{B}\right)\left(|0\rangle\langle0|+\sum_{n=1}^{d-1}|n\rangle\langle n|B_{-}\right)\\
+e^{V}\rho\left(0\right)e^{-V} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)\left(|0\rangle\langle0|\otimes\rho_{B}\right)\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
 0 & =|0\rangle\langle0|\otimes\rho_{B}\\
 0 & =\rho\left(0\right)\label{eq: initial state multisite transf}
 \end{align}
@@ -5634,7 +5634,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{I}\left(t\right)} & =B_{z,0}|0\rangle\langle0|+\sum_{n=1}^{d-1}\left(\Re\left(V_{0n}\left(t\right)\right)B_{x}\sigma_{0n,x}+\Re\left(V_{0n}\left(t\right)\right)B_{y}\sigma_{0n,y}+B_{z,n}|n\rangle\langle n|\right.\\
+\overline{H_{I}\left(t\right)} & =B_{z,0}|0\rangle\langle0|+\sum_{n=1}\left(\Re\left(V_{0n}\left(t\right)\right)B_{x}\sigma_{0n,x}+\Re\left(V_{0n}\left(t\right)\right)B_{y}\sigma_{0n,y}+B_{z,n}|n\rangle\langle n|\right.\\
  & \left.+\Im\left(V_{0n}\left(t\right)\right)B_{x}\sigma_{0n,y}-\Im\left(V_{0n}\left(t\right)\right)B_{y}\sigma_{0n,x}\right)
 \end{align}
 
@@ -5726,7 +5726,7 @@ The precedent notation allows us to write the interaction Hamiltonian in
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H_{I}}=\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(A_{jn}\otimes B_{jn}\left(t\right)\right)
+\overline{H_{I}}=\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(A_{jn}\otimes B_{jn}\left(t\right)\right)
 \end{equation}
 
 \end_inset
@@ -5765,7 +5765,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\widetilde{H_{I}}\left(t\right) & =\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\label{eq:Hi trans multi}\\
+\widetilde{H_{I}}\left(t\right) & =\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\label{eq:Hi trans multi}\\
 \widetilde{A_{i}}(t) & =U^{\dagger}\left(t\right)A_{i}U\left(t\right)\\
 \widetilde{B_{i}}\left(t\right) & ={\rm e}^{{\rm i}H_{B}t}B_{i}{\rm \left(t\right)e}^{{\rm -i}H_{B}t}
 \end{align}
@@ -5826,13 +5826,13 @@ we can obtain:
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left[\widetilde{H_{I}}\left(t\right),\left[\widetilde{H_{I}}\left(s\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\label{eq:master equation}\\
- & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left[\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right),\left[\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\\
- & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left[\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right),\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
- & \left.-\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\right]{\rm d}s\\
- & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left(\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
- & -\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\\
- & -\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\\
- & \left.+\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}^{d-1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\sum_{j\in J}\,\sum_{n=1}^{d-1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\right){\rm d}s\label{eq:master equation 1}
+ & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left[\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right),\left[\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right),\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right]\right]{\rm d}s\\
+ & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left[\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right),\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
+ & \left.-\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\right]{\rm d}s\\
+ & =-\int_{0}^{t}{\rm {\rm {\rm {Tr}}}}_{B}\left(\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\right.\\
+ & -\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\\
+ & -\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j\in J}\,\sum_{n=1}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\\
+ & \left.+\widetilde{\overline{\rho_{S}}}(t)\rho_{B}\sum_{j'\in J}\,\sum_{n'=1}C_{j'n'}\left(s\right)\left(\widetilde{A_{j'n'}}\left(s\right)\otimes\widetilde{B_{j'n'}}\left(s\right)\right)\sum_{j\in J}\,\sum_{n=1}^{}C_{jn}\left(t\right)\left(\widetilde{A_{jn}}\left(t\right)\otimes\widetilde{B_{jn}}\left(t\right)\right)\right){\rm d}s\label{eq:master equation 1}
 \end{align}
 
 \end_inset
