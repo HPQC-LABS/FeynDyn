@@ -242,7 +242,7 @@ displacement
 \begin_inset Formula 
 \begin{align}
 B_{\pm} & =\prod_{\text{k}}D\left(\pm v{}_{\mathbf{k}}\right)\label{eq:B+/-}\\
-D\left(\pm v{}_{\mathbf{k}}\right) & \equiv e^{\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)},\label{eq:displaop}
+D\left(\pm v{}_{\mathbf{k}}\right) & \equiv e^{\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)},\label{eq:displaoper}
 \end{align}
 
 \end_inset
@@ -399,11 +399,11 @@ We use the following identities:
 \overline{b_{\mathbf{k}}} & ={\rm e}^{V}b_{\mathbf{k}}{\rm e}^{-V}\\
  & =\left(|0\rangle\langle0|+|1\rangle\langle1|B_{+}\right)b_{\mathbf{k}}\left(|0\rangle\langle0|+|1\rangle\langle1|B_{-}\right)\\
  & =|0\rangle\langle0|b_{\mathbf{k}}|0\rangle\langle0|+|1\rangle\langle1|B_{+}b_{\mathbf{k}}|1\rangle\langle1|B_{-}\\
- & =|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
+ & =|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
 \overline{b_{\mathbf{k}}}^{\dagger} & ={\rm e}^{V}b_{\mathbf{k}}^{\dagger}{\rm e}^{-V}\\
  & =\left(|0\rangle\langle0|+|1\rangle\langle1|B_{+}\right)b_{\mathbf{k}}^{\dagger}\left(|0\rangle\langle0|+|1\rangle\langle1|B_{-}\right)\\
  & =|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}|0\rangle\langle0|+|1\rangle\langle1|B_{+}b_{\mathbf{k}}^{\dagger}|1\rangle\langle1|B_{-}\\
- & =|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)
+ & =|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
 \end{align}
 
 \end_inset
@@ -418,8 +418,8 @@ We have used the following:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-B_{+}b_{\mathbf{k}}B_{-} & =b_{\mathbf{k}}-\alpha_{\mathbf{k}}\\
-B_{+}b_{\mathbf{k}}^{\dagger}B_{-} & =b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}
+B_{+}b_{\mathbf{k}}B_{-} & =b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\\
+B_{+}b_{\mathbf{k}}^{\dagger}B_{-} & =b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}
 \end{align}
 
 \end_inset
@@ -434,10 +434,15 @@ We therefore have the following relationships:
 \overline{\varepsilon_{1}\left(t\right)|1\rangle\langle1|} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|\\
 \overline{V_{10}\left(t\right)|1\rangle\langle0|} & =V_{10}\left(t\right)|1\rangle\langle0|B_{+}\label{eq:V10 transf}\\
 \overline{V_{01}\left(t\right)|0\rangle\langle1|} & =V_{01}\left(t\right)|0\rangle\langle1|B_{-}\\
-\overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)|1\rangle\langle1|\\
+\overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
 \overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\overline{|0\rangle\langle0|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}+\overline{|1\rangle\langle1|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
- & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)|1\rangle\langle1|\label{eq:bath transformation}
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-v_{\mathbf{k}}\right)|1\rangle\langle1|\label{eq:bath transformation}\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}\mathbb{I}b_{\mathbf{k}}D\left(-v_{\mathbf{k}}\right)|1\rangle\langle1|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(-v_{\mathbf{k}}\right)D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(-v_{\mathbf{k}}\right)|1\rangle\langle1|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|1\rangle\langle1|+v_{\mathbf{k}}|1\rangle\langle1|-v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|\\
+ & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}{\rm \mathbb{I}}+v_{\mathbf{k}}|1\rangle\langle1|-v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|
 \end{align}
 
 \end_inset
@@ -458,229 +463,38 @@ noindent
 
 \end_inset
 
- Let's focus our attention in the following calculation, as we can see it
- appears as consequence of the application of the transformation 
-\begin_inset Formula $\eqref{eq:Trans}$
+ So all parts of 
+\begin_inset Formula $H(t)$
 \end_inset
 
- on the bath 
-\begin_inset Formula $\eqref{eq:HB1}$
-\end_inset
 
-, here we define 
-\begin_inset Formula $D\left(\pm\alpha{}_{\mathbf{k}}\right)$
-\end_inset
-
- as shown in th equation 
-\begin_inset Formula $\eqref{eq:displaoper}$
-\end_inset
-
- as a displacement operator associated with the frequency 
-\begin_inset Formula $\omega_{\mathbf{k}}$
-\end_inset
-
-.
- We will calculate 
-\begin_inset Formula $\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)|1\rangle\langle1|$
-\end_inset
-
- inserting the identity operator between 
-\begin_inset Formula $b_{\mathbf{k}}^{\dagger}$
-\end_inset
-
- and 
-\begin_inset Formula $b_{\mathbf{k}}$
-\end_inset
-
- written like 
-\begin_inset Formula $D\left(-\alpha{}_{\mathbf{k}}\right)D\left(\alpha{}_{\mathbf{k}}\right)=1$
-\end_inset
-
- in order to facilitate the calculations:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ can be written in the variatioanlly optimizable frame now:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\omega_{\mathbf{k}}D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(-\alpha{}_{\mathbf{k}}\right)D\left(\alpha{}_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(-\alpha{}_{\mathbf{k}}\right)|1\rangle\langle1| & =\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)|1\rangle\langle1|\\
- & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|1\rangle\langle1|+\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}|1\rangle\langle1|-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Respect to 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $H_{S}$
-\end_inset
-
-, 
-\begin_inset Formula $H_{I}$
-\end_inset
-
-, 
-\begin_inset Formula $H_{B}$
-\end_inset
-
- as shown in 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $\eqref{eq:Hs(t)}$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-, 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $\eqref{eq:HI1}$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- and 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $\eqref{eq:HB1}$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- the transformed hamiltonian of each one of these terms using the equations
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $\eqref{eq:transformation e1(t)|1><1|}$
-\end_inset
-
- to 
-\begin_inset Formula $\eqref{eq:bath transformation}$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\overline{H_{S}} & =\overline{\varepsilon_{0}\left(t\right)|0\rangle\langle0|}+\overline{\varepsilon_{1}\left(t\right)|1\rangle\langle1|}+\overline{V_{10}\left(t\right)|1\rangle\langle0|}+\overline{V_{01}\left(t\right)|0\rangle\langle1|}\\
+\overline{H_{S}(t)} & =\overline{\varepsilon_{0}\left(t\right)|0\rangle\langle0|}+\overline{\varepsilon_{1}\left(t\right)|1\rangle\langle1|}+\overline{V_{10}\left(t\right)|1\rangle\langle0|}+\overline{V_{01}\left(t\right)|0\rangle\langle1|}\\
  & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\varepsilon_{1}\left(t\right)|1\rangle\langle1|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}\\
 \overline{H_{I}} & =\overline{\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|}\\
- & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)+|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)|1\rangle\langle1|\\
- & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)|1\rangle\langle1|\\
+ & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)+|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)|1\rangle\langle1|\\
+ & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
 \overline{H_{B}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\right)\left(|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
- & =\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\alpha_{\mathbf{k}}\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\left(|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}
 \end{align}
 
 \end_inset
@@ -707,8 +521,8 @@ Finally merging these expressions gives the transformed Hamiltonian:
 \color none
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)|1\rangle\langle1|\\
- & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}|1\rangle\langle1|
+\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}|1\rangle\langle1|
 \end{align}
 
 \end_inset
@@ -734,7 +548,7 @@ Let's define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-R_{1} & \equiv\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\alpha_{\mathbf{k}}g_{\mathbf{k}}\right)\\
+R_{1} & \equiv\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)\\
 B_{z} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:Bz}
 \end{align}
 
@@ -1003,7 +817,7 @@ Another important expected value is
 \begin_inset Formula 
 \begin{align}
 \left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}} & ={\rm {Tr}}\left(\rho_{B}B_{\pm}\right)\label{eq:<B+->}\\
- & =\ensuremath{{\rm {exp}}}\left(-\left(1/2\right)\sum_{\mathbf{k}}\left(\alpha_{\mathbf{k}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
+ & =\ensuremath{{\rm {exp}}}\left(-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
  & \equiv B\label{eq:B}
 \end{align}
 
@@ -1078,9 +892,9 @@ A final form of the terms of the splitted Hamiltonian
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)|1\rangle\langle1|\\
- & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}|1\rangle\langle1|\\
- & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\alpha_{\mathbf{k}}g_{\mathbf{k}}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
+\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}|1\rangle\langle1|\\
+ & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
@@ -1605,11 +1419,11 @@ Using the chain rule on the function
 \end_inset
 
  can lead to calculate as intermediate step 
-\begin_inset Formula $\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\alpha_{\mathbf{k}}}$
+\begin_inset Formula $\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}$
 \end_inset
 
  because 
-\begin_inset Formula $\frac{{\rm d}\omega_{\mathbf{k}}}{{\rm d}v_{\mathbf{k}}}\,\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\alpha_{\mathbf{k}}}=\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial v_{\mathbf{k}}}$
+\begin_inset Formula $\frac{{\rm d}\omega_{\mathbf{k}}}{{\rm d}v_{\mathbf{k}}}\,\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}=\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial v_{\mathbf{k}}}$
 \end_inset
 
 :
@@ -1618,10 +1432,10 @@ Using the chain rule on the function
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\alpha_{\mathbf{k}}} & =\frac{{\rm \partial}\left(2\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)\right)}{\partial\alpha_{\mathbf{k}}}\\
- & =2\left(-\frac{\beta}{2}\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\alpha_{\mathbf{k}}}\right)\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)\\
- & +2\left(\frac{\beta}{2}\frac{{\rm \partial}\eta\left(t\right)}{\partial\alpha_{\mathbf{k}}}\right)\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)\\
- & =-\beta\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\left(\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\alpha_{\mathbf{k}}}\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)-\frac{{\rm \partial}\eta\left(t\right)}{\partial\alpha_{\mathbf{k}}}\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)\right)
+\frac{{\rm \partial}{\rm {\rm {Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}} & =\frac{{\rm \partial}\left(2\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\\
+ & =2\left(-\frac{\beta}{2}\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\right)\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)\\
+ & +2\left(\frac{\beta}{2}\frac{{\rm \partial}\eta\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\right)\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)\\
+ & =-\beta\ensuremath{{\rm {exp}}}\left(-\frac{\varepsilon\left(t\right)\beta}{2}\right)\left(\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)-\frac{{\rm \partial}\eta\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)\right)
 \end{align}
 
 \end_inset
@@ -1636,7 +1450,7 @@ Making the derivate equal to zero make us suitable to write:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\alpha_{\mathbf{k}}}\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)-\frac{{\rm \partial}\eta\left(t\right)}{\partial\alpha_{\mathbf{k}}}\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)=0\label{Var extr}
+\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\cosh\left(\frac{\eta\left(t\right)\beta}{2}\right)-\frac{{\rm \partial}\eta\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\sinh\left(\frac{\eta\left(t\right)\beta}{2}\right)=0\label{Var extr}
 \end{equation}
 
 \end_inset
@@ -1646,15 +1460,15 @@ Making the derivate equal to zero make us suitable to write:
 
 \begin_layout Standard
 The derivates included in the expression given are related to 
-\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\alpha_{\mathbf{k}}g_{\mathbf{k}}\right)$
+\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)$
 \end_inset
 
 , 
-\begin_inset Formula $B=\ensuremath{{\rm {exp}}}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left(\alpha_{\mathbf{k}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)$
+\begin_inset Formula $B=\ensuremath{{\rm {exp}}}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)$
 \end_inset
 
  and 
-\begin_inset Formula $\alpha_{\mathbf{k}}=\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}$
+\begin_inset Formula $\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}=\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}$
 \end_inset
 
 :
@@ -1663,13 +1477,13 @@ The derivates included in the expression given are related to
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\alpha_{\mathbf{k}}} & =\frac{{\rm \partial}\left(\varepsilon_{1}\left(t\right)+R_{1}+\varepsilon_{0}\left(t\right)\right)}{\partial\alpha_{\mathbf{k}}}\\
- & =\frac{{\rm \partial}\left(\omega_{\mathbf{k}}^{-1}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)\right)}{\partial\alpha_{\mathbf{k}}}=2\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2g_{\mathbf{k}}\\
-\frac{{\rm \partial}\eta\left(t\right)}{\partial\alpha_{\mathbf{k}}} & =\frac{{\rm \partial}\,\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}{\partial\alpha_{\mathbf{k}}}\\
- & =\frac{2\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\frac{{\rm \partial}\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)}{\partial\alpha_{\mathbf{k}}}-4\frac{{\rm \partial}\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}{\partial\alpha_{\mathbf{k}}}}{2\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}\\
- & =\frac{\varepsilon\left(t\right)\left(2\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2g_{\mathbf{k}}\right)-2\frac{{\rm \partial}\left(\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\varepsilon_{0}\left(t\right)-|V_{10}\left(t\right)|^{2}B^{2}\right)}{\partial\alpha_{\mathbf{k}}}}{\eta\left(t\right)}\\
- & =\frac{\varepsilon\left(t\right)\left(2\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2g_{\mathbf{k}}\right)-2\left(\varepsilon_{0}\left(t\right)\left(2\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2g_{\mathbf{k}}\right)+2|V_{10}\left(t\right)|^{2}B^{2}\alpha_{\mathbf{k}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)}{\eta\left(t\right)}\\
- & =\frac{\alpha_{\mathbf{k}}\left(2\omega_{\mathbf{k}}\varepsilon\left(t\right)-4\varepsilon_{0}\left(t\right)\omega_{\mathbf{k}}-4|V_{10}\left(t\right)|^{2}B^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)-\left(2g_{\mathbf{k}}\varepsilon\left(t\right)-4g_{\mathbf{k}}\varepsilon_{0}\left(t\right)\right)}{\eta\left(t\right)}
+\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}} & =\frac{{\rm \partial}\left(\varepsilon_{1}\left(t\right)+R_{1}+\varepsilon_{0}\left(t\right)\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\\
+ & =\frac{{\rm \partial}\left(\omega_{\mathbf{k}}^{-1}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}=2\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\\
+\frac{{\rm \partial}\eta\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}} & =\frac{{\rm \partial}\,\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}\\
+ & =\frac{2\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\frac{{\rm \partial}\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}-4\frac{{\rm \partial}\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}}{2\sqrt{\left(\ensuremath{{\rm {Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}\\
+ & =\frac{\varepsilon\left(t\right)\left(2\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\right)-2\frac{{\rm \partial}\left(\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\varepsilon_{0}\left(t\right)-|V_{10}\left(t\right)|^{2}B^{2}\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}}{\eta\left(t\right)}\\
+ & =\frac{\varepsilon\left(t\right)\left(2\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\right)-2\left(\varepsilon_{0}\left(t\right)\left(2\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\right)+2|V_{10}\left(t\right)|^{2}B^{2}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)}{\eta\left(t\right)}\\
+ & =\frac{\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(2\omega_{\mathbf{k}}\varepsilon\left(t\right)-4\varepsilon_{0}\left(t\right)\omega_{\mathbf{k}}-4|V_{10}\left(t\right)|^{2}B^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)-\left(2g_{\mathbf{k}}\varepsilon\left(t\right)-4g_{\mathbf{k}}\varepsilon_{0}\left(t\right)\right)}{\eta\left(t\right)}
 \end{align}
 
 \end_inset
@@ -1688,8 +1502,8 @@ From the equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\tanh\left(\frac{\beta\eta}{2}\right) & =\frac{\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\alpha_{\mathbf{k}}}}{\frac{{\rm \partial}\eta\left(t\right)}{\partial\alpha_{\mathbf{k}}}}\\
- & =\frac{\frac{2\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2g_{\mathbf{k}}}{1}}{\frac{\alpha_{\mathbf{k}}\left(2\omega_{\mathbf{k}}\varepsilon\left(t\right)-4\varepsilon_{0}\left(t\right)\omega_{\mathbf{k}}-4|V_{10}\left(t\right)|^{2}B^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)-\left(2g_{\mathbf{k}}\varepsilon\left(t\right)-4g_{\mathbf{k}}\varepsilon_{0}\left(t\right)\right)}{\eta\left(t\right)}}
+\tanh\left(\frac{\beta\eta}{2}\right) & =\frac{\frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}}{\frac{{\rm \partial}\eta\left(t\right)}{\partial\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}}}\\
+ & =\frac{\frac{2\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}}{1}}{\frac{\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(2\omega_{\mathbf{k}}\varepsilon\left(t\right)-4\varepsilon_{0}\left(t\right)\omega_{\mathbf{k}}-4|V_{10}\left(t\right)|^{2}B^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)-\left(2g_{\mathbf{k}}\varepsilon\left(t\right)-4g_{\mathbf{k}}\varepsilon_{0}\left(t\right)\right)}{\eta\left(t\right)}}
 \end{align}
 
 \end_inset
@@ -1699,7 +1513,7 @@ From the equation
 
 \begin_layout Standard
 Rearrannging this equation and using 
-\begin_inset Formula $v_{\mathbf{k}}=\omega_{\mathbf{k}}\alpha_{\mathbf{k}}$
+\begin_inset Formula $v_{\mathbf{k}}=\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}$
 \end_inset
 
  will lead to:
@@ -3941,7 +3755,7 @@ noindent
 \noun off
 \color none
  In this case 
-\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\alpha_{\mathbf{k}}g_{\mathbf{k}}\right)$
+\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)$
 \end_inset
 
  from 
@@ -3953,11 +3767,11 @@ noindent
 \end_inset
 
  and 
-\begin_inset Formula $\alpha_{\mathbf{k}}=g_{\mathbf{k}}/\omega_{\mathbf{k}}$
+\begin_inset Formula $\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}=g_{\mathbf{k}}/\omega_{\mathbf{k}}$
 \end_inset
 
  then 
-\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}^{-1}|g_{\mathbf{k}}|^{2}\right)=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}|\alpha_{\mathbf{k}}|^{2}\right)$
+\begin_inset Formula $R_{1}=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}^{-1}|g_{\mathbf{k}}|^{2}\right)=\sum_{\mathbf{k}}\left(-\omega_{\mathbf{k}}|\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}|^{2}\right)$
 \end_inset
 
  as expected, take 
@@ -4841,7 +4655,7 @@ We consider the following operator:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V=\left(\sum_{n=1}|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator}
+V=\left(\sum_{n=1}|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator}
 \end{equation}
 
 \end_inset
@@ -4871,7 +4685,7 @@ noindent
 \end_inset
 
 , consider 
-\begin_inset Formula $\hat{\varphi}=\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)$
+\begin_inset Formula $\hat{\varphi}=\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)$
 \end_inset
 
 :
@@ -4915,7 +4729,7 @@ noindent
 \end_inset
 
  then we can proof using the Zassenhaus formula and defining 
-\begin_inset Formula $D\left(\pm\alpha_{\mathbf{k}}\right)=e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}$
+\begin_inset Formula $D\left(\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)=e^{\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}$
 \end_inset
 
  in the same way than 
@@ -4928,8 +4742,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{\sum_{\mathbf{k}}\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)} & =\prod_{\mathbf{k}}e^{\pm\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\label{eq:B+}\\
- & =\prod_{\mathbf{k}}D\left(\pm\alpha_{\mathbf{k}}\right)\\
+e^{\sum_{\mathbf{k}}\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)} & =\prod_{\mathbf{k}}e^{\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\label{eq:B+}\\
+ & =\prod_{\mathbf{k}}D\left(\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
  & =B_{\pm}
 \end{align}
 
@@ -5049,10 +4863,10 @@ noindent
 \overline{\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
  & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}B_{+}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}B_{-}\\
  & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(B_{+}b_{\mathbf{k}}^{\dagger}B_{-}\right)\left(B_{+}b_{\mathbf{k}}B_{-}\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}-\alpha_{\mathbf{k}}\right)\\
- & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\alpha_{\mathbf{k}}^{2}\right)\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\alpha_{\mathbf{k}}^{2}-\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:bath multi}
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\\
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:bath multi}
 \end{align}
 
 \end_inset
@@ -5104,8 +4918,8 @@ noindent
 \overline{H_{I}} & =\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{+}\right)\left(\left(\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
  & =\left(\mu_{0}\left(t\right)|0\rangle\langle0|+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|B_{+}\right)\left(\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\left(|0\rangle\langle0|+\sum_{n=1}|n\rangle\langle n|B_{-}\right)\\
  & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}B_{+}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)B_{-}\\
- & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\alpha_{\mathbf{k}}\right)\\
-\overline{H_{B}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
+ & =\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+\overline{H_{B}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)
 \end{align}
 
 \end_inset
@@ -5130,11 +4944,11 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{H} & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & +\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}2g_{\mathbf{k}}\alpha_{\mathbf{k}}\\
+ & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-\sum_{n=1}|n\rangle\langle n|\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+ & +\sum_{n=0}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-\sum_{n=1}\mu_{n}\left(t\right)|n\rangle\langle n|\sum_{\mathbf{k}}2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\\
  & =\sum_{n=0}\varepsilon_{n}\left(t\right)|n\rangle\langle n|+\sum_{n=1}\left(V_{0n}\left(t\right)|0\rangle\langle n|B_{-}+V_{n0}\left(t\right)|n\rangle\langle0|B_{+}\right)+\sum_{m.n\neq0}V_{mn}\left(t\right)|m\rangle\langle n|\\
- & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\alpha_{\mathbf{k}}\right)+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
- & \text{+}\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H multisite transf}
+ & \text{+}\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)+\mu_{0}\left(t\right)|0\rangle\langle0|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+ & \text{+}\sum_{n=1}|n\rangle\langle n|\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:H multisite transf}
 \end{align}
 
 \end_inset
@@ -5161,9 +4975,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-R_{n} & \left(t\right)=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}^{2}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\label{eq:Rn}\\
- & =\sum_{\mathbf{k}}\alpha_{\mathbf{k}}\left(\omega_{\mathbf{k}}\alpha_{\mathbf{k}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\right)\\
-B_{z,n} & \left(t\right)=\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:Bz,n}
+R_{n} & \left(t\right)=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\label{eq:Rn}\\
+ & =\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\mu_{n}\left(t\right)g_{\mathbf{k}}\right)\\
+B_{z,n} & \left(t\right)=\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:Bz,n}
 \end{align}
 
 \end_inset
@@ -5669,7 +5483,7 @@ where
 \begin_inset Formula 
 \begin{align}
 B_{z,0} & =\sum_{\mathbf{k}}g_{\mathbf{k}}\mu_{0}\left(t\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
-B_{z,n} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\:\text{if\ensuremath{}}n\neq0
+B_{z,n} & =\sum_{\mathbf{k}}\left(g_{\mathbf{k}}\mu_{n}\left(t\right)-\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\:\text{if\ensuremath{}}n\neq0
 \end{align}
 
 \end_inset
