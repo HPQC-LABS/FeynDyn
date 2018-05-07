@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1090,7 +1092,7 @@ A final form of the terms of the splitted Hamiltonian
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
  & =\left(\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\right)+\left(\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right)\\
  & +\left(\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\right)\\
- & \equiv\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+H_{B}
+ & \equiv\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
 \end{align}
 
 \end_inset
@@ -1107,12 +1109,37 @@ The parts of the Hamiltonian splitted are:
 \begin{align}
 \overline{H_{\bar{S}}} & \equiv\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\label{eq:barHs}\\
 \overline{H_{\bar{I}}} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-f_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\label{eq:barHI}\\
-H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}=H_{B}
 \end{align}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $\overline{H_{\bar{B}}}$
+\end_inset
+
+, which is the bath acting on the effective 
+\begin_inset Quotes eld
+\end_inset
+
+system
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\bar{S}$
+\end_inset
+
+ in the variational frame, is just the original bath, 
+\begin_inset Formula $H_{B}$
+\end_inset
+
+, before transforming to the variational frame.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7264,7 +7291,7 @@ and
 \begin{align}
 \frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}\sum_{j,j',p,p'}\left(C_{jp}\left(t\right)C_{j'p'}\left(s\right)\left(\Lambda_{jpj'p'}\left(\tau\right)\widetilde{A_{jp}}\left(t\right)\widetilde{A_{j'p'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)-\Lambda_{j'p'jp}\left(-\tau\right)\widetilde{A_{jp}}\left(t\right)\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j'p'}}\left(s\right)\right)\right.\\
  & \left.+C_{jp}\left(t\right)C_{j'p'}\left(s\right)\left(\Lambda_{j'p'jp}\left(-\tau\right)\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j'p'}}\left(s\right)\widetilde{A_{jp}}\left(t\right)-\Lambda_{jpj'p'}\left(\tau\right)\widetilde{A_{j'p'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{jp}}\left(t\right)\right)\right){\rm d}s\\
- & =-\int_{0}^{t}\sum_{j,j',p,p'}\left(C_{jp}\left(t\right)C_{j'p'}\left(s\right)\left(\Lambda_{jpj'p'}\left(\tau\right)\left[\widetilde{A_{jp}}\left(t\right),\widetilde{A_{j'p'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\right]+\Lambda_{j'p'jp}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j'p'}}\left(s\right),\widetilde{A_{jp}}\left(t\right)\right]\right)\right)
+ & =-\int_{0}^{t}\sum_{jj'pp'}\left(C_{jp}\left(t\right)C_{j'p'}\left(s\right)\left(\Lambda_{jpj'p'}\left(\tau\right)\left[\widetilde{A_{jp}}\left(t\right),\widetilde{A_{j'p'}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\right]+\Lambda_{j'p'jp}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j'p'}}\left(s\right),\widetilde{A_{jp}}\left(t\right)\right]\right)\right)
 \end{align}
 
 \end_inset
