@@ -554,14 +554,14 @@ Let's define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-R_{1} & \equiv\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)\\
+R_{1} & \equiv\sum_{\mathbf{k}}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)\\
 B_{z} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\label{eq:Bz}
 \end{align}
 
 \end_inset
 
 We assume that the bath is at equilibrium with inverse temperature 
-\begin_inset Formula $\beta=1/k_{B}T$
+\begin_inset Formula $\beta=1/k_{\text{B}}T$
 \end_inset
 
 :
@@ -676,7 +676,8 @@ So the density matrix
 .
 \begin_inset Formula 
 \begin{align}
-{\rm exp}\left(-\beta\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right) & =\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|
+{\rm exp}\left(-\beta\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right) & =\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\\
+{\rm exp}\left(-\beta\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right) & =\prod_{k}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|
 \end{align}
 
 \end_inset
@@ -707,9 +708,14 @@ The value of
 \color none
 \begin_inset Formula 
 \begin{align}
-{\rm {\rm {\rm {Tr}}}}\left({\rm exp}\left(-\beta\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right)\right) & ={\rm {\rm {\rm {Tr}}}}\left(\sum_{j=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\label{eq:Tr}\\
- & =\sum_{j=0}^{\infty}{\rm exp}\left(-j\beta\omega_{\mathbf{k}}\right)\\
- & =\frac{1}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}
+{\rm {\rm {\rm {Tr}}}}\left({\rm exp}\left(-\beta\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right)\right) & ={\rm {\rm {\rm {Tr}}}}\left(\sum_{j}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\label{eq:Tr}\\
+ & =\sum_{j}{\rm exp}\left(-j\beta\omega_{\mathbf{k}}\right)\\
+ & =\sum_{j}{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)^{j}\\
+ & =\frac{1}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\,\,\,\,\text{(by geometric series)}\\
+ & \equiv f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)\\
+{\rm {\rm {\rm {Tr}}}}\left({\rm exp}\left(-\beta\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right)\right) & ={\rm {\rm {\rm {Tr}}}}\left(\prod_{k}\sum_{j}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
+ & ={\rm {\rm \prod_{k}{\rm {Tr}}}}\left(\sum_{j}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
+ & =\prod_{k}f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)
 \end{align}
 
 \end_inset
@@ -724,7 +730,9 @@ So the density matrix of the bath is:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\rho_{B} & =\prod_{\mathbf{k}}\left(\frac{\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\right)
+\rho_{B} & =\frac{e^{-\beta H_{B}}}{{\rm {Tr}}\left(e^{-\beta H_{B}}\right)}\\
+ & =\frac{\prod_{k}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{\prod_{k}f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\\
+ & =\prod_{k}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}
 \end{align}
 
 \end_inset
@@ -767,11 +775,29 @@ Then we can prove that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\rm {\rm {Tr}}}\left({\displaystyle b_{\mathbf{k}}^{\dagger}}\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right) & ={\rm {\rm {Tr}}}\left(\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\label{Trb}\\
- & ={\rm {\rm {\rm {Tr}}}}\left(\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\sqrt{j_{\mathbf{k}}+1}\left|j_{\mathbf{k}}+1\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
+\left\langle B_{z}\right\rangle _{H_{B}} & ={\rm Tr}\left(\rho_{B}B_{z}\right)={\rm Tr}\left(B_{z}\rho_{B}\right)\\
+ & ={\rm Tr}\left(\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\rho_{B}\right)\\
+ & =\sum_{\mathbf{k}}{\rm Tr}\left(\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\rho_{B}\right)\\
+ & ={\rm \sum_{\mathbf{k}}Tr}\left(\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\prod_{\mathbf{k}}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\\
+ & =\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\sum_{\mathbf{k}}{\rm Tr}\left(\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\prod_{\mathbf{k}}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\\
+ & =\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\sum_{\mathbf{k}}\left({\rm Tr}\left(b_{\mathbf{k}}^{\dagger}\prod_{\mathbf{k}}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)+{\rm Tr}\left(b_{\mathbf{k}}\prod_{\mathbf{k}}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Formula 
+\begin{align}
+{\rm {\rm {Tr}}}\left({\displaystyle b_{\mathbf{k}}^{\dagger}}\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right) & ={\rm {\rm {Tr}}}\left(\left(\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\right)b_{\mathbf{k}}^{\dagger}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\,\,\,\,\text{(by cyclic permutivity of trace, move \ensuremath{b_{\text{k}}^{\dagger}})}\label{Trb}\\
+ & ={\rm {\rm {\rm {Tr}}}}\left(\left(\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\right)\sqrt{j_{\mathbf{k}}+1}\left|j_{\mathbf{k}}+1\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
  & =0\\
-{\rm {\rm {\rm {Tr}}}}\left({\displaystyle b_{\mathbf{k}}}\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right) & ={\rm {\rm {\rm {Tr}}}}\left(\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)b_{\mathbf{k}}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\label{Trb-1}\\
- & ={\rm {\rm {\rm {Tr}}}}\left(\sum_{j_{\mathbf{k}}=1}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\sqrt{j_{\mathbf{k}}}\left|j_{\mathbf{k}}-1\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
+{\rm {\rm {\rm {Tr}}}}\left({\displaystyle b_{\mathbf{k}}}\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right) & ={\rm {\rm {\rm {Tr}}}}\left(\left(\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\right)b_{\mathbf{k}}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\,\,\,\,\text{(by cyclic permutivity of trace, move \ensuremath{b_{\text{k}}})}\label{Trb-1}\\
+ & ={\rm {\rm {\rm {Tr}}}}\left(\left(\prod_{\mathbf{k}}\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\right)\sqrt{j_{\mathbf{k}}}\left|j_{\mathbf{k}}-1\right\rangle \left\langle j_{\mathbf{k}}\right|\right)\\
  & =0
 \end{align}
 
@@ -781,25 +807,17 @@ Then we can prove that
 \end_layout
 
 \begin_layout Standard
-we find that 
+we therefore find that: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle B_{z}\right\rangle _{H_{B}} & ={\rm {Tr}}\left(\sum_{\mathbf{k'}}\left(g_{\mathbf{k'}}-f_{\mathbf{k'}}\right)\left(b_{\mathbf{k'}}^{\dagger}+b_{\mathbf{k'}}\right)\prod_{\mathbf{k}}\left(\frac{\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\right)\label{eq:<Bz>}\\
- & ={\rm {Tr}}\left(\prod_{\mathbf{k}}\left(\frac{\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\right)\\
- & ={\rm {Tr}}\left(\prod_{\mathbf{k}}\left(\frac{\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\right)\\
- & +{\rm {Tr}}\left(\prod_{\mathbf{k}}\left(\frac{\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\sum_{j_{\mathbf{k}}=0}^{\infty}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)b_{\mathbf{k}}\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{1-{\rm exp}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\right)\\
- & =0
+\left\langle B_{z}\right\rangle _{H_{B}} & =0\label{eq:<Bz>}
 \end{align}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \family roman
 \series medium
@@ -822,7 +840,11 @@ Another important expected value is
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}} & ={\rm {Tr}}\left(\rho_{B}B_{\pm}\right)\label{eq:<B+->}\\
+\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}} & ={\rm {Tr}}\left(\rho_{B}B_{\pm}\right)={\rm {Tr}}\left(B_{\pm}\rho_{B}\right)\label{eq:<B+->}\\
+ & ={\rm {Tr}}\left(e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\rho_{B}\right)\\
+ & ={\rm {Tr}}\left(e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\prod_{k}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)\\
+ & ={\rm {Tr}}\left(\left(\prod_{\text{k}}\frac{\sum_{j_{\mathbf{k}}}{\rm exp}\left(-j_{\mathbf{k}}\beta\omega_{\mathbf{k}}\right)\left|j_{\mathbf{k}}\right\rangle \left\langle j_{\mathbf{k}}\right|}{f_{{\rm Bose-Einstein}}\left(-\beta\omega_{\mathbf{k}}\right)}\right)e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\right)\\
+ & =\\
  & =\ensuremath{{\rm {exp}}}\left(-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
  & \equiv B\label{eq:B}
 \end{align}
@@ -841,12 +863,12 @@ Another important expected value is
 \uwave off
 \noun off
 \color none
-In order to (i) ensure that 
-\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{H_{B}}=0$
+We will now force 
+\begin_inset Formula $\left\langle \overline{H_{\bar{I}}}\right\rangle _{H_{B}}=0$
 \end_inset
 
- which simplifies the form of the master equation to be derived; (ii) introduce
- the bath renormalizing driving in 
+ .
+ We will also introduce the bath renormalizing driving in 
 \begin_inset Formula $\overline{H_{S}}$
 \end_inset
 
@@ -859,7 +881,7 @@ and
 \begin_inset Formula $B_{-}\sigma_{-}$
 \end_inset
 
- to the interaction part of the Hamiltonian 
+ with the interaction part of the Hamiltonian 
 \begin_inset Formula $\overline{H_{I}}$
 \end_inset
 
@@ -899,8 +921,8 @@ A final form of the terms of the splitted Hamiltonian
 \begin_inset Formula 
 \begin{align}
 \overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
- & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}|1\rangle\langle1|\\
- & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}v_{\mathbf{k}}|1\rangle\langle1|\\
+ & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\left(v_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
