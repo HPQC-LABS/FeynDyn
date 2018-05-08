@@ -434,8 +434,15 @@ We therefore have the following relationships:
 \overline{\varepsilon_{1}\left(t\right)|1\rangle\langle1|} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|\\
 \overline{V_{10}\left(t\right)|1\rangle\langle0|} & =V_{10}\left(t\right)|1\rangle\langle0|B_{+}\label{eq:V10 transf}\\
 \overline{V_{01}\left(t\right)|0\rangle\langle1|} & =V_{01}\left(t\right)|0\rangle\langle1|B_{-}\\
-\overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|} & =g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
-\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+\overline{g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)} & =g_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)+|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\\
+ & =g_{\mathbf{k}}\left(|0\rangle\langle0|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\\
+ & =g_{\mathbf{k}}\left(|0\rangle\langle0|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-|1\rangle\langle1|\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =g_{\mathbf{k}}\left(\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-|1\rangle\langle1|\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+\overline{|1\rangle\langle1|g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)} & =g_{\mathbf{k}}|1\rangle\langle1|\left(|0\rangle\langle0|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-|1\rangle\langle1|\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =g_{\mathbf{k}}\left(|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)-|1\rangle\langle1|\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & =g_{\mathbf{k}}|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-\frac{2v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}} & =\overline{\mathbb{I}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+ & =\overline{\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\overline{|0\rangle\langle0|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}+\overline{|1\rangle\langle1|\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(-v_{\mathbf{k}}\right)|1\rangle\langle1|\label{eq:bath transformation}\\
  & =\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}|0\rangle\langle0|+\omega_{\mathbf{k}}D\left(v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}\mathbb{I}b_{\mathbf{k}}D\left(-v_{\mathbf{k}}\right)|1\rangle\langle1|\\
@@ -488,13 +495,12 @@ noindent
 \overline{H_{S}(t)} & =\overline{\varepsilon_{0}\left(t\right)|0\rangle\langle0|}+\overline{\varepsilon_{1}\left(t\right)|1\rangle\langle1|}+\overline{V_{10}\left(t\right)|1\rangle\langle0|}+\overline{V_{01}\left(t\right)|0\rangle\langle1|}\\
  & =\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\varepsilon_{1}\left(t\right)|1\rangle\langle1|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}\\
 \overline{H_{I}} & =\overline{\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|}\\
- & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)+|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)|1\rangle\langle1|\\
- & =\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
-\overline{H_{B}} & =\sum_{\mathbf{k}}\overline{\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
+ & =|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+\overline{H_{B}} & =\overline{\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}}\\
  & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(|0\rangle\langle0|b_{\mathbf{k}}^{\dagger}+|1\rangle\langle1|\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\left(|0\rangle\langle0|b_{\mathbf{k}}+|1\rangle\langle1|\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\\
  & =|0\rangle\langle0|\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\left(b_{\mathbf{k}}-\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
  & =\left(|0\rangle\langle0|+|1\rangle\langle1|\right)\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\\
- & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}
+ & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-|1\rangle\langle1|\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)+|1\rangle\langle1|\sum_{\mathbf{k}}v_{\mathbf{k}}
 \end{align}
 
 \end_inset
@@ -521,8 +527,8 @@ Finally merging these expressions gives the transformed Hamiltonian:
 \color none
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
- & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}|1\rangle\langle1|
+\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}v_{\mathbf{k}}|1\rangle\langle1|
 \end{align}
 
 \end_inset
@@ -537,7 +543,7 @@ Also we may write this transformed Hamiltonian as a sum of the form:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H}=\overline{H_{S}}+\overline{H_{B}}+\overline{H_{I}}
+\overline{H}=\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
 \end{equation}
 
 \end_inset
