@@ -561,7 +561,7 @@ smallest
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+\overline{H(t)} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
  & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}v_{\mathbf{k}}|1\rangle\langle1|
 \end{align}
 
@@ -577,7 +577,7 @@ Also we may write this transformed Hamiltonian as a sum of the form:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H}=\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
+\overline{H(t)}=\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
 \end{equation}
 
 \end_inset
