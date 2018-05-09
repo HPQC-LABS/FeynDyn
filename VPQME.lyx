@@ -152,7 +152,7 @@ We will start with a system-bath coupling operator of the form
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Unitary Transformation into the variationally optimizable frame
 \end_layout
 
@@ -265,7 +265,7 @@ noindent
 \begin_inset Formula $O$
 \end_inset
 
- is the variational frame:
+ in the variational frame:
 \end_layout
 
 \begin_layout Standard
@@ -989,14 +989,14 @@ tiny
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
+\overline{H(t)} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)|1\rangle\langle1|\\
  & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\sum_{\mathbf{k}}\left(v_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & +\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\\
  & =\left(\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\right)+\left(\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right)\\
  & +\left(\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\right)\\
- & \equiv\overline{H_{\bar{S}}}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
+ & \equiv\overline{H_{\bar{S}}(t)}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}
 \end{align}
 
 \end_inset
@@ -1011,9 +1011,10 @@ The parts of the Hamiltonian splitted are:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\bar{S}}} & \equiv\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\label{eq:barHs}\\
+\overline{H_{\bar{S}}(t)} & \equiv\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)B\sigma_{+}+V_{01}\left(t\right)B\sigma_{-}\label{eq:barHs}\\
 \overline{H_{\bar{I}}} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+V_{10}\left(t\right)\left(\sigma_{+}B_{+}-\sigma_{+}B\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{-}-\sigma_{-}B\right)\label{eq:barHI}\\
-\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}=H_{B}
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
+ & =H_{B}
 \end{align}
 
 \end_inset
@@ -1517,7 +1518,7 @@ Let's define:
 \begin_inset Formula 
 \begin{align}
 \varepsilon\left(t\right) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{S}}\left(t\right)\right)\\
-\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}
+\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}(t)}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}(t)}\right)}
 \end{align}
 
 \end_inset
