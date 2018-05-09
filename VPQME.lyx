@@ -261,14 +261,17 @@ noindent
 
 \end_inset
 
- and we will use these later, but we do not need these to generate the Hamiltoni
-an in the variationally optimizable frame:
+ which will help us write operators 
+\begin_inset Formula $O$
+\end_inset
+
+ is the variational frame:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & \equiv{\rm e}^{V}H{\rm e}^{-V}.\label{eq:Trans}
+\overline{O} & \equiv{\rm e}^{V}O{\rm e}^{-V}.\label{eq:Trans}
 \end{align}
 
 \end_inset
