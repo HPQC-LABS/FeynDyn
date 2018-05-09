@@ -1518,7 +1518,7 @@ Let's define:
 \begin_inset Formula 
 \begin{align}
 \varepsilon\left(t\right) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{S}}\left(t\right)\right)\\
-\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}(t)}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}(t)}\right)}
+\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}(t)}\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{S}(t)}\right)}
 \end{align}
 
 \end_inset
@@ -1537,7 +1537,7 @@ The solutions of the equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\lambda & =\beta\frac{{\rm -{\rm \text{Tr}}}\left(\overline{H_{S}}\left(t\right)\right)\pm\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}{2}\\
+\lambda & =\beta\frac{{\rm -{\rm \text{Tr}}}\left(\overline{H_{S}}\left(t\right)\right)\pm\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4{\rm Det}\left(\overline{H_{S}}\right)}}{2}\\
  & =\beta\frac{-\varepsilon\left(t\right)\pm\eta\left(t\right)}{2}\\
  & =-\beta\frac{\varepsilon\left(t\right)\mp\eta\left(t\right)}{2}
 \end{align}
@@ -1802,7 +1802,7 @@ noindent
  technique.
  We consider the QD in its ground state.
  The initial density operator 
-\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{S}(0)\otimes\rho_{B}$
+\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}$
 \end_inset
 
 , the transformed density operator is equal to:
@@ -1812,9 +1812,19 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{\rho_{T}(0)} & \equiv e^{V}\rho_{T}\left(0\right)e^{-V}\\
- & =\left(|0\rangle\langle0|+|1\rangle\langle1|B_{+}\right)\left(\rho_{S}(0)\otimes\rho_{B}\right)\left(|0\rangle\langle0|+|1\rangle\langle1|B_{-}\right)\\
- & =\rho_{S}(0)\otimes\rho_{B}\\
- & =\rho_{T}\left(0\right)\label{eq: initial state transformed}
+ & =\left(|0\rangle\langle0|+|1\rangle\langle1|B_{+}\right)\left(\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}\right)\left(|0\rangle\langle0|+|1\rangle\langle1|B_{-}\right)\\
+\text{for \ensuremath{\rho_{S}(0)=|0\rangle\langle0|}:} & =|0\rangle\langle0|0\rangle\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\langle0|\\
+ & =|0\rangle\langle0|\otimes\rho_{B}^{{\rm Thermal}}\\
+ & =\rho_{T}\left(0\right)\\
+\text{for \ensuremath{\rho_{S}(0)=|1\rangle\langle1|}:} & =|1\rangle\langle1|B_{+}|1\rangle\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\langle1|B_{-}\label{eq: initial state transformed}\\
+ & =|1\rangle\langle1|B_{+}\rho_{B}^{{\rm Thermal}}B_{-}\\
+ & =|1\rangle\langle1|\otimes B_{+}\rho_{B}^{{\rm Thermal}}B_{-}\\
+\ensuremath{\text{for }\rho_{S}(0)=|0\rangle\langle1|}: & =|0\rangle\langle0|0\rangle\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\langle1|B_{-}\\
+ & =|0\rangle\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\langle1|B_{-}\\
+ & =|0\rangle\langle1|1\rangle\langle1|\rho_{B}^{{\rm Thermal}}B_{-}\\
+ & =|0\rangle\langle1|\otimes\rho_{B}^{{\rm Thermal}}B_{-}\\
+\ensuremath{\text{for }\rho_{S}(0)=|1\rangle\langle0|}: & =|1\rangle\langle1|B_{+}|1\rangle\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\langle0|\\
+ & =|1\rangle\langle0|\otimes B_{+}\rho_{B}^{{\rm Thermal}}
 \end{align}
 
 \end_inset
