@@ -1661,9 +1661,11 @@ The derivates included in the expression given are related to:
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right),B=\ensuremath{{\rm {exp}}}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)and\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}=\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}:
-\end{equation}
+\begin{align}
+R_{1} & =\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}g_{\mathbf{k}}\right),\\
+B & =\ensuremath{{\rm {exp}}}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)\\
+\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}} & =\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}:
+\end{align}
 
 \end_inset
 
@@ -1674,7 +1676,8 @@ R_{1}=\sum_{\mathbf{k}}\left(\omega_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\m
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm \partial}\varepsilon\left(t\right)}{\partial v_{\mathbf{k}}} & =\frac{{\rm \partial}\left(\varepsilon_{1}\left(t\right)+R_{1}+\varepsilon_{0}\left(t\right)\right)}{\partial v_{\mathbf{k}}}\\
- & =\frac{{\rm \partial}\left(\omega_{\mathbf{k}}^{-1}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)\right)}{\partial v_{\mathbf{k}}}=2v_{\mathbf{k}}-2g_{\mathbf{k}}\\
+ & =\frac{{\rm \partial}\left(\omega_{\mathbf{k}}^{-1}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)\right)}{\partial v_{\mathbf{k}}}\\
+ & =2v_{\mathbf{k}}-2g_{\mathbf{k}}\\
 \frac{{\rm \partial}\eta\left(t\right)}{\partial v_{\mathbf{k}}} & =\frac{{\rm \partial}\,\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}{\partial v_{\mathbf{k}}}\\
  & =\frac{2\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\frac{{\rm \partial}\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)}{\partial v_{\mathbf{k}}}-4\frac{{\rm \partial}\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}{\partial v_{\mathbf{k}}}}{2\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{S}}\right)\right)^{2}-4\ensuremath{{\rm {Det}}}\left(\overline{H_{S}}\right)}}\\
  & =\frac{\varepsilon\left(t\right)\left(2v_{\mathbf{k}}-2g_{\mathbf{k}}\right)-2\frac{{\rm \partial}\left(\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\varepsilon_{0}\left(t\right)-|V_{10}\left(t\right)|^{2}B^{2}\right)}{\partial v_{\mathbf{k}}}}{\eta\left(t\right)}\\
