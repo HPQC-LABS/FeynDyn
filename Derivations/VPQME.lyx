@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -6431,8 +6429,8 @@ noindent
 \begin{align}
 H(t) & =H_{S}(t)+H_{I}+H_{B},\label{eq:Multisite Hamiltonian-1}\\
 H_{S}(t) & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|,\label{eq:Hs(t) Multisite-1}\\
-H_{I} & =\sum_{n,v,\mathbf{k}}\mu_{n,v}\left(t\right)|n\rangle\negmedspace\langle n|\left(g_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+g_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right),\label{eq:HI Multisite-1}\\
-H_{B} & =\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}.\label{eq:HB Multisite-1}
+H_{I} & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(g_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right),\label{eq:HI Multisite-1}\\
+H_{B} & =\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}.\label{eq:HB Multisite-1}
 \end{align}
 
 \end_inset
@@ -6451,34 +6449,12 @@ We consider the following operator:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V=\sum_{n,v,\mathbf{k}}a_{nv}|n\rangle\negmedspace\langle n|\omega_{v,\mathbf{k}}^{-1}\left(f_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-f_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\label{eq: Tranformation operator-1}
+V=\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\omega_{u\mathbf{k}}^{-1}\left(f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\label{eq: Tranformation operator-1}
 \end{equation}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-We define 
-\begin_inset Formula $a_{nv}=1$
-\end_inset
-
- if the site 
-\begin_inset Formula $n$
-\end_inset
-
- is coupled to the bath 
-\begin_inset Formula $v$
-\end_inset
-
- and 
-\begin_inset Formula $a_{nv}=0$
-\end_inset
-
- in the other case.
- It allows to connect the variational transform of a given bath to the set
- of sites that relate with it.
 \end_layout
 
 \begin_layout Standard
@@ -6495,7 +6471,7 @@ noindent
 \end_inset
 
  At first let's obtain 
-\begin_inset Formula $e^{V}$
+\begin_inset Formula $e^{\pm V}$
 \end_inset
 
  under the transformation 
@@ -6503,7 +6479,7 @@ noindent
 \end_inset
 
 , consider 
-\begin_inset Formula $\hat{\varphi}_{n}=\sum_{v,\mathbf{k}}a_{nv}\omega_{v,\mathbf{k}}^{-1}\left(f_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-f_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)$
+\begin_inset Formula $\hat{\varphi}_{n}=\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}^{-1}\left(f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)$
 \end_inset
 
 , so the equation 
@@ -6520,12 +6496,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{V} & =e^{\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}}\\
- & =\mathbb{I}+\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\left(\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}\right)^{2}}{2!}+...\\
- & =\mathbb{I}+\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}^{2}}{2!}+...\\
- & =\sum_{n}|n\rangle\negmedspace\langle n|+\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}^{2}}{2!}+...\\
- & =\sum_{n}|n\rangle\negmedspace\langle n|\left(\mathbb{I}+\hat{\varphi}_{n}+\frac{\hat{\varphi}_{n}^{2}}{2!}+...\right)\\
- & =\sum_{n}|n\rangle\negmedspace\langle n|e^{\hat{\varphi}_{n}}
+e^{\pm V} & =e^{\pm\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}}\\
+ & =\mathbb{I}\pm\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\left(\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}\right)^{2}}{2!}+...\\
+ & =\mathbb{I}\pm\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}^{2}}{2!}+...\\
+ & =\sum_{n}|n\rangle\negmedspace\langle n|\pm\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}+\frac{\sum_{n}|n\rangle\negmedspace\langle n|\hat{\varphi}_{n}^{2}}{2!}+...\\
+ & =\sum_{n}|n\rangle\negmedspace\langle n|\left(\mathbb{I}\pm\hat{\varphi}_{n}+\frac{\hat{\varphi}_{n}^{2}}{2!}+...\right)\\
+ & =\sum_{n}|n\rangle\negmedspace\langle n|e^{\pm\hat{\varphi}_{n}}
 \end{align}
 
 \end_inset
@@ -6547,19 +6523,27 @@ noindent
 \end_inset
 
  Given that 
-\begin_inset Formula $\left[f_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-f_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}},f_{v,\mathbf{k}'}b_{v,\mathbf{k}'}^{\dagger}-f_{v,\mathbf{k}'}^{*}b_{v,\mathbf{k}'}\right]=0$
+\begin_inset Formula $\left[f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}},f_{nu'\mathbf{k}'}b_{u'\mathbf{k}'}^{\dagger}-f_{nu'\mathbf{k}'}^{*}b_{u'\mathbf{k}'}\right]=0$
 \end_inset
 
  for all 
 \begin_inset Formula $\mathbf{k^{'}},\mathbf{k}$
 \end_inset
 
+ and 
+\begin_inset Formula $u,u'$
+\end_inset
+
  then we can proof using the Zassenhaus formula and defining 
-\begin_inset Formula $D\left(\pm\alpha_{v,\mathbf{k}}\right)=e^{\pm\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)}$
+\begin_inset Formula $D\left(\pm\alpha_{nu\mathbf{k}}\right)=e^{\pm\left(\alpha_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-\alpha_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)}$
 \end_inset
 
  in the same way than 
 \begin_inset Formula $\eqref{Displacement operator}$
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha_{nu\mathbf{k}}=\frac{f_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}$
 \end_inset
 
 :
@@ -6568,9 +6552,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{\pm\sum_{v,\mathbf{k}}a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)} & =\prod_{v}e^{\pm\sum_{\mathbf{k}}a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}-\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)}\label{eq:B+-1-1}\\
- & =\prod_{v}\left(\prod_{\mathbf{k}}D\left(\pm\alpha_{v,\mathbf{k}}\right)\right)^{a_{nv}}\\
- & =\prod_{v}B_{v\pm}^{a_{nv}}
+e^{\pm\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}^{-1}\left(f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)} & =\prod_{u}e^{\pm\sum_{\mathbf{k}}\omega_{u\mathbf{k}}^{-1}\left(f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)}\label{eq:B+-1-1}\\
+ & =\prod_{u}\left(\prod_{\mathbf{k}}e^{\pm\omega_{u\mathbf{k}}^{-1}\left(f_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-f_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)}\right)\\
+ & =\prod_{u}\left(\prod_{\mathbf{k}}D\left(\pm\alpha_{nu\mathbf{k}}\right)\right)\\
+ & =\prod_{u\mathbf{k}}D\left(\pm\alpha_{nu\mathbf{k}}\right)\\
+ & =\prod_{u}B_{nu\pm}\\
+B_{nu\pm} & \equiv\prod_{\mathbf{k}}D\left(\pm\alpha_{nu\mathbf{k}}\right)
 \end{align}
 
 \end_inset
@@ -6592,22 +6579,22 @@ noindent
 \end_inset
 
  As we can see 
-\begin_inset Formula $e^{-V}=\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}$
+\begin_inset Formula $e^{-V}=\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}$
 \end_inset
 
  and 
-\begin_inset Formula $e^{V}=\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}$
+\begin_inset Formula $e^{V}=\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}$
 \end_inset
 
- because this form imposes that 
+ this implies that 
 \series bold
 
 \begin_inset Formula $e^{-V}e^{V}=\mathbb{I}$
 \end_inset
 
- 
+
 \series default
-and the inverse of an operator is unique.
+.
  This allows us to write the canonical transformation in the following explicit
  way:
 \end_layout
@@ -6615,7 +6602,7 @@ and the inverse of an operator is unique.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-e^{V}Ae^{-V}=\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)A\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right)\label{eq:Canonical Transformation-1}
+e^{V}Ae^{-V}=\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)A\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right)\label{eq:Canonical Transformation-1}
 \end{equation}
 
 \end_inset
@@ -6644,7 +6631,7 @@ ion to each part of the Hamiltonian
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)A\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right)
+\overline{A}={\rm e}^{V}A{\rm e}^{-V}=\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)A\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right)
 \end{equation}
 
 \end_inset
@@ -6681,22 +6668,34 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{|0\rangle\negmedspace\langle0|} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)|0\rangle\negmedspace\langle0|\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right),\label{eq:Multi 00-1}\\
- & =\prod_{v}B_{v+}^{a_{0v}}|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle0|\prod_{v}B_{v-}^{a_{0v}},\\
- & =|0\rangle\negmedspace\langle0|\prod_{v}B_{v+}^{a_{0v}}\prod_{v}B_{v-}^{a_{0v}},\\
+\overline{|0\rangle\negmedspace\langle0|} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)|0\rangle\negmedspace\langle0|\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right),\label{eq:Multi 00-1}\\
+ & =\prod_{u}B_{0u+}|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle0|\prod_{u}B_{0u-},\\
+ & =|0\rangle\negmedspace\langle0|\prod_{u}B_{0u+}\prod_{u}B_{0u-},\\
+ & =|0\rangle\negmedspace\langle0|\prod_{u}B_{0u+}B_{0u-}\\
+ & =|0\rangle\negmedspace\langle0|\prod_{u}\mathbb{I}\\
  & =|0\rangle\negmedspace\langle0|.\\
-\overline{|m\rangle\negmedspace\langle n|} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)|m\rangle\negmedspace\langle n|\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right),\\
- & =|m\rangle\negmedspace\langle m|\prod_{v}B_{v+}^{a_{mv}}|m\rangle\negmedspace\langle n|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}},\\
- & =|m\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{mv}}\prod_{v}B_{v-}^{a_{nv}},\:m\neq n,\\
-\overline{\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right)\\
- & =\left(|0\rangle\negmedspace\langle0|\prod_{v}B_{v+}^{a_{0v}}+|1\rangle\negmedspace\langle1|\prod_{v}B_{v+}^{a_{1v}}+...\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}\right)\left(|0\rangle\negmedspace\langle0|\prod_{v}B_{v-}^{a_{0v}}+|1\rangle\negmedspace\langle1|\prod_{v}B_{v-}^{a_{1v}}+...\right)\\
- & =|0\rangle\negmedspace\langle0|\prod_{v}B_{v+}^{a_{0v}}\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}\prod_{v}B_{v-}^{a_{0v}}+|1\rangle\negmedspace\langle1|\prod_{v}B_{v+}^{a_{1v}}\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}\prod_{v}B_{v-}^{a_{1v}}+...\\
- & =|0\rangle\negmedspace\langle0|\prod_{v}B_{v+}^{a_{0v}}\left(\sum_{\mathbf{k}}\omega_{0,\mathbf{k}}b_{0,\mathbf{k}}^{\dagger}b_{0,\mathbf{k}}+\sum_{\mathbf{k}}\omega_{1,\mathbf{k}}b_{1,\mathbf{k}}^{\dagger}b_{1,\mathbf{k}}+...\right)\prod_{v}B_{v-}^{a_{0v}}+...\\
- & =|0\rangle\negmedspace\langle0|\left(\prod_{v}B_{v+}^{a_{0v}}\sum_{\mathbf{k}}\omega_{0,\mathbf{k}}b_{0,\mathbf{k}}^{\dagger}b_{0,\mathbf{k}}\prod_{v}B_{v-}^{a_{0v}}+\prod_{v}B_{v+}^{a_{0v}}\sum_{\mathbf{k}}\omega_{1,\mathbf{k}}b_{1,\mathbf{k}}^{\dagger}b_{1,\mathbf{k}}\prod_{v}B_{v-}^{a_{0v}}+...\right)+...\\
- & =|0\rangle\negmedspace\langle0|\left(\sum_{\mathbf{k}}\omega_{0,\mathbf{k}}\left(b_{0,\mathbf{k}}^{\dagger}-a_{00}\alpha_{0,\mathbf{k}}^{*}\right)\left(b_{0,\mathbf{k}}-a_{00}\alpha_{0,\mathbf{k}}\right)+\sum_{\mathbf{k}}\omega_{1,\mathbf{k}}\left(b_{1,\mathbf{k}}^{\dagger}-a_{01}\alpha_{1,\mathbf{k}}^{*}\right)\left(b_{1,\mathbf{k}}-a_{01}\alpha_{1,\mathbf{k}}\right)+...\right)+...\\
- & =|0\rangle\negmedspace\langle0|\left(\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}\left(b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}-a_{0v}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)+a_{0v}^{2}|\alpha_{v,\mathbf{k}}|^{2}\right)\right)+...\\
- & =|0\rangle\negmedspace\langle0|\left(\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}+\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}\left(a_{0v}^{2}|\alpha_{v,\mathbf{k}}|^{2}-a_{0v}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)\right)+...\\
- & =\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}+\sum_{n,v,\mathbf{k}}|n\rangle\negmedspace\langle n|\omega_{v,\mathbf{k}}\left(a_{nv}^{2}|\alpha_{v,\mathbf{k}}|^{2}-a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)\label{eq:bath multi-1}
+\overline{|m\rangle\negmedspace\langle n|} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)|m\rangle\negmedspace\langle n|\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right),\\
+ & =|m\rangle\negmedspace\langle m|\prod_{u}B_{mu+}|m\rangle\negmedspace\langle n|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-},\\
+ & =|m\rangle\negmedspace\langle n|\prod_{u}B_{mu+}\prod_{u}B_{nu-},\\
+ & =|m\rangle\negmedspace\langle n|\prod_{u}\left(B_{mu+}B_{nu-}\right),\:m\neq n,\\
+ & =|m\rangle\negmedspace\langle n|\prod_{u}\left(\prod_{\mathbf{k}}D\left(\alpha_{mu\mathbf{k}}\right)\prod_{\mathbf{k}}D\left(-\alpha_{nu\mathbf{k}}\right)\right)\\
+ & =|m\rangle\negmedspace\langle n|\prod_{u}\prod_{\mathbf{k}}\left(D\left(\alpha_{mu\mathbf{k}}\right)D\left(-\alpha_{nu\mathbf{k}}\right)\right)\\
+ & =|m\rangle\negmedspace\langle n|\prod_{u\mathbf{k}}\left(D\left(\alpha_{mu\mathbf{k}}-\alpha_{nu\mathbf{k}}\right){\rm exp}\left(\frac{1}{2}\left(-\alpha_{mu\mathbf{k}}\alpha_{nu\mathbf{k}}^{*}+\alpha_{mu\mathbf{k}}^{*}\alpha_{nu\mathbf{k}}\right)\right)\right)\\
+\prod_{u}\left(B_{mu+}B_{nu-}\right) & =\prod_{u\mathbf{k}}\left(D\left(\alpha_{mu\mathbf{k}}-\alpha_{nu\mathbf{k}}\right){\rm exp}\left(\frac{1}{2}\left(-\alpha_{mu\mathbf{k}}\alpha_{nu\mathbf{k}}^{*}+\alpha_{mu\mathbf{k}}^{*}\alpha_{nu\mathbf{k}}\right)\right)\right)\\
+\overline{\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right)\\
+ & =\left(|0\rangle\negmedspace\langle0|\prod_{u}B_{0u+}+|1\rangle\negmedspace\langle1|\prod_{u}B_{1u+}+...\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}\right)\left(|0\rangle\negmedspace\langle0|\prod_{u}B_{0u-}+|1\rangle\negmedspace\langle1|\prod_{u}B_{1u-}+...\right)\\
+ & =|0\rangle\negmedspace\langle0|\prod_{u}B_{0u+}\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}\prod_{u}B_{0u-}+|1\rangle\negmedspace\langle1|\prod_{u}B_{1u+}\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}\prod_{u}B_{1u-}+...\\
+ & =|0\rangle\negmedspace\langle0|\prod_{u}B_{0u+}\left(\sum_{\mathbf{k}}\omega_{0\mathbf{k}}b_{0\mathbf{k}}^{\dagger}b_{0\mathbf{k}}+\sum_{\mathbf{k}}\omega_{1\mathbf{k}}b_{1\mathbf{k}}^{\dagger}b_{1\mathbf{k}}+...\right)\prod_{u}B_{0u-}\\
+ & +|1\rangle\negmedspace\langle1|\prod_{u}B_{1u+}\left(\sum_{\mathbf{k}}\omega_{0\mathbf{k}}b_{0\mathbf{k}}^{\dagger}b_{0\mathbf{k}}+\sum_{\mathbf{k}}\omega_{1\mathbf{k}}b_{1\mathbf{k}}^{\dagger}b_{1\mathbf{k}}+...\right)\prod_{u}B_{1u-}+...\\
+ & =|0\rangle\negmedspace\langle0|\left(\prod_{u}B_{0u+}\sum_{\mathbf{k}}\omega_{0\mathbf{k}}b_{0\mathbf{k}}^{\dagger}b_{0\mathbf{k}}\prod_{u}B_{0u-}+\prod_{u}B_{0u+}\sum_{\mathbf{k}}\omega_{1\mathbf{k}}b_{1\mathbf{k}}^{\dagger}b_{1\mathbf{k}}\prod_{u}B_{0u-}+...\right)\\
+ & +|1\rangle\negmedspace\langle1|\left(\prod_{u}B_{1u+}\sum_{\mathbf{k}}\omega_{0\mathbf{k}}b_{0\mathbf{k}}^{\dagger}b_{0\mathbf{k}}\prod_{u}B_{1u-}+\prod_{u}B_{1u+}\sum_{\mathbf{k}}\omega_{1\mathbf{k}}b_{1\mathbf{k}}^{\dagger}b_{1\mathbf{k}}\prod_{u}B_{1u-}+...\right)+...\\
+ & =|0\rangle\negmedspace\langle0|\left(\sum_{\mathbf{k}}\omega_{0\mathbf{k}}\left(b_{0\mathbf{k}}^{\dagger}-\frac{v_{00\mathbf{k}}^{*}}{\omega_{0\mathbf{k}}}\right)\left(b_{0\mathbf{k}}-\frac{v_{00\mathbf{k}}}{\omega_{0\mathbf{k}}}\right)+\sum_{\mathbf{k}}\omega_{1\mathbf{k}}\left(b_{1\mathbf{k}}^{\dagger}-\frac{v_{01\mathbf{k}}^{*}}{\omega_{1\mathbf{k}}}\right)\left(b_{0\mathbf{k}}-\frac{v_{01\mathbf{k}}}{\omega_{1\mathbf{k}}}\right)+...\right)\\
+ & +|1\rangle\negmedspace\langle1|\left(\sum_{\mathbf{k}}\omega_{0\mathbf{k}}\left(b_{0\mathbf{k}}^{\dagger}-\frac{v_{10\mathbf{k}}^{*}}{\omega_{0\mathbf{k}}}\right)\left(b_{0\mathbf{k}}-\frac{v_{10\mathbf{k}}}{\omega_{0\mathbf{k}}}\right)+\sum_{\mathbf{k}}\omega_{1\mathbf{k}}\left(b_{1\mathbf{k}}^{\dagger}-\frac{v_{11\mathbf{k}}^{*}}{\omega_{1\mathbf{k}}}\right)\left(b_{0\mathbf{k}}-\frac{v_{11\mathbf{k}}}{\omega_{1\mathbf{k}}}\right)+...\right)+...\\
+ & =|0\rangle\negmedspace\langle0|\left(\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{0u\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)\left(b_{u\mathbf{k}}-\frac{v_{0u\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)+|1\rangle\negmedspace\langle1|\left(\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{1u\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)\left(b_{u\mathbf{k}}-\frac{v_{1u\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)+...\\
+ & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\omega_{u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)\left(b_{u\mathbf{k}}-\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\\
+ & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\omega_{u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}-\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}b_{u\mathbf{k}}^{\dagger}-\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}b_{u\mathbf{k}}+\left|\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right|^{2}\right)\right)\label{eq:bath multi-1}\\
+ & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}+\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-v_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}-v_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\\
+ & =\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}+\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\left(v_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+v_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\right)
 \end{align}
 
 \end_inset
@@ -6741,15 +6740,18 @@ noindent
 \begin{align}
 \overline{H_{S}\left(t\right)} & =\overline{\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|}\\
  & =\overline{\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|}+\overline{\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|}\\
- & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{v}B_{v+}^{a_{nv}}\prod_{v}B_{v-}^{a_{mv}}\\
-\overline{H_{I}} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)\left(\sum_{n,v,\mathbf{k}}\mu_{n,v}\left(t\right)|n\rangle\negmedspace\langle n|\left(g_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+g_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right)\\
- & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v+}^{a_{nv}}\right)\left(\sum_{v,\mathbf{k}}\mu_{0,v}\left(t\right)|0\rangle\negmedspace\langle0|\left(g_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+g_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)+...\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{v}B_{v-}^{a_{nv}}\right)\\
- & =\prod_{v}B_{v+}^{a_{0v}}\sum_{v,\mathbf{k}}\mu_{0,v}\left(t\right)|0\rangle\negmedspace\langle0|\left(g_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+g_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\prod_{v}B_{v-}^{a_{0v}}+...\\
- & =\prod_{v}B_{v+}^{a_{0v}}\left(\sum_{\mathbf{k}}\mu_{0,0}\left(t\right)|0\rangle\negmedspace\langle0|\left(g_{0,\mathbf{k}}b_{0,\mathbf{k}}^{\dagger}+g_{0,\mathbf{k}}^{*}b_{0,\mathbf{k}}\right)+...\right)\prod_{v}B_{v-}^{a_{0v}}+...\\
- & =\left(\sum_{\mathbf{k}}\mu_{0,0}\left(t\right)|0\rangle\negmedspace\langle0|\left(g_{0,\mathbf{k}}\left(b_{0,\mathbf{k}}^{\dagger}-a_{00}\alpha_{0,\mathbf{k}}^{*}\right)+g_{0,\mathbf{k}}^{*}\left(b_{0,\mathbf{k}}-a_{00}\alpha_{0,\mathbf{k}}\right)\right)+...\right)+...\\
- & =\sum_{v,\mathbf{k}}\mu_{0,v}\left(t\right)|0\rangle\negmedspace\langle0|\left(g_{v,\mathbf{k}}\left(b_{v,\mathbf{k}}^{\dagger}-a_{0v}\alpha_{v,\mathbf{k}}^{*}\right)+g_{v,\mathbf{k}}^{*}\left(b_{v,\mathbf{k}}-a_{0v}\alpha_{v,\mathbf{k}}\right)\right)+...\\
- & =\sum_{n,v,\mathbf{k}}\mu_{n,v}\left(t\right)|n\rangle\negmedspace\langle n|\left(g_{v,\mathbf{k}}\left(b_{v,\mathbf{k}}^{\dagger}-a_{nv}\alpha_{v,\mathbf{k}}^{*}\right)+g_{v,\mathbf{k}}^{*}\left(b_{v,\mathbf{k}}-a_{nv}\alpha_{v,\mathbf{k}}\right)\right)\\
-\overline{H_{B}} & =\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}+\sum_{n,v,\mathbf{k}}|n\rangle\negmedspace\langle n|\omega_{v,\mathbf{k}}\left(a_{nv}^{2}|\alpha_{v,\mathbf{k}}|^{2}-a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)
+ & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{u}\left(B_{mu+}B_{nu-}\right)\\
+\overline{H_{I}} & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)\left(\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(g_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right)\\
+ & =\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu+}\right)\left(\sum_{u\mathbf{k}}|0\rangle\negmedspace\langle0|\left(g_{0u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{0u\mathbf{k}}^{*}b_{u\mathbf{k}}\right)+...\right)\left(\sum_{n}|n\rangle\negmedspace\langle n|\prod_{u}B_{nu-}\right)\\
+ & =\prod_{u}B_{0u+}\sum_{u\mathbf{k}}|0\rangle\negmedspace\langle0|\left(g_{0u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{0u\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\prod_{u}B_{0u-}\\
+ & +\prod_{u}B_{1u+}\sum_{u\mathbf{k}}|1\rangle\negmedspace\langle1|\left(g_{1u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{1u\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\prod_{u}B_{1u-}+...\\
+ & =\sum_{u\mathbf{k}}|0\rangle\negmedspace\langle0|\left(g_{0u\mathbf{k}}\prod_{u}B_{0u+}b_{u\mathbf{k}}^{\dagger}\prod_{u}B_{0u-}+g_{0u\mathbf{k}}^{*}\prod_{u}B_{0u+}b_{u\mathbf{k}}\prod_{u}B_{0u-}\right)\\
+ & +\sum_{u\mathbf{k}}|1\rangle\negmedspace\langle1|\left(g_{1u\mathbf{k}}\prod_{u}B_{1u+}b_{u\mathbf{k}}^{\dagger}\prod_{u}B_{1u-}+g_{1u\mathbf{k}}^{*}\prod_{u}B_{1u+}b_{u\mathbf{k}}\prod_{u}B_{1u-}\right)+...\\
+ & =\sum_{u\mathbf{k}}|0\rangle\negmedspace\langle0|\left(g_{0u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{0u\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)+g_{0u\mathbf{k}}^{*}\left(b_{u\mathbf{k}}-\frac{v_{0u\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\\
+ & +\sum_{u\mathbf{k}}|1\rangle\negmedspace\langle1|\left(g_{1u\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{1u\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)+g_{1u\mathbf{k}}^{*}\left(b_{u\mathbf{k}}-\frac{v_{1u\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)+...\\
+ & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(g_{nu\mathbf{k}}\left(b_{u\mathbf{k}}^{\dagger}-\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}\right)+g_{nu\mathbf{k}}^{*}\left(b_{u\mathbf{k}}-\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\\
+ & =\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(g_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}-\left(g_{nu\mathbf{k}}\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}+g_{nu\mathbf{k}}^{*}\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\\
+\overline{H_{B}} & =\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}+\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\left(v_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+v_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\right)
 \end{align}
 
 \end_inset
@@ -6776,8 +6778,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{v}B_{v+}^{a_{nv}}\prod_{v}B_{v-}^{a_{mv}}+\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}+\sum_{n,v,\mathbf{k}}|n\rangle\negmedspace\langle n|\omega_{v,\mathbf{k}}\left(a_{nv}^{2}|\alpha_{v,\mathbf{k}}|^{2}\right.\label{eq:traH}\\
- & \left.-a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)+\sum_{n,v,\mathbf{k}}\mu_{n,v}\left(t\right)|n\rangle\negmedspace\langle n|\left(g_{v,\mathbf{k}}\left(b_{v,\mathbf{k}}^{\dagger}-a_{nv}\alpha_{v,\mathbf{k}}^{*}\right)+g_{v,\mathbf{k}}^{*}\left(b_{v,\mathbf{k}}-a_{nv}\alpha_{v,\mathbf{k}}\right)\right)
+\overline{H} & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{u}\left(B_{mu+}B_{nu-}\right)+\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}+\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}\right.\label{eq:traH}\\
+ & \left.-\left(v_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+v_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}\right)\right)+\sum_{nu\mathbf{k}}|n\rangle\negmedspace\langle n|\left(g_{nu\mathbf{k}}b_{u\mathbf{k}}^{\dagger}+g_{nu\mathbf{k}}^{*}b_{u\mathbf{k}}-\left(g_{nu\mathbf{k}}\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}+g_{nu\mathbf{k}}^{*}\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)
 \end{align}
 
 \end_inset
@@ -6798,22 +6800,14 @@ noindent
 
 \end_inset
 
- Let's define the following functions, given that 
-\begin_inset Formula $a_{nv}=0,1$
-\end_inset
-
- then 
-\begin_inset Formula $a_{nv}=a_{nv}^{2}$
-\end_inset
-
- so we can reduce it in the equations:
+ Let's define the following functions:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-R_{n} & \left(t\right)=\sum_{v,\mathbf{k}}a_{nv}\left(\omega_{v,\mathbf{k}}|\alpha_{v,\mathbf{k}}|^{2}-\mu_{n,v}\left(t\right)\left(g_{v,\mathbf{k}}\alpha_{v,\mathbf{k}}^{*}+g_{v,\mathbf{k}}^{*}\alpha_{v,\mathbf{k}}\right)\right)\label{eq:Rn-1}\\
-B_{z,n} & \left(t\right)=\sum_{v,\mathbf{k}}\left(\mu_{n,v}\left(t\right)\left(g_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+g_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)-\omega_{v,\mathbf{k}}a_{nv}\left(\alpha_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}+\alpha_{v,\mathbf{k}}^{*}b_{v,\mathbf{k}}\right)\right)\label{eq:Bz,n-1}
+R_{n} & \left(t\right)=\sum_{u\mathbf{k}}\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\left(g_{nu\mathbf{k}}\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}+g_{nu\mathbf{k}}^{*}\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\label{eq:Rn-1}\\
+B_{z,n} & \left(t\right)=\sum_{u\mathbf{k}}\left(\left(g_{nu\mathbf{k}}-v_{nu\mathbf{k}}\right)b_{u\mathbf{k}}^{\dagger}+\left(g_{nu\mathbf{k}}-v_{nu\mathbf{k}}\right)^{*}b_{u\mathbf{k}}\right)\label{eq:Bz,n-1}
 \end{align}
 
 \end_inset
@@ -6844,7 +6838,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H} & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{v}B_{v+}^{a_{nv}}\prod_{v}B_{v-}^{a_{mv}}+\sum_{v,\mathbf{k}}\omega_{v,\mathbf{k}}b_{v,\mathbf{k}}^{\dagger}b_{v,\mathbf{k}}\\
+\overline{H} & =\sum_{n}\varepsilon_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\prod_{u}\left(B_{mu+}B_{nu-}\right)+\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}\\
  & +\sum_{n}R_{n}\left(t\right)|n\rangle\negmedspace\langle n|+\sum_{n}B_{z,n}\left(t\right)|n\rangle\negmedspace\langle n|\label{eq:H trans multisite-1}
 \end{align}
 
@@ -6884,33 +6878,13 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\left\langle B_{n+}B_{m-}\right\rangle _{\overline{H_{0}}}=\left\langle B_{n+}\right\rangle _{\overline{H_{0}}}\left\langle B_{m-}\right\rangle _{\overline{H_{0}}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The previous expression is true because 
-\begin_inset Formula $n\neq m$
-\end_inset
-
-, so it's possible to separate the expected values.
- In this context can deduce using 
-\begin_inset Formula $\eqref{eq:<B+->}$
-\end_inset
-
-that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
 \begin{align}
-B_{n} & =\left\langle B_{n\pm}\right\rangle _{\overline{H_{0}}}\\
- & ={\rm exp}\left(-\left(1/2\right)\sum_{\mathbf{k}}\frac{f_{n,\mathbf{k}}^{2}}{\omega_{n\mathbf{,k}}^{2}}\coth\left(\beta\omega_{n,\mathbf{k}}/2\right)\right)
+\left\langle \prod_{u}\left(B_{mu+}B_{nu-}\right)\right\rangle _{\overline{H_{0}}} & =\left\langle \prod_{u\mathbf{k}}\left(D\left(\alpha_{mu\mathbf{k}}-\alpha_{nu\mathbf{k}}\right){\rm exp}\left(\frac{1}{2}\left(-\alpha_{mu\mathbf{k}}\alpha_{nu\mathbf{k}}^{*}+\alpha_{mu\mathbf{k}}^{*}\alpha_{nu\mathbf{k}}\right)\right)\right)\right\rangle _{\overline{H_{0}}}\\
+ & =\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(-\alpha_{mu\mathbf{k}}\alpha_{nu\mathbf{k}}^{*}+\alpha_{mu\mathbf{k}}^{*}\alpha_{nu\mathbf{k}}\right)\right)\right)\left\langle \prod_{u\mathbf{k}}D\left(\alpha_{mu\mathbf{k}}-\alpha_{nu\mathbf{k}}\right)\right\rangle _{\overline{H_{0}}}\\
+ & =\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+ & \equiv B_{nm}\\
+\left\langle \prod_{u}\left(B_{nu+}B_{mu-}\right)\right\rangle _{\overline{H_{0}}} & =\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{nu\mathbf{k}}^{*}v_{mu\mathbf{k}}-v_{nu\mathbf{k}}v_{mu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+ & =B_{nm}^{*}
 \end{align}
 
 \end_inset
@@ -6925,8 +6899,26 @@ Following the reference [4] we define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-B_{nm}=B_{n+}B_{m-}-B_{n}B_{m}
+J_{nm}=\prod_{u}\left(B_{mu+}B_{nu-}\right)-B_{nm}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+J_{nm}^{\dagger} & =\left(\prod_{u}\left(B_{mu+}B_{nu-}\right)-B_{nm}\right)^{\dagger}\\
+ & =\prod_{u}\left(B_{nu+}B_{mu-}\right)-B_{nm}^{*}\\
+ & =\prod_{u}\left(B_{nu+}B_{mu-}\right)-B_{mn}\\
+ & =J_{mn}
+\end{align}
 
 \end_inset
 
@@ -6938,20 +6930,16 @@ We can separate the Hamiltonian
 \begin_inset Formula $\eqref{eq:H trans multisite-1}$
 \end_inset
 
- on the following way using similar arguments to the previous cases in order
- to satisfy 
-\begin_inset Formula $\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{0}}}=0$
-\end_inset
-
-:
+ on the following way using similar arguments to the precedent sections
+ to obtain:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{S}\left(t\right)} & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|B_{n}B_{m}\\
-\overline{H_{I}} & =\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|B_{nm}+\sum_{n}B_{z,n}\left(t\right)|n\rangle\negmedspace\langle n|,\\
-\overline{H_{B}} & =\sum_{n,\mathbf{k}}\omega_{n,\mathbf{k}}b_{n,\mathbf{k}}^{\dagger}b_{n,\mathbf{k}}
+\overline{H_{\bar{S}}(t)} & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+R_{n}\right)|n\rangle\negmedspace\langle n|+\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|B_{nm}\\
+\overline{H_{\bar{I}}} & =\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|J_{nm}+\sum_{n}B_{z,n}\left(t\right)|n\rangle\negmedspace\langle n|,\\
+\overline{H_{\bar{B}}} & =\sum_{u\mathbf{k}}\omega_{u\mathbf{k}}b_{u\mathbf{k}}^{\dagger}b_{u\mathbf{k}}
 \end{align}
 
 \end_inset
@@ -6983,7 +6971,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta(\overline{H_{S}+H_{B}})}\right)\right)+\left\langle \overline{H_{I}}\right\rangle _{\overline{H_{S}+H_{B}}}+O\left(\left\langle \overline{H_{I}^{2}}\right\rangle _{\overline{H_{S}+H_{B}}}\right).
+A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta(\overline{H_{\overline{S}}\left(t\right)+H_{B}})}\right)\right)+\left\langle \overline{H_{\bar{I}}}\right\rangle _{\overline{H_{\overline{S}}\left(t\right)+H_{B}}}+O\left(\left\langle \overline{H_{\bar{I}}^{2}}\right\rangle _{\overline{H_{\overline{S}}\left(t\right)+H_{B}}}\right).
 \end{equation}
 
 \end_inset
@@ -7013,7 +7001,7 @@ noindent
 \end_inset
 
  and given that 
-\begin_inset Formula ${\rm \text{Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)=C\left(R_{0},R_{1},R_{2},...,R_{d-1},B_{0},B_{1},B_{2},...,B_{d-1}\right)$
+\begin_inset Formula ${\rm \text{Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)=C\left(R_{0},R_{1},R_{2},...,R_{d-1},B_{01},B_{02},...,B_{0\left(d-1\right)},...,B_{\left(d-2\right)\left(d-1\right)}\right)$
 \end_inset
 
 , where each 
@@ -7021,21 +7009,86 @@ noindent
 \end_inset
 
  and 
-\begin_inset Formula $B_{i}$
+\begin_inset Formula $B_{kj}$
 \end_inset
 
  depend of the set of variational parameters 
-\begin_inset Formula $\{f_{n,\mathbf{k}}\}$
+\begin_inset Formula $\{v_{nu\mathbf{k}}\}$
 \end_inset
 
- then we can obtain using the chain rule that:
+.
+ Given that the numbers 
+\begin_inset Formula $v_{nu\mathbf{k}}$
+\end_inset
+
+ are complex then we can separate them as 
+\begin_inset Formula $v_{nu\mathbf{k}}=\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)$
+\end_inset
+
+.
+ So our approach will be based on the derivation respect to 
+\begin_inset Formula $\Re\left(v_{nu\mathbf{k}}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Im\left(v_{nu\mathbf{k}}\right)$
+\end_inset
+
+.
+ The Hamiltonian 
+\begin_inset Formula $\overline{H_{\bar{S}}(t)}$
+\end_inset
+
+ can be written like:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm \partial}{\rm \text{Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{n,\mathbf{k}}} & =\sum_{n'}\left(\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B_{n'}}\:\frac{{\rm \partial}B_{n'}}{\partial f_{n,\mathbf{k}}}+\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n'}}\:\frac{{\rm \partial}R_{n'}}{\partial f_{n,\mathbf{k}}}\right)\label{eq:extreme-1}\\
- & =0
+\overline{H_{\bar{S}}(t)} & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+\sum_{u\mathbf{k}}\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\left(g_{nu\mathbf{k}}\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}+g_{nu\mathbf{k}}^{*}\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\right)|n\rangle\negmedspace\langle n|\\
+ & +\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\\
+ & \prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+ & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+\sum_{u\mathbf{k}}\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\frac{g_{nu\mathbf{k}}v_{nu\mathbf{k}}^{*}+g_{nu\mathbf{k}}^{*}v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)|n\rangle\negmedspace\langle n|\\
+ & +\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\\
+ & \prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+ & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+\sum_{u\mathbf{k}}\left(\frac{\left(\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}}{\omega_{u\mathbf{k}}}-\frac{\left(g_{nu\mathbf{k}}+g_{nu\mathbf{k}}^{*}\right)\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\left(g_{nu\mathbf{k}}^{*}-g_{nu\mathbf{k}}\right)}{\omega_{u\mathbf{k}}}\right)\right)|n\rangle\negmedspace\langle n|\\
+ & +\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\\
+ & \prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*} & =\left(\Re\left(v_{mu\mathbf{k}}\right)-{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\right)\left(\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\right)-\left(\Re\left(v_{mu\mathbf{k}}\right)+{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\right)\left(\Re\left(v_{nu\mathbf{k}}\right)-{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\right)\\
+ & =\left(\Re\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)-{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)+\Im\left(v_{mu\mathbf{k}}\right)\Im\left(v_{nu\mathbf{k}}\right)\right)\\
+ & -\left(\Re\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)-{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)+{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)+\Im\left(v_{mu\mathbf{k}}\right)\Im\left(v_{nu\mathbf{k}}\right)\right)\\
+ & =2{\rm i}\left(\Im\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)-\Im\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)\right)\\
+\overline{H_{\bar{S}}(t)} & =\sum_{n}\left(\varepsilon_{n}\left(t\right)+\sum_{u\mathbf{k}}\left(\frac{\left(\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}}{\omega_{u\mathbf{k}}}-\frac{\left(g_{nu\mathbf{k}}+g_{nu\mathbf{k}}^{*}\right)\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\left(g_{nu\mathbf{k}}^{*}-g_{nu\mathbf{k}}\right)}{\omega_{u\mathbf{k}}}\right)\right)|n\rangle\negmedspace\langle n|\\
+ & +\sum_{n\neq m}V_{nm}\left(t\right)|n\rangle\negmedspace\langle m|\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{{\rm i}\left(\Im\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)-\Im\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)\right)}{\omega_{u\mathbf{k}}^{2}}\right)\right)\\
+ & \prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2} & =\left(v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right)\left(v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right)^{*}\\
+ & =\left|v_{mu\mathbf{k}}\right|^{2}+\left|v_{nu\mathbf{k}}\right|^{2}-\left(v_{nu\mathbf{k}}v_{mu\mathbf{k}}^{*}+v_{nu\mathbf{k}}^{*}v_{mu\mathbf{k}}\right)\\
+ & =\left(\Re\left(v_{mu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{mu\mathbf{k}}\right)\right)^{2}+\left(\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}\\
+ & -\left(\left(\Re\left(v_{nu\mathbf{k}}\right)+{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\right)\left(\Re\left(v_{mu\mathbf{k}}\right)-{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\right)+\left(\Re\left(v_{nu\mathbf{k}}\right)-{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\right)\left(\Re\left(v_{mu\mathbf{k}}\right)+{\rm i}\Im\left(v_{mu\mathbf{k}}\right)\right)\right)\\
+ & =\left(\Re\left(v_{mu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{mu\mathbf{k}}\right)\right)^{2}+\left(\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}\nonumber \\
+ & -2\left(\Re\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)+\Im\left(v_{nu\mathbf{k}}\right)\Im\left(v_{mu\mathbf{k}}\right)\right)\\
+ & =\left(\Re\left(v_{mu\mathbf{k}}\right)-\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{mu\mathbf{k}}\right)-\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}\\
+R_{n}\left(t\right) & =\sum_{u\mathbf{k}}\left(\frac{\left|v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}}-\left(g_{nu\mathbf{k}}\frac{v_{nu\mathbf{k}}^{*}}{\omega_{u\mathbf{k}}}+g_{nu\mathbf{k}}^{*}\frac{v_{nu\mathbf{k}}}{\omega_{u\mathbf{k}}}\right)\right)\\
+ & =\sum_{u\mathbf{k}}\left(\frac{\left(\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}-\left(g_{nu\mathbf{k}}+g_{nu\mathbf{k}}^{*}\right)\Re\left(v_{nu\mathbf{k}}\right)-{\rm i}\Im\left(v_{nu\mathbf{k}}\right)\left(g_{nu\mathbf{k}}^{*}-g_{nu\mathbf{k}}\right)}{\omega_{u\mathbf{k}}}\right)\\
+B_{mn} & =\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{\left(v_{mu\mathbf{k}}^{*}v_{nu\mathbf{k}}-v_{mu\mathbf{k}}v_{nu\mathbf{k}}^{*}\right)}{2\omega_{u\mathbf{k}}^{2}}\right)\right)\prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left|v_{mu\mathbf{k}}-v_{nu\mathbf{k}}\right|^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)\\
+\\
+B_{nm} & =\left(\prod_{u\mathbf{k}}{\rm exp}\left(\frac{{\rm i}\left(\Im\left(v_{nu\mathbf{k}}\right)\Re\left(v_{mu\mathbf{k}}\right)-\Im\left(v_{mu\mathbf{k}}\right)\Re\left(v_{nu\mathbf{k}}\right)\right)}{\omega_{u\mathbf{k}}^{2}}\right)\right)\\
+ & \prod_{u}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{\left(\Re\left(v_{mu\mathbf{k}}\right)-\Re\left(v_{nu\mathbf{k}}\right)\right)^{2}+\left(\Im\left(v_{mu\mathbf{k}}\right)-\Im\left(v_{nu\mathbf{k}}\right)\right)^{2}}{\omega_{u\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{u\mathbf{k}}}{2}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can obtain using the chain rule that:
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm \partial}{\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}(t)}}\right)}{\partial\Re\left(v_{nu\mathbf{k}}\right)} & =\sum_{ij}\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{\bar{S}}(t)}}\right)}{\partial B_{ij}}\:\frac{{\rm \partial}B_{ij}}{\partial\Re\left(v_{nu\mathbf{k}}\right)}+\sum_{n'}\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{\bar{S}}(t)}}\right)}{\partial R_{n'}}\:\frac{{\rm \partial}R_{n'}}{\partial\Re\left(v_{nu\mathbf{k}}\right)}\label{eq:extreme-1}\\
+ & =\sum_{n'}\left(\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B_{n'}}\:\frac{{\rm \partial}B_{n'}}{\partial f_{n,\mathbf{k}}}+\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n'}}\:\frac{{\rm \partial}R_{n'}}{\partial f_{n,\mathbf{k}}}\right)\\
+\\
+\frac{{\rm \partial}{\rm \text{Tr}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial f_{n,\mathbf{k}}} & =\sum_{n'}\left(\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial B_{n'}}\:\frac{{\rm \partial}B_{n'}}{\partial f_{n,\mathbf{k}}}+\frac{{\rm \partial}{\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{S}\left(t\right)}}\right)}{\partial R_{n'}}\:\frac{{\rm \partial}R_{n'}}{\partial f_{n,\mathbf{k}}}\right)\\
 \end{align}
 
 \end_inset
