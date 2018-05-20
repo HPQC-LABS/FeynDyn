@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1995,11 +1997,15 @@ R_{i} & =\sum_{\mathbf{k}}\left(\frac{\Re\left(v_{i\mathbf{k}}\right)^{2}+\Im\le
 \end_layout
 
 \begin_layout Standard
-The partial derivates of the relevant terms respect to 
+Calculando las derivadas parciales respecto a 
 \begin_inset Formula $\Re\left(\alpha_{i\mathbf{k}}\right)$
 \end_inset
 
- are:
+ y 
+\begin_inset Formula $\Im\left(\alpha_{i\mathbf{k}}\right)$
+\end_inset
+
+ 
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm \partial}\varepsilon\left(t\right)}{\partial\Re\left(v_{i\mathbf{k}}\right)} & =\frac{{\rm \partial}\left(\varepsilon_{1}\left(t\right)+R_{1}+\varepsilon_{0}\left(t\right)+R_{0}\right)}{\partial\Re\left(v_{i\mathbf{k}}\right)}\\
@@ -2089,7 +2095,7 @@ Separating
 \end_layout
 
 \begin_layout Standard
-The imaginary components of the partial derivates can be obtained as:
+Imaginary 
 \end_layout
 
 \begin_layout Standard
@@ -2243,19 +2249,19 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{\rho_{T}(0)} & \equiv e^{V}\rho_{T}\left(0\right)e^{-V}\\
- & =\left(|0\rangle\negmedspace\langle0|+|1\rangle\negmedspace\langle1|B_{+}\right)\left(\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}\right)\left(|0\rangle\negmedspace\langle0|+|1\rangle\negmedspace\langle1|B_{-}\right)\\
-\text{for \ensuremath{\rho_{S}(0)=|0\rangle\negmedspace\langle0|}:} & =|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|\\
- & =|0\rangle\negmedspace\langle0|\otimes\rho_{B}^{{\rm Thermal}}\\
- & =\rho_{T}\left(0\right)\\
-\text{for \ensuremath{\rho_{S}(0)=|1\rangle\negmedspace\langle1|}:} & =|1\rangle\negmedspace\langle1|B_{+}|1\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{-}\label{Initial state transformed}\\
- & =|1\rangle\negmedspace\langle1|B_{+}\rho_{B}^{{\rm Thermal}}B_{-}\\
- & =|1\rangle\negmedspace\langle1|\otimes B_{+}\rho_{B}^{{\rm Thermal}}B_{-}\\
-\ensuremath{\text{for }\rho_{S}(0)=|0\rangle\negmedspace\langle1|}: & =|0\rangle\negmedspace\langle0|0\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{-}\\
- & =|0\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{-}\\
- & =|0\rangle\negmedspace\langle1|1\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}B_{-}\\
- & =|0\rangle\negmedspace\langle1|\otimes\rho_{B}^{{\rm Thermal}}B_{-}\\
-\ensuremath{\text{for }\rho_{S}(0)=|1\rangle\negmedspace\langle0|}: & =|1\rangle\negmedspace\langle1|B_{+}|1\rangle\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|\\
- & =|1\rangle\negmedspace\langle0|\otimes B_{+}\rho_{B}^{{\rm Thermal}}
+ & =\left(|0\rangle\negmedspace\langle0|B_{0+}+|1\rangle\negmedspace\langle1|B_{1+}\right)\left(\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}\right)\left(|0\rangle\negmedspace\langle0|B_{0-}+|1\rangle\negmedspace\langle1|B_{1-}\right)\\
+\text{for \ensuremath{\rho_{S}(0)=|0\rangle\negmedspace\langle0|}:} & =|0\rangle\negmedspace\langle0|0\rangle B_{0+}\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
+ & =|0\rangle B_{0+}\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
+ & =|0\rangle\negmedspace\langle0|\otimes B_{0+}\rho_{B}^{{\rm Thermal}}B_{0-}\\
+\text{for \ensuremath{\rho_{S}(0)=|1\rangle\negmedspace\langle1|}:} & =|1\rangle\negmedspace\langle1|B_{1+}|1\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\label{Initial state transformed}\\
+ & =|1\rangle\negmedspace\langle1|B_{1+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
+ & =|1\rangle\negmedspace\langle1|\otimes B_{1+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
+\ensuremath{\text{for }\rho_{S}(0)=|0\rangle\negmedspace\langle1|}: & =|0\rangle\negmedspace\langle0|B_{0+}|0\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\\
+ & =|0\rangle\negmedspace\langle1|B_{0+}\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\\
+ & =|0\rangle\negmedspace\langle1|1\rangle\negmedspace\langle1|B_{0+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
+ & =|0\rangle\negmedspace\langle1|\otimes B_{0+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
+\ensuremath{\text{for }\rho_{S}(0)=|1\rangle\negmedspace\langle0|}: & =|1\rangle\negmedspace\langle1|B_{1+}|1\rangle\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
+ & =|1\rangle\negmedspace\langle0|\otimes B_{1+}\rho_{B}^{{\rm Thermal}}B_{0-}
 \end{align}
 
 \end_inset
@@ -2280,7 +2286,12 @@ U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overli
 
 \end_inset
 
-Therefore:
+Here 
+\begin_inset Formula ${\rm \mathcal{T}}$
+\end_inset
+
+ denotes a time ordering operator.
+ Therefore:
 \end_layout
 
 \begin_layout Standard
@@ -2344,7 +2355,7 @@ noindent
 \begin_inset Formula 
 \begin{equation}
 \Lambda\left(t\right)=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2}\\
-B_{x} & B_{y} & B_{1z} & B_{y} & B_{x} & B_{2z}\\
+B_{x} & B_{y} & B_{1z} & B_{y} & B_{x} & B_{0z}\\
 \Re\left(V_{10}\left(t\right)\right) & \Re\left(V_{10}\left(t\right)\right) & 1 & \Im\left(V_{10}\left(t\right)\right) & -\Im\left(V_{10}\left(t\right)\right) & 1
 \end{pmatrix}
 \end{equation}
@@ -2441,10 +2452,211 @@ previous
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\bar{I}}}\left(t\right) & =B_{0z}|0\rangle\negmedspace\langle0|+B_{1z}|1\rangle\negmedspace\langle1|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-\Im\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right)\\
- & =\Re\left(V_{10}\left(t\right)\right)\sigma_{x}B_{x}+\Re\left(V_{10}\left(t\right)\right)\sigma_{y}B_{y}+\frac{I+\sigma_{z}}{2}B_{1z}+\Im\left(V_{10}\left(t\right)\right)B_{y}\sigma_{x}-\Im\left(V_{10}\left(t\right)\right)B_{x}\sigma_{y}+\frac{I-\sigma_{z}}{2}B_{2z}\\
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)+\Im\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{y}-\sigma_{y}B_{x}\right)\\
+ & =B_{0z}|0\rangle\negmedspace\langle0|+B_{1z}|1\rangle\negmedspace\langle1|+\Re\left(V_{10}\left(t\right)\right)\sigma_{x}B_{x}+\Re\left(V_{10}\left(t\right)\right)\sigma_{y}B_{y}\\
+ & +\Im\left(V_{10}\left(t\right)\right)\sigma_{x}B_{y}-\Im\left(V_{10}\left(t\right)\right)\sigma_{y}B_{x}\\
  & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right)\label{Hi exp}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As the combined system and environment is closed, within the interaction
+ picture the system-environment density operator evolves according to: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\rho}(t)}{{\rm d}t}=\text{−}{\rm i}[\widetilde{H}_{I}\left(t\right),\widetilde{\rho}\left(t\right)].\label{Formal solution}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This equation has the formal solution 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\rho}(t)=\rho\left(0\right)\text{−}{\rm i}\int_{0}^{t}[\widetilde{H}_{I}\left(s\right),\widetilde{\rho}\left(s\right)]{\rm d}s.\label{sol}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing the equation 
+\begin_inset Formula $\eqref{sol}$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $\eqref{Formal solution}$
+\end_inset
+
+give us:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\rho}(t)}{{\rm d}t}=-{\rm i}[\widetilde{H}_{I}\left(t\right),\rho\left(0\right)]\text{−}\int_{0}^{t}[\widetilde{H}_{I}\left(t\right),[\widetilde{H}_{I}\left(s\right),\widetilde{\rho}\left(s\right)]]{\rm d}s.\label{sol-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This equation allow us to iterate and write in terms of a series expansion
+ with 
+\begin_inset Formula $\rho\left(0\right)$
+\end_inset
+
+ the solution as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\rho}(t)=\rho\left(0\right)+\sum_{n=0}^{\infty}\left(-{\rm i}\right)^{n}\int_{0}^{t}{\rm d}t_{1}\int_{0}^{t_{1}}{\rm d}t_{2}...\int_{0}^{t_{n-1}}{\rm d}t_{n}[\widetilde{H}_{I}\left(t_{1}\right),[\widetilde{H}_{I}\left(t_{2}\right),\cdot\cdot\cdot[\widetilde{H}_{I}\left(t_{n}\right),\rho\left(0\right)]]\cdot\cdot\cdot]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Taking the trace over the environmental degrees of freedom, we find
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\rho}_{S}(t)=\rho_{S}\left(0\right)+\sum_{n=1}^{\infty}\left(-{\rm i}\right)^{n}\int_{0}^{t}{\rm d}t_{1}\int_{0}^{t_{1}}{\rm d}t_{2}...\int_{0}^{t_{n-1}}{\rm d}t_{n}{\rm Tr}_{B}[\widetilde{H}_{I}\left(t_{1}\right),[\widetilde{H}_{I}\left(t_{2}\right),\cdot\cdot\cdot[\widetilde{H}_{I}\left(t_{n}\right),\rho_{S}\left(0\right)\rho_{B}^{{\rm Thermal}}]]\cdot\cdot\cdot]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+here we have assumed that 
+\begin_inset Formula $\rho\left(0\right)=\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}$
+\end_inset
+
+.
+ Consider the following notation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{\rho}_{S}(t) & =\left(1+W_{1}\left(t\right)+W_{2}\left(t\right)+...\right)\rho_{S}\left(0\right)\\
+ & =W\left(t\right)\rho_{S}\left(0\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in this case 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+W_{n}\left(t\right)=\left(-{\rm i}\right)^{n}\int_{0}^{t}{\rm d}t_{1}\int_{0}^{t_{1}}{\rm d}t_{2}...\int_{0}^{t_{n-1}}{\rm d}t_{n}{\rm Tr}_{B}[\widetilde{H}_{I}\left(t_{1}\right),[\widetilde{H}_{I}\left(t_{2}\right),\cdot\cdot\cdot[\widetilde{H}_{I}\left(t_{n}\right),\left(\cdot\right)\rho_{B}^{{\rm Thermal}}]]\cdot\cdot\cdot]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+are superoperators acting on the initial system density operator.
+ Differentiating with respect to time, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\rho}_{S}(t)}{{\rm d}t} & =\left(\dot{W_{1}}\left(t\right)+\dot{W_{2}}\left(t\right)+...\right)\rho_{S}\left(0\right)\label{derivate rhoS}\\
+ & =\left(\dot{W_{1}}\left(t\right)+\dot{W_{2}}\left(t\right)+...\right)W\left(t\right)^{-1}W\left(t\right)\rho_{S}\left(0\right)\\
+ & =\left(\dot{W_{1}}\left(t\right)+\dot{W_{2}}\left(t\right)+...\right)W\left(t\right)^{-1}\widetilde{\rho}_{S}(t)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where we assumed that 
+\begin_inset Formula $W\left(t\right)$
+\end_inset
+
+ is invertible.
+ Usually, it is convenient (and possible) to define the interaction Hamiltonian
+ such that 
+\begin_inset Formula ${\rm Tr}_{B}[\widetilde{H}_{I}(t)ρ_{B}(0)]=0$
+\end_inset
+
+ so 
+\begin_inset Formula $W_{1}\left(t\right)=0$
+\end_inset
+
+.
+ Thus, to second order and taking 
+\begin_inset Formula $W\left(t\right)\approx\mathbb{I}$
+\end_inset
+
+ then the equation 
+\begin_inset Formula $\eqref{derivate rhoS}$
+\end_inset
+
+  becomes: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d\rho_{S}\left(t\right)}}{{\rm d}t}=-{\rm i}\left[H_{S},\rho_{S}\left(t\right)\right]-\int_{0}^{t}{\rm d}\tau\left[H_{I},\left[\widetilde{H}_{I}(-\tau),\rho_{S}(t)\rho_{B}^{{\rm Thermal}}\right]\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing 
+\begin_inset Formula $t_{1}\rightarrow t-\tau$
+\end_inset
+
+ and moving back to the Schrödinger picture gives:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+W_{n}\left(t\right)=\left(-{\rm i}\right)^{n}\int_{0}^{t}{\rm d}t_{1}\int_{0}^{t_{1}}{\rm d}t_{2}...\int_{0}^{t_{n-1}}{\rm d}t_{n}{\rm Tr}_{B}[\widetilde{H}_{I}\left(t_{1}\right),[\widetilde{H}_{I}\left(t_{2}\right),\cdot\cdot\cdot[\widetilde{H}_{I}\left(t_{n}\right),\left(\cdot\right)\rho_{B}^{{\rm Thermal}}]]\cdot\cdot\cdot]
+\end{equation}
 
 \end_inset
 
@@ -2865,7 +3077,227 @@ noindent
 \end_inset
 
  Using the coherent-state representation of the bath density operator we
- find that the correlation functions are equal to:
+ find that the correlation functions written in function of are equal to:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B} & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\rho_{B}^{{\rm Thermal}}\right)\\
+ & =\int{\rm d}^{2}\alpha P\left(\alpha\right)\left\langle \alpha\left|\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right|\alpha\right\rangle \\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{N}\right)\left\langle \alpha\left|\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right|\alpha\right\rangle {\rm d}^{2}\alpha\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{N}\right)\left\langle \alpha\left|\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right|\alpha\right\rangle {\rm d}^{2}\alpha\\
+\widetilde{B_{jz}}\left(\tau\right) & =\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+\widetilde{B_{jz}}\left(0\right) & =\sum_{\mathbf{k}'}\left(\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\\
+\left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B} & ={\rm Tr}_{B}\left(\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\right.\\
+ & \times\left.\sum_{\mathbf{k}'}\left(\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}'}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\right.\\
+ & \times\left.\left(\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j\mathbf{k}'}-v_{j\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\rho_{B}\right)\\
+ & +{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\right.\\
+ & \times\left.\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right)\rho_{B}\right)\\
+g_{j\mathbf{k}}-v_{j\mathbf{k}} & =p_{j\mathbf{k}}\\
+\left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B} & ={\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}'}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\right.\\
+ & \times\left.\left(p_{j\mathbf{k}'}b_{\mathbf{k}'}^{\dagger}+p_{j\mathbf{k}'}^{*}b_{\mathbf{k}'}\right)\rho_{B}\right)\\
+ & +{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\right.\\
+ & \times\left.\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}\right)\rho_{B}\right)\\
+ & =0+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(p_{j\mathbf{k}}^{2}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*2}b_{\mathbf{k}}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(\sum_{\mathbf{k}}p_{j\mathbf{k}}^{2}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)\\
+ & +{\rm Tr}_{B}\left(\sum_{\mathbf{k}}p_{j\mathbf{k}}^{*2}b_{\mathbf{k}}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)={\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\rho_{B}\right)+e^{-{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\rho_{B}\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}+e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\left(b_{\mathbf{k}}+\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left(b_{\mathbf{k}}+\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}\alpha_{\mathbf{k}}^{*}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}\alpha_{\mathbf{k}}^{*}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & 1=\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\left|0\right\rangle =0\\
+ & b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle =\left|0\right\rangle \\
+ & \left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B}=\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int\left|\alpha_{\mathbf{k}}\right|^{2}{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int\left|\alpha_{\mathbf{k}}\right|^{2}{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\left(e^{{\rm i}\omega_{\mathbf{k}}\tau}+e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\frac{1}{\pi N}\int\left|\alpha_{\mathbf{k}}\right|^{2}{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & +\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+ & \frac{1}{\pi N}\int\left|\alpha_{\mathbf{k}}\right|^{2}{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right){\rm d}^{2}\alpha_{\mathbf{k}}=\frac{1}{\pi N}\int_{0}^{2\pi}\int_{0}^{\infty}r^{2}{\rm exp}\left(-\frac{r^{2}}{N}\right)r{\rm d}r{\rm d}\theta\\
+ & =N\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(2\cos\left(\omega_{\mathbf{k}}\tau\right)N\right)+\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(2\cos\left(\omega_{\mathbf{k}}\tau\right)N+e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\frac{2\cos\left(\omega_{\mathbf{k}}\tau\right)}{e^{\beta\omega_{\mathbf{k}}}-1}+e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\frac{2\cos\left(\omega_{\mathbf{k}}\tau\right)}{e^{\beta\omega_{\mathbf{k}}}-1}+\cos\left(\omega_{\mathbf{k}}\tau\right)-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\frac{\left(2+e^{\beta\omega_{\mathbf{k}}}-1\right)\cos\left(\omega_{\mathbf{k}}\tau\right)}{e^{\beta\omega_{\mathbf{k}}}-1}-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\frac{\left(1+e^{\beta\omega_{\mathbf{k}}}\right)\cos\left(\omega_{\mathbf{k}}\tau\right)}{e^{\beta\omega_{\mathbf{k}}}-1}-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\frac{\left(e^{-\frac{\beta\omega_{\mathbf{k}}}{2}}+e^{\frac{\beta\omega_{\mathbf{k}}}{2}}\right)\cos\left(\omega_{\mathbf{k}}\tau\right)}{e^{-\frac{\beta\omega_{\mathbf{k}}}{2}}-e^{-\frac{\beta\omega_{\mathbf{k}}}{2}}}-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)\\
+ & =\sum_{\mathbf{k}}\left|p_{j\mathbf{k}}\right|^{2}\left(\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\cos\left(\omega_{\mathbf{k}}\tau\right)-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)\\
+ & =\sum_{\mathbf{k}}\left|g_{j\mathbf{k}}-v_{j\mathbf{k}}\right|^{2}\left(\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\cos\left(\omega_{\mathbf{k}}\tau\right)-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+\left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{j'z}}\left(0\right)\right\rangle _{B} & =\int{\rm d}^{2}\alpha_{\mathbf{k}}P\left(\alpha_{\mathbf{k}}\right)\left\langle \alpha_{\mathbf{k}}\left|\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{j'z}}\left(0\right)\right|\alpha_{\mathbf{k}}\right\rangle \\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|\widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{j'z}}\left(0\right)\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\right|\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & \times\sum_{\mathbf{k}'}\left(\left(g_{j\mathbf{'k}'}-v_{j'\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j'\mathbf{k}'}-v_{j'\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\left|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\right|\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & \times\sum_{\mathbf{k}'}\left(\left(g_{j\mathbf{'k}'}-v_{j'\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j'\mathbf{k}'}-v_{j'\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\left|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\right|\sum_{\mathbf{k}\neq\mathbf{k}'}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & \times\left(\left(g_{j\mathbf{'k}'}-v_{j'\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{j'\mathbf{k}'}-v_{j'\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\left|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & +\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\right|\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & \times\left(\left(g_{j\mathbf{'k}}-v_{j'\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right)\left|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\right|\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & \times\left(\left(g_{j\mathbf{'k}}-v_{j'\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right)\left|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & +\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & +\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & \frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\left(b_{\mathbf{k}}+\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}=\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left|\alpha_{\mathbf{k}}\right|^{2}{\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =N
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{align}
+ & \frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left(b_{\mathbf{k}}+\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}+\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle 0\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+ & =N+1\\
+\left\langle \widetilde{B_{jz}}\left(\tau\right)\widetilde{B_{j'z}}\left(0\right)\right\rangle _{B} & =\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}N+\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N+1\right)\\
+ & =\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\\
+ & +N\sum_{\mathbf{k}}\left(\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B}\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
