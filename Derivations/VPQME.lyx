@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -759,7 +757,7 @@ We can show using the coherence representation of the creation and annihilation
 \color none
 \begin_inset Formula 
 \begin{align}
-b_{\mathbf{k}}^{\dagger} & =\begin{pmatrix}0 & 0 & 0 & \dots & 0 & \dots\:\,\\
+b_{\mathbf{}}^{\dagger} & =\begin{pmatrix}0 & 0 & 0 & \dots & 0 & \dots\:\,\\
 \sqrt{1} & 0 & 0 & \dots & 0 & \dots\\
 0 & \sqrt{2} & 0 & \dots & 0 & \dots\\
 0 & 0 & \sqrt{3} & \dots & 0 & \dots\\
@@ -767,7 +765,7 @@ b_{\mathbf{k}}^{\dagger} & =\begin{pmatrix}0 & 0 & 0 & \dots & 0 & \dots\:\,\\
 0 & 0 & 0 & \dots & \sqrt{n} & \dots\\
 \vdots & \vdots & \vdots & \vdots & \vdots & \ddots
 \end{pmatrix}\\
-b_{\mathbf{k}} & ={\displaystyle \begin{pmatrix}0 & \sqrt{1} & 0 & 0 & \dots & 0 & \dots\\
+b_{\mathbf{}} & ={\displaystyle \begin{pmatrix}0 & \sqrt{1} & 0 & 0 & \dots & 0 & \dots\\
 0 & 0 & \sqrt{2} & 0 & \dots & 0 & \dots\\
 0 & 0 & 0 & \sqrt{3} & \dots & 0 & \dots\\
 0 & 0 & 0 & 0 & \ddots & \vdots & \dots\\
@@ -784,11 +782,11 @@ b_{\mathbf{k}} & ={\displaystyle \begin{pmatrix}0 & \sqrt{1} & 0 & 0 & \dots & 0
 
 \begin_layout Standard
 So the product of the matrix representation of 
-\begin_inset Formula $b_{\mathbf{k}}^{\dagger}$
+\begin_inset Formula $b_{\mathbf{}}^{\dagger}$
 \end_inset
 
  and 
-\begin_inset Formula $b_{\mathbf{k}}$
+\begin_inset Formula $b$
 \end_inset
 
  is:
@@ -809,14 +807,14 @@ So the product of the matrix representation of
 \color none
 \begin_inset Formula 
 \begin{align}
--\beta\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}} & =-\beta\omega_{\mathbf{k}}\begin{pmatrix}0 & 0 & 0 & \dots & 0 & \dots\:\,\\
+-\beta\omega_{\mathbf{}}b_{\mathbf{}}^{\dagger}b_{\mathbf{}} & =-\beta\omega_{\mathbf{}}\begin{pmatrix}0 & 0 & 0 & \dots & 0 & \dots\:\,\\
 0 & 1 & 0 & \dots & 0 & \dots\\
 0 & 0 & 2 & \dots & 0 & \dots\\
 \vdots & \vdots & \vdots & \ddots & \vdots & \dots\\
 0 & 0 & 0 & \dots & n & \dots\\
 \vdots & \vdots & \vdots & \vdots & \vdots & \ddots
 \end{pmatrix}\\
- & =\sum_{j=0}^{\infty}-j\beta\omega_{\mathbf{k}}\left|j\right\rangle \left\langle j\right|
+ & =\sum_{j=0}^{\infty}-j\beta\omega_{\mathbf{}}\left|j\right\rangle \left\langle j\right|
 \end{align}
 
 \end_inset
