@@ -282,8 +282,8 @@ B_{i\pm} & \equiv e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{
 B_{i} & \equiv\left\langle B_{i\text{\ensuremath{\pm}}}\right\rangle _{H_{B}}\label{eq:displaoper}\\
  & =e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
 B_{iz} & \equiv\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right)\\
-B_{x} & =\frac{B_{+}+B_{-}-2B}{2}\\
-B_{y} & =\frac{B_{-}-B_{+}}{2{\rm }}\\
+B_{x} & =\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}\\
+B_{y} & =\frac{B_{0+}B_{1-}-B_{1+}B_{0-}+B_{10}-B_{10}^{*}}{2{\rm i}}\\
 \left\langle B_{z}\right\rangle _{H_{B}} & =0\\
 R_{i} & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)
 \end{align}
