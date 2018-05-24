@@ -326,7 +326,7 @@ displacement
 \begin_inset Formula 
 \begin{align}
 B_{i\pm} & =\prod_{\mathbf{k}}D\left(\pm\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right),\label{Definition B_pm}\\
-D\left(\pm\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right) & \equiv e^{\pm\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}.\label{Displacement operator}
+D\left(\pm v_{i\mathbf{k}}\right) & \equiv e^{\pm\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}.\label{Displacement operator}
 \end{align}
 
 \end_inset
@@ -1237,7 +1237,7 @@ From the definition
 \begin{align}
 \langle B_{0+}B_{1-}\rangle & =B_{01}\\
  & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\right)}\\
- & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\right)}^{*}\left(\right)\\
+ & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\right)^{*}}\\
  & =\langle B_{1+}B_{0-}\rangle^{*}\\
  & =B_{10}^{*}
 \end{align}
