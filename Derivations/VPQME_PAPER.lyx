@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -141,18 +139,13 @@ We start with a time-dependent Hamiltonian of the form:
 \begin{align}
 H_{T}(t) & =H_{S}(t)+H_{I}+H_{B},\label{eq:H(t)}\\
 H_{S}(t) & =\varepsilon_{0}\left(t\right)|0\rangle\negmedspace\langle0|+\varepsilon_{1}\left(t\right)|1\rangle\langle1|+V_{10}\left(t\right)|1\rangle\langle0|+V_{01}\left(t\right)|0\rangle\langle1|,\label{eq:Hs(t)}\\
-H_{I} & =s\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right),\label{eq:HI1}\\
+H_{I} & =|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(g_{0\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{0\mathbf{k}}^{*}b_{\mathbf{k}}\right)+|1\rangle\negmedspace\langle1|\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{1\mathbf{k}}^{*}b_{\mathbf{k}}\right),\label{eq:HI1}\\
 H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB1}
 \end{align}
 
 \end_inset
 
-We will start with a system-bath coupling operator of the form 
-\begin_inset Formula $s=|1\rangle\langle1|$
-\end_inset
 
-.
- 
 \end_layout
 
 \begin_layout Section
@@ -172,9 +165,29 @@ We will apply to
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 V\equiv|1\rangle\langle1|\left(\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator 0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V\equiv|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)+|1\rangle\negmedspace\langle1|\sum_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)\label{Transformation operator 2x2}
 \end{equation}
 
 \end_inset
@@ -200,19 +213,37 @@ in terms of the variational scalar parameters
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 We get:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H(t)} & =\varepsilon_{0}\left(t\right)|0\rangle\negmedspace\langle0|+\varepsilon_{1}\left(t\right)|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)|1\rangle\negmedspace\langle0|B_{1+}B_{0-}+V_{01}\left(t\right)|0\rangle\negmedspace\langle1|B_{0+}B_{1-}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
+ & +\sum_{\mathbf{k}}\left(|1\rangle\negmedspace\langle1|\left(\frac{\left|v_{1\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(v_{1\mathbf{k}}^{*}b_{\mathbf{k}}+v_{1\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right)\right)+|0\rangle\negmedspace\langle0|\left(\frac{\left|v_{0\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(v_{0\mathbf{k}}^{*}b_{\mathbf{k}}+v_{0\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right)\right)\right)\\
+ & +\sum_{\mathbf{k}}\left(|0\rangle\negmedspace\langle0|\left(g_{0\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\right)+g_{0\mathbf{k}}^{*}\left(b_{\mathbf{k}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)+|1\rangle\negmedspace\langle1|\left(g_{1\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}-\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}\right)+g_{1\mathbf{k}}^{*}\left(b_{\mathbf{k}}-\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
 \overline{H(t)} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
  & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}v_{\mathbf{k}}|1\rangle\langle1|
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -245,16 +276,16 @@ With the following definitions and relations:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-D\left(\pm v{}_{\mathbf{k}}\right) & \equiv e^{\pm\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)},\label{eq:B+/-}\\
-B_{\pm} & \equiv e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
- & =\prod_{\text{k}}D\left(\pm v{}_{\mathbf{k}}\right)\\
-B & \equiv\left\langle B_{\text{\ensuremath{\pm}}}\right\rangle _{H_{B}}\label{eq:displaoper}\\
- & =e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-B_{z} & \equiv\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\\
+D\left(\pm v_{i\mathbf{k}}\right) & \equiv e^{\pm\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}.\label{eq:B+/-}\\
+B_{i\pm} & \equiv e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+ & =\prod_{\text{k}}D\left(\pm v{}_{i\mathbf{k}}\right)\\
+B_{i} & \equiv\left\langle B_{i\text{\ensuremath{\pm}}}\right\rangle _{H_{B}}\label{eq:displaoper}\\
+ & =e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+B_{iz} & \equiv\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right)\\
 B_{x} & =\frac{B_{+}+B_{-}-2B}{2}\\
 B_{y} & =\frac{B_{-}-B_{+}}{2{\rm }}\\
 \left\langle B_{z}\right\rangle _{H_{B}} & =0\\
-R_{1} & \equiv\sum_{\mathbf{k}}\left(v_{\mathbf{k}}-2v_{\mathbf{k}}g_{\mathbf{k}}\right)
+R_{i} & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)
 \end{align}
 
 \end_inset
@@ -266,7 +297,7 @@ we may write the transformed Hamiltonian as a sum of the form:
 \begin_inset Formula 
 \begin{align}
 \overline{H_{T}(t)} & \equiv\overline{H_{\bar{S}}(t)}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}\\
-\overline{H_{\bar{S}}(t)} & \equiv\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+\frac{B\sigma_{x}}{2}\left(V_{10}\left(t\right)+V_{01}\left(t\right)\right)+\frac{{\rm {\rm i}}B\sigma_{y}}{2}\left(V_{10}\left(t\right)-V_{01}\left(t\right)\right)\\
+\overline{H_{\bar{S}}(t)} & \equiv\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\frac{B\sigma_{x}}{2}\left(V_{10}\left(t\right)+V_{01}\left(t\right)\right)+\frac{{\rm {\rm i}}B\sigma_{y}}{2}\left(V_{10}\left(t\right)-V_{01}\left(t\right)\right)\\
 \overline{H_{\bar{I}}} & \equiv B_{z}|1\rangle\langle1|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-\Im\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right)\\
 \overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =H_{B}
