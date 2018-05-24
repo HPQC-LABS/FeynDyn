@@ -1501,24 +1501,33 @@ noindent
 \end_layout
 
 \begin_layout Standard
+
+\size scriptsize
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\bar{S}}(t)} & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)B_{10}\sigma_{+}+V_{01}\left(t\right)B_{10}^{*}\sigma_{-}\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)B_{10}\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)B_{10}^{*}\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}\\
- & +V_{01}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)-{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}\\
- & +V_{01}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)-{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+\Re\left(B_{10}\left(t\right)\right)\left(V_{10}\left(t\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\right)\label{eq:Hs1}\\
- & +{\rm i}\Im\left(B_{10}\left(t\right)\right)\left(V_{10}\left(t\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}-V_{01}\left(t\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\right)\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+\Re\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\frac{V_{10}\left(t\right)+V_{01}\left(t\right)}{2}+{\rm i}\sigma_{y}\frac{V_{10}\left(t\right)-V_{01}\left(t\right)}{2}\right)\\
- & +{\rm i}\Im\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\frac{V_{10}\left(t\right)-V_{01}\left(t\right)}{2}+{\rm i}\sigma_{y}\frac{V_{10}\left(t\right)+V_{01}\left(t\right)}{2}\right)\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+\Re\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\Re\left(V_{10}\left(t\right)\right)-\sigma_{y}\Im\left(V_{10}\left(t\right)\right)\right)\\
- & +{\rm i}\Im\left(B_{10}\left(t\right)\right)\left({\rm i}\sigma_{x}\Im\left(V_{10}\left(t\right)\right)+{\rm i}\sigma_{y}\Re\left(V_{10}\left(t\right)\right)\right)\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+\left(\sigma_{x}\Re\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)-\sigma_{y}\Re\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)\right)\\
- & -\left(\sigma_{x}\Im\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)+\sigma_{y}\Im\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)\right)\\
- & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\negmedspace\langle1|+\sigma_{x}\left(\Re\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)-\Im\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)\right)\\
- & -\sigma_{y}\left(\Re\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)+\Im\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)\right)\\
+\overline{H_{\bar{S}}(t)} & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)B_{10}\sigma_{+}+V_{01}\left(t\right)B_{10}^{*}\sigma_{-}\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)B_{10}\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)B_{10}^{*}\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)-{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+V_{10}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)\left(\Re\left(B_{10}\left(t\right)\right)-{\rm i}\Im\left(B_{10}\left(t\right)\right)\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\label{eq:Hs1}\\
+ & \Re\left(B_{10}\left(t\right)\right)\left(V_{10}\left(t\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}+V_{01}\left(t\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\left(V_{10}\left(t\right)\frac{\sigma_{x}+{\rm i}\sigma_{y}}{2}-V_{01}\left(t\right)\frac{\sigma_{x}-{\rm i}\sigma_{y}}{2}\right)\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\\
+ & \Re\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\frac{V_{10}\left(t\right)+V_{01}\left(t\right)}{2}+{\rm i}\sigma_{y}\frac{V_{10}\left(t\right)-V_{01}\left(t\right)}{2}\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\frac{V_{10}\left(t\right)-V_{01}\left(t\right)}{2}+{\rm i}\sigma_{y}\frac{V_{10}\left(t\right)+V_{01}\left(t\right)}{2}\right)\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\Re\left(B_{10}\left(t\right)\right)\left(\sigma_{x}\Re\left(V_{10}\left(t\right)\right)-\sigma_{y}\Im\left(V_{10}\left(t\right)\right)\right)+{\rm i}\Im\left(B_{10}\left(t\right)\right)\left({\rm i}\sigma_{x}\Im\left(V_{10}\left(t\right)\right)+{\rm i}\sigma_{y}\Re\left(V_{10}\left(t\right)\right)\right)\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\\
+ & \left(\sigma_{x}\Re\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)-\sigma_{y}\Re\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)\right)-\left(\sigma_{x}\Im\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)+\sigma_{y}\Im\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)\right)\\
+ & =\left(\varepsilon_{0}\left(t\right)+R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\\
+ & \sigma_{x}\left(\Re\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)-\Im\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)\right)-\sigma_{y}\left(\Re\left(B_{10}\left(t\right)\right)\Im\left(V_{10}\left(t\right)\right)+\Im\left(B_{10}\left(t\right)\right)\Re\left(V_{10}\left(t\right)\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
 \overline{H_{\bar{I}}} & =V_{10}\left(t\right)\left(\sigma_{+}B_{1+}B_{0-}-\sigma_{+}B_{10}\right)+V_{01}\left(t\right)\left(\sigma_{-}B_{0+}B_{1-}-\sigma_{-}B_{10}^{*}\right)+|0\rangle\negmedspace\langle0|B_{0z}+|1\rangle\negmedspace\langle1|B_{1z}\\
  & =|0\rangle\negmedspace\langle0|B_{0z}+|1\rangle\negmedspace\langle1|B_{1z}+\left(\Re\left(V_{10}\left(t\right)\right)+{\rm i}\Im\left(V_{10}\left(t\right)\right)\right)\left(\sigma_{+}B_{1+}B_{0-}-\sigma_{+}B_{10}\right)\\
  & +\left(\Re\left(V_{10}\left(t\right)\right)-{\rm i}\Im\left(V_{10}\left(t\right)\right)\right)\left(\sigma_{-}B_{0+}B_{1-}-\sigma_{-}B_{10}^{*}\right)\\
@@ -1529,7 +1538,7 @@ noindent
  & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}+{\rm i}\sigma_{y}\frac{B_{1+}B_{0-}-B_{0+}B_{1-}-B_{10}+B_{10}^{*}}{2}\right)\\
  & +{\rm i}\Im\left(V_{10}\left(t\right)\right)\left(\sigma_{x}\frac{B_{1+}B_{0-}-B_{0+}B_{1-}-B_{10}+B_{10}^{*}}{2}+{\rm i}\sigma_{y}\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}\right)\\
  & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)\\
- & +\Im\left(V_{10}\left(t\right)\right)\left({\rm i}\sigma_{x}\frac{B_{1+}B_{0-}-B_{0+}B_{1-}-B_{10}+B_{10}^{*}}{2}-\sigma_{y}\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}\right)\label{eq:Hi1}\\
+ & +\Im\left(V_{10}\left(t\right)\right)\left({\rm i}\sigma_{x}\frac{B_{1+}B_{0-}-B_{0+}B_{1-}-B_{10}+B_{10}^{*}}{2}-\sigma_{y}\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}\right)\\
  & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)\\
  & +\Im\left(V_{10}\left(t\right)\right)\left({\rm i}^{2}\sigma_{x}\frac{B_{1+}B_{0-}-B_{0+}B_{1-}-B_{10}+B_{10}^{*}}{2{\rm i}}-\sigma_{y}\frac{B_{1+}B_{0-}+B_{0+}B_{1-}-B_{10}-B_{10}^{*}}{2}\right)\\
  & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)++\Im\left(V_{10}\left(t\right)\right)\left({\rm i}^{2}\sigma_{x}\left(-B_{y}\right)-\sigma_{y}B_{x}\right)\\
