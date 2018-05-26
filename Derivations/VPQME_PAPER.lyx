@@ -294,6 +294,20 @@ we may write the transformed Hamiltonian as a sum of the form:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Now H
+\begin_inset Formula $_{I}$
+\end_inset
+
+ has aplus sign for the imaginary part?
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align}
 \overline{H_{T}(t)} & \equiv\overline{H_{\bar{S}}(t)}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}\\
@@ -430,8 +444,8 @@ with the following definitions:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}(t)}\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}(t)}\right)}\\
-\varepsilon(t) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}(t)}\right)
+\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}(t)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}(t)\right)}\\
+\varepsilon(t) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}(t)\right)
 \end{align}
 
 \end_inset
@@ -461,19 +475,23 @@ noindent
  technique.
  We consider the QD in its ground state.
  The initial density operator 
-\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{S}(0)\otimes\rho_{B}$
+\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{S}(0)\otimes\rho_{B}(0)$
 \end_inset
 
-, the transformed density operator is equal to:
+, where 
+\begin_inset Formula $\rho_{B}(0)\equiv\rho_{B}^{{\rm Thermal}}\equiv\rho_{B}^{{\rm }}$
+\end_inset
+
+ the transformed density operator is equal to:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{|0\rangle\langle0|\otimes\rho_{B}} & =|0\rangle\langle0|\otimes\rho_{B}\\
-\overline{|1\rangle\langle1|\otimes\rho_{B}} & =|1\rangle\langle1|\otimes B_{+}\rho_{B}B_{-}\\
-\overline{|0\rangle\langle1|\otimes\rho_{B}} & =|0\rangle\langle1|\otimes\rho_{B}B_{-}\\
-\overline{|1\rangle\langle0|\otimes\rho_{B}} & =|1\rangle\langle0|\otimes B\rho_{+B}\label{eq: initial state transformed}
+\text{for \ensuremath{\rho_{S}(0)=|0\rangle\negmedspace\langle0|}:} & =|0\rangle\negmedspace\langle0|\otimes B_{0+}\rho_{B}B_{0-}\\
+\text{for \ensuremath{\rho_{S}(0)=|1\rangle\negmedspace\langle1|}:} & =|1\rangle\negmedspace\langle1|\otimes B_{1+}\rho_{B}^{{\rm }}B_{1-}\label{Initial state transformed}\\
+\ensuremath{\text{for }\rho_{S}(0)=|0\rangle\negmedspace\langle1|}: & =|0\rangle\negmedspace\langle1|\otimes B_{0+}\rho_{B}^{{\rm }}B_{1-}\\
+\ensuremath{\text{for }\rho_{S}(0)=|1\rangle\negmedspace\langle0|}: & =|1\rangle\negmedspace\langle0|\otimes B_{1+}\rho_{B}^{{\rm }}B_{0-}
 \end{align}
 
 \end_inset
@@ -493,7 +511,7 @@ We transform any operator
 \begin_inset Formula 
 \begin{align}
 \widetilde{O} & \equiv U^{\dagger}(t)OU(t)\\
-U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}v\overline{H_{S}}\left(v\right)\right).\label{time ordering evolution}
+U(t) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{S}}\left(t^{\prime}\right)\right).\label{time ordering evolution}
 \end{align}
 
 \end_inset
@@ -504,98 +522,29 @@ Therefore:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\widetilde{\overline{\rho_{S}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t),\,\text{where\ensuremath{}}
+\widetilde{\overline{\rho_{S}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t)
 \end{align}
 
 \end_inset
 
-
+We define the following matrix:
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}A(t)\\
+B\\
+C(t)
+\end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
+B_{x} & B_{y} & B_{1z} & B_{y} & B_{x} & B_{0z}\\
+\Re\left(V_{10}\left(t\right)\right) & \Re\left(V_{10}\left(t\right)\right) & 1 & \Im\left(V_{10}\left(t\right)\right) & -\Im\left(V_{10}\left(t\right)\right) & 1
+\end{pmatrix}
+\end{equation}
 
 \end_inset
 
- We define 
-\begin_inset Formula $A_{1}=\sigma_{x}$
-\end_inset
-
-, 
-\begin_inset Formula $A_{2}=\sigma_{y}$
-\end_inset
-
-, 
-\begin_inset Formula $A_{3}=\frac{I+\sigma_{z}}{2}=|1\rangle\langle1|$
-\end_inset
-
- , 
-\begin_inset Formula $A_{4}=\sigma_{x}$
-\end_inset
-
- and 
-\begin_inset Formula $A_{5}=-\sigma_{y}$
-\end_inset
-
-.
- Furthermore we label 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $B_{1}\left(t\right)=B_{x}=-B_{5}\left(t\right)$
-\end_inset
-
-, 
-\begin_inset Formula $B_{2}\left(t\right)=B_{y}=B_{4}\left(t\right)$
-\end_inset
-
- and 
-\begin_inset Formula $B_{3}\left(t\right)=B_{z}$
-\end_inset
-
-, also 
-\begin_inset Formula $C_{1}\left(t\right)=\Re\left(V_{10}\left(t\right)\right)=C_{2}\left(t\right)$
-\end_inset
-
-, 
-\begin_inset Formula $C_{3}\left(t\right)=1$
-\end_inset
-
- and 
-\begin_inset Formula $C_{4}\left(t\right)=\Im\left(V_{10}\left(t\right)\right)=-C_{5}\left(t\right)$
-\end_inset
-
- .
- Therefore we have
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-: 
+Then we have:
 \end_layout
 
 \begin_layout Standard
@@ -607,23 +556,7 @@ noindent
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Taking as reference state 
+Taking as reference state 
 \begin_inset Formula $\rho_{B}$
 \end_inset
 

@@ -2451,8 +2451,7 @@ previous
 \begin_inset Formula 
 \begin{align}
 \overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+\Re\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)+\Im\left(V_{10}\left(t\right)\right)\left(\sigma_{x}B_{y}-\sigma_{y}B_{x}\right)\\
- & =B_{0z}|0\rangle\negmedspace\langle0|+B_{1z}|1\rangle\negmedspace\langle1|+\Re\left(V_{10}\left(t\right)\right)\sigma_{x}B_{x}+\Re\left(V_{10}\left(t\right)\right)\sigma_{y}B_{y}\\
- & +\Im\left(V_{10}\left(t\right)\right)\sigma_{x}B_{y}-\Im\left(V_{10}\left(t\right)\right)\sigma_{y}B_{x}\\
+ & =B_{0z}|0\rangle\negmedspace\langle0|+B_{1z}|1\rangle\negmedspace\langle1|+\Re\left(V_{10}\left(t\right)\right)\sigma_{x}B_{x}+\Re\left(V_{10}\left(t\right)\right)\sigma_{y}B_{y}+\Im\left(V_{10}\left(t\right)\right)\sigma_{x}B_{y}-\Im\left(V_{10}\left(t\right)\right)\sigma_{y}B_{x}\\
  & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right)\label{Hi exp}
 \end{align}
 
