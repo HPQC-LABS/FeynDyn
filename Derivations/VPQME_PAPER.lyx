@@ -297,7 +297,7 @@ we may write the transformed Hamiltonian as a sum of the form:
 \begin_inset Formula 
 \begin{align}
 \overline{H_{T}(t)} & \equiv\overline{H_{\bar{S}}(t)}+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}\\
-\overline{H_{\bar{S}}(t)} & \equiv\left(\varepsilon_{0}\left(t\right)+R_{0}\right)|0\rangle\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\right)|1\rangle\langle1|+\frac{B\sigma_{x}}{2}\left(V_{10}\left(t\right)+V_{01}\left(t\right)\right)+\frac{{\rm {\rm i}}B\sigma_{y}}{2}\left(V_{10}\left(t\right)-V_{01}\left(t\right)\right)\\
+\overline{H_{\bar{S}}(t)} & \equiv\left(\varepsilon_{0}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{0}\right)\negmedspace|0\rangle\langle0|\negmedspace+\negmedspace\left(\varepsilon_{1}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{1}\right)\negmedspace|1\rangle\langle1|\negmedspace+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}\left(t\right)\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}\negmedspace\left(t\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace\right)\\
 \overline{H_{\bar{I}}} & \equiv B_{z}|1\rangle\langle1|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-\Im\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right)\\
 \overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =H_{B}
@@ -419,7 +419,7 @@ This leads us to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-v_{\mathbf{k}} & =\frac{g_{\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(\varepsilon_{1}\left(t\right)+R_{1}-\varepsilon_{0}\left(t\right)\right)\right)}{1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(\varepsilon_{1}\left(t\right)+R_{1}-\varepsilon_{0}\left(t\right)-\frac{2|V_{10}\left(t\right)|^{2}B^{2}}{\omega_{\mathbf{k}}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)},\label{eq:Variational Parameters}
+v_{i\mathbf{k}} & =\frac{g_{i\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
 \end{align}
 
 \end_inset
@@ -429,9 +429,10 @@ with the following definitions:
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\eta=\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}(t)}\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}(t)}\right)}
-\end{equation}
+\begin{align}
+\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}(t)}\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}(t)}\right)}\\
+\varepsilon(t) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}(t)}\right)
+\end{align}
 
 \end_inset
 
