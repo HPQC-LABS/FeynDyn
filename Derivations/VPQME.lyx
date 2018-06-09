@@ -2588,7 +2588,7 @@ Here
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\widetilde{\overline{\rho_{\bar{S}}}}(t) & =U^{\dagger}(t)\overline{\rho_{S}}(t)U(t),\,\text{where\ensuremath{}}\\
+\widetilde{\overline{\rho_{\bar{S}}}}(t) & =U^{\dagger}(t)\overline{\rho_{\overline{S}}}(t)U(t),\,\text{where\ensuremath{}}\\
 \overline{\rho_{\bar{S}}}(t) & ={\rm {\rm \text{Tr}}}_{B}\left(\bar{\rho_{T}}(t)\right)
 \end{align}
 
@@ -2623,7 +2623,11 @@ noindent
 \noun off
 \color none
 .
- In order to separate the Hamiltonian we define the matrix such that 
+ In order to separate the Hamiltonian we define the matrix 
+\begin_inset Formula $\Lambda\left(t\right)$
+\end_inset
+
+ such that 
 \begin_inset Formula $\Lambda_{1i}\left(t\right)=A_{i}$
 \end_inset
 
@@ -2635,7 +2639,7 @@ noindent
 \begin_inset Formula $\Lambda_{3i}\left(t\right)=C_{i}\left(t\right)$
 \end_inset
 
-.
+ written as:
 \end_layout
 
 \begin_layout Standard
@@ -4608,7 +4612,7 @@ noindent
 \color black
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{w,w'}\gamma_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]-{\rm i}\sum_{ij}\sum_{w}S_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]\label{eq:mastereq2}
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\overline{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{w,w'}\gamma_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]-{\rm i}\sum_{ij}\sum_{w}S_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]\label{eq:mastereq2}
 \end{equation}
 
 \end_inset
@@ -4655,9 +4659,10 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-K_{ij}\left(w,w',t\right)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d}{\rm \tau}\label{eq:response function}
-\end{equation}
+\begin{align}
+K_{ij}\left(w,w',t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d}{\rm \tau}\label{eq:response function}\\
+ & =K_{ijww'}\left(t\right)
+\end{align}
 
 \end_inset
 
@@ -4714,22 +4719,8 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ij}\sum_{w,w'}K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
-\color black
-\begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{w,w'}\gamma_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]-{\rm i}\sum_{ij}\sum_{w}S_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]\label{eq:mastereq2-2}
+\frac{{\rm d}\overline{\rho}_{\overline{S}}}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\overline{S}}\left(t\right),\overline{\rho}_{\overline{S}}\left(t\right)\right]-\sum_{ijww'}K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{\overline{S}}\left(t\right)-\overline{\rho}_{\overline{S}}\left(t\right)A_{jww'}^{\dagger}\right]
 \end{equation}
 
 \end_inset
@@ -4738,23 +4729,88 @@ noindent
 \end_layout
 
 \begin_layout Standard
+Applying the inverse transformation we will obtain that:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{\rho_{T}(0)} & \equiv e^{V}\rho_{T}\left(0\right)e^{-V}\label{Transformation density matrix-1}\\
- & =\left(|0\rangle\negmedspace\langle0|B_{0+}+|1\rangle\negmedspace\langle1|B_{1+}\right)\left(\rho_{S}(0)\otimes\rho_{B}^{{\rm Thermal}}\right)\left(|0\rangle\negmedspace\langle0|B_{0-}+|1\rangle\negmedspace\langle1|B_{1-}\right)\\
-\text{for \ensuremath{\rho_{S}(0)=|0\rangle\negmedspace\langle0|}:} & =|0\rangle\negmedspace\langle0|0\rangle B_{0+}\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
- & =|0\rangle B_{0+}\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
- & =|0\rangle\negmedspace\langle0|\otimes B_{0+}\rho_{B}^{{\rm Thermal}}B_{0-}\\
-\text{for \ensuremath{\rho_{S}(0)=|1\rangle\negmedspace\langle1|}:} & =|1\rangle\negmedspace\langle1|B_{1+}|1\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\label{Initial state transformed-1}\\
- & =|1\rangle\negmedspace\langle1|B_{1+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
- & =|1\rangle\negmedspace\langle1|\otimes B_{1+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
-\ensuremath{\text{for }\rho_{S}(0)=|0\rangle\negmedspace\langle1|}: & =|0\rangle\negmedspace\langle0|B_{0+}|0\rangle\negmedspace\langle1|\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\\
- & =|0\rangle\negmedspace\langle1|B_{0+}\rho_{B}^{{\rm Thermal}}|1\rangle\negmedspace\langle1|B_{1-}\\
- & =|0\rangle\negmedspace\langle1|1\rangle\negmedspace\langle1|B_{0+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
- & =|0\rangle\negmedspace\langle1|\otimes B_{0+}\rho_{B}^{{\rm Thermal}}B_{1-}\\
-\ensuremath{\text{for }\rho_{S}(0)=|1\rangle\negmedspace\langle0|}: & =|1\rangle\negmedspace\langle1|B_{1+}|1\rangle\negmedspace\langle0|\rho_{B}^{{\rm Thermal}}|0\rangle\negmedspace\langle0|B_{0-}\\
- & =|1\rangle\negmedspace\langle0|\otimes B_{1+}\rho_{B}^{{\rm Thermal}}B_{0-}
+e^{-V}\frac{{\rm d}\overline{\rho}_{\overline{S}}}{{\rm d}t}e^{V} & =\frac{{\rm d}\left(e^{-V}\overline{\rho}_{\overline{S}}e^{V}\right)}{{\rm d}t}\\
+ & =\frac{{\rm d}\rho_{\overline{S}}}{{\rm d}t}\\
+ & =-{\rm i}e^{-V}\left[\overline{H}_{\overline{S}}\left(t\right),\overline{\rho}_{\overline{S}}\left(t\right)\right]e^{V}-\sum_{ijww'}K_{ijww'}\left(t\right)e^{-V}\left[A_{i},A_{jww'}\overline{\rho}_{\overline{S}}\left(t\right)-\overline{\rho}_{\overline{S}}\left(t\right)A_{jww'}^{\dagger}\right]e^{V}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can proof the following property for the inverse transformation of a
+ commutator: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{-V}\left[A,B\right]e^{V} & =e^{-V}\left(AB-BA\right)e^{V}\\
+ & =e^{-V}ABe^{V}-e^{-V}BAe^{V}\\
+ & =e^{-V}A\mathbb{I}Be^{V}-e^{-V}B\mathbb{I}Ae^{V}\\
+ & =e^{-V}Ae^{V}e^{-V}Be^{V}-e^{-V}Be^{V}e^{-V}Ae^{V}\\
+ & =\left(e^{-V}Ae^{V}\right)\left(e^{-V}Be^{V}\right)-\left(e^{-V}Be^{V}\right)\left(e^{-V}Ae^{V}\right)\\
+ & =\left[e^{-V}Ae^{V},e^{-V}Be^{V}\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a product we have the following property:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+e^{-V}ABe^{V} & =e^{-V}A\mathbb{I}Be^{V}\\
+ & =e^{-V}Ae^{V}e^{-V}Be^{V}\\
+ & =\left(e^{-V}Ae^{V}\right)\left(e^{-V}Be^{V}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we will obtain that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{\overline{S}}}{{\rm d}t}\negmedspace= & \negmedspace-{\rm i}e^{-V}\left[\overline{H}_{\overline{S}}\left(t\right),\overline{\rho}_{\overline{S}}\left(t\right)\negmedspace\right]e^{V}\negmedspace-\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)e^{-V}\left[A_{i},A_{jww'}\overline{\rho}_{\overline{S}}\left(t\right)\negmedspace-\negmedspace\overline{\rho}_{\overline{S}}\left(t\right)A_{jww'}^{\dagger}\right]e^{V}\\
+= & \negmedspace-{\rm i}\left[e^{-V}\overline{H}_{\overline{S}}\left(t\right)e^{V},e^{-V}\overline{\rho}_{\overline{S}}\left(t\right)e^{V}\negmedspace\right]\negmedspace-\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}\overline{\rho}_{\overline{S}}\left(t\right)e^{V}\negmedspace-\negmedspace e^{-V}\overline{\rho}_{\overline{S}}\left(t\right)A_{jww'}^{\dagger}e^{V}\negmedspace\right]\\
+= & \negmedspace-{\rm i}\left[H_{\overline{S}}\left(t\right),\rho_{\overline{S}}\left(t\right)\negmedspace\right]\negmedspace-\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}e^{-V}\overline{\rho}_{\overline{S}}\left(t\right)e^{V}\negmedspace-\negmedspace e^{-V}\overline{\rho}_{\overline{S}}\left(t\right)e^{V}e^{-V}A_{jww'}^{\dagger}e^{V}\negmedspace\right]\\
+= & \negmedspace-{\rm i}\left[H_{\overline{S}}\left(t\right),\rho_{\overline{S}}\left(t\right)\negmedspace\right]\negmedspace-\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}\rho_{\overline{S}}\left(t\right)-\rho_{\overline{S}}\left(t\right)e^{-V}A_{jww'}^{\dagger}e^{V}\right]\\
+= & \negmedspace-{\rm i}\left[H_{\overline{S}}\left(t\right),\rho_{\overline{S}}\left(t\right)\negmedspace\right]\negmedspace-\negmedspace\left(\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)\left(\negmedspace\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}\rho_{\overline{S}}\left(t\right)\right]\negmedspace-\negmedspace\left[e^{-V}A_{i}e^{V},\rho_{\overline{S}}\left(t\right)e^{-V}A_{jww'}^{\dagger}e^{V}\negmedspace\right]\negmedspace\right)\negmedspace\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the lab frame we will obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\rho}{{\rm d}t}=-{\rm i}\left[H_{\overline{S}}\left(t\right),\rho_{\overline{S}}\left(t\right)\right]-\left(\sum_{ijww'}K_{ijww'}\left(t\right)\left(\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}\rho\left(t\right)\right]-\left[e^{-V}A_{i}e^{V},\rho\left(t\right)e^{-V}A_{jww'}^{\dagger}e^{V}\right]\right)\right)
+\end{equation}
 
 \end_inset
 
