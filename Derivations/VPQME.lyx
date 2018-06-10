@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1291,7 +1289,7 @@ From the definition
 \begin_inset Formula $B_{01}=\langle B_{0+}B_{1-}\rangle$
 \end_inset
 
-using the displacement operator we have:
+ using the displacement operator we have:
 \end_layout
 
 \begin_layout Standard
@@ -3249,7 +3247,7 @@ We could identify the following commutators in the equation deduced:
 \end_layout
 
 \begin_layout Standard
-Returning to the interaction picture we have:
+Returning to the Schroedinger picture we have:
 \end_layout
 
 \begin_layout Standard
