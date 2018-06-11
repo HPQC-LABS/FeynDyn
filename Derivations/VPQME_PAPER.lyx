@@ -1084,10 +1084,103 @@ mother
 \end_layout
 
 \begin_layout Section
-Time-independent VPQME as a limiting case
+Limiting Cases
 \end_layout
 
 \begin_layout Standard
+Many limiting cases can be derived from the 
+\begin_inset Quotes eld
+\end_inset
+
+mother
+\begin_inset Quotes erd
+\end_inset
+
+ of all master equations.
+ We can set 
+\begin_inset Formula $g_{i{\rm \mathbf{k}}}^{\Im}=0$
+\end_inset
+
+, or 
+\begin_inset Formula $V_{10}^{\Im}=0$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1{\rm \mathbf{k}}}=g_{0{\rm \mathbf{k}}}$
+\end_inset
+
+, for example.
+ Let us look at some particular cases.
+\end_layout
+
+\begin_layout Subsection
+Time-independent VPQME
+\end_layout
+
+\begin_layout Subsection
+Time-independent VPQME of McCutcheon 
+\emph on
+et al.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+g_{1{\rm \mathbf{k}}} & =0=v_{1{\rm \mathbf{k}}}\\
+g_{0{\rm \mathbf{k}}}^{\Im} & =0\\
+g_{0{\rm \mathbf{k}}}^{\Re} & \equiv g_{{\rm \mathbf{k}}}\\
+V_{10}^{\Im} & =0\\
+V_{10}^{\Re} & \equiv\frac{\Omega}{2}\\
+\varepsilon_{0} & =0\\
+\varepsilon_{1} & \equiv\delta\\
+B & \equiv B_{10}\\
+\Omega_{r} & \equiv B\Omega\\
+R_{0} & \equiv R\\
+v_{0{\rm \mathbf{k}}} & \equiv v_{{\rm \mathbf{k}}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now have a simpler 
+\begin_inset Formula $\bar{H}_{\bar{S}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H_{\bar{S}}}(t)\equiv R|0\rangle\langle0|+\delta\left(t\right)|1\rangle\langle1|+\sigma_{x}\Omega_{r}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's look now at 
+\begin_inset Formula $v_{{\rm \mathbf{k}}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)}\\
+ & =\frac{g_{\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(2R-\varepsilon\left(t\right)\right)\right)}{1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(2R-\varepsilon\left(t\right)-\frac{\Omega_{r}^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1\omega_{\mathbf{k}}}\right)}\\
+ & =\frac{g_{\mathbf{k}}\left(1-\frac{\left(R-\delta\right)\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\right)}{1-\frac{\left(R-\delta\right)\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(1-\frac{\Omega_{r}^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{2\left(R-\delta\right)\omega_{\mathbf{k}}}\right)}
+\end{align}
+
+\end_inset
+
 
 \end_layout
 
