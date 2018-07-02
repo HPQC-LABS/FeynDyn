@@ -125,6 +125,26 @@ Camilo Chaparro Sogamoso
 
 \lang british
 National University of Colombia
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1114,30 +1134,22 @@ mother
 \end_layout
 
 \begin_layout Subsection
-Time-independent VPQME
-\end_layout
-
-\begin_layout Subsection
-Time-independent VPQME of McCutcheon 
-\emph on
-et al.
+Time-independent VPQME of 2011
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align}
-g_{1{\rm \mathbf{k}}} & =0=v_{1{\rm \mathbf{k}}}\\
-g_{0{\rm \mathbf{k}}}^{\Im} & =0\\
-g_{0{\rm \mathbf{k}}}^{\Re} & \equiv g_{{\rm \mathbf{k}}}\\
-V_{10}^{\Im} & =0\\
-V_{10}^{\Re} & \equiv\frac{\Omega}{2}\\
-\varepsilon_{0} & =0\\
-\varepsilon_{1} & \equiv\delta\\
-B & \equiv B_{10}\\
-\Omega_{r} & \equiv B\Omega\\
-R_{0} & \equiv R\\
-v_{0{\rm \mathbf{k}}} & \equiv v_{{\rm \mathbf{k}}}
-\end{align}
+\begin{equation}
+\begin{pmatrix}V_{10}^{\Im} & g_{0{\rm \mathbf{k}}} & v_{0{\rm \mathbf{k}}} & B\\
+V_{10}^{\Re} & g_{1{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}} & \Omega_{r}\\
+\varepsilon_{0} & g_{1{\rm \mathbf{k}}}^{\Re} &  & R_{0}\\
+\varepsilon_{1} &  &  & R_{1}
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B_{10}\\
+\frac{\Omega}{2} & 0 & v_{{\rm \mathbf{k}}} & B\Omega\\
+0 & g_{{\rm \mathbf{k}}} &  & 0\\
+\delta &  &  & R
+\end{pmatrix}
+\end{equation}
 
 \end_inset
 
@@ -1145,6 +1157,27 @@ v_{0{\rm \mathbf{k}}} & \equiv v_{{\rm \mathbf{k}}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula 
+\begin{equation}
+\begin{matrix}g_{0{\rm \mathbf{k}}}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & v_{0{\rm \mathbf{k}}}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & V_{10}^{\Im}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & B\equiv B_{10}\\
+g_{1{\rm \mathbf{k}}}^{\Im}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & v_{1{\rm \mathbf{k}}}\equiv v_{1{\rm \mathbf{k}}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & V_{10}^{\Re}\equiv\frac{\Omega}{2}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & \Omega_{r}\equiv B\Omega\\
+g_{1{\rm \mathbf{k}}}^{\Re}\equiv g_{{\rm \mathbf{k}}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, &  & \varepsilon_{0}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & R_{1}\equiv R\\
+ &  & \varepsilon_{1}=\delta\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
+\end{matrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 We now have a simpler 
 \begin_inset Formula $\bar{H}_{\bar{S}}$
 \end_inset
@@ -1155,7 +1188,41 @@ We now have a simpler
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H_{\bar{S}}}(t)\equiv R|0\rangle\langle0|+\delta\left(t\right)|1\rangle\langle1|+\sigma_{x}\Omega_{r}
+\overline{H_{\bar{S}}}(t)\equiv R|0\rangle\langle0|+\delta\left(t\right)|1\rangle\langle1|+\sigma_{x}\Omega_{r}.
+\end{equation}
+
+\end_inset
+
+The bath and system-bath ineraction operators become: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\begin{pmatrix}B_{z} & B^{\pm}\\
+B_{x} & B_{10}\\
+B_{y} & R
+\end{pmatrix} & \equiv\begin{pmatrix}2\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger} & e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+\frac{B^{+}+B^{-}-2B}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+\frac{B^{-}-B^{+}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
+\end{pmatrix},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}A\\
+B\\
+C(t)
+\end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
+B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
+\frac{\Omega}{2} & \frac{\Omega}{2} & 1 & 0 & 0 & 1
+\end{pmatrix}.
 \end{equation}
 
 \end_inset
@@ -1172,11 +1239,20 @@ Let's look now at
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+still double check this again.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align}
 v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)}\\
- & =\frac{g_{\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(2R-\varepsilon\left(t\right)\right)\right)}{1-\frac{\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(2R-\varepsilon\left(t\right)-\frac{\Omega_{r}^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1\omega_{\mathbf{k}}}\right)}\\
- & =\frac{g_{\mathbf{k}}\left(1-\frac{\left(R-\delta\right)\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\right)}{1-\frac{\left(R-\delta\right)\tanh\left(\frac{\beta\eta}{2}\right)}{\eta}\left(1-\frac{\Omega_{r}^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{2\left(R-\delta\right)\omega_{\mathbf{k}}}\right)}
+ & =\frac{g_{\mathbf{k}}\left(1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\right)}{1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\left(1-\frac{\Omega_{r}^{2}}{2\varepsilon(t)\omega_{\mathbf{k}}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)}.
 \end{align}
 
 \end_inset
