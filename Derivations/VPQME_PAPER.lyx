@@ -17,6 +17,7 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -752,7 +753,7 @@ We can keep the
 \end_inset
 
  operators by 
-\begin_inset Formula $\Lambda$
+\begin_inset Formula $\mathscr{B}$
 \end_inset
 
  operators:
@@ -761,11 +762,11 @@ We can keep the
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Lambda\left(\tau\right)\equiv\begin{pmatrix}\Lambda_{11}\left(\tau\right) & 0 & 0 & 0 & -\Lambda_{11}\left(\tau\right)\\
-0 & \Lambda_{22}\left(\tau\right) & \Lambda_{23}\left(\tau\right) & \Lambda_{22}\left(\tau\right) & 0\\
-0 & \Lambda_{32}\left(\tau\right) & \Lambda_{33}\left(\tau\right) & \Lambda_{32}\left(\tau\right) & 0\\
-0 & \Lambda_{22}\left(\tau\right) & \Lambda_{23}\left(\tau\right) & \Lambda_{22}\left(\tau\right) & 0\\
--\Lambda_{11}\left(\tau\right) & 0 & 0 & 0 & {\rm \Lambda_{11}\left(\tau\right)}
+\mathscr{B}\left(\tau\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & -\mathscr{B}_{11}\left(\tau\right)\\
+0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
+0 & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right) & \mathscr{B}_{32}\left(\tau\right) & 0\\
+0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
+-\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & {\rm \mathscr{B}_{11}\left(\tau\right)}
 \end{pmatrix},
 \end{equation}
 
@@ -803,9 +804,9 @@ status open
 \size scriptsize
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}\Lambda_{11} & \cdot & \cdot\\
-\cdot & \Lambda_{22} & \Lambda{}_{23}\\
-\cdot & \Lambda_{32} & \Lambda_{33}
+\begin{pmatrix}\mathscr{B}_{11} & \cdot & \cdot\\
+\cdot & \mathscr{B}_{22} & \mathscr{B}{}_{23}\\
+\cdot & \mathscr{B}_{32} & \mathscr{B}_{33}
 \end{pmatrix} & \equiv\begin{pmatrix}\frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
  & \frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right) & -B\left(0\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v(\omega)}{\omega g(\omega)}\negmedspace\left(1-\frac{v(\omega)}{g(\omega)}\right){\rm i}G_{-}\left(\tau\right)\negmedspace\\
  & B\left(\tau\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v(\omega)}{\omega g(\omega)}\negmedspace\left(1-\frac{v(\omega)}{g(\omega)}\right)\negmedspace{\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-\frac{v(\omega)}{g(\omega)}\right)^{2}G_{+}\left(\tau\right)
@@ -914,7 +915,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\Lambda_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\right]+\Lambda_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}(t)}{{\rm d}t} & =-\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}(t)\right]+\mathscr{B}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}(t)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s
 \end{align}
 
 \end_inset
@@ -927,7 +928,7 @@ Doing the reverse of the transformation to interaction picture we get:
 \size scriptsize
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}(t)\right]-\sum_{ij}\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}}(t)\right]+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}(t)\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]{\rm d}\tau.
+\frac{{\rm d}\overline{\rho_{S}}(t)}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}(t)\right]-\sum_{ij}\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}}(t)\right]+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\mathscr{B}_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}(t)\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]{\rm d}\tau.
 \end{equation}
 
 \end_inset
@@ -1023,7 +1024,7 @@ The Fourier exponentials
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-K_{ijww^{\prime}}(t)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\label{eq:response function}
+K_{ijww^{\prime}}(t)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\label{eq:response function}
 \end{equation}
 
 \end_inset
@@ -1251,13 +1252,25 @@ Therefore
 \begin_inset Formula $C(t)$
 \end_inset
 
- is no longer time-dependent and we have:
+ is no longer time-dependent.
+ Defining:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-K_{ijww^{\prime}}(t)=\int_{0}^{t}C_{i}C_{j}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\label{eq:response function-1}
+\Lambda_{ij}\left(\tau\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right),
+\end{equation}
+
+\end_inset
+
+We get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ijww^{\prime}}(t)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
 \end{equation}
 
 \end_inset
