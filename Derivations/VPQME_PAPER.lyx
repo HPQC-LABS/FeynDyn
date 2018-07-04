@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -246,7 +244,7 @@ V\equiv|1\rangle\langle1|\left(\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\m
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V\equiv\sum_{i}|i\rangle\negmedspace\langle i|\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)\label{Transformation operator 2x2}
+V(t)\equiv\sum_{i}|i\rangle\negmedspace\langle i|\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}(t)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)\label{Transformation operator 2x2}
 \end{equation}
 
 \end_inset
@@ -287,7 +285,7 @@ in terms of the variational scalar parameters
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{O} & \equiv{\rm e}^{V}O{\rm e}^{-V}.\label{eq:Trans-1}
+\overline{O} & (t)\equiv{\rm e}^{V(t)}O{\rm e}^{-V(t)}.\label{eq:Trans-1}
 \end{align}
 
 \end_inset
@@ -342,12 +340,12 @@ With the following definitions:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}B_{iz} & B_{i\pm}\\
-B_{x} & B_{i}\\
-B_{y} & R_{i}
-\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
-\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{10}^{*}}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{10}^{*}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)
+\begin{pmatrix}B_{iz}(t) & B_{i}^{\pm}(t)\\
+B_{x}(t) & B_{i}(t)\\
+B_{y}(t) & R_{i}(t)
+\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+\frac{B_{1}^{+}(t)B_{0}^{-}(t)+B_{0}^{+}(t)B_{1}^{-}(t)-B_{10}(t)-B_{10}^{*}(t)}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+\frac{B_{0}^{+}(t)B_{1}^{-}(t)-B_{1}^{+}(t)B_{0}^{-}(t)+B_{10}(t)-B_{10}^{*}(t)}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}(t)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}(t)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\right)\right)
 \end{pmatrix}
 \end{align}
 
@@ -412,9 +410,9 @@ Now H
 
 \begin_inset Formula 
 \begin{align}
-\overline{H_{T}}(t) & \equiv\overline{H_{\bar{S}}}(t)+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}\\
-\overline{H_{\bar{S}}}(t) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\right)\negmedspace|i\rangle\langle i|\negmedspace+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right)\\
-\overline{H_{\bar{I}}} & \equiv\sum_{i}B_{iz}|i\rangle\langle i|+V_{10}^{\Re}\left(t\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right)\\
+\overline{H_{T}}(t) & \equiv\overline{H_{\bar{S}}}(t)+\overline{H_{\bar{I}}}(t)+\overline{H_{\bar{B}}}\\
+\overline{H_{\bar{S}}}(t) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}(t)\right)\negmedspace|i\rangle\langle i|\negmedspace+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right)\\
+\overline{H_{\bar{I}}} & (t)\equiv\sum_{i}B_{iz}(t)|i\rangle\langle i|+V_{10}^{\Re}\left(t\right)\left(B_{x}(t)\sigma_{x}+B_{y}(t)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}(t)\sigma_{y}-B_{y}(t)\sigma_{x}\right)\\
 \overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =H_{B}
 \end{align}
@@ -475,7 +473,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\le A_{{\rm {\rm B}}}\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}^{2}\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}\right)
+A\le A_{{\rm {\rm B}}}(t)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}(t)\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}(t)^{2}\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}\right)
 \end{equation}
 
 \end_inset
@@ -523,7 +521,7 @@ noindent
 \noun off
 \color none
 
-\begin_inset Formula $\left\langle \overline{H_{\bar{I}}}\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}=0$
+\begin_inset Formula $\left\langle \overline{H_{\bar{I}}}(t)\right\rangle _{\overline{H_{\bar{S}}(t)+H_{\bar{B}}}}=0$
 \end_inset
 
 
@@ -539,7 +537,7 @@ noindent
 \noun default
 \color inherit
  we can obtain the following condition to obtain the set 
-\begin_inset Formula $\{v_{\mathbf{k}}\}$
+\begin_inset Formula $\{v_{\mathbf{k}}(t)\}$
 \end_inset
 
 :
@@ -548,7 +546,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\partial A_{{\rm B}}}{\partial v_{i\mathbf{k}}}=0.\label{eq:minimization condition}
+\frac{\partial A_{{\rm B}}(\{v_{\mathbf{k}}(t)\};t)}{\partial v_{i\mathbf{k}}(t)}=0.\label{eq:minimization condition}
 \end{equation}
 
 \end_inset
@@ -559,7 +557,7 @@ This leads us to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-v_{i}\left(\omega_{\mathbf{k}}\right) & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
+v_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}(t)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}(t)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}(t)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}(t)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
 \end{align}
 
 \end_inset
@@ -570,7 +568,7 @@ with the following definitions:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}(t)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}(t)\right)}\\
+\eta(t) & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}(t)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}(t)\right)}\\
 \varepsilon(t) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}(t)\right).
 \end{align}
 
@@ -701,10 +699,10 @@ To simplify this we define the following matrix:
 \begin_inset Formula 
 \begin{equation}
 \begin{pmatrix}A\\
-B\\
+B(t)\\
 C(t)
 \end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
-B_{x} & B_{y} & B_{1z} & B_{y} & B_{x} & B_{0z}\\
+B_{x}(t) & B_{y}(t) & B_{1z}(t) & B_{y}(t) & B_{x}(t) & B_{0z}(t)\\
 V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1
 \end{pmatrix}.
 \end{equation}
@@ -804,9 +802,9 @@ status open
 \size scriptsize
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}\mathscr{B}_{11} & \cdot & \cdot\\
-\cdot & \mathscr{B}_{22} & \mathscr{B}{}_{23}\\
-\cdot & \mathscr{B}_{32} & \mathscr{B}_{33}
+\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & \cdot & \cdot\\
+\cdot & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}{}_{23}\left(\tau\right)\\
+\cdot & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right)
 \end{pmatrix} & \equiv\begin{pmatrix}\frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
  & \frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right) & -B\left(0\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v(\omega)}{\omega g(\omega)}\negmedspace\left(1-\frac{v(\omega)}{g(\omega)}\right){\rm i}G_{-}\left(\tau\right)\negmedspace\\
  & B\left(\tau\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v(\omega)}{\omega g(\omega)}\negmedspace\left(1-\frac{v(\omega)}{g(\omega)}\right)\negmedspace{\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-\frac{v(\omega)}{g(\omega)}\right)^{2}G_{+}\left(\tau\right)
@@ -1141,10 +1139,10 @@ Time-independent VPQME of 2011
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\begin{pmatrix}V_{10}^{\Im} & g_{0{\rm \mathbf{k}}} & v_{0{\rm \mathbf{k}}} & B\\
-V_{10}^{\Re} & g_{1{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}} & \Omega_{r}\\
-\varepsilon_{0} & g_{1{\rm \mathbf{k}}}^{\Re} &  & R_{0}\\
-\varepsilon_{1} &  &  & R_{1}
+\begin{pmatrix}V_{10}^{\Im}(t) & g_{0{\rm \mathbf{k}}} & v_{0{\rm \mathbf{k}}}(t) & B(t)\\
+V_{10}^{\Re}(t) & g_{1{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}}(t) & \Omega_{r}\\
+\varepsilon_{0}(t) & g_{1{\rm \mathbf{k}}}^{\Re} &  & R_{0}(t)\\
+\varepsilon_{1}(t) &  &  & R_{1}(t)
 \end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B_{10}\\
 \frac{\Omega}{2} & 0 & v_{{\rm \mathbf{k}}} & B\Omega\\
 0 & g_{{\rm \mathbf{k}}} &  & 0\\
@@ -1189,7 +1187,7 @@ We now have a simpler
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\overline{H_{\bar{S}}}(t)\equiv R|0\rangle\langle0|+\delta\left(t\right)|1\rangle\langle1|+\sigma_{x}\Omega_{r}.
+\overline{H_{\bar{S}}}(t)\equiv R|0\rangle\langle0|+\delta|1\rangle\langle1|+\sigma_{x}\Omega_{r}.
 \end{equation}
 
 \end_inset
@@ -1230,15 +1228,15 @@ The bath and system-bath ineraction operators become:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}B_{z} & B^{\pm}\\
-B_{x} & B_{10}\\
-B_{y} & R
+\begin{pmatrix}B_{z}(t) & B^{\pm}(t)\\
+B_{x}(t) & B_{10}(t)\\
+B_{y}(t) & R(t)
 \end{pmatrix} & \equiv\begin{pmatrix}2\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger} & e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
 \frac{B^{+}+B^{-}-2B}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
 \frac{B^{-}-B^{+}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
 \end{pmatrix},\\
 \begin{pmatrix}A\\
-B\\
+B(t)\\
 C(t)
 \end{pmatrix} & =\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
 B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
