@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -379,95 +377,18 @@ With the following definitions:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
 
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-\begin{pmatrix}B_{iz} & B_{i\pm}\\
-B_{x} & B_{ij}\\
-B_{y} & R_{i}
-\end{pmatrix}\equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
-\frac{B_{1}^{+}(t)B_{0}^{-}(t)+B_{0}^{+}(t)B_{1}^{-}(t)-B_{10}(t)-B_{10}^{*}(t)}{2} & e^{\chi_{ij}}{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\\
-\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{10}^{*}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)
-\end{pmatrix}.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-1) Changed 
-\begin_inset Formula $e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}$
-\end_inset
-
- for 
-\begin_inset Formula $e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}$
-\end_inset
-
- in 
-\begin_inset Formula $B_{i}^{\pm}(t)$
-\end_inset
-
- in 8.
-\end_layout
-
-\begin_layout Plain Layout
-2) Changed 
-\begin_inset Formula $e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}$
-\end_inset
-
- for 
-\begin_inset Formula $e^{-\left(1/2\right)\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}$
-\end_inset
-
- in 
-\begin_inset Formula $B_{i}\left(t\right)$
-\end_inset
-
- given the complex nature of 
-\begin_inset Formula $v_{i\mathbf{k}}\left(t\right)$
-\end_inset
-
- in 8.
-\end_layout
-
-\begin_layout Plain Layout
-3) Added the equations (11) - (17) needed to provide a specific expression
- for 
-\begin_inset Formula $B_{ij}\left(t\right)$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\size scriptsize
 \begin_inset Formula 
 \begin{align}
 \begin{pmatrix}B_{iz}(t) & B_{i}^{\pm}(t)\\
 B_{x}(t) & B_{i}(t)\\
-B_{y}(t) & R_{i}(t)
-\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
-\frac{B_{1}^{+}(t)B_{0}^{-}(t)+B_{0}^{+}(t)B_{1}^{-}(t)-B_{10}(t)-B_{10}^{*}(t)}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B_{0}^{+}(t)B_{1}^{-}(t)-B_{1}^{+}(t)B_{0}^{-}(t)+B_{10}(t)-B_{10}^{*}(t)}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}(t)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}(t)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\right)\right)
-\end{pmatrix}
+B_{y}(t) & B_{ij}(t)
+\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}(t)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}(t)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
+\frac{B_{1}^{+}(t)B_{0}^{-}(t)+B_{0}^{+}(t)B_{1}^{-}(t)-B_{10}(t)-B_{10}^{*}(t)}{2} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+\frac{B_{0}^{+}(t)B_{1}^{-}(t)-B_{1}^{+}(t)B_{0}^{-}(t)+B_{10}(t)-B_{10}^{*}(t)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\prod_{\mathbf{k}}e^{\left(\frac{v_{i\mathbf{k}}^{*}(t)v_{j\mathbf{k}}(t)-v_{i\mathbf{k}}(t)v_{j\mathbf{k}}^{*}(t)}{2\omega_{\mathbf{k}}^{2}}\right)}
+\end{pmatrix}\\
+R_{i}(t) & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}(t)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}(t)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}(t)}{\omega_{\mathbf{k}}}\right)\right),
 \end{align}
 
 \end_inset
@@ -488,6 +409,10 @@ B_{y}(t) & R_{i}(t)
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 in order to obtain 
 \begin_inset Formula $B_{ij}\left(t\right)$
 \end_inset
@@ -495,10 +420,10 @@ in order to obtain
  we can show that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
-\langle B_{i}^{+}B_{j}^{-}\rangle & =B_{ij}\\
+\langle B_{i}^{+}B_{j}^{-}\rangle & =\\
  & =\left\langle \prod_{\mathbf{k}}D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\prod_{\mathbf{k}}D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle \\
  & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\right\rangle \\
  & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\right)\right\rangle \\
@@ -506,6 +431,11 @@ in order to obtain
  & =\prod_{\mathbf{k}}{\rm exp}\left(-\frac{1}{2}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\\
  & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}.
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -532,10 +462,6 @@ B_{i} & \equiv\left\langle B_{i\text{\ensuremath{\pm}}}\right\rangle _{H_{B}}\la
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 we may write the transformed Hamiltonian as a sum of the form:
 \end_layout
 
