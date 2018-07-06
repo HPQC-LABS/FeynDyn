@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -270,7 +272,7 @@ V\equiv|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(\frac{v_{0\mathbf{k}
 \end_inset
 
 in terms of the variational scalar parameters 
-\begin_inset Formula $v_{\mathbf{k}}$
+\begin_inset Formula $\left\{ v_{\mathbf{k}}\right\} $
 \end_inset
 
 , which will soon be optimized in order to give the most accurate possible
@@ -1168,14 +1170,22 @@ We still have interaction picture versions of
 \begin_inset Formula 
 \begin{align}
 \widetilde{A_{j}}\left(t\right) & =\sum_{w(t)}e^{-{\rm i}w(t)\tau}A_{j}\left(w(t)\right)\\
-\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{-{\rm i}w\left(t\right)t}e^{{\rm i}w'\left(t-\tau\right)}A_{j}'\left(w\left(t\right),w'\left(t-\tau\right)\right)
+\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w^{\prime}\left(t\right),w(t-\tau)}e^{-{\rm i}\left(t-\tau\right)w(t-\tau)}e^{{\rm i}tw^{\prime}(t)}A_{jww^{\prime}}
 \end{align}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 Where the sum is defined on the set of all the differences between the eigenvalu
-es of the system, in our case 
-\begin_inset Formula $w\in\left\{ 0,\pm\eta\right\} $
+es of the system and we furthermore define 
+\begin_inset Formula $A_{j}\left(w(t-\tau),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\prime}}$
+\end_inset
+
+, in our case 
+\begin_inset Formula $w\left(t\right)\in\left\{ 0,\pm\eta\left(t\right)\right\} $
 \end_inset
 
 .
@@ -1184,13 +1194,13 @@ es of the system, in our case
 \end_inset
 
  belongs to the set of differences of eigenvalues that depends of the time.
- As we can see the eigenvectors are time dependent as well.
+ As we can see the decomposition matrices are time-dependent as well.
  Also, 
-\begin_inset Formula $w'\left(t-\tau\right)$
+\begin_inset Formula $w\left(t-\tau\right)$
 \end_inset
 
  and 
-\begin_inset Formula $w\left(t\right)$
+\begin_inset Formula $w^{\prime}\left(t\right)$
 \end_inset
 
  belong to the set of the differences of the eigenvalues of the Hamiltonian
@@ -1203,7 +1213,11 @@ es of the system, in our case
 \end_inset
 
  respectively.
- In matrix form, these are:
+ In matrix form for the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ these are:
 \end_layout
 
 \begin_layout Standard
@@ -1258,7 +1272,7 @@ Finally we end up with our final master equation in the variationally optimized
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}(t)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}(t)\left[A_{i},A_{jww^{\prime}}\overline{\rho_{\bar{S}}}(t)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]
+\frac{{\rm d}\overline{\rho_{\bar{S}}}(t)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}(t)\left[A_{i},A_{jww^{\prime}}\overline{\rho_{\bar{S}}}(t)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]\label{Matrix equation}
 \end{equation}
 
 \end_inset
@@ -1438,7 +1452,7 @@ v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac
 
 \end_inset
 
-The bath and system-bath ineraction operators become: 
+The bath and system-bath interaction operators become: 
 \end_layout
 
 \begin_layout Standard
@@ -1485,6 +1499,88 @@ We get:
 \begin_inset Formula 
 \begin{equation}
 K_{ijww^{\prime}}(t)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for a time-independent hamiltonian is possible to show that for the
+ decomposition matrix 
+\begin_inset Formula $A_{j}\left(w(t-\tau)\right)=A_{j}\left(w\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U\left(t\right)A_{j}\left(w\right)U^{\dagger}\left(t\right)=e^{{\rm i}wt}A_{j}\left(w\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It means that a decomposition matrix of 
+\begin_inset Formula $\widetilde{A_{j}}\left(t\right)$
+\end_inset
+
+ under evolution for the same time-independent hamiltonian 
+\begin_inset Formula $U\left(t\right)A_{j}\left(w\right)U^{\dagger}\left(t\right)$
+\end_inset
+
+ generates the same decomposition matrix multiplied by a phase 
+\begin_inset Formula $e^{{\rm i}wt}$
+\end_inset
+
+.
+ It means that the decomposition matrix 
+\begin_inset Formula $A_{jww^{\prime}}$
+\end_inset
+
+ for a time-independent hamiltonian fulfill 
+\begin_inset Formula $A_{jww^{\prime}}=A_{j}\left(w\right)\delta_{ww^{\prime}}$
+\end_inset
+
+ so only if 
+\begin_inset Formula $w=w^{\prime}$
+\end_inset
+
+ then the response function is relevant for taking account and it's equal
+ to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+K_{ijww}(t) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
+ & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
+ & \equiv K_{ij}\left(w,t\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing in the equation 
+\begin_inset Formula $\eqref{Matrix equation}$
+\end_inset
+
+ we obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}(t)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijw}K_{ij}(w,t)\left[A_{i},A_{j}\left(w\right)\overline{\rho_{\bar{S}}}(t)-\overline{\rho_{\bar{S}}}\left(t\right)A_{j}^{\dagger}\left(w\right)\right]
 \end{equation}
 
 \end_inset
