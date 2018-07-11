@@ -327,7 +327,8 @@ We assume that the bath starts equilibrium with inverse temperature
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\rho_{B}\equiv\rho_{B}\left(0\right) & =\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}
+\rho_{B} & \equiv\rho_{B}\left(0\right)\\
+ & =\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}
 \end{align}
 
 \end_inset
@@ -1094,8 +1095,8 @@ with the phonon propagator given by:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\phi\left(\tau\right) & \equiv\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v^{2}\left(\omega\right)}{\omega^{2}g^{2}\left(\omega\right)}G_{+}\left(\tau\right),\\
-G_{\pm}\left(\tau\right) & \equiv\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}\tau\omega}\pm n\left(\omega\right)e^{-{\rm i}\tau\omega}\\
+\phi\left(t\right) & \equiv\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v^{2}\left(\omega\right)}{\omega^{2}g^{2}\left(\omega\right)}G_{+}\left(t\right),\\
+G_{\pm}\left(t\right) & \equiv\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}t\omega}\pm n\left(\omega\right)e^{{\rm i}t\omega}\\
 n\left(\omega\right) & \equiv\left({\rm e}^{\beta\omega}-1\right)^{-1},
 \end{align}
 
@@ -1112,6 +1113,30 @@ J\left(\omega\right)\equiv\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+In this case 
+\begin_inset Formula $g\left(\omega\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v\left(\omega\right)$
+\end_inset
+
+ are the continuous version of 
+\begin_inset Formula $g_{i}\left(\omega_{\mathbf{k}}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
 This allows us to remove the trace over the bath and write down a more tangible
  master equation:
 \end_layout
