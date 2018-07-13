@@ -3552,10 +3552,9 @@ Introducing this transformed commutators in the equation
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ij}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\right.\\
- & \left.+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}\left(t\right)\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]\right).\label{eq:master equation prim}
-\end{align}
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\left[H_{S}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\Lambda_{ji}\!\left(-\tau\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\!,\!A_{i}\right]\!\right)\label{eq:master equation prim}
+\end{equation}
 
 \end_inset
 
@@ -3620,7 +3619,7 @@ noindent
 \end_inset
 
 .
- The environmental correlation functions are given by:
+ The environmental correlation functions can be rewritten as:
 \end_layout
 
 \begin_layout Standard
@@ -4677,7 +4676,7 @@ In this case the Fourier decomposition  using the Magnus expansion is
 \begin{align}
 \widetilde{A_{i}}\left(t\right) & =U^{\dagger}\left(t\right)A_{i}\left(t\right)U\left(t\right)\\
  & =e^{{\rm i}H_{E}\left(t\right)t}A_{i}\left(t\right)e^{-{\rm i}H_{E}\left(t\right)t}\label{eq:Fourier decomposition-1}\\
- & =\sum_{w\left(t\right)}e^{{\rm i}w\left(t\right)t}A_{i}\left(w\left(t\right)\right).
+ & =\sum_{w\left(t\right)}e^{-{\rm i}w\left(t\right)t}\mathscr{A}_{i}\left(w\left(t\right)\right).
 \end{align}
 
 \end_inset
@@ -4732,36 +4731,12 @@ noindent
 \color none
 \begin_inset Formula 
 \begin{align}
-\widetilde{A_{j}}\left(t-\tau,t\right) & =U\left(t-\tau\right)U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)U^{\dagger}\left(t-\tau\right)\label{eq:magnus}\\
- & =e^{-{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}e^{{\rm i}H_{E}\left(t\right)t}A_{j}\left(t\right)e^{-{\rm i}H_{E}\left(t\right)t}e^{{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}\\
- & =e^{-{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}\sum_{w\left(t\right)}e^{{\rm i}w\left(t\right)t}A_{j}\left(w\left(t\right)\right)e^{{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}\\
- & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{{\rm i}w\left(t\right)t}e^{-{\rm i}w'\left(t-\tau\right)}A_{j}'\left(w\left(t\right),-w'\left(t-\tau\right)\right).
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula 
-\begin{align}
-\widetilde{A_{j}}\left(t-\tau,t\right) & =U\left(t\right)U^{\dagger}\left(t-\tau\right)A_{j}\left(t\right)U\left(t-\tau\right)U^{\dagger}\left(t\right)\label{eq:magnus-2}\\
+\widetilde{A_{j}}\left(t-\tau,t\right) & =U\left(t\right)U^{\dagger}\left(t-\tau\right)A_{j}\left(t\right)U\left(t-\tau\right)U^{\dagger}\left(t\right)\label{eq:magnus}\\
  & =e^{-{\rm i}tH_{E}\left(t\right)}e^{{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}A_{j}\left(t\right)e^{-{\rm i}\left(t-\tau\right)H_{E}\left(t-\tau\right)}e^{{\rm i}tH_{E}\left(t\right)}\\
- & =e^{-{\rm i}tH_{E}\left(t\right)}\left(\sum_{w^{\prime}\left(t-\tau\right)}e^{w^{\prime}\left(t-\tau\right)}A_{j}\left(w^{\prime}\left(t-\tau\right)\right)\right)e^{{\rm i}tH_{E}\left(t\right)}\\
- & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{{\rm i}w\left(t\right)t}e^{-{\rm i}w'\left(t-\tau\right)}A_{j}'\left(w\left(t\right),-w'\left(t-\tau\right)\right).
+ & =e^{-{\rm i}tH_{E}\left(t\right)}\left(\sum_{w^{\prime}\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right)\right)\right)e^{{\rm i}tH_{E}\left(t\right)}\\
+ & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{{\rm i}w^{\prime}\left(t\right)t}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\\
+ & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{{\rm i}w^{\prime}\left(t\right)t}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\\
+ & =\sum_{w\left(t\right),w'\left(t-\tau\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)
 \end{align}
 
 \end_inset
@@ -4983,12 +4958,75 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\overline{\rho_{S}}\!\left(t\right)\right]\!\!+\!\Lambda_{ji}\!\left(-\tau\right)\!\!\left[\overline{\rho_{S}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\!,\!A_{i}\right]\!\right)\\
+ & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!A_{j}\!\left(w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
+ & \left.-\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)
+\end{align}
 
-\size scriptsize
-\color black
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given that 
+\begin_inset Formula $\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)=\mathscr{A}_{j}^{\dagger}\left(-w\left(t-\tau\right),-w^{\prime}\left(t\right)\right)$
+\end_inset
+
+ from the Fourier decomposition 
+\begin_inset Formula $\eqref{eq:Fourier decomposition}$
+\end_inset
+
+ then we can re-arrange the precedent sum in the following way with the
+ trace respect to the bath:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Lambda_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function-1}\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).\label{eq:correlation function 1-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The master equation can be re-written in the following form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t-\tau\right)\!,\!w^{\prime}\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t-\tau\right)\!,\!w^{\prime}\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(-w\left(t-\tau\right),-w^{\prime}\left(t\right)\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t-\tau\right)\!,\!w^{\prime}\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t-\tau\right)\!,\!w^{\prime}\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & \left.-\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)\\
+ & ={\scriptstyle -{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww'}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t-\tau\right){\rm Tr}_{B}\left(\left[A_{i},\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\overline{\rho_{S}}\left(t\right)\right]\right.}\\
+ & {\scriptstyle \left.-\left[A_{i},\widetilde{B_{j}}\left(-\tau\right)\widetilde{B_{i}}\left(0\right)\rho_{B}\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given that if we define:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\scriptstyle \frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\frac{1}{2}\sum_{ij}\sum_{w,w'}\gamma_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho_{S}}\left(t\right)-\overline{\rho_{S}}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]-{\rm i}\sum_{ij}\sum_{w}S_{ij}\left(w,w',t\right)\left[A_{i},A_{j}\left(w,w'\right)\overline{\rho_{S}}\left(t\right)+\overline{\rho_{S}}\left(t\right)A_{j}^{\dagger}\left(w,w'\right)\right]}.\label{eq:mastereq2}
+D_{ijww^{\prime}}\left(t-\tau,t\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)
 \end{equation}
 
 \end_inset
@@ -4997,6 +5035,117 @@ noindent
 \end_layout
 
 \begin_layout Standard
+then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right) & =\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right)^{\dagger}\\
+ & =\Lambda_{ij}^{*}\left(\tau\right)C_{i}\left(t\right)C_{j}\left(t-\tau\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We used the fact that 
+\begin_inset Formula $C_{i}\left(t\right),C_{j}\left(t-\tau\right)$
+\end_inset
+
+ are real.
+ Now let's consider the following trace recalling that 
+\begin_inset Formula ${\rm Tr}\left(A\right)^{*}={\rm Tr}\left(A^{\dagger}\right)$
+\end_inset
+
+ so:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+{\rm Tr}_{B}\left(\widetilde{B_{j}}\left(-\tau\right)\widetilde{B_{i}}\left(0\right)\rho_{B}\right) & ={\rm Tr}_{B}\left(e^{-{\rm i}\tau H_{E}\left(\tau\right)}B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}\rho_{B}e^{-{\rm i}\tau H_{E}\left(\tau\right)}\right)\,\text{(by cyclic permutivity of trace)}\\
+ & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}e^{-{\rm i}\tau H_{E}\left(\tau\right)}\rho_{B}\right)\,\text{(by independence of Hilbert spaces)}\\
+ & ={\rm Tr}_{B}\left(B_{j}\widetilde{B_{i}}\left(\tau\right)\rho_{B}\right)\,\text{(by definition of time evolution)}\\
+ & ={\rm Tr}_{B}\left(B_{j}\widetilde{B_{i}}\left(\tau\right)\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(\rho_{B}B_{j}\widetilde{B_{i}}\left(\tau\right)\right)\\
+ & ={\rm Tr}_{B}\left(\left(\widetilde{B_{i}}\left(\tau\right)B_{j}\rho_{B}\right)^{\dagger}\right)\,\text{(by definition of adjoint)}\\
+ & ={\rm Tr}_{B}\left(\widetilde{B_{i}}\left(\tau\right)B_{j}\rho_{B}\right)^{\text{*}}\\
+ & =\Lambda_{ij}^{*}\left(\tau\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can write the master equation like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t} & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(\!w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\left(t\right)\!\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
+ & \left.-\Lambda_{ij}^{*}\left(\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)\\
+ & =\,\!-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww'}\int_{0}^{t}{\rm d}\tau\left(\left[A_{i},D_{ijww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[A_{i},\overline{\rho_{S}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right)\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's define the response matrix in the following way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathscr{D}_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}{\rm d}\tau D_{ijww^{\prime}}\left(t-\tau,t\right)\label{eq:response matrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the master equation can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww'}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[A_{i},\overline{\rho_{S}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)\right]\right)\label{eq:mastereq2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -5033,12 +5182,47 @@ noindent
 , respectively, defined in terms of the response functions
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 K_{ij}\left(w,w',t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d}{\rm \tau}\label{eq:response function}\\
  & =K_{ijww'}\left(t\right).
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We are interested in recover the density matrix in the lab frame from the
+ density matrix of the transformed frame.
+ At first let's recall the transformation using the master equation:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t} & =-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ijww'}\left(K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)\right]-K_{ijww'}^{*}\left(t\right)\left[A_{i},\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]\right)\\
+ & =-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ijww'}\left(K_{ijww'}^{\Re}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]+{\rm i}K_{ijww'}^{\Im}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -5063,7 +5247,7 @@ noindent
 \end_inset
 
  in the equation 
-\begin_inset Formula $\eqref{eq:response function}$
+\begin_inset Formula $\eqref{eq:response matrix}$
 \end_inset
 
  then the system will be independent of any preparation at 
@@ -5076,45 +5260,15 @@ noindent
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We are interested in recover the density matrix in the lab frame from the
- density matrix of the transformed frame.
- At first let's recall the transformation using the master equation:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t} & =-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ijww'}\left(K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)\right]-K_{ijww'}^{*}\left(t\right)\left[A_{i},\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]\right)\\
- & =-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ijww'}\left(K_{ijww'}^{\Re}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]+{\rm i}K_{ijww'}^{\Im}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]\right)
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Applying the inverse transformation we will obtain that:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-e^{-V}\frac{{\rm d}\overline{\rho}_{S}}{{\rm d}t}e^{V} & =\frac{{\rm d}\left(e^{-V}\overline{\rho}_{S}e^{V}\right)}{{\rm d}t}\\
- & =\frac{{\rm d}\rho_{S}}{{\rm d}t}\\
- & =-{\rm i}e^{-V}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]e^{V}-\sum_{ijww'}K_{ijww'}\left(t\right)e^{-V}\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]e^{V}.
+e^{-V}\!\frac{{\rm d}\overline{\rho}_{S}\!\left(t\right)}{{\rm d}t}e^{V}\! & =\!\frac{{\rm d}\left(e^{-V}\overline{\rho}_{S}e^{V}\right)}{{\rm d}t}\\
+\! & =\!\frac{{\rm d}\rho_{S}}{{\rm d}t}\\
+\! & =\!\,\!-{\rm ie^{-V}}\!\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\!\right]\!\!e^{V}\!\!\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!\!{\rm d}\tau\!\!\left(\!e^{-V}\!\!\left[A_{i},\!D_{ijww^{\prime}}\!\!\left(t\!-\!\tau,\!t\right)\!\overline{\rho_{S}}\!\left(t\right)\right]\!e^{V}\!\!\!-\!e^{-V}\!\!\left[\!A_{i},\!\overline{\rho_{S}}\!\left(t\right)\!D_{ijww^{\prime}}^{\dagger}\!\left(t\!-\!\tau,\!t\right)\!\right]\!\!e^{V}\!\right)\!\!.
 \end{align}
 
 \end_inset
@@ -5132,7 +5286,7 @@ For a product we have the following:
 e^{-V}\overline{AB}e^{V} & =e^{-V}\overline{A\mathbb{I}B}e^{V}\\
  & =e^{-V}\overline{A}e^{V}e^{-V}\bar{B}e^{V}\\
  & =\left(e^{-V}\overline{A}e^{V}\right)\left(e^{-V}\bar{B}e^{V}\right)\\
- & =AB.
+ & =AB.\label{eq:prop1}
 \end{align}
 
 \end_inset
@@ -5151,7 +5305,7 @@ We can use this to prove the following property for the inverse transformation
 e^{-V}\overline{\left[A,B\right]}e^{V} & =e^{-V}\overline{\left(AB-BA\right)}e^{V}\\
  & =e^{-V}\overline{AB}e^{V}-e^{-V}\overline{BA}e^{V}\\
  & =AB-BA\\
- & =[A,B].
+ & =[A,B].\label{eq:prop2}
 \end{align}
 
 \end_inset
@@ -5166,11 +5320,11 @@ So we will obtain that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\rho_{S}}{{\rm d}t}\negmedspace & =\negmedspace-{\rm i}e^{-V}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]e^{V}-\sum_{ijww'}K_{ijww'}\left(t\right)e^{-V}\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]e^{V}\\
- & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}\overline{\rho}_{S}\left(t\right)e^{V}-e^{-V}\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}e^{V}\right]\\
- & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}e^{-V}\overline{\rho}_{S}\left(t\right)e^{V}-e^{-V}\overline{\rho}_{S}\left(t\right)e^{V}e^{-V}A_{jww'}^{\dagger}e^{V}\right]\\
- & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\sum_{ijww'}K_{ijww'}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jww'}e^{V}\rho_{S}\left(t\right)-\rho_{S}\left(t\right)e^{-V}A_{jww'}^{\dagger}e^{V}\right]\\
- & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\left(\negmedspace\sum_{ijww'}K_{ijww'}\left(t\right)\left(\negmedspace\left[e^{-V}\negmedspace A_{i}e^{V},e^{-V}\negmedspace A_{jww'}e^{V}\rho_{S}\left(t\right)\right]-\left[e^{-V}\negmedspace A_{i}e^{V},\rho_{S}\left(t\right)e^{-V}\negmedspace A_{jww'}^{\dagger}e^{V}\negmedspace\right]\negmedspace\right)\negmedspace\right).
+\frac{{\rm d}\rho_{S}}{{\rm d}t}\negmedspace & =\negmedspace-{\rm i}e^{-V}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]e^{V}-e^{-V}\sum_{ijww'}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[A_{i},\overline{\rho_{S}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)\right]\right)e^{V}\\
+ & =\negmedspace-{\rm i}e^{-V}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]e^{V}-\sum_{ijww'}\left(e^{-V}\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)\right]e^{V}-e^{-V}\left[A_{i},\overline{\rho_{S}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)\right]e^{V}\right)\\
+ & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\sum_{ijww'}\left(\left[e^{-V}A_{i}e^{V},e^{-V}\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)e^{V}\right]-\left[e^{-V}A_{i}e^{V},e^{-V}\overline{\rho_{S}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)e^{V}\right]\right)\\
+ & =\negmedspace-{\rm i}\left[H_{\bar{S}}\!\left(t\right)\!,\rho_{S}\!\left(t\right)\right]\!-\!\!\sum_{ijww'}\!\!\left(\!\left[e^{-V}\!\!A_{i}e^{V}\!\!,e^{-V}\!\mathscr{D}_{ijww^{\prime}}\!\left(t\right)e^{V}e^{-V}\!\overline{\rho_{S}}\!\left(t\right)\!e^{V}\right]\!-\!\left[e^{-V}\!\!A_{i}e^{V}\!\!,e^{-V}\!\overline{\rho_{S}}\!\left(t\right)\!e^{V}\!e^{-V}\!\mathscr{D}_{ijww^{\prime}}^{\dagger}\!\left(t\right)\!e^{V}\right]\!\right)\\
+ & =\negmedspace-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho_{S}\left(t\right)\right]-\sum_{ijww'}\left(\left[e^{-V}A_{i}e^{V},e^{-V}\mathscr{D}_{ijww^{\prime}}\left(t\right)e^{V}\rho_{S}\left(t\right)\right]-\left[e^{-V}A_{i}e^{V},\rho_{S}\left(t\right)e^{-V}\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)e^{V}\right]\right).
 \end{align}
 
 \end_inset
@@ -6247,7 +6401,7 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \widetilde{A_{j}}\left(t-\tau,t\right) & =U\left(t\right)U^{\dagger}\left(t-\tau\right)A_{j}\left(t\right)U\left(t-\tau\right)U^{\dagger}\left(t\right)\\
  & =U\left(t\right)\left(\sum_{w(t-\tau)}e^{-{\rm i}\left(t-\tau\right)w(t-\tau)}A_{j}\left(w(t-\tau)\right)\right)U^{\dagger}\left(t\right)\\
  & =\sum_{w(t-\tau)}e^{-{\rm i}\left(t-\tau\right)w(t-\tau)}U\left(t\right)A_{j}\left(w(t-\tau)\right)U^{\dagger}\left(t\right)\\
@@ -6257,7 +6411,7 @@ noindent
  & =\sum_{w}e^{-{\rm i}\left(t-\tau\right)w}e^{{\rm i}tw}A_{j}\left(w\right)\\
  & =\sum_{w}e^{{\rm i}\tau w}A_{j}\left(w\right)\\
  & =U^{\dagger}\left(-\tau\right)A_{j}U\left(-\tau\right)
-\end{align*}
+\end{align}
 
 \end_inset
 
