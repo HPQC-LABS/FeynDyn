@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -907,17 +905,6 @@ status open
 \overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right)\\
 \widetilde{\overline{H_{\bar{I}}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right),
 \end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\overline{H_{\bar{I}}}\left(t\right)\neq\overline{H_{I}}\left(t\right)
-\]
 
 \end_inset
 
@@ -1776,11 +1763,11 @@ It means that a decomposition matrix of
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
  & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ij}\left(w,t\right)
-\end{align*}
+\end{align}
 
 \end_inset
 
