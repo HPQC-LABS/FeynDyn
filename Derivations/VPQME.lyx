@@ -3364,7 +3364,7 @@ Using the expression
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\!\widetilde{\overline{\rho_{S}}}\!\left(\!t\!\right)}{{\rm d}t}\! & =\!-\int_{0}^{t}{\rm {\rm \text{Tr}}}_{B}\left[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\left[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\\
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\!\left(\!t\!\right)}{{\rm d}t}\! & =\!-\int_{0}^{t}{\rm {\rm \text{Tr}}}_{B}\left[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\left[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\\
 \! & =\!-\int_{0}^{t}{\rm \text{Tr}}_{B}\left[\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right),\left[\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\\
 \! & =\!-\!\int_{0}^{t}\!{\rm \text{Tr}}_{B}\!\left[\sum_{j}\!C_{j}\!\left(\!t\!\right)\!\left(\!\widetilde{A_{j}}\!\left(\!t\!\right)\!\otimes\!\widetilde{B_{j}}\!\left(\!t\!\right)\!\right),\sum_{i}\!C_{i}\!\left(\!s\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!s\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!s\!\right)\!\right)\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!-\!\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!\sum_{i}\!C_{i}\!\left(\!s\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!s\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!s\!\right)\!\right)\right]\!{\rm d}s\\
 \! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\right.}\\
@@ -3383,8 +3383,8 @@ In order to calculate the correlation functions we define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{ji}\left(\tau\right) & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\right\rangle _{B}\\
- & =\left\langle \widetilde{B_{j}}\left(\tau\right)\widetilde{B_{i}}\left(0\right)\right\rangle _{B}.
+\mathscr{B}_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function}\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).\label{eq:correlation function 1}
 \end{align}
 
 \end_inset
@@ -3405,19 +3405,19 @@ The correlation functions relevant that appear in the equation
 \begin{align}
 {\rm \text{Tr}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right) & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\right\rangle _{B}\label{eq:corr1-1}\\
  & =\left\langle \widetilde{B_{j}}\left(\tau\right)\widetilde{B_{i}}\left(0\right)\right\rangle _{B}\\
- & =\Lambda_{ji}\left(\tau\right),\\
+ & =\mathscr{B}_{ji}\left(\tau\right),\\
 {\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
  & =\left\langle \widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right\rangle _{B}\\
  & =\left\langle \widetilde{B_{i}}\left(-\tau\right)\widetilde{B_{j}}\left(0\right)\right\rangle _{B}\\
- & =\Lambda_{ij}\left(-\tau\right),\\
+ & =\mathscr{B}_{ij}\left(-\tau\right),\\
 {\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right)\\
  & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\right\rangle _{B}\\
  & =\left\langle \widetilde{B_{j}}\left(\tau\right)\widetilde{B_{i}}\left(0\right)\right\rangle _{B}\\
- & =\Lambda_{ji}\left(\tau\right),\\
+ & =\mathscr{B}_{ji}\left(\tau\right),\\
 {\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
  & =\left\langle \widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right\rangle _{B}\\
  & =\left\langle \widetilde{B_{i}}\left(-\tau\right)\widetilde{B_{j}}\left(0\right)\right\rangle _{B}\\
- & =\Lambda_{ij}\left(-\tau\right).\label{eq:corr2-1}
+ & =\mathscr{B}_{ij}\left(-\tau\right).\label{eq:corr2-1}
 \end{align}
 
 \end_inset
@@ -3446,8 +3446,8 @@ The cyclic property of the trace was use widely in the development of equations
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\scriptstyle {\textstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}} & {\textstyle =}{\scriptstyle -\!\int_{0}^{t}\!\sum_{ij}\!\left(\!C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\widetilde{A_{i}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\Lambda_{ji}\left(\!-\tau\!\right)\widetilde{A_{i}}\!\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\!\left(s\right)\!\right)+C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\Lambda_{ji}\left(\!-\tau\right)\widetilde{\overline{\rho_{S}}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\!\widetilde{A_{i}}\!\left(t\right)-\Lambda_{ij}\left(\tau\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\!\widetilde{A_{i}}\!\left(t\right)\!\right)\!\right){\rm d}s}\\
- & {\textstyle =}{\textstyle -\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\Lambda_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\Lambda_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s.}\label{ps:}
+{\scriptstyle {\textstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}} & {\textstyle =}{\scriptstyle -\!\int_{0}^{t}\!\sum_{ij}\!\left(\!C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\widetilde{A_{i}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ji}\left(\!-\tau\!\right)\widetilde{A_{i}}\!\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\!\left(s\right)\!\right)+C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\mathscr{B}_{ji}\left(\!-\tau\right)\widetilde{\overline{\rho_{S}}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\!\widetilde{A_{i}}\!\left(t\right)-\mathscr{B}_{ij}\left(\tau\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\!\widetilde{A_{i}}\!\left(t\right)\!\right)\!\right){\rm d}s}\\
+ & {\textstyle =}{\textstyle -\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s.}\label{ps:}
 \end{align}
 
 \end_inset
@@ -3462,8 +3462,8 @@ We could identify the following commutators in the equation deduced:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{ij}\left(\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\Lambda_{ij}\left(\tau\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right) & =\Lambda_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{s}}}\left(t\right)\right],\\
-\Lambda_{ji}\left(-\tau\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{A_{i}}\left(t\right)-\Lambda_{ji}\left(-\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right) & =\Lambda_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}},\widetilde{A_{i}}\left(t\right)\right].
+\mathscr{B}_{ij}\left(\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ij}\left(\tau\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right) & =\mathscr{B}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{s}}}\left(t\right)\right],\\
+\mathscr{B}_{ji}\left(-\tau\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{A_{i}}\left(t\right)-\mathscr{B}_{ji}\left(-\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right) & =\mathscr{B}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}},\widetilde{A_{i}}\left(t\right)\right].
 \end{align}
 
 \end_inset
@@ -3534,13 +3534,18 @@ Introducing this transformed commutators in the equation
 \begin_inset Formula $\eqref{ps:}$
 \end_inset
 
- allow us to obtain the master equation of the system
+ allow us to obtain the master equation of the system written as an integro-diff
+erential equation with the correlation functions 
+\begin_inset Formula $\mathscr{B}_{ij}\!\left(\tau\right)$
+\end_inset
+
+ as defined before, this equations has the following form:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\left[H_{S}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\Lambda_{ji}\!\left(-\tau\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\!,\!A_{i}\right]\!\right)\label{eq:master equation prim}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\!\left[H_{S}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ji}\!\left(\!-\tau\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\!,\!A_{i}\right]\!\right)\label{eq:master equation prim}
 \end{equation}
 
 \end_inset
@@ -3606,19 +3611,6 @@ noindent
 \end_inset
 
 .
- The environmental correlation functions can be rewritten as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\Lambda_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function}\\
- & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).\label{eq:correlation function 1}
-\end{align}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3677,7 +3669,8 @@ Calculating the correlation functions allow us to obtain:
 \! & =\negmedspace{\rm Tr}_{B}\negmedspace\left(\negmedspace\sum_{\mathbf{k}\neq\mathbf{k}{}^{\prime}}\negmedspace\left(\negmedspace\left(\!g_{j\mathbf{k}}\!-\!v_{j\mathbf{k}}\!\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!\left(\!g_{j\mathbf{k}}\!-\!v_{j\mathbf{k}}\!\right)^{*}\negmedspace b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace\right)\negmedspace\left(\negmedspace\left(g_{j\mathbf{k}{}^{\prime}}-v_{j\mathbf{k}{}^{\prime}}\right)b_{\mathbf{k}{}^{\prime}}^{\dagger}\!+\!\left(g_{j\mathbf{k}{}^{\prime}}-v_{j\mathbf{k}{}^{\prime}}\right)^{*}\negmedspace b_{\mathbf{k}{}^{\prime}}\negmedspace\right)\rho_{B}\negmedspace\right)\negmedspace\\
 \! & +\negmedspace{\rm Tr}_{B}\negmedspace\left(\negmedspace\sum_{\mathbf{k}}\negmedspace\left(\negmedspace\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\negmedspace b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace\right)\negmedspace\left(\negmedspace\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\negmedspace b_{\mathbf{k}}^{\dagger}+\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\negmedspace b_{\mathbf{k}}\negmedspace\right)\negmedspace\rho_{B}\negmedspace\right),\\
 g_{j\mathbf{k}}-v_{j\mathbf{k}}\! & =p_{j\mathbf{k}}\\
-{\scriptstyle \left\langle \!\!\widetilde{B_{jz}}\!\left(\tau\right)\!\widetilde{B_{jz}}\!\left(0\right)\!\right\rangle _{B}\!} & ={\scriptstyle \negmedspace{\rm Tr}_{B}\left(\negmedspace\sum_{\mathbf{k}\neq\mathbf{k}{}^{\prime}}\negmedspace\left(\negmedspace p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace\right)\left(p_{j\mathbf{k}{}^{\prime}}b_{\mathbf{k}{}^{\prime}}^{\dagger}\negmedspace+p_{j\mathbf{k}{}^{\prime}}^{*}b_{\mathbf{k}{}^{\prime}}\negmedspace\right)\rho_{B}\negmedspace\right)+{\rm Tr}_{B}\left(\negmedspace\sum_{\mathbf{k}}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace\right)\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}\negmedspace+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}\negmedspace\right)\rho_{B}\right)}
+\left\langle \!\!\widetilde{B_{jz}}\!\left(\tau\right)\!\widetilde{B_{jz}}\!\left(0\right)\!\right\rangle _{B}\! & =\negmedspace{\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}{}^{\prime}}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(p_{j\mathbf{k}{}^{\prime}}b_{\mathbf{k}{}^{\prime}}^{\dagger}+p_{j\mathbf{k}{}^{\prime}}^{*}b_{\mathbf{k}{}^{\prime}}\right)\rho_{B}\right)\\
+ & +{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(p_{j\mathbf{k}}b_{\mathbf{k}}^{\dagger}+p_{j\mathbf{k}}^{*}b_{\mathbf{k}}\right)\rho_{B}\right)
 \end{align}
 
 \end_inset
@@ -3747,44 +3740,6 @@ b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \! & =\!\left|0\right
  & =\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
  & +\sum_{\mathbf{k}}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}\left(g_{j'\mathbf{k}}-v_{j'\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm exp}\left(-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}\right)\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}},
 \end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-I tried smallest and negative space for equations divided in two lines but
- they don't fit on one line
-\end_layout
 
 \end_inset
 
@@ -3898,12 +3853,12 @@ h' & =v\exp\left(i\omega\tau\right),\\
 \begin{align}
  & =\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right)\left\langle 0\left|D\left(-\alpha\right)D\left(h\right)D\left(\alpha\right)\left(b^{\dagger}+\alpha^{*}\right)\right|0\right\rangle \\
  & =\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\left\langle 0\left|D\left(h\right)\left(b^{\dagger}+\alpha^{*}\right)\right|0\right\rangle \\
- & ={\scriptstyle \negmedspace\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(\negmedspace h\alpha^{*}-h^{*}\alpha\negmedspace\right)\negmedspace\left\langle 0\negmedspace\left|D\left(h\right)b^{\dagger}\right|\negmedspace0\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\negmedspace\left\langle 0\negmedspace\left|D\left(h\right)\alpha^{*}\right|\negmedspace0\right\rangle }\\
- & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\negmedspace\left\langle 0\negmedspace\left|D\left(h\right)\right|\negmedspace1\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\negmedspace\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\negmedspace\left\langle 0\negmedspace\left|D\left(h\right)\right|\negmedspace0\right\rangle }\\
- & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\negmedspace\left\langle -h|1\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\negmedspace\left\langle 0\left|D\left(h\right)\right|0\right\rangle ,}\\
+ & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\left\langle 0\left|D\left(h\right)b^{\dagger}\right|0\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\left\langle 0\left|D\left(h\right)\alpha^{*}\right|0\right\rangle }\\
+ & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\left\langle 0\left|D\left(h\right)\right|1\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\left\langle 0\left|D\left(h\right)\right|0\right\rangle }\\
+ & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\left\langle -h|1\right\rangle +\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\left\langle 0\left|D\left(h\right)\right|0\right\rangle ,}\\
 \left\langle -h\right| & ={\rm exp}\left(-\frac{\left|-h^{*}\right|^{2}}{2}\right)\sum_{n}\frac{\left(-h^{*}\right)^{n}}{\sqrt{n!}}\left\langle n\right|,\\
 \left\langle -h|1\right\rangle  & ={\rm exp}\left(-\frac{\left|-h^{*}\right|^{2}}{2}\right)\left(-h^{*}\right),\\
-{\scriptstyle \left\langle D\left(h\right)b^{\dagger}\right\rangle _{B}} & ={\scriptstyle \negmedspace\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right){\rm exp}\left(h\alpha^{*}\negmedspace-h^{*}\alpha\right)\negmedspace{\rm exp}\left(\negmedspace-\frac{\left|-h^{*}\right|^{2}}{2}\negmedspace\right)\negmedspace\left(\negmedspace-h^{*}\negmedspace\right)+\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\negmedspace-\frac{\left|\alpha\right|^{2}}{2}\negmedspace\right)\negmedspace{\rm exp}\negmedspace\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\negmedspace{\rm exp}\left(\negmedspace-\frac{\left|-h^{*}\right|^{2}}{2}\negmedspace\right)}\\
+{\scriptstyle \left\langle D\left(h\right)b^{\dagger}\right\rangle _{B}} & ={\scriptstyle \!\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\!-\frac{\left|\alpha\right|^{2}}{2}\!\right){\rm exp}\left(h\alpha^{*}\!-h^{*}\alpha\right)\!{\rm exp}\left(\!-\frac{\left|-h^{*}\right|^{2}}{2}\!\right)\!\left(\!-h^{*}\!\right)+\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(\!-\frac{\left|\alpha\right|^{2}}{2}\!\right)\!{\rm exp}\!\left(h\alpha^{*}-h^{*}\alpha\right)\alpha^{*}\!{\rm exp}\left(\!-\frac{\left|-h^{*}\right|^{2}}{2}\!\right)}\\
  & =-h^{*}\left\langle D\left(h\right)\right\rangle _{B}\left(N+1\right),\\
 \left\langle bD\left(h\right)\right\rangle _{B} & =\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right)\left\langle \alpha\left|bD\left(h\right)\right|\alpha\right\rangle \\
  & ={\scriptstyle \frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right){\rm exp}\left(-\frac{\left|h\right|^{2}}{2}\right)h+\frac{1}{\pi N}\int{\rm d}^{2}\alpha{\rm exp}\left(-\frac{\left|\alpha\right|^{2}}{2}\right){\rm exp}\left(h\alpha^{*}-h^{*}\alpha\right)\alpha{\rm exp}\left(-\frac{\left|h\right|^{2}}{2}\right)}\\
@@ -3928,80 +3883,47 @@ The correlation functions can be found readily as:
 \end_layout
 
 \begin_layout Standard
-
-\size footnotesize
 \begin_inset Formula 
 \begin{align}
 \widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right) & =\prod_{\mathbf{k}}\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right){\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right),\\
-\widetilde{B_{0}^{+}B_{1}^{-}}\left(\tau\right) & =\prod_{\mathbf{k}}\left(D\left(\frac{v_{0\mathbf{k}}-v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right){\rm exp}\left(\frac{1}{2}\left(\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right),\\
+\widetilde{B_{0}^{+}B_{1}^{-}}\left(\tau\right) & =\prod_{\mathbf{k}}\left(D\left(\frac{v_{0\mathbf{k}}-v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right){\rm exp}\left(\frac{1}{2}\left(\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
 \widetilde{B_{x}}\left(0\right) & =\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2},\\
 \widetilde{B_{y}}\left(0\right) & =\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}},\\
-B_{10} & =\negmedspace\left(\negmedspace\prod_{\mathbf{k}}{\rm exp}\negmedspace\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\right)\negmedspace\left(\negmedspace{\rm exp}\left(\negmedspace-\frac{1}{2}\sum_{\mathbf{k}}\negmedspace\left|\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\negmedspace\coth\left(\frac{\beta\omega}{2}\right)\negmedspace\right)\negmedspace\right),\\
+B_{10} & =\left(\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right)\left({\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right),\\
 B_{iz} & =\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}b_{\mathbf{k}}\right),\\
-\left\langle \widetilde{B_{iz}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{jz}}\left(0\right)\negmedspace\right\rangle _{B} & =\negmedspace\left\langle \sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\negmedspace b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\negmedspace\right)\sum_{\mathbf{k}}\left(\negmedspace\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{j\mathbf{k}}-v_{jk}\right)^{*}b_{\mathbf{k}}\negmedspace\right)\negmedspace\right\rangle _{B}\\
+\left\langle \!\widetilde{B_{iz}}\!\left(\tau\right)\!\widetilde{B_{jz}}\!\left(0\right)\!\right\rangle _{B} & =\negmedspace\left\langle \!\sum_{\mathbf{k}}\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\negmedspace b_{\mathbf{k}}e^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\negmedspace\right)\!\sum_{\mathbf{k}}\left(\negmedspace\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}+\left(g_{j\mathbf{k}}-v_{jk}\right)^{*}b_{\mathbf{k}}\negmedspace\right)\!\right\rangle _{B}\\
  & =\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right),\\
-\left\langle \widetilde{B_{x}}\left(\tau\right)\negmedspace\widetilde{B_{x}}\left(0\right)\negmedspace\right\rangle _{B} & =\negmedspace\left\langle \negmedspace\frac{B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}}{2}\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\negmedspace\right\rangle _{B}
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
+\left\langle \!\widetilde{B_{x}}\!\left(\tau\right)\!\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B} & =\left\langle \frac{B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}}{2}\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right\rangle _{B}\\
 \negmedspace & =\frac{1}{4}\left\langle \left(B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}\right)\left(B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}\right)\right\rangle _{B}\\
-\negmedspace & =\negmedspace\frac{1}{4}\negmedspace\left\langle B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\negmedspace\tau\negmedspace\right)\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{01}\negmedspace\text{+}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}B_{0}^{-}+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\right.\\
-\negmedspace & \negmedspace\left.-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}\negmedspace\text{-}\negmedspace B_{10}B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace-B_{10}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}+B_{10}\negmedspace B_{10}+B_{10}\negmedspace B_{01}\negmedspace-B_{01}\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace-B_{01}B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace+B_{01}B_{10}\negmedspace+B_{01}B_{01}\right\rangle \\
- & =\frac{1}{4}\left\langle B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{01}\negmedspace\text{+}B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace\right.\\
- & \left.+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{01}\right\rangle ,
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
-{\scriptscriptstyle \left\langle \widetilde{B_{0}^{+}B_{1}^{-}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{0}^{+}B_{1}^{-}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B}}\negmedspace & =\negmedspace{\scriptscriptstyle \prod_{\mathbf{k}}\negmedspace\left(\negmedspace{\rm exp}\left(\negmedspace\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right){\rm exp}\left(\negmedspace-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\negmedspace\left(\negmedspace-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)+\cos\left(\omega_{\mathbf{k}}\tau\right)\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\negmedspace\right)\negmedspace\right){\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\negmedspace\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\negmedspace\right)\negmedspace\right)},\\
+\negmedspace & ={\scriptscriptstyle \frac{1}{4}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{10}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{01}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}\right.}\\
+ & {\scriptscriptstyle \left.-B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{10}-B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{01}-B_{10}B_{1}^{+}\!B_{0}^{-}-B_{10}B_{0}^{+}\!B_{1}^{-}+B_{10}B_{10}+B_{10}B_{01}-B_{01}B_{1}^{+}\!B_{0}^{-}-B_{01}B_{0}^{+}\!B_{1}^{-}+B_{01}B_{10}+B_{01}B_{01}\right\rangle }\\
+ & =\frac{1}{4}\!\left\langle \!B_{1}^{+}B_{0}^{-}\!\!\left(\tau\right)\!B_{1}^{+}B_{0}^{-}\!+B_{1}^{+}B_{0}^{-}\!\!\left(\tau\right)\!B_{0}^{+}B_{1}^{-}\!-B_{1}^{+}B_{0}^{-}\!\!\left(\tau\right)\!B_{10}\!-B_{1}^{+}B_{0}^{-}\!\!\left(\tau\right)\!B_{01}\!+B_{0}^{+}B_{1}^{-}\!\!\left(\tau\right)\!B_{1}^{+}B_{0}^{-}\!\right.\\
+ & \left.+B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{0}^{+}B_{1}^{-}\!-B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{10}\!-B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{01}\right\rangle ,\\
+{\scriptscriptstyle \left\langle \!\widetilde{B_{0}^{+}B_{1}^{-}}\!\left(\tau\right)\widetilde{B_{0}^{+}B_{1}^{-}}\!\left(0\right)\!\right\rangle _{B}}\negmedspace & ={\scriptscriptstyle \prod_{\mathbf{k}}\left({\rm exp}\left(\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right){\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\left(-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)+\cos\left(\omega_{\mathbf{k}}\tau\right)\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right){\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)},\\
 U & =\prod_{\mathbf{k}}\left({\rm exp}\left(\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right),\\
 \phi\left(\tau\right) & =\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\left(-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)+\cos\left(\omega_{\mathbf{k}}\tau\right)\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right),\\
 S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right),\\
-{\scriptscriptstyle \left\langle \widetilde{B_{0}^{+}B_{1}^{-}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{0}^{+}B_{1}^{-}\negmedspace}\left(0\right)\negmedspace\right\rangle _{B}}\negmedspace & =\negmedspace U{\rm exp}\left(-\phi\left(\tau\right)\right)S,\\
-{\scriptscriptstyle \left\langle \widetilde{B_{1}^{+}B_{0}^{-}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{1}^{+}B_{0}^{-}}\left(0\right)\negmedspace\right\rangle _{B}}\negmedspace & =\negmedspace U^{*}{\rm exp}\negmedspace\left(\negmedspace-\phi\left(\tau\right)\negmedspace\right)\negmedspace S,\\
-{\scriptscriptstyle \left\langle \widetilde{B_{1}^{+}B_{0}^{-}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{0}^{+}B_{1}^{-}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B}\negmedspace} & =\negmedspace{\rm exp}\left(\phi\left(\tau\right)\right)S,\\
-{\scriptscriptstyle \left\langle \widetilde{B_{0}^{+}B_{1}^{-}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{1}^{+}B_{0}^{-}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B}\negmedspace} & =\negmedspace\left\langle \widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right)\widetilde{B_{0}^{+}B_{1}^{-}}\left(0\right)\right\rangle _{B},\\
+{\scriptstyle \left\langle \!\!\widetilde{B_{0}^{+}B_{1}^{-}}\!\left(\tau\right)\widetilde{B_{0}^{+}B_{1}^{-}}\!\left(0\right)\!\!\right\rangle _{B}} & ={\scriptstyle U{\rm exp}\left(-\phi\left(\tau\right)\right)S,}\\
+{\scriptscriptstyle \left\langle \!\widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right)\widetilde{B_{1}^{+}B_{0}^{-}}\left(0\right)\!\right\rangle _{B}} & ={\scriptstyle U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S,}\\
+{\scriptscriptstyle \left\langle \!\widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right)\widetilde{B_{0}^{+}B_{1}^{-}}\left(0\right)\!\right\rangle _{B}} & ={\scriptstyle {\rm exp}\left(\phi\left(\tau\right)\right)S,}\\
+{\scriptscriptstyle \left\langle \!\widetilde{B_{0}^{+}B_{1}^{-}}\left(\tau\right)\widetilde{B_{1}^{+}B_{0}^{-}}\left(0\right)\!\right\rangle _{B}} & ={\scriptstyle \left\langle \widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right)\widetilde{B_{0}^{+}B_{1}^{-}}\left(0\right)\right\rangle _{B},}\\
 \left\langle \widetilde{B_{1}^{+}B_{0}^{-}}\left(\tau\right)\right\rangle _{B} & =\prod_{\mathbf{k}}\left({\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right)\prod_{\mathbf{k}}{\rm exp}\left(-\frac{1}{2}\left|\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\\
  & =U^{*1/2}S^{1/2},\\
-\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B}\negmedspace & =\negmedspace\frac{1}{4}\negmedspace\left\langle B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}\negmedspace\text{+}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\right.\\
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & =\frac{1}{4}\left\langle \!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}\!+\!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{0}^{+}\!B_{1}^{-}\!-\!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{10}\!-\!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{01}\!+\!B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}\right.\\
  & \left.+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}\right\rangle ,\\
-{\scriptscriptstyle \left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B}\negmedspace} & ={\scriptscriptstyle \negmedspace\frac{1}{4}\left\langle B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\negmedspace\tau\negmedspace\right)B_{01}\negmedspace\text{+}\negmedspace B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\right.}\\
- & {\scriptscriptstyle \left.-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}\right\rangle }\\
- & =\frac{1}{4}\left(U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S+{\rm exp}\left(\phi\left(\tau\right)\right)S-B_{10}^{2}-\left|B_{10}\right|^{2}+{\rm exp}\left(\phi\left(\tau\right)\right)S+U{\rm exp}\left(-\phi\left(\tau\right)\right)S-B_{10}^{*2}-\left|B_{10}\right|^{2}\right)\\
- & =\frac{1}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)S+2{\rm exp}\left(\phi\left(\tau\right)\right)S-2\left(B_{10}^{2}\right)^{\Re}-2\left|B_{10}\right|^{2}\right)\\
- & =\frac{1}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)S+2{\rm exp}\left(\phi\left(\tau\right)\right)S-2\left(U^{*}\right)^{\Re}S-2S\right)\\
- & =\frac{S}{2}\left(U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)+{\rm exp}\left(\phi\left(\tau\right)\right)-\left(U^{*}\right)^{\Re}-1\right),\\
-{\scriptscriptstyle \left\langle \widetilde{B_{y}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{y}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B}} & =\negmedspace{\scriptscriptstyle \left\langle \negmedspace\frac{B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}}{2{\rm i}}\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}}\negmedspace\right\rangle _{B}}\\
- & =-\frac{1}{4}\left\langle \left(B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}\right)\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\right\rangle _{B}\\
- & =\negmedspace{\scriptscriptstyle -\frac{1}{4}}\negmedspace{\scriptscriptstyle \left\langle \negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{10}-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{01}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\right.}\\
- & {\scriptscriptstyle \left.-\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{01}+B_{10}B_{0}^{+}B_{1}^{-}\negmedspace-B_{10}B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+B_{10}\negmedspace B_{10}\negmedspace-B_{10}\negmedspace B_{01}\negmedspace-B_{01}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace+B_{01}\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace-B_{01}\negmedspace B_{10}\negmedspace+B_{01}\negmedspace B_{01}\negmedspace\right\rangle }\\
- & =\negmedspace{\scriptscriptstyle -\frac{1}{4}}\negmedspace{\scriptscriptstyle \left\langle B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{01}\negmedspace\right.}\\
- & {\scriptscriptstyle \left.-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{01}\right\rangle }\\
- & ={\scriptscriptstyle \negmedspace-\frac{1}{4}\left\langle \negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+B_{01}B_{10}\negmedspace-B_{01}B_{01}\negmedspace-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace-B_{10}B_{10}+B_{10}B_{01}\negmedspace\right\rangle }\\
- & =-\frac{1}{4}\left(U{\rm exp}\negmedspace\left(-\phi\left(\tau\right)\right)S-{\rm exp}\left(\phi\left(\tau\right)\right)S-{\rm exp}\left(\phi\left(\tau\right)\right)S+U^{*}\negmedspace{\rm exp}\left(-\phi\left(\tau\right)\right)S+2S-2\left(U^{*}\right)^{\Re}S\right)\\
- & =-\frac{S}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)\negmedspace-2{\rm exp}\left(\phi\left(\tau\right)\right)\negmedspace+2-2U^{\Re}\negmedspace\right)\\
- & =\frac{S}{2}\left({\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-1+U^{\Re}\right),\\
-\left\langle \widetilde{B_{x}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{y}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B} & =\left\langle \negmedspace\frac{B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}}{2}\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}}\negmedspace\right\rangle _{B}\\
- & =\frac{1}{4{\rm i}}\left\langle \left(B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}\right)\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\right\rangle _{B}\\
- & ={\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle \negmedspace B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\right.}\\
- & {\scriptscriptstyle \negmedspace\left.+\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}\negmedspace-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}\negmedspace-B_{10}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace+B_{10}B_{1}^{+}B_{0}^{-}\negmedspace-B_{10}B_{10}\negmedspace+B_{10}\negmedspace B_{01}-B_{01}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace+B_{01}B_{1}^{+}B_{0}^{-}\negmedspace-B_{01}B_{10}\negmedspace+B_{01}B_{01}\negmedspace\right\rangle }
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & =\frac{1}{4}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{10}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{01}\right.\\
+ & \left.+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}\right\rangle \\
+ & =\frac{1}{4}\!\!\left(\!U^{*}\!{\rm exp}\left(\!-\phi\left(\tau\right)\!\right)\!S\!+\!{\rm exp}\!\left(\!\phi\left(\tau\right)\!\right)\!S\!-\!B_{10}^{2}\!-\!\left|B_{10}\right|^{2}\!\!+\!{\rm exp}\!\left(\!\phi\left(\tau\right)\!\right)\!S\!+\!U{\rm exp}\!\left(\!-\phi\left(\tau\right)\!\right)\!S\!-\!B_{10}^{*2}\!-\!\left|B_{10}\right|^{2}\!\right)
 \end{align}
 
 \end_inset
@@ -4010,49 +3932,115 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
 \end_layout
 
 \begin_layout Standard
-
-\size footnotesize
 \begin_inset Formula 
 \begin{align}
-\negmedspace & =\negmedspace{\scriptscriptstyle \frac{1}{4{\rm i}}\negmedspace\left\langle B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}\negmedspace+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{10}\negmedspace\right.}\\
- & {\scriptscriptstyle \left.-B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace B_{01}\right\rangle }\\
- & ={\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{10}B_{10}\negmedspace-B_{10}B_{01}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{01}B_{10}\negmedspace-B_{01}B_{01}\right\rangle }\\
- & {\scriptstyle =\frac{1}{4{\rm i}}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{10}B_{10}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}-B_{01}B_{01}\right\rangle }\\
+ & =\frac{1}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)S+2{\rm exp}\left(\phi\left(\tau\right)\right)S-2\left(B_{10}^{2}\right)^{\Re}-2\left|B_{10}\right|^{2}\right)\\
+ & =\frac{1}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)S+2{\rm exp}\left(\phi\left(\tau\right)\right)S-2\left(U^{*}\right)^{\Re}S-2S\right)\\
+ & =\frac{S}{2}\left(U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)+{\rm exp}\left(\phi\left(\tau\right)\right)-\left(U^{*}\right)^{\Re}-1\right),\\
+\left\langle \!\widetilde{B_{y}}\!\left(\tau\right)\!\widetilde{B_{y}}\!\left(0\right)\!\right\rangle _{B} & =\left\langle \frac{B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}}{2{\rm i}}\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}}\right\rangle _{B}\\
+ & =-\frac{1}{4}\left\langle \left(B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}\right)\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\right\rangle _{B}\\
+ & ={\scriptstyle -\frac{1}{4}\left\langle \!B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{0}^{+}\!B_{1}^{-}\!-B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}+B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{10}-B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{01}-B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{0}^{+}B_{1}^{-}\!+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{1}^{+}\!B_{0}^{-}\!\right.}\\
+ & {\scriptstyle \left.-\!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{10}\!+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{01}+B_{10}B_{0}^{+}B_{1}^{-}\!-B_{10}B_{1}^{+}\!B_{0}^{-}\!+B_{10}\!B_{10}\!-B_{10}\!B_{01}\!-B_{01}\!B_{0}^{+}\!B_{1}^{-}\!+B_{01}\!B_{1}^{+}\!B_{0}^{-}\!-B_{01}\!B_{10}\!+B_{01}\!B_{01}\!\right\rangle }\\
+ & =-\frac{1}{4}\!\left\langle B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{0}^{+}B_{1}^{-}\!-B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{1}^{+}B_{0}^{-}\!+B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{10}\!-B_{0}^{+}B_{1}^{-}\!\left(\tau\right)B_{01}\!\right.\\
+ & \left.-B_{1}^{+}B_{0}^{-}\!\left(\tau\right)B_{0}^{+}B_{1}^{-}\!+B_{1}^{+}B_{0}^{-}\!\left(\tau\right)B_{1}^{+}B_{0}^{-}\!-B_{1}^{+}B_{0}^{-}\!\left(\tau\right)B_{10}\!+B_{1}^{+}B_{0}^{-}\!\left(\tau\right)B_{01}\right\rangle \\
+ & ={\scriptstyle -\frac{1}{4}\left\langle \!B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{0}^{+}\!B_{1}^{-}\!-B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)B_{1}^{+}\!B_{0}^{-}\!+B_{01}B_{10}\!-B_{01}B_{01}\!-B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{0}^{+}\!B_{1}^{-}\!+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}\!-B_{10}B_{10}+B_{10}B_{01}\!\right\rangle }\\
+ & =-\frac{1}{4}\left(U{\rm exp}\!\left(-\phi\left(\tau\right)\right)S-{\rm exp}\left(\phi\left(\tau\right)\right)S-{\rm exp}\left(\phi\left(\tau\right)\right)S+U^{*}\!{\rm exp}\left(-\phi\left(\tau\right)\right)S+2S-2\left(U^{*}\right)^{\Re}S\right)\\
+ & =-\frac{S}{4}\left(2U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-2{\rm exp}\left(\phi\left(\tau\right)\right)+2-2U^{\Re}\right)\\
+ & =\frac{S}{2}\left({\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-1+U^{\Re}\right),\\
+\left\langle \!\widetilde{B_{x}}\!\left(\tau\right)\!\widetilde{B_{y}}\!\left(0\right)\!\right\rangle _{B}\! & =\left\langle \!\frac{B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}}{2}\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}}\!\right\rangle _{B}\\
+ & =\frac{1}{4{\rm i}}\left\langle \left(B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{10}-B_{01}\right)\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\right\rangle _{B}\\
+ & ={\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{10}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{01}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}\right.}\\
+ & {\scriptscriptstyle \left.-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}-B_{10}B_{0}^{+}B_{1}^{-}+B_{10}B_{1}^{+}B_{0}^{-}-B_{10}B_{10}+B_{10}B_{01}-B_{01}B_{0}^{+}B_{1}^{-}+B_{01}B_{1}^{+}B_{0}^{-}-B_{01}B_{10}+B_{01}B_{01}\right\rangle }\\
+ & ={\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{10}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{01}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}\right.}\\
+ & {\scriptscriptstyle \left.-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}\right\rangle }\\
+ & ={\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{10}B_{10}-B_{10}B_{01}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{01}B_{10}-B_{01}B_{01}\right\rangle }\\
+ & =\frac{1}{4{\rm i}}\!\left\langle \!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{0}^{+}\!B_{1}^{-}\!\!-\!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}\!\!+\!B_{10}\!B_{10}\!+\!B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)\!B_{0}^{+}\!B_{1}^{-}\!\!-\!B_{0}^{+}\!B_{1}^{-}\!\left(\tau\right)\!B_{1}^{+}\!B_{0}^{-}\!\!-\!B_{01}B_{01}\!\right\rangle \\
  & =\frac{1}{4{\rm i}}\left({\rm exp}\left(\phi\left(\tau\right)\right)S-U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S+U{\rm exp}\left(-\phi\left(\tau\right)\right)S-{\rm exp}\left(\phi\left(\tau\right)\right)S+U^{*}S-US\right)\\
  & =\frac{1}{4{\rm i}}\left(-U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S+U{\rm exp}\left(-\phi\left(\tau\right)\right)S+U^{*}S-US\right)\\
  & =\frac{S}{4{\rm i}}\left(-U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)+U{\rm exp}\left(-\phi\left(\tau\right)\right)+U^{*}-U\right)\\
  & =\frac{S\left(U-U^{*}\right)}{4{\rm i}}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right)\\
  & =\frac{2{\rm i}U^{\Im}S}{4{\rm i}}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right)\\
  & =\frac{U^{\Im}S}{2}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right),\\
-{\scriptscriptstyle \left\langle \widetilde{B_{y}}\negmedspace\left(\tau\right)\widetilde{B_{x}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B}\negmedspace} & {\scriptstyle =}\negmedspace{\scriptscriptstyle \left\langle \negmedspace\frac{B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}}{2{\rm i}}\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\negmedspace\right\rangle _{B}}\\
+\left\langle \widetilde{B_{y}}\!\left(\tau\right)\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B}\! & =\left\langle \frac{B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}}{2{\rm i}}\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right\rangle _{B}\\
  & =\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}\right)\left(B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}\right)\right\rangle _{B}\\
- & ={\scriptstyle \frac{1}{4{\rm i}}\left\langle \negmedspace B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{01}-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\right.}\\
- & {\scriptstyle \left.+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{10}+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{01}+B_{10}B_{1}^{+}B_{0}^{-}+B_{10}B_{0}^{+}B_{1}^{-}\negmedspace-B_{10}B_{10}\negmedspace-B_{10}B_{01}-B_{01}B_{1}^{+}B_{0}^{-}\negmedspace-B_{01}B_{0}^{+}B_{1}^{-}+B_{01}B_{10}+B_{01}B_{01}\right\rangle }\\
- & {\scriptscriptstyle =}{\scriptscriptstyle \frac{1}{4{\rm i}}\negmedspace\left\langle B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{10}\negmedspace-B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{01}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\right.}\\
- & {\scriptscriptstyle \left.+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{10}+B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{01}\right\rangle }\\
- & {\scriptscriptstyle =}{\scriptscriptstyle \frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{01}B_{10}-B_{01}B_{01}-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace+B_{10}B_{10}\negmedspace+B_{10}B_{01}\right\rangle }\\
- & {\scriptscriptstyle =\frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace+B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace-B_{01}B_{01}-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{1}^{+}B_{0}^{-}\negmedspace-B_{1}^{+}B_{0}^{-}\negmedspace\left(\tau\right)B_{0}^{+}B_{1}^{-}\negmedspace+B_{10}B_{10}\right\rangle }\\
+ & ={\scriptstyle \frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}\right.}\\
+ & {\scriptstyle \left.+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{10}+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{01}+B_{10}B_{1}^{+}\!B_{0}^{-}\!+B_{10}B_{0}^{+}\!B_{1}^{-}\!-B_{10}B_{10}-B_{10}B_{01}-B_{01}B_{1}^{+}\!B_{0}^{-}\!-B_{01}B_{0}^{+}\!B_{1}^{-}\!+B_{01}B_{10}+B_{01}B_{01}\!\right\rangle }
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+I tried small for 645 anf 646 because I wanted to improve the management
+ of the space.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & =\frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}\right.\\
+ & \left.-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{10}+B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{01}\right\rangle \\
+ & =\frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{01}B_{10}-B_{01}B_{01}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}\right.\\
+ & \left.-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}+B_{10}B_{10}+B_{10}B_{01}\right\rangle \\
+ & =\frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{01}B_{10}-B_{01}B_{01}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}\right.\\
+ & \left.-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}+B_{10}B_{10}+B_{10}B_{01}\right\rangle \\
+ & ={\scriptstyle \frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{01}B_{01}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}+B_{10}B_{10}\right\rangle }\\
  & =\frac{1}{4{\rm i}}\left(U{\rm exp}\left(-\phi\left(\tau\right)\right)S-U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S+B_{10}^{2}-B_{10}^{*2}\right)\\
  & =\frac{1}{4{\rm i}}\left(U{\rm exp}\left(-\phi\left(\tau\right)\right)S-U^{*}{\rm exp}\left(-\phi\left(\tau\right)\right)S+U^{*}S-US\right)\\
  & =\frac{S\left(U-U^{*}\right)}{4{\rm i}}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right)\\
- & =\frac{2{\rm i}U^{\Im}S}{4{\rm i}}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right)
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
+ & =\frac{2{\rm i}U^{\Im}S}{4{\rm i}}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right)\\
  & =-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{10},\\
-{\scriptscriptstyle {\scriptscriptstyle \left\langle \negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}\negmedspace\right\rangle _{B}}}\negmedspace & {\scriptscriptstyle =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right)\right)\right\rangle }\\
+{\scriptstyle \left\langle \!B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)^{*}\!b_{\mathbf{k}'}\!\right\rangle _{B}}\! & ={\scriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\right)\right)\right\rangle }\\
  & =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{10},\\
-{\scriptscriptstyle \left\langle \negmedspace B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(\negmedspace g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)b_{\mathbf{k}'}^{\dagger}\negmedspace\right\rangle _{B}}\negmedspace & =-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{01}.\\
-{\scriptscriptstyle \left\langle B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}\negmedspace\right\rangle _{B}}\negmedspace & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01},
+{\scriptstyle \left\langle \!B_{0}^{+}\!B_{1}^{-}\!\!\left(\tau\right)\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)b_{\mathbf{k}'}^{\dagger}\!\right\rangle _{B}\!} & ={\scriptstyle -\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{01}.}\\
+{\scriptstyle \left\langle \!B_{0}^{+}\!B_{1}^{-}\!\!\left(\tau\right)\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)^{*}\!b_{\mathbf{k}'}\!\right\rangle _{B}\!} & ={\scriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01},}\\
+{\scriptstyle \left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{iz}}\left(0\right)\right\rangle _{B}}\! & ={\scriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\left(-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{10}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{01}\right.}\\
+ & {\scriptstyle \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{10}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01}\right)}\\
+ & ={\scriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\left(-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{10}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\left(N_{\mathbf{k}'}+1\right)B_{01}\right.}\\
+ & {\scriptstyle \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{10}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01}\right)}\\
+ & =\frac{1}{2}\sum_{\mathbf{k}'}\!\left(-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(N_{\mathbf{k}'}+1\right)\left(\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)^{*}\!B_{10}+\left(\!\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)^{*}\!B_{01}\right)\right.\\
+ & \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}N_{\mathbf{k}'}\left(\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)B_{10}+\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)B_{01}\right)\right)\\
+ & =\frac{1}{2}\sum_{\mathbf{k}'}\left(\!-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\left(N_{\mathbf{k}'}+1\right)\!\left(\!\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\!\right)^{*}\!B_{10}-\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)^{*}\!\!B_{01}\!\right)\!\right.\\
+ & \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\!N_{\mathbf{k}'}\left(\!\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\!\right)\!B_{10}-\left(\!\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\!\right)B_{01}\right)\right)\\
+ & ={\scriptstyle \frac{1}{2}\!\sum_{\mathbf{k}'}\!\left(\!-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\left(N_{\mathbf{k}'}+1\right)\!\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)^{*}\!\left(B_{10}-B_{01}\right)+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\!N_{\mathbf{k}'}\!\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)\!\left(B_{10}-B_{01}\right)\!\right)}\\
+ & =\frac{1}{2}\!\sum_{\mathbf{k}'}\!2{\rm i}B_{10}^{\Im}\!\!\left(\!\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)^{*}\!N_{\mathbf{k}'}\!\left(\!\frac{v_{1\mathbf{k}'}\!-\!v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\!\tau}\!\right)\!-\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)\!\!\left(N_{\mathbf{k}'}+1\right)\!\!\left(\!\!\frac{v_{1\mathbf{k}'}\!-\!v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\!\tau}\!\!\right)^{*}\right)\\
+ & ={\rm i}\!\sum_{\mathbf{k}'}B_{10}^{\Im}\!\left(\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)^{*}\!N_{\mathbf{k}'}\!\!\left(\!\frac{v_{1\mathbf{k}'}\!-\!v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\!\tau}\!\!\right)\!-\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)\!\left(\!N_{\mathbf{k}'}+1\!\right)\!\left(\!\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\right)^{*}\right)\\
+ & ={\rm i}\!\sum_{\mathbf{k}'}B_{10}^{\Im}\!\left(\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)^{*}\!N_{\mathbf{k}'}\!\!\left(\!\!\frac{v_{1\mathbf{k}'}\!-\!v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\!\!\right)\!e^{{\rm i}\omega_{\mathbf{k}'}\!\tau}\!-\!\left(g_{i\mathbf{k}'}\!-\!v_{i\mathbf{k}'}\!\right)\!\left(N_{\mathbf{k}'}\!+\!1\right)\!\!\left(\!\!\frac{v_{1\mathbf{k}'}\!-\!v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\!\!\right)^{*}\!\!e^{-{\rm i}\omega_{\mathbf{k}'}\!\tau}\!\right),
 \end{align}
 
 \end_inset
@@ -4061,72 +4049,26 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
 \end_layout
 
 \begin_layout Standard
-
-\size footnotesize
 \begin_inset Formula 
 \begin{align}
-{\scriptscriptstyle {\scriptscriptstyle \left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{iz}}\left(0\right)\right\rangle _{B}}\negmedspace} & =\negmedspace{\scriptscriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\left(-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}\right.}\\
- & {\scriptscriptstyle \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{10}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01}\right)}\\
- & {\scriptscriptstyle =\frac{1}{2}\sum_{\mathbf{k}'}\left(-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}\right.}\\
- & {\scriptscriptstyle \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)N_{\mathbf{k}'}B_{10}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01}\right)}\\
- & {\scriptscriptstyle =}{\scriptscriptstyle {\scriptscriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\negmedspace\left(\negmedspace-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\left(\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace B_{10}+\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace B_{01}\right)\negmedspace\right.}}\\
- & {\scriptscriptstyle \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace N_{\mathbf{k}'}\left(\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)B_{10}+\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)B_{01}\right)\right)}
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
- & {\scriptscriptstyle =\frac{1}{2}\sum_{\mathbf{k}'}\negmedspace\left(\negmedspace-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\left(\negmedspace\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\negmedspace\right)^{*}\negmedspace B_{10}-\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)^{*}\negmedspace\negmedspace B_{01}\negmedspace\right)\negmedspace+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace N_{\mathbf{k}'}\left(\negmedspace\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\negmedspace\right)\negmedspace B_{10}-\left(\negmedspace\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\negmedspace\right)B_{01}\right)\negmedspace\right)}\\
- & =\frac{1}{2}\sum_{\mathbf{k}'}\negmedspace\left(\negmedspace-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(B_{10}-B_{01}\right)+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace N_{\mathbf{k}'}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)\negmedspace\left(B_{10}-B_{01}\right)\negmedspace\right)\\
- & =\frac{1}{2}\sum_{\mathbf{k}'}2{\rm i}B_{10}^{\Im}\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}N_{\mathbf{k}'}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(N_{\mathbf{k}'}+1\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\right)\\
- & ={\rm i}\sum_{\mathbf{k}'}B_{10}^{\Im}\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}N_{\mathbf{k}'}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(N_{\mathbf{k}'}+1\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\right)\\
- & ={\rm i}\sum_{\mathbf{k}'}B_{10}^{\Im}\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}N_{\mathbf{k}'}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)e^{{\rm i}\omega_{\mathbf{k}'}\tau}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(N_{\mathbf{k}'}+1\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right),
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
-{\scriptscriptstyle \left\langle \widetilde{B_{iz}}\left(\tau\right)\negmedspace\widetilde{B_{x}}\left(0\right)\negmedspace\right\rangle _{B}\negmedspace} & {\scriptscriptstyle =\left\langle \sum_{\mathbf{k}'}\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\left(\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right)\right\rangle _{B}}\\
- & =\sum_{\mathbf{k}'}\left\langle \negmedspace\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\negmedspace\left(\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right)\negmedspace\right\rangle _{B}\\
- & =\frac{1}{2}\sum_{\mathbf{k}'}\left\langle \negmedspace\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\negmedspace\left(B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}\right)\negmedspace\right\rangle _{B}\\
+{\scriptscriptstyle \left\langle \widetilde{B_{iz}}\left(\tau\right)\!\widetilde{B_{x}}\left(0\right)\!\right\rangle _{B}\!} & {\scriptscriptstyle =\left\langle \sum_{\mathbf{k}'}\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\left(\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right)\right\rangle _{B}}\\
+ & =\sum_{\mathbf{k}'}\left\langle \!\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\!b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\!\left(\frac{B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}}{2}\right)\!\right\rangle _{B}\\
+ & =\frac{1}{2}\sum_{\mathbf{k}'}\left\langle \!\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\!b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\!\left(B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}-B_{10}-B_{01}\right)\!\right\rangle _{B}\\
  & =\frac{1}{2}\sum_{\mathbf{k}'}\left\langle \left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\left(B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\right)\right\rangle _{B}\\
- & {\scriptscriptstyle ={\scriptscriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\negmedspace\left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{0}^{+}B_{1}^{-}\negmedspace+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\negmedspace\right.}}\\
- & {\scriptscriptstyle \left.+\left(\negmedspace g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\right\rangle ,}\\
-{\scriptscriptstyle {\scriptscriptstyle \left\langle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\right\rangle _{B}}\negmedspace} & ={\scriptscriptstyle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle _{B}}\\
- & =\negmedspace\left(\negmedspace g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)\negmedspace\left\langle \negmedspace b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right)\right\rangle _{B}
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
- & ={\scriptscriptstyle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right){\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}'}^{*}v_{0\mathbf{k}'}-v_{1\mathbf{k}'}v_{0\mathbf{k}'}^{*}}{\omega_{\mathbf{k}'}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\right)\negmedspace\right\rangle _{B}\negmedspace{\scriptscriptstyle {\scriptscriptstyle \left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}\negmedspace\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\negmedspace\right){\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\right)\negmedspace\right\rangle _{B}}}}\\
- & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\right\rangle _{B}\\
+ & {\scriptscriptstyle ={\scriptscriptstyle \frac{1}{2}\sum_{\mathbf{k}'}\!\left\langle \!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}\!B_{0}^{-}\!+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\!\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!B_{0}^{+}B_{1}^{-}\!+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\!\right)^{*}\!\!b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\!\right.}}\\
+ & {\scriptscriptstyle \left.+\left(\!g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\!\right)^{*}\!\!b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\!B_{0}^{+}\!B_{1}^{-}\!\right\rangle ,}\\
+{\scriptscriptstyle {\scriptscriptstyle \left\langle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\right\rangle _{B}}\!} & ={\scriptscriptstyle \!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\!\right)\!\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\!\right\rangle _{B}}\\
+ & =\!\left(\!g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\!\right)\!\left\langle \!b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}\left(\!D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\!{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\right)\right\rangle _{B}\\
+ & ={\scriptscriptstyle \!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\left(D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right){\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}'}^{*}v_{0\mathbf{k}'}-v_{1\mathbf{k}'}v_{0\mathbf{k}'}^{*}}{\omega_{\mathbf{k}'}^{2}}\!\right)\!\right)\!\right)\!\right\rangle _{B}\!{\scriptscriptstyle {\scriptscriptstyle \left\langle \!\prod_{\mathbf{k}\neq\mathbf{k}'}\!\left(\!D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\!\right){\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\!\right)\!\right)\!\right)\!\right\rangle _{B}}}}\\
+ & =\!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\prod_{\mathbf{k}}{\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\!\right)\!\right)\!\left\langle \!\prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\!\right\rangle _{B}\!\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\!\right\rangle _{B}\\
  & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\right\rangle _{B}\\
  & =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}\left\langle b_{\mathbf{k}'}^{\dagger}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\\
  & =\negmedspace{\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}\left(-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left\langle D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}N_{\mathbf{k}'}\right)e^{{\rm i}\omega_{\mathbf{k}'}\tau}}\\
  & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left\langle \prod_{\mathbf{k}}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\\
- & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{10}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau},
+ & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{10}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau},\\
+ & ={\scriptscriptstyle \!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\!\left(D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right){\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}'}^{*}v_{0\mathbf{k}'}-v_{1\mathbf{k}'}v_{0\mathbf{k}'}^{*}}{\omega_{\mathbf{k}'}^{2}}\!\right)\!\right)\!\right)\!\right\rangle _{B}\!{\scriptscriptstyle {\scriptscriptstyle \left\langle \!\prod_{\mathbf{k}\neq\mathbf{k}'}\!\left(\!D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\!\right){\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\!\right)\!\right)\!\right)\!\right\rangle _{B}}}}\\
+ & =\!\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\!\prod_{\mathbf{k}}{\rm exp}\left(\!\frac{1}{2}\left(\!\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\!\right)\!\right)\!\left\langle \!\prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\!\right\rangle _{B}\!\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\!\right\rangle _{B}\\
+ & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\negmedspace\left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\right\rangle _{B}
 \end{align}
 
 \end_inset
@@ -4135,29 +4077,19 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
 \end_layout
 
 \begin_layout Standard
-
-\size footnotesize
 \begin_inset Formula 
 \begin{align}
-{\scriptscriptstyle {\scriptscriptstyle \left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\right\rangle _{B}}} & {\scriptscriptstyle =-\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{01}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}},\\
-{\scriptscriptstyle \left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\right\rangle _{B}}\\
- & {\scriptscriptstyle =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left\langle \negmedspace b_{\mathbf{k}'}\prod_{\mathbf{k}}\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right){\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\right)\negmedspace\right\rangle _{B}}\\
- & {\scriptscriptstyle =}{\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\left\langle b_{\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\negmedspace\right\rangle _{B}}\\
- & {\scriptscriptstyle =}{\scriptscriptstyle {\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)\negmedspace\left\langle D\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}\negmedspace\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right)\negmedspace\right\rangle _{B}}}\\
- & {\scriptscriptstyle =}\negmedspace{\scriptscriptstyle {\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)\negmedspace\left\langle D\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right)\negmedspace\right\rangle _{B}}}\\
- & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)B_{10},
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
+ & =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}\left\langle b_{\mathbf{k}'}^{\dagger}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\\
+ & =\negmedspace{\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}\left(-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left\langle D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}N_{\mathbf{k}'}\right)e^{{\rm i}\omega_{\mathbf{k}'}\tau}}\\
+ & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right)\left\langle \prod_{\mathbf{k}}D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle _{B}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\\
+ & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{10}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau},\\
+{\scriptscriptstyle {\scriptscriptstyle \left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\right\rangle _{B}}} & ={\scriptstyle -\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{01}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau},}\\
+{\scriptscriptstyle \left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\right\rangle _{B}} & ={\scriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\right\rangle _{B}}\\
+ & =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left\langle \negmedspace b_{\mathbf{k}'}\prod_{\mathbf{k}}\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right){\rm exp}\left(\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\right)\negmedspace\right\rangle _{B}\\
+ & ={\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\negmedspace\right)\negmedspace\left\langle b_{\mathbf{k}'}D\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\right\rangle _{B}\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\negmedspace\right\rangle _{B}}\\
+ & ={\scriptscriptstyle {\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)\negmedspace\left\langle D\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle \prod_{\mathbf{k}\neq\mathbf{k}'}\negmedspace\left(D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right)\negmedspace\right\rangle _{B}}}\\
+ & =\negmedspace{\scriptscriptstyle {\scriptscriptstyle \left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\prod_{\mathbf{k}}{\rm exp}\left(\negmedspace\frac{1}{2}\left(\negmedspace\frac{v_{1\mathbf{k}}^{*}v_{0\mathbf{k}}-v_{1\mathbf{k}}v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\negmedspace\right)\negmedspace\right)\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)\negmedspace\left\langle D\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)\negmedspace\right\rangle _{B}\negmedspace\left\langle \negmedspace\prod_{\mathbf{k}\neq\mathbf{k}'}\left(\negmedspace D\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\negmedspace\right)\negmedspace\right\rangle _{B}}}\\
+ & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)B_{10},\\
 {\scriptscriptstyle {\scriptscriptstyle \left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{0+\negmedspace}B_{1}^{-}\negmedspace\right\rangle _{B}}\negmedspace} & =\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)B_{01},\\
 \left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & =\frac{1}{2}\sum_{\mathbf{k}'}\negmedspace\left(-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{10}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}-\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)B_{01}N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right.\\
  & \left.+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}+\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\left(N_{\mathbf{k}'}+1\right)B_{01}\right)\\
@@ -4168,7 +4100,17 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
  & =\frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left\langle \left(B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)+B_{10}-B_{01}\right)\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\right\rangle _{B}\\
  & =\frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left\langle \left(B_{0}^{+}B_{1}^{-}\left(\tau\right)-B_{1}^{+}B_{0}^{-}\left(\tau\right)\right)\left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}\right)\right\rangle _{B}\\
  & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left\langle \negmedspace\negmedspace B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)b_{\mathbf{k}'}^{\dagger}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)\negmedspace b_{\mathbf{k}'}^{\dagger}\negmedspace+B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)^{*}\negmedspace\negmedspace b_{\mathbf{k}'}-B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace\negmedspace b_{\mathbf{k}'}\negmedspace\right\rangle },\\
-{\scriptscriptstyle \left\langle B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace b_{\mathbf{k}'}^{\dagger}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =-\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}},\\
+{\scriptscriptstyle \left\langle B_{0}^{+}\negmedspace B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace b_{\mathbf{k}'}^{\dagger}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =-\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
 {\scriptscriptstyle \left\langle B_{0}^{+}B_{1}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)N_{\mathbf{k}'}B_{01}},\\
 {\scriptscriptstyle \left\langle \negmedspace B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\right)^{*}\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}},\\
 {\scriptscriptstyle \left\langle B_{1}^{+}\negmedspace B_{0}^{-}\negmedspace\left(\tau\right)\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}\negmedspace\right\rangle _{B}} & {\scriptscriptstyle =\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)N_{\mathbf{k}'}B_{10}},\\
@@ -4179,52 +4121,16 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
  & {\scriptscriptstyle =\frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left(\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left(B_{10}+B_{01}\right)+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\negmedspace\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)\negmedspace\left(-B_{10}-B_{01}\right)\negmedspace\right)}\\
  & {\scriptscriptstyle =\frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left(\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left(B_{10}+B_{01}\right)-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace N_{\mathbf{k}'}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(B_{10}+B_{01}\right)\negmedspace\right)},\\
 \left\langle \widetilde{B_{iz}}\negmedspace\left(\tau\right)\negmedspace\widetilde{B_{y}}\negmedspace\left(0\right)\negmedspace\right\rangle _{B} & {\scriptscriptstyle =\left\langle \sum_{\mathbf{k}'}\left(\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\negmedspace\left(\negmedspace\frac{B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}}{2{\rm i}}\negmedspace\right)\negmedspace\right\rangle _{B}}\\
- & {\scriptscriptstyle =\frac{1}{2{\rm i}}\left\langle \sum_{\mathbf{k}'}\left(\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)\negmedspace\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\negmedspace\right\rangle _{B}}
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
+ & {\scriptscriptstyle =\frac{1}{2{\rm i}}\left\langle \sum_{\mathbf{k}'}\left(\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\right)\negmedspace\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}+B_{10}-B_{01}\right)\negmedspace\right\rangle _{B}}\\
  & ={\scriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left\langle \left(\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\right)\left(B_{0}^{+}B_{1}^{-}-B_{1}^{+}B_{0}^{-}\right)\right\rangle _{B}}\\
  & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left\langle \negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace B_{0}^{+}B_{1}^{-}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace b_{\mathbf{k}'}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}B_{0}^{+}B_{1}^{-}-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace b_{\mathbf{k}'}e^{-{\rm i}\omega_{\mathbf{k}'}\tau}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle }\\
  & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(\negmedspace e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\negmedspace g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\negmedspace\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle +e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle \negmedspace\right)}\\
  & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle \negmedspace-e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle +e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\right\rangle \negmedspace\right)}\\
- & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle +e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle \negmedspace\right)},
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
-{\scriptscriptstyle \left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\right\rangle _{B}} & {\scriptscriptstyle =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{10}N_{\mathbf{k}'}},\\
-{\scriptscriptstyle \left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\right\rangle _{B}} & {\scriptscriptstyle =-\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{01}N_{\mathbf{k}'}},\\
-{\scriptscriptstyle \left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\right\rangle _{B}} & {\scriptscriptstyle =\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\left(N_{\mathbf{k}'}+1\right)B_{10}},\\
-{\scriptscriptstyle \left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\right\rangle _{B}} & {\scriptscriptstyle =\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\left(N_{\mathbf{k}'}+1\right)B_{01}},
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{align}
+ & =\negmedspace{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle +e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\negmedspace\right\rangle -e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\negmedspace\right\rangle \negmedspace\right)},\\
+\left\langle b_{\mathbf{k}'}^{\dagger}B_{1}^{+}B_{0}^{-}\right\rangle _{B} & =-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{10}N_{\mathbf{k}'},\\
+\left\langle b_{\mathbf{k}'}^{\dagger}B_{0}^{+}B_{1}^{-}\right\rangle _{B} & =-\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{01}N_{\mathbf{k}'},\\
+\left\langle b_{\mathbf{k}'}B_{1}^{+}B_{0}^{-}\right\rangle _{B} & =\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\left(N_{\mathbf{k}'}+1\right)B_{10},\\
+\left\langle b_{\mathbf{k}'}B_{0}^{+}B_{1}^{-}\right\rangle _{B} & =\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\left(N_{\mathbf{k}'}+1\right)B_{01},\\
 {\scriptscriptstyle \left\langle \widetilde{B_{iz}}\left(\tau\right)\negmedspace\widetilde{B_{y}}\left(0\right)\negmedspace\right\rangle _{B}}\negmedspace & ={\scriptscriptstyle {\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\negmedspace-\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{01}N_{\mathbf{k}'}\negmedspace\right)-e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\negmedspace-\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{10}N_{\mathbf{k}'}\negmedspace\right)\right.}}\\
  & {\scriptscriptstyle \left.+e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}\right)-e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}\negmedspace\right)\negmedspace\right)}\\
  & {\scriptstyle =}{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(\negmedspace-\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{01}N_{\mathbf{k}'}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{10}N_{\mathbf{k}'}\negmedspace\right)\negmedspace\right.}\\
@@ -4232,7 +4138,17 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
  & {\scriptstyle =}{\scriptscriptstyle \frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\negmedspace\left(-g_{i\mathbf{k}'}+v_{i\mathbf{k}'}\right)\negmedspace\left(\negmedspace\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\negmedspace\right)^{*}\negmedspace\negmedspace B_{01}N_{\mathbf{k}'}+\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\negmedspace B_{10}N_{\mathbf{k}'}\negmedspace\right)\right.}\\
  & {\scriptscriptstyle \left.+e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\negmedspace\left(\negmedspace\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\negmedspace\left(\negmedspace\left(\frac{v_{0\mathbf{k}'}-v_{1\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{01}\right)\negmedspace\right)-\negmedspace\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)B_{10}\right)\right)}\\
  & {\scriptstyle =\frac{1}{2{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(\negmedspace e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace\left(B_{10}+\right)N_{\mathbf{k}'}-e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace\left(B_{10}+\right)\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\right)}\\
- & =\negmedspace\frac{1}{{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{10}^{\Re}N_{\mathbf{k}'}-e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace B_{10}^{\Re}\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\right)\\
+ & =\negmedspace\frac{1}{{\rm i}}\sum_{\mathbf{k}'}\negmedspace\left(e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}\negmedspace B_{10}^{\Re}N_{\mathbf{k}'}-e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\negmedspace\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\negmedspace B_{10}^{\Re}\negmedspace\left(N_{\mathbf{k}'}+1\right)\negmedspace\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
  & ={\rm i}\sum_{\mathbf{k}'}\left(e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)B_{10}^{\Re}\left(N_{\mathbf{k}'}+1\right)-e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{10}^{\Re}N_{\mathbf{k}'}\right)\\
  & ={\rm i}\sum_{\mathbf{k}'}\left(e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)B_{10}^{\Re}\left(N_{\mathbf{k}'}+1\right)-e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}B_{10}^{\Re}N_{\mathbf{k}'}\right)\\
  & ={\rm i}B_{10}^{\Re}\sum_{\mathbf{k}'}\left(e^{-{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)^{*}\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)\left(N_{\mathbf{k}'}+1\right)-e^{{\rm i}\omega_{\mathbf{k}'}\tau}\left(g_{i\mathbf{k}'}-v_{i\mathbf{k}'}\right)\left(\frac{v_{1\mathbf{k}'}-v_{0\mathbf{k}'}}{\omega_{\mathbf{k}'}}\right)^{*}N_{\mathbf{k}'}\right).
@@ -4248,8 +4164,6 @@ The correlation functions are equal to:
 \end_layout
 
 \begin_layout Standard
-
-\size footnotesize
 \begin_inset Formula 
 \begin{align}
 \left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B} & =\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\label{eq:ref a}\\
@@ -4933,9 +4847,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\overline{\rho_{S}}\!\left(t\right)\right]\!\!+\!\Lambda_{ji}\!\left(-\tau\right)\!\!\left[\overline{\rho_{S}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\!,\!A_{i}\right]\!\right)\\
- & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
- & \left.-\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\!\left[A_{i},\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\overline{\rho_{S}}\!\left(t\right)\right]\!\!+\!\mathscr{B}_{ji}\!\left(-\tau\right)\!\!\left[\overline{\rho_{S}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(t\!-\!\tau,t\right)\!,\!A_{i}\right]\!\right)\\
+ & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\!\left(t\right)\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
+ & \left.-\mathscr{B}_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)
 \end{align}
 
 \end_inset
@@ -4959,7 +4873,7 @@ Given that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function-1}\\
+\mathscr{B}_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function-1}\\
  & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).\label{eq:correlation function 1-1}
 \end{align}
 
@@ -4990,14 +4904,14 @@ The master equation can be re-written in the following form:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
- & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
- & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
- & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
- & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
- & +\sum_{ijww'}\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
- & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\Lambda_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
- & \left.-\Lambda_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\right)\\
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\mathscr{B}_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\mathscr{B}_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\mathscr{B}_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\mathscr{B}_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\mathscr{B}_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & +\sum_{ijww'}\mathscr{B}_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\\
+ & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\mathscr{B}_{ij}\!\left(\tau\right)\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\\
+ & \left.-\mathscr{B}_{ji}\left(-\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\right)\\
  & ={\scriptstyle -{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww'}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t-\tau\right){\rm Tr}_{B}\left(\left[A_{i},\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\right.}\\
  & {\scriptstyle \left.-\left[A_{i},\widetilde{B_{j}}\left(-\tau\right)\widetilde{B_{i}}\left(0\right)\rho_{B}\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right]\right)}
 \end{align}
@@ -5014,7 +4928,7 @@ Given that if we define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-D_{ijww^{\prime}}\left(t-\tau,t\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\label{Dijww'}
+D_{ijww^{\prime}}\left(t-\tau,t\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\label{Dijww'}
 \end{equation}
 
 \end_inset
@@ -5029,8 +4943,8 @@ then
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right) & =\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right)^{\dagger}\\
- & =\Lambda_{ij}^{*}\left(\tau\right)C_{i}\left(t\right)C_{j}\left(t-\tau\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}^{\dagger}\left(t-\tau,t\right)
+D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right) & =\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\right)^{\dagger}\\
+ & =\mathscr{B}_{ij}^{*}\left(\tau\right)C_{i}\left(t\right)C_{j}\left(t-\tau\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}^{\dagger}\left(t-\tau,t\right)
 \end{align}
 
 \end_inset
@@ -5062,7 +4976,7 @@ We used the fact that
  & ={\rm Tr}_{B}\left(\rho_{B}B_{j}\widetilde{B_{i}}\left(\tau\right)\right)\\
  & ={\rm Tr}_{B}\left(\left(\widetilde{B_{i}}\left(\tau\right)B_{j}\rho_{B}\right)^{\dagger}\right)\,\text{(by definition of adjoint)}\\
  & ={\rm Tr}_{B}\left(\widetilde{B_{i}}\left(\tau\right)B_{j}\rho_{B}\right)^{\text{*}}\\
- & =\Lambda_{ij}^{*}\left(\tau\right)
+ & =\mathscr{B}_{ij}^{*}\left(\tau\right)
 \end{align}
 
 \end_inset
@@ -5077,8 +4991,8 @@ So we can write the master equation like:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t} & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\left(\!\Lambda_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(\!w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\left(t\right)\!\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
- & \left.-\Lambda_{ij}^{*}\left(\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)\\
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t} & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\!\left(t\right)\!,\!\overline{\rho_{S}}\!\left(t\right)\right]\!-\!\!\!\!\sum_{ijww'}\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t\!-\!\tau\right)\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\!\left[\!A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{j}\!\left(\!w\!\left(t\!-\!\tau\right)\!,\!w^{\prime}\!\left(t\right)\!\right)\!\overline{\rho_{S}}\!\left(t\right)\!\right]\right.\\
+ & \left.-\mathscr{B}_{ij}^{*}\left(\tau\right)\left[A_{i},\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{j}^{\dagger}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\right]\right)\\
  & =\,\!-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww'}\int_{0}^{t}{\rm d}\tau\left(\left[A_{i},D_{ijww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[A_{i},\overline{\rho_{S}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right)\right]\right)
 \end{align}
 
@@ -5173,7 +5087,7 @@ noindent
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
-K_{ij}\left(w,w',t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d}{\rm \tau}\label{eq:response function}\\
+K_{ij}\left(w,w',t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d}{\rm \tau}\label{eq:response function}\\
  & =K_{ijww'}\left(t\right).
 \end{align}
 
