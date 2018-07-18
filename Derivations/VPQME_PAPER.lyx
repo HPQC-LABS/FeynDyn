@@ -1779,7 +1779,7 @@ It means that a decomposition matrix of
 \begin{align*}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
  & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
- & \equiv K_{ij}\left(w,t\right)
+ & \equiv K_{ijw}\left(t\right)
 \end{align*}
 
 \end_inset
@@ -1797,9 +1797,60 @@ Replacing in the equation
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right)\!,\overline{\rho}_{S}\!\left(t\right)\!\right]\!-\!\!\sum_{ijw}\!\left(\!K_{ij}^{\Re}\!\left(w,t\right)\!\!\left[\!A_{i},A_{j}\!\left(w\right)\overline{\rho}_{S}\!\left(t\right)\!-\!\overline{\rho}_{S}\!\left(t\right)\!A_{j}^{\dagger}\!\left(w\right)\!\right]\!\!+\!{\rm i}K_{ij}^{\Im}\!\left(w,t\right)\!\!\left[\!A_{i},A_{j}\!\left(w\right)\overline{\rho}_{S}\!\left(t\right)\!+\!\overline{\rho}_{S}\!\left(t\right)\!A_{j}^{\dagger}\!\left(w\right)\!\right]\!\right)
-\end{equation}
+\begin{align}
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\dot{\rho} & =-{\rm i}\left[H_{S}\left(t\right),\rho\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}\left(t\right)\left(\left[A_{i},A_{jww^{\prime}}\rho\right]-\left[A_{i},\rho A_{jww^{\prime}}^{\dagger}\right]\right)\\
+\dot{\rho} & =-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\rho\right]-K_{ijww'}^{*}\left(t\right)\left[A_{i},\rho A_{jww'}^{\dagger}\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!\right)\\
+ & Kr[A,BC-C^{\dagger}B^{\dagger}]+iKi[A,BC+C^{\dagger}B^{\dagger}]\\
+ & Kr[A,D-D^{\dagger}]+iKi[A,D+D^{\dagger}]\\
+ & Kr\left([A,D]-[A,D^{\dagger}]\right)+iKi\left([A,D]+[A,D^{\dagger}]\right)\\
+ & K[A,D])-Kr[A,D^{\dagger}]+iKr[A,D^{\dagger}]\\
+ & K[A,D])-(Kr-iKr)[A,D^{\dagger}]\\
+ & \boldsymbol{\underline{K[A,D])-K^{*}[A,D^{\dagger}]}}\\
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}\left(t\right)\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)\right]-K_{ijw}^{*}\left(t\right)\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)\right]\right)\\
+ & Kr[A,D^{\Circle}]+iKi[A,D^{{\rm \times}}]\\
+\\
+ & (A+B)(C+D)=AC+BC+AD+BD\ne AC+BC+AD^{\circ}+BD^{\times}
+\end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
