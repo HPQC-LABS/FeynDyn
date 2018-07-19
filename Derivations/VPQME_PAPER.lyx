@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #LyX 2.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
@@ -1859,3 +1860,1802 @@ status open
 
 \end_body
 \end_document
+=======
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\begin_preamble
+\usepackage{amsfonts}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!100!black},
+    urlcolor={blue!100!black}
+}
+%\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\usepackage[mathscr]{eucal}
+\end_preamble
+\options prl,notitlepage
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The Mother of all Master Equations
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Nike Dattani
+\end_layout
+
+\begin_layout Author Email
+n.dattani@cfa.harvard.edu
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+Harvard-Smithsonian 
+\lang english
+Center
+\lang british
+ for Astrophysics
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Camilo Chaparro Sogamoso
+\end_layout
+
+\begin_layout Author Email
+	edcchaparroso@unal.edu.co
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+National University of Colombia
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+A general non-Markovian master equation for time-dependent Hamiltonians
+ with coupling that is weak, strong, or anything in between
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Hamiltonian
+\end_layout
+
+\begin_layout Standard
+We start with a time-dependent Hamiltonian of the form: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+H_{T}\left(t\right) & =H_{S}\left(t\right)+H_{I}+H_{B},\label{eq:H(t)}\\
+H_{S}\left(t\right) & =\sum_{i}\varepsilon_{i}\left(t\right)|i\rangle\negmedspace\langle i|+\sum_{i\ne j}V_{ij}\left(t\right)|i\rangle\negmedspace\langle j|,\label{eq:Hs(t)}\\
+H_{I} & =\sum_{i}|i\rangle\negmedspace\langle i|\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{i\mathbf{k}}^{*}b_{\mathbf{k}}\right),\label{eq:HI1}\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+H_{T}\left(t\right) & =H_{S}\left(t\right)+H_{I}+H_{B},\label{eq:H(t)-1}\\
+H_{S}\left(t\right) & =\varepsilon_{i}\left(t\right)|0\rangle\negmedspace\langle0|+\varepsilon_{1}\left(t\right)|1\rangle\langle1|+V_{10}\left(t\right)|1\rangle\langle0|+V_{01}\left(t\right)|0\rangle\langle1|,\label{eq:Hs(t)-1}\\
+H_{I} & =|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(g_{0\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{0\mathbf{k}}^{*}b_{\mathbf{k}}\right)+|1\rangle\negmedspace\langle1|\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{1\mathbf{k}}^{*}b_{\mathbf{k}}\right),\label{eq:HI1-1}\\
+H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.\label{eq:HB1-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Unitary Transformation into the variationally optimizable frame
+\end_layout
+
+\begin_layout Standard
+We will apply to 
+\begin_inset Formula $H\left(t\right)$
+\end_inset
+
+, the unitary transformation defined by 
+\begin_inset Formula $e^{\pm V}$
+\end_inset
+
+ where is the variationally optimizable anti-Hermitian operator:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+V\equiv|1\rangle\langle1|\left(\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)\right)\label{eq: Tranformation operator 0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V\left(t\right)\equiv\sum_{i}|i\rangle\negmedspace\langle i|\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)\label{Transformation operator 2x2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+V\equiv|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(\frac{v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{0\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)+|1\rangle\negmedspace\langle1|\sum_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)\label{Transformation operator 2x2-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+in terms of the variational scalar parameters 
+\begin_inset Formula $\left\{ v_{\mathbf{k}}\right\} $
+\end_inset
+
+, which will soon be optimized in order to give the most accurate possible
+ master equation for the system's dynamics in the presence of this bath.
+ Operators 
+\begin_inset Formula $O$
+\end_inset
+
+ in the variational frame will be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{O} & \left(t\right)\equiv{\rm e}^{V\left(t\right)}O{\rm e}^{-V\left(t\right)}.\label{eq:Trans-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\overline{H\left(t\right)} & =\varepsilon_{1}\left(t\right)|1\rangle\langle1|+\varepsilon_{0}\left(t\right)|0\rangle\langle0|+V_{10}\left(t\right)|1\rangle\langle0|B_{+}+V_{01}\left(t\right)|0\rangle\langle1|B_{-}+|1\rangle\langle1|\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}-2\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & +\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}-\sum_{\mathbf{k}}v_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)|1\rangle\langle1|+\sum_{\mathbf{k}}v_{\mathbf{k}}|1\rangle\langle1|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We assume that the bath starts equilibrium with inverse temperature 
+\begin_inset Formula $\beta=1/k_{\text{B}}T$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\rho_{B} & \equiv\rho_{B}\left(0\right)\\
+ & =\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Definition of B_ij 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\langle B_{i}^{+}B_{j}^{-}\rangle & =B_{ij}\\
+ & =\left\langle \prod_{\mathbf{k}}D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\prod_{\mathbf{k}}D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle \\
+ & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\right\rangle \\
+ & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\right)\right\rangle \\
+ & =\prod_{\mathbf{k}}\left\langle D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\\
+ & =\prod_{\mathbf{k}}{\rm exp}\left(-\frac{1}{2}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\\
+ & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the following definitions:
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{align}
+\begin{pmatrix}B_{iz}\left(t\right) & B_{i}^{\pm}\left(t\right)\\
+B_{x}\left(t\right) & B_{i}\left(t\right)\\
+B_{y}\left(t\right) & B_{ij}\left(t\right)
+\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
+\frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{10}^{*}\left(t\right)}{2} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{10}^{*}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\prod_{\mathbf{k}}e^{\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right)}
+\end{pmatrix}\\
+R_{i}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left(\cdot\right){}^{\Re} & \equiv\Re\left(\cdot\right)\\
+\left(\cdot\right){}^{\Im} & \equiv\Im\left(\cdot\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+in order to obtain 
+\begin_inset Formula $B_{ij}\left(t\right)$
+\end_inset
+
+ we can show that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\langle B_{i}^{+}B_{j}^{-}\rangle & =\\
+ & =\left\langle \prod_{\mathbf{k}}D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\prod_{\mathbf{k}}D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle \\
+ & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\right)D\left(-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right)\right\rangle \\
+ & =\left\langle \prod_{\mathbf{k}}\left(D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\right)\right\rangle \\
+ & =\prod_{\mathbf{k}}\left\langle D\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\right\rangle e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\\
+ & =\prod_{\mathbf{k}}{\rm exp}\left(-\frac{1}{2}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}\\
+ & ={\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\prod_{\mathbf{k}}e^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}v_{j\mathbf{k}}-v_{i\mathbf{k}}v_{j\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+D\left(\pm v_{i\mathbf{k}}\right) & \equiv e^{\pm\left(\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}.\label{eq:B+/--1}\\
+B_{i\pm} & =\prod_{\text{k}}D\left(\pm v{}_{i\mathbf{k}}\right)\\
+B_{i} & \equiv\left\langle B_{i\text{\ensuremath{\pm}}}\right\rangle _{H_{B}}\label{eq:displaoper-1}\\
+\left\langle B_{z}\right\rangle _{H_{B}} & =0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+we may write the transformed Hamiltonian as a sum of the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Now H
+\begin_inset Formula $_{I}$
+\end_inset
+
+ has aplus sign for the imaginary part?
+\end_layout
+
+\begin_layout Plain Layout
+4) I got this for 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
+\end_inset
+
+ Nike in the equation 20 of VPQME_PAPER.lyx based on the equation (244) of
+ VPQME.lyx.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)=\sum_{i}B_{iz}|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(\sigma_{x}B_{x}+\sigma_{y}B_{y}\right)+V_{10}^{\Im}\left(t\right)\left(\sigma_{x}B_{y}-\sigma_{y}B_{x}\right).$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{T}}\left(t\right) & \equiv\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{I}}}\left(t\right)+\overline{H_{\bar{B}}}\\
+\overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace|i\rangle\negmedspace\langle i|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right)\\
+\overline{H_{\bar{I}}}\left(t\right) & \equiv\sum_{i}B_{iz}\left(t\right)|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(B_{x}\left(t\right)\sigma_{x}+B_{y}\left(t\right)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\left(t\right)\sigma_{y}-B_{y}\left(t\right)\sigma_{x}\right)\\
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
+ & =H_{B}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\overline{H_{T}}\left(t\right) & \equiv\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{I}}}+\overline{H_{\bar{B}}}\\
+\overline{H_{\bar{S}}}\left(t\right) & \equiv\left(\varepsilon_{0}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{0}\right)\negmedspace|0\rangle\negmedspace\langle0|+\negmedspace\left(\varepsilon_{1}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{1}\right)\negmedspace|1\rangle\negmedspace\langle1|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}\left(t\right)\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}\negmedspace\left(t\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace\right)\\
+\overline{H_{\bar{I}}} & \equiv B_{z}\negmedspace|1\rangle\negmedspace\langle1|+\Re\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right)-\Im\left(V_{10}\left(t\right)\right)\left(B_{x}\sigma_{y}-B_{y}\sigma_{x}\right)\\
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
+ & =H_{B}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Free-energy minimization
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The true free energy 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded by the Bogoliubov inequality:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A\le A_{{\rm {\rm B}}}\left(t\right)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We will optimize the set of variational parameters 
+\begin_inset Formula $\{v_{\mathbf{k}}\left(t\right)\}$
+\end_inset
+
+ in order to minimize 
+\begin_inset Formula $A_{\text{B}}$
+\end_inset
+
+ (i.e.
+ to make it as close to the true free energy 
+\begin_inset Formula $A$
+\end_inset
+
+ as possible).
+ Neglecting the higher order terms and using 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}=0$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ we can obtain the following condition to obtain the set 
+\begin_inset Formula $\{v_{\mathbf{k}}\left(t\right)\}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial A_{{\rm B}}\left(\{v_{\mathbf{k}}\left(t\right)\};t\right)}{\partial v_{i\mathbf{k}}\left(t\right)}=0.\label{eq:minimization condition}
+\end{equation}
+
+\end_inset
+
+This leads us to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+6) I though that the equation (25) of VPQME_PAPER defines the variational
+ parameters 
+\begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ not 
+\begin_inset Formula $v_{i}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{i\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right) & \!=\!\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\!\left(\!1\!-\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)\!+2R_{i}\left(t\right)\!-\varepsilon\left(t\right)\right)\!\right)\!+\!2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\!\left(t\right)\right|^{2}\!\!\left|V_{10}\!\left(t\right)\right|^{2}\!\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
+\end{align}
+
+\end_inset
+
+with the following definitions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\eta\left(t\right) & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)}\\
+\varepsilon\left(t\right) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Master equation
+\end_layout
+
+\begin_layout Standard
+We transform any operator 
+\begin_inset Formula $O$
+\end_inset
+
+ into the interaction picture in the following way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{O} & \equiv U^{\dagger}\left(t\right)OU\left(t\right)\\
+U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right).\label{time ordering evolution}
+\end{align}
+
+\end_inset
+
+Therefore:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{\overline{\rho_{S}}}\left(t\right) & =U^{\dagger}\left(t\right)\overline{\rho_{S}}\left(t\right)U\left(t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In order to describe the dynamics of the QD under the influence of the phonon
+ environment, we use the time-convolutionless projection operator technique.
+ We consider the QD in its ground state.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the transformed density operator is equal to:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\text{for \ensuremath{\rho_{S}\left(0\right)=|0\rangle\negmedspace\langle0|}:} & =|0\rangle\negmedspace\langle0|\otimes B_{0}^{+}\rho_{B}B_{0}^{-}\\
+\text{for \ensuremath{\rho_{S}\left(0\right)=|1\rangle\negmedspace\langle1|}:} & =|1\rangle\negmedspace\langle1|\otimes B_{1}^{+}\rho_{B}^{{\rm }}B_{1}^{-}\label{Initial state transformed}\\
+\ensuremath{\text{for }\rho_{S}\left(0\right)=|0\rangle\negmedspace\langle1|}: & =|0\rangle\negmedspace\langle1|\otimes B_{0}^{+}\rho_{B}^{{\rm }}B_{1}^{-}\\
+\ensuremath{\text{for }\rho_{S}\left(0\right)=|1\rangle\negmedspace\langle0|}: & =|1\rangle\negmedspace\langle0|\otimes B_{1}^{+}\rho_{B}^{{\rm }}B_{0}^{-}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We will initialize the density operator as: 
+\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{S}\left(0\right)\otimes\rho_{B}\left(0\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\rho_{B}\left(0\right)\equiv\rho_{B}^{{\rm Thermal}}\equiv\rho_{B}^{{\rm }}$
+\end_inset
+
+.
+ Taking as reference state 
+\begin_inset Formula $\rho_{B}$
+\end_inset
+
+ and truncating at second order in 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
+\end_inset
+
+, we obtain our master equation in the interaction picture:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t} & =-\int_{0}^{t}{\rm {\rm \text{Tr}}}_{B}\left[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\left[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\label{int master}
+\end{align}
+
+\end_inset
+
+To simplify this we define the following matrix:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}A\\
+B\left(t\right)\\
+C\left(t\right)
+\end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
+B_{x}\left(t\right) & B_{y}\left(t\right) & B_{1z}\left(t\right) & B_{y}\left(t\right) & B_{x}\left(t\right) & B_{0z}\left(t\right)\\
+V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1
+\end{pmatrix}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+In this case 
+\begin_inset Formula $|1\rangle\negmedspace\langle1|=\frac{I-\sigma_{z}}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $|0\rangle\negmedspace\langle0|=\frac{I+\sigma_{z}}{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $\sigma_{z}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}=|0\rangle\negmedspace\langle0|-|1\rangle\negmedspace\langle1|$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{I}=|0\rangle\negmedspace\langle0|+|1\rangle\negmedspace\langle1|$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+7) In this case I think that in the equation (34) you want to write the
+ transformation in the interaction picture of 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
+\end_inset
+
+ which is represented by 
+\begin_inset Formula $\widetilde{\overline{H_{\bar{I}}}}\left(t\right)$
+\end_inset
+
+ and not by 
+\begin_inset Formula $\widetilde{H_{I}}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right)\\
+\widetilde{\overline{H_{\bar{I}}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and expanding the commutators yields:
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)}{{\rm d}t} & =-\negmedspace\int_{0}^{t}\negmedspace{\rm \text{Tr}}_{B}\negmedspace\left(\!\sum_{j}C_{j}\negmedspace\left(t\right)\negmedspace\left(\negmedspace\widetilde{A_{j}}\!\left(t\right)\negmedspace\otimes\negmedspace\widetilde{B_{j}}\!\left(t\right)\negmedspace\right)\negmedspace\sum_{i}C_{i}\left(s\right)\negmedspace\left(\widetilde{A_{i}}\!\left(s\right)\negmedspace\otimes\negmedspace\widetilde{B_{i}}\!\left(s\right)\negmedspace\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}^{{\rm }}-\sum_{j}C_{j}\negmedspace\left(t\right)\negmedspace\left(\widetilde{A_{j}}\!\left(t\right)\negmedspace\otimes\negmedspace\widetilde{B_{j}}\!\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\negmedspace\sum_{i}C_{i}\left(s\right)\negmedspace\left(\widetilde{A_{i}}\!\left(s\right)\negmedspace\otimes\negmedspace\widetilde{B_{i}}\!\left(s\right)\right)\right.\\
+ & \left.-\sum_{i}C_{i}\left(s\right)\negmedspace\left(\widetilde{A_{i}}\!\left(s\right)\negmedspace\otimes\negmedspace\widetilde{B_{i}}\!\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\!\left(\widetilde{A_{j}}\!\left(t\right)\negmedspace\otimes\negmedspace\widetilde{B_{j}}\!\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\!\left(\widetilde{A_{i}}\!\left(s\right)\negmedspace\otimes\negmedspace\widetilde{B_{i}}\!\left(s\right)\right)\sum_{j}C_{j}\left(t\right)\!\left(\widetilde{A_{j}}\!\left(t\right)\negmedspace\otimes\negmedspace\widetilde{B_{j}}\!\left(t\right)\right)\negmedspace\!\right)\negmedspace{\rm d}s.
+\end{align}
+
+\end_inset
+
+
+\size default
+We can keep the 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ operators as they are when tracing over the bath degrees of freedom, but
+ we will replace the 
+\begin_inset Formula $B$
+\end_inset
+
+ operators by 
+\begin_inset Formula $\mathscr{B}$
+\end_inset
+
+ operators:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+We define the correlation functions in the following way:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\Lambda_{ij}\left(\tau\right) & =\left\langle \widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\right\rangle _{B}\\
+ & =\left\langle \widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\right\rangle _{B}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathscr{B}\left(\tau\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & -\mathscr{B}_{11}\left(\tau\right)\\
+0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
+0 & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right) & \mathscr{B}_{32}\left(\tau\right) & 0\\
+0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
+-\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & {\rm \mathscr{B}_{11}\left(\tau\right)}
+\end{pmatrix},
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\Lambda_{11}\left(\tau\right) & \equiv\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\label{eq:A11 general master}\\
+\Lambda_{22}\left(\tau\right) & \equiv\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right)\\
+\Lambda_{33}\left(\tau\right) & \equiv\int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)^{2}G_{+}\left(\tau\right)\\
+\Lambda_{32}\left(\tau\right) & \equiv B\left(\tau\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right){\rm i}G_{-}\left(\tau\right)\\
+\Lambda{}_{23}\left(\tau\right) & \equiv-B\left(0\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega,\tau\right)}{\omega g\left(\omega,\tau\right)}\left(1-\frac{v\left(\omega,\tau\right)}{g\left(\omega,\tau\right)}\right){\rm i}G_{-}\left(\tau\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{align}
+\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & \cdot & \cdot\\
+\cdot & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}{}_{23}\left(\tau\right)\\
+\cdot & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right)
+\end{pmatrix} & \equiv\begin{pmatrix}\frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
+ & \frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right) & -B\left(0\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\negmedspace\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right){\rm i}G_{-}\left(\tau\right)\negmedspace\\
+ & B\left(\tau\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\negmedspace\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)\negmedspace{\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)^{2}G_{+}\left(\tau\right)
+\end{pmatrix}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+why is v defined in terms of omega AND tau in the last one but not in the
+ second last?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size scriptsize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Formula 
+\begin{align}
+\begin{pmatrix}\Lambda_{11}\left(\tau\right) & \cdot\\
+\Lambda_{22}\left(\tau\right) & \Lambda_{23}\left(\tau\right)\\
+\Lambda_{33}\left(\tau\right) & \Lambda_{32}\left(\tau\right)
+\end{pmatrix} & \equiv\begin{pmatrix}\frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right) & \cdot & \cdot\\
+\cdot & \frac{B\left(\tau\right)B\left(0\right)}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right) & -B\left(0\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right){\rm i}G_{-}\left(\tau\right)\\
+\cdot & B\left(\tau\right)\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right){\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\negmedspace\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)^{2}G_{+}\left(\tau\right)
+\end{pmatrix}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\size default
+with the phonon propagator given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\phi\left(t\right) & \equiv\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v^{2}\left(\omega\right)}{\omega^{2}g^{2}\left(\omega\right)}G_{+}\left(t\right),\\
+G_{\pm}\left(t\right) & \equiv\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}t\omega}\pm n\left(\omega\right)e^{{\rm i}t\omega}\\
+n\left(\omega\right) & \equiv\left({\rm e}^{\beta\omega}-1\right)^{-1},
+\end{align}
+
+\end_inset
+
+and the spectral density is defined in the usual way:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+J\left(\omega\right)\equiv\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this case 
+\begin_inset Formula $g\left(\omega\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v\left(\omega\right)$
+\end_inset
+
+ are the continuous version of 
+\begin_inset Formula $g_{i}\left(\omega_{\mathbf{k}}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+This allows us to remove the trace over the bath and write down a more tangible
+ master equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}\left(t\right)}}{{\rm d}t} & =-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}\left(t\right)}\right]\\
+ & -\sum_{ij}\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}\left(t\right)}\right]{\rm d}\tau\\
+ & +\sum_{ij}\int_{0}^{t}C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho_{S}\left(t\right)}\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]{\rm d}\tau\label{eq:master equation prim-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t} & =-\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\Lambda{}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\Lambda{}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s
+\end{align}
+
+\end_inset
+
+Doing the reverse of the transformation to interaction picture we get:
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ij}\int_{0}^{t}\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}\left(t\right)\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]\right){\rm d}\tau.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+\frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}\left(C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)\left[A_{i},e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right)\overline{\rho_{S}}\left(t\right)\right]+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right),A_{i}\right]\right){\rm d}\tau\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}\left(\left[A_{i},C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right)\overline{\rho_{S}}\left(t\right)\right]+\left[\overline{\rho_{S}}\left(t\right)C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right),A_{i}\right]\right){\rm d}\tau\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\left(\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda_{ij}\left(\tau\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right){\rm d}\tau\right)\overline{\rho_{S}}\left(t\right)\right]+\left[\overline{\rho_{S}}\left(t\right)\left(\int_{0}^{t}C_{j}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ji}\left(-\tau\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right){\rm d}\tau\right),A_{i}\right]\right)\\
+\mathscr{D}_{ijww^{\prime}}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}\left(t,t-\tau\right){\rm d\tau}\\
+\mathscr{E}_{ijww^{\prime}}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}^{\dagger}\left(t,t-\tau\right){\rm d\tau}\\
+\frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)\right]+\left[\overline{\rho_{S}}\left(t\right)\mathscr{E}_{ijww^{\prime}}\left(t\right),A_{i}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)-\overline{\rho_{S}}\left(t\right)\mathscr{E}_{ijww^{\prime}}\left(t\right)\right]\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t} & =-\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s
+\end{align}
+
+\end_inset
+
+Doing the reverse of the transformation to interaction picture we get:
+\end_layout
+
+\begin_layout Standard
+
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ij}\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)\left[A_{i},\widetilde{A_{j}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]+C_{j}\left(t\right)C_{i}\left(t-\tau\right)\mathscr{B}_{ji}\left(-\tau\right)\left[\overline{\rho_{S}}\left(t\right)\widetilde{A_{j}}\left(t-\tau,t\right),A_{i}\right]{\rm d}\tau.
+\end{equation}
+
+\end_inset
+
+
+\size default
+We still have interaction picture versions of 
+\begin_inset Formula $A_{j}$
+\end_inset
+
+, so we will decompose 
+\begin_inset Formula $\widetilde{A_{j}}\left(\tau\right)$
+\end_inset
+
+ in terms of the Schroedinger picture version 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\widetilde{A_{j}}\left(t\right) & =\sum_{w\left(t\right)}e^{-{\rm i}w\left(t\right)\tau}A_{j}\left(w\left(t\right)\right)\\
+\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w^{\prime}\left(t\right),w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{jww^{\prime}}\left(t,t-\tau\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where the sum is defined on the set of all the differences between the eigenvalu
+es of the system and we furthermore define 
+\begin_inset Formula $A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\prime}}\left(t,t-\tau\right)$
+\end_inset
+
+, in our case 
+\begin_inset Formula $w\left(t\right)\in\left\{ 0,\pm\eta\left(t\right)\right\} $
+\end_inset
+
+.
+ We also have that 
+\begin_inset Formula $w\left(t\right)$
+\end_inset
+
+ belongs to the set of differences of eigenvalues of 
+\begin_inset Formula $H_{E}\left(t\right)$
+\end_inset
+
+ that depends of the time.
+ As we can see the decomposition matrices are time-dependent as well.
+ Also, 
+\begin_inset Formula $w\left(t-\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $w^{\prime}\left(t\right)$
+\end_inset
+
+ belong to the set of the differences of the eigenvalues of the Hamiltonian
+ 
+\begin_inset Formula $H_{E}\left(t-\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{E}\left(t\right)$
+\end_inset
+
+ respectively.
+ In matrix form for the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ these are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{i}\left(0\right) & =\left\langle +\right|\widetilde{A_{i}}\left(t\right)\left|+\right\rangle |+\rangle\negmedspace\langle+|+\left\langle -\right|\widetilde{A_{i}}\left(t\right)\left|-\right\rangle |-\rangle\negmedspace\langle-|\label{eq:element Ai(0)}\\
+A_{i}\left(w\right) & =\left\langle +\right|\widetilde{A_{i}}\left(t\right)\left|-\right\rangle |+\rangle\negmedspace\langle-|\label{eq:element Ai(zeta)}\\
+A_{i}\left(-w\right) & =\left\langle -\right|\widetilde{A_{i}}\left(t\right)\left|+\right\rangle |-\rangle\negmedspace\langle+|.\label{eq:element Ai(-zeta)}
+\end{align}
+
+\end_inset
+
+The Fourier exponentials 
+\begin_inset Formula $e^{{\rm i}w\tau}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{-{\rm i}t\left(w-w'\right)}$
+\end_inset
+
+ can be combined with the 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ functions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mathscr{D}_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}\left(t,t-\tau\right){\rm d\tau}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Finally we end up with our final master equation in the variationally optimized
+ frame in the Schroedinger picture, in terms of only 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)\right]\label{Matrix equation-1}
+\end{equation}
+
+\end_inset
+
+Re-defining 
+\begin_inset Formula $\overline{\rho_{\bar{S}}}\left(t\right)\equiv\rho$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{H}_{\bar{S}}\equiv H$
+\end_inset
+
+, we get:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\dot{\rho}=-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\rho-\rho\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\label{eq:response function}
+\end{equation}
+
+\end_inset
+
+Finally we end up with our final master equation in the variationally optimized
+ frame in the Schroedinger picture, in terms of only 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}\left(K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\overline{\rho}_{S}\left(t\right)\right]-K_{ijww'}^{*}\left(t\right)\left[A_{i},\overline{\rho}_{S}\left(t\right)A_{jww'}^{\dagger}\right]\right)\label{Matrix equation}\\
+\! & =\!-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right)\!,\overline{\rho}_{\bar{S}}\!\left(t\right)\!\right]\!-\!\!\!\!\sum_{ijww'}\!\!\!\left(\!K_{ijww'}^{\Re}\!\left(t\right)\!\!\left[\!A_{i},\!A_{jww'}\overline{\rho}_{S}\!\left(t\right)\!-\!\overline{\rho}_{S}\!\left(t\right)\!A_{jww'}^{\dagger}\!\right]\!\!+\!{\rm i}K_{ijww'}^{\Im}\!\left(t\right)\!\!\left[\!A_{i},\!A_{jww'}\overline{\rho}_{S}\!\left(t\right)\!+\!\overline{\rho}_{S}\!\left(t\right)\!A_{jww'}^{\dagger}\!\right]\!\right)
+\end{align}
+
+\end_inset
+
+Re-defining 
+\begin_inset Formula $\overline{\rho_{\bar{S}}}\left(t\right)\equiv\rho$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{H}_{\bar{S}}\equiv H$
+\end_inset
+
+, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dot{\rho}=-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(K_{ijww'}\left(t\right)\left[A_{i},A_{jww'}\rho\right]-K_{ijww'}^{*}\left(t\right)\left[A_{i},\rho A_{jww'}^{\dagger}\right]\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\dot{\rho}=-{\rm i}\left[H_{S}\left(t\right),\rho\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}\left(t\right)\left(\left[A_{i},A_{jww^{\prime}}\rho\right]-\left[A_{i},\rho A_{jww^{\prime}}^{\dagger}\right]\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will now show that many useful master equations can be derived as special
+ cases of the above 
+\begin_inset Quotes eld
+\end_inset
+
+mother
+\begin_inset Quotes erd
+\end_inset
+
+ of all master equations.
+\end_layout
+
+\begin_layout Section
+Limiting Cases
+\end_layout
+
+\begin_layout Standard
+Many limiting cases can be derived from the 
+\begin_inset Quotes eld
+\end_inset
+
+mother
+\begin_inset Quotes erd
+\end_inset
+
+ of all master equations.
+ We can set 
+\begin_inset Formula $g_{i{\rm \mathbf{k}}}^{\Im}=0$
+\end_inset
+
+, or 
+\begin_inset Formula $V_{10}^{\Im}=0$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1{\rm \mathbf{k}}}=g_{0{\rm \mathbf{k}}}$
+\end_inset
+
+, for example.
+ Let us look at some particular cases.
+\end_layout
+
+\begin_layout Subsection
+Time-independent VPQME of 2011
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}V_{10}^{\Im}\left(t\right) & g_{0{\rm \mathbf{k}}} & v_{0{\rm \mathbf{k}}}\left(t\right) & B\left(t\right)\\
+V_{10}^{\Re}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}}\left(t\right) & \Omega_{r}\\
+\varepsilon_{0}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Re} &  & R_{0}\left(t\right)\\
+\varepsilon_{1}\left(t\right) &  &  & R_{1}\left(t\right)
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B_{10}\\
+\frac{\Omega}{2} & 0 & v_{{\rm \mathbf{k}}} & B\Omega\\
+0 & g_{{\rm \mathbf{k}}} &  & 0\\
+\delta &  &  & R
+\end{pmatrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula 
+\begin{equation}
+\begin{matrix}g_{0{\rm \mathbf{k}}}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & v_{0{\rm \mathbf{k}}}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & V_{10}^{\Im}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & B\equiv B_{10}\\
+g_{1{\rm \mathbf{k}}}^{\Im}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & v_{1{\rm \mathbf{k}}}\equiv v_{1{\rm \mathbf{k}}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & V_{10}^{\Re}\equiv\frac{\Omega}{2}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & \Omega_{r}\equiv B\Omega\\
+g_{1{\rm \mathbf{k}}}^{\Re}\equiv g_{{\rm \mathbf{k}}}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, &  & \varepsilon_{0}=0\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, & R_{1}\equiv R\\
+ &  & \varepsilon_{1}=\delta\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
+\end{matrix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We now have a simpler 
+\begin_inset Formula $\bar{H}_{\bar{S}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H_{\bar{S}}}\left(t\right)\equiv R|0\rangle\negmedspace\langle0|+\delta|1\rangle\negmedspace\langle1|+\sigma_{x}\Omega_{r}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's look now at 
+\begin_inset Formula $v_{{\rm \mathbf{k}}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Time-independent hamiltonian
+\begin_inset Formula 
+\begin{align}
+\mathscr{D}_{ijww^{\prime}}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}{\rm d\tau}\label{Response matrix-1}\\
+ & =\left(\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\right)A_{jww^{\prime}}\\
+ & =K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\\
+\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right) & =\int_{0}^{t}C_{i}^{*}\left(t\right)C_{j}^{*}\left(t-\tau\right)\Lambda{}_{ij}^{*}\left(\tau\right)e^{-{\rm i}w\tau}e^{{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}^{\dagger}{\rm d\tau}\\
+ & =\left(C_{i}^{*}\left(t\right)C_{j}^{*}\left(t-\tau\right)\Lambda{}_{ij}^{*}\left(\tau\right)e^{-{\rm i}w\tau}e^{{\rm i}t\left(w-w'\right)}\right)A_{jww^{\prime}}^{\dagger}\\
+ & =K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}
+\end{align}
+
+\end_inset
+
+Finally we end up with our final master equation in the variationally optimized
+ frame in the Schroedinger picture, in terms of only 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}\left[A_{i},K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]\label{Matrix equation-1-1}
+\end{equation}
+
+\end_inset
+
+Re-defining 
+\begin_inset Formula $\overline{\rho_{\bar{S}}}\left(t\right)\equiv\rho$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{H}_{\bar{S}}\equiv H$
+\end_inset
+
+, we get:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\dot{\rho}=-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}\left(t\right)\left[A_{i},K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\rho-\rho K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+still double check this again.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)}\\
+ & =\frac{g_{\mathbf{k}}\left(1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\right)}{1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\left(1-\frac{\Omega_{r}^{2}}{2\varepsilon\left(t\right)\omega_{\mathbf{k}}}\coth\left(\beta\omega_{\mathbf{k}}/2\right)\right)}
+\end{align}
+
+\end_inset
+
+The bath and system-bath interaction operators become: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\begin{pmatrix}B_{z}\left(t\right) & B^{\pm}\left(t\right)\\
+B_{x}\left(t\right) & B_{10}\left(t\right)\\
+B_{y}\left(t\right) & R\left(t\right)
+\end{pmatrix} & \equiv\begin{pmatrix}2\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger} & e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+\frac{B^{+}+B^{-}-2B}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
+\frac{B^{-}-B^{+}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{\left|v_{\mathbf{k}}\right|^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
+\end{pmatrix},\\
+\begin{pmatrix}A\\
+B\left(t\right)\\
+C\left(t\right)
+\end{pmatrix} & =\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
+B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
+\frac{\Omega}{2} & \frac{\Omega}{2} & 1 & 0 & 0 & 1
+\end{pmatrix}.
+\end{align}
+
+\end_inset
+
+Therefore 
+\begin_inset Formula $C\left(t\right)$
+\end_inset
+
+ is no longer time-dependent.
+ Defining:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Lambda_{ij}\left(\tau\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right),
+\end{equation}
+
+\end_inset
+
+We get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now for a time-independent hamiltonian is possible to show that for the
+ decomposition matrix 
+\begin_inset Formula $A_{j}\left(w\left(t-\tau\right)\right)=A_{j}\left(w\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U\left(t\right)A_{j}\left(w\right)U^{\dagger}\left(t\right)=e^{{\rm i}wt}A_{j}\left(w\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It means that a decomposition matrix of 
+\begin_inset Formula $\widetilde{A_{j}}\left(t\right)$
+\end_inset
+
+ under evolution for the same time-independent hamiltonian 
+\begin_inset Formula $U\left(t\right)A_{j}\left(w\right)U^{\dagger}\left(t\right)$
+\end_inset
+
+ generates the same decomposition matrix multiplied by a phase 
+\begin_inset Formula $e^{{\rm i}wt}$
+\end_inset
+
+.
+ It means that the decomposition matrix 
+\begin_inset Formula $A_{jww^{\prime}}$
+\end_inset
+
+ for a time-independent hamiltonian fulfill 
+\begin_inset Formula $A_{jww^{\prime}}=A_{j}\left(w\right)\delta_{ww^{\prime}}$
+\end_inset
+
+ so only if 
+\begin_inset Formula $w=w^{\prime}$
+\end_inset
+
+ then the response function is relevant for taking account and it's equal
+ to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
+ & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
+ & \equiv K_{ij}\left(w,t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing in the equation 
+\begin_inset Formula $\eqref{Matrix equation}$
+\end_inset
+
+ we obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right)\!,\overline{\rho}_{S}\!\left(t\right)\!\right]\!-\!\!\sum_{ijw}\!\left(\!K_{ij}^{\Re}\!\left(w,t\right)\!\!\left[\!A_{i},A_{j}\!\left(w\right)\overline{\rho}_{S}\!\left(t\right)\!-\!\overline{\rho}_{S}\!\left(t\right)\!A_{j}^{\dagger}\!\left(w\right)\!\right]\!\!+\!{\rm i}K_{ij}^{\Im}\!\left(w,t\right)\!\!\left[\!A_{i},A_{j}\!\left(w\right)\overline{\rho}_{S}\!\left(t\right)\!+\!\overline{\rho}_{S}\!\left(t\right)\!A_{j}^{\dagger}\!\left(w\right)\!\right]\!\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
+>>>>>>> f8cc95d928419d414151721ad81e6a0eefe82c4b
