@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -818,7 +820,7 @@ C\left(t\right)
 \end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
 B_{x}\left(t\right) & B_{y}\left(t\right) & B_{1z}\left(t\right) & B_{y}\left(t\right) & B_{x}\left(t\right) & B_{0z}\left(t\right)\\
 V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1
-\end{pmatrix}.
+\end{pmatrix}.\label{A, B and C matrix}
 \end{equation}
 
 \end_inset
@@ -908,17 +910,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\overline{H_{\bar{I}}}\left(t\right)\neq\overline{H_{I}}\left(t\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 and expanding the commutators yields:
 \end_layout
 
@@ -934,7 +925,72 @@ and expanding the commutators yields:
 \end_inset
 
 
-\size default
+\end_layout
+
+\begin_layout Standard
+The correlation functions are equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B} & =\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)^{*}e^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+U & =\prod_{\mathbf{k}}\left({\rm exp}\left(\frac{v_{0\mathbf{k}}^{*}v_{1\mathbf{k}}-v_{0\mathbf{k}}v_{1\mathbf{k}}^{*}}{\omega_{\mathbf{k}}^{2}}\right)\right),\\
+\phi\left(\tau\right) & =\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right|^{2}\left(-{\rm i}\sin\left(\omega_{\mathbf{k}}\tau\right)+\cos\left(\omega_{\mathbf{k}}\tau\right)\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right),\\
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & =\frac{\left|B_{10}\right|^{2}}{2}\left(U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)+{\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}-1\right),\\
+\left\langle \widetilde{B_{y}}\left(\tau\right)\widetilde{B_{y}}\left(0\right)\right\rangle _{B} & =\frac{\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-1+U^{\Re}\right),\\
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{y}}\left(0\right)\right\rangle _{B} & =\frac{U^{\Im}\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right),\\
+\left\langle \widetilde{B_{y}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & =\frac{U^{\Im}\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right),\\
+\left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)N_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left\langle \widetilde{B_{x}}\left(\tau\right)\widetilde{B_{iz}}\left(0\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\!N_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\!\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right),\\
+\left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{y}}\left(0\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\!\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-e^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\!\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right),\\
+\left\langle \widetilde{B_{y}}\left(\tau\right)\widetilde{B_{iz}}\left(0\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)^{*}\!N_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\right)\!\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}-v_{0\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The integral version of the correlation functions are given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+{\scriptstyle \left\langle \widetilde{B_{iz}}\left(\tau\right)\widetilde{B_{jz}}\left(0\right)\right\rangle _{B}} & =\int_{0}^{\infty}{\scriptstyle \left(\sqrt{J_{i}\left(\omega\right)J_{j}^{*}\left(\omega\right)}\left(1-F_{i}\left(\omega\right)\right)\left(1-F_{j}^{*}\left(\omega\right)\right)e^{{\rm i}\omega\tau}N\left(\omega\right)+\sqrt{J_{i}^{*}\left(\omega\right)J_{j}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega\right)\right)\left(1-F_{j}\left(\omega\right)\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,}\label{integral correlations 1}\\
+U & ={\rm exp}\left(\int_{0}^{\infty}\frac{\sqrt{J_{0}^{*}\left(\omega\right)J_{1}\left(\omega\right)}F_{0}^{*}\left(\omega\right)F_{1}\left(\omega\right)-\sqrt{J_{0}\left(\omega\right)J_{1}^{*}\left(\omega\right)}F_{0}\left(\omega\right)F_{1}^{*}\left(\omega\right)}{\omega^{2}}{\rm d}\omega\right),\\
+\phi\left(\tau\right) & =\int_{0}^{\infty}\left|\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega\right)}{\omega}\right|^{2}\left(-{\rm i}\sin\left(\omega\tau\right)+\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)\right){\rm d}\omega,\\
+B_{10} & ={\scriptscriptstyle {\rm exp}\left(\!-\frac{1}{2}\!\int_{0}^{\infty}\!\left|\frac{\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega\right)}{\omega}\right|^{2}\!\!\coth\left(\!\frac{\beta\omega}{2}\!\right){\rm d}\omega\!\right){\rm exp}\left(\!\int_{0}^{\infty}\!\frac{1}{2}\left(\!\frac{\sqrt{\!J_{0}\!\left(\omega\right)J_{1}^{*}\!\left(\omega\right)}F_{0}\!\left(\omega\right)F_{1}^{*}\!\left(\omega\right)-\sqrt{\!J_{0}^{*}\!\left(\omega\right)J_{1}\!\left(\omega\right)}F_{0}^{*}\!\left(\omega\right)F_{1}\!\left(\omega\right)}{\omega^{2}}\!\right){\rm d}\omega\!\right),}\\
+\left\langle \!\widetilde{B_{x}}\!\left(\tau\right)\!\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B} & =\frac{\left|B_{10}\right|^{2}}{2}\left(U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)+{\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}-1\right),\\
+\left\langle \!\widetilde{B_{y}}\!\left(\tau\right)\!\widetilde{B_{y}}\!\left(0\right)\!\right\rangle _{B} & =\frac{\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-1+U^{\Re}\right),\\
+\left\langle \!\widetilde{B_{x}}\!\left(\tau\right)\!\widetilde{B_{y}}\!\left(0\right)\!\right\rangle _{B} & =\frac{U^{\Im}\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right),\\
+\left\langle \!\widetilde{B_{y}}\!\left(\tau\right)\!\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B} & =\frac{U^{\Im}\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(-\phi\left(\tau\right)\right)-1\right),\\
+\left\langle \!\widetilde{B_{iz}}\!\left(\tau\right)\!\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B} & ={\scriptscriptstyle {\rm i}B_{10}^{\Im}\sum_{\mathbf{k}}\!\left(\!g_{i\mathbf{k}}\left(1-F_{i}\left(\omega_{\mathbf{k}}\right)\right)N_{\mathbf{k}}e^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\!\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!-g_{i\mathbf{k}}^{*}\left(1-F_{i}\left(\omega_{\mathbf{k}}\right)\right)^{*}\!\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right)},\\
+Q_{i}\left(\omega\right) & =\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega\right)\right)\left(\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega\right)}{\omega}\right)^{*},\\
+\left\langle \!\widetilde{B_{iz}}\!\left(\tau\right)\!\widetilde{B_{x}}\!\left(0\right)\!\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\int_{0}^{\infty}\left(Q_{i}\left(\omega\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-Q_{i}^{*}\left(\omega\right)\left(N\left(\omega\right)+1\right)e^{-{\rm i}\omega\tau}\right){\rm d}\omega,\\
+\left\langle \!\widetilde{B_{x}}\!\left(\tau\right)\!\widetilde{B_{iz}}\!\left(0\right)\!\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\int_{0}^{\infty}\left(Q_{i}^{*}\left(\omega\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-Q_{i}\left(\omega\right)\left(N\left(\omega\right)+1\right)e^{-{\rm i}\omega\tau}\right){\rm d}\omega,\\
+\left\langle \!\widetilde{B_{iz}}\!\left(\tau\right)\!\widetilde{B_{y}}\!\left(0\right)\!\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\int_{0}^{\infty}\left(e^{-{\rm i}\omega\tau}Q_{i}^{*}\left(\omega\right)\left(N\left(\omega\right)+1\right)-e^{{\rm i}\omega\tau}Q_{i}\left(\omega\right)N\left(\omega\right)\right){\rm d}\omega,\\
+\left\langle \!\widetilde{B_{y}}\!\left(\tau\right)\!\widetilde{B_{iz}}\!\left(0\right)\!\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\int_{0}^{\infty}\left(e^{{\rm i}\omega\tau}Q_{i}^{*}\left(\omega\right)N\left(\omega\right)-e^{-{\rm i}\omega\tau}Q_{i}\left(\omega\right)\left(N\left(\omega\right)+1\right)\right){\rm d}\omega.\label{integral correlations 2}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 We can keep the 
 \begin_inset Formula $A$
 \end_inset
@@ -952,7 +1008,39 @@ We can keep the
 \begin_inset Formula $\mathscr{B}$
 \end_inset
 
- operators:
+ operators such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathscr{B}_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\mathscr{B}$
+\end_inset
+
+ operators matrix it's defined in terms of 
+\begin_inset Formula $\eqref{integral correlations 1}$
+\end_inset
+
+-
+\begin_inset Formula $\eqref{integral correlations 2}$
+\end_inset
+
+ following the notation of the matrix 
+\begin_inset Formula $\eqref{A, B and C matrix}$
+\end_inset
+
+ as:
 \end_layout
 
 \begin_layout Standard
@@ -983,11 +1071,12 @@ We define the correlation functions in the following way:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathscr{B}\left(\tau\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & -\mathscr{B}_{11}\left(\tau\right)\\
-0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
-0 & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right) & \mathscr{B}_{32}\left(\tau\right) & 0\\
-0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0\\
--\mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & {\rm \mathscr{B}_{11}\left(\tau\right)}
+\mathscr{B}\left(t\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{13}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{11}\left(t\right) & \mathscr{B}_{16}\left(t\right)\\
+\mathscr{B}_{12}\left(t\right) & \mathscr{B}_{22}\left(t\right) & \mathscr{B}_{23}\left(t\right) & \mathscr{B}_{22}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{26}\left(t\right)\\
+\mathscr{B}_{11}\left(t\right) & \mathscr{B}_{32}\left(t\right) & \mathscr{B}_{33}\left(t\right) & \mathscr{B}_{32}\left(t\right) & \mathscr{B}_{31}\left(t\right) & \mathscr{B}_{36}\left(t\right)\\
+\mathscr{B}_{12}\left(t\right) & \mathscr{B}_{22}\left(t\right) & \mathscr{B}_{23}\left(t\right) & \mathscr{B}_{22}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{26}\left(t\right)\\
+\mathscr{B}_{11}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{13}\left(t\right) & \mathscr{B}_{12}\left(t\right) & \mathscr{B}_{11}\left(t\right) & \mathscr{B}_{16}\left(t\right)\\
+\mathscr{B}_{61}\left(t\right) & \mathscr{B}_{62}\left(t\right) & \mathscr{B}_{63}\left(t\right) & \mathscr{B}_{62}\left(t\right) & \mathscr{B}_{61}\left(t\right) & \mathscr{B}_{66}\left(t\right)
 \end{pmatrix},
 \end{equation}
 
@@ -1025,12 +1114,12 @@ status open
 \size scriptsize
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}\mathscr{B}_{11}\left(\tau\right) & \cdot & \cdot\\
-\cdot & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}{}_{23}\left(\tau\right)\\
-\cdot & \mathscr{B}_{32}\left(\tau\right) & \mathscr{B}_{33}\left(\tau\right)
-\end{pmatrix} & \equiv\begin{pmatrix}\frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right)\\
- & \frac{B\left(\tau\right)B\left(0\right)}{2}\negmedspace\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right) & -B\left(0\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\negmedspace\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right){\rm i}G_{-}\left(\tau\right)\negmedspace\\
- & B\left(\tau\right)\negmedspace\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v\left(\omega\right)}{\omega g\left(\omega\right)}\negmedspace\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)\negmedspace{\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)\left(1-\frac{v\left(\omega\right)}{g\left(\omega\right)}\right)^{2}G_{+}\left(\tau\right)
+\begin{pmatrix}\mathscr{B}_{11}\left(t\right) & \cdot & \text{\cdots}\\
+\cdot & \mathscr{B}_{22}\left(t\right) & \text{\cdots}\\
+\vdots & \vdots & \ddots
+\end{pmatrix} & \equiv\begin{pmatrix}\frac{\left|B_{10}\right|^{2}}{2}\left(U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)+{\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}-1\right) &  & \cdots\\
+ & \frac{\left|B_{10}\right|^{2}}{2}\left({\rm exp}\left(\phi\left(\tau\right)\right)-U^{\Re}{\rm exp}\left(-\phi\left(\tau\right)\right)-1+U^{\Re}\right) & \cdots\\
+\vdots & \vdots & \text{\ddots}
 \end{pmatrix}
 \end{align}
 
@@ -1083,27 +1172,31 @@ status open
 
 
 \size default
-with the phonon propagator given by:
+where we have defined:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\phi\left(t\right) & \equiv\int_{0}^{\infty}{\rm d}\omega\frac{J\left(\omega\right)v^{2}\left(\omega\right)}{\omega^{2}g^{2}\left(\omega\right)}G_{+}\left(t\right),\\
-G_{\pm}\left(t\right) & \equiv\left(n\left(\omega\right)+1\right){\rm e}^{-{\rm i}t\omega}\pm n\left(\omega\right)e^{{\rm i}t\omega}\\
-n\left(\omega\right) & \equiv\left({\rm e}^{\beta\omega}-1\right)^{-1},
+G_{\pm}\left(t\right) & \equiv\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}t\omega}\pm N\left(\omega\right)e^{{\rm i}t\omega}\\
+N\left(\omega\right) & \equiv\left({\rm e}^{\beta\omega}-1\right)^{-1},
 \end{align}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 and the spectral density is defined in the usual way:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-J\left(\omega\right)\equiv\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right).
-\end{equation}
+\begin{align}
+J_{i}\left(\omega\right) & \equiv\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
+v_{i\mathbf{k}} & =g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}}\right).
+\end{align}
 
 \end_inset
 
@@ -1112,11 +1205,11 @@ J\left(\omega\right)\equiv\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta
 
 \begin_layout Standard
 In this case 
-\begin_inset Formula $g\left(\omega\right)$
+\begin_inset Formula $g_{i}\left(\omega\right)$
 \end_inset
 
  and 
-\begin_inset Formula $v\left(\omega\right)$
+\begin_inset Formula $v_{i}\left(\omega\right)$
 \end_inset
 
  are the continuous version of 
@@ -1235,7 +1328,7 @@ We still have interaction picture versions of
 \end_inset
 
 , so we will decompose 
-\begin_inset Formula $\widetilde{A_{j}}\left(\tau\right)$
+\begin_inset Formula $\widetilde{A_{j}}\left(t\right)$
 \end_inset
 
  in terms of the Schroedinger picture version 
@@ -1699,7 +1792,7 @@ Therefore
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Lambda_{ij}\left(\tau\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right),
+\Lambda_{ij}\left(t\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(t\right),
 \end{equation}
 
 \end_inset

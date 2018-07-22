@@ -3446,7 +3446,8 @@ The cyclic property of the trace was use widely in the development of equations
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\scriptstyle {\textstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}} & {\textstyle =}{\scriptstyle -\!\int_{0}^{t}\!\sum_{ij}\!\left(\!C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\mathscr{B}_{ij}\!\left(\tau\right)\!\widetilde{A_{i}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ji}\left(\!-\tau\!\right)\widetilde{A_{i}}\!\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\!\left(s\right)\!\right)+C_{i}\!\left(t\right)C_{j}\!\left(s\right)\!\left(\!\mathscr{B}_{ji}\left(\!-\tau\right)\widetilde{\overline{\rho_{S}}}\!\left(t\right)\!\widetilde{A_{j}}\!\left(s\right)\!\widetilde{A_{i}}\!\left(t\right)-\mathscr{B}_{ij}\left(\tau\right)\!\widetilde{A_{j}}\!\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\!\widetilde{A_{i}}\!\left(t\right)\!\right)\!\right){\rm d}s}\\
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t} & {\textstyle =}-\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ji}\left(-\tau\right)\widetilde{A_{i}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\right)\right.\\
+ & \left.+C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ji}\left(-\tau\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{A_{i}}\left(t\right)-\mathscr{B}_{ij}\left(\tau\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right)\right)\right){\rm d}s\\
  & {\textstyle =}{\textstyle -\int_{0}^{t}\sum_{ij}\left(C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(-\tau\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s.}\label{ps:}
 \end{align}
 
@@ -4950,9 +4951,9 @@ We used the fact that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\rm Tr}_{B}\left(\widetilde{B_{j}}\left(-\tau\right)\widetilde{B_{i}}\left(0\right)\rho_{B}\right) & ={\rm Tr}_{B}\left(e^{-{\rm i}\tau H_{E}\left(\tau\right)}B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}\rho_{B}\right)\\
- & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}\rho_{B}e^{-{\rm i}\tau H_{E}\left(\tau\right)}\right)\,\text{(by cyclic permutivity of trace)}\\
- & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{E}\left(\tau\right)}B_{i}e^{-{\rm i}\tau H_{E}\left(\tau\right)}\rho_{B}\right)\,\text{(by independence of Hilbert spaces)}\\
+{\rm Tr}_{B}\left(\widetilde{B_{j}}\left(-\tau\right)\widetilde{B_{i}}\left(0\right)\rho_{B}\right) & ={\rm Tr}_{B}\left(e^{-{\rm i}\tau H_{B}\left(\tau\right)}B_{j}e^{{\rm i}\tau H_{B}\left(\tau\right)}B_{i}\rho_{B}\right)\\
+ & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{B}\left(\tau\right)}B_{i}\rho_{B}e^{-{\rm i}\tau H_{B}\left(\tau\right)}\right)\,\text{(by cyclic permutivity of trace)}\\
+ & ={\rm Tr}_{B}\left(B_{j}e^{{\rm i}\tau H_{B}\left(\tau\right)}B_{i}e^{-{\rm i}\tau H_{B}\left(\tau\right)}\rho_{B}\right)\,\text{(by commutativity of \ensuremath{e^{-{\rm i}\tau H_{B}\left(\tau\right)}} and \ensuremath{\rho_{B}})}\\
  & ={\rm Tr}_{B}\left(B_{j}\widetilde{B_{i}}\left(\tau\right)\rho_{B}\right)\,\text{(by definition of time evolution)}\\
  & ={\rm Tr}_{B}\left(B_{j}\widetilde{B_{i}}\left(\tau\right)\rho_{B}\right)\\
  & ={\rm Tr}_{B}\left(\rho_{B}B_{j}\widetilde{B_{i}}\left(\tau\right)\right)\\
