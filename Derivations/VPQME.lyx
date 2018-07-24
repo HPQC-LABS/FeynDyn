@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -3386,6 +3388,99 @@ In order to calculate the correlation functions we define:
 \mathscr{B}_{ij}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function}\\
  & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(\tau\right)\widetilde{B_{j}}\left(0\right)\rho_{B}\right).\label{eq:correlation function 1}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Definition of correlation function
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathscr{B}_{ij}\left(t,t-\tau\right)={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(t-\tau\right)\rho_{B}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+An useful property
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\mathscr{B}_{ji}^{*}\left(t,t-\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t-\tau\right)\rho_{B}\right)^{\dagger}\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}^{\dagger}\widetilde{B_{i}}^{\dagger}\left(t-\tau\right)\widetilde{B_{j}}^{\dagger}\left(t\right)\right)\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(t-\tau\right)\widetilde{B_{j}}\left(t\right)\right)\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t-\tau\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t-\tau,t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Properties of the correlation functions implied in the master equation
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+{\rm \text{Tr}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right) & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\right\rangle _{B}\\
+ & =\mathscr{B}_{ji}\left(t,t-\tau\right)\\
+ & =\mathscr{B}_{ij}^{*}\left(t-\tau,t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t-\tau,t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}^{*}\left(t-\tau,t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t-\tau,t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mathscr{B}_{ji}\left(t,t-\tau\right)=\mathscr{B}_{ij}^{*}\left(t-\tau,t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
