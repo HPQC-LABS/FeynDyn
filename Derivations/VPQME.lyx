@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -3475,6 +3473,38 @@ Properties of the correlation functions implied in the master equation
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+Master equation 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+{\scriptstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\right.}\\
+\! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s.}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(t-\tau\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(t-\tau\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\,\text{(by permuting i and j because i,j\in J)}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right.\right.}\\
+ & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
+ & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\mathscr{B}_{ji}\left(t,t-\tau\right)-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\mathscr{B}_{ij}\left(t-\tau,t\right)\right.\right.}\\
+ & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ij}\left(t-\tau,t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ji}\left(t,t-\tau\right)\right)\right){\rm d}s}\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\mathscr{B}_{ji}\left(t,t-\tau\right)\left[\widetilde{A_{j}}\left(t\right),\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}\left(t-\tau,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right),\widetilde{A_{j}}\left(t\right)\right]\right)\right){\rm d}s\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,t-\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(t-\tau,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\text{\,\text{(exchanging i and j)}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
