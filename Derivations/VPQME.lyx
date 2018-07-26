@@ -3467,9 +3467,10 @@ Properties of the correlation functions implied in the master equation
 
 \begin_layout Plain Layout
 \begin_inset Formula 
-\[
-\mathscr{B}_{ji}\left(t,t-\tau\right)=\mathscr{B}_{ij}^{*}\left(t-\tau,t\right)
-\]
+\begin{align}
+\mathscr{B}_{ji}\left(t,t-\tau\right) & =\mathscr{B}_{ij}^{*}\left(t-\tau,t\right)\\
+\mathscr{B}_{ji}\left(t-\tau,t\right) & =\mathscr{B}_{ij}^{*}\left(t,t-\tau\right)
+\end{align}
 
 \end_inset
 
@@ -3482,7 +3483,7 @@ Master equation
 
 \begin_layout Plain Layout
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 {\scriptstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\right.}\\
 \! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s.}\\
  & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(t-\tau\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\\
@@ -3495,9 +3496,11 @@ Master equation
  & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
  & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\mathscr{B}_{ji}\left(t,t-\tau\right)-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\mathscr{B}_{ij}\left(t-\tau,t\right)\right.\right.}\\
  & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ij}\left(t-\tau,t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ji}\left(t,t-\tau\right)\right)\right){\rm d}s}\\
- & =-\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\mathscr{B}_{ji}\left(t,t-\tau\right)\left[\widetilde{A_{j}}\left(t\right),\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}\left(t-\tau,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right),\widetilde{A_{j}}\left(t\right)\right]\right)\right){\rm d}s\\
- & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,t-\tau\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(t-\tau,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\text{\,\text{(exchanging i and j)}}
-\end{align*}
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\mathscr{B}_{ji}\left(t,s\right)\left[\widetilde{A_{j}}\left(t\right),\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}\left(s,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right),\widetilde{A_{j}}\left(t\right)\right]\right)\right){\rm d}s\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(s,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\text{\,\text{(exchanging i and j)}}\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]-\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\right]\right)\right){\rm d}s
+\end{align}
 
 \end_inset
 
@@ -3505,10 +3508,161 @@ Master equation
 \end_layout
 
 \begin_layout Plain Layout
+Master equation returning to Schroedinger picture:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\widetilde{A_{j}}\left(s,t\right)=U\left(t\right)U^{\dagger}\left(s\right)A_{j}U\left(s\right)U^{\dagger}\left(t\right)
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}sC_{i}\!\left(t\right)\!C_{j}\!\left(s\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(t,s\right)\!\left[A_{i}\left(t\right),\!\widetilde{A_{j}}\!\left(s,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ij}^{*}\!\left(t,s\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(s,t\right)\!,\!A_{i}\right]\!\right)\\
+s & =t-\tau\text{\,\text{(Change of variables in the integratio process)}}\\
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i}\left(t\right),\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\!,\!A_{i}\left(t\right)\right]\!\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t-\tau\right)\left(\mathscr{B}_{ij}\left(t,t-\tau\right)\left[A_{i}\left(t\right),e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\right.\\
+ & \left.+\mathscr{B}_{ij}^{*}\left(t,t-\tau\right)\left[\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right),A_{i}\left(t\right)\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Given that 
+\begin_inset Formula $\mathscr{A}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)=\mathscr{A}_{j}^{\dagger}\left(-w\left(t-\tau\right),-w^{\prime}\left(t\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $w\left(t-\tau\right),w^{\prime}\left(t\right)$
+\end_inset
+
+ belong to the set of differences of eigenvalues of 
+\begin_inset Formula $H_{E}\left(t\right)$
+\end_inset
+
+ denoted by 
+\begin_inset Formula $J$
+\end_inset
+
+ that depends of the time we can take an application where 
+\begin_inset Formula $w\left(t-\tau\right)\rightarrow-w\left(t-\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $w^{\prime}\left(t\right)\rightarrow-w^{\prime}\left(t\right)$
+\end_inset
+
+ such that the sum 
+\begin_inset Formula $\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}^{*}\left(t,t-\tau\right)\left[\overline{\rho_{S}}\left(t\right)e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right),A_{i}\left(t\right)\right]$
+\end_inset
+
+ is invariant because if 
+\begin_inset Formula $\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\in J\times J$
+\end_inset
+
+ then 
+\begin_inset Formula $\left(-w\left(t-\tau\right),-w^{\prime}\left(t\right)\right)\in J\times J$
+\end_inset
+
+.
+ So the master equation can be written as:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t-\tau\right)\left(\mathscr{B}_{ij}\left(t,t-\tau\right)\left[A_{i}\left(t\right),e^{{\rm i}\tau w\left(t-\tau\right)}\!e^{-{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\right.\\
+ & \left.+\mathscr{B}_{ij}^{*}\left(t,t-\tau\right)\left[\overline{\rho_{S}}\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}\!e^{{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!\mathscr{A}_{jww^{\prime}}^{\dagger}\left(t-\tau,t\right),A_{i}\left(t\right)\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Let's define the operator:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+D_{ijww^{\prime}}\left(t-\tau,t\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(t,t-\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t-\tau,t\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+so
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right)=C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}^{*}\left(t,t-\tau\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}^{\dagger}\left(t-\tau,t\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+then the master equation is:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau\left(\left[A_{i}\left(t\right),D_{ijww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[\overline{\rho_{S}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right),A_{i}\left(t\right)\right]\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+We can define the response matrix like:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\mathscr{D}_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}{\rm d}\tau D_{ijww^{\prime}}\left(t-\tau,t\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The master equation using the precedent response matrix can be re-written
+ as:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i}\left(t\right),\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{S}}\left(t\right)\right]-\left[\overline{\rho_{S}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\left(t\right)\right]\right)
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
@@ -4092,44 +4246,6 @@ S & =\prod_{\mathbf{k}}{\rm exp}\left(-\left|\frac{v_{1\mathbf{k}}-v_{0\mathbf{k
  & ={\scriptstyle \frac{1}{4{\rm i}}\left\langle B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}+B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{10}-B_{0}^{+}B_{1}^{-}\left(\tau\right)B_{01}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{1}^{+}B_{0}^{-}-B_{1}^{+}B_{0}^{-}\left(\tau\right)B_{0}^{+}B_{1}^{-}\right.}\\
  & {\scriptstyle \left.+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{10}+B_{1}^{+}\!B_{0}^{-}\!\left(\tau\right)B_{01}+B_{10}B_{1}^{+}\!B_{0}^{-}\!+B_{10}B_{0}^{+}\!B_{1}^{-}\!-B_{10}B_{10}-B_{10}B_{01}-B_{01}B_{1}^{+}\!B_{0}^{-}\!-B_{01}B_{0}^{+}\!B_{1}^{-}\!+B_{01}B_{10}+B_{01}B_{01}\!\right\rangle }
 \end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-I tried small for 645 anf 646 because I wanted to improve the management
- of the space.
-\end_layout
 
 \end_inset
 
