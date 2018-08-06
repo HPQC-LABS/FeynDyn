@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass revtex4-1
+\textclass ../Downloads/revtex4-1
 \begin_preamble
 \usepackage{amsfonts}
 \usepackage{palatino}
@@ -3874,12 +3874,31 @@ noindent
 \begin{align}
 \mathscr{B}_{ij}\left(t,s\right) & ={\rm Tr}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\\
  & ={\rm Tr}_{B}\left(e^{iH_{B}t}B_{i}\left(t\right)e^{-iH_{B}t}e^{iH_{B}s}B_{j}\left(s\right)e^{-iH_{B}s}\rho_{B}\right)\\
- & ={\rm Tr}_{B}\left(e^{iH_{B}t}B_{i}\left(t\right)e^{-iH_{B}t}e^{iH_{B}s}B_{j}\left(s\right)\rho_{B}e^{-iH_{B}s}\right)\,\text{(by permuting \ensuremath{e^{-iH_{B}s}} and \ensuremath{\rho_{B}}because they commute)}\\
+e^{A} & =\sum_{k=0}^{\infty}\frac{A^{k}}{k!}\\
+e^{-iH_{B}s}e^{-\beta H_{B}} & =\sum_{m=0}^{\infty}\frac{\left(-iH_{B}s\right)^{m}}{m!}\sum_{n=0}^{\infty}\frac{\left(-\beta H_{B}\right)^{n}}{n!}\\
+ & =\sum_{m,n}\frac{\left(-iH_{B}s\right)^{m}}{m!}\frac{\left(-\beta H_{B}\right)^{n}}{n!}\\
+ & =\sum_{m,n}\frac{\left(-is\right)^{m}}{m!}\frac{\left(-\beta\right)^{n}}{n!}H_{B}^{m}H_{B}^{n}\\
+ & =\sum_{m,n}\frac{\left(-is\right)^{m}}{m!}\frac{\left(-\beta\right)^{n}}{n!}H_{B}^{n}H_{B}^{m}\,\text{(because the powers of a matrix commute)}\\
+ & =\sum_{m,n}\frac{\left(-\beta\right)^{n}}{n!}H_{B}^{n}\frac{\left(-is\right)^{m}}{m!}H_{B}^{m}\\
+ & =\sum_{m,n}\frac{\left(-\beta H_{B}\right)^{n}}{n!}\frac{\left(-isH_{B}\right)^{m}}{m!}\\
+ & =\sum_{n=0}^{\infty}\frac{\left(-\beta H_{B}\right)^{n}}{n!}\sum_{m=0}^{\infty}\frac{\left(-iH_{B}s\right)^{m}}{m!}\\
+ & =e^{-\beta H_{B}}e^{-iH_{B}s}\\
+0 & =e^{-iH_{B}s}e^{-\beta H_{B}}-e^{-\beta H_{B}}e^{-iH_{B}s}\,\text{(then \ensuremath{e^{-iH_{B}s}} and \ensuremath{\rho_{B}}commute)}\\
+\mathscr{B}_{ij}\left(t,s\right) & ={\rm Tr}_{B}\left(e^{iH_{B}t}B_{i}\left(t\right)e^{-iH_{B}t}e^{iH_{B}s}B_{j}\left(s\right)\rho_{B}e^{-iH_{B}s}\right)\,\text{(by permuting \ensuremath{e^{-iH_{B}s}} and \ensuremath{\rho_{B}}because they commute)}\\
  & ={\rm Tr}_{B}\left(\left(e^{iH_{B}t}B_{i}\left(t\right)e^{-iH_{B}t}e^{iH_{B}s}B_{j}\left(s\right)\right)\rho_{B}e^{-iH_{B}s}\right)\,\text{(by associative property)}\\
  & ={\rm Tr}_{B}\left(e^{-iH_{B}s}\left(e^{iH_{B}t}B_{i}\left(t\right)e^{-iH_{B}t}e^{iH_{B}s}B_{j}\left(s\right)\right)\rho_{B}\right)\,\text{(by cyclic property of the trace)}\\
  & ={\rm Tr}_{B}\left(\left(e^{-iH_{B}s}e^{iH_{B}t}\right)B_{i}\left(t\right)\left(e^{-iH_{B}t}e^{iH_{B}s}\right)B_{j}\left(s\right)\rho_{B}\right)\,\text{(by associative property)}\\
- & ={\rm Tr}_{B}\left(e^{iH_{B}\left(t-s\right)}B_{i}\left(t\right)e^{-iH_{B}\left(t-s\right)}B_{j}\left(s\right)\rho_{B}\right)\,\text{(because \ensuremath{iH_{B}t} and \ensuremath{iH_{B}s} commute)}\\
-B_{i}\left(t,r\right) & \equiv e^{iH_{B}r}B_{i}\left(t\right)e^{-iH_{B}r}\\
+\left[iH_{B}t,-iH_{B}s\right] & =iH_{B}t\left(-iH_{B}s\right)-\left(-iH_{B}s\right)iH_{B}t\\
+ & =tsH_{B}^{2}-tsH_{B}^{2}\\
+ & =0\,\text{(so \ensuremath{iH_{B}t} and \ensuremath{-iH_{B}s} commute)}\\
+e^{-iH_{B}s}e^{iH_{B}t} & =e^{iH_{B}t-iH_{B}s}\,\text{(by the Zassenhaus formula because \ensuremath{iH_{B}t} and \ensuremath{-iH_{B}s} commute)}\\
+ & =e^{iH_{B}\left(t-s\right)}\\
+ & =e^{iH_{B}\tau}\\
+e^{iH_{B}s}e^{-iH_{B}t} & =e^{-iH_{B}t+iH_{B}s}\,\text{(by the Zassenhaus formula because \ensuremath{-iH_{B}t} and \ensuremath{iH_{B}s} commute)}\\
+ & =e^{iH_{B}\left(-t+s\right)}\\
+ & =e^{-iH_{B}\tau}\\
+\mathscr{B}_{ij}\left(t,s\right) & ={\rm Tr}_{B}\left(e^{iH_{B}\tau}B_{i}\left(t\right)e^{-iH_{B}\tau}B_{j}\left(s\right)\rho_{B}\right)\\
+B_{i}\left(t,\tau\right) & \equiv e^{iH_{B}\tau}B_{i}\left(t\right)e^{-iH_{B}\tau}\\
 \mathscr{B}_{ij}\left(t,s\right) & ={\rm Tr}_{B}\left(e^{iH_{B}\left(t-s\right)}B_{i}\left(t\right)e^{-iH_{B}\left(t-s\right)}B_{j}\left(s\right)\rho_{B}\right)\\
 s & =t-\tau\\
 \mathscr{B}_{ij}\left(t,s\right) & ={\rm Tr}_{B}\left(e^{iH_{B}\tau}B_{i}\left(t\right)e^{-iH_{B}\tau}B_{j}\left(s\right)\rho_{B}\right)\\
