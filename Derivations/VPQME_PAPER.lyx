@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1222,9 +1220,9 @@ So we can show that:
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}\mathscr{A}_{jww^{\prime}}\left(t;t-\tau,t\right).
-\]
+\end{equation}
 
 \end_inset
 
@@ -2236,11 +2234,11 @@ It means that a decomposition matrix of
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
  & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ijw}\left(t\right)
-\end{align*}
+\end{align}
 
 \end_inset
 
