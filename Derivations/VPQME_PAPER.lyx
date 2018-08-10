@@ -97,6 +97,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -117,6 +118,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -570,7 +572,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\left(t\right)\le A_{{\rm {\rm B}}}\left(t\right)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right).
+A\left(t\right)\le A_{{\rm {\rm B}}}\left(t\right)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right).
 \end{equation}
 
 \end_inset
@@ -654,7 +656,7 @@ This leads us to:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-v_{i\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right) & \!=\!\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\!\left(\!1\!-\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)\!+2R_{i}\left(t\right)\!-\varepsilon\left(t\right)\right)\!\right)\!+\!2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\!\left(t\right)\right|^{2}\!\!\left|V_{10}\!\left(t\right)\right|^{2}\!\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
+v_{i\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right) & \!=\!\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\!\left(\!1\!-\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)\!+2R_{i}\left(t\right)\!-\varepsilon\left(t\right)\right)\!\right)\!+\!2\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\!\left(t\right)\right|^{2}\!\left|V_{10}\!\left(t\right)\right|^{2}\!\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\label{eq:Variational Parameters}
 \end{align}
 
 \end_inset
@@ -802,7 +804,11 @@ We will initialize the density operator as:
 \end_layout
 
 \begin_layout Standard
-To simplify this we define the following matrix:
+To simplify this we define the following matrix related to describe 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -902,7 +908,11 @@ s
 \end_layout
 
 \begin_layout Standard
-and expanding the commutators yields:
+Taking the master equation 
+\begin_inset Formula $\eqref{int master}$
+\end_inset
+
+  and expanding the commutators yields:
 \end_layout
 
 \begin_layout Standard
@@ -919,7 +929,7 @@ and expanding the commutators yields:
 
 \begin_layout Standard
 We can keep the 
-\begin_inset Formula $A\left(t\right)$
+\begin_inset Formula $A$
 \end_inset
 
  and 
@@ -931,7 +941,7 @@ We can keep the
 \begin_inset Formula $B\left(t\right)$
 \end_inset
 
- operators by 
+ operators, known as correlation functions, by 
 \begin_inset Formula $\mathscr{B}\left(t\right)$
 \end_inset
 
@@ -1020,7 +1030,8 @@ Given that
 \begin_inset Formula $\eqref{master with B_ij interaction}$
 \end_inset
 
-, doing the reverse of the transformation to interaction picture we get:
+, also doing the reverse of the transformation to interaction picture we
+ get:
 \end_layout
 
 \begin_layout Standard
@@ -1079,7 +1090,7 @@ Here
 \begin_inset Formula $H_{E}\left(t\right)=H_{E}^{\left(0\right)}\left(t\right)+H_{E}^{\left(1\right)}\left(t\right)+H_{E}^{\left(2\right)}\left(t\right)+...$
 \end_inset
 
- so we can write:
+, so we can write:
 \end_layout
 
 \begin_layout Standard
@@ -1103,7 +1114,7 @@ The terms can be found expanding
 \end_inset
 
  then equating the terms of the same power.
- The lowest terms are:
+ The lowest degree terms are:
 \end_layout
 
 \begin_layout Standard
@@ -1231,11 +1242,11 @@ So we can show that:
 
 \begin_layout Standard
 where 
-\begin_inset Formula $w\left(t\right)$
+\begin_inset Formula $w^{\prime}\left(t\right)$
 \end_inset
 
  and 
-\begin_inset Formula $w^{\prime}\left(t-\tau\right)$
+\begin_inset Formula $w\left(t-\tau\right)$
 \end_inset
 
  belongs to the set of the differences of the eigenvalues of the Hamiltonian
@@ -1567,15 +1578,15 @@ In particular, the
 \begin_inset Formula $\mathscr{B}\left(t,s\right)$
 \end_inset
 
- operators matrix it's defined in terms of 
+ operators matrix is defined in terms of 
 \begin_inset Formula $\mathscr{B}\left(t,s\right)\equiv\mathscr{B}_{ij}\left(t,s\right)$
 \end_inset
 
- following the notation of the matrix 
+, following the notation of the matrix 
 \begin_inset Formula $\eqref{A, B and C matrix}$
 \end_inset
 
- is:
+ we have:
 \end_layout
 
 \begin_layout Standard
@@ -1648,10 +1659,10 @@ In this case
 
 \begin_layout Standard
 The integral version of the correlation functions 
-\begin_inset Formula ${\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)$
+\begin_inset Formula $\mathscr{B}_{ij}\left(t,s\right)$
 \end_inset
 
- are equal to:
+ is equal to:
 \end_layout
 
 \begin_layout Standard
@@ -1756,7 +1767,7 @@ Applying the inverse transformation we will obtain that:
 \begin_inset Formula 
 \begin{align}
 {\scriptstyle e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}e^{V\!\left(t\right)}}\! & ={\scriptstyle e^{-V\!\left(t\right)}V^{\prime}\!\left(t\right)e^{V\!\left(t\right)}\rho_{\bar{S}}\!\left(t\right)+\dot{\rho}_{\bar{S}}\left(t\right)-\rho_{\bar{S}}\!\left(t\right)V^{\prime}\!\left(t\right)}\\
-\! & =\!{\scriptstyle -ie^{-V\!\left(t\right)}\!\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]\!e^{V\!\left(t\right)}-\!\sum_{ijww'}\!\int_{0}^{t}{\rm d}\tau\left(\!e^{-V\!\left(t\right)}\!\left[A_{i},D_{ijww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]\!e^{V\!\left(t\right)}-e^{-V\!\left(t\right)}\!\left[A_{i},\overline{\rho_{\bar{S}}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right)\right]\!e^{V\!\left(t\right)}\!\right).}
+\! & =\!{\scriptstyle -ie^{-V\!\left(t\right)}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]e^{V\!\left(t\right)}-\!\sum_{ijww'}\!\!\int_{0}^{t}\!{\rm d}\tau\!\left(\!e^{-V\!\left(t\right)}\!\left[A_{i},D_{ijww^{\prime}}\!\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]e^{V\!\left(t\right)}-e^{-V\!\left(t\right)}\!\left[A_{i},\overline{\rho_{\bar{S}}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\!\left(t-\tau,t\right)\right]e^{V\!\left(t\right)}\!\right).}
 \end{align}
 
 \end_inset
@@ -1787,7 +1798,7 @@ So we will obtain that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\scriptstyle e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\left(t\right)}{{\rm d}t}e^{V\!\left(t\right)}}\!=\!{\scriptstyle -{\rm i}\left[H_{\bar{S}}\!\left(t\right)\!,\rho_{\bar{S}}\left(t\right)\right]-\sum_{ijww'}\left(\!\left[e^{-V\!\left(t\right)}\!A_{i}\!\left(t\right)e^{V\!\left(t\right)}\!,e^{-V\!\left(t\right)}\!\mathscr{D}_{ijww^{\prime}}\!\left(t\right)e^{V\!\left(t\right)}\rho_{\bar{S}}\left(t\right)\right]-\left[e^{-V\!\left(t\right)}\!A_{i}\!\left(t\right)e^{V\!\left(t\right)}\!,\rho_{\bar{S}}\left(t\right)e^{-V\!\left(t\right)}\!\mathscr{D}_{ijww^{\prime}}^{\dagger}\!\left(t\right)e^{V\!\left(t\right)}\right]\!\right)}.
+{\scriptstyle e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\left(t\right)}{{\rm d}t}e^{V\!\left(t\right)}}\!=\!{\scriptstyle -{\rm i}\left[H_{\bar{S}}\!\left(t\right)\!,\rho_{\bar{S}}\!\left(t\right)\right]-\sum_{ijww'}\left(\!\left[e^{-V\!\left(t\right)}\!A_{i}\!\left(t\right)e^{V\!\left(t\right)}\!,e^{-V\!\left(t\right)}\!\mathscr{D}_{ijww^{\prime}}\!\left(t\right)e^{V\!\left(t\right)}\rho_{\bar{S}}\!\left(t\right)\right]-\left[e^{-V\!\left(t\right)}\!A_{i}\!\left(t\right)e^{V\!\left(t\right)}\!,\rho_{\bar{S}}\!\left(t\right)e^{-V\!\left(t\right)}\!\mathscr{D}_{ijww^{\prime}}^{\dagger}\!\left(t\right)e^{V\!\left(t\right)}\right]\!\right)}.
 \end{equation}
 
 \end_inset
@@ -1956,7 +1967,7 @@ Time-independent VPQME of 2011
 \end_layout
 
 \begin_layout Standard
-The hamiltonian associatedto this system is given by:
+The hamiltonian associated to this system is given by:
 \end_layout
 
 \begin_layout Standard
@@ -2020,7 +2031,7 @@ g_{1{\rm \mathbf{k}}}^{\Re}\equiv g_{{\rm \mathbf{k}}}\,\,\,\,\,\,\,\,\,\,\,\,\,
 
 \end_inset
 
-We now have the corresponding set of hamiltonian that satisfy the separation
+We now have the corresponding set of hamiltonians that satisfy the separation
  shown in 
 \begin_inset Formula $\eqref{H division 1}$
 \end_inset
@@ -2252,7 +2263,7 @@ The master equation can be written as:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho}_{\bar{S}}\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho}_{S}\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)-\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\left(t\right)+\overline{\rho}_{S}\left(t\right)A_{jw}^{\dagger}\right]\!\right).\label{master time ind}
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!\right).\label{master time ind}
 \end{align}
 
 \end_inset
