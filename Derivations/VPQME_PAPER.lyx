@@ -97,7 +97,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -118,7 +117,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -394,7 +392,7 @@ B_{y}\left(t\right) & B_{ij}\left(t\right)
 \end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
 \frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
 \frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}e^{\text{\chi}_{ij}\left(t\right)}
-\end{pmatrix},\\
+\end{pmatrix},\label{Definitions}\\
 R_{i}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right),\\
 \text{\chi}_{ij}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right),
 \end{align}
@@ -510,8 +508,8 @@ Now H
 \begin_inset Formula 
 \begin{align}
 \overline{H_{T}}\left(t\right) & \equiv\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{I}}}\left(t\right)+\overline{H_{\bar{B}}},\label{H division 1}\\
-\overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace|i\rangle\negmedspace\langle i|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\\
-\overline{H_{\bar{I}}}\left(t\right) & \equiv\sum_{i}B_{iz}\left(t\right)|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(B_{x}\left(t\right)\sigma_{x}+B_{y}\left(t\right)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\left(t\right)\sigma_{y}-B_{y}\left(t\right)\sigma_{x}\right),\\
+\overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace|i\rangle\negmedspace\langle i|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\label{Hs}\\
+\overline{H_{\bar{I}}}\left(t\right) & \equiv\sum_{i}B_{iz}\left(t\right)|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(B_{x}\left(t\right)\sigma_{x}+B_{y}\left(t\right)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\left(t\right)\sigma_{y}-B_{y}\left(t\right)\sigma_{x}\right),\label{Hi}\\
 \overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
  & =H_{B}.\label{H division 5}
 \end{align}
@@ -898,7 +896,7 @@ s
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\\
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\label{Hi bar}\\
 \widetilde{\overline{H_{\bar{I}}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right),
 \end{align}
 
@@ -1685,7 +1683,7 @@ Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\o
 \begin_inset Formula 
 \begin{align}
 \left\langle \!\widetilde{B_{x}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(s\right)\!\right\rangle _{B}\! & =\!\mathscr{B}_{11}\left(t,s\right)\\
-\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Re}{\scriptstyle U_{10}\left(t,s\right)}\xi^{+}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)\right)\\
+\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)\right)\\
  & -\left(B_{10}\left(t\right)\right)^{\Re}\left(B_{01}\left(s\right)\right)^{\Re},\\
 \left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(s\right)\!\right\rangle _{B}\! & =\!\mathscr{B}_{22}\left(t,s\right)\\
 \! & =\!-\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}\!U_{10}\left(t,s\right)\xi^{+}\!\left(t,s\right)-\left({\rm exp}\left(\text{\chi}_{10}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}\!U_{10}^{*}\left(t,s\right)\xi^{-}\!\left(t,s\right)\right)\\
@@ -1721,7 +1719,7 @@ Finally we end up with our final master equation in the variationally optimized
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i}\left(t\right),\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\left(t\right)\right]\right).
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i}\left(t\right),\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\left(t\right)\right]\right).\label{deduced equation}
 \end{equation}
 
 \end_inset
@@ -2065,71 +2063,6 @@ Let's look now at
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Time-independent hamiltonian
-\begin_inset Formula 
-\begin{align}
-\mathscr{D}_{ijww^{\prime}}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}{\rm d\tau}\label{Response matrix-1}\\
- & =\left(\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\Lambda{}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau}\right)A_{jww^{\prime}}\\
- & =K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\\
-\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right) & =\int_{0}^{t}C_{i}^{*}\left(t\right)C_{j}^{*}\left(t-\tau\right)\Lambda{}_{ij}^{*}\left(\tau\right)e^{-{\rm i}w\tau}e^{{\rm i}t\left(w-w'\right)}A_{jww^{\prime}}^{\dagger}{\rm d\tau}\\
- & =\left(C_{i}^{*}\left(t\right)C_{j}^{*}\left(t-\tau\right)\Lambda{}_{ij}^{*}\left(\tau\right)e^{-{\rm i}w\tau}e^{{\rm i}t\left(w-w'\right)}\right)A_{jww^{\prime}}^{\dagger}\\
- & =K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}
-\end{align}
-
-\end_inset
-
-Finally we end up with our final master equation in the variationally optimized
- frame in the Schroedinger picture, in terms of only 
-\begin_inset Formula $K$
-\end_inset
-
- and 
-\begin_inset Formula $A$
-\end_inset
-
-: 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H}_{\bar{S}}\left(t\right),\overline{\rho_{\bar{S}}}\right]-\sum_{ijww^{\prime}}\left[A_{i},K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]\label{Matrix equation-1-1}
-\end{equation}
-
-\end_inset
-
-Re-defining 
-\begin_inset Formula $\overline{\rho_{\bar{S}}}\left(t\right)\equiv\rho$
-\end_inset
-
- and 
-\begin_inset Formula $\overline{H}_{\bar{S}}\equiv H$
-\end_inset
-
-, we get:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-\dot{\rho}=-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}K_{ijww^{\prime}}\left(t\right)\left[A_{i},K_{ijww^{\prime}}\left(t\right)A_{jww^{\prime}}\rho-\rho K_{ijww^{\prime}}^{*}\left(t\right)A_{jww^{\prime}}^{\dagger}\right]
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)}\\
@@ -2247,7 +2180,7 @@ It means that a decomposition matrix of
 \begin_inset Formula 
 \begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
- & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
+ & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ijw}\left(t\right).
 \end{align}
 
@@ -2257,13 +2190,70 @@ K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right
 \end_layout
 
 \begin_layout Standard
-The master equation can be written as:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The Fourier decomposition matrices for this case are:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!\right).\label{master time ind}
+\mathscr{A}_{1}\left(0\right) & =\sin\left(2\theta\right)\left(|+\rangle\negmedspace\langle+|-|-\rangle\negmedspace\langle-|\right),\\
+\mathscr{A}_{1}\left(\eta\right) & =\cos\left(2\theta\right)|-\rangle\negmedspace\langle+|,\\
+\mathscr{A}_{2}\left(0\right) & =0,\\
+\mathscr{A}_{2}\left(\eta\right) & ={\rm i|-\rangle\negmedspace\langle+|},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathscr{A}_{3}\left(0\right) & =\cos^{2}\left(\theta\right)|+\rangle\negmedspace\langle+|+\sin^{2}\left(\theta\right)|-\rangle\negmedspace\langle-|,\\
+\mathscr{A}_{3}\left(\eta\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)|-\rangle\negmedspace\langle+|.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\theta=\frac{1}{2}\tan^{-1}\left(\frac{\Omega_{r}}{\epsilon}\right)$
+\end_inset
+
+ characterises the tilt of the system eigenstates away from the x-axis in
+ the variational frame.
+ Also we can verify that 
+\begin_inset Formula $\mathscr{A}_{j}\left(w\right)=\mathscr{A}_{j}^{\dagger}\left(-w\right)$
+\end_inset
+
+.
+ Defining 
+\begin_inset Formula $\mathscr{A}_{j}\left(w\right)\equiv\mathscr{A}_{jw}$
+\end_inset
+
+ then we can write the master equation as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},\mathscr{A}_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)\mathscr{A}_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},\mathscr{A}_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)\mathscr{A}_{jw}^{\dagger}\right]\!\right).\label{master time ind}
 \end{align}
 
 \end_inset
@@ -2313,7 +2303,7 @@ The relevant correlation functions are given by the matrix
 \Lambda\!\left(\tau\right)\!=\begin{pmatrix}\frac{\Omega_{r}^{2}}{4}\left(\cosh\!\left(\phi\!\left(\tau\right)\right)-1\right) & 0 & 0\\
 0 & \frac{\Omega_{r}^{2}}{4}\sinh\!\left(\phi\!\left(\tau\right)\right) & -\frac{\Omega_{r}}{2}\!\int_{0}^{\infty}\!{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)\!{\rm i}G_{-}\!\left(\tau\right)\\
 0 & \frac{\Omega_{r}}{2}\int_{0}^{\infty}{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}\!F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)^{2}\!G_{+}\!\left(\tau\right)
-\end{pmatrix}.
+\end{pmatrix}.\label{eq:correlation vp2011}
 \end{equation}
 
 \end_inset
@@ -2327,7 +2317,7 @@ Here
 \end_inset
 
  and 
-\begin_inset Formula $\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J_{1}\left(\omega\right)F_{1}^{2}\left(\omega\right)}{\omega^{2}}G_{+}\left(\omega,\tau\right){\rm d}\omega$
+\begin_inset Formula $\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}G_{+}\left(\omega,\tau\right){\rm d}\omega$
 \end_inset
 
  defines the phonon propagator.
@@ -2345,8 +2335,862 @@ Here
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\scriptstyle \dot{\rho}\left(t\right)}={\scriptstyle -{\rm i}\left[H,\rho\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jw}e^{V}\rho\left(t\right)-\rho\left(t\right)e^{-V}A_{jw}^{\dagger}e^{V}\right]+{\rm i}K_{ijw}^{\Im}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jw}e^{V}\rho\left(t\right)+\rho\left(t\right)e^{-V}A_{jw}^{\dagger}e^{V}\right]\right)}.
+{\scriptstyle \dot{\rho}\left(t\right)}={\scriptstyle -{\rm i}\left[H,\rho\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}\mathscr{A}_{jw}e^{V}\rho\left(t\right)-\rho\left(t\right)e^{-V}\mathscr{A}_{jw}^{\dagger}e^{V}\right]+{\rm i}K_{ijw}^{\Im}\left(t\right)\left[e^{-V}\mathscr{A}_{i}e^{V},e^{-V}\mathscr{A}_{jw}e^{V}\rho\left(t\right)+\rho\left(t\right)e^{-V}\mathscr{A}_{jw}^{\dagger}e^{V}\right]\right)}.
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Time-dependent polaron master equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Following the reference [1], if 
+\begin_inset Formula $v_{\mathbf{k}}\rightarrow g_{\mathbf{k}}$
+\end_inset
+
+ then we recover the full polaron transformation.
+ It means from the equation 
+\begin_inset Formula $\eqref{Definitions}$
+\end_inset
+
+ that 
+\begin_inset Formula $B_{z}=0$
+\end_inset
+
+.
+ The Hamiltonian studied in this case is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\left(\delta+\sum_{\mathbf{k}}\left(g_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{\mathbf{k}}^{*}b_{\mathbf{k}}\right)\right)|1\rangle\negmedspace\langle1|+\frac{\Omega\left(t\right)}{2}\sigma_{x}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}.\label{eq:time dependent polaron}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ If 
+\begin_inset Formula $v_{\mathbf{k}}\rightarrow g_{\mathbf{k}}$
+\end_inset
+
+ then 
+\begin_inset Formula $B\left(\tau\right)=B$
+\end_inset
+
+ from the equation 
+\begin_inset Formula $\eqref{Definitions}$
+\end_inset
+
+, so 
+\begin_inset Formula $B$
+\end_inset
+
+ is independent of the time.
+ It's possible to summarize 
+\begin_inset Formula $\eqref{eq:time dependent polaron}$
+\end_inset
+
+ in terms of the hamiltonian 
+\begin_inset Formula $\eqref{eq:H(t)}$
+\end_inset
+
+ using the following matrix: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}V_{10}^{\Im}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Re} & v_{0{\rm \mathbf{k}}}\left(t\right) & B_{10}\left(t\right)\\
+V_{10}^{\Re}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}}\left(t\right) & \Omega_{r}\left(t\right)\\
+\varepsilon_{0}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Re} & B_{0z}\left(t\right) & R_{0}\left(t\right)\\
+\varepsilon_{1}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Im} & B_{1z}\left(t\right) & R_{1}\left(t\right)
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B\\
+\frac{\Omega\left(t\right)}{2} & 0 & g_{{\rm \mathbf{k}}} & B\Omega\left(t\right)\\
+0 & g_{{\rm \mathbf{k}}}^{\Re} & 0 & 0\\
+\delta & g_{{\rm \mathbf{k}}}^{\Im} & 0 & -\sum_{\mathbf{k}}\omega_{\mathbf{k}}^{-1}|g_{\mathbf{k}}|^{2}
+\end{pmatrix}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the equation 
+\begin_inset Formula $\eqref{Hs}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eqref{Hi}$
+\end_inset
+
+ we obtain the following transformed Hamiltonians:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{\bar{S}}}\left(t\right) & =\left(\delta+R_{1}\right)|1\rangle\negmedspace\langle1|+\frac{B\sigma_{x}}{2}\Omega\left(t\right),\label{Hs polaron}\\
+\overline{H_{\bar{I}}}\left(t\right) & =\frac{\Omega\left(t\right)}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right).\label{eq:Hi polaron}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ Let 
+\begin_inset Formula $\delta+R_{1}=\delta'$
+\end_inset
+
+, now taking the equation 
+\begin_inset Formula $\eqref{Hs polaron}$
+\end_inset
+
+ with 
+\begin_inset Formula $\text{\ensuremath{\delta}'\ensuremath{|1\rangle\negmedspace\langle1|}=\ensuremath{\frac{\delta'}{2}\sigma_{z}+\frac{\delta'}{2}\mathbb{I}}}$
+\end_inset
+
+ help us to reproduce the hamiltonian of the reference [2] because for the
+ time evolution the term proportional to the identity is negligible, so
+ 
+\begin_inset Formula $\overline{H_{\bar{S}}}\left(t\right)$
+\end_inset
+
+ is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overline{H_{\bar{S}}}\left(t\right)=\frac{\delta'}{2}\sigma_{z}+\frac{B\sigma_{x}}{2}\Omega\left(t\right).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As we can see the function 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $B$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is a time-independent function because we consider that 
+\begin_inset Formula $g_{\mathbf{k}}$
+\end_inset
+
+ doesn't depend of the time.
+ Writing the interaction Hamiltonian 
+\begin_inset Formula $\eqref{eq:Hi polaron}$
+\end_inset
+
+ in the similar way to the equation 
+\begin_inset Formula $\eqref{Hi bar}$
+\end_inset
+
+ allow us to to write 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}A\\
+B\left(t\right)\\
+C\left(t\right)
+\end{pmatrix}=\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
+B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
+\frac{\Omega\left(t\right)}{2} & \frac{\Omega\left(t\right)}{2} & 0 & 0 & 0 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the time-dependent polaron master equation we have 
+\begin_inset Formula $F\left(\omega_{\mathbf{k}}\right)=1$
+\end_inset
+
+ so it's continuous form is 
+\begin_inset Formula $F\left(\omega\right)=1$
+\end_inset
+
+ and using the matrix 
+\begin_inset Formula $\eqref{eq:correlation vp2011}$
+\end_inset
+
+  we can deduce that the only terms that survive are 
+\begin_inset Formula $\Lambda_{11}\left(\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda_{22}\left(\tau\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Lambda_{11}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\rho_{B}\right)\label{eq:A11-1}\\
+ & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right),\label{eq:A11(tau)-1}\\
+\Lambda{}_{22}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{y}}\left(\tau\right)\widetilde{B_{y}}\left(0\right)\rho_{B}\right)\\
+ & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right).\label{eq:A22(tau)-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The phonon propagator for this case is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}G_{+}\left(\tau\right){\rm d\omega}.\label{eq:phonon propagator}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Writing 
+\begin_inset Formula $G_{+}\left(\tau\right)=\coth\left(\frac{\beta\omega}{2}\right)\cos\left(\omega\tau\right)-i\sin\left(\omega\tau\right)$
+\end_inset
+
+ then 
+\begin_inset Formula $\eqref{eq:phonon propagator}$
+\end_inset
+
+ can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}\left(\coth\left(\frac{\beta\omega}{2}\right)\cos\left(\omega\tau\right)-i\sin\left(\omega\tau\right)\right){\rm d\omega}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ These functions match with the equations 
+\begin_inset Formula $\Lambda_{x}\left(\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda_{y}\left(\tau\right)$
+\end_inset
+
+ of the reference 
+\begin_inset Formula $[2]$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda_{i}\left(\tau\right)=\Lambda_{i}\left(-\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\left\{ x,y\right\} $
+\end_inset
+
+.
+ The master equation for this section based on the equation 
+\begin_inset Formula $\eqref{master 1}$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\frac{\delta'}{2}\sigma_{z}+\frac{\Omega_{r}\left(t\right)\sigma_{x}}{2},\rho_{S}\left(t\right)\right]-\sum_{i}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(\tau\right)\left[A_{i},\widetilde{A_{i}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\right.\\
+ & \left.+C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(-\tau\right)\left[\rho_{S}\left(t\right)\widetilde{A_{i}}\left(t-\tau,t\right),A_{i}\right]\right).\label{eq:master equation polaron d}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Replacing 
+\begin_inset Formula $C_{i}\left(t\right)=\frac{\Omega\left(t\right)}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\widetilde{A_{i}}\left(t-\tau,t\right)=\widetilde{\sigma_{i}}\left(t-\tau,t\right)$
+\end_inset
+
+, also using the equations 
+\begin_inset Formula $\eqref{eq:A11-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eqref{eq:A22(tau)-1}$
+\end_inset
+
+ on the equation 
+\begin_inset Formula $\eqref{eq:master equation polaron d}$
+\end_inset
+
+ with 
+\begin_inset Formula $\Lambda_{11}\left(\tau\right)\equiv\Lambda_{x}\left(\tau\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda{}_{22}\left(\tau\right)\equiv\Lambda_{y}\left(\tau\right)$
+\end_inset
+
+ we obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-\frac{{\rm i}}{2}\left[\delta'\sigma_{z}+\Omega_{r}\left(t\right)\sigma_{x},\rho_{S}\left(t\right)\right]-\frac{\Omega\left(t\right)}{4}\int_{0}^{t}{\rm d}\tau\Omega\left(t-\tau\right)\left(\left[\sigma_{x},\widetilde{\sigma_{x}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\Lambda_{x}\left(\tau\right)\right.\\
+ & \left.+\left[\sigma_{y},\widetilde{\sigma_{y}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\Lambda_{y}\left(\tau\right)+\left[\rho_{S}\left(t\right)\widetilde{\sigma_{x}}\left(t-\tau,t\right),\sigma_{x}\right]\Lambda_{x}\left(\tau\right)+\left[\rho_{S}\left(t\right)\widetilde{\sigma_{y}}\left(t-\tau,t\right),\sigma_{y}\right]\Lambda_{y}\left(\tau\right)\right).\label{eq:master equation polaron d-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As we can see 
+\begin_inset Formula $\left[A_{j},\widetilde{A_{i}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]^{\dagger}=\left[\rho_{S}\left(t\right)\widetilde{A_{i}}\left(t-\tau,t\right),A_{j}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda_{x}\left(\tau\right)=\Lambda_{x}\left(-\tau\right)$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Lambda_{y}\left(\tau\right)=\Lambda_{y}\left(-\tau\right)$
+\end_inset
+
+, so the result obtained is the same master equation 
+\begin_inset Formula $(21)$
+\end_inset
+
+ of the reference [2] extending the hermitian conjugate.
+\end_layout
+
+\begin_layout Subsection
+Time-Dependent Weak-Coupling Limit
+\end_layout
+
+\begin_layout Standard
+In order to prove that the master equation deduced reproduces the equation
+ 
+\begin_inset Formula $\left(S17\right)$
+\end_inset
+
+ of the reference 
+\begin_inset Formula $[3]$
+\end_inset
+
+ we will impose that 
+\begin_inset Formula $F\left(\omega\right)=0$
+\end_inset
+
+, so there is no transformation in this case.
+ As we can see from the matrix 
+\begin_inset Formula $\eqref{eq:correlation vp2011}$
+\end_inset
+
+ the only term that survives is 
+\begin_inset Formula $\Lambda_{33}\left(\tau\right)$
+\end_inset
+
+.
+ Taking 
+\begin_inset Formula $\bar{h}=1$
+\end_inset
+
+ the Hamiltonian of the reference can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H=\Delta|1\rangle\negmedspace\langle1|+\frac{\Omega\left(t\right)}{2}\left(|1\rangle\negmedspace\langle0|+|0\rangle\negmedspace\langle1|\right)+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}+|1\rangle\negmedspace\langle1|\sum_{\mathbf{k}}\left(g_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{\mathbf{k}}^{*}b_{\mathbf{k}}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The correlation functions are relevant if 
+\begin_inset Formula $F\left(\omega\right)=0$
+\end_inset
+
+, for the weak-coupling approximation we have: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Lambda_{33}\left(\tau\right)=\int_{0}^{\infty}{\rm d}\omega J\left(\omega\right)G_{+}\left(\tau\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In our case 
+\begin_inset Formula $A_{3}=\frac{\mathbb{I}+\sigma_{z}}{2}$
+\end_inset
+
+, the equation 
+\begin_inset Formula $\eqref{eq:master equation polaron d}$
+\end_inset
+
+ can be transformed in: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\rho_{S}}{{\rm d}t}=-{\rm i}\left[H_{S}\left(t\right),\rho_{S}\left(t\right))\right]-\sum_{w}\left(K_{33}\left(w,t\right)\left[A_{3},A_{3}\left(w\right)\rho_{S}\left(t\right)\right]+K_{33}^{*}\left(w,t\right)\left[\rho_{S}\left(t\right)A_{3}^{\dagger}\left(w\right),A_{3}\right]\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As the paper of refrence suggests we will consider that the quantum system
+ is in resonance, so 
+\begin_inset Formula $\Delta=0$
+\end_inset
+
+.
+ Furthemore the relaxation time of the bath is less than the evolution time
+ to be considered, so the frequency of the Rabi frequency of the laser can
+ be taken as constant and equal to 
+\begin_inset Formula $\widetilde{\Omega}$
+\end_inset
+
+.
+ To find the matrices 
+\begin_inset Formula $A_{3}\left(w\right)$
+\end_inset
+
+, we have to remember that 
+\begin_inset Formula $H_{S}=\frac{\Omega\left(t\right)}{2}\left(|1\rangle\negmedspace\langle0|+|0\rangle\negmedspace\langle1|\right)$
+\end_inset
+
+, this Hamiltonian with 
+\begin_inset Formula $\Omega\left(t\right)\simeq\widetilde{\Omega}$
+\end_inset
+
+ have the following eigenvalues and eigenvectors:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\lambda_{+}= & \frac{\widetilde{\Omega}}{2},\\
+\left|+\right\rangle = & \frac{1}{\sqrt{2}}\left(|1\rangle+|0\rangle\right),\label{eq:+}\\
+\lambda_{-}= & -\frac{\widetilde{\Omega}}{2},\\
+\left|-\right\rangle = & \frac{1}{\sqrt{2}}\left(|0\rangle-|1\rangle\right).\label{eq:-}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The decomposition matrices are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{3}\left(0\right) & =\frac{1}{2}|+\rangle\negmedspace\langle+|+\frac{1}{2}|-\rangle\negmedspace\langle-|\\
+ & =\frac{\mathbb{I}}{2},\\
+A_{3}\left(\eta\right) & =-\frac{1}{2}|-\rangle\negmedspace\langle+|\\
+ & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)}},\\
+A_{3}\left(-\eta\right) & =-\frac{1}{2}|+\rangle\negmedspace\langle-|\\
+ & =\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Neglecting the term proportional to the identity in the Hamiltonian we
+ obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i\frac{\widetilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-K_{33}\left(\widetilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]-K_{33}\left(-\widetilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\label{eq:Expanded weak coupling 0}\\
+ & -K_{33}^{*}\left(\widetilde{\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right]-K_{33}^{*}\left(-\widetilde{\Omega},t\right)\left[\rho_{S}\left(t\right)\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\frac{\sigma_{z}}{2}\right].\label{eq:Expanded weak coupling}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Calculating the response functions extending the upper limit of 
+\begin_inset Formula $\tau$
+\end_inset
+
+ to 
+\begin_inset Formula $\infty$
+\end_inset
+
+, we obtain:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+K_{33}\left(\widetilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm i}\widetilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
+ & =\pi J\left(\widetilde{\Omega}\right)\left(n\left(\widetilde{\Omega}\right)+1\right),\\
+K_{33}\left(-\widetilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm -i}\widetilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
+ & =\pi J\left(\widetilde{\Omega}\right)n\left(\widetilde{\Omega}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here we have used 
+\begin_inset Formula $\int_{0}^{\infty}{\rm d}s\:e^{\pm i\varepsilon s}=\pi\delta\left(\varepsilon\right)\pm{\rm i}\frac{{\rm V.P}.}{\varepsilon}$
+\end_inset
+
+, where 
+\begin_inset Formula ${\rm V.P.}$
+\end_inset
+
+ denotes the Cauchy's principal value.
+ These principal values are ignored because they lead to small renormalizations
+ of the Hamiltonian.
+ Furthermore we don't take account of value associated to the matrix 
+\begin_inset Formula $A_{3}\left(0\right)$
+\end_inset
+
+ because the spectral density 
+\begin_inset Formula $J\left(\omega\right)$
+\end_inset
+
+ is equal to zero when 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+.
+ Replacing in the equation 
+\begin_inset Formula $\eqref{eq:Expanded weak coupling 0}$
+\end_inset
+
+ lead us to obtain:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i\frac{\widetilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-\frac{\pi}{8}J\left(\widetilde{\Omega}\right)\left(\left(n\left(\widetilde{\Omega}\right)+1\right)\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]+n\left(\widetilde{\Omega}\right)\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\right)\\
+ & -\frac{\pi}{8}J\left(\widetilde{\Omega}\right)\left(\left(n\left(\widetilde{\Omega}\right)+1\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\sigma_{z}\right]+n\left(\widetilde{\Omega}\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\sigma_{z}\right]\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This is the same result than the equation 
+\begin_inset Formula $\left(S17\right)$
+\end_inset
+
+, so we have proved that our general master equation allows to reproduce
+ the results of the weak-coupling time-dependent.
+ Now the master equation in the evolution time is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\rho_{S}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i\frac{\Omega\!\left(t\right)}{2}}\left[\sigma_{x},\rho_{S}\!\left(t\right))\right]-\frac{\pi}{8}J\left(\Omega\!\left(t\right)\right)\left(\negmedspace\left(n\left(\Omega\!\left(t\right)\right)+1\right)\negmedspace\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\negmedspace\rho_{S}\!\left(t\right)\right]+n\left(\Omega\!\left(t\right)\right)\negmedspace\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\!\left(t\right)\right]\right)\\
+ & -\frac{\pi}{8}J\left(\Omega\left(t\right)\right)\left(\left(n\left(\Omega\left(t\right)\right)+1\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}+{\rm i}\sigma_{y}\right),\sigma_{z}\right]+n\left(\Omega\left(t\right)\right)\left[\rho_{S}\left(t\right)\left(\sigma_{z}-{\rm i}\sigma_{y}\right),\sigma_{z}\right]\right).
+\end{align}
 
 \end_inset
 
