@@ -1984,7 +1984,7 @@ B_{10}\left(t\right)\! & =\!{\rm exp}\left(\text{\chi}_{10}\left(t\right)\right)
 \xi^{+}\left(t,s\right)\! & =\!{\rm exp}\!\left(\!-\!\!\int_{0}^{\infty}\!\frac{\left|\left(\!\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,t\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,t\right)\!\right)\!{\rm exp}\!\left(i\omega\tau\right)+\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,s\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,s\right)\right|^{2}}{2\omega^{2}}\coth\!\left(\!\frac{\beta\omega}{2}\!\right)\!{\rm d}\omega\right),\\
 \xi^{-}\left(t,s\right)\! & =\!{\rm exp}\!\left(\!-\!\!\int_{0}^{\infty}\!\frac{\left|\left(\!\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,t\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,t\right)\!\right)\!{\rm exp}\!\left(i\omega\tau\right)+\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,s\right)\!-\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,s\right)\right|^{2}}{2\omega^{2}}\!\coth\!\left(\!\frac{\beta\omega}{2}\!\right)\!{\rm d}\omega\right),\\
 Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,t\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,t\right)}{\omega},\\
-\mathscr{B}_{xx}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(s\right),\\
+\mathscr{B}_{xx}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left(e^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(s\right)}\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(s\right),\\
 \mathscr{B}_{yy}\left(t,s\right)\! & =\!-\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\!\left(t,s\right)-\left({\rm exp}\left(\text{\chi}_{10}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\!\left(t,s\right)\right)+B_{01}^{\Im}\left(t\right)B_{10}^{\Im}\left(s\right),\\
 \mathscr{B}_{xy}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)\right)+B_{10}^{\Re}\left(t\right)B_{10}^{\Im}\left(s\right),\\
 \mathscr{B}_{yx}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Im}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)\right)+B_{10}^{\Im}\left(t\right)B_{10}^{\Re}\left(s\right),\\
@@ -1997,10 +1997,6 @@ Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\o
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
