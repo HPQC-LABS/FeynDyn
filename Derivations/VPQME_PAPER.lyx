@@ -1199,7 +1199,7 @@ noindent
 
  The effective Hamiltonian is expanded in a series of terms of increasing
  order in time 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)=H_{{\rm Eff}}^{\left(0\right)}\left(t\right)+H_{{\rm Eff}}^{\left(1\right)}\left(t\right)+H_{{\rm Eff}}^{\left(2\right)}\left(t\right)+...$
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)=H_{{\rm eff}}^{\left(0\right)}\left(t\right)+H_{{\rm eff}}^{\left(1\right)}\left(t\right)+H_{{\rm eff}}^{\left(2\right)}\left(t\right)+...$
 \end_inset
 
 , so we can write:
@@ -1208,7 +1208,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-U\left(t\right)={\rm exp}\left(-{\rm i}t\left(H_{{\rm Eff}}^{\left(0\right)}\left(t\right)+H_{{\rm Eff}}^{\left(1\right)}\left(t\right)+H_{{\rm Eff}}^{\left(2\right)}\left(t\right)+...\right)\right).
+U\left(t\right)={\rm exp}\left(-{\rm i}t\left(H_{{\rm eff}}^{\left(0\right)}\left(t\right)+H_{{\rm eff}}^{\left(1\right)}\left(t\right)+H_{{\rm eff}}^{\left(2\right)}\left(t\right)+...\right)\right).
 \end{equation}
 
 \end_inset
@@ -1247,9 +1247,9 @@ noindent
 \color none
 \begin_inset Formula 
 \begin{align}
-H_{{\rm Eff}}^{\left(0\right)}\left(t\right) & =\frac{1}{t}\int_{0}^{t}\overline{H_{\bar{S}}}\left(t'\right){\rm d}t',\\
-H_{{\rm Eff}}^{\left(1\right)}\left(t\right) & =-\frac{{\rm i}}{2t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\\
-H_{{\rm Eff}}^{\left(2\right)}\left(t\right) & =\frac{{\rm 1}}{6t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\int_{0}^{t''}{\rm d}t'''\left(\left[\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'''\right)\right]+\left[\left[\overline{H_{\bar{S}}}\left(t'''\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'\right)\right]\right).
+H_{{\rm eff}}^{\left(0\right)}\left(t\right) & =\frac{1}{t}\int_{0}^{t}\overline{H_{\bar{S}}}\left(t'\right){\rm d}t',\\
+H_{{\rm eff}}^{\left(1\right)}\left(t\right) & =-\frac{{\rm i}}{2t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\\
+H_{{\rm eff}}^{\left(2\right)}\left(t\right) & =\frac{{\rm 1}}{6t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\int_{0}^{t''}{\rm d}t'''\left(\left[\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'''\right)\right]+\left[\left[\overline{H_{\bar{S}}}\left(t'''\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'\right)\right]\right).
 \end{align}
 
 \end_inset
@@ -1275,7 +1275,7 @@ noindent
 \end_inset
 
  using the expansion 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)$
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
 \end_inset
 
  is:
@@ -1310,7 +1310,7 @@ noindent
 \end_inset
 
  belongs to the set of differences of eigenvalues of 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)$
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
 \end_inset
 
  that depends of the time.
@@ -1425,11 +1425,11 @@ noindent
 
  belongs to the set of the differences of the eigenvalues of the Hamiltonians
  
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)$
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
 \end_inset
 
  and 
-\begin_inset Formula $H_{{\rm Eff}}\left(t-\tau\right)$
+\begin_inset Formula $H_{{\rm eff}}\left(t-\tau\right)$
 \end_inset
 
  respectively.
@@ -1470,7 +1470,7 @@ noindent
 \end_inset
 
  represents the time, formed by the time-dependent eigenvectors of 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)$
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
 \end_inset
 
  in the following way:
@@ -1506,11 +1506,11 @@ noindent
 
  because the normalized eigenvectors of a hermitic matrix form an ortonormal
  system, where 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)\left|+_{t}\right\rangle =\lambda_{+}\left(t\right)\left|+_{t}\right\rangle $
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)\left|+_{t}\right\rangle =\lambda_{+}\left(t\right)\left|+_{t}\right\rangle $
 \end_inset
 
 and 
-\begin_inset Formula $H_{{\rm Eff}}\left(t\right)\left|-_{t}\right\rangle =\lambda_{-}\left(t\right)\left|-_{t}\right\rangle $
+\begin_inset Formula $H_{{\rm eff}}\left(t\right)\left|-_{t}\right\rangle =\lambda_{-}\left(t\right)\left|-_{t}\right\rangle $
 \end_inset
 
 .
