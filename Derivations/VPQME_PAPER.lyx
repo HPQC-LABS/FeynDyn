@@ -1931,6 +1931,12 @@ noindent
 \begin_layout Standard
 
 \size footnotesize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula 
 \begin{align}
 \text{\chi}_{10}\left(t\right)\! & =\!\int_{0}^{\infty}\frac{\sqrt{J_{1}^{*}\left(\omega\right)J_{0}\left(\omega\right)}F_{1}^{*}\left(\omega,t\right)F_{0}\left(\omega,t\right)-\sqrt{J_{1}\left(\omega\right)J_{0}^{*}\left(\omega\right)}F_{1}\left(\omega,t\right)F_{0}^{*}\left(\omega,t\right)}{2\omega^{2}}{\rm d}\omega,\\
@@ -1962,17 +1968,39 @@ Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\o
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \size footnotesize
 \begin_inset Formula 
 \begin{align}
-\left\langle \!\widetilde{B_{y}}\left(t\right)\!\widetilde{B_{iz}}\!\left(s\right)\!\right\rangle _{B}\! & =\!\mathscr{B}_{2n}\left(t,s\right),\,\text{(\ensuremath{n\in\left\{ 3,6\right\} })}\\
-\! & =\!{\rm i}B_{10}^{\Re}\left(t\right)\!\int_{0}^{\infty}\!\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,s\right)\right)Q\left(\omega,t\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,s\right)\right)Q^{*}\left(\omega,t\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right)\!{\rm d}\omega.
+\text{\chi}_{10}\left(t\right)\! & =\!\int_{0}^{\infty}\frac{\sqrt{J_{1}^{*}\left(\omega\right)J_{0}\left(\omega\right)}F_{1}^{*}\left(\omega,t\right)F_{0}\left(\omega,t\right)-\sqrt{J_{1}\left(\omega\right)J_{0}^{*}\left(\omega\right)}F_{1}\left(\omega,t\right)F_{0}^{*}\left(\omega,t\right)}{2\omega^{2}}{\rm d}\omega,\\
+U_{10}\left(t,s\right)\! & =\!{\rm exp}\left(i\Im\left(\int_{0}^{\infty}\frac{\left(\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,t\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,t\right)\right)\left(\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,s\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,s\right)\right)^{*}{\rm exp}\left(i\omega\tau\right)}{\omega^{2}}{\rm d}\omega\right)\right),\\
+B_{10}\left(t\right)\! & =\!{\rm exp}\left(\text{\chi}_{10}\left(t\right)\right){\rm exp}\left(-\frac{1}{2}\int_{0}^{\infty}\left|\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,t\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,t\right)}{\omega}\right|^{2}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega\right),\\
+\xi^{+}\left(t,s\right)\! & =\!{\rm exp}\!\left(\!-\!\!\int_{0}^{\infty}\!\frac{\left|\left(\!\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,t\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,t\right)\!\right)\!{\rm exp}\!\left(i\omega\tau\right)+\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,s\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,s\right)\right|^{2}}{2\omega^{2}}\coth\!\left(\!\frac{\beta\omega}{2}\!\right)\!{\rm d}\omega\right),\\
+\xi^{-}\left(t,s\right)\! & =\!{\rm exp}\!\left(\!-\!\!\int_{0}^{\infty}\!\frac{\left|\left(\!\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,t\right)-\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,t\right)\!\right)\!{\rm exp}\!\left(i\omega\tau\right)+\sqrt{\!J_{0}\!\left(\omega\right)}F_{0}\!\left(\omega,s\right)\!-\sqrt{\!J_{1}\!\left(\omega\right)}F_{1}\!\left(\omega,s\right)\right|^{2}}{2\omega^{2}}\!\coth\!\left(\!\frac{\beta\omega}{2}\!\right)\!{\rm d}\omega\right),\\
+Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,t\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,t\right)}{\omega},\\
+\mathscr{B}_{xx}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(s\right),\\
+\mathscr{B}_{yy}\left(t,s\right)\! & =\!-\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}U_{10}\left(t,s\right)\xi^{+}\!\left(t,s\right)-\left({\rm exp}\left(\text{\chi}_{10}\!\left(t\right)+\text{\chi}_{01}\!\left(s\right)\right)\right)^{\Re}U_{10}^{*}\left(t,s\right)\xi^{-}\!\left(t,s\right)\right)+B_{01}^{\Im}\left(t\right)B_{10}^{\Im}\left(s\right),\\
+\mathscr{B}_{xy}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)\right)+B_{10}^{\Re}\left(t\right)B_{10}^{\Im}\left(s\right),\\
+\mathscr{B}_{yx}\left(t,s\right)\! & =\!\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Im}U_{10}^{*}\left(t,s\right)\xi^{-}\left(t,s\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}\left(t,s\right)\xi^{+}\left(t,s\right)\right)+B_{10}^{\Im}\left(t\right)B_{10}^{\Re}\left(s\right),\\
+\mathscr{B}_{iz,jz}\left(t,s\right)\! & =\!{\scriptstyle \int_{0}^{\infty}\left(\sqrt{J_{i}\left(\omega\right)J_{j}^{*}\left(\omega\right)}\left(1-F_{i}\left(\omega,t\right)\right)\left(1-F_{j}^{*}\left(\omega,s\right)\right)e^{{\rm i}\omega\tau}N\left(\omega\right)+\sqrt{J_{i}^{*}\left(\omega\right)J_{j}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t\right)\right)\left(1-F_{j}\left(\omega,s\right)\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,}\ensuremath{i,j\in\left\{ 3,6\right\} }\\
+\mathscr{B}_{iz,x}\left(t,s\right)\! & =\!{\rm i}B_{01}^{\Im}\left(s\right)\!\int_{0}^{\infty}\!\left(\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,t\right)\right)Q^{*}\left(\omega,s\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t\right)\right)Q\left(\omega,s\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right)\!{\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} }\\
+\mathscr{B}_{x,iz}\left(t,s\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t\right)\!\int_{0}^{\infty}\!\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,s\right)\right)Q\left(\omega,t\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,s\right)\right)Q^{*}\left(\omega,t\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right)\!{\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} }\\
+\mathscr{B}_{iz,y}\left(t,s\right)\! & =\!{\rm i}B_{10}^{\Re}\left(s\right)\!\int_{0}^{\infty}\!\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,s\right)\right)Q\left(\omega,s\right)\left(N\left(\omega\right)+1\right)e^{-{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,s\right)\right)Q^{*}\left(\omega,s\right)e^{{\rm i}\omega\tau}N\left(\omega\right)\right)\!{\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} }\\
+\mathscr{B}_{y,iz}\left(t,s\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t\right)\!\int_{0}^{\infty}\!\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,s\right)\right)Q\left(\omega,t\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,s\right)\right)Q^{*}\left(\omega,t\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right)\!{\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} }.
 \end{align}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
