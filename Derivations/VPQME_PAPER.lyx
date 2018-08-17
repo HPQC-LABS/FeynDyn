@@ -18,7 +18,7 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
-\usepackage[mathscr]{eucal}
+%\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -59,7 +59,7 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
+\cite_engine natbib
 \cite_engine_type default
 \biblio_style plain
 \use_bibtopic false
@@ -104,7 +104,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -125,7 +124,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1111,7 +1109,7 @@ noindent
 
 \end_inset
 
- For returning the Schrödinger picture we define the following notation:
+
 \end_layout
 
 \begin_layout Standard
@@ -2067,7 +2065,6 @@ noindent
 \end_inset
 
  Finally we end up with our final master equation in the variationally optimized
- frame in the Schrödinger picture: 
 \end_layout
 
 \begin_layout Standard
