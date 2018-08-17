@@ -750,12 +750,33 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \widetilde{O}\left(t\right) & \equiv U^{\dagger}\left(t\right)O\left(t\right)U\left(t\right),\\
-U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right).\label{time ordering evolution}
+U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right)\label{time ordering evolution}\\
+ & ={\rm exp}\left(-{\rm i}\overline{H_{T,{\rm eff}}}\left(t\right)\right),{\rm \,where}\\
+H_{X,{\rm eff}}(t) & \equiv\frac{1}{t}\int_{0}^{t}H_{X}\left(t^{\prime}\right){\rm d}t^{\prime}-\frac{{\rm i}}{2t}\int_{0}^{t}\int_{0}^{t^{\prime}}\left[H_{X}\left(t^{\prime}\right),H_{X}\left(t^{\prime\prime}\right)\right]{\rm {\rm d}}t^{\prime}{\rm d}t^{\prime\prime}
 \end{align}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $+\frac{{\rm 1}}{6t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\int_{0}^{t''}{\rm d}t'''\left(\left[\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'''\right)\right]+\left[\left[\overline{H_{\bar{S}}}\left(t'''\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'\right)\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1124,6 +1145,26 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)}{{\rm d}t}=-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(2\mathscr{B^{\Re}}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}^{\Re}\left(t\right),\widetilde{A_{j}}^{\Re}\left(s\right)\widetilde{\overline{\rho_{\bar{S}}}}^{\Re}\left(t\right)\right]\right)\right){\rm d}s.\label{master with B_ij interaction-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
 \begin{align}
  & a[A,AB]-a^{*}[A,BA]\\
  & a(AAB-ABA)-a^{*}(ABA-BAA)\\
@@ -1229,6 +1270,22 @@ noindent
 \end_layout
 
 \begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1249,7 +1306,7 @@ noindent
 , so we can write:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 U\left(t\right)={\rm exp}\left(-{\rm i}t\left(H_{{\rm eff}}^{\left(0\right)}\left(t\right)+H_{{\rm eff}}^{\left(1\right)}\left(t\right)+H_{{\rm eff}}^{\left(2\right)}\left(t\right)+...\right)\right).
@@ -1260,7 +1317,7 @@ U\left(t\right)={\rm exp}\left(-{\rm i}t\left(H_{{\rm eff}}^{\left(0\right)}\lef
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1276,7 +1333,7 @@ noindent
  The lowest degree terms are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -1301,6 +1358,11 @@ H_{{\rm eff}}^{\left(2\right)}\left(t\right) & =\frac{{\rm 1}}{6t}\int_{0}^{t}{\
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -1314,12 +1376,16 @@ noindent
 
 \end_inset
 
- The Fourier decomposition of the operator 
+ The Fourier decomposition of the operators 
 \begin_inset Formula $\widetilde{A_{i}}\left(t\right)$
 \end_inset
 
+ and 
+\begin_inset Formula $\widetilde{A_{j}}\left(t-\tau,t\right)$
+\end_inset
+
  using the expansion 
-\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
+\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
 \end_inset
 
  is:
@@ -1327,69 +1393,22 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\widetilde{A_{i}}\left(t\right)=\sum_{w\left(t\right)}e^{-{\rm i}tw\left(t\right)}A_{i}\left(w\left(t\right)\right).\label{eq:Fourier decomposition}
-\end{equation}
+\begin{align}
+\widetilde{A_{i}}\left(t\right) & =\sum_{w\left(t\right)}e^{-{\rm i}tw\left(t\right)}A_{i}\left(w\left(t\right)\right).\label{eq:Fourier decomposition}\\
+\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right),
+\end{align}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- 
+where 
 \begin_inset Formula $w\left(t\right)$
 \end_inset
 
  belongs to the set of differences of eigenvalues of 
-\begin_inset Formula $H_{{\rm eff}}\left(t\right)$
+\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
 \end_inset
 
- that depends of the time.
- As we can see the decomposition matrices are time-dependent as well.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Extending the Fourier decomposition to the matrix 
-\begin_inset Formula $\widetilde{A_{j}}\left(t-\tau,t\right)$
-\end_inset
-
- we obtain:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right).\label{eq:double fourier}
-\end{equation}
-
-\end_inset
-
-
+.
 \end_layout
 
 \begin_layout Standard
