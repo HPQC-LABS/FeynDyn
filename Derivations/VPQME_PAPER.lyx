@@ -574,7 +574,7 @@ noindent
 \end_inset
 
  The true free energy 
-\begin_inset Formula $A\left(t\right)$
+\begin_inset Formula $E_{{\rm Free}}\left(t\right)$
 \end_inset
 
  is bounded by the Bogoliubov inequality:
@@ -583,7 +583,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\left(t\right)\le A_{{\rm {\rm B}}}\left(t\right)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right).
+E_{{\rm Free}}\left(t\right)\le E_{{\rm Free,B}}\left(t\right)\equiv-\frac{1}{\beta}\ensuremath{{\rm ln}}\left({\rm \text{Tr}}\left(e^{-\beta\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right)\right)+\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}+O\left(\left\langle \overline{H_{\bar{I}}}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{S}}\left(t\right)+H_{\bar{B}}}}\right).
 \end{equation}
 
 \end_inset
@@ -1088,10 +1088,54 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)}{{\rm d}t}=-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\right]-\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\right]\right)\right){\rm d}s.\label{master with B_ij interaction}
+\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)}{{\rm d}t}=-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\right]-\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\right]\right)\right){\rm d}s.\label{master with B_ij interaction-1}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)}{{\rm d}t}=-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\right]+\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{\bar{S}}}}\left(t\right)\right]\right)^{\dagger}\right)\right){\rm d}s.\label{master with B_ij interaction}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+ & a[A,AB]-a^{*}[A,BA]\\
+ & a(AAB-ABA)-a^{*}(ABA-BAA)\\
+ & a(AAB-ABA)-a^{*}((ABA)^{\dagger}-(AAB)^{\dagger})\\
+ & a(AAB-ABA)+a^{*}((AAB)^{\dagger}-(ABA)^{\dagger})\\
+ & a(AAB-ABA)+a^{*}((AAB)^{\dagger}-(ABA)^{\dagger})
+\end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
