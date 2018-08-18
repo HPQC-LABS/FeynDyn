@@ -2666,8 +2666,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w\right)}{\rm d\tau}\\
- & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
+K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ijw}\left(t\right).
 \end{align}
 
@@ -2695,22 +2694,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-A_{1}\left(0\right) & =\sin\left(2\theta\right)\left(|+\rangle\negmedspace\langle+|-|-\rangle\negmedspace\langle-|\right),\\
-A_{1}\left(\eta\right) & =\cos\left(2\theta\right)|-\rangle\negmedspace\langle+|,\\
+A_{1}\left(0\right) & =\sin\left(2\theta\right)\left(|\overline{H_{S,1}}\rangle\negmedspace\langle\overline{H_{S,1}}|-|\overline{H_{S,0}}\rangle\negmedspace\langle\overline{H_{S,0}}|\right),\\
+A_{1}\left(\eta\right) & =\cos\left(2\theta\right)|\overline{H_{S,0}}\rangle\negmedspace\langle\overline{H_{S,1}}|,\\
 A_{2}\left(0\right) & =0,\\
-A_{2}\left(\eta\right) & ={\rm i|-\rangle\negmedspace\langle+|},
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-A_{3}\left(0\right) & =\cos^{2}\left(\theta\right)|+\rangle\negmedspace\langle+|+\sin^{2}\left(\theta\right)|-\rangle\negmedspace\langle-|,\\
-A_{3}\left(\eta\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)|-\rangle\negmedspace\langle+|.
+A_{2}\left(\eta\right) & ={\rm i|\overline{H_{S,0}}\rangle\negmedspace\langle\overline{H_{S,1}}|},\\
+A_{3}\left(0\right) & =\cos^{2}\left(\theta\right)|\overline{H_{S,1}}\rangle\negmedspace\langle\overline{H_{S,1}}|+\sin^{2}\left(\theta\right)|\overline{H_{S,0}}\rangle\negmedspace\langle\overline{H_{S,0}}|,\\
+A_{3}\left(\eta\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)|\overline{H_{S,0}}\rangle\negmedspace\langle\overline{H_{S,1}}|.
 \end{align}
 
 \end_inset
@@ -2736,7 +2725,27 @@ noindent
 \end_inset
 
  characterises the tilt of the system eigenstates away from the x-axis in
- the variational frame.
+ the variational frame,
+\begin_inset Formula $\left|\overline{H_{S,1}}\right\rangle ,\left|\overline{H_{S,0}}\right\rangle $
+\end_inset
+
+ are the eigenstates of 
+\begin_inset Formula $\overline{H_{S}}$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{0}$
+\end_inset
+
+ respectively and 
+\begin_inset Formula $\eta=\lambda_{1}-\lambda_{0}$
+\end_inset
+
+ is the difference of eigenvalues.
  Also we can verify that 
 \begin_inset Formula $A_{j}\left(w\right)=A_{j}^{\dagger}\left(-w\right)$
 \end_inset
@@ -2856,9 +2865,11 @@ noindent
 \end_layout
 
 \begin_layout Standard
+
+\size footnotesize
 \begin_inset Formula 
 \begin{equation}
-{\scriptstyle \dot{\rho}\left(t\right)}={\scriptstyle -{\rm i}\left[H,\rho\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jw}e^{V}\rho\left(t\right)-\rho\left(t\right)e^{-V}A_{jw}^{\dagger}e^{V}\right]+{\rm i}K_{ijw}^{\Im}\left(t\right)\left[e^{-V}A_{i}e^{V},e^{-V}A_{jw}e^{V}\rho\left(t\right)+\rho\left(t\right)e^{-V}A_{jw}^{\dagger}e^{V}\right]\right)}.
+\dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
 \end{equation}
 
 \end_inset
@@ -3120,7 +3131,7 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \begin{pmatrix}A\\
 B\left(t\right)\\
 C\left(t\right)
@@ -3128,7 +3139,7 @@ C\left(t\right)
 B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
 \frac{\Omega\left(t\right)}{2} & \frac{\Omega\left(t\right)}{2} & 0 & 0 & 0 & 1
 \end{pmatrix}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -3174,10 +3185,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\Lambda_{11}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{x}}\left(\tau\right)\widetilde{B_{x}}\left(0\right)\rho_{B}\right)\label{eq:A11-1}\\
- & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right),\label{eq:A11(tau)-1}\\
-\Lambda{}_{22}\left(\tau\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{y}}\left(\tau\right)\widetilde{B_{y}}\left(0\right)\rho_{B}\right)\\
- & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right).\label{eq:A22(tau)-1}
+\Lambda_{11}\left(\tau\right) & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}-2\right),\label{eq:A11-1}\\
+\Lambda_{22}\left(\tau\right) & =\frac{B^{2}}{2}\left({\rm e}^{\phi\left(\tau\right)}+{\rm e}^{-\phi\left(\tau\right)}\right).\label{eq:A22(tau)-1}
 \end{align}
 
 \end_inset
@@ -3272,7 +3281,7 @@ noindent
 \begin_inset Formula $[2]$
 \end_inset
 
- and 
+, also 
 \begin_inset Formula $\Lambda_{i}\left(\tau\right)=\Lambda_{i}\left(-\tau\right)$
 \end_inset
 
@@ -3562,16 +3571,14 @@ noindent
 \begin_inset Formula $\Omega\left(t\right)\simeq\widetilde{\Omega}$
 \end_inset
 
- have the following eigenvalues and eigenvectors:
+ have the following eigenvalues and eigenstates
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\lambda_{+}= & \frac{\widetilde{\Omega}}{2},\\
-\left|+\right\rangle = & \frac{1}{\sqrt{2}}\left(|1\rangle+|0\rangle\right),\label{eq:+}\\
-\lambda_{-}= & -\frac{\widetilde{\Omega}}{2},\\
-\left|-\right\rangle = & \frac{1}{\sqrt{2}}\left(|0\rangle-|1\rangle\right).\label{eq:-}
+\left|H_{S,1}\right\rangle = & \frac{1}{\sqrt{2}}\left(|1\rangle+|0\rangle\right),\\
+\left|H_{S,0}\right\rangle = & \frac{1}{\sqrt{2}}\left(|0\rangle-|1\rangle\right).
 \end{align}
 
 \end_inset
@@ -3592,18 +3599,43 @@ noindent
 
 \end_inset
 
- The decomposition matrices are
+ where 
+\begin_inset Formula $\lambda_{1}=\frac{\widetilde{\Omega}}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{0}=-\frac{\widetilde{\Omega}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The decomposition matrices are:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-A_{3}\left(0\right) & =\frac{1}{2}|+\rangle\negmedspace\langle+|+\frac{1}{2}|-\rangle\negmedspace\langle-|\\
- & =\frac{\mathbb{I}}{2},\\
-A_{3}\left(\eta\right) & =-\frac{1}{2}|-\rangle\negmedspace\langle+|\\
- & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)}},\\
-A_{3}\left(-\eta\right) & =-\frac{1}{2}|+\rangle\negmedspace\langle-|\\
- & =\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right).
+A_{3}\left(0\right) & =\frac{\mathbb{I}}{2},\\
+A_{3}\left(\eta\right) & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)}},\\
+A_{3}\left(-\eta\right) & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)}},
 \end{align}
 
 \end_inset
@@ -3667,10 +3699,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-K_{33}\left(\widetilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm i}\widetilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
- & =\pi J\left(\widetilde{\Omega}\right)\left(n\left(\widetilde{\Omega}\right)+1\right),\\
-K_{33}\left(-\widetilde{\Omega}\right) & =\int_{0}^{\infty}\int_{0}^{\infty}J\left(\omega\right)G_{+}\left(\tau\right)e^{{\rm -i}\widetilde{\Omega}\tau}{\rm d}\tau{\rm d}\omega\\
- & =\pi J\left(\widetilde{\Omega}\right)n\left(\widetilde{\Omega}\right).
+K_{33}\left(\widetilde{\Omega}\right) & =\pi J\left(\widetilde{\Omega}\right)\left(n\left(\widetilde{\Omega}\right)+1\right),\\
+K_{33}\left(-\widetilde{\Omega}\right) & =\pi J\left(\widetilde{\Omega}\right)n\left(\widetilde{\Omega}\right).
 \end{align}
 
 \end_inset
