@@ -18,6 +18,11 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+
+%\usepackage{unicode-math}
+\setmathfont{XITS Math}
+\setmathfont[version=setB,StylisticSet=1]{XITS Math}
+\mathversion{setB}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -59,8 +64,8 @@
 \use_package stmaryrd 1
 \use_package undertilde 1
 \cite_engine natbib
-\cite_engine_type default
-\biblio_style plain
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -103,7 +108,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -124,7 +128,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1450,6 +1453,10 @@ where
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1465,7 +1472,7 @@ noindent
  Let's define:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\prime}}\left(t-\tau,t\right).
@@ -1476,7 +1483,7 @@ A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\p
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1492,7 +1499,7 @@ noindent
  So we can show that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double fourier}
@@ -1503,7 +1510,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1534,6 +1541,11 @@ noindent
 \end_inset
 
  respectively.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
