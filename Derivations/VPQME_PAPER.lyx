@@ -23,7 +23,6 @@
 %\setmathfont{XITS Math}
 %\setmathfont[version=setB,StylisticSet=1]{XITS Math}
 %\mathversion{setB}
-\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -109,6 +108,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -129,6 +129,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -2225,7 +2226,7 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\label{deduced equation}\\
-\dot{\rho} & =-{\rm i}\left[\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\rho\right]-\left[\rho\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)
+\dot{\rho} & =-{\rm i}\left[H_{\bar{S}}\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\rho\right]-\left[\rho\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)
 \end{align}
 
 \end_inset
@@ -2778,6 +2779,13 @@ noindent
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2793,7 +2801,7 @@ noindent
  We get:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
@@ -2804,7 +2812,7 @@ K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2825,7 +2833,7 @@ noindent
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}wt}A_{j}\left(w\right).
@@ -2836,7 +2844,43 @@ U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}w
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The response function is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ijw}\left(t\right)=\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2879,7 +2923,7 @@ noindent
  to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
@@ -2891,7 +2935,7 @@ K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2907,7 +2951,7 @@ noindent
  The Fourier decomposition matrices for this case are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{1}\left(0\right) & =\sin\left(2\theta\right)\left(\left|\overline{H_{S,1}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|-\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,0}}\right|\right),\\
@@ -2923,7 +2967,7 @@ A_{3}\left(\eta\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)\left|\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2966,6 +3010,15 @@ noindent
 \begin_inset Formula $A_{j}\left(w\right)=A_{j}^{\dagger}\left(-w\right)$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 .
  Defining 
 \begin_inset Formula $A_{j}\left(w\right)\equiv A_{jw}$
@@ -2986,6 +3039,10 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3001,7 +3058,7 @@ noindent
  The spectral density in this case is:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 J\left(\omega\right) & =\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
@@ -3013,7 +3070,7 @@ v_{\mathbf{k}}\left(t\right) & =g_{\mathbf{k}}F\left(\omega_{\mathbf{k}},t\right
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3033,7 +3090,7 @@ noindent
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \Lambda\!\left(\tau\right)\!=\begin{pmatrix}\frac{\Omega_{r}^{2}}{4}\left(\cosh\!\left(\phi\!\left(\tau\right)\right)-1\right) & 0 & 0\\
@@ -3047,7 +3104,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3069,7 +3126,10 @@ noindent
 \end_inset
 
  defines the phonon propagator.
- Applying the inverse transformation to the equation 
+\end_layout
+
+\begin_layout Plain Layout
+Applying the inverse transformation to the equation 
 \begin_inset Formula $\eqref{master time ind}$
 \end_inset
 
@@ -3080,13 +3140,18 @@ noindent
  then:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size footnotesize
 \begin_inset Formula 
 \begin{equation}
 \dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3132,6 +3197,126 @@ noindent
 \begin{equation}
 H=\left(\delta+\sum_{\mathbf{k}}\left(g_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+g_{\mathbf{k}}^{*}b_{\mathbf{k}}\right)\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega\left(t\right)}{2}\sigma_{x}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}.\label{eq:time dependent polaron}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The spectral density in this case is:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+J\left(\omega\right) & =\sum_{\mathbf{k}}\left|g_{\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
+v_{\mathbf{k}}\left(t\right) & =g_{\mathbf{k}}F\left(\omega_{\mathbf{k}},t\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The relevant correlation functions are given by the matrix 
+\begin_inset Formula $\Lambda\left(\tau\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\Lambda\!\left(\tau\right)\!=\begin{pmatrix}\frac{\Omega_{r}^{2}}{4}\left(\cosh\!\left(\phi\!\left(\tau\right)\right)-1\right) & 0 & 0\\
+0 & \frac{\Omega_{r}^{2}}{4}\sinh\!\left(\phi\!\left(\tau\right)\right) & -\frac{\Omega_{r}}{2}\!\int_{0}^{\infty}\!{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)\!{\rm i}G_{-}\!\left(\tau\right)\\
+0 & \frac{\Omega_{r}}{2}\int_{0}^{\infty}{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}\!F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)^{2}\!G_{+}\!\left(\tau\right)
+\end{pmatrix}.\label{eq:correlation vp2011-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
+\begin_inset Formula $G_{\pm}\left(\omega,\tau\right)=e^{{\rm i}\omega\tau}N\left(\omega\right)+e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}G_{+}\left(\omega,\tau\right){\rm d}\omega$
+\end_inset
+
+ defines the phonon propagator.
+\end_layout
+
+\begin_layout Plain Layout
+Applying the inverse transformation to the equation 
+\begin_inset Formula $\eqref{master time ind}$
+\end_inset
+
+ and using the fact that for the time-independent model we have 
+\begin_inset Formula $V\left(t\right)=V$
+\end_inset
+
+ then:
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Formula 
+\begin{equation}
+\dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3235,6 +3420,10 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3280,7 +3469,7 @@ noindent
  is equal to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \overline{H_{\bar{S}}}\left(t\right)=\frac{\delta'}{2}\sigma_{z}+\frac{B\sigma_{x}}{2}\Omega\left(t\right).
@@ -3334,7 +3523,11 @@ noindent
 \end_inset
 
  doesn't depend of the time.
- Writing the interaction Hamiltonian 
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Writing the interaction Hamiltonian 
 \begin_inset Formula $\eqref{eq:Hi polaron}$
 \end_inset
 
@@ -3342,10 +3535,10 @@ noindent
 \begin_inset Formula $\eqref{Hi bar}$
 \end_inset
 
- allow us to to write 
+ allow us to to write:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \begin{pmatrix}A\\
@@ -3356,6 +3549,11 @@ B_{x} & B_{y} & B_{z} & B_{y} & B_{x} & 0\\
 \frac{\Omega\left(t\right)}{2} & \frac{\Omega\left(t\right)}{2} & 0 & 0 & 0 & 1
 \end{pmatrix}.
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3383,11 +3581,7 @@ noindent
 \begin_inset Formula $F\left(\omega\right)=1$
 \end_inset
 
- and using the matrix 
-\begin_inset Formula $\eqref{eq:correlation vp2011}$
-\end_inset
-
-  we can deduce that the only terms that survive are 
+, we can deduce that the only terms that survive are 
 \begin_inset Formula $\Lambda_{11}\left(\tau\right)$
 \end_inset
 
@@ -3411,6 +3605,113 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ Let 
+\begin_inset Formula $\delta+R_{1}=\delta'$
+\end_inset
+
+, now taking the equation 
+\begin_inset Formula $\eqref{Hs polaron}$
+\end_inset
+
+ with 
+\begin_inset Formula $\text{\ensuremath{\delta}'\left|1\right\rangle \negmedspace\!\left\langle 1\right|=\ensuremath{\frac{\delta'}{2}\sigma_{z}+\frac{\delta'}{2}\mathbb{I}}}$
+\end_inset
+
+ help us to reproduce the hamiltonian of the reference [2] because for the
+ time evolution the term proportional to the identity is negligible, so
+ 
+\begin_inset Formula $\overline{H_{\bar{S}}}\left(t\right)$
+\end_inset
+
+ is equal to:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\overline{H_{\bar{S}}}\left(t\right)=\frac{\delta'}{2}\sigma_{z}+\frac{B\sigma_{x}}{2}\Omega\left(t\right).
+\end{equation}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As we can see the function 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $B$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is a time-independent function because we consider that 
+\begin_inset Formula $g_{\mathbf{k}}$
+\end_inset
+
+ doesn't depend of the time.
+ 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3426,7 +3727,7 @@ noindent
  The phonon propagator for this case is:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}G_{+}\left(\tau\right){\rm d\omega}.\label{eq:phonon propagator}
@@ -3437,7 +3738,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3461,7 +3762,7 @@ noindent
  can be written as:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \phi\left(\tau\right)=\int_{0}^{\infty}\frac{J\left(\omega\right)}{\omega^{2}}\left(\coth\left(\frac{\beta\omega}{2}\right)\cos\left(\omega\tau\right)-i\sin\left(\omega\tau\right)\right){\rm d\omega}.
@@ -3472,7 +3773,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3513,12 +3814,17 @@ noindent
  is:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\frac{\delta'}{2}\sigma_{z}+\frac{\Omega_{r}\left(t\right)\sigma_{x}}{2},\rho_{S}\left(t\right)\right]-\sum_{i}\int_{0}^{t}{\rm d}\tau\left(C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(\tau\right)\left[A_{i},\widetilde{A_{i}}\left(t-\tau,t\right)\rho_{S}\left(t\right)\right]\right.\\
  & \left.+C_{i}\left(t\right)C_{i}\left(t-\tau\right)\Lambda_{ii}\left(-\tau\right)\left[\rho_{S}\left(t\right)\widetilde{A_{i}}\left(t-\tau,t\right),A_{i}\right]\right).\label{eq:master equation polaron d}
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3544,26 +3850,6 @@ noindent
 
  and 
 \begin_inset Formula $\widetilde{A_{i}}\left(t-\tau,t\right)=\widetilde{\sigma_{i}}\left(t-\tau,t\right)$
-\end_inset
-
-, also using the equations 
-\begin_inset Formula $\eqref{eq:A11-1}$
-\end_inset
-
- and 
-\begin_inset Formula $\eqref{eq:A22(tau)-1}$
-\end_inset
-
- on the equation 
-\begin_inset Formula $\eqref{eq:master equation polaron d}$
-\end_inset
-
- with 
-\begin_inset Formula $\Lambda_{11}\left(\tau\right)\equiv\Lambda_{x}\left(\tau\right)$
-\end_inset
-
- and 
-\begin_inset Formula $\Lambda{}_{22}\left(\tau\right)\equiv\Lambda_{y}\left(\tau\right)$
 \end_inset
 
  we obtain that:
@@ -3656,15 +3942,6 @@ noindent
 \end_inset
 
 , so there is no transformation in this case.
- As we can see from the matrix 
-\begin_inset Formula $\eqref{eq:correlation vp2011}$
-\end_inset
-
- the only term that survives is 
-\begin_inset Formula $\Lambda_{33}\left(\tau\right)$
-\end_inset
-
-.
  Taking 
 \begin_inset Formula $\bar{h}=1$
 \end_inset
@@ -3696,11 +3973,11 @@ noindent
 
 \end_inset
 
- The correlation functions are relevant if 
+ Given that 
 \begin_inset Formula $F\left(\omega\right)=0$
 \end_inset
 
-, for the weak-coupling approximation we have: 
+ then for the weak-coupling approximation we have: 
 \end_layout
 
 \begin_layout Standard
@@ -3731,11 +4008,7 @@ noindent
 \begin_inset Formula $A_{3}=\frac{\mathbb{I}+\sigma_{z}}{2}$
 \end_inset
 
-, the equation 
-\begin_inset Formula $\eqref{eq:master equation polaron d}$
-\end_inset
-
- can be transformed in: 
+, the master equation in this case is: 
 \end_layout
 
 \begin_layout Standard
@@ -3750,6 +4023,10 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3762,7 +4039,7 @@ noindent
 
 \end_inset
 
- As the paper of refrence suggests we will consider that the quantum system
+ As the paper of reference suggests we will consider that the quantum system
  is in resonance, so 
 \begin_inset Formula $\Delta=0$
 \end_inset
@@ -3790,7 +4067,7 @@ noindent
  have the following eigenstates
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 \left|H_{S,1}\right\rangle = & \frac{1}{\sqrt{2}}\left(\left|1\right\rangle +\left|0\right\rangle \right),\\
@@ -3802,7 +4079,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3834,11 +4111,11 @@ noindent
  respectively.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3854,7 +4131,7 @@ noindent
  The decomposition matrices are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{3}\left(0\right) & =\frac{\mathbb{I}}{2},\\
@@ -3867,7 +4144,7 @@ A_{3}\left(-\eta\right) & ={\rm {\rm \frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3884,7 +4161,7 @@ noindent
  obtain that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i\frac{\widetilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-K_{33}\left(\widetilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]-K_{33}\left(-\widetilde{\Omega},t\right)\left[\frac{\sigma_{z}}{2},\frac{1}{4}\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\label{eq:Expanded weak coupling 0}\\
@@ -3896,7 +4173,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3920,7 +4197,7 @@ noindent
 , we obtain:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 K_{33}\left(\widetilde{\Omega}\right) & =\pi J\left(\widetilde{\Omega}\right)\left(n\left(\widetilde{\Omega}\right)+1\right),\\
@@ -3932,7 +4209,7 @@ K_{33}\left(-\widetilde{\Omega}\right) & =\pi J\left(\widetilde{\Omega}\right)n\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3952,7 +4229,7 @@ noindent
  lead us to obtain:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\rho_{S}\left(t\right)}{{\rm d}t} & =-{\rm i\frac{\widetilde{\Omega}}{2}}\left[\sigma_{x},\rho_{S}\left(t\right))\right]-\frac{\pi}{8}J\left(\widetilde{\Omega}\right)\left(\left(n\left(\widetilde{\Omega}\right)+1\right)\left[\sigma_{z},\left(\sigma_{z}+{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]+n\left(\widetilde{\Omega}\right)\left[\sigma_{z},\left(\sigma_{z}-{\rm i}\sigma_{y}\right)\rho_{S}\left(t\right)\right]\right)\\
@@ -3964,7 +4241,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3982,7 +4259,16 @@ noindent
 \end_inset
 
 , so we have proved that our general master equation allows to reproduce
- the results of the weak-coupling time-dependent.
+ the results of the weak-coupling time-dependent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
  Now the master equation in the evolution time is given by
 \end_layout
 
