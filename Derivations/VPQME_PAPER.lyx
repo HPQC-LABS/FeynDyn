@@ -20,9 +20,10 @@
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
 
 %\usepackage{unicode-math}
-\setmathfont{XITS Math}
-\setmathfont[version=setB,StylisticSet=1]{XITS Math}
-\mathversion{setB}
+%\setmathfont{XITS Math}
+%\setmathfont[version=setB,StylisticSet=1]{XITS Math}
+%\mathversion{setB}
+\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -1436,7 +1437,7 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \widetilde{A_{i}}\left(t\right) & =\sum_{w\left(t\right)}e^{-{\rm i}tw\left(t\right)}A_{i}\left(w\left(t\right)\right).\label{eq:Fourier decomposition}\\
-\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right),
+\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right),\label{eq:double fourier}
 \end{align}
 
 \end_inset
@@ -1502,7 +1503,7 @@ noindent
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double fourier}
+\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double}
 \end{equation}
 
 \end_inset
@@ -1549,6 +1550,10 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1585,7 +1590,7 @@ noindent
  in the following way:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 A_{i}=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|.
@@ -1596,7 +1601,7 @@ A_{i}=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1637,7 +1642,7 @@ noindent
  matrix are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{i}\left(w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
@@ -1650,7 +1655,7 @@ A_{i}\left(0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\l
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1675,7 +1680,7 @@ noindent
  as:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{i}\left(0,w^{\prime}\left(t\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
@@ -1684,6 +1689,11 @@ A_{i}\left(w\left(t-\tau\right),-w^{\prime}\left(t\right)\right) & =\left\langle
 A_{i}\left(w\left(t-\tau\right),0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|,\\
 A_{i}\left(0,0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|.
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
