@@ -1828,6 +1828,12 @@ noindent
 \end_layout
 
 \begin_layout Standard
+
+\size footnotesize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1855,7 +1861,7 @@ noindent
  we have:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \mathscr{B}\left(t,t^{\prime}\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
@@ -1872,7 +1878,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1888,7 +1894,7 @@ noindent
  We can define:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 N\left(\omega\right)\equiv\left({\rm e}^{\beta\omega}-1\right)^{-1}.
@@ -1899,7 +1905,7 @@ N\left(\omega\right)\equiv\left({\rm e}^{\beta\omega}-1\right)^{-1}.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1915,7 +1921,7 @@ noindent
  and the spectral density is defined in the usual way:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 J_{i}\left(\omega\right) & \equiv\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
@@ -1927,7 +1933,7 @@ v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{i\mathbf{k}}F_{i}\left(\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1959,7 +1965,7 @@ noindent
  respectively.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1979,7 +1985,7 @@ noindent
  is equal to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2166,7 +2172,7 @@ Q\left(\omega,t\right)\! & =\!\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size footnotesize
 \begin_inset Formula 
@@ -2194,6 +2200,11 @@ Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\o
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -2212,9 +2223,10 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right).\label{deduced equation}
-\end{equation}
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\label{deduced equation}\\
+\dot{\rho} & =-{\rm i}\left[\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\rho\right]-\left[\rho\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)
+\end{align}
 
 \end_inset
 
@@ -2222,6 +2234,10 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2251,7 +2267,7 @@ noindent
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2267,7 +2283,7 @@ noindent
  Applying the inverse transformation we will obtain that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size scriptsize
 \begin_inset Formula 
@@ -2281,7 +2297,7 @@ e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2297,7 +2313,7 @@ noindent
  For a product and a commutator we have the inverse transformation:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 e^{-V\left(t\right)}\overline{A\left(t\right)B\left(t\right)}e^{V\left(t\right)} & =A\left(t\right)B\left(t\right),\\
@@ -2309,7 +2325,7 @@ e^{-V\left(t\right)}\overline{\left[A\left(t\right),B\left(t\right)\right]}e^{V\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2325,7 +2341,7 @@ noindent
  So we will obtain that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size scriptsize
 \begin_inset Formula 
@@ -2338,7 +2354,7 @@ e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2362,7 +2378,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2376,7 +2392,7 @@ why is v defined in terms of omega AND tau in the last one but not in the
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 
 \size scriptsize
@@ -2407,7 +2423,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2431,12 +2447,17 @@ noindent
 , we get:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 e^{-V\!\left(t\right)}V^{\prime}\!\left(t\right)e^{V\!\left(t\right)}\rho\!\left(t\right)+\dot{\rho}\!\left(t\right)-\rho\!\left(t\right)V^{\prime}\!\left(t\right) & =-{\rm i}\left[H\!\left(t\right),\rho\!\left(t\right)\right]-\sum_{ijww'}\left(\left[e^{-V\!\left(t\right)}A_{i}\!\left(t\right)e^{V\!\left(t\right)},e^{-V\!\left(t\right)}\mathscr{D}_{ijww^{\prime}}\!\left(t\right)e^{V\!\left(t\right)}\rho\!\left(t\right)\right]\right.\\
  & \left.-\left[e^{-V\!\left(t\right)}A_{i}\!\left(t\right)e^{V\!\left(t\right)},\rho\!\left(t\right)e^{-V\!\left(t\right)}\mathscr{D}_{ijww^{\prime}}^{\dagger}\!\left(t\right)e^{V\!\left(t\right)}\right]\right).
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
