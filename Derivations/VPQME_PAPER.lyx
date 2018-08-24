@@ -3019,7 +3019,18 @@ noindent
 \end_layout
 
 \begin_layout Standard
-.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
  Defining 
 \begin_inset Formula $A_{j}\left(w\right)\equiv A_{jw}$
 \end_inset
@@ -4268,7 +4279,18 @@ noindent
 \end_layout
 
 \begin_layout Standard
-.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
  Now the master equation in the evolution time is given by
 \end_layout
 
