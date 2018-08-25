@@ -23,6 +23,8 @@
 %\setmathfont{XITS Math}
 %\setmathfont[version=setB,StylisticSet=1]{XITS Math}
 %\mathversion{setB}
+
+\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -108,7 +110,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -129,7 +130,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
