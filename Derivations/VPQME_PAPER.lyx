@@ -460,13 +460,13 @@ noindent
 \begin{align}
 \begin{pmatrix}B_{iz}\left(t\right) & B_{i}^{\pm}\left(t\right)\\
 B_{x}\left(t\right) & B_{i}\left(t\right)\\
-B_{y}\left(t\right) & B_{ij}\left(t\right)
+B_{y}\left(t\right) & B_{ij}\left(t\right)\\
+R_{i}\left(t\right) & \text{\chi}_{ij}\left(t\right)
 \end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
 \frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}e^{\text{\chi}_{ij}\left(t\right)}
+\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}e^{\text{\chi}_{ij}\left(t\right)}\\
+\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right) & \sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right)
 \end{pmatrix},\label{Definitions}\\
-R_{i}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right),\\
-\text{\chi}_{ij}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right),\\
 \left(\cdot\right){}^{\Re} & \equiv\Re\left(\cdot\right),\\
 \left(\cdot\right){}^{\Im} & \equiv\Im\left(\cdot\right).
 \end{align}
@@ -2494,6 +2494,10 @@ Time-independent VPQME of 2011
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2509,7 +2513,7 @@ noindent
  The hamiltonian associated to this system is given by:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 H=\left(\delta+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega}{2}\sigma_{x}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.
@@ -2520,40 +2524,25 @@ H=\left(\delta+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
 \end_inset
 
- It's possible to summarize this hamiltonian in terms of the hamiltonian
- 
-\begin_inset Formula $\eqref{eq:H(t)}$
-\end_inset
-
- using the following matrix: 
+We make the following substitutionsusing the following matrix: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
+\begin{align}
 \begin{pmatrix}V_{10}^{\Im}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Re} & v_{0{\rm \mathbf{k}}}\left(t\right) & B_{10}\left(t\right)\\
 V_{10}^{\Re}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}}\left(t\right) & \Omega_{r}\\
 \varepsilon_{0}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Re} & B_{0z}\left(t\right) & R_{0}\left(t\right)\\
 \varepsilon_{1}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Im} & B_{1z}\left(t\right) & R_{1}\left(t\right)
-\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B\\
+\end{pmatrix} & =\begin{pmatrix}0 & 0 & 0 & B\\
 \frac{\Omega}{2} & 0 & v_{{\rm \mathbf{k}}} & B\Omega\\
 0 & g_{{\rm \mathbf{k}}} & 0 & 0\\
 \delta & 0 & B_{z} & R
-\end{pmatrix}.
-\end{equation}
+\end{pmatrix},\text{\,with,}\\
+B_{10}\left(t\right) & =B_{10}^{*}\left(t\right)
+\end{align}
 
 \end_inset
 
@@ -2595,13 +2584,8 @@ noindent
 
 \end_inset
 
- We now have the corresponding set of hamiltonians that satisfy the separation
- shown in 
-\begin_inset Formula $\eqref{H division 1}$
-\end_inset
-
--
-\begin_inset Formula $\eqref{H division 5}$
+ We now have a simpler 
+\begin_inset Formula $\overline{H_{\bar{S}}}$
 \end_inset
 
 :
@@ -2610,10 +2594,31 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\\
+ & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
 \overline{H_{S}} & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega_{r}}{2}\sigma_{x},\label{eq:Hs 2011 Hamiltonian}\\
 \overline{H_{I}} & =B_{z}\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right),\\
 H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2649,31 +2654,28 @@ v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+We also have, remembering that only 
+\begin_inset Formula $g_{1,{\rm \boldsymbol{k}}}=g_{\mathbf{k}}$
 \end_inset
 
- The bath and system-bath interaction operators become: 
+ (
+\begin_inset Formula $i=1)$
+\end_inset
+
+ is non-zero: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}B_{z}\left(t\right) & B^{\pm}\left(t\right)\\
-B_{x}\left(t\right) & B\left(t\right)\\
-B_{y}\left(t\right) & R\left(t\right)
-\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\left(t\right)\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+\begin{pmatrix}B_{iz}\left(t\right) & B_{i}^{\pm}\left(t\right)\\
+B_{x}\left(t\right) & B_{i}\left(t\right)\\
+B_{y}\left(t\right) & B_{ij}\left(t\right)\\
+R_{i}\left(t\right) & \text{\chi}_{ij}\left(t\right)
+\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\left(t\right)\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
 \frac{B^{+}+B^{-}-2B}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B^{-}-B^{+}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
+\frac{B^{-}-B^{+}}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
+\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right) & 0
 \end{pmatrix},\\
 \begin{pmatrix}A\\
 B\left(t\right)\\
@@ -2704,45 +2706,38 @@ noindent
 \end_inset
 
  is no longer time-dependent.
- Defining:
+ We also have that the 
+\begin_inset Formula $w$
+\end_inset
+
+'s are time-independent since the system Hamiltonian is time-independent,
+ which means 
+\begin_inset Formula $w=w^{\prime}$
+\end_inset
+
+and 
+\begin_inset Formula $A_{jww^{\prime}}=A_{jw}$
+\end_inset
+
+ is also time-independent: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Lambda_{ij}\left(\tau\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right).
+L_{ijww^{\prime}}\left(t,t^{\prime}\right)=L_{ijw}\left(t\right)=C_{i}C_{j}A_{jw}\int_{0}^{t}\mathscr{B}_{ij}\left(t,t^{\prime}\right)e^{{\rm i}w\tau}{\rm d\tau.}
 \end{equation}
 
 \end_inset
 
 
-\begin_inset ERT
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2763,7 +2758,7 @@ noindent
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}wt}A_{j}\left(w\right).
@@ -2774,7 +2769,7 @@ U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}w
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2817,12 +2812,17 @@ noindent
  to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ijw}\left(t\right).
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2878,8 +2878,11 @@ noindent
 \begin_inset Formula $\theta=\frac{1}{2}\tan^{-1}\left(\frac{\Omega_{r}}{\epsilon}\right)$
 \end_inset
 
- characterises the tilt of the system eigenstates away from the x-axis in
- the variational frame,
+ characterises the tilt of the system eigenstates away from the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis in the variational frame,
 \begin_inset Formula $\left|\overline{H_{S,1}}\right\rangle ,\left|\overline{H_{S,0}}\right\rangle $
 \end_inset
 
@@ -3026,6 +3029,13 @@ noindent
 \dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3561,6 +3571,13 @@ noindent
 \end_inset
 
  of the reference [2] extending the hermitian conjugate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
