@@ -1092,19 +1092,7 @@ Trace over the bath
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We can keep the 
+Since
 \begin_inset Formula $A$
 \end_inset
 
@@ -1112,16 +1100,16 @@ noindent
 \begin_inset Formula $C\left(t\right)$
 \end_inset
 
- as they are when tracing over the bath degrees of freedom, but we will
- replace the expected value of the 
+ are only in the system Hilbert space, they don't need to change when tracing
+ over the bath degrees of freedom, but we will replace the traces over the
 \begin_inset Formula $B\left(t\right)$
 \end_inset
 
- operators, known as correlation functions, by 
+ operators by 
 \begin_inset Formula $\mathscr{B}\left(t,t^{\prime}\right)$
 \end_inset
 
- such that:
+:
 \end_layout
 
 \begin_layout Standard
@@ -1180,6 +1168,21 @@ status open
 
 \end_inset
 
+We now transform from the interaction picture back to the original Schrödinger
+ picture:
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\,\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\!\sum_{ij}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\!\left[A_{i},\widetilde{A_{j}}\!\left(t^{\prime},t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\!\left(t,t^{\prime}\right)\!\left[\overline{\rho_{\bar{S}}}\left(t\right)\widetilde{A_{j}}\!\left(t^{\prime},t\right),A_{i}\right]\right),\,\text{where}\label{master 1}\\
+\widetilde{A_{j}}\left(t^{\prime},t\right) & \equiv U\left(t\right)U^{\dagger}\left(t^{\prime}\right)A_{j}U\left(t^{\prime}\right)U^{\dagger}\left(t\right).
+\end{align}
+
+\end_inset
+
 
 \end_layout
 
@@ -1228,22 +1231,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- here we considered the following notation:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -1259,17 +1246,6 @@ status open
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\widetilde{A_{j}}\left(t^{\prime},t\right)=U\left(t\right)U^{\dagger}\left(t^{\prime}\right)A_{j}U\left(t^{\prime}\right)U^{\dagger}\left(t\right).
-\end{equation}
 
 \end_inset
 
@@ -1300,19 +1276,6 @@ noindent
 
 , also doing the reverse of the transformation to interaction picture we
  get:
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\left[\,\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\!\sum_{ij}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t-\tau\right)\left(\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i},\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\!\left[\overline{\rho_{\bar{S}}}\left(t\right)\widetilde{A_{j}}\!\left(t-\tau,t\right),A_{i}\right]\right).\label{master 1}
-\end{equation}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
