@@ -390,8 +390,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\rho_{B} & \equiv\rho_{B}\left(0\right)\\
- & =\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}.
+\rho_{B} & \equiv\rho_{B}\left(0\right)=\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}.
 \end{align}
 
 \end_inset
@@ -551,8 +550,7 @@ noindent
 \overline{H_{T}}\left(t\right) & \equiv\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{I}}}\left(t\right)+\overline{H_{\bar{B}}},\label{H division 1}\\
 \overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\label{Hs}\\
 \overline{H_{\bar{I}}}\left(t\right) & \equiv\sum_{i}B_{iz}\left(t\right)\left|i\right\rangle \negmedspace\!\left\langle i\right|+V_{10}^{\Re}\left(t\right)\left(B_{x}\left(t\right)\sigma_{x}+B_{y}\left(t\right)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\left(t\right)\sigma_{y}-B_{y}\left(t\right)\sigma_{x}\right),\label{Hi}\\
-\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
- & =H_{B}.\label{H division 5}
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}=H_{B}.
 \end{align}
 
 \end_inset
@@ -779,8 +777,7 @@ noindent
 \begin{align}
 \widetilde{O}\left(t\right) & \equiv U^{\dagger}\left(t\right)O\left(t\right)U\left(t\right),\\
 U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right)\label{time ordering evolution}\\
- & ={\rm exp}\left(-{\rm i}\overline{H_{T,{\rm eff}}}\left(t\right)\right),{\rm \,where}\\
-H_{X,{\rm eff}}(t) & \equiv\frac{1}{t}\int_{0}^{t}H_{X}\left(t^{\prime}\right){\rm d}t^{\prime}-\frac{{\rm i}}{2t}\int_{0}^{t}\int_{0}^{t^{\prime}}\left[H_{X}\left(t^{\prime}\right),H_{X}\left(t^{\prime\prime}\right)\right]{\rm {\rm d}}t^{\prime}{\rm d}t^{\prime\prime}
+ & ={\rm exp}\left(-{\rm i}\overline{H_{T,{\rm eff}}}\left(t\right)\right),{\rm \,where}
 \end{align}
 
 \end_inset
@@ -789,35 +786,12 @@ H_{X,{\rm eff}}(t) & \equiv\frac{1}{t}\int_{0}^{t}H_{X}\left(t^{\prime}\right){\
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- here we used a perturbative expansion of 
-\begin_inset Formula ${\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $+\frac{{\rm 1}}{6t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\int_{0}^{t''}{\rm d}t'''\left(\left[\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'''\right)\right]+\left[\left[\overline{H_{\bar{S}}}\left(t'''\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'\right)\right]\right)$
-\end_inset
-
-
-\end_layout
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+H_{X}^{{\rm eff}}\negthinspace(t)\negthinspace\equiv\negthinspace\frac{1}{t}\negthickspace\int_{0}^{t}\negthickspace H_{X}\negthickspace\left(t^{\prime}\right)\negthinspace{\rm d}t^{\prime}\negthinspace-\negthinspace\frac{{\rm i}}{2t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t^{\prime}}\negthickspace\negthickspace\negthickspace\left[H_{X}\negthinspace\left(t^{\prime}\right)\negthinspace,H_{X}\negthinspace\negthinspace\left(t^{\prime\prime}\right)\negthinspace\right]{\rm \negthinspace{\rm d}}t^{\prime}{\rm d}t^{\prime\prime}\negthinspace+\negthinspace\frac{{\rm 1}}{6t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t'}\negthickspace\negthickspace\negthickspace\int_{0}^{t''}\negthickspace\negthickspace\negthickspace\left(\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'''\right)\negthinspace\right]\negthinspace\negthinspace+\negthinspace\negthinspace\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\left(t'''\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\left(t'\right)\negthinspace\right]\right)\negthinspace{\rm d}t'\negthinspace{\rm d}t''\negthinspace{\rm d}t'''\negthinspace+\cdots.
+\end{equation}
 
 \end_inset
 
