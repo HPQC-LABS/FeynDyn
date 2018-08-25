@@ -109,6 +109,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -129,6 +130,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -890,12 +892,8 @@ noindent
 
 \end_inset
 
- We will initialize the density operator as: 
-\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{\bar{S}}\left(0\right)\otimes\rho_{B}\left(0\right)$
-\end_inset
-
-, where 
-\begin_inset Formula $\rho_{B}\left(0\right)\equiv\rho_{B}^{{\rm Thermal}}\equiv\rho_{B}^{{\rm }}$
+ We will initialize the total density operator as: 
+\begin_inset Formula $\rho_{{\rm T}}\left(0\right)=\rho_{\bar{S}}\left(0\right)\otimes\rho_{B}$
 \end_inset
 
 .
@@ -934,26 +932,54 @@ noindent
 
 \end_inset
 
- To simplify this we define the following matrix related to describe 
+ Since 
 \begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
 \end_inset
 
-:
+ contains a lot of terms, we will write it as:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\,\text{where,}\label{Hi bar}\\
 \begin{pmatrix}A\\
 B\left(t\right)\\
 C\left(t\right)
 \end{pmatrix} & =\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
 B_{x}\left(t\right) & B_{y}\left(t\right) & B_{1z}\left(t\right) & B_{y}\left(t\right) & B_{x}\left(t\right) & B_{0z}\left(t\right)\\
 V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1
-\end{pmatrix},\label{A, B and C matrix}\\
-\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\label{Hi bar}\\
-\widetilde{\overline{H_{\bar{I}}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right).
+\end{pmatrix},\label{A, B and C matrix}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\widetilde{\overline{H_{\bar{I}}}}\left(t\right)=\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right).$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1040,11 +1066,11 @@ noindent
 
 \end_inset
 
- Taking the master equation 
-\begin_inset Formula $\eqref{int master}$
+ We plug this expression for 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
 \end_inset
 
-  and expanding the commutators yields:
+ into the master equation and expand the commutators:
 \end_layout
 
 \begin_layout Standard
@@ -1059,6 +1085,10 @@ noindent
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Trace over the bath
 \end_layout
 
 \begin_layout Standard
