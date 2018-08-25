@@ -18,6 +18,12 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+
+%\usepackage{unicode-math}
+%\setmathfont{XITS Math}
+%\setmathfont[version=setB,StylisticSet=1]{XITS Math}
+%\mathversion{setB}
+\usepackage[mathscr]{eucal}
 \end_preamble
 \options prl,notitlepage
 \use_default_options true
@@ -59,8 +65,8 @@
 \use_package stmaryrd 1
 \use_package undertilde 1
 \cite_engine natbib
-\cite_engine_type default
-\biblio_style plain
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -386,8 +392,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\rho_{B} & \equiv\rho_{B}\left(0\right)\\
- & =\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}.
+\rho_{B} & \equiv\rho_{B}\left(0\right)=\frac{e^{-\beta H_{B}}}{{\rm \text{Tr}}\left(e^{-\beta H_{B}}\right)}.
 \end{align}
 
 \end_inset
@@ -455,13 +460,13 @@ noindent
 \begin{align}
 \begin{pmatrix}B_{iz}\left(t\right) & B_{i}^{\pm}\left(t\right)\\
 B_{x}\left(t\right) & B_{i}\left(t\right)\\
-B_{y}\left(t\right) & B_{ij}\left(t\right)
+B_{y}\left(t\right) & B_{ij}\left(t\right)\\
+R_{i}\left(t\right) & \text{\chi}_{ij}\left(t\right)
 \end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}\right)}\\
 \frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}e^{\text{\chi}_{ij}\left(t\right)}
+\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}e^{\text{\chi}_{ij}\left(t\right)}\\
+\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right) & \sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right)
 \end{pmatrix},\label{Definitions}\\
-R_{i}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{\left|v_{i\mathbf{k}}\left(t\right)\right|^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right),\\
-\text{\chi}_{ij}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}\right),\\
 \left(\cdot\right){}^{\Re} & \equiv\Re\left(\cdot\right),\\
 \left(\cdot\right){}^{\Im} & \equiv\Im\left(\cdot\right).
 \end{align}
@@ -547,8 +552,7 @@ noindent
 \overline{H_{T}}\left(t\right) & \equiv\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{I}}}\left(t\right)+\overline{H_{\bar{B}}},\label{H division 1}\\
 \overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\label{Hs}\\
 \overline{H_{\bar{I}}}\left(t\right) & \equiv\sum_{i}B_{iz}\left(t\right)\left|i\right\rangle \negmedspace\!\left\langle i\right|+V_{10}^{\Re}\left(t\right)\left(B_{x}\left(t\right)\sigma_{x}+B_{y}\left(t\right)\sigma_{y}\right)-V_{10}^{\Im}\left(t\right)\left(B_{x}\left(t\right)\sigma_{y}-B_{y}\left(t\right)\sigma_{x}\right),\label{Hi}\\
-\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}\\
- & =H_{B}.\label{H division 5}
+\overline{H_{\bar{B}}} & \equiv\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}=H_{B}.
 \end{align}
 
 \end_inset
@@ -775,8 +779,7 @@ noindent
 \begin{align}
 \widetilde{O}\left(t\right) & \equiv U^{\dagger}\left(t\right)O\left(t\right)U\left(t\right),\\
 U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right)\label{time ordering evolution}\\
- & ={\rm exp}\left(-{\rm i}\overline{H_{T,{\rm eff}}}\left(t\right)\right),{\rm \,where}\\
-H_{X,{\rm eff}}(t) & \equiv\frac{1}{t}\int_{0}^{t}H_{X}\left(t^{\prime}\right){\rm d}t^{\prime}-\frac{{\rm i}}{2t}\int_{0}^{t}\int_{0}^{t^{\prime}}\left[H_{X}\left(t^{\prime}\right),H_{X}\left(t^{\prime\prime}\right)\right]{\rm {\rm d}}t^{\prime}{\rm d}t^{\prime\prime}
+ & ={\rm exp}\left(-{\rm i}\overline{H_{T,{\rm eff}}}\left(t\right)\right),{\rm \,where}
 \end{align}
 
 \end_inset
@@ -785,35 +788,12 @@ H_{X,{\rm eff}}(t) & \equiv\frac{1}{t}\int_{0}^{t}H_{X}\left(t^{\prime}\right){\
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- here we used a perturbative expansion of 
-\begin_inset Formula ${\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm d}t^{\prime}\overline{H_{T}}\left(t^{\prime}\right)\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $+\frac{{\rm 1}}{6t}\int_{0}^{t}{\rm d}t'\int_{0}^{t'}{\rm d}t''\int_{0}^{t''}{\rm d}t'''\left(\left[\left[\overline{H_{\bar{S}}}\left(t'\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'''\right)\right]+\left[\left[\overline{H_{\bar{S}}}\left(t'''\right),\overline{H_{\bar{S}}}\left(t''\right)\right],\overline{H_{\bar{S}}}\left(t'\right)\right]\right)$
-\end_inset
-
-
-\end_layout
+\size scriptsize
+\begin_inset Formula 
+\begin{equation}
+H_{X}^{{\rm eff}}\negthinspace(t)\negthinspace\equiv\negthinspace\frac{1}{t}\negthickspace\int_{0}^{t}\negthickspace H_{X}\negthickspace\left(t^{\prime}\right)\negthinspace{\rm d}t^{\prime}\negthinspace-\negthinspace\frac{{\rm i}}{2t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t^{\prime}}\negthickspace\negthickspace\negthickspace\left[H_{X}\negthinspace\left(t^{\prime}\right)\negthinspace,H_{X}\negthinspace\negthinspace\left(t^{\prime\prime}\right)\negthinspace\right]{\rm \negthinspace{\rm d}}t^{\prime}{\rm d}t^{\prime\prime}\negthinspace+\negthinspace\frac{{\rm 1}}{6t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t'}\negthickspace\negthickspace\negthickspace\int_{0}^{t''}\negthickspace\negthickspace\negthickspace\left(\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'''\right)\negthinspace\right]\negthinspace\negthinspace+\negthinspace\negthinspace\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\left(t'''\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\left(t'\right)\negthinspace\right]\right)\negthinspace{\rm d}t'\negthinspace{\rm d}t''\negthinspace{\rm d}t'''\negthinspace+\cdots.
+\end{equation}
 
 \end_inset
 
@@ -912,12 +892,8 @@ noindent
 
 \end_inset
 
- We will initialize the density operator as: 
-\begin_inset Formula $\rho_{{\rm Total}}\left(0\right)=\rho_{\bar{S}}\left(0\right)\otimes\rho_{B}\left(0\right)$
-\end_inset
-
-, where 
-\begin_inset Formula $\rho_{B}\left(0\right)\equiv\rho_{B}^{{\rm Thermal}}\equiv\rho_{B}^{{\rm }}$
+ We will initialize the total density operator as: 
+\begin_inset Formula $\rho_{{\rm T}}\left(0\right)=\rho_{\bar{S}}\left(0\right)\otimes\rho_{B}$
 \end_inset
 
 .
@@ -956,26 +932,54 @@ noindent
 
 \end_inset
 
- To simplify this we define the following matrix related to describe 
+ Since 
 \begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
 \end_inset
 
-:
+ contains a lot of terms, we will write it as:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\,\text{where,}\label{Hi bar}\\
 \begin{pmatrix}A\\
 B\left(t\right)\\
 C\left(t\right)
 \end{pmatrix} & =\begin{pmatrix}\sigma_{x} & \sigma_{y} & \frac{I-\sigma_{z}}{2} & \sigma_{x} & \sigma_{y} & \frac{I+\sigma_{z}}{2}\\
 B_{x}\left(t\right) & B_{y}\left(t\right) & B_{1z}\left(t\right) & B_{y}\left(t\right) & B_{x}\left(t\right) & B_{0z}\left(t\right)\\
 V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1
-\end{pmatrix},\label{A, B and C matrix}\\
-\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(A_{i}\otimes B_{i}\left(t\right)\right),\label{Hi bar}\\
-\widetilde{\overline{H_{\bar{I}}}}\left(t\right) & =\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right).
+\end{pmatrix},\label{A, B and C matrix}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\widetilde{\overline{H_{\bar{I}}}}\left(t\right)=\sum_{i}C_{i}\left(t\right)\left(\widetilde{A_{i}}\left(t\right)\otimes\widetilde{B_{i}}\left(t\right)\right).$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1062,11 +1066,11 @@ noindent
 
 \end_inset
 
- Taking the master equation 
-\begin_inset Formula $\eqref{int master}$
+ We plug this expression for 
+\begin_inset Formula $\overline{H_{\bar{I}}}\left(t\right)$
 \end_inset
 
-  and expanding the commutators yields:
+ into the master equation and expand the commutators:
 \end_layout
 
 \begin_layout Standard
@@ -1074,7 +1078,7 @@ noindent
 \size scriptsize
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)}{{\rm d}t}\! & =\!-\!\!\int_{0}^{t}\!\!{\rm \text{Tr}}_{B}\!\!\left(\!\sum_{j}\!C_{j}\!\left(t\right)\!\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\!\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}^{{\rm }}-\!\sum_{j}\!C_{j}\!\left(t\right)\!\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)\!\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\right.\\
+\frac{{\rm d}\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)}{{\rm d}t}\!= & \!-\!\!\int_{0}^{t}\!\!{\rm \text{Tr}}_{B}\!\!\left(\!\sum_{j}\!C_{j}\!\left(t\right)\!\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\!\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}^{{\rm }}-\!\sum_{j}\!C_{j}\!\left(t\right)\!\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)\!\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\right.\\
 \! & \left.\!-\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\!\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}\!\sum_{j}\!C_{j}\!\left(t\right)\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)+\widetilde{\overline{\rho_{\bar{S}}}}\!\left(t\right)\!\rho_{B}\!\sum_{i}\!C_{i}\!\left(t^{\prime}\right)\!\left(\widetilde{A_{i}}\!\left(t^{\prime}\right)\!\otimes\!\widetilde{B_{i}}\!\left(t^{\prime}\right)\right)\!\sum_{j}\!C_{j}\!\left(t\right)\!\left(\widetilde{A_{j}}\!\left(t\right)\!\otimes\!\widetilde{B_{j}}\!\left(t\right)\right)\!\right){\rm d}t^{\prime}.\label{eq:expanding comm}
 \end{align}
 
@@ -1083,20 +1087,12 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
+\begin_layout Subsection
+Trace over the bath
 \end_layout
 
-\end_inset
-
- We can keep the 
+\begin_layout Standard
+Since
 \begin_inset Formula $A$
 \end_inset
 
@@ -1104,16 +1100,16 @@ noindent
 \begin_inset Formula $C\left(t\right)$
 \end_inset
 
- as they are when tracing over the bath degrees of freedom, but we will
- replace the expected value of the 
+ are only in the system Hilbert space, they don't need to change when tracing
+ over the bath degrees of freedom, but we will replace the traces over the
 \begin_inset Formula $B\left(t\right)$
 \end_inset
 
- operators, known as correlation functions, by 
+ operators by 
 \begin_inset Formula $\mathscr{B}\left(t,t^{\prime}\right)$
 \end_inset
 
- such that:
+:
 \end_layout
 
 \begin_layout Standard
@@ -1175,6 +1171,42 @@ status open
 
 \end_layout
 
+\begin_layout Subsection
+Return to Schrödinger picture
+\end_layout
+
+\begin_layout Standard
+We apply the reverse of the 
+\begin_inset Formula $U$
+\end_inset
+
+ transform
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+, in attempt to return from the interaction picture to the 
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\,\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\!\sum_{ij}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\!\left[A_{i},\widetilde{A_{j}}\!\left(t,t^{\prime}\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\!\left(t,t^{\prime}\right)\!\left[\overline{\rho_{\bar{S}}}\left(t\right)\widetilde{A_{j}}\!\left(t,t^{\prime}\right),A_{i}\right]\right),\,\text{where}\label{master 1}\\
+\widetilde{A_{j}}\left(t,t^{\prime}\right) & \equiv U\left(t\right)U^{\dagger}\left(t^{\prime}\right)A_{j}U\left(t^{\prime}\right)U^{\dagger}\left(t\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -1220,22 +1252,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- here we considered the following notation:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -1258,53 +1274,16 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\widetilde{A_{j}}\left(t^{\prime},t\right)=U\left(t\right)U^{\dagger}\left(t^{\prime}\right)A_{j}U\left(t^{\prime}\right)U^{\dagger}\left(t\right).
-\end{equation}
-
+Unfortunately the 
+\begin_inset Formula $\widetilde{A}_{j}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+ are still in the interaction picture, so we will Fourier decompose them
+ as sums of 
+\begin_inset Formula $A_{j}$
 \end_inset
 
- Given that 
-\begin_inset Formula $t^{\prime}=t-\tau$
-\end_inset
-
- then we can perform the change of variables in the integral of the equation
- 
-\begin_inset Formula $\eqref{master with B_ij interaction}$
-\end_inset
-
-, also doing the reverse of the transformation to interaction picture we
- get:
-\end_layout
-
-\begin_layout Standard
-
-\size footnotesize
-\begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\!=\!-{\rm i}\left[\,\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\!\sum_{ij}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t-\tau\right)\left(\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i},\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\!\left[\overline{\rho_{\bar{S}}}\left(t\right)\widetilde{A_{j}}\!\left(t-\tau,t\right),A_{i}\right]\right).\label{master 1}
-\end{equation}
-
-\end_inset
-
-
+:
 \end_layout
 
 \begin_layout Standard
@@ -1402,6 +1381,10 @@ H_{{\rm eff}}^{\left(2\right)}\left(t\right) & =\frac{{\rm 1}}{6t}\int_{0}^{t}{\
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1429,11 +1412,16 @@ noindent
  is:
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\widetilde{A_{i}}\left(t\right) & =\sum_{w\left(t\right)}e^{-{\rm i}tw\left(t\right)}A_{i}\left(w\left(t\right)\right).\label{eq:Fourier decomposition}\\
-\widetilde{A_{j}}\left(t-\tau,t\right) & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right),
+\widetilde{A_{j}}\left(t\right) & =\sum_{w\left(t\right)}e^{-{\rm i}tw\left(t\right)}A_{j}\left(w\left(t\right)\right).\label{eq:Fourier decomposition}\\
+\widetilde{A_{j}}\left(t,t^{\prime}\right) & =\sum_{w\left(t^{\prime}\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t^{\prime}\right)}e^{-{\rm i}t\left(w\left(t^{\prime}\right)-w^{\prime}\left(t\right)\right)}A{}_{j}\left(w\left(t^{\prime}\right),w^{\prime}\left(t\right)\right),\label{eq:double fourier}
 \end{align}
 
 \end_inset
@@ -1443,13 +1431,30 @@ where
 \end_inset
 
  belongs to the set of differences of eigenvalues of 
-\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
+\begin_inset Formula $\overline{H_{\bar{S}}^{{\rm eff}}}\left(t\right)$
 \end_inset
 
 .
+ Plugging 
+\begin_inset Formula $\eqref{eq:double fourier}$
+\end_inset
+
+ into 
+\begin_inset Formula $\eqref{master 1}$
+\end_inset
+
+ and defining 
+\begin_inset Formula $\tau\equiv t-t^{\prime}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1465,7 +1470,7 @@ noindent
  Let's define:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\prime}}\left(t-\tau,t\right).
@@ -1476,7 +1481,7 @@ A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\p
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1492,10 +1497,10 @@ noindent
  So we can show that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double fourier}
+\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double}
 \end{equation}
 
 \end_inset
@@ -1503,7 +1508,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1536,7 +1541,16 @@ noindent
  respectively.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1573,7 +1587,7 @@ noindent
  in the following way:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 A_{i}=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|.
@@ -1584,7 +1598,7 @@ A_{i}=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1625,7 +1639,7 @@ noindent
  matrix are:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{i}\left(w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
@@ -1638,7 +1652,7 @@ A_{i}\left(0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\l
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1663,7 +1677,7 @@ noindent
  as:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 A_{i}\left(0,w^{\prime}\left(t\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
@@ -1678,28 +1692,9 @@ A_{i}\left(0,0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
 \end_inset
 
- Replacing 
-\begin_inset Formula $\eqref{eq:double fourier}$
-\end_inset
 
- in 
-\begin_inset Formula $\eqref{master 1}$
-\end_inset
-
- we deduce that:
 \end_layout
 
 \begin_layout Standard
@@ -1707,8 +1702,7 @@ noindent
 \size small
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{\bar{S}}}\!\left(t\right)\right]\!-\!\sum_{ijww^{\prime}}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\left(\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\!\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]\right.\\
- & \left.+\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\left[\overline{\rho_{\bar{S}}}\!\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}^{\dagger}\!\left(t-\tau,t\right),A_{i}\right]\right).\label{master eq r}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{\bar{S}}}\!\left(t\right)\right]\!-\!\sum_{ijww^{\prime}}\!\int_{0}^{t}C_{i}\!\left(t\right)\!C_{j}\!\left(t^{\prime}\right)\!\left(\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\!\left[A_{i},e^{{\rm i}\tau w\left(t^{\prime}\right)}e^{-{\rm i}t\left(w\left(t^{\prime}\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\!\left(t,t^{\prime}\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+{\rm h.c.}\right)\!{\rm d}\tau.
 \end{align}
 
 \end_inset
@@ -1717,25 +1711,69 @@ noindent
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+
+\size small
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
+\size small
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{\bar{S}}}\!\left(t\right)\right]\!-\!\sum_{ijww^{\prime}}\!\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\left(\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i},e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\!\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]\right.\left.+\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\left[\overline{\rho_{\bar{S}}}\!\left(t\right)e^{-{\rm i}\tau w\left(t-\tau\right)}e^{{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}^{\dagger}\!\left(t-\tau,t\right),A_{i}\right]\right).\\
+\label{master eq r-1}
+\end{align}
 
-\backslash
-noindent
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- Let's define the operator:
+
+\end_layout
+
+\begin_layout Subsection
+Final simplifications
+\end_layout
+
+\begin_layout Standard
+With the definition:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-D_{ijww^{\prime}}\left(t-\tau,t\right)\equiv C_{i}\left(t\right)C_{j}\left(t-\tau\right)\mathscr{B}_{ij}\left(t,t-\tau\right)e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).
+L_{ijww^{\prime}}\left(t,t^{\prime}\right)\equiv\int_{0}^{t}C_{i}\left(t\right)C_{j}\left(t^{\prime}\right)\mathscr{B}_{ij}\left(t,t^{\prime}\right)e^{{\rm i}\tau w\left(t^{\prime}\right)}e^{-{\rm i}t\left(w\left(t^{\prime}\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t,t^{\prime}\right){\rm d}\tau.
+\end{equation}
+
+\end_inset
+
+Our master equation in the variationally optimized frame is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\\
+\dot{\rho} & =-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[L_{i},L_{ijww^{\prime}}\left(t\right)\rho\right]-\left[\rho L_{ijww^{\prime}}^{\dagger}\left(t\right),L_{i}\right]\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}\left(\left[A_{i},D_{ijww^{\prime}}\left(t,t^{\prime}\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t,t^{\prime}\right),A_{i}\right]\right){\rm d}\tau.
 \end{equation}
 
 \end_inset
@@ -1743,69 +1781,18 @@ D_{ijww^{\prime}}\left(t-\tau,t\right)\equiv C_{i}\left(t\right)C_{j}\left(t-\ta
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-\begin_inset ERT
+
+\size footnotesize
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- With this notation applied to 
-\begin_inset Formula $\eqref{master eq r}$
-\end_inset
-
- we arrive to the following master equation:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau\left(\left[A_{i},D_{ijww^{\prime}}\left(t-\tau,t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)D_{ijww^{\prime}}^{\dagger}\left(t-\tau,t\right),A_{i}\right]\right).
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We define a response matrix 
-\begin_inset Formula $\mathscr{D}_{ijww^{\prime}}\left(t\right)$
-\end_inset
-
- as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathscr{D}_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}D_{ijww^{\prime}}\left(t-\tau,t\right){\rm d}\tau.\label{eq:response matrix}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1833,7 +1820,7 @@ noindent
  we have:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \mathscr{B}\left(t,t^{\prime}\right)\equiv\begin{pmatrix}\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
@@ -1850,7 +1837,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1866,7 +1853,7 @@ noindent
  We can define:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 N\left(\omega\right)\equiv\left({\rm e}^{\beta\omega}-1\right)^{-1}.
@@ -1877,7 +1864,7 @@ N\left(\omega\right)\equiv\left({\rm e}^{\beta\omega}-1\right)^{-1}.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1893,7 +1880,7 @@ noindent
  and the spectral density is defined in the usual way:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 J_{i}\left(\omega\right) & \equiv\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
@@ -1905,7 +1892,7 @@ v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{i\mathbf{k}}F_{i}\left(\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1937,7 +1924,7 @@ noindent
  respectively.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1957,7 +1944,7 @@ noindent
  is equal to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2144,7 +2131,7 @@ Q\left(\omega,t\right)\! & =\!\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size footnotesize
 \begin_inset Formula 
@@ -2172,34 +2159,16 @@ Q\left(\omega,t\right)\! & =\!\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\o
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Finally we end up with our final master equation in the variationally optimized
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t}=-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},\mathscr{D}_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)\mathscr{D}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right).\label{deduced equation}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2229,7 +2198,7 @@ noindent
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2245,7 +2214,7 @@ noindent
  Applying the inverse transformation we will obtain that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size scriptsize
 \begin_inset Formula 
@@ -2259,7 +2228,7 @@ e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2275,7 +2244,7 @@ noindent
  For a product and a commutator we have the inverse transformation:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 e^{-V\left(t\right)}\overline{A\left(t\right)B\left(t\right)}e^{V\left(t\right)} & =A\left(t\right)B\left(t\right),\\
@@ -2287,7 +2256,7 @@ e^{-V\left(t\right)}\overline{\left[A\left(t\right),B\left(t\right)\right]}e^{V\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2303,7 +2272,7 @@ noindent
  So we will obtain that:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \size scriptsize
 \begin_inset Formula 
@@ -2316,7 +2285,7 @@ e^{-V\!\left(t\right)}\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2340,7 +2309,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2354,7 +2323,7 @@ why is v defined in terms of omega AND tau in the last one but not in the
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 
 \size scriptsize
@@ -2385,7 +2354,7 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2409,12 +2378,17 @@ noindent
 , we get:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 e^{-V\!\left(t\right)}V^{\prime}\!\left(t\right)e^{V\!\left(t\right)}\rho\!\left(t\right)+\dot{\rho}\!\left(t\right)-\rho\!\left(t\right)V^{\prime}\!\left(t\right) & =-{\rm i}\left[H\!\left(t\right),\rho\!\left(t\right)\right]-\sum_{ijww'}\left(\left[e^{-V\!\left(t\right)}A_{i}\!\left(t\right)e^{V\!\left(t\right)},e^{-V\!\left(t\right)}\mathscr{D}_{ijww^{\prime}}\!\left(t\right)e^{V\!\left(t\right)}\rho\!\left(t\right)\right]\right.\\
  & \left.-\left[e^{-V\!\left(t\right)}A_{i}\!\left(t\right)e^{V\!\left(t\right)},\rho\!\left(t\right)e^{-V\!\left(t\right)}\mathscr{D}_{ijww^{\prime}}^{\dagger}\!\left(t\right)e^{V\!\left(t\right)}\right]\right).
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2466,6 +2440,13 @@ mother
  of all master equations.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Limiting Cases
 \end_layout
@@ -2513,6 +2494,10 @@ Time-independent VPQME of 2011
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2528,7 +2513,7 @@ noindent
  The hamiltonian associated to this system is given by:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 H=\left(\delta+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right)\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega}{2}\sigma_{x}+\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.
@@ -2539,40 +2524,25 @@ H=\left(\delta+\sum_{\mathbf{k}}g_{\mathbf{k}}\left(b_{\mathbf{k}}^{\dagger}+b_{
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
 \end_inset
 
- It's possible to summarize this hamiltonian in terms of the hamiltonian
- 
-\begin_inset Formula $\eqref{eq:H(t)}$
-\end_inset
-
- using the following matrix: 
+We make the following substitutionsusing the following matrix: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
+\begin{align}
 \begin{pmatrix}V_{10}^{\Im}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Re} & v_{0{\rm \mathbf{k}}}\left(t\right) & B_{10}\left(t\right)\\
 V_{10}^{\Re}\left(t\right) & g_{0{\rm \mathbf{k}}}^{\Im} & v_{1{\rm \mathbf{k}}}\left(t\right) & \Omega_{r}\\
 \varepsilon_{0}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Re} & B_{0z}\left(t\right) & R_{0}\left(t\right)\\
 \varepsilon_{1}\left(t\right) & g_{1{\rm \mathbf{k}}}^{\Im} & B_{1z}\left(t\right) & R_{1}\left(t\right)
-\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & B\\
+\end{pmatrix} & =\begin{pmatrix}0 & 0 & 0 & B\\
 \frac{\Omega}{2} & 0 & v_{{\rm \mathbf{k}}} & B\Omega\\
 0 & g_{{\rm \mathbf{k}}} & 0 & 0\\
 \delta & 0 & B_{z} & R
-\end{pmatrix}.
-\end{equation}
+\end{pmatrix},\text{\,with,}\\
+B_{10}\left(t\right) & =B_{10}^{*}\left(t\right)
+\end{align}
 
 \end_inset
 
@@ -2614,13 +2584,8 @@ noindent
 
 \end_inset
 
- We now have the corresponding set of hamiltonians that satisfy the separation
- shown in 
-\begin_inset Formula $\eqref{H division 1}$
-\end_inset
-
--
-\begin_inset Formula $\eqref{H division 5}$
+ We now have a simpler 
+\begin_inset Formula $\overline{H_{\bar{S}}}$
 \end_inset
 
 :
@@ -2629,10 +2594,31 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+\overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\negmedspace-\negmedspace B_{10}^{\Im}\negmedspace\left(t\right)\negmedspace V_{10}^{\Im}\negmedspace\left(t\right)\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}^{\Re}\left(t\right)\negmedspace V_{10}^{\Im}\left(t\right)\negmedspace+\negmedspace B_{10}^{\Im}\left(t\right)\negmedspace V_{10}^{\Re}\left(t\right)\right),\\
+ & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
 \overline{H_{S}} & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega_{r}}{2}\sigma_{x},\label{eq:Hs 2011 Hamiltonian}\\
 \overline{H_{I}} & =B_{z}\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\frac{\Omega}{2}\left(B_{x}\sigma_{x}+B_{y}\sigma_{y}\right),\\
 H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}.
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2668,31 +2654,28 @@ v_{{\rm \mathbf{k}}} & =\frac{g_{i}\left(\omega_{\mathbf{k}}\right)\left(1-\frac
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+We also have, remembering that only 
+\begin_inset Formula $g_{1,{\rm \boldsymbol{k}}}=g_{\mathbf{k}}$
 \end_inset
 
- The bath and system-bath interaction operators become: 
+ (
+\begin_inset Formula $i=1)$
+\end_inset
+
+ is non-zero: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\begin{pmatrix}B_{z}\left(t\right) & B^{\pm}\left(t\right)\\
-B_{x}\left(t\right) & B\left(t\right)\\
-B_{y}\left(t\right) & R\left(t\right)
-\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\left(t\right)\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
+\begin{pmatrix}B_{iz}\left(t\right) & B_{i}^{\pm}\left(t\right)\\
+B_{x}\left(t\right) & B_{i}\left(t\right)\\
+B_{y}\left(t\right) & B_{ij}\left(t\right)\\
+R_{i}\left(t\right) & \text{\chi}_{ij}\left(t\right)
+\end{pmatrix} & \equiv\begin{pmatrix}\sum_{\mathbf{k}}\left(g_{\mathbf{k}}-v_{\mathbf{k}}\left(t\right)\right)\left(b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}\right) & e^{\pm\sum_{\mathbf{k}}\frac{v_{i\mathbf{k}}}{\omega_{\mathbf{k}}}\left(b_{\mathbf{k}}^{\dagger}-b_{\mathbf{k}}\right)}\\
 \frac{B^{+}+B^{-}-2B}{2} & e^{-\left(1/2\right)\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}\\
-\frac{B^{-}-B^{+}}{2{\rm i}} & \sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right)
+\frac{B^{-}-B^{+}}{2{\rm i}} & e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{i\mathbf{k}}\left(t\right)-v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
+\sum_{\mathbf{k}}\left(\frac{v_{\mathbf{k}}^{2}}{\omega_{\mathbf{k}}}-2g_{\mathbf{k}}\frac{v_{\mathbf{k}}}{\omega_{\mathbf{k}}}\right) & 0
 \end{pmatrix},\\
 \begin{pmatrix}A\\
 B\left(t\right)\\
@@ -2723,45 +2706,38 @@ noindent
 \end_inset
 
  is no longer time-dependent.
- Defining:
+ We also have that the 
+\begin_inset Formula $w$
+\end_inset
+
+'s are time-independent since the system Hamiltonian is time-independent,
+ which means 
+\begin_inset Formula $w=w^{\prime}$
+\end_inset
+
+and 
+\begin_inset Formula $A_{jww^{\prime}}=A_{jw}$
+\end_inset
+
+ is also time-independent: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Lambda_{ij}\left(\tau\right)\equiv C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right).
+L_{ijww^{\prime}}\left(t,t^{\prime}\right)=L_{ijw}\left(t\right)=C_{i}C_{j}A_{jw}\int_{0}^{t}\mathscr{B}_{ij}\left(t,t^{\prime}\right)e^{{\rm i}w\tau}{\rm d\tau.}
 \end{equation}
 
 \end_inset
 
 
-\begin_inset ERT
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-K_{ijww^{\prime}}\left(t\right)=\int_{0}^{t}\Lambda_{ij}\left(\tau\right)e^{{\rm i}w\tau}e^{-{\rm i}t\left(w-w'\right)}{\rm d\tau.}\label{eq:response function-1-1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2782,7 +2758,7 @@ noindent
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}wt}A_{j}\left(w\right).
@@ -2793,7 +2769,7 @@ U^{\dagger}\left(t\right)A_{j}\left(t\right)U\left(t\right)=\sum_{w}e^{-{\rm i}w
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -2836,12 +2812,17 @@ noindent
  to:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 K_{ijww}\left(t\right) & =\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}\\
  & \equiv K_{ijw}\left(t\right).
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2897,8 +2878,11 @@ noindent
 \begin_inset Formula $\theta=\frac{1}{2}\tan^{-1}\left(\frac{\Omega_{r}}{\epsilon}\right)$
 \end_inset
 
- characterises the tilt of the system eigenstates away from the x-axis in
- the variational frame,
+ characterises the tilt of the system eigenstates away from the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis in the variational frame,
 \begin_inset Formula $\left|\overline{H_{S,1}}\right\rangle ,\left|\overline{H_{S,0}}\right\rangle $
 \end_inset
 
@@ -3045,6 +3029,13 @@ noindent
 \dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3580,6 +3571,13 @@ noindent
 \end_inset
 
  of the reference [2] extending the hermitian conjugate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
