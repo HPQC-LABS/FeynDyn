@@ -2898,8 +2898,86 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\negmedspace\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\right),\\
- & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},
+ & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},\label{eq: Hs 2011 Hamiltonian}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The Hamiltonian 
+\begin_inset Formula $\eqref{eq:Hs 2011 Hamiltonian}$
+\end_inset
+
+ differs from the transformed Hamiltonian 
+\begin_inset Formula $H_{S}$
+\end_inset
+
+ of the reference written like 
+\begin_inset Formula $H_{S}=\frac{R}{2}\mathbb{I}-\frac{\epsilon}{2}\sigma_{z}+\frac{\Omega_{r}}{2}\sigma_{x}$
+\end_inset
+
+, where 
+\begin_inset Formula $\sigma_{z}=|0\rangle\negmedspace\langle0|-|1\rangle\negmedspace\langle1|$
+\end_inset
+
+ (this base for the Pauli matrix is different from the base assumed in PRB2011
+ which is 
+\begin_inset Formula $\sigma_{z}^{\prime}=|1\rangle\negmedspace\langle1|-|0\rangle\negmedspace\langle0|$
+\end_inset
+
+) by a term proportional to the identity given by 
+\begin_inset Formula $\frac{\delta}{2}\mathbb{I}$
+\end_inset
+
+ which is independent of the variational parameters, this can be seen in
+ the following way, with 
+\begin_inset Formula $\epsilon=\delta+R$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\left(\delta+R\right)|1\rangle\negmedspace\langle1|-\frac{\delta}{2}\mathbb{I} & =\left(\delta+R\right)|1\rangle\negmedspace\langle1|-\frac{\delta}{2}|0\rangle\negmedspace\langle0|-\frac{\delta}{2}|1\rangle\negmedspace\langle1|\label{eq:equivalence hamilt}\\
+ & =\left(\frac{\delta}{2}+R\right)|1\rangle\negmedspace\langle1|-\frac{\delta}{2}|0\rangle\negmedspace\langle0|\\
+ & =\left(\frac{\delta}{2}+R\right)|1\rangle\negmedspace\langle1|-\frac{\delta}{2}|0\rangle\negmedspace\langle0|\\
+ & =\frac{R}{2}|1\rangle\negmedspace\langle1|+\left(\frac{\delta}{2}+\frac{R}{2}\right)|1\rangle\negmedspace\langle1|-\frac{\delta}{2}|0\rangle\negmedspace\langle0|\\
+ & =\frac{R}{2}|1\rangle\negmedspace\langle1|+\frac{R}{2}|0\rangle\negmedspace\langle0|+\left(\frac{\delta}{2}+\frac{R}{2}\right)|1\rangle\negmedspace\langle1|-\frac{R}{2}|0\rangle\negmedspace\langle0|-\frac{\delta}{2}|0\rangle\negmedspace\langle0|\\
+ & =\frac{R}{2}\mathbb{I}+\frac{\delta+R}{2}\left(|1\rangle\negmedspace\langle1|-|0\rangle\negmedspace\langle0|\right)\\
+ & =\frac{R}{2}\mathbb{I}-\frac{\delta+R}{2}\left(|0\rangle\negmedspace\langle0|-|1\rangle\negmedspace\langle1|\right)\\
+ & =\frac{R}{2}\mathbb{I}-\frac{\epsilon}{2}\left(|0\rangle\negmedspace\langle0|-|1\rangle\negmedspace\langle1|\right)\\
+ & =\frac{R}{2}\mathbb{I}-\frac{\epsilon}{2}\sigma_{z}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
