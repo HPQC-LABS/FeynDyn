@@ -109,6 +109,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -129,6 +130,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1826,7 +1828,7 @@ noprefix "false"
 L_{i}\left(\omega\right) & \equiv\sum_{\mathbf{k}}g_{i\mathbf{k}}\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)},\\
 R_{i}(t) & =\int_{0}^{\infty}\frac{\left|L_{i}\left(\omega\right)\right|^{2}}{\omega}\left(\left|F_{i}\left(\omega,t\right)\right|^{2}-2F_{i}^{\Re}\left(\omega,t\right)\right){\rm d}\omega,\\
 B_{ij}(t) & =e^{\text{\chi}_{10}\left(t\right)}e^{-\frac{1}{2}\int_{0}^{\infty}\left|\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\right)-L_{0}\left(\omega\right)F_{0}\left(\omega,t\right)}{\omega}\right|^{2}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
-\text{\chi}_{ij}\left(t\right) & =\delta_{ij}\int_{0}^{\infty}\frac{L_{1}^{*}\left(\omega\right)L_{0}\left(\omega\right)F_{1}^{*}\left(\omega,t\right)F_{0}\left(\omega,t\right)-L_{1}\left(\omega\right)L_{0}^{*}\left(\omega\right)F_{1}\left(\omega,t\right)F_{0}^{*}\left(\omega,t\right)}{2\omega^{2}}{\rm d}\omega,\\
+\text{\chi}_{ij}\left(t\right) & =\int_{0}^{\infty}\frac{L_{1}^{*}\left(\omega\right)L_{0}\left(\omega\right)F_{1}^{*}\left(\omega,t\right)F_{0}\left(\omega,t\right)-L_{1}\left(\omega\right)L_{0}^{*}\left(\omega\right)F_{1}\left(\omega,t\right)F_{0}^{*}\left(\omega,t\right)}{2\omega^{2}}{\rm d}\omega,\\
 F_{i}(\omega,t) & =\frac{\left(\!1\!-\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)\!+2R_{i}\left(t\right)\!-\varepsilon\left(t\right)\right)\!\right)\!+\!2\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\frac{v_{i'\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\!\left(t\right)\right|^{2}\!\left|V_{10}\!\left(t\right)\right|^{2}\!\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2\left|B_{10}\!\left(t\right)\right|^{2}\!\left|V_{10}\!\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\\
 \eta\left(t\right) & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)},\\
 \varepsilon\left(t\right) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right),\\
@@ -1925,18 +1927,19 @@ H_{X}^{{\rm eff}}\negthinspace(t)\negthinspace\equiv\negthinspace\frac{1}{t}\neg
 \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
 \mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{63}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{66}\left(t,t^{\prime}\right)
 \end{pmatrix},\\
-\mathscr{B}_{11}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\!\left(\Re\!\left(\!e^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{+}\left(t,t^{\prime}\right)\!+\!\Re\left(\!e^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\!\right)\!-\!B_{10}^{\Re}\left(t\right)\!B_{01}^{\Re}\left(t^{\prime}\right),\\
-\mathscr{B}_{22}\!\left(t,t^{\prime}\right)\! & =\!-\!\frac{1}{2}\!\left(\Re\!\left(\!e^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{+}\left(t,t^{\prime}\right)\!-\!\Re\left(\!e^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\!\right)\!+\!B_{01}^{\Im}\left(t\right)\!B_{10}^{\Im}\left(t^{\prime}\right),\\
-\mathscr{B}_{12}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\!\left(\Im\!\left(e^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{-}\left(t,t^{\prime}\right)\!+\!\Im\left(\!e^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\!\right)\!+\!B_{10}^{\Re}\left(t\right)\!B_{10}^{\Im}\left(t^{\prime}\right),\\
-\mathscr{B}_{21}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\!\left(\Im\!\left(e^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{-}\left(t,t^{\prime}\right)\!+\!\Im\left(\!e^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\!\right)\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\!\right)\!+\!B_{10}^{\Im}\left(t\right)\!B_{10}^{\Re}\left(t^{\prime}\right),\\
-{\scriptstyle \mathscr{B}_{i3,j3}\!\left(t,t^{\prime}\right)\!} & =\!{\scriptstyle \int_{0}^{\infty}\left(L_{i}\left(\omega\right)L_{j}^{*}\left(\omega\right)\left(1-F_{i}\left(\omega,t\right)\right)\left(1-F_{j}^{*}\left(\omega,t^{\prime}\right)\right)e^{{\rm i}\omega\tau}N\left(\omega\right)+L_{i}^{*}\left(\omega\right)L_{j}\left(\omega\right)\left(1-F_{i}^{*}\left(\omega,t\right)\right)\left(1-F_{j}\left(\omega,t^{\prime}\right)\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },}\\
-{\textstyle {\scriptstyle \mathscr{B}_{i3,1}\!\left(t,t^{\prime}\right)\!}} & =\!{\displaystyle {\rm i}B_{01}^{\Im}\!\left(t^{\prime}\right)\!\!\!\int_{0}^{\infty}\!\!\!\!\!\!\!\left(\!L_{i}\!\left(\omega\right)\!\!\left(1\!-\!F_{i}\!\left(\omega,t\right)\!\right)\!Q^{*}\!\!\left(\omega,t^{\prime}\right)\!N\!\left(\omega\right)\!e^{{\rm i}\omega\tau}\!-\!L_{i}^{*}\!\left(\omega\right)\!\!\left(1-F_{i}^{*}\!\left(\omega,t\right)\right)\!Q\!\left(\omega,t^{\prime}\right)\!e^{-{\rm i}\omega\tau}\!\!\left(N\!\left(\omega\right)+1\right)\!\right)\!{\rm d}\omega,{\scriptstyle \ensuremath{i\in\left\{ 3,6\right\} },}}\\
-{\scriptstyle \mathscr{B}_{1,i3}\!\left(t,t^{\prime}\right)}\! & =\!{\scriptstyle {\rm i}B_{01}^{\Im}\!\left(t\right)\!\int_{0}^{\infty}\!\left(\!L_{i}^{*}\!\left(\omega\right)\!\left(1-F_{i}^{*}\!\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t\right)\!N\!\left(\omega\right)\!e^{{\rm i}\omega\tau}-L_{i}\!\left(\omega\right)\!\left(1-F_{i}\!\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t\right)\!e^{-{\rm i}\omega\tau}\!\left(N\!\left(\omega\right)+1\right)\!\right){\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} },}\\
-{\scriptstyle \mathscr{B}_{i3,2}\!\left(t,t^{\prime}\right)}\! & =\!{\scriptstyle {\rm i}B_{10}^{\Re}\!\left(t^{\prime}\right)\!\int_{0}^{\infty}\!\left(\!L_{i}^{*}\!\left(\omega\right)\!\left(1-F_{i}^{*}\!\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t^{\prime}\right)\!\left(N\!\left(\omega\right)+1\right)\!e^{-{\rm i}\omega\tau}\!-\!L_{i}\!\left(\omega\right)\!\left(1-F_{i}\!\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t^{\prime}\right)\!e^{{\rm i}\omega\tau}\!N\!\left(\omega\right)\!\right){\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} },}\\
-{\scriptstyle \mathscr{B}_{2,i3}\!\left(t,t^{\prime}\right)}\! & =\!{\scriptstyle {\rm i}B_{10}^{\Re}\!\left(t\right)\!\int_{0}^{\infty}\!\left(\!L_{i}^{*}\!\left(\omega\right)\left(1-F_{i}^{*}\!\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t\right)\!N\!\left(\omega\right)\!e^{{\rm i}\omega\tau}-L_{i}\!\left(\omega\right)\!\left(1-F_{i}\!\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t\right)\!e^{-{\rm i}\omega\tau}\!\left(N\!\left(\omega\right)+1\right)\!\right){\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} },}\\
-U_{ij} & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right)\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)^{*}e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right),}\\
-\xi_{ij}^{\pm} & =e^{-\int_{0}^{\infty}\frac{\left|\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right){\rm e}^{{\rm i}\omega\tau}\pm L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)\mp L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega,}\\
-Q_{ij}(\omega,t) & =\frac{L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)-L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega}.
+\mathscr{B}_{11}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)+\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(t^{\prime}\right),\\
+\mathscr{B}_{22}\!\left(t,t^{\prime}\right)\! & =\!-\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)-\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)+B_{01}^{\Im}\left(t\right)B_{10}^{\Im}\left(t^{\prime}\right),\\
+\mathscr{B}_{12}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Re}\left(t\right)B_{10}^{\Im}\left(t^{\prime}\right),\\
+\mathscr{B}_{21}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Im}\left(t\right)B_{10}^{\Re}\left(t^{\prime}\right),\\
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}^{*}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
+\mathscr{B}_{i1}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)Q_{10}^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}^{*}\left(\omega,t\right)Q_{10}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{1i}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{i2}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t^{\prime}\right)\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{2i}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\zeta_{ij}\left(t,t^{\prime}\right)\! & =\!{\rm {\rm e}}^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right)\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)^{*}{\rm e}^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)},\\
+\xi_{ij}^{\pm}\left(t,t^{\prime}\right)\! & =\!{\rm e}^{-\int_{0}^{\infty}\frac{\left|\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right){\rm {\rm e}}^{{\rm i}\omega\tau}\pm\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
+P_{i}\left(\omega,t\right)\! & =\!L_{i{\rm mod}2}\left(\omega\right)\left(1-F_{i{\rm mod}2}\left(\omega,t\right)\right),\\
+Q_{ij}(\omega,t)\! & =\!\frac{L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)-L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega}.
 \end{align}
 
 \end_inset
@@ -2767,7 +2770,7 @@ H_{X}^{{\rm eff}}\negthinspace(t)\negthinspace\equiv\negthinspace\frac{1}{t}\neg
 \end{pmatrix},\\
 \mathscr{B}_{11}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\!\left(\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{+}\left(t,t^{\prime}\right)\!+\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\!\right)\!-\!B_{10}\left(t\right)\!B_{01}\left(t^{\prime}\right),\\
 \mathscr{B}_{22}\!\left(t,t^{\prime}\right)\! & =\!-\!\frac{1}{2}\!\left(\zeta_{10}\left(t,t^{\prime}\right)\!\xi_{10}^{+}\left(t,t^{\prime}\right)\!-\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\!\right)\!,\\
-\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}J(\omega)\left(1-F_{i{\rm mod}2}\left(\omega,t\right)\right)\left(1-F_{j{\rm mod}2}\left(\omega,t^{\prime}\right)\right)\left(\frac{{\rm cos}\left(\omega\tau\right)}{e^{\beta\omega}-1}+e^{-{\rm i}\omega\tau}\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
+\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}J(\omega)\left(1-F_{i{\rm {\rm mod}}2}\left(\omega,t\right)\right)\left(1-F_{j{\rm {\rm mod}}2}\left(\omega,t^{\prime}\right)\right)\left(\frac{{\rm cos}\left(\omega\tau\right)}{e^{\beta\omega}-1}+e^{-{\rm i}\omega\tau}\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
 \mathscr{B}_{i2}\!\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}\!\left(t^{\prime}\right)\!\int_{0}^{\infty}\!\!J\left(\omega\right)\frac{F_{1}\!\left(\omega,t^{\prime}\right)-F_{0}\!\left(\omega,t^{\prime}\right)}{\omega}\left(1-F_{i}\!\left(\omega,t^{\prime}\right)\right)\!\left(\frac{{\rm sin}\left(\omega\tau\right)}{e^{\beta\omega}-1}-e^{-{\rm i}\omega\tau}\right)\!{\rm d}\omega,\ensuremath{i\in\left\{ 3,6\right\} },\\
 \zeta_{ij}(t,t^{\prime}) & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{J\left(\omega\right)\left(F_{i}\left(\omega,t\right)-F_{j}\left(\omega,t\right)\right)\left(F_{i}\left(\omega,t^{\prime}\right)-F_{j}\left(\omega,t^{\prime}\right)\right)^{*}e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right),}\\
 \xi_{ij}^{\pm}(t,t^{\prime}) & =e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)\left(\left(F_{i}\left(\omega,t\right)-F_{j}\left(\omega,t\right)\right){\rm e}^{{\rm i}\omega(t-t^{\prime})}\pm\left(F_{i}\left(\omega,t^{\prime}\right)\mp F_{j}\left(\omega,t^{\prime}\right)\right)\right)^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega,}
@@ -2891,7 +2894,7 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\negmedspace\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\right),\\
- & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},\label{eq: Hs 2011 Hamiltonian}
+ & =\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}\frac{\Omega_{r}}{2},\label{eq: Hs 2011 Hamiltonian}
 \end{align}
 
 \end_inset
@@ -2938,7 +2941,7 @@ noindent
 \end_inset
 
 ) by a term proportional to the identity given by 
-\begin_inset Formula $\frac{\delta}{2}\mathbb{I}$
+\begin_inset Formula $-\frac{\delta}{2}\mathbb{I}$
 \end_inset
 
  which is independent of the variational parameters, this can be seen in
@@ -2990,7 +2993,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\bar{S}}} & \equiv\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}B\frac{\Omega}{2},\\
+\overline{H_{\bar{S}}} & \equiv\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}\frac{\Omega_{r}}{2},\\
 R & =\int_{0}^{\infty}\frac{J(\omega)}{\omega}\left(\left|F\left(\omega\right)\right|^{2}-2F\left(\omega\right)\right){\rm d}\omega,\text{since\ensuremath{F_{0}=0}}\\
 \text{\chi}_{ij} & =0\\
 B & =e^{-\frac{1}{2}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
@@ -3076,6 +3079,179 @@ A_{i(-w)} & =A_{iw}^{\dagger}
 \begin{equation}
 H_{X}^{{\rm eff}}\negthinspace(t)\negthinspace\equiv\negthinspace\frac{1}{t}\negthickspace\int_{0}^{t}\negthickspace H_{X}\negthickspace\left(t^{\prime}\right)\negthinspace{\rm d}t^{\prime}\negthinspace-\negthinspace\frac{{\rm i}}{2t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t^{\prime}}\negthickspace\negthickspace\negthickspace\left[H_{X}\negthinspace\left(t^{\prime}\right)\negthinspace,H_{X}\negthinspace\negthinspace\left(t^{\prime\prime}\right)\negthinspace\right]{\rm \negthinspace{\rm d}}t^{\prime}{\rm d}t^{\prime\prime}\negthinspace+\negthinspace\frac{{\rm 1}}{6t}\negthinspace\negthinspace\int_{0}^{t}\negthickspace\negthickspace\int_{0}^{t'}\negthickspace\negthickspace\negthickspace\int_{0}^{t''}\negthickspace\negthickspace\negthickspace\left(\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t'''\right)\negthinspace\right]\negthinspace\negthinspace+\negthinspace\negthinspace\left[\negthinspace\left[\overline{H_{\bar{S}}}\negthinspace\left(t'''\right)\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\negthinspace\negthinspace\left(t''\right)\negthinspace\right]\negthinspace\negthinspace,\negthinspace\overline{H_{\bar{S}}}\left(t'\right)\negthinspace\right]\right)\negthinspace{\rm d}t'\negthinspace{\rm d}t''\negthinspace{\rm d}t'''\negthinspace+\cdots,
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+For the time-independent PRB2011 we have the following correlations obtained
+ from the general model, we take account from the fact that 
+\begin_inset Formula $L_{0}\left(\omega\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\Im\left(L_{1}\left(\omega\right)\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\Im\left(F_{1}\left(\omega\right)\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $F_{0}\left(\omega\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\int_{0}^{\infty}\left|L_{1}\left(\omega\right)\right|^{2}f\left(\omega\right){\rm d}\omega=\int_{0}^{\infty}J_{1}\left(\omega\right)f\left(\omega\right){\rm d}\omega$
+\end_inset
+
+ for 
+\begin_inset Formula $f\left(\omega\right)\in L^{2}$
+\end_inset
+
+.
+ We can drop the time vector 
+\begin_inset Formula $(t,t^{\prime})$
+\end_inset
+
+ and instead write the correlation functions as function of 
+\begin_inset Formula $\tau$
+\end_inset
+
+, we will drop 
+\begin_inset Formula $t$
+\end_inset
+
+ and 
+\begin_inset Formula $t^{\prime}$
+\end_inset
+
+ from the expressions that contain them given the time independence of the
+ hamiltonian:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\text{\chi}_{ij}\left(t\right)=\int_{0}^{\infty}\frac{L_{1}^{*}\left(\omega\right)L_{0}\left(\omega\right)F_{1}^{*}\left(\omega,t\right)F_{0}\left(\omega,t\right)-L_{1}\left(\omega\right)L_{0}^{*}\left(\omega\right)F_{1}\left(\omega,t\right)F_{0}^{*}\left(\omega,t\right)}{2\omega^{2}}{\rm d}\omega,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\mathscr{B}_{11}\!\left(\tau\right)\! & =\!\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)+\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(t^{\prime}\right),\\
+ & =\!\frac{1}{2}\left(e^{\text{\chi}_{10}+\text{\chi}_{10}}\zeta_{10}\xi_{10}^{+}+e^{\text{\chi}_{10}+\text{\chi}_{01}}\zeta_{10}^{*}\xi_{10}^{-}\right)-B^{2},\\
+\text{\chi}_{ij} & =\int_{0}^{\infty}\frac{L_{1}\left(\omega\right)L_{0}\left(\omega\right)F_{1}\left(\omega\right)F_{0}\left(\omega\right)-L_{1}\left(\omega\right)L_{0}\left(\omega\right)F_{1}\left(\omega\right)F_{0}\left(\omega\right)}{2\omega^{2}}{\rm d}\omega,\\
+ & =0\\
+\mathscr{B}_{11}\!\left(\tau\right)\! & =\frac{1}{2}\left(e^{0}\zeta_{10}\xi_{10}^{+}+e^{0}\zeta_{10}^{*}\xi_{10}^{-}\right)-B^{2},\\
+\zeta_{10} & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{1}\left(\omega\right)F_{1}\left(\omega\right)-L_{0}\left(\omega\right)F_{0}\left(\omega\right)\right)\left(L_{1}\left(\omega\right)F_{1}\left(\omega\right)-L_{0}\left(\omega\right)F_{0}\left(\omega\right)\right)^{*}e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)}\\
+ & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{1}\left(\omega\right)F_{1}\left(\omega\right)\right)\left(L_{1}\left(\omega\right)F_{1}\left(\omega\right)\right)^{*}e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)}\\
+ & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)}\\
+ & =e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\left(\cos\left(\omega\tau\right)+{\rm i}\sin\left(\omega\tau\right)\right){\rm d}\omega\right)}\\
+ & =e^{\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}\\
+\mathscr{B}_{11}\!\left(\tau\right)\! & =\frac{1}{2}\left(e^{\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}\xi_{10}^{+}+e^{-\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}\xi_{10}^{-}\right)-B^{2},\\
+\xi_{10}^{\pm} & =e^{-\int_{0}^{\infty}\frac{\left|\left(L_{1}\left(\omega\right)F_{1}\left(\omega\right)-L_{0}\left(\omega\right)F_{0}\left(\omega\right)\right){\rm e}^{{\rm i}\omega\tau}\pm L_{1}\left(\omega\right)F_{1}\left(\omega\right)\mp L_{0}\left(\omega\right)F_{0}\left(\omega\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\\
+ & =e^{-\int_{0}^{\infty}\frac{\left|L_{1}\left(\omega\right)F_{1}\left(\omega\right){\rm e}^{{\rm i}\omega\tau}\pm L_{1}\left(\omega\right)F_{1}\left(\omega\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\\
+ & =e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left|{\rm e}^{{\rm i}\omega\tau}\pm1\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\\
+\left|{\rm e}^{{\rm i}\omega\tau}\pm1\right|^{2} & =2\left(1\pm\cos\left(\omega\tau\right)\right)\\
+\xi_{10}^{\pm} & =e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(1\pm\cos\left(\omega\tau\right)\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\\
+\mathscr{B}_{11}\!\left(\tau\right)\! & =\frac{1}{2}\left(e^{\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(1+\cos\left(\omega\tau\right)\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}+e^{-\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(1-\cos\left(\omega\tau\right)\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\right)-B^{2},\\
+ & =\frac{e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}}{2}\left(e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}+e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(-\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)+{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}\right)-B^{2}\\
+B & =e^{-\frac{1}{2}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
+G_{+}\left(\omega\right) & =e^{{\rm i}\omega\tau}N\left(\omega\right)+e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\\
+ & =\left(\cos\left(\omega\tau\right)+{\rm i}\sin\left(\omega\tau\right)\right)N\left(\omega\right)+\left(\cos\left(\omega\tau\right)-{\rm i}\sin\left(\omega\tau\right)\right)\left(N\left(\omega\right)+1\right)\\
+ & =\cos\left(\omega\tau\right)\left(2N\left(\omega\right)+1\right)-{\rm i}\sin\left(\omega\tau\right)\\
+ & =\cos\left(\omega\tau\right)\left(\frac{2}{e^{\beta\omega}-1}+1\right)-{\rm i}\sin\left(\omega\tau\right)\\
+ & =\cos\left(\omega\tau\right)\left(\frac{1+e^{\beta\omega}}{e^{\beta\omega}-1}\right)-{\rm i}\sin\left(\omega\tau\right)\\
+ & =\cos\left(\omega\tau\right)\left(\frac{e^{-\beta\omega/2}+e^{\beta\omega/2}}{-e^{-\beta\omega/2}+e^{\beta\omega/2}}\right)-{\rm i}\sin\left(\omega\tau\right)\\
+ & =\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right),\\
+\phi\left(\tau\right) & =\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}G_{+}\left(\omega,\tau\right){\rm d}\omega\\
+ & =\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\left(\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right)\right){\rm d}\omega,\\
+\mathscr{B}_{11}\!\left(\tau\right)\! & =\frac{e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}}{2}\left(e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}+e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(-\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)+{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}\right)-B^{2}\\
+ & =\frac{B^{2}}{2}\left(e^{-\phi\left(\tau\right)}+e^{\phi\left(\tau\right)}-2\right)\\
+\mathscr{B}_{22}\!\left(\tau\right)\! & =\!-\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)-\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)+B_{01}^{\Im}\left(t\right)B_{10}^{\Im}\left(t^{\prime}\right),\\
+ & =\!-\frac{1}{2}\left(\left({\rm e}^{\text{\chi}_{01}+\text{\chi}_{01}}\right)\zeta_{10}\xi_{10}^{+}-\left({\rm e}^{\text{\chi}_{10}+\text{\chi}_{01}}\right)\zeta_{10}^{*}\xi_{10}^{-}\right),\\
+ & =\!\frac{1}{2}\left(\zeta_{10}^{*}\xi_{10}^{-}-\zeta_{10}\xi_{10}^{+}\right),\\
+ & =\!\frac{1}{2}\left(e^{-\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(1-\cos\left(\omega\tau\right)\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}-e^{\text{{\rm i}}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\sin\left(\omega\tau\right){\rm d}\omega}e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(1+\cos\left(\omega\tau\right)\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\right),\\
+ & =\frac{1}{2}e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega}\left(e^{\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}-e^{-\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)\left(\cos\left(\omega\tau\right)\coth\left(\frac{\beta\omega}{2}\right)-{\rm i}\sin\left(\omega\tau\right)\right)}{\omega^{2}}{\rm d}\omega}\right)\\
+ & =\frac{B^{2}}{2}\left(e^{\phi\left(\tau\right)}-e^{-\phi\left(\tau\right)}\right),\\
+\mathscr{B}_{12}\!\left(\tau\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Re}\left(t\right)B_{10}^{\Im}\left(t^{\prime}\right)\\
+ & =0,\\
+\mathscr{B}_{21}\!\left(\tau\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Im}\left(t\right)B_{10}^{\Re}\left(t^{\prime}\right),\\
+ & =0,\\
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}^{*}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
+\mathscr{B}_{66}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{6}\left(\omega,t\right)P_{6}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{6}^{*}\left(\omega,t\right)P_{6}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+P_{6}\left(\omega,t\right) & =L_{6{\rm mod}2}\left(\omega\right)\left(1-F_{6{\rm mod}2}\left(\omega,t\right)\right),\\
+ & =L_{0}\left(\omega\right)\left(1-F_{0}\left(\omega,t\right)\right),\\
+ & =0,\\
+\mathscr{B}_{66}\left(\tau\right) & =0,\\
+\mathscr{B}_{36}\left(t,t^{\prime}\right) & =\int_{0}^{\infty}\left(P_{3}\left(\omega,t\right)P_{6}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{3}^{*}\left(\omega,t\right)P_{6}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =0,\\
+\mathscr{B}_{63}\left(t,t^{\prime}\right) & =\int_{0}^{\infty}\left(P_{6}\left(\omega,t\right)P_{3}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{6}^{*}\left(\omega,t\right)P_{3}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =0,\\
+\mathscr{B}_{33}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{3}\left(\omega,t\right)P_{3}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{3}^{*}\left(\omega,t\right)P_{3}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =\int_{0}^{\infty}\left(P_{3}\left(\omega,t\right)P_{3}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{3}^{*}\left(\omega,t\right)P_{3}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+P_{3}\left(\omega,t\right) & =L_{3{\rm mod}2}\left(\omega\right)\left(1-F_{3{\rm mod}2}\left(\omega,t\right)\right),\\
+ & =L_{1}\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right),\\
+P_{3}\left(\omega,t\right)P_{3}^{*}\left(\omega,t^{\prime}\right) & =L_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)L_{1}^{*}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right),\\
+ & =\left|L_{1}\left(\omega\right)\right|^{2}\left(1-F_{1}\left(\omega\right)\right)^{2}\\
+\mathscr{B}_{33}\left(t,t^{\prime}\right)\! & =\int_{0}^{\infty}\left|L_{1}\left(\omega\right)\right|^{2}\left(1-F_{1}\left(\omega\right)\right)^{2}\left({\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =\int_{0}^{\infty}J\left(\omega\right)\left(1-F\left(\omega\right)\right)^{2}G_{+}\left(\omega\right){\rm d}\omega\\
+\mathscr{B}_{i1}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)Q_{10}^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}^{*}\left(\omega,t\right)Q_{10}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} \\
+ & =0,\\
+\mathscr{B}_{1i}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+ & =0,\\
+\mathscr{B}_{62}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{6}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t^{\prime}\right)\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-P_{6}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+ & =0,\\
+\mathscr{B}_{32}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{3}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t^{\prime}\right)\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-P_{3}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}\left(P_{3}^{*}\left(\omega\right)Q_{10}\left(\omega\right)\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-P_{3}\left(\omega\right)Q_{10}^{*}\left(\omega\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+Q_{ij}(\omega,t) & =\frac{L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)-L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega},\\
+Q_{10}(\omega,t) & =\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\right)}{\omega},\\
+\mathscr{B}_{32}\left(t,t^{\prime}\right)\! & =\!{\rm i}B\int_{0}^{\infty}\left(L_{1}^{*}\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\right)}{\omega}\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-L_{1}\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{L_{1}^{*}\left(\omega\right)F_{1}\left(\omega,t\right)}{\omega}{\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}\left|L_{1}\left(\omega\right)\right|^{2}\left(\left(1-F_{1}\left(\omega\right)\right)\frac{F_{1}\left(\omega\right)}{\omega}\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-\left(1-F_{1}\left(\omega\right)\right)\frac{F_{1}\left(\omega\right)}{\omega}{\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}J\left(\omega\right)\left(1-F\left(\omega,t\right)\right)\frac{F\left(\omega\right)}{\omega}\left(\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-{\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}J\left(\omega\right)\left(1-F\left(\omega,t\right)\right)\frac{F\left(\omega\right)}{\omega}G_{-}\left(\omega\right){\rm d}\omega\\
+\mathscr{B}_{23}\left(t,t^{\prime}\right) & ={\rm i}B_{10}^{\Re}\left(t\right)\int_{0}^{\infty}\left(P_{3}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{3}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}\left(P_{3}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{3}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}\left(L_{1}^{*}\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{L_{1}\left(\omega\right)F_{1}\left(\omega,t\right)}{\omega}N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-L_{1}\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{L_{1}^{*}\left(\omega\right)F_{1}\left(\omega,t\right)}{\omega}{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & ={\rm i}B\int_{0}^{\infty}J\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{F_{1}\left(\omega,t\right)}{\omega}\left(N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =-{\rm i}B\int_{0}^{\infty}J\left(\omega\right)\left(1-F_{1}\left(\omega,t\right)\right)\frac{F_{1}\left(\omega,t\right)}{\omega}\left(-N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}+{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+ & =-\mathscr{B}_{32}\left(t,t^{\prime}\right)\\
+\zeta_{ij} & \left(t,t^{\prime}\right)=e^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right)\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)^{*}e^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)},\\
+\xi_{ij}^{\pm} & \left(t,t^{\prime}\right)=e^{-\int_{0}^{\infty}\frac{\left|\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right){\rm e}^{{\rm i}\omega\tau}\pm L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)\mp L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
+P_{i}\left(\omega,t\right) & =L_{i{\rm mod}2}\left(\omega\right)\left(1-F_{i{\rm mod}2}\left(\omega,t\right)\right),\\
+Q_{ij}(\omega,t) & =\frac{L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)-L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega},\\
+\mathscr{B}\left(t,t^{\prime}\right) & \equiv\begin{pmatrix}\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{23}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{26}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{31}\left(t,t^{\prime}\right) & \mathscr{B}_{32}\left(t,t^{\prime}\right) & \mathscr{B}_{33}\left(t,t^{\prime}\right) & \mathscr{B}_{32}\left(t,t^{\prime}\right) & \mathscr{B}_{31}\left(t,t^{\prime}\right) & \mathscr{B}_{36}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{23}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{26}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{63}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{66}\left(t,t^{\prime}\right)
+\end{pmatrix},\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
