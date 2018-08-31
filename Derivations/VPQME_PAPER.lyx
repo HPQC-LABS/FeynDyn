@@ -1172,7 +1172,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-
+Return to Schrödinger picture
 \end_layout
 
 \begin_layout Standard
@@ -2669,7 +2669,7 @@ H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{
 \overline{H_{\bar{S}}}\left(t\right) & \equiv\sum_{i}\left(\varepsilon_{i}\negmedspace\left(t\right)\negmedspace+\negmedspace R_{i}\left(t\right)\right)\negmedspace\left|i\right\rangle \negmedspace\!\left\langle i\right|+\sigma_{x}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\negmedspace\right)\negmedspace-\negmedspace\sigma_{y}\negmedspace\left(B_{10}\left(t\right)\negmedspace V_{10}\left(t\right)\right),\\
 R_{i}(t) & =\int_{0}^{\infty}\frac{J(\omega)}{\omega}\left(F_{i}^{2}\left(\omega,t\right)-2F_{i}\left(\omega,t\right)\right){\rm d}\omega,\\
 \text{\chi}_{ij}\left(t\right) & =0,\\
-B_{ij}(t) & =\delta_{ij}e^{-\frac{1}{2}\int_{0}^{\infty}\frac{J\left(\omega\right)\left(F_{i}\left(\omega,t\right)-F_{j}\left(\omega,t\right)\right)}{\omega^{2}}^{2}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
+B_{ij}(t) & =e^{-\frac{1}{2}\int_{0}^{\infty}\frac{J\left(\omega\right)\left(F_{i}\left(\omega,t\right)-F_{j}\left(\omega,t\right)\right)}{\omega^{2}}^{2}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
 F_{i}(\omega,t) & =\frac{\left(\!1\!-\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)\!+2R_{i}\left(t\right)\!-\varepsilon\left(t\right)\right)\!\right)\!+\!2\frac{\tanh\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\frac{F_{i^{\prime}}(\omega,t)g(\omega)}{\omega}B_{10}^{2}\!\left(t\right)\!V_{10}^{2}\!\left(t\right)\!\coth\left(\beta\omega/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2B_{10}^{2}\!\left(t\right)\!V_{10}^{2}\!\left(t\right)\coth\left(\beta\omega/2\right)}{\omega}\right)},\\
 \eta\left(t\right) & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)},\\
 \varepsilon\left(t\right) & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right),\\
@@ -2994,13 +2994,13 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \overline{H_{\bar{S}}} & \equiv\left(\delta+R\right)\left|1\right\rangle \negmedspace\!\left\langle 1\right|+\sigma_{x}\frac{\Omega_{r}}{2},\\
-R & =\int_{0}^{\infty}\frac{J(\omega)}{\omega}\left(\left|F\left(\omega\right)\right|^{2}-2F\left(\omega\right)\right){\rm d}\omega,\text{since\ensuremath{F_{0}=0}}\\
+R & =\int_{0}^{\infty}\frac{J(\omega)}{\omega}\left(F^{2}\left(\omega\right)-2F\left(\omega\right)\right){\rm d}\omega,\\
 \text{\chi}_{ij} & =0\\
 B & =e^{-\frac{1}{2}\int_{0}^{\infty}\frac{J\left(\omega\right)F^{2}\left(\omega\right)}{\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
 J\left(\omega\right) & \equiv\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
-F(\omega) & =\frac{\left(1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\right)}{1-\frac{\varepsilon\left(t\right)}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\left(1-\frac{\Omega_{r}^{2}}{2\varepsilon\left(t\right)\omega}\coth\left(\beta\omega/2\right)\right)},\\
-\eta & \equiv\sqrt{\left(\ensuremath{{\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\right)\right)^{2}-4\ensuremath{{\rm {\rm Det}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right)},\\
-\varepsilon & \equiv{\rm {\rm \text{Tr}}}\left(\overline{H_{\bar{S}}}\left(t\right)\right),
+F(\omega) & =\frac{\left(1-\frac{\varepsilon}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\right)}{1-\frac{\varepsilon}{\eta}\tanh\left(\frac{\beta\eta}{2}\right)\left(1-\frac{\Omega_{r}^{2}}{2\varepsilon\omega}\coth\left(\beta\omega/2\right)\right)},\\
+\eta & \equiv\sqrt{\varepsilon^{2}+\Omega_{r}^{2}},\\
+\varepsilon & \equiv\delta+R,
 \end{align}
 
 \end_inset
