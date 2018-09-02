@@ -3265,7 +3265,7 @@ Q_{ij}(\omega,t) & =\frac{L_{i}\left(\omega\right)F_{j}\left(\omega,t\right)-L_{
 0 & \mathscr{B}_{22}\left(\tau\right) & \mathscr{B}_{23}\left(\tau\right) & \mathscr{B}_{22}\left(\tau\right) & 0 & 0\\
 \mathscr{B}_{11}\left(\tau\right) & 0 & 0 & 0 & \mathscr{B}_{11}\left(\tau\right) & 0\\
 0 & 0 & 0 & 0 & 0 & 0
-\end{pmatrix},\\
+\end{pmatrix},\label{eq:correlation vp2011-1}\\
 \mathscr{B}_{11}\!\left(\tau\right)\! & =\frac{B^{2}}{2}\left(e^{\phi\left(\tau\right)}+e^{-\phi\left(\tau\right)}-2\right),\\
 \mathscr{B}_{22}\!\left(\tau\right)\! & =\frac{B^{2}}{2}\left(e^{\phi\left(\tau\right)}-e^{-\phi\left(\tau\right)}\right),\\
 \mathscr{B}_{33}\!\left(\tau\right)\! & =\int_{0}^{\infty}J\left(\omega\right)\left(1-F\left(\omega\right)\right)^{2}G_{+}\left(\omega\right){\rm d}\omega,\\
@@ -3867,13 +3867,15 @@ A_{j}\left(\omega\right) & \equiv A_{jw}\\
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left[A_{i},L_{ijw}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijw}^{\dagger}\left(t\right),A_{i}\right]\right)\label{master time ind}\\
-\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!\right).\\
-\gamma_{ij}\left(w,t\right) & \equiv2K_{ijw}^{\Re}\left(t\right)\\
-S_{ij}\left(w,t\right) & \equiv K_{ijw}^{\Im}\left(t\right)\\
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ijw}\gamma_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}S_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right].
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left[A_{i},L_{ijw}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijw}^{\dagger}\left(t\right),A_{i}\right]\right),\label{master time ind}\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}K_{ijw}^{\Re}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}K_{ijw}^{\Im}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right],\\
+\gamma_{ij}\left(w,t\right) & \equiv2K_{ijw}^{\Re}\left(t\right),\\
+S_{ij}\left(w,t\right) & \equiv K_{ijw}^{\Im}\left(t\right),\\
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{\bar{S}}}\!\left(t\right)\right]-\frac{1}{2}\sum_{ijw}\gamma_{ij}\!\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\!\left(t\right)-\overline{\rho_{\bar{S}}}\!\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}S_{ij}\!\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\!\left(t\right)+\overline{\rho_{\bar{S}}}\!\left(t\right)A_{jw}^{\dagger}\right].
 \end{align}
 
 \end_inset
@@ -3939,7 +3941,7 @@ noindent
 \Lambda\!\left(\tau\right)\!=\begin{pmatrix}\frac{\Omega_{r}^{2}}{4}\left(\cosh\!\left(\phi\!\left(\tau\right)\right)-1\right) & 0 & 0\\
 0 & \frac{\Omega_{r}^{2}}{4}\sinh\!\left(\phi\!\left(\tau\right)\right) & -\frac{\Omega_{r}}{2}\!\int_{0}^{\infty}\!{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)\!{\rm i}G_{-}\!\left(\tau\right)\\
 0 & \frac{\Omega_{r}}{2}\int_{0}^{\infty}{\rm d}\omega\frac{J\!\left(\omega\right)}{\omega}\!F\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right){\rm i}G_{-}\left(\tau\right) & \int_{0}^{\infty}{\rm d}\omega J\!\left(\omega\right)\!\left(1-F\!\left(\omega\right)\right)^{2}\!G_{+}\!\left(\tau\right)
-\end{pmatrix}.\label{eq:correlation vp2011}
+\end{pmatrix}.\label{eq:correlation vp2011-2}
 \end{equation}
 
 \end_inset
@@ -4311,7 +4313,7 @@ noindent
 \end_inset
 
  and using the matrix 
-\begin_inset Formula $\eqref{eq:correlation vp2011}$
+\begin_inset Formula $\eqref{eq:correlation vp2011-1}$
 \end_inset
 
   we can deduce that the only terms that survive are 
@@ -4591,7 +4593,7 @@ noindent
 
 , so there is no transformation in this case.
  As we can see from the matrix 
-\begin_inset Formula $\eqref{eq:correlation vp2011}$
+\begin_inset Formula $\eqref{eq:correlation vp2011-1}$
 \end_inset
 
  the only term that survives is 
