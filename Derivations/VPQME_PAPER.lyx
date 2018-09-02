@@ -1755,8 +1755,8 @@ Our master equation in the variationally optimized frame is:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\\
-\textcolor{red}{\ensuremath{\dot{\rho}}} & \textcolor{red}{=}\textcolor{red}{-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[L_{i},L_{ijww^{\prime}}\left(t\right)\rho\right]-\left[\rho L_{ijww^{\prime}}^{\dagger}\left(t\right),L_{i}\right]\right)}\label{eq:VPQME2x2}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\\
+\textcolor{red}{\ensuremath{\dot{\rho}}} & \textcolor{red}{=}\textcolor{red}{-{\rm i}\left[H\left(t\right),\rho\right]-\sum_{ijww^{\prime}}\left(\left[L_{i},L_{ijww^{\prime}}\left(t\right)\rho\right]+\left[\rho L_{ijww^{\prime}}^{\dagger}\left(t\right),L_{i}\right]\right)}\label{eq:VPQME2x2}
 \end{align}
 
 \end_inset
@@ -3618,6 +3618,32 @@ noindent
 \end_layout
 
 \begin_layout Standard
+Now let's define:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{ijw}\left(t\right)=\int_{0}^{t}C_{i}C_{j}\mathscr{B}_{ij}\left(\tau\right)e^{{\rm i}w\tau}{\rm d\tau}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{ijw}\left(t\right)=A_{jw}K_{ijw}\left(t\right).
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
@@ -3730,7 +3756,7 @@ noindent
 
 \end_inset
 
- The Fourier decomposition matrices for this case are:
+ The Fourier decomposition matrices for this special case are:
 \end_layout
 
 \begin_layout Standard
@@ -3804,9 +3830,50 @@ noindent
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The master equation for this special case is:
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!\right).\label{master time ind}
+L_{ijww^{\prime}}\left(t\right) & =\delta_{ww^{\prime}}A_{jw}K_{ijw}\left(t\right),\\
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left[A_{i},L_{ijw}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijw}^{\dagger}\left(t\right),A_{i}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left[A_{i},A_{jw}K_{ijw}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}K_{ijw}^{*}\left(t\right),A_{i}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left(K_{ijw}^{\Re}\left(t\right)+{\rm i}K_{ijw}^{\Im}\left(t\right)\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left(K_{ijw}^{\Re}\left(t\right)-{\rm i}K_{ijw}^{\Im}\left(t\right)\right)\left[\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger},A_{i}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left(\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger},A_{i}\right]\right)+{\rm i}K_{ijw}^{\Im}\left(t\right)\left(\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger},A_{i}\right]\right)\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left(\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)\right]-\left[A_{i},\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]\right)+{\rm i}K_{ijw}^{\Im}\left(t\right)\left(\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[A_{i},\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]\right)\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(K_{ijw}^{\Re}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]+{\rm i}K_{ijw}^{\Im}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]\right)\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}K_{ijw}^{\Re}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}K_{ijw}^{\Im}\left(t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]\\
+\gamma_{ij}\left(w,t\right) & \equiv2K_{ijw}^{\Re}\left(t\right)\\
+S_{ij}\left(w,t\right) & \equiv K_{ijw}^{\Im}\left(t\right)\\
+A_{j}\left(\omega\right) & \equiv A_{jw}\\
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ijw}\gamma_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}S_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]\\
+ & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ijw}\gamma_{ij}\left(w,t\right)\left[A_{i},A_{j}\left(\omega\right)\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{j}^{\dagger}\left(\omega\right)\right]-{\rm i}\sum_{ijw}S_{ij}\left(w,t\right)\left[A_{i},A_{j}\left(\omega\right)\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{j}^{\dagger}\left(\omega\right)\right]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijw}\left(\left[A_{i},L_{ijw}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijw}^{\dagger}\left(t\right),A_{i}\right]\right)\label{master time ind}\\
+\frac{{\rm d}\overline{\rho}_{\bar{S}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\!\left[\overline{H}_{\bar{S}}\!\left(t\right),\overline{\rho}_{S}\!\left(t\right)\right]\!-\!\sum_{ijw}\!\left(\!K_{ijw}^{\Re}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)-\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!+\!{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\!\left[A_{i},A_{jw}\overline{\rho}_{S}\!\left(t\right)+\overline{\rho}_{S}\!\left(t\right)A_{jw}^{\dagger}\right]\!\right).\\
+\gamma_{ij}\left(w,t\right) & \equiv2K_{ijw}^{\Re}\left(t\right)\\
+S_{ij}\left(w,t\right) & \equiv K_{ijw}^{\Im}\left(t\right)\\
+\frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\frac{1}{2}\sum_{ijw}\gamma_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)-\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right]-{\rm i}\sum_{ijw}S_{ij}\left(w,t\right)\left[A_{i},A_{jw}\overline{\rho_{\bar{S}}}\left(t\right)+\overline{\rho_{\bar{S}}}\left(t\right)A_{jw}^{\dagger}\right].
 \end{align}
 
 \end_inset
@@ -3843,6 +3910,10 @@ v_{\mathbf{k}}\left(t\right) & =g_{\mathbf{k}}F\left(\omega_{\mathbf{k}},t\right
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3862,7 +3933,7 @@ noindent
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \Lambda\!\left(\tau\right)\!=\begin{pmatrix}\frac{\Omega_{r}^{2}}{4}\left(\cosh\!\left(\phi\!\left(\tau\right)\right)-1\right) & 0 & 0\\
@@ -3876,7 +3947,7 @@ noindent
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -3898,6 +3969,26 @@ noindent
 \end_inset
 
  defines the phonon propagator.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
  Applying the inverse transformation to the equation 
 \begin_inset Formula $\eqref{master time ind}$
 \end_inset
@@ -3914,7 +4005,7 @@ noindent
 \size footnotesize
 \begin_inset Formula 
 \begin{equation}
-\dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
+\dot{\rho}\!\left(t\right)\!=\!-{\rm i}\left[H,\rho\!\left(t\right)\right]-\!\sum_{ijw}\!\left(K_{ijw}^{\Re}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)+\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\!+{\rm i}K_{ijw}^{\Im}\!\left(t\right)\!\left[e^{-V}\!\!A_{i}e^{V}\!,e^{-V}\!\!A_{jw}e^{V}\!\rho\!\left(t\right)-\rho\!\left(t\right)\!e^{-V}\!\!A_{jw}^{\dagger}e^{V}\right]\right).
 \end{equation}
 
 \end_inset
