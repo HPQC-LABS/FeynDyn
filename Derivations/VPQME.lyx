@@ -103,6 +103,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -123,6 +124,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -2626,7 +2628,7 @@ Separating
 \begin_inset Formula 
 \begin{align}
 \frac{\left(\!v_{i\mathbf{k}}^{\Im}\left(t\right)\!-\!g_{i\mathbf{k}}^{\Im}\!\right)\!\eta\left(\!t\!\right)}{\tanh\!\left(\!\frac{\beta\eta\left(\!t\!\right)}{2}\!\right)}\! & =\!v_{i\mathbf{k}}^{\Im}\!\left(t\right)\!\left(\!\varepsilon\!\left(\!t\!\right)\!-\!2\!\left(\!\varepsilon\!\left(\!t\!\right)\!-\!\varepsilon_{i}\!\left(\!t\!\right)\!-\!R_{i}\left(t\right)\!\right)\!-\!\frac{2|\!V_{10}\!\left(\!t\!\right)\!B_{10}\left(t\right)\!|^{2}\!\coth\!\left(\!\frac{\beta\omega_{\mathbf{k}}}{2}\!\right)}{\omega_{\mathbf{k}}}\!\right)\!-\!g_{i\mathbf{k}}^{\Im}\!\left(\!2\varepsilon_{i}\!\left(\!t\!\right)\!+\!2\!R_{i}\left(t\right)\!-\!\varepsilon\!\left(\!t\!\right)\!\right)\!+\!2\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\left|\!B_{10}\left(t\right)\!V_{10}\!\left(\!t\!\right)\!\right|^{2}\!\coth\!\left(\!\frac{\beta\omega_{\mathbf{k}}}{2}\!\right)\!,\\
-v_{i\mathbf{k}}^{\Im}\!-\!g_{i\mathbf{k}}^{\Im} & \!=\!v_{i\mathbf{k}}^{\Im}\left(t\right)\!\frac{\tanh\!\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}\!\left(\!\varepsilon\!\left(t\right)\!-\!2\left(\!\varepsilon\!\left(t\right)\!-\!\varepsilon_{i}\!\left(t\right)\!-\!R_{i}\left(t\right)\!\right)\!-\!\frac{2\left|\!V_{10}\!\left(t\right)\!B_{10}\left(t\right)\!\right|^{2}\!\coth\!\left(\!\frac{\beta\omega_{\mathbf{k}}}{2}\!\right)}{\omega_{\mathbf{k}}}\!\right)\!-\!\frac{\tanh\!\left(\!\frac{\beta\eta\left(t\right)}{2}\!\right)}{\eta\left(t\right)}g_{i\mathbf{k}}^{\Im}\!\left(\!2\varepsilon_{i}\!\left(t\right)\!+\!2R_{i}\left(t\right)\!-\!\varepsilon\!\left(t\right)\!\right)\!\\
+v_{i\mathbf{k}}^{\Im}-g_{i\mathbf{k}}^{\Im} & =v_{i\mathbf{k}}^{\Im}\left(t\right)\!\frac{\tanh\!\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\!\left(\!\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\!\left(t\right)-R_{i}\!\left(t\right)\right)-\frac{2\left|V_{10}\!\left(t\right)\!B_{10}\left(t\right)\right|^{2}\!\coth\!\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\!\right)-\frac{\tanh\!\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}g_{i\mathbf{k}}^{\Im}\!\left(2\varepsilon_{i}\!\left(t\right)+2R_{i}\!\left(t\right)-\varepsilon\left(t\right)\right)\\
  & +2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\left(t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right),\\
 v_{i\mathbf{k}}^{\Im}\left(t\right) & \!=\!\frac{g_{i\mathbf{k}}^{\Im}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\left(t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)},\\
 v_{i\mathbf{k}}^{\Im}\left(t\right) & \!=\!\frac{g_{i\mathbf{k}}^{\Im}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\left(t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}.
@@ -2694,9 +2696,147 @@ I tried smallest for equation 313 but it doesn't fit on one line
 \begin_inset Formula 
 \begin{align}
 v_{i\mathbf{k}}\left(t\right) & =v_{i\mathbf{k}}^{\Re}\left(t\right)+{\rm i}v_{i\mathbf{k}}^{\Im}\left(t\right)\label{eq:Variational Parameters}\\
- & =\frac{g_{i\mathbf{k}}^{\Re}\!\left(\!1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\!\left(2\varepsilon_{i}\!\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\!\right)\!\right)+2\frac{\tanh\left(\negmedspace\frac{\beta\eta\left(t\right)}{2}\negmedspace\right)}{\eta\left(t\right)}\negmedspace\frac{v_{i^{\prime}\mathbf{k}}^{\Re}\left(t\right)}{\omega_{\mathbf{k}}}\negmedspace\left|B_{10}\left(t\right)\right|^{2}\negmedspace\left|V_{10}\left(t\right)\right|^{2}\negmedspace\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}\\
- & +{\rm i}\frac{g_{i\mathbf{k}}^{\Im}\negmedspace\left(\negmedspace1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\negmedspace\left(2\varepsilon_{i}\negmedspace\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\negmedspace\right)\negmedspace\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\negmedspace\left|B_{10}\right|^{2}\negmedspace\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}\\
+ & =\frac{g_{i\mathbf{k}}^{\Re}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Re}\left(t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}\\
+ & +{\rm i}\frac{g_{i\mathbf{k}}^{\Im}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}^{\Im}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left|B_{10}\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}\\
  & =\frac{g_{i\mathbf{k}}\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)+2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{v_{i^{\prime}\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2|V_{10}\left(t\right)|^{2}\left|B_{10}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}{\omega_{\mathbf{k}}}\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's obtain the explicit form of 
+\begin_inset Formula $v_{0\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{1\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+, at first we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+a_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{\left(1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(2\varepsilon_{i}\left(t\right)+2R_{i}\left(t\right)-\varepsilon\left(t\right)\right)\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)},\\
+b_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{2\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\frac{1}{\omega_{\mathbf{k}}}\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{1-\frac{\tanh\left(\frac{\beta\eta\left(t\right)}{2}\right)}{\eta\left(t\right)}\left(\varepsilon\left(t\right)-2\left(\varepsilon\left(t\right)-\varepsilon_{i}\left(t\right)-R_{i}\left(t\right)\right)-\frac{2\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}\coth\left(\beta\omega_{\mathbf{k}}/2\right)}{\omega_{\mathbf{k}}}\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the equation 
+\begin_inset Formula $\eqref{eq:Variational Parameters}$
+\end_inset
+
+ written in explicit form is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{0\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+v_{1\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right),\\
+v_{1\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)+v_{0\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This system of equations has the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{0\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)\! & =\!g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+v_{1\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)\\
+\! & =\!g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+\left(g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)+v_{0\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)\right)b_{0}\left(\omega_{\mathbf{k}},t\right)\\
+\! & =\!g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)+v_{0\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)\\
+v_{0\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)\!\left(1-b_{1}\!\left(\omega_{\mathbf{k}},t\right)\!b_{0}\!\left(\omega_{\mathbf{k}},t\right)\right)\! & =\!g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)\\
+v_{0\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)\! & =\!\frac{g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)}{1-b_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)},\\
+v_{1\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)\! & =\!g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)+\frac{g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)+g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)b_{0}\left(\omega_{\mathbf{k}},t\right)}{1-b_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)}b_{1}\left(\omega_{\mathbf{k}},t\right)\\
+\! & =\!\frac{g_{1}\left(\omega_{\mathbf{k}}\right)a_{1}\left(\omega_{\mathbf{k}},t\right)+g_{0}\left(\omega_{\mathbf{k}}\right)a_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)}{1-b_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a shorter representation let's define:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+r_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{a_{i}\left(\omega_{\mathbf{k}},t\right)}{1-b_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)},\\
+s_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{a_{\left(i+1\right){\rm mod}2}\left(\omega_{\mathbf{k}},t\right)b_{i{\rm mod}2}\left(\omega_{\mathbf{k}},t\right)}{1-b_{0}\left(\omega_{\mathbf{k}},t\right)b_{1}\left(\omega_{\mathbf{k}},t\right)}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the variational parameter are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{pmatrix}v_{0\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)\\
+v_{1\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)
+\end{pmatrix}\equiv\begin{pmatrix}r_{0}\left(\omega_{\mathbf{k}},t\right) & s_{0}\left(\omega_{\mathbf{k}},t\right)\\
+r_{1}\left(\omega_{\mathbf{k}},t\right) & s_{1}\left(\omega_{\mathbf{k}},t\right)
+\end{pmatrix}\begin{pmatrix}g_{0}\left(\omega_{\mathbf{k}}\right)\\
+g_{1}\left(\omega_{\mathbf{k}}\right)
+\end{pmatrix}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given that 
+\begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)\equiv g_{i}\left(\omega_{\mathbf{k}}\right)F_{i}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ then we can write:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+F_{0}\left(\omega_{\mathbf{k}},t\right) & =r_{0}\left(\omega_{\mathbf{k}},t\right)+\frac{g_{1}\left(\omega_{\mathbf{k}}\right)}{g_{0}\left(\omega_{\mathbf{k}}\right)}s_{0}\left(\omega_{\mathbf{k}},t\right)\\
+F_{1}\left(\omega_{\mathbf{k}},t\right) & =\frac{g_{0}\left(\omega_{\mathbf{k}}\right)}{g_{1}\left(\omega_{\mathbf{k}}\right)}r_{1}\left(\omega_{\mathbf{k}},t\right)+s_{1}\left(\omega_{\mathbf{k}},t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the continuous limit we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+F_{0}\left(\omega,t\right) & =r_{0}\left(\omega,t\right)+\frac{L_{1}\left(\omega\right)}{L_{0}\left(\omega\right)}s_{0}\left(\omega,t\right)\\
+F_{1}\left(\omega,t\right) & =\frac{L_{0}\left(\omega\right)}{L_{1}\left(\omega\right)}r_{1}\left(\omega,t\right)+s_{1}\left(\omega,t\right)
 \end{align}
 
 \end_inset
@@ -2984,7 +3124,7 @@ This equation has the formal solution
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\widetilde{\overline{\rho_{T}}}\left(t\right)=\overline{\rho_{T}}\left(0\right)\text{-}{\rm i}\int_{0}^{t}[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{T}}}\left(s\right)]{\rm d}s.\label{sol}
+\widetilde{\overline{\rho_{T}}}\left(t\right)=\overline{\rho_{T}}\left(0\right)\text{-}{\rm i}\int_{0}^{t}[\widetilde{\overline{H_{\bar{I}}}}\left(t^{\prime}\right),\widetilde{\overline{\rho_{T}}}\left(t^{\prime}\right)]{\rm d}t^{\prime}.\label{sol}
 \end{equation}
 
 \end_inset
@@ -3007,7 +3147,7 @@ Replacing the equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{{\rm d}\widetilde{\overline{\rho_{T}}}\left(t\right)}{{\rm d}t}=-{\rm i}[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\overline{\rho_{T}}\left(0\right)]-\int_{0}^{t}[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{T}}}\left(s\right)]]{\rm d}s.\label{sol-1}
+\frac{{\rm d}\widetilde{\overline{\rho_{T}}}\left(t\right)}{{\rm d}t}=-{\rm i}[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\overline{\rho_{T}}\left(0\right)]-\int_{0}^{t}[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),[\widetilde{\overline{H_{\bar{I}}}}\left(t^{\prime}\right),\widetilde{\overline{\rho_{T}}}\left(t^{\prime}\right)]]{\rm d}t^{\prime}.\label{sol-1}
 \end{equation}
 
 \end_inset
@@ -3280,11 +3420,11 @@ Using the expression
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\!\left(\!t\!\right)}{{\rm d}t}\! & =\!-\int_{0}^{t}{\rm {\rm \text{Tr}}}_{B}\left[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\left[\widetilde{\overline{H_{\bar{I}}}}\left(s\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\\
-\! & =\!-\int_{0}^{t}{\rm \text{Tr}}_{B}\left[\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right),\left[\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}s\\
-\! & =\!-\!\int_{0}^{t}\!{\rm \text{Tr}}_{B}\!\left[\sum_{j}\!C_{j}\!\left(\!t\!\right)\!\left(\!\widetilde{A_{j}}\!\left(\!t\!\right)\!\otimes\!\widetilde{B_{j}}\!\left(\!t\!\right)\!\right),\sum_{i}\!C_{i}\!\left(\!s\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!s\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!s\!\right)\!\right)\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!-\!\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!\sum_{i}\!C_{i}\!\left(\!s\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!s\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!s\!\right)\!\right)\right]\!{\rm d}s\\
-\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\right.}\\
-\! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s.}\label{eq:master equation-1}
+\frac{{\rm d}\widetilde{\overline{\rho_{S}}}\!\left(\!t\!\right)}{{\rm d}t}\! & =\!-\int_{0}^{t}{\rm {\rm \text{Tr}}}_{B}\left[\widetilde{\overline{H_{\bar{I}}}}\left(t\right),\left[\widetilde{\overline{H_{\bar{I}}}}\left(t^{\prime}\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}t^{\prime}\\
+\! & =\!-\int_{0}^{t}{\rm \text{Tr}}_{B}\left[\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right),\left[\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\right]\right]{\rm d}t^{\prime}\\
+\! & =\!-\!\int_{0}^{t}\!{\rm \text{Tr}}_{B}\!\left[\sum_{j}\!C_{j}\!\left(\!t\!\right)\!\left(\!\widetilde{A_{j}}\!\left(\!t\!\right)\!\otimes\!\widetilde{B_{j}}\!\left(\!t\!\right)\!\right),\sum_{i}\!C_{i}\!\left(\!t^{\prime}\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!t^{\prime}\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!t^{\prime}\!\right)\!\right)\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!-\!\widetilde{\overline{\rho_{S}}}\left(\!t\!\right)\rho_{B}\!\sum_{i}\!C_{i}\!\left(\!t^{\prime}\!\right)\!\left(\!\widetilde{A_{i}}\!\left(\!t^{\prime}\!\right)\!\otimes\!\widetilde{B_{i}}\!\left(\!t^{\prime}\!\right)\!\right)\right]\!{\rm d}t^{\prime}\\
+\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\right.}\\
+\! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}.}\label{eq:master equation-1}
 \end{align}
 
 \end_inset
@@ -3299,7 +3439,7 @@ In order to calculate the correlation functions we define:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathscr{B}_{ij}\left(t,s\right)={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(s\right)\rho_{B}\right)\label{eq:correlation function-2}
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t\right)\widetilde{B_{j}}\left(t^{\prime}\right)\rho_{B}\right).\label{eq:correlation function-2}
 \end{equation}
 
 \end_inset
@@ -3314,11 +3454,11 @@ An useful property is
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\mathscr{B}_{ji}^{*}\left(t,s\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right)^{\dagger}\\
- & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}^{\dagger}\widetilde{B_{i}}^{\dagger}\left(s\right)\widetilde{B_{j}}^{\dagger}\left(t\right)\right)\\
- & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right)\\
- & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
- & =\mathscr{B}_{ij}\left(s,t\right)\label{eq:correlation function 1}
+\mathscr{B}_{ji}^{*}\left(t,t^{\prime}\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\right)^{\dagger}\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}^{\dagger}\widetilde{B_{i}}^{\dagger}\left(t^{\prime}\right)\widetilde{B_{j}}^{\dagger}\left(t\right)\right)\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\right)\\
+ & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t^{\prime},t\right).\label{eq:correlation function 1}
 \end{align}
 
 \end_inset
@@ -3620,15 +3760,15 @@ The correlation functions relevant that appear in the equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\rm \text{Tr}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right) & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\right\rangle _{B}\label{eq:corr1-1}\\
- & =\mathscr{B}_{ji}\left(t,s\right)\\
- & =\mathscr{B}_{ij}^{*}\left(s,t\right)\\
-{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
- & =\mathscr{B}_{ij}\left(s,t\right)\\
-{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\right)\\
- & =\mathscr{B}_{ij}^{*}\left(s,t\right)\\
-{\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
- & =\mathscr{B}_{ij}\left(s,t\right)\label{eq:corr2-1}
+{\rm \text{Tr}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\right) & =\left\langle \widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\right\rangle _{B}\label{eq:corr1-1}\\
+ & =\mathscr{B}_{ji}\left(t,t^{\prime}\right)\\
+ & =\mathscr{B}_{ij}^{*}\left(t^{\prime},t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t^{\prime},t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}^{*}\left(t^{\prime},t\right)\\
+{\rm {\rm \text{Tr}}}_{B}\left(\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\right) & ={\rm {\rm \text{Tr}}}_{B}\left(\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\right)\\
+ & =\mathscr{B}_{ij}\left(t^{\prime},t\right)\label{eq:corr2-1}
 \end{align}
 
 \end_inset
@@ -3657,22 +3797,22 @@ The cyclic property of the trace was use widely in the development of equations
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-{\scriptstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\right.}\\
-\! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(s\right)\left(\widetilde{A_{i}}\left(s\right)\otimes\widetilde{B_{i}}\left(s\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s.}\\
- & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\\
- & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
- & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\\
- & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
- & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right)\right.}\,{\scriptstyle \text{(by permuting i and j because i,j\in J)}}\\
- & {\scriptstyle \left.+\sum_{ij}C_{i}\left(s\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
- & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\right.\right.}\\
- & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(s\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(s\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}s}\\
- & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\mathscr{B}_{ji}\left(t,s\right)-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\mathscr{B}_{ij}\left(s,t\right)\right.\right.}\\
- & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ij}\left(s,t\right)-\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ji}\left(t,s\right)\right)\right){\rm d}s}\\
- & =-\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(s\right)\left(\mathscr{B}_{ji}\left(t,s\right)\left[\widetilde{A_{j}}\left(t\right),\widetilde{A_{i}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}\left(s,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(s\right),\widetilde{A_{j}}\left(t\right)\right]\right)\right){\rm d}s\\
- & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(s,t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\text{\,\text{(exchanging i and j)}}}\\
- & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}s\\
- & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(s\right)\left(\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]-\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\right]\right)\right){\rm d}s\label{ps:}
+{\scriptstyle \frac{{\rm d}\widetilde{\overline{\rho_{S}}}\left(t\right)}{{\rm d}t}}\! & =\!{\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}-\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\right.}\\
+\! & {\scriptstyle \left.\!-\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)+\widetilde{\overline{\rho_{S}}}\left(t\right)\rho_{B}\sum_{i}C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{i}}\left(t^{\prime}\right)\otimes\widetilde{B_{i}}\left(t^{\prime}\right)\right)\sum_{j}C_{j}\left(t\right)\left(\widetilde{A_{j}}\left(t\right)\otimes\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}.}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\right)\right.}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(t^{\prime}\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ji}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\right)\right.}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(t^{\prime}\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\right)\right.}\,{\scriptstyle \text{(by permuting i and j because i,j\in J)}}\\
+ & {\scriptstyle \left.+\sum_{ij}C_{i}\left(t^{\prime}\right)C_{j}\left(t\right)\left(\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}}\\
+ & ={\scriptstyle -\int_{0}^{t}{\rm \text{Tr}}_{B}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{B_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\right.\right.}\\
+ & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{A_{j}}\left(t\right)\rho_{B}\widetilde{B_{i}}\left(t^{\prime}\right)\widetilde{B_{j}}\left(t\right)-\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\widetilde{B_{i}}\left(t^{\prime}\right)\rho_{B}\widetilde{B_{j}}\left(t\right)\right)\right){\rm d}t^{\prime}}\\
+ & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\widetilde{A_{j}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\mathscr{B}_{ji}\left(t,t^{\prime}\right)-\widetilde{A_{j}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\mathscr{B}_{ij}\left(t^{\prime},t\right)\right.\right.}\\
+ & {\scriptstyle \left.\left.+\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ij}\left(t^{\prime},t\right)-\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t\right)\mathscr{B}_{ji}\left(t,t^{\prime}\right)\right)\right){\rm d}t^{\prime}}\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{j}\left(t\right)C_{i}\left(t^{\prime}\right)\left(\mathscr{B}_{ji}\left(t,t^{\prime}\right)\left[\widetilde{A_{j}}\left(t\right),\widetilde{A_{i}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}\left(t^{\prime},t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t^{\prime}\right),\widetilde{A_{j}}\left(t\right)\right]\right)\right){\rm d}t^{\prime}\\
+ & ={\scriptstyle -\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\left(t,t^{\prime}\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ji}\left(t^{\prime},t\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}t^{\prime}\text{\,\text{(exchanging i and j)}}}\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\left(t,t^{\prime}\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right),\widetilde{A_{i}}\left(t\right)\right]\right)\right){\rm d}t^{\prime}\\
+ & =-\int_{0}^{t}\left(\sum_{ij}C_{i}\left(t\right)C_{j}\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\left(t,t^{\prime}\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]-\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)\right]\right)\right){\rm d}t^{\prime}\label{ps:}
 \end{align}
 
 \end_inset
@@ -3687,8 +3827,8 @@ We could identify the following commutators in the equation deduced:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\mathscr{B}_{ij}\left(t,s\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ij}\left(t,s\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right) & =\mathscr{B}_{ij}\left(t,s\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{s}}}\left(t\right)\right],\\
-\mathscr{B}_{ij}^{*}\left(t,s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{A_{i}}\left(t\right)-\mathscr{B}_{ij}^{*}\left(t,s\right)\widetilde{A_{i}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right) & =\mathscr{B}_{ij}^{*}\left(t,s\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}},\widetilde{A_{i}}\left(t\right)\right].
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)-\mathscr{B}_{ij}\left(t,t^{\prime}\right)\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right) & =\mathscr{B}_{ij}\left(t,t^{\prime}\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{s}}}\left(t\right)\right],\\
+\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{A_{i}}\left(t\right)-\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\widetilde{A_{i}}\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(s\right) & =\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\left[\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right),\widetilde{A_{i}}\left(t\right)\right].
 \end{align}
 
 \end_inset
@@ -3715,9 +3855,9 @@ Returning to the Schroedinger picture we have:
 \color none
 \begin_inset Formula 
 \begin{align}
-U\left(t\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right) & =U\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)U\left(t\right)\widetilde{A_{j}}\left(s\right)U^{\dagger}\left(t\right)U\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right),\\
- & =\left(U\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)\right)\left(U\left(t\right)\widetilde{A_{j}}\left(s\right)U^{\dagger}\left(t\right)\right)\left(U\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right)\right),\\
- & =A_{i}\left(t\right)\widetilde{A_{j}}\left(s,t\right)\overline{\rho_{S}}\left(t\right).
+U\left(t\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right) & =U\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)U\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)U^{\dagger}\left(t\right)U\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right),\\
+ & =\left(U\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)\right)\left(U\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)U^{\dagger}\left(t\right)\right)\left(U\left(t\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right)\right),\\
+ & =A_{i}\left(t\right)\widetilde{A_{j}}\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right).
 \end{align}
 
 \end_inset
@@ -3744,9 +3884,9 @@ This procedure applying to the relevant commutators give us:
 \color none
 \begin_inset Formula 
 \begin{align}
-U\left(t\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]U^{\dagger}\left(t\right) & =\left(U\left(t\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right)-U\left(t\right)\widetilde{A_{j}}\left(s\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)\right)\\
- & =A_{i}\left(t\right)\widetilde{A_{j}}\left(s,t\right)\overline{\rho_{S}}\left(t\right)-\widetilde{A_{j}}\left(s,t\right)\overline{\rho_{S}}\left(t\right)A_{i}\\
- & =\left[A_{i}\left(t\right),\widetilde{A_{j}}\left(s,t\right)\overline{\rho_{S}}\left(t\right)\right].
+U\left(t\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\right]U^{\dagger}\left(t\right) & =\left(U\left(t\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)U^{\dagger}\left(t\right)-U\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\right)\widetilde{\overline{\rho_{S}}}\left(t\right)\widetilde{A_{i}}\left(t\right)U^{\dagger}\left(t\right)\right)\\
+ & =A_{i}\left(t\right)\widetilde{A_{j}}\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right)-\widetilde{A_{j}}\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right)A_{i}\\
+ & =\left[A_{i}\left(t\right),\widetilde{A_{j}}\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right)\right].
 \end{align}
 
 \end_inset
@@ -3770,9 +3910,9 @@ erential equation with the correlation functions
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}sC_{i}\!\left(t\right)\!C_{j}\!\left(s\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(t,s\right)\!\left[A_{i}\left(t\right),\!\widetilde{A_{j}}\!\left(s,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ij}^{*}\!\left(t,s\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(s,t\right)\!,\!A_{i}\right]\!\right)\\
-s & =t-\tau\text{\,\text{(Change of variables in the integration process)}}\\
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}\tau C_{i}\!\left(t\right)\!C_{j}\!\left(t-\tau\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(t,t-\tau\right)\!\left[A_{i}\left(t\right),\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ij}^{*}\!\left(t,t-\tau\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t-\tau,t\right)\!,\!A_{i}\left(t\right)\right]\!\right)\label{eq:master equation prim}
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\!\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]\!-\!\sum_{ij}\!\!\int_{0}^{t}\!\!{\rm d}sC_{i}\!\left(t\right)\!C_{j}\!\left(t^{\prime}\right)\!\!\left(\!\mathscr{B}_{ij}\!\left(t,t^{\prime}\right)\!\left[A_{i}\left(t\right),\!\widetilde{A_{j}}\!\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right)\right]\!\!+\!\mathscr{B}_{ij}^{*}\!\left(t,t^{\prime}\right)\!\!\left[\overline{\rho_{S}}\left(t\right)\!\widetilde{A_{j}}\!\left(t^{\prime},t\right)\!,\!A_{i}\right]\!\right)\\
+t^{\prime} & =t-\tau\text{\,\text{(Change of variables in the integration process)}}\\
+{\scriptstyle \frac{{\rm d}\overline{\rho_{S}}\left(t\right)}{{\rm d}t}} & ={\scriptstyle -{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{S}}\left(t\right)\right]-\sum_{ij}\int_{0}^{t}{\rm d}\tau C_{i}\left(t\right)C_{j}\left(t^{\prime}\right)\left(\mathscr{B}_{ij}\left(t,t^{\prime}\right)\left[A_{i}\left(t\right),\widetilde{A_{j}}\left(t^{\prime},t\right)\overline{\rho_{S}}\left(t\right)\right]+\mathscr{B}_{ij}^{*}\left(t,t^{\prime}\right)\left[\overline{\rho_{S}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime},t\right),A_{i}\left(t\right)\right]\right)}.\label{eq:master equation prim}
 \end{align}
 
 \end_inset
@@ -3795,6 +3935,10 @@ noindent
 
  where 
 \begin_inset Formula $i,j\in\{1,2,3,4,5.6\}$
+\end_inset
+
+ and 
+\begin_inset Formula $t^{\prime}=t-\tau$
 \end_inset
 
 .
