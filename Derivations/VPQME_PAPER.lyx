@@ -109,6 +109,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -129,6 +130,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1365,12 +1367,20 @@ status open
 
 \begin_layout Standard
 Unfortunately the 
-\begin_inset Formula $\widetilde{A}_{j}$
+\begin_inset Formula $\widetilde{A}_{j}\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\widetilde{A_{j}}\left(t,t^{\prime}\right)$
 \end_inset
 
  are still in the interaction picture, so we will Fourier decompose them
  as sums of 
-\begin_inset Formula $A_{j}$
+\begin_inset Formula $A_{j}\left(w\left(t\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{j}\left(w\left(t^{\prime}\right),w^{\prime}\left(t\right)\right)$
 \end_inset
 
 :
@@ -1516,6 +1526,10 @@ noindent
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 where 
 \begin_inset Formula $w\left(t\right)$
 \end_inset
@@ -1538,253 +1552,6 @@ where
 \end_inset
 
 :
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Let's define:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)\equiv A_{jww^{\prime}}\left(t-\tau,t\right).
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- So we can show that:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-\widetilde{A_{j}}\left(t-\tau,t\right)=\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\left(t-\tau,t\right).\label{eq:double}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- where 
-\begin_inset Formula $w^{\prime}\left(t\right)$
-\end_inset
-
- and 
-\begin_inset Formula $w\left(t-\tau\right)$
-\end_inset
-
- belongs to the set of the differences of the eigenvalues of the Hamiltonians
- 
-\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
-\end_inset
-
- and 
-\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t-\tau\right)$
-\end_inset
-
- respectively.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- In order to show the explicit form of the matrices present in the RHS of
- the equation 
-\begin_inset Formula $\eqref{eq:Fourier decomposition}$
-\end_inset
-
- for a general 
-\begin_inset Formula $2\times2$
-\end_inset
-
- matrix in a given time let's write the matrix 
-\begin_inset Formula $A_{i}$
-\end_inset
-
- in the base 
-\begin_inset Formula $W\left(t\right)=\left\{ \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle ,\left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \right\} $
-\end_inset
-
-, formed by the time-dependent eigenvectors of 
-\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
-\end_inset
-
- in the following way:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-A_{i}=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- We consider 
-\begin_inset Formula $w\left(t\right)=\lambda_{1}\left(t\right)-\lambda_{0}\left(t\right)$
-\end_inset
-
-, where 
-\begin_inset Formula $\lambda_{1}\left(t\right)$
-\end_inset
-
- and 
-\begin_inset Formula $\lambda_{0}\left(t\right)$
-\end_inset
-
- are the eigenvalues of 
-\begin_inset Formula $\left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle $
-\end_inset
-
- and 
-\begin_inset Formula $\left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle $
-\end_inset
-
- respectively.
- The expansion matrices of the Fourier decomposition for a general 
-\begin_inset Formula $2\times2$
-\end_inset
-
- matrix are:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align}
-A_{i}\left(w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
-A_{i}\left(-w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right|,\\
-A_{i}\left(0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Given that 
-\begin_inset Formula $A_{j}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right)=A_{j}^{\dagger}\left(-w\left(t-\tau\right),-w^{\prime}\left(t\right)\right)$
-\end_inset
-
- it's enough to describe the decomposition matrix of the double Fourier
- decomposition 
-\begin_inset Formula $\eqref{eq:double fourier}$
-\end_inset
-
- as:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align}
-A_{i}\left(0,w^{\prime}\left(t\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
-A_{i}\left(w\left(t-\tau\right),w^{\prime}\left(t\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
-A_{i}\left(w\left(t-\tau\right),-w^{\prime}\left(t\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right|,\\
-A_{i}\left(w\left(t-\tau\right),0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|,\\
-A_{i}\left(0,0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1975,18 +1742,279 @@ L_{ijww^{\prime}}\left(t,t^{\prime}\right)\equiv\int_{0}^{t}C_{i}\left(t\right)C
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In order to show the explicit form of the matrices present in the RHS of
+ the equation 
+\begin_inset Formula $\eqref{eq:Fourier decomposition}$
+\end_inset
+
+ for a general 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix in a given time let's write the matrix 
+\begin_inset Formula $A_{i}\left(t\right)$
+\end_inset
+
+ in the base 
+\begin_inset Formula $W\left(t\right)=\left\{ \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle ,\left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \right\} $
+\end_inset
+
+, formed by the time-dependent eigenvectors of 
+\begin_inset Formula $\overline{H_{\bar{S},{\rm eff}}}\left(t\right)$
+\end_inset
+
+ in the following way:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+A_{i}\left(t\right)=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Let's obtain 
+\begin_inset Formula $U^{\dagger}\left(t^{\prime}\right)A_{i}\left(t\right)U\left(t^{\prime}\right)$
+\end_inset
+
+ in explicit form:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+U^{\dagger}\left(t^{\prime}\right)A_{i}\left(t\right)U\left(t^{\prime}\right) & =U^{\dagger}\left(t^{\prime}\right)\left(\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|\right)U\left(t^{\prime}\right)\\
+ & =\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle U^{\dagger}\left(t^{\prime}\right)\left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|U\left(t^{\prime}\right)\\
+ & =\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle e^{{\rm i}\left(t-\tau\right)\lambda_{j}\left(t-\tau\right)}\left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|e^{-{\rm i}\left(t-\tau\right)\lambda_{j^{\prime}}\left(t-\tau\right)}\\
+ & =\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle e^{{\rm i}\left(t-\tau\right)\left(\lambda_{j}\left(t-\tau\right)-\lambda_{j^{\prime}}\left(t-\tau\right)\right)}\left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|\\
+M_{jj^{\prime}} & =\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|\\
+U^{\dagger}\left(t^{\prime}\right)A_{i}\left(t\right)U\left(t^{\prime}\right) & =M_{00}+M_{01}e^{{\rm i}\left(t-\tau\right)\left(\lambda_{0}\left(t-\tau\right)-\lambda_{1}\left(t-\tau\right)\right)}+M_{10}e^{{\rm i}\left(t-\tau\right)\left(\lambda_{1}\left(t-\tau\right)-\lambda_{0}\left(t-\tau\right)\right)}+M_{11}\\
+w\left(t-\tau\right) & =\lambda_{1}\left(t-\tau\right)-\lambda_{0}\left(t-\tau\right)\\
+U^{\dagger}\left(t^{\prime}\right)A_{i}\left(t\right)U\left(t^{\prime}\right) & =M_{00}+M_{01}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}+M_{10}e^{{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}+M_{11}\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}A_{i}\left(w\left(t-\tau\right)\right)\\
+ & =A_{i}\left(0\right)+A_{i}\left(w\left(t-\tau\right)\right)e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}+A_{i}\left(-w\left(t-\tau\right)\right)e^{{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+By direct comparison we obtain that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+A_{i}\left(w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right|,\\
+A_{i}\left(-w\left(t-\tau\right)\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right|,\\
+A_{i}\left(0\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+These matrix have the following property 
+\begin_inset Formula $A_{i}\left(w\left(t-\tau\right)\right)=A_{i}^{\dagger}\left(-w\left(t-\tau\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Now in order to perform the double Fourier decomposition let's recall that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\widetilde{A_{i}}\left(t,t^{\prime}\right)\equiv U\left(t\right)U^{\dagger}\left(t^{\prime}\right)A_{i}\left(t\right)U\left(t^{\prime}\right)U^{\dagger}\left(t\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In this case the decomposition can be written as:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\widetilde{A_{i}}\left(t,t-\tau\right) & \equiv U\left(t\right)U^{\dagger}\left(t-\tau\right)A_{i}\left(t\right)U\left(t-\tau\right)U^{\dagger}\left(t\right)\\
+ & =U\left(t\right)\left(\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}A_{i}\left(w\left(t-\tau\right)\right)\right)U^{\dagger}\left(t\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Now writting 
+\begin_inset Formula $A_{i}\left(w\left(t-\tau\right)\right)$
+\end_inset
+
+ in terms of the eigenstates of 
+\begin_inset Formula $\overline{H_{\bar{S}}^{{\rm eff}}}\left(t\right)$
+\end_inset
+
+ we find that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+A_{i}\left(w\left(t-\tau\right)\right)=\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right|.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Then the time evolution is given by:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\widetilde{A_{i}}\left(t,t-\tau\right) & =U\left(t\right)\left(\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}A_{i}\left(w\left(t-\tau\right)\right)\right)U^{\dagger}\left(t\right)\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}U\left(t\right)A_{i}\left(w\left(t-\tau\right)\right)U^{\dagger}\left(t\right)\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}U\left(t\right)\left(\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right|\right)U^{\dagger}\left(t\right)\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle U\left(t\right)\left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right|U^{\dagger}\left(t\right)\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\sum_{j,j^{\prime}}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle e^{-{\rm i}t\lambda_{j}\left(t\right)}\left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right|e^{{\rm i}t\lambda_{j^{\prime}}\left(t\right)},\\
+w^{\prime}\left(t\right) & =\lambda_{1}\left(t\right)-\lambda_{0}\left(t\right),\\
+\widetilde{A_{i}}\left(t,t-\tau\right) & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\left(\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right.\\
+ & \left.+e^{-{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+e^{{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right)\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\sum_{w^{\prime}\left(t\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{iww^{\prime}}\left(t-\tau,t\right)\\
+ & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}e^{{\rm i}tw^{\prime}\left(t\right)}A_{iww^{\prime}}\left(t-\tau,t\right)\\
+ & =\sum_{w\left(t-\tau\right),w^{\prime}\left(t\right)}e^{{\rm i}\tau w\left(t-\tau\right)}e^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{iww^{\prime}}\left(t-\tau,t\right).\\
+ & =\sum_{w\left(t-\tau\right)}e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\left(\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right.\\
+ & \left.+e^{-{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+e^{{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right)\\
+ & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\\
+ & +e^{-{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+e^{{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\\
+ & +e^{-{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\left(\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right.\\
+ & \left.+e^{-{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+e^{{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right)\\
+ & +e^{{\rm i}\left(t-\tau\right)w\left(t-\tau\right)}\left(\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right.\\
+ & \left.+e^{-{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|+e^{{\rm i}tw^{\prime}\left(t\right)}\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Directly we can find that the decomposition matrices are:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+A_{i0w^{\prime}}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{iww^{\prime}}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{iw\left(-w^{\prime}\right)}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right|,\\
+A_{iw0}\left(t-\tau,t\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|,\\
+A_{i00}\left(t-\tau,t\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right|,\\
+A_{i0\left(-w^{\prime}\right)}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(0\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|,\\
+A_{i\left(-w\right)0}\left(t-\tau,t\right) & =\sum_{j}\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right|,\\
+A_{i\left(-w\right)w^{\prime}}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{i\left(-w\right)\left(-w^{\prime}\right)}\left(t-\tau,t\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right|.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Let's prove that 
+\begin_inset Formula $A_{jww^{\prime}}\left(t-\tau,t\right)=A_{j\left(-w\right)\left(-w^{\prime}\right)}^{\dagger}\left(t-\tau,t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\left(\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t-\tau\right)\right|\right)^{\dagger} & =\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\left|A_{i}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle ^{*}\left|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|\\
+ & =\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\left|A_{i}^{\dagger}\left(-w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|\\
+ & =\left\langle \overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\left|A_{i}\left(w\left(t-\tau\right)\right)\right|\overline{H_{\bar{S},{\rm eff},j}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},j^{\prime}}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},j}}\left(t-\tau\right)\right|
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+It can be seen that the index 
+\begin_inset Formula $-w$
+\end_inset
+
+ and 
+\begin_inset Formula $-w^{\prime}$
+\end_inset
+
+ change to the functions 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $w^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 C\left(t\right) & \equiv\begin{pmatrix}V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(t\right) & -V_{10}^{\Im}\left(t\right) & 1\end{pmatrix},\\
-A_{j00}(t,t^{\prime}) & =\\
-A_{j0w^{\prime}}(t,t^{\prime}) & =\\
-A_{jw0}(t,t^{\prime}) & =\\
-A_{jww^{\prime}}(t,t^{\prime}) & =\\
-A_{jw(-w^{\prime})}(t,t^{\prime}) & =\\
+A_{j00}(t,t^{\prime}) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{j0}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|,\\
+A_{j0w^{\prime}}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{j0}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{jw0}(t,t^{\prime}) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|,\\
+A_{jww^{\prime}}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{jw(-w^{\prime})}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|,\\
 A_{j(-w)(-w^{\prime})}(t,t^{\prime}) & =A_{jww^{\prime}}^{\dagger}(t,t^{\prime})\\
-A_{i0} & =\\
-A_{iw} & =\\
-A_{i(-w)} & =A_{iw}^{\dagger}
+A_{j0}\left(t^{\prime}\right) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\left|A_{j}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right|,\\
+A_{jw}\left(t^{\prime}\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t^{\prime}\right)\left|A_{j}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t^{\prime}\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t^{\prime}\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t^{\prime}\right)\right|,\\
+A_{j(-w)}\left(t^{\prime}\right) & =A_{jw}^{\dagger}\left(t^{\prime}\right).
 \end{align}
 
 \end_inset
@@ -2819,15 +2847,15 @@ L_{ijww^{\prime}}\left(t,t^{\prime}\right)\equiv\int_{0}^{t}C_{i}\left(t\right)C
 \begin_inset Formula 
 \begin{align}
 C\left(t\right) & \equiv\begin{pmatrix}V_{10}\left(t\right) & V_{10}\left(t\right) & 1 & 0 & 0 & 1\end{pmatrix},\\
-A_{j00}(t,t^{\prime}) & =\\
-A_{j0w^{\prime}}(t,t^{\prime}) & =\\
-A_{jw0}(t,t^{\prime}) & =\\
-A_{jww^{\prime}}(t,t^{\prime}) & =\\
-A_{jw(-w^{\prime})}(t,t^{\prime}) & =\\
+A_{j00}(t,t^{\prime}) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{j0}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|,\\
+A_{j0w^{\prime}}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{j0}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{jw0}(t,t^{\prime}) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|,\\
+A_{jww^{\prime}}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|,\\
+A_{jw(-w^{\prime})}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\left|A_{jw}\left(t^{\prime}\right)\right|\overline{H_{\bar{S},{\rm eff},0}}\left(t-\tau\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right|,\\
 A_{j(-w)(-w^{\prime})}(t,t^{\prime}) & =A_{jww^{\prime}}^{\dagger}(t,t^{\prime})\\
-A_{i0} & =\\
-A_{iw} & =\\
-A_{i(-w)} & =A_{iw}^{\dagger}
+A_{j0}\left(t^{\prime}\right) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\left|A_{j}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t^{\prime}\right)\right|,\\
+A_{jw}\left(t^{\prime}\right) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t^{\prime}\right)\left|A_{j}\left(t\right)\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t^{\prime}\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t^{\prime}\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t^{\prime}\right)\right|,\\
+A_{j(-w)}\left(t^{\prime}\right) & =A_{jw}^{\dagger}\left(t^{\prime}\right).
 \end{align}
 
 \end_inset
@@ -2877,6 +2905,9 @@ status open
 
 \begin_layout Plain Layout
 The correlation functions are:
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
 \mathscr{B}\left(t,t^{\prime}\right) & \equiv\begin{pmatrix}\mathscr{B}_{11}\left(t,t^{\prime}\right) & 0 & 0 & 0 & \mathscr{B}_{11}\left(t,t^{\prime}\right) & 0\\
@@ -2915,8 +2946,8 @@ Q_{ij}(\omega,t) & =Q_{ij}^{*}(\omega,t),\\
  & =\!{\rm i}B_{10}\left(t\right)\int_{0}^{\infty}\left(P_{i}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
  & =\!{\rm i}B_{10}\left(t\right)\int_{0}^{\infty}P_{i}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)\left(N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
 P_{i}\left(\omega,t\right) & =P_{i}^{*}\left(\omega,t\right),\\
-\mathscr{B}_{ij}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}^{*}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
- & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}^{*}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
+ & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
  & =\!\int_{0}^{\infty}P_{i}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}\left(N\left(\omega\right)+{\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
 \mathscr{B}_{i1}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)Q_{10}^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}^{*}\left(\omega,t\right)Q_{10}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
  & =\!{\rm i}0\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)Q_{10}^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}^{*}\left(\omega,t\right)Q_{10}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
@@ -2927,11 +2958,7 @@ P_{i}\left(\omega,t\right) & =P_{i}^{*}\left(\omega,t\right),\\
 \zeta_{ij}\left(t,t^{\prime}\right)\! & =\!{\rm {\rm e}}^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right)\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right){\rm e}^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)},\\
 \xi_{ij}^{\pm}\left(t,t^{\prime}\right)\! & =\!{\rm e}^{-\int_{0}^{\infty}\frac{\left|\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right){\rm {\rm e}}^{{\rm i}\omega\tau}\pm\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
 P_{i}\left(\omega,t\right)\! & =\!L_{i{\rm mod}2}\left(\omega\right)\left(1-F_{i{\rm mod}2}\left(\omega,t\right)\right),\\
-Q_{ij}(\omega,t)\! & =\!\frac{L_{i}\left(\omega\right)F_{1}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega}.\\
-\\
-\\
-\\
-\\
+Q_{ij}(\omega,t)\! & =\!\frac{L_{i}\left(\omega\right)F_{1}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega}.
 \end{align}
 
 \end_inset
@@ -4000,11 +4027,11 @@ noindent
 \begin_inset Formula 
 \begin{align}
 A_{1}\left(0\right) & =\sin\left(2\theta\right)\left(\left|\overline{H_{S,1}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|-\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,0}}\right|\right),\\
-A_{1}\left(\eta\right) & =\cos\left(2\theta\right)\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|,\\
+A_{1}\left(w\right) & =\cos\left(2\theta\right)\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|,\\
 A_{2}\left(0\right) & =0,\\
-A_{2}\left(\eta\right) & ={\rm i}\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|,\\
+A_{2}\left(w\right) & ={\rm i}\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|,\\
 A_{3}\left(0\right) & =\cos^{2}\left(\theta\right)\left|\overline{H_{S,1}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|+\sin^{2}\left(\theta\right)\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,0}}\right|,\\
-A_{3}\left(\eta\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|.
+A_{3}\left(w\right) & =-\sin\left(\theta\right)\cos\left(\theta\right)\left|\overline{H_{S,0}}\right\rangle \negmedspace\!\left\langle \overline{H_{S,1}}\right|.
 \end{align}
 
 \end_inset
@@ -4050,7 +4077,7 @@ noindent
 \end_inset
 
  respectively and 
-\begin_inset Formula $\eta=\lambda_{1}-\lambda_{0}$
+\begin_inset Formula $w=\lambda_{1}-\lambda_{0}$
 \end_inset
 
  is the difference of eigenvalues.
