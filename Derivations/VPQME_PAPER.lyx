@@ -3246,14 +3246,14 @@ L_{ijww^{\prime}}\left(t,t^{\prime}\right)\equiv\int_{0}^{t}C_{i}C_{j}\mathscr{B
 \begin_inset Formula 
 \begin{align}
 C\left(t\right) & \equiv\begin{pmatrix}V_{10} & V_{10} & 1 & 0 & 0 & 1\end{pmatrix},\label{Matrix C}\\
-A_{j00}(t,t^{\prime}) & =\\
-A_{j0w^{\prime}}(t,t^{\prime}) & =\\
-A_{jw0}(t,t^{\prime}) & =\\
-A_{jww^{\prime}}(t,t^{\prime}) & =\\
-A_{jw(-w^{\prime})}(t,t^{\prime}) & =\\
+A_{j00}(t,t^{\prime}) & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{j}\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|,\\
+A_{j0w^{\prime}}(t,t^{\prime}) & =0,\\
+A_{jw0}(t,t^{\prime}) & =0,\\
+A_{jww^{\prime}}(t,t^{\prime}) & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{j}\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\delta_{ww^{\prime}},\\
+A_{jw(-w^{\prime})}(t,t^{\prime}) & =0,\\
 A_{j(-w)(-w^{\prime})}(t,t^{\prime}) & =A_{jww^{\prime}}^{\dagger}(t,t^{\prime})\\
-A_{i0} & =\\
-A_{iw} & =\\
+A_{i0} & =\sum_{i}\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\left|A_{i}\right|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},i}}\left(t\right)\right|\\
+A_{iw} & =\left\langle \overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\left|A_{j}\right|\overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right\rangle \left|\overline{H_{\bar{S},{\rm eff},0}}\left(t\right)\right\rangle \negmedspace\!\left\langle \overline{H_{\bar{S},{\rm eff},1}}\left(t\right)\right|\\
 A_{i(-w)} & =A_{iw}^{\dagger}
 \end{align}
 
