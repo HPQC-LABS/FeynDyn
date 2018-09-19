@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass revtex4-1
+\textclass ../../../Downloads/revtex4-1
 \begin_preamble
 \usepackage{amsfonts}
 \usepackage{palatino}
@@ -174,7 +174,19 @@ A general non-Markovian master equation for time-dependent Hamiltonians
 \end_layout
 
 \begin_layout Standard
-We start with a time-dependent Hamiltonian of the form: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We start with a time-dependent Hamiltonian of the form: 
 \end_layout
 
 \begin_layout Standard
@@ -188,7 +200,20 @@ H_{B} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{
 
 \end_inset
 
-For the states 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For the states 
 \begin_inset Formula $|0\rangle,|1\rangle$
 \end_inset
 
@@ -211,7 +236,19 @@ Unitary Transformation into the variationally optimizable frame
 \end_layout
 
 \begin_layout Standard
-We will apply to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We will apply to 
 \begin_inset Formula $H\left(t\right)$
 \end_inset
 
@@ -230,7 +267,20 @@ V\left(t\right)\equiv|0\rangle\negmedspace\langle0|\sum_{\mathbf{k}}\left(\frac{
 
 \end_inset
 
-in terms of the variational scalar parameters 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ in terms of the variational scalar parameters 
 \begin_inset Formula $v_{i\mathbf{k}}\left(t\right)$
 \end_inset
 
@@ -245,7 +295,20 @@ v_{i\mathbf{k}}\left(t\right)=\omega_{\mathbf{k}}\alpha_{i\mathbf{k}}\left(t\rig
 
 \end_inset
 
-which will soon be optimized in order to give the most accurate possible
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ which will soon be optimized in order to give the most accurate possible
  master equation for the system's dynamics in the presence of this bath.
  We define the following notation for the function 
 \begin_inset Formula $\eqref{Transformation operator 2x2}$
@@ -267,7 +330,19 @@ V & \left(t\right)=|0\rangle\negmedspace\langle0|\hat{\varphi}_{0}\left(t\right)
 \end_layout
 
 \begin_layout Standard
-Here 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
 \begin_inset Formula $*$
 \end_inset
 
@@ -298,7 +373,20 @@ B_{i}^{\pm}\left(t\right) & \equiv e^{\pm\sum_{\mathbf{k}}\left(\frac{v_{i\mathb
 
 \end_inset
 
-Let's recall the Zassenhaus formula: 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's recall the Zassenhaus formula: 
 \end_layout
 
 \begin_layout Standard
@@ -313,7 +401,19 @@ e^{r(X+Y)} & {\displaystyle =e^{rX}~e^{rY}~e^{-\frac{r^{2}}{2}[X,Y]}~e^{\frac{r^
 \end_layout
 
 \begin_layout Standard
-Since 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Since 
 \begin_inset Formula $\left[\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\dagger}-\frac{v_{i\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}}^{\mathbf{}},\frac{v_{j\mathbf{k}{}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}{}^{\prime}}^{\dagger}-\frac{v_{j\mathbf{k}{}^{\prime}}^{*}\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf{k}{}^{\prime}}\right]=0$
 \end_inset
 
@@ -350,7 +450,19 @@ e^{\left(\!\frac{v_{i\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}b_{\mathbf
 \end_layout
 
 \begin_layout Standard
-By induction of this result we can write an expresion of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ By induction of this result we can write an expresion of 
 \begin_inset Formula $B_{i}^{\pm}\left(t\right)$
 \end_inset
 
@@ -508,7 +620,20 @@ ion to each part of the Hamiltonian of the equation
 
 \end_inset
 
-We will use the following identities:
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We will use the following identities:
 \end_layout
 
 \begin_layout Standard
@@ -560,7 +685,19 @@ We will use the following identities:
 \end_layout
 
 \begin_layout Standard
-We have used the following results as well to obtain the transformed 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We have used the following results as well to obtain the transformed 
 \begin_inset Formula $b_{\mathbf{k}}^{\mathbf{}}$
 \end_inset
 
@@ -580,7 +717,20 @@ B_{i}^{+}\left(t\right)b_{\mathbf{k}}^{\dagger}B_{i}^{-}\left(t\right) & =b_{\ma
 
 \end_inset
 
-We therefore have the following relationships: 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We therefore have the following relationships: 
 \end_layout
 
 \begin_layout Standard
@@ -723,7 +873,19 @@ noindent
 \end_layout
 
 \begin_layout Standard
-Finally merging these expressions gives the transformed Hamiltonian
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Finally merging these expressions gives the transformed Hamiltonian
 \begin_inset Note Note
 status open
 
@@ -778,7 +940,19 @@ status open
 \end_layout
 
 \begin_layout Standard
-Also we may write this transformed Hamiltonian as a sum of the form:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Also we may write this transformed Hamiltonian as a sum of the form:
 \end_layout
 
 \begin_layout Standard
@@ -789,7 +963,20 @@ Also we may write this transformed Hamiltonian as a sum of the form:
 
 \end_inset
 
-Let's define:
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's define:
 \end_layout
 
 \begin_layout Standard
@@ -806,6 +993,19 @@ B_{iz}\left(t\right) & \equiv\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\m
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $\text{\chi}_{ij}\left(t\right)$
 \end_inset
 
@@ -842,7 +1042,19 @@ B_{y}\left(t\right) & B_{ij}\left(t\right)
 \end_layout
 
 \begin_layout Standard
-We reduced the lenght of the expression for the real and imaginary part
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We reduced the lenght of the expression for the real and imaginary part
  as shown before.
  We assume that the bath is at equilibrium with inverse temperature 
 \begin_inset Formula $\beta=\frac{1}{k_{{\rm B}}T}$
@@ -860,7 +1072,20 @@ We reduced the lenght of the expression for the real and imaginary part
 
 \end_inset
 
-We can show using the coherence representation of the creation and annihilation
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We can show using the coherence representation of the creation and annihilation
  operators that: 
 \end_layout
 
@@ -903,7 +1128,19 @@ b_{\mathbf{}} & ={\displaystyle \begin{pmatrix}0 & \sqrt{1} & 0 & 0 & \dots & 0 
 \end_layout
 
 \begin_layout Standard
-So the product of the matrix representation of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So the product of the matrix representation of 
 \begin_inset Formula $b_{\mathbf{}}^{\dagger}$
 \end_inset
 
@@ -949,7 +1186,19 @@ So the product of the matrix representation of
 \end_layout
 
 \begin_layout Standard
-So the density matrix 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So the density matrix 
 \begin_inset Formula $\rho_{B}$
 \end_inset
 
@@ -975,7 +1224,19 @@ e^{-\beta\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{
 \end_layout
 
 \begin_layout Standard
-The value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The value of 
 \begin_inset Formula ${\rm Tr}\left(e^{-\beta\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}}\right)$
 \end_inset
 
@@ -1000,7 +1261,19 @@ The value of
 \end_layout
 
 \begin_layout Standard
-So the density matrix of the bath is:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So the density matrix of the bath is:
 \end_layout
 
 \begin_layout Standard
@@ -1017,7 +1290,19 @@ So the density matrix of the bath is:
 \end_layout
 
 \begin_layout Standard
-Now, given that creation and annihilation satisfy:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Now, given that creation and annihilation satisfy:
 \end_layout
 
 \begin_layout Standard
@@ -1033,7 +1318,19 @@ Now, given that creation and annihilation satisfy:
 \end_layout
 
 \begin_layout Standard
-Then we can prove that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Then we can prove that 
 \begin_inset Formula $\left\langle B_{iz}\right\rangle _{\overline{H_{\bar{B}}}}=0$
 \end_inset
 
@@ -1073,7 +1370,19 @@ Then we can prove that
 \end_layout
 
 \begin_layout Standard
-we therefore find that: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ we therefore find that: 
 \end_layout
 
 \begin_layout Standard
@@ -1081,6 +1390,19 @@ we therefore find that:
 \begin{align}
 \left\langle B_{iz}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =0.\label{eq:<Bz>}
 \end{align}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
 
 \end_inset
 
@@ -1096,7 +1418,7 @@ we therefore find that:
 \uwave off
 \noun off
 \color none
-Another important expected value is 
+ Another important expected value is 
 \begin_inset Formula $B\left(t\right)=\left\langle B^{\pm}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
 \end_inset
 
@@ -1122,7 +1444,19 @@ Another important expected value is
 \end_layout
 
 \begin_layout Standard
-Given that we can write a density operator as:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Given that we can write a density operator as:
 \end_layout
 
 \begin_layout Standard
@@ -1137,7 +1471,19 @@ Given that we can write a density operator as:
 \end_layout
 
 \begin_layout Standard
-where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where 
 \begin_inset Formula $P\left(\alpha\right)$
 \end_inset
 
@@ -1167,7 +1513,19 @@ where
 \end_layout
 
 \begin_layout Standard
-We are typically interested in thermal state density operators, for which
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We are typically interested in thermal state density operators, for which
  it can be shown that 
 \begin_inset Formula $P\left(\alpha\right)=\frac{1}{\pi N}e^{-\frac{|\alpha|^{2}}{N}}$
 \end_inset
@@ -1188,7 +1546,19 @@ We are typically interested in thermal state density operators, for which
 \end_layout
 
 \begin_layout Standard
-Using the integral representation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Using the integral representation 
 \begin_inset Formula $\eqref{Integral representation}$
 \end_inset
 
@@ -1255,7 +1625,19 @@ D\left(-\alpha\right)\left(D\left(h\right)D\left(\alpha\right)\right) & =D\left(
 \end_layout
 
 \begin_layout Standard
-In the last line we used 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In the last line we used 
 \begin_inset Formula $\frac{e^{\beta\omega}+1}{e^{\beta\omega}-1}=\coth\left(\frac{\beta\omega}{2}\right)$
 \end_inset
 
@@ -1314,6 +1696,18 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -1326,7 +1720,7 @@ status open
 \uwave off
 \noun off
 \color none
-We will now force 
+ We will now force 
 \begin_inset Formula $\left\langle \overline{H_{\bar{I}}}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}=0$
 \end_inset
 
@@ -1357,6 +1751,18 @@ We will now force
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -1369,7 +1775,7 @@ We will now force
 \uwave off
 \noun off
 \color none
-A final form of the terms of the Hamiltonian 
+ A final form of the terms of the Hamiltonian 
 \begin_inset Formula $\overline{H}\left(t\right)$
 \end_inset
 
@@ -1392,8 +1798,20 @@ A final form of the terms of the Hamiltonian
 \end_layout
 
 \begin_layout Standard
-The parts of the Hamiltonian splitted are obtained using the following expected
- value:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The parts of the Hamiltonian splitted are obtained using the following
+ expected value:
 \end_layout
 
 \begin_layout Standard
@@ -1424,7 +1842,19 @@ The parts of the Hamiltonian splitted are obtained using the following expected
 \end_layout
 
 \begin_layout Standard
-From the definition 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ From the definition 
 \begin_inset Formula $B_{01}\left(t\right)=\langle B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\rangle$
 \end_inset
 
@@ -1449,7 +1879,19 @@ From the definition
 \end_layout
 
 \begin_layout Standard
-We can check: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We can check: 
 \end_layout
 
 \begin_layout Standard
@@ -1468,7 +1910,19 @@ We can check:
 \end_layout
 
 \begin_layout Standard
-The parts of the splitted Hamiltonian are:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The parts of the splitted Hamiltonian are:
 \end_layout
 
 \begin_layout Standard
@@ -1486,7 +1940,19 @@ The parts of the splitted Hamiltonian are:
 \end_layout
 
 \begin_layout Standard
-Note that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Note that 
 \begin_inset Formula $\overline{H_{\bar{B}}}$
 \end_inset
 
@@ -1511,7 +1977,19 @@ system
 \end_layout
 
 \begin_layout Standard
-For the Hamiltonian 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For the Hamiltonian 
 \begin_inset Formula $\eqref{Transformation bar(Hbar(I))}$
 \end_inset
 
@@ -1553,7 +2031,19 @@ For the Hamiltonian
 \end_layout
 
 \begin_layout Standard
-We used 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We used 
 \begin_inset Formula $\eqref{eq:<Bz>}$
 \end_inset
 
@@ -2008,7 +2498,20 @@ e^{-\beta\left(\overline{H_{\bar{S}}}\left(t\right)+\overline{H_{\bar{B}}}\right
 
 \end_inset
 
-Then using the fact that 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Then using the fact that 
 \begin_inset Formula $\overline{H_{\bar{S}}}\left(t\right)$
 \end_inset
 
@@ -2024,7 +2527,20 @@ Then using the fact that
 
 \end_inset
 
-So Eq.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So Eq.
  
 \begin_inset Formula $\eqref{Minimization condition}$
 \end_inset
@@ -2044,7 +2560,20 @@ So Eq.
 
 \end_inset
 
-But since 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ But since 
 \begin_inset Formula $\bar{H}_{\bar{B}}=H_{B}$
 \end_inset
 
@@ -2073,7 +2602,20 @@ But since
 
 \end_inset
 
-This means we need to impose:
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This means we need to impose:
 \end_layout
 
 \begin_layout Standard
@@ -2088,7 +2630,19 @@ This means we need to impose:
 \end_layout
 
 \begin_layout Standard
-First we look at:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ First we look at:
 \end_layout
 
 \begin_layout Standard
@@ -2103,7 +2657,19 @@ First we look at:
 \end_layout
 
 \begin_layout Standard
-Then the eigenvalues of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Then the eigenvalues of 
 \begin_inset Formula $-\beta\overline{H_{\bar{S}}}\left(t\right)$
 \end_inset
 
@@ -2122,7 +2688,19 @@ Then the eigenvalues of
 \end_layout
 
 \begin_layout Standard
-Let's define:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's define:
 \end_layout
 
 \begin_layout Standard
@@ -2138,7 +2716,19 @@ Let's define:
 \end_layout
 
 \begin_layout Standard
-The solutions of the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The solutions of the equation 
 \begin_inset Formula $\eqref{Caley-Hamilton}$
 \end_inset
 
@@ -2222,7 +2812,19 @@ actually only takes 2 seconds instead of 6.
 \end_layout
 
 \begin_layout Standard
-The value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The value of 
 \begin_inset Formula $\ensuremath{{\rm \text{Tr}}}\left(e^{-\beta\overline{H_{\bar{S}}}\left(t\right)}\right)$
 \end_inset
 
@@ -2247,7 +2849,19 @@ s of a
 \end_layout
 
 \begin_layout Standard
-Given that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Given that 
 \begin_inset Formula $v_{i\mathbf{k}}\left(t\right)$
 \end_inset
 
@@ -2256,7 +2870,19 @@ Given that
 \end_layout
 
 \begin_layout Standard
-Using the chain rule on the function 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Using the chain rule on the function 
 \begin_inset Formula ${\rm {\rm \text{Tr}}}\left(e^{-\beta\overline{H_{\bar{S}}}\left(t\right)}\right)=A\left(\varepsilon\left(t\right),\eta\left(t\right)\right)$
 \end_inset
 
@@ -2281,7 +2907,19 @@ Using the chain rule on the function
 \end_layout
 
 \begin_layout Standard
-Making the derivate equal to zero make us suitable to write:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Making the derivate equal to zero make us suitable to write:
 \end_layout
 
 \begin_layout Standard
@@ -2296,7 +2934,19 @@ Making the derivate equal to zero make us suitable to write:
 \end_layout
 
 \begin_layout Standard
-The derivates included in the expression given are related to:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The derivates included in the expression given are related to:
 \end_layout
 
 \begin_layout Standard
@@ -2335,7 +2985,19 @@ v_{0\mathbf{k}}^{*}\left(t\right)v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\l
 \end_layout
 
 \begin_layout Standard
-Rewriting in terms of real and imaginary parts.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Rewriting in terms of real and imaginary parts.
 \begin_inset Formula 
 \begin{align}
 R_{i}\left(t\right) & =\sum_{\mathbf{k}}\left(\frac{\left(v_{i\mathbf{k}}^{\Re}\left(t\right)\right)^{2}+\left(v_{i\mathbf{k}}^{\Im}\left(t\right)\right)^{2}}{\omega_{\mathbf{k}}}-\left(g_{i\mathbf{k}}\frac{v_{i\mathbf{k}}^{\Re}\left(t\right)-{\rm i}v_{i\mathbf{k}}^{\Im}\left(t\right)}{\omega_{\mathbf{k}}}+g_{i\mathbf{k}}^{*}\frac{v_{i\mathbf{k}}^{\Re}\left(t\right)+{\rm i}v_{i\mathbf{k}}^{\Im}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\\
@@ -2351,7 +3013,19 @@ R_{i}\left(t\right) & =\sum_{\mathbf{k}}\left(\frac{\left(v_{i\mathbf{k}}^{\Re}\
 \end_layout
 
 \begin_layout Standard
-Calculating the derivates respect to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Calculating the derivates respect to 
 \begin_inset Formula $\alpha_{i\mathbf{k}}^{\Re}$
 \end_inset
 
@@ -2426,7 +3100,19 @@ status open
 \end_layout
 
 \begin_layout Standard
-From the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ From the equation 
 \begin_inset Formula $\eqref{Equation minimization condition}$
 \end_inset
 
@@ -2448,7 +3134,19 @@ From the equation
 \end_layout
 
 \begin_layout Standard
-Rearrannging this equation will lead to: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Rearrannging this equation will lead to: 
 \end_layout
 
 \begin_layout Standard
@@ -2506,7 +3204,19 @@ I tried to use the normal font for 305 and 308 but it doesn't fit on one
 \end_layout
 
 \begin_layout Standard
-Separating 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Separating 
 \begin_inset Formula $\eqref{Separation of vk}$
 \end_inset
 
@@ -2535,7 +3245,19 @@ v_{i\mathbf{k}}^{\Re}\!\left(t\right)\! & =\!\frac{g_{i\mathbf{k}}^{\Re}\left(1-
 \end_layout
 
 \begin_layout Standard
-The imaginary part can be found in the following way: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The imaginary part can be found in the following way: 
 \end_layout
 
 \begin_layout Standard
@@ -2600,7 +3322,19 @@ I tried smallest for equation 313 but it doesn't fit on one line
 \end_layout
 
 \begin_layout Standard
-From the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ From the equation 
 \begin_inset Formula $\eqref{Equation minimization condition}$
 \end_inset
 
@@ -2622,7 +3356,19 @@ From the equation
 \end_layout
 
 \begin_layout Standard
-Rearranging this equation will lead to:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Rearranging this equation will lead to:
 \end_layout
 
 \begin_layout Standard
@@ -2640,7 +3386,19 @@ Rearranging this equation will lead to:
 \end_layout
 
 \begin_layout Standard
-Separating 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Separating 
 \begin_inset Formula $\eqref{Separation of vk-1}$
 \end_inset
 
@@ -2736,7 +3494,19 @@ v_{i\mathbf{k}}\left(t\right) & =v_{i\mathbf{k}}^{\Re}\left(t\right)+{\rm i}v_{i
 \end_layout
 
 \begin_layout Standard
-Let's obtain the explicit form of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Let's obtain the explicit form of 
 \begin_inset Formula $v_{0\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)$
 \end_inset
 
@@ -2760,7 +3530,19 @@ b_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{2\frac{\tanh\left(\frac{\beta\e
 \end_layout
 
 \begin_layout Standard
-So the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So the equation 
 \begin_inset Formula $\eqref{eq:Variational Parameters}$
 \end_inset
 
@@ -2780,7 +3562,19 @@ v_{1\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{1}\left(\omega_{\mathbf{
 \end_layout
 
 \begin_layout Standard
-This system of equations has the following solutions:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This system of equations has the following solutions:
 \end_layout
 
 \begin_layout Standard
@@ -2801,7 +3595,19 @@ v_{1\mathbf{k}}\!\left(\omega_{\mathbf{k}},t\right)\! & =\!g_{1}\left(\omega_{\m
 \end_layout
 
 \begin_layout Standard
-For a shorter representation let's define:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For a shorter representation let's define:
 \end_layout
 
 \begin_layout Standard
@@ -2817,7 +3623,19 @@ s_{i}\left(\omega_{\mathbf{k}},t\right) & =\frac{a_{\left(i+1\right){\rm mod}2}\
 \end_layout
 
 \begin_layout Standard
-So the variational parameter are:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So the variational parameter are:
 \end_layout
 
 \begin_layout Standard
@@ -2838,7 +3656,19 @@ g_{1}\left(\omega_{\mathbf{k}}\right)
 \end_layout
 
 \begin_layout Standard
-Given that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Given that 
 \begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)\equiv g_{i}\left(\omega_{\mathbf{k}}\right)F_{i}\left(\omega_{\mathbf{k}},t\right)$
 \end_inset
 
@@ -2858,7 +3688,19 @@ F_{1}\left(\omega_{\mathbf{k}},t\right) & =\frac{g_{0}\left(\omega_{\mathbf{k}}\
 \end_layout
 
 \begin_layout Standard
-In the continuous limit we have:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In the continuous limit we have:
 \end_layout
 
 \begin_layout Standard
@@ -2929,7 +3771,19 @@ noindent
 \end_layout
 
 \begin_layout Standard
-We transform any operator 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We transform any operator 
 \begin_inset Formula $O$
 \end_inset
 
@@ -2945,7 +3799,20 @@ U\left(t\right) & \equiv{\rm \mathcal{T}}{\rm exp}\left(-{\rm i}\int_{0}^{t}{\rm
 
 \end_inset
 
-Here 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here 
 \begin_inset Formula ${\rm \mathcal{T}}$
 \end_inset
 
@@ -2990,8 +3857,7 @@ noindent
 \uwave off
 \noun off
 \color none
-.
- In order to separate the Hamiltonian we define the matrix 
+In order to separate the Hamiltonian we define the matrix 
 \begin_inset Formula $\Lambda\left(t\right)$
 \end_inset
 
@@ -3028,6 +3894,18 @@ V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -3040,7 +3918,7 @@ V_{10}^{\Re}\left(t\right) & V_{10}^{\Re}\left(t\right) & 1 & V_{10}^{\Im}\left(
 \uwave off
 \noun off
 \color none
-In this case 
+ In this case 
 \begin_inset Formula $|1\rangle\negmedspace\langle1|=\frac{I-\sigma_{z}}{2}$
 \end_inset
 
@@ -3058,6 +3936,18 @@ In this case
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
 
 \family roman
 \series medium
@@ -3070,7 +3960,7 @@ In this case
 \uwave off
 \noun off
 \color none
-The 
+ The 
 \family default
 \series default
 \shape default
@@ -3131,7 +4021,19 @@ previous
 \end_layout
 
 \begin_layout Standard
-As the combined system and environment is closed, within the interaction
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As the combined system and environment is closed, within the interaction
  picture the system-environment density operator evolves according to: 
 \end_layout
 
@@ -3147,7 +4049,19 @@ As the combined system and environment is closed, within the interaction
 \end_layout
 
 \begin_layout Standard
-This equation has the formal solution 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This equation has the formal solution 
 \end_layout
 
 \begin_layout Standard
@@ -3162,7 +4076,19 @@ This equation has the formal solution
 \end_layout
 
 \begin_layout Standard
-Replacing the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Replacing the equation 
 \begin_inset Formula $\eqref{sol}$
 \end_inset
 
@@ -3185,7 +4111,19 @@ Replacing the equation
 \end_layout
 
 \begin_layout Standard
-This equation allow us to iterate and write in terms of a series expansion
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This equation allow us to iterate and write in terms of a series expansion
  with 
 \begin_inset Formula $\overline{\rho_{T}}\left(0\right)$
 \end_inset
@@ -3205,7 +4143,19 @@ This equation allow us to iterate and write in terms of a series expansion
 \end_layout
 
 \begin_layout Standard
-Taking the trace over the environmental degrees of freedom, we find
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Taking the trace over the environmental degrees of freedom, we find
 \end_layout
 
 \begin_layout Standard
@@ -3220,7 +4170,19 @@ Taking the trace over the environmental degrees of freedom, we find
 \end_layout
 
 \begin_layout Standard
-here we have assumed that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ here we have assumed that 
 \begin_inset Formula $\overline{\rho_{T}}\left(0\right)=\overline{\rho_{S}}\left(0\right)\otimes\rho_{B}$
 \end_inset
 
@@ -3241,7 +4203,19 @@ here we have assumed that
 \end_layout
 
 \begin_layout Standard
-in this case 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ in this case 
 \end_layout
 
 \begin_layout Standard
@@ -3256,7 +4230,19 @@ W_{n}\left(t\right)=\left(-{\rm i}\right)^{n}\int_{0}^{t}{\rm d}t_{1}\int_{0}^{t
 \end_layout
 
 \begin_layout Standard
-are superoperators acting on the initial system density operator.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ are superoperators acting on the initial system density operator.
  Differentiating with respect to time, we have:
 \end_layout
 
@@ -3274,7 +4260,19 @@ are superoperators acting on the initial system density operator.
 \end_layout
 
 \begin_layout Standard
-where we assumed that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where we assumed that 
 \begin_inset Formula $W\left(t\right)$
 \end_inset
 
@@ -3313,7 +4311,19 @@ where we assumed that
 \end_layout
 
 \begin_layout Standard
-Replacing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Replacing 
 \begin_inset Formula $t_{1}\rightarrow t-\tau$
 \end_inset
 
@@ -3407,7 +4417,19 @@ noindent
 \end_layout
 
 \begin_layout Standard
-Here we have used the fact that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Here we have used the fact that 
 \begin_inset Formula $\left[\overline{H_{\bar{S}}}\left(t\right),H_{B}\right]=0$
 \end_inset
 
@@ -3462,7 +4484,19 @@ Using the expression
 \end_layout
 
 \begin_layout Standard
-In order to calculate the correlation functions we define:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In order to calculate the correlation functions we define:
 \end_layout
 
 \begin_layout Standard
@@ -3477,7 +4511,19 @@ In order to calculate the correlation functions we define:
 \end_layout
 
 \begin_layout Standard
-An useful property is
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ An useful property is
 \end_layout
 
 \begin_layout Standard
@@ -3496,7 +4542,19 @@ An useful property is
 \end_layout
 
 \begin_layout Standard
-The correlation functions relevant that appear in the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The correlation functions relevant that appear in the equation 
 \begin_inset Formula $\eqref{eq:master equation-1}$
 \end_inset
 
@@ -3523,7 +4581,19 @@ The correlation functions relevant that appear in the equation
 \end_layout
 
 \begin_layout Standard
-The cyclic property of the trace was use widely in the development of equations
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The cyclic property of the trace was use widely in the development of equations
  
 \begin_inset Formula $\eqref{eq:corr1-1}$
 \end_inset
@@ -3567,7 +4637,19 @@ The cyclic property of the trace was use widely in the development of equations
 \end_layout
 
 \begin_layout Standard
-We could identify the following commutators in the equation deduced:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We could identify the following commutators in the equation deduced:
 \end_layout
 
 \begin_layout Standard
@@ -3583,7 +4665,19 @@ We could identify the following commutators in the equation deduced:
 \end_layout
 
 \begin_layout Standard
-Returning to the Schroedinger picture we have:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Returning to the Schroedinger picture we have:
 \end_layout
 
 \begin_layout Standard
@@ -3612,7 +4706,19 @@ U\left(t\right)\widetilde{A_{i}}\left(t\right)\widetilde{A_{j}}\left(t^{\prime}\
 \end_layout
 
 \begin_layout Standard
-This procedure applying to the relevant commutators give us:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ This procedure applying to the relevant commutators give us:
 \end_layout
 
 \begin_layout Standard
@@ -3641,7 +4747,19 @@ U\left(t\right)\left[\widetilde{A_{i}}\left(t\right),\widetilde{A_{j}}\left(t^{\
 \end_layout
 
 \begin_layout Standard
-Introducing this transformed commutators in the equation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Introducing this transformed commutators in the equation 
 \begin_inset Formula $\eqref{ps:}$
 \end_inset
 
@@ -3811,10 +4929,10 @@ noindent
 \! & =\!\int{\rm d}^{2}\alpha P\left(\alpha\right)\left\langle \alpha\left|B_{j{\rm mod}2z}\left(t,\tau\right)B_{j{\rm mod}2z}\left(t^{\prime},0\right)\right|\alpha\right\rangle \\
 \! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha\right|^{2}}{N}}\left\langle \alpha\left|B_{j{\rm mod}2z}\left(t,\tau\right)B_{j{\rm mod}2z}\left(t^{\prime},0\right)\right|\alpha\right\rangle {\rm d}^{2}\alpha,\\
 q_{j\mathbf{k}}\left(t\right)\! & =\!g_{j{\rm mod}2\mathbf{k}}-v_{j{\rm mod}2\mathbf{k}}\left(t\right)\\
-B_{j{\rm mod}2z}\left(t,\tau\right)\! & =\!\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right),\\
+B_{j{\rm mod}2z}\left(t,\tau\right)\! & =\!\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right),\\
 B_{j{\rm mod}2z}\left(t^{\prime},0\right)\! & =\!\sum_{\mathbf{k}^{\prime}}\left(q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}+q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\mathbf{}}\right),\\
 \left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm Tr}_{B}\left(B_{j{\rm mod}2z}\left(t,\tau\right)B_{j{\rm mod}2z}\left(t^{\prime},0\right)\rho_{B}\right)\\
-\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)\!b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\!\sum_{\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right)
+\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)\!b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\!\sum_{\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right)
 \end{align}
 
 \end_inset
@@ -3827,30 +4945,30 @@ B_{j{\rm mod}2z}\left(t^{\prime},0\right)\! & =\!\sum_{\mathbf{k}^{\prime}}\left
 \size scriptsize
 \begin_inset Formula 
 \begin{align}
-\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)\!b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\sum_{\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k^{\prime}}}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k^{\prime}}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right)\\
-\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\left(\!q_{j\mathbf{k^{\prime}}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k^{\prime}}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\rho_{B}\!\right)\!\\
-\! & \,\,\,\,\,\,\,+\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\left(\!q_{j\mathbf{k}}\left(t^{\prime}\right)\!b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right),\\
-\left\langle \!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t^{\prime}\right)\!\right\rangle _{B}\negmedspace & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}+q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\mathbf{}}\right)\rho_{B}\right)\\
-\! & \,\,\,\,\,\,\,+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\rho_{B}\right)\\
-0\! & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}+q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\mathbf{}}\right)\rho_{B}\right)\\
-\left\langle \!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t^{\prime}\right)\!\right\rangle _{B}\negmedspace & =\!0+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\rho_{B}\right)\\
+\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)\!b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\sum_{\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k^{\prime}}}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k^{\prime}}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right)\\
+\! & =\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\!\left(\!q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+\!q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\left(\!q_{j\mathbf{k^{\prime}}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}\!+\!q_{j\mathbf{k^{\prime}}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}^{\prime}}^{\mathbf{}}\!\right)\rho_{B}\!\right)\!\\
+\! & \,\,\,\,\,\,\,+\!{\rm Tr}_{B}\!\left(\!\sum_{\mathbf{k}}\!\left(\!q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\left(\!q_{j\mathbf{k}}\left(t^{\prime}\right)\!b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!b_{\mathbf{k}}^{\mathbf{}}\!\right)\!\rho_{B}\!\right),\\
+\left\langle \!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t^{\prime}\right)\!\right\rangle _{B}\negmedspace & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}+q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\mathbf{}}\right)\rho_{B}\right)\\
+\! & \,\,\,\,\,\,\,+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\rho_{B}\right)\\
+0\! & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}^{\prime}}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\dagger}+q_{j\mathbf{k}^{\prime}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}^{\prime}}^{\mathbf{}}\right)\rho_{B}\right)\\
+\left\langle \!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\negmedspace\left(t^{\prime}\right)\!\right\rangle _{B}\negmedspace & =\!0+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\rho_{B}\right)\\
 \! & =\!{\rm Tr}_{B}\negmedspace\sum_{\mathbf{k}}\negmedspace\left(\negmedspace q_{j\mathbf{k}}\negmedspace\left(t\right)\!q_{j\mathbf{k}}\negmedspace\left(t^{\prime}\right)\!\left(b_{\mathbf{k}}^{\dagger}\right)^{2}\!\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!\!+q_{j\mathbf{k}}\negmedspace\left(t\right)\!q_{j\mathbf{k}}^{*}\negmedspace\left(t^{\prime}\right)\negmedspace b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!\!+q_{j\mathbf{k}}^{*}\negmedspace\left(t\right)\!q_{j\mathbf{k}}\negmedspace\left(t^{\prime}\right)\!b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\!\!+q_{j\mathbf{k}}^{*}\negmedspace\left(t\right)\!q_{j\mathbf{k}}^{*}\negmedspace\left(t^{\prime}\right)\negmedspace b_{\mathbf{k}}^{2}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\negmedspace\right)\negmedspace\rho_{B}\\
-\! & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)\\
-\! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\rho_{B}\right)+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\rho_{B}\right)\\
-\! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\right|\alpha_{\mathbf{k}}\right\rangle +q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}}\\
+\! & =\!{\rm Tr}_{B}\left(\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)+{\rm Tr}_{B}\left(\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\rho_{B}\right)\\
+\! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\rho_{B}\right)+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}{\rm Tr}_{B}\left(b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\rho_{B}\right)\\
+\! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\right|\alpha_{\mathbf{k}}\right\rangle +q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\left({\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
-\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left({\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
 \! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\left({\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
-\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left({\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
 \! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\left({\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\left(b_{\mathbf{k}}^{\mathbf{}}+\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
-\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|\left(b_{\mathbf{k}}^{\mathbf{}}+\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right),\\
+\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left({\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|\left(b_{\mathbf{k}}^{\mathbf{}}+\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right),\\
 \! & =\!\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}+b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right.\\
-\! & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
+\! & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\right)\\
 \! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(q_{j\mathbf{k}}\!\left(t\right)q_{j\mathbf{k}}^{*}\!\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle +q_{j\mathbf{k}}\!\left(t\right)q_{j\mathbf{k}}^{*}\!\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}\right|0\right\rangle \right.\\
-\! & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle +q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}\right|0\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}}\\
-\! & =\!\frac{1}{\pi N}\!\int\!{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\!\sum_{\mathbf{k}}\!\left(\!\left\langle 0\left|q_{j\mathbf{k}}\!\left(t\right)q_{j\mathbf{k}}^{*}\!\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}+\left|\alpha_{\mathbf{k}}\right|^{2}\right)+q_{j\mathbf{k}}^{*}\!\left(t\right)q_{j\mathbf{k}}\!\left(t^{\prime}\right)\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right)\right|0\right\rangle \!\right)\!{\rm d}^{2}\alpha_{\mathbf{k}}\\
+\! & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle +q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\dagger}\alpha_{\mathbf{k}}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}\right|0\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}}\\
+\! & =\!\frac{1}{\pi N}\!\int\!{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\!\sum_{\mathbf{k}}\!\left(\!\left\langle 0\left|q_{j\mathbf{k}}\!\left(t\right)q_{j\mathbf{k}}^{*}\!\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}+\left|\alpha_{\mathbf{k}}\right|^{2}\right)+q_{j\mathbf{k}}^{*}\!\left(t\right)q_{j\mathbf{k}}\!\left(t^{\prime}\right)\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+\left|\alpha_{\mathbf{k}}\right|^{2}\right)\right|0\right\rangle \!\right)\!{\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle +\left\langle 0\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\right|0\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}}\\
-\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle +\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}},\\
+\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle +\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle \right){\rm d}^{2}\alpha_{\mathbf{k}},\\
 1\! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}{\rm d}^{2}\alpha_{\mathbf{k}},\\
 b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\left|0\right\rangle \! & =\!0,\\
 b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \! & =\!\left|0\right\rangle ,
@@ -3866,12 +4984,12 @@ b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \! & =\!\
 \size small
 \begin_inset Formula 
 \begin{align}
-\left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\!\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle \right.\\
- & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left(e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle \right)\right){\rm d}^{2}\alpha_{\mathbf{k}}\\
+\left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\sum_{\mathbf{k}}\frac{1}{\pi N}\!\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\left\langle 0\left|\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle \right.\\
+ & \,\,\,\,\,\,\left.+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)\left({\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|0\right\rangle \right)\right){\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\frac{1}{\pi N}\negmedspace\int\negmedspace\sum_{\mathbf{k}}\negmedspace{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\negmedspace\left(\!\left(\!q_{j\mathbf{k}}\negmedspace\left(t\right)\!q_{j\mathbf{k}}^{*}\negmedspace\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!+q_{j\mathbf{k}}^{*}\negmedspace\left(t\right)\!q_{j\mathbf{k}}\negmedspace\left(t^{\prime}\right)\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!\left|\alpha_{\mathbf{k}}\right|^{2}\!+q_{j\mathbf{k}}^{*}\negmedspace\left(t\right)\!q_{j\mathbf{k}}\negmedspace\left(t^{\prime}\right)\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\right)\!{\rm d}^{2}\!\alpha_{\mathbf{k}},\\
 \int_{0}^{2\pi}\int_{0}^{+\infty}r^{2}{\rm e}^{-\frac{r^{2}}{N}}\!r{\rm d}r{\rm d}\theta\! & =\,\int\left|\alpha_{\mathbf{k}}\right|^{2}\!{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\!{\rm d}^{2}\!\alpha_{\mathbf{k}}\\
 \! & =\!\pi N^{2}\\
-\left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\sum_{\mathbf{k}}\left(\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)N+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+\left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\sum_{\mathbf{k}}\left(\left(q_{j\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)N+q_{j\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
 \left\langle \!\widetilde{B_{j{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{j^{\prime}{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm Tr}{}_{B}\left(B_{j{\rm mod}2z}\left(t,\tau\right)B_{j^{\prime}{\rm mod}2z}\left(t^{\prime},0\right)\rho_{B}\right)\\
 \! & =\!\int{\rm d}^{2}\alpha P\left(\alpha\right)\left\langle \alpha\left|B_{j{\rm mod}2z}\left(t,\tau\right)B_{j^{\prime}{\rm mod}2z}\left(t^{\prime},0\right)\right|\alpha\right\rangle \\
 \! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha\right|^{2}}{N}}\left\langle \alpha\left|B_{j{\rm mod}2z}\left(t,\tau\right)B_{j^{\prime}{\rm mod}2z}\left(t^{\prime},0\right)\right|\alpha\right\rangle {\rm d}^{2}\alpha\\
@@ -3880,9 +4998,9 @@ b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \! & =\!\
 \! & \,\,\,\,\,\,\,+\left\langle \alpha\right|\!\sum_{\mathbf{k}}\!\frac{1}{\pi N}\!\int\!{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(q_{j\mathbf{k}}\!\left(t\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!+q_{j\mathbf{k}}^{*}\!\left(t\right)\!b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\!\right)\!\left(q_{j^{\prime}\mathbf{k^{\prime}}}\!\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j^{\prime}\mathbf{k}}^{*}\!\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\!\left|\alpha\right\rangle {\rm d}^{2}\!\alpha_{\mathbf{k}}\\
 \! & =\!\left\langle \alpha\right|\!\sum_{\mathbf{k}}\!\frac{1}{\pi N}\!\int\!{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left(q_{j\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}e^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!+q_{j\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\!\right)\!\left(q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\!\right)\!\left|\alpha\right\rangle {\rm d}^{2}\!\alpha_{\mathbf{k}}\\
 \! & =\!\left\langle \alpha\left|\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}\left(t\right)q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\right|\alpha\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
-\! & \,\,\,\,\,\,\,+\left\langle \alpha\left|\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right|\alpha\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
+\! & \,\,\,\,\,\,\,+\left\langle \alpha\left|\sum_{\mathbf{k}}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right|\alpha\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\sum_{\mathbf{k}}q_{j\mathbf{k}}\left(t\right)q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
-\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}},\\
+\! & \,\,\,\,\,\,\,+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle \alpha_{\mathbf{k}}\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right|\alpha_{\mathbf{k}}\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}},\\
 \left\langle b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\right\rangle _{B}\! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\mathbf{}}D\left(\alpha_{\mathbf{k}}\right)D\left(-\alpha_{\mathbf{k}}\right)b_{\mathbf{k}}^{\dagger}D\left(\alpha_{\mathbf{k}}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|\left(b_{\mathbf{k}}^{\mathbf{}}+\alpha_{\mathbf{k}}\right)\left(b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}^{*}\right)\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
 \! & =\!\frac{1}{\pi N}\int{\rm e}^{-\frac{\left|\alpha_{\mathbf{k}}\right|^{2}}{N}}\left\langle 0\left|b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}+\alpha_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}+b_{\mathbf{k}}^{\mathbf{}}\alpha_{\mathbf{k}}^{*}+\left|\alpha_{\mathbf{k}}\right|^{2}\right|0\right\rangle {\rm d}^{2}\alpha_{\mathbf{k}}\\
@@ -3903,7 +5021,7 @@ b_{\mathbf{k}}^{\mathbf{}}b_{\mathbf{k}}^{\dagger}\left|0\right\rangle \! & =\!\
 \begin_inset Formula 
 \begin{align}
 \left\langle \widetilde{B_{j{\rm mod}2z}}\left(t\right)\widetilde{B_{j^{\prime}{\rm mod}2z}}\left(t^{\prime}\right)\right\rangle _{B} & =\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t\right)q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N+q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N+1\right)\right)\\
- & =\sum_{\mathbf{k}}2N\left(q_{j\mathbf{k}}\left(t\right)q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\right)^{\Re}+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\\
+ & =\sum_{\mathbf{k}}2N\left(q_{j\mathbf{k}}\left(t\right)q_{j^{\prime}\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\right)^{\Re}+\sum_{\mathbf{k}}q_{j\mathbf{k}}^{*}\left(t\right)q_{j^{\prime}\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\\
 D\left(h'\right)D\left(h\right) & ={\rm e}^{\frac{1}{2}\left(h'h^{*}-h'^{*}h\right)}D\left(h'+h\right),\\
 \left\langle D\left(h'\right)D\left(h\right)\right\rangle _{B} & ={\rm {\rm \text{Tr}}}_{B}\left({\rm e}^{\frac{1}{2}\left(h'h^{*}-h'^{*}h\right)}D\left(h'+h\right)\rho_{B}\right)\\
  & ={\rm e}^{\frac{1}{2}\left(h'h^{*}-h'^{*}h\right)}{\rm {\rm \text{Tr}}}_{B}\left(D\left(h'+h\right)\rho_{B}\right)\\
@@ -3997,7 +5115,19 @@ m_{\mathbf{k}}\left(t\right) & =\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{
 \end_layout
 
 \begin_layout Standard
-The correlation functions can be found readily as:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The correlation functions can be found readily as:
 \end_layout
 
 \begin_layout Standard
@@ -4008,10 +5138,10 @@ B_{0}^{+}B_{1}^{-}\left(t,\tau\right) & =\prod_{\mathbf{k}}\left(D\left(-m_{\mat
 B_{10}\left(t\right) & ={\rm e}^{\chi_{10}\left(t\right)}\left({\rm e}^{-\frac{1}{2}\sum_{\mathbf{k}}\left|m_{\mathbf{k}}\left(t\right)\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right),\\
 B_{x}\left(t,\tau\right) & =\frac{B_{1}^{+}B_{0}^{-}\left(t,\tau\right)+B_{0}^{+}B_{1}^{-}\left(t,\tau\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2},\\
 B_{y}\left(t,\tau\right) & =\frac{B_{0}^{+}B_{1}^{-}\left(t,\tau\right)-B_{1}^{+}B_{0}^{-}\left(t,\tau\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}},\\
-B_{i{\rm mod}2z}\left(t,\tau\right) & =\sum_{\mathbf{k}}\left(q_{i\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{i\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right),\\
+B_{i{\rm mod}2z}\left(t,\tau\right) & =\sum_{\mathbf{k}}\left(q_{i\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{i\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right),\\
 \left\langle \widetilde{B_{i{\rm mod}2z}}\left(t\right)\widetilde{B_{j{\rm mod}2z}}\left(t^{\prime}\right)\right\rangle _{B} & =\left\langle B_{i{\rm mod}2z}\left(t,\tau\right)B_{j{\rm mod}2z}\left(t^{\prime},0\right)\right\rangle _{B}\\
- & =\left\langle \sum_{\mathbf{k}}\left(q_{i\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{i\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{B}\\
- & =\sum_{\mathbf{k}}q_{i\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\sum_{\mathbf{k}}q_{i\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right),\\
+ & =\left\langle \sum_{\mathbf{k}}\left(q_{i\mathbf{k}}\left(t\right)b_{\mathbf{k}}^{\dagger}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+q_{i\mathbf{k}}^{*}\left(t\right)b_{\mathbf{k}}^{\mathbf{}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\sum_{\mathbf{k}}\left(q_{j\mathbf{k}}\left(t^{\prime}\right)b_{\mathbf{k}}^{\dagger}+q_{j\mathbf{k}}^{*}\left(t^{\prime}\right)b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{B}\\
+ & =\sum_{\mathbf{k}}q_{i\mathbf{k}}\left(t\right)q_{j\mathbf{k}}^{*}\left(t^{\prime}\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\sum_{\mathbf{k}}q_{i\mathbf{k}}^{*}\left(t\right)q_{j\mathbf{k}}\left(t^{\prime}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right),\\
 \left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{x}}\left(t^{\prime}\right)\right\rangle _{B} & =\left\langle B_{x}\left(t,\tau\right)B_{x}\left(t^{\prime},0\right)\right\rangle _{B}
 \end{align}
 
@@ -4093,7 +5223,7 @@ U_{10}\left(t,t^{\prime}\right)\! & =\!\prod_{\mathbf{k}}{\rm e}^{{\rm i}\left(m
 
 \end_inset
 
-s
+
 \end_layout
 
 \begin_layout Standard
@@ -4497,7 +5627,19 @@ m_{\mathbf{k}}\left(t\right) & =\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{
 \end_layout
 
 \begin_layout Standard
-The correlation functions are equal to:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The correlation functions are equal to:
 \end_layout
 
 \begin_layout Standard
@@ -4518,20 +5660,20 @@ The correlation functions are equal to:
 
 \begin_layout Standard
 
-\size small
+\size scriptsize
 \begin_inset Formula 
 \begin{align}
-\left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & ={\scriptstyle -\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Re}U_{10}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}\!{\rm exp}\left(-\frac{|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right.}\\
- & \;\;\;\,\,\!\left.{\scriptstyle -\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Re}U_{10}^{*}\left(t,t^{\prime}\right){\scriptstyle \prod_{\mathbf{k}}{\scriptstyle {\rm exp}\left(-\frac{\left|\left(v_{0\mathbf{k}}\left(t\right)-v_{1\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)}}}\right)\\
- & \;\;\;\,\,\!{\scriptstyle +\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)\right)\left({\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)\right)^{\Im}\left({\rm exp}\left(\text{\chi}_{10}\left(t^{\prime}\right)\right)\left({\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)\right)^{\Im}}\\
-\left\langle \!\widetilde{B_{x}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right){\scriptstyle \prod_{\mathbf{k}}{\scriptstyle {\rm exp}\left(-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)}}\right.\\
- & \;\;\;\,\,\!\left.+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}\!{\rm exp}\left(-\frac{|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)+\left(B_{10}\left(t\right)\right)^{\Re}\left(B_{10}\left(t^{\prime}\right)\right)^{\Im}\\
-\left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right){\scriptstyle \prod_{\mathbf{k}}{\scriptstyle {\rm exp}\left(-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)}}\right.\\
- & \;\;\;\,\,\!\left.+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}\!{\rm exp}\left(-\frac{|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)+\left(B_{10}\left(t\right)\right)^{\Im}\left(B_{10}\left(t^{\prime}\right)\right)^{\Re}\\
-\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{x}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}\sum_{\mathbf{k}}B_{01}^{\Im}\left(t^{\prime}\right)\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
-\left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right),\\
-\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{y}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right),\\
-\left\langle \widetilde{B_{y}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right).
+\left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!-\frac{1}{2}\left(\!\left({\rm e}^{\text{\chi}_{01}\!\left(t\right)+\text{\chi}_{01}\!\left(t^{\prime}\right)}\right)^{\Re}\!U_{10}\!\left(t,t^{\prime}\right)\!\prod_{\mathbf{k}}\!{\rm e^{-\frac{|\left(v_{1\mathbf{k}}\!\left(t\right)-v_{0\mathbf{k}}\!\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\!\left(t^{\prime}\right)-v_{0\mathbf{k}}\!\left(t^{\prime}\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\!\frac{\beta\omega_{\mathbf{k}}}{2}\!\right)}}\right.\\
+\! & \,\,\,\,\,\,\left.-\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)^{\Re}U_{10}^{*}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\left(v_{0\mathbf{k}}\left(t\right)-v_{1\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\\
+\! & \,\,\,\,\,\,\,+\left({\rm e}^{\text{\chi}_{01}\left(t\right)}\left({\rm e}^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\right)^{\Im}\left({\rm e}^{\text{\chi}_{10}\left(t^{\prime}\right)}\left({\rm e^{-\frac{1}{2}\sum_{\mathbf{k}}\left|\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}}\right)\right)^{\Im}\\
+\left\langle \!\widetilde{B_{x}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\frac{1}{2}\left(\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right.\\
+\! & \,\,\,\,\,\,\left.+\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)^{\Im}U_{10}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}\!{\rm e}^{-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)+\left(B_{10}\left(t\right)\right)^{\Re}\left(B_{10}\left(t^{\prime}\right)\right)^{\Im}\\
+\left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!\frac{1}{2}\left(\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right)\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right.\\
+\! & \,\,\,\,\,\,\left.+\left({\rm e}^{\text{\chi}_{01}\!\left(t\right)+\text{\chi}_{01}\!\left(t^{\prime}\right)}\right)^{\Im}U_{10}\!\left(t,t^{\prime}\right)\prod_{\mathbf{k}}\!{\rm e}^{-\frac{|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)+\left(B_{10}\!\left(t\right)\right)^{\Im}\left(B_{10}\!\left(t^{\prime}\right)\right)^{\Re}\\
+\left\langle \!\widetilde{B_{i{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm i}\sum_{\mathbf{k}}B_{01}^{\Im}\!\left(t^{\prime}\right)\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\!\left(t^{\prime}\right)-v_{0\mathbf{k}}\!\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\!\left(t^{\prime}\right)-v_{0\mathbf{k}}\!\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+\left\langle \!\widetilde{B_{x}}\!\left(t\right)\!\widetilde{B_{i{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\!\left(t\right)-v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t^{\prime}\right)\right)\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)-v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right),\\
+\left\langle \!\widetilde{B_{i{\rm mod}2z}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm i}B_{10}^{\Re}\!\left(t^{\prime}\right)\!\sum_{\mathbf{k}}\!\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\!\left(t^{\prime}\right)-v_{0\mathbf{k}}\!\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)\!-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\!\left(t^{\prime}\right)-v_{0\mathbf{k}}\!\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right),\\
+\left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{i{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B}\! & =\!{\rm i}B_{10}^{\Re}\!\left(t\right)\!\sum_{\mathbf{k}}\!\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)-v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)\!-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t^{\prime}\right)\right)\!\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)-v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right).
 \end{align}
 
 \end_inset
@@ -4552,44 +5694,14 @@ noindent
 
 \end_inset
 
- The spectral density is defined in the usual way:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-J_{i}\left(\omega\right) & \equiv\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
-v_{i\mathbf{k}}\left(t\right) & =g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right).
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- it takes account of the density of states, dispersion relation and interaction
- mechanism with the environment.
- In the continuous case a way to measure the strenght of the system-environment
- coupling is:
+ Let's consider the following expression related to the sum of coupling
+ constants for a bath over all the frequences:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\lambda_{i}=\int_{0}^{\infty}\frac{J_{i}\left(\omega\right)}{\omega}{\rm d}\omega.
+L_{i}\left(\omega\right)\equiv\sum_{\mathbf{k}}g_{i\mathbf{k}}\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}.
 \end{equation}
 
 \end_inset
@@ -4598,7 +5710,246 @@ noindent
 \end_layout
 
 \begin_layout Standard
-The integral version of the correlation functions are given by:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Under this definition we have the following expression for a function 
+\begin_inset Formula $f\left(\omega\right)\in L^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\int_{0}^{\infty}f\left(\omega\right)L_{i}\left(\omega\right)L_{j}^{*}\left(\omega\right){\rm d}\omega & \approx\int_{0}^{\infty}f\left(\omega\right)\sum_{\mathbf{k}}g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}\sum_{\mathbf{k}^{\prime}}g_{j}\left(\omega_{\mathbf{k}^{\prime}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}^{\prime}}\right)}{\rm d}\omega\\
+ & =\int_{0}^{\infty}f\left(\omega\right)\sum_{\mathbf{k},\mathbf{k}^{\prime}}g_{i}\left(\omega_{\mathbf{k}}\right)g_{j}\left(\omega_{\mathbf{k}^{\prime}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}\sqrt{\delta\left(\omega-\omega_{\mathbf{k}^{\prime}}\right)}{\rm d}\omega,\\
+\int_{0}^{\infty}f\left(\omega\right)\sum_{\mathbf{k}}g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}{\rm d}\omega & =\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}{\rm d}\omega.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Now we will approach to the function 
+\begin_inset Formula $\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}$
+\end_inset
+
+ using the normal distribution, so:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\delta\left(\omega-\omega_{\mathbf{k}}\right) & =\lim_{\sigma\rightarrow0^{+}}\frac{1}{\sqrt{2\pi}\sigma}{\rm e}^{-\frac{\left(\omega-\omega_{\mathbf{k}}\right)^{2}}{2\sigma^{2}}}\\
+\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)} & =\lim_{\sigma\rightarrow0^{+}}\sqrt{\frac{1}{\sqrt{2\pi}\sigma}{\rm e}^{-\frac{\left(\omega-\omega_{\mathbf{k}}\right)^{2}}{2\sigma^{2}}}}\\
+ & =\lim_{\sigma\rightarrow0^{+}}\sqrt{\sqrt{2\pi}\sigma}\frac{\sqrt{2}}{\sqrt{2\pi}\sqrt{2}\sigma}{\rm e}^{-\frac{\left(\omega-\omega_{\mathbf{k}}\right)^{2}}{4\sigma^{2}}}\\
+ & =\lim_{\sigma\rightarrow0^{+}}\sqrt{\sqrt{2\pi}\sigma}\frac{\sqrt{2}}{\sqrt{2\pi}\sqrt{2}\sigma}{\rm e}^{-\frac{\left(\omega-\omega_{\mathbf{k}}\right)^{2}}{2\left(\sqrt{2}\sigma\right)^{2}}}\\
+ & =\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}N\left(x;\omega_{\mathbf{k}},\sqrt{2}\sigma\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So we can obtain that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}{\rm d}\omega & =\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}{\rm d}\omega\\
+ & =\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)\left(\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}N\left(x;\omega_{\mathbf{k}},\sqrt{2}\sigma\right)\right){\rm d}\omega\\
+ & =\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)\left(\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}N\left(x;\omega_{\mathbf{k}},\sqrt{2}\sigma\right)\right){\rm d}\omega\\
+ & =\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}\sum_{\mathbf{k}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)N\left(x;\omega_{\mathbf{k}},\sqrt{2}\sigma\right){\rm d}\omega\\
+ & =\sum_{\mathbf{k}}\left(\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}\right)\left(\lim_{\sigma\rightarrow0^{+}}\int_{0}^{\infty}f\left(\omega\right)g_{i}\left(\omega_{\mathbf{k}}\right)N\left(x;\omega_{\mathbf{k}},\sqrt{2}\sigma\right){\rm d}\omega\right)\\
+ & =\sum_{\mathbf{k}}\left(\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}\right)f\left(\omega_{\mathbf{k}}\right)g_{i}\left(\omega_{\mathbf{k}}\right)\,\text{(with \ensuremath{f\left(\omega\right)},g_{i}\left(\omega\right)\ensuremath{\in L^{2}})}\\
+ & =\lim_{\sigma\rightarrow0^{+}}\sqrt{2}\sqrt{\sqrt{2\pi}\sigma}\sum_{\mathbf{k}}f\left(\omega_{\mathbf{k}}\right)g_{i}\left(\omega_{\mathbf{k}}\right)\,\text{(with \ensuremath{f\left(\omega\right)},g_{i}\left(\omega\right)\ensuremath{\in L^{2}})}\\
+ & =0\,\text{(because the sum \ensuremath{\sum_{\mathbf{k}}f\left(\omega_{\mathbf{k}}\right)g_{i}\left(\omega_{\mathbf{k}}\right)} is finite).}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can proof the following:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\begin{align}
+\int_{0}^{\infty}\!f\!\left(\omega\right)\!L_{i}\!\left(\omega\right)\!L_{j}^{*}\left(\omega\right){\rm d}\omega\! & \approx\!\int_{0}^{\infty}f\left(\omega\right)\sum_{\mathbf{k}}g_{i}\left(\omega_{\mathbf{k}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}\sum_{\mathbf{k}^{\prime}}g_{j}^{*}\left(\omega_{\mathbf{k}^{\prime}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}^{\prime}}\right)}{\rm d}\omega\\
+\! & =\!\int_{0}^{\infty}f\left(\omega\right)\sum_{\mathbf{k},\mathbf{k}^{\prime}}g_{i}\left(\omega_{\mathbf{k}}\right)g_{j}^{*}\left(\omega_{\mathbf{k}^{\prime}}\right)\sqrt{\delta\left(\omega-\omega_{\mathbf{k}}\right)}\sqrt{\delta\left(\omega-\omega_{\mathbf{k}^{\prime}}\right)}{\rm d}\omega\\
+\! & =\!\sum_{\mathbf{k}\neq\mathbf{k}^{\prime}}\!\int_{0}^{\infty}\!f\!\left(\omega\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{j}^{*}\!\left(\omega_{\mathbf{k}^{\prime}}\right)\!\sqrt{\delta\!\left(\omega\!-\!\omega_{\mathbf{k}}\right)}\sqrt{\delta\!\left(\omega\!-\!\omega_{\mathbf{k}^{\prime}}\right)}{\rm d}\omega\!+\!\sum_{\mathbf{k}}\!\int_{0}^{\infty}\!f\!\left(\omega\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{j}^{*}\!\left(\omega_{\mathbf{k}}\right)\!\delta\!\left(\omega\!-\!\omega_{\mathbf{k}}\right)\!{\rm d}\omega\\
+\! & =0\!+\!\sum_{\mathbf{k}}\!\int_{0}^{\infty}\!f\!\left(\omega\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{j}^{*}\!\left(\omega_{\mathbf{k}}\right)\!\delta\!\left(\omega\!-\!\omega_{\mathbf{k}}\right)\!{\rm d}\omega\\
+\! & =\!\sum_{\mathbf{k}}\!\int_{0}^{\infty}\!f\!\left(\omega\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{j}^{*}\!\left(\omega_{\mathbf{k}}\right)\!\delta\!\left(\omega\!-\!\omega_{\mathbf{k}}\right)\!{\rm d}\omega\\
+\! & =\!\sum_{\mathbf{k}}\!f\!\left(\omega_{\mathbf{k}}\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{j}^{*}\!\left(\omega_{\mathbf{k}}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ if 
+\begin_inset Formula $i=j$
+\end_inset
+
+ we recover the spectral density defined in the usual way when we integrate
+ for a function 
+\begin_inset Formula $f\left(\omega\right)$
+\end_inset
+
+ that belongs to the set 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\sum_{\mathbf{k}}\!f\!\left(\omega_{\mathbf{k}}\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{i}^{*}\!\left(\omega_{\mathbf{k}}\right) & =\sum_{\mathbf{k}}\!\int_{0}^{\infty}\!f\!\left(\omega\right)\!g_{i}\!\left(\omega_{\mathbf{k}}\right)\!g_{i}^{*}\!\left(\omega_{\mathbf{k}}\right)\!\delta\!\left(\omega\!-\!\omega_{\mathbf{k}}\right)\!{\rm d}\omega\\
+ & =\int_{0}^{\infty}\!f\!\left(\omega\right)\!J_{ii}\left(\omega\right)\!{\rm d}\omega\\
+ & =\int_{0}^{\infty}\!f\!\left(\omega\right)\!\left|L_{i}\left(\omega\right)\right|^{2}{\rm d}\omega.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ where 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+J_{ii}\left(\omega\right) & =\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}\right|^{2}\delta\left(\omega-\omega_{\mathbf{k}}\right),\\
+v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right) & =g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In this case 
+\begin_inset Formula $g_{i}\left(\omega\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{i}\left(\omega,t\right)$
+\end_inset
+
+ are the continuous version of 
+\begin_inset Formula $g_{i}\left(\omega_{\mathbf{k}}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{i\mathbf{k}}\left(\omega_{\mathbf{k}},t\right)$
+\end_inset
+
+ respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The integral version of the correlation functions can be obtained as follows:
 \end_layout
 
 \begin_layout Standard
@@ -4629,9 +5980,9 @@ Q\left(\omega,t\right) & =\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle \!\widetilde{B_{iz}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\left(t^{\prime}\right)\right)^{*}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\left(t^{\prime}\right)\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right),\\
+\left\langle \!\widetilde{B_{iz}}\!\left(t\right)\!\widetilde{B_{j{\rm mod}2z}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\left(t^{\prime}\right)\right)^{*}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\left(g_{j\mathbf{k}}-v_{j\mathbf{k}}\left(t^{\prime}\right)\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right),\\
  & =\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}\!-\!g_{i\mathbf{k}}F_{i}\!\left(\!\omega_{\mathbf{k}},t\!\right)\!\right)\!\left(g_{j\mathbf{k}}\!-\!g_{j\mathbf{k}}F_{j}\!\left(\!\omega_{\mathbf{k}},t^{\prime}\!\right)\!\right)^{*}\!e^{{\rm i}\omega_{\mathbf{k}}\!\tau}\!N_{\mathbf{k}}\!+\!\left(g_{i\mathbf{k}}\!-\!g_{i\mathbf{k}}F_{i}\!\left(\!\omega_{\mathbf{k}},t\!\right)\!\right)^{*}\!\left(g_{j\mathbf{k}}\!-\!g_{j\mathbf{k}}F_{j}\!\left(\!\omega_{\mathbf{k}},t^{\prime}\!\right)\!\right)\!e^{-{\rm i}\omega_{\mathbf{k}}\!\tau}\!\!\left(N_{\mathbf{k}}\!+\!1\right)\!\right)\\
- & =\sum_{\mathbf{k}}\!\left(g_{i\mathbf{k}}\!\left(1\!-\!F_{i}\left(\omega_{\mathbf{k}},t\right)\right)g_{j\mathbf{k}}^{*}\!\left(1-F_{j}\!\left(\omega_{\mathbf{k}},t^{\prime}\right)\right)^{*}\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!+\!g_{i\mathbf{k}}^{*}\!\left(1\!-\!F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\!g_{j\mathbf{k}}\!\left(1\!-\!F_{j}\!\left(\omega_{\mathbf{k}},t^{\prime}\right)\right)\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}\!+\!1\right)\!\right)\\
+ & =\sum_{\mathbf{k}}\!\left(g_{i\mathbf{k}}\!\left(1\!-\!F_{i}\left(\omega_{\mathbf{k}},t\right)\right)g_{j\mathbf{k}}^{*}\!\left(1-F_{j}\!\left(\omega_{\mathbf{k}},t^{\prime}\right)\right)^{*}\!{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!+\!g_{i\mathbf{k}}^{*}\!\left(1\!-\!F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\!g_{j\mathbf{k}}\!\left(1\!-\!F_{j}\!\left(\omega_{\mathbf{k}},t^{\prime}\right)\right)\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}\!+\!1\right)\!\right)\\
  & \approx\int_{0}^{\infty}{\scriptstyle \left(\sqrt{J_{i}\left(\omega\right)J_{j}^{*}\left(\omega\right)}\left(1-F_{i}\left(\omega,t\right)\right)\left(1-F_{j}^{*}\left(\omega,t^{\prime}\right)\right)e^{{\rm i}\omega\tau}N\left(\omega\right)+\sqrt{J_{i}^{*}\left(\omega\right)J_{j}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t\right)\right)\left(1-F_{j}\left(\omega,t^{\prime}\right)\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,}\\
 \text{\chi}_{10}\left(t\right) & =\sum_{\mathbf{k}}\frac{1}{2}\left(\frac{v_{1\mathbf{k}}^{*}\left(t\right)v_{0\mathbf{k}}\left(t\right)-v_{1\mathbf{k}}\left(t\right)v_{0\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}\right)\\
  & =\sum_{\mathbf{k}}\frac{1}{2}\left(\frac{g_{1\mathbf{k}}^{*}F_{1}^{*}\left(\omega_{\mathbf{k}},t\right)g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t\right)-g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t\right)g_{0\mathbf{k}}^{*}F_{0}^{*}\left(\omega_{\mathbf{k}},t\right)}{\omega_{\mathbf{k}}^{2}}\right)\\
@@ -4659,16 +6010,16 @@ B_{10}\left(t\right) & =\left(\prod_{\mathbf{k}}{\rm exp}\left(\frac{1}{2}\left(
 \left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =-\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Re}U_{10}\left(t,t^{\prime}\right)\xi^{+}\left(t,t^{\prime}\right)-\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Re}U_{10}^{*}\left(t,t^{\prime}\right)\xi^{-}\left(t,t^{\prime}\right)\right){\scriptstyle +\left(B_{01}\left(t\right)\right)^{\Im}\left(B_{10}\left(t^{\prime}\right)\right)^{\Im}}\\
 \left\langle \!\widetilde{B_{x}}\!\left(t\right)\!\widetilde{B_{y}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right)\xi^{-}\left(t,t^{\prime}\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}\left(t,t^{\prime}\right)\xi^{+}\left(t,t^{\prime}\right)\right)+\left(B_{10}\left(t\right)\right)^{\Re}\left(B_{10}\left(t^{\prime}\right)\right)^{\Im}\\
 \left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(t^{\prime}\right)\!\right\rangle _{B} & =\frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}^{*}\left(t,t^{\prime}\right)\xi^{-}\left(t,t^{\prime}\right)+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)\right)\right)^{\Im}U_{10}\left(t,t^{\prime}\right)\xi^{+}\left(t,t^{\prime}\right)\right)+\left(B_{10}\left(t\right)\right)^{\Im}\left(B_{10}\left(t^{\prime}\right)\right)^{\Re}\\
-\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{x}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
- & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right)\right)\left(\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(g_{i\mathbf{k}}-g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
- & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}\left(1-F_{i}\left(\omega_{\mathbf{k}},t\right)\right)\left(\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-g_{i\mathbf{k}}^{*}\left(1-F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{x}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+ & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right)\right)\left(\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(g_{i\mathbf{k}}-g_{i\mathbf{k}}F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+ & ={\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}\left(1-F_{i}\left(\omega_{\mathbf{k}},t\right)\right)\left(\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-g_{i\mathbf{k}}^{*}\left(1-F_{i}\left(\omega_{\mathbf{k}},t\right)\right)^{*}\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}},t^{\prime}\right)-g_{0\mathbf{k}}F_{0}\left(\omega_{\mathbf{k}},t^{\prime}\right)}{\omega_{\mathbf{k}}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
 Q\left(\omega,t\right) & =\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega,t\right)-\sqrt{J_{0}\left(\omega\right)}F_{0}\left(\omega,t\right)}{\omega}\\
 \left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{x}}\left(t^{\prime}\right)\right\rangle _{B} & \approx{\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\int_{0}^{\infty}\left(\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,t\right)\right)Q^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t\right)\right)Q\left(\omega,t^{\prime}\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\\
-\left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right),\\
+\left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right),\\
  & \approx{\rm i}B_{01}^{\Im}\left(t\right)\int_{0}^{\infty}\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
-\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{y}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right),\\
+\left\langle \widetilde{B_{iz}}\left(t\right)\widetilde{B_{y}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\sum_{\mathbf{k}}\!\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t^{\prime}\right)-v_{0\mathbf{k}}\left(t^{\prime}\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right),\\
  & \approx iB_{10}^{\Re}\left(t^{\prime}\right)\int_{0}^{\infty}\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t^{\prime}\right)\left(N\left(\omega\right)+1\right)e^{-{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t^{\prime}\right)e^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega\\
-\left\langle \widetilde{B_{y}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right).\\
+\left\langle \widetilde{B_{y}}\left(t\right)\widetilde{B_{iz}}\left(t^{\prime}\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t^{\prime}\right)\right)\!\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right).\\
  & \approx iB_{10}^{\Re}\left(t\right)\int_{0}^{\infty}\left(\sqrt{J_{i}^{*}\left(\omega\right)}\left(1-F_{i}^{*}\left(\omega,t^{\prime}\right)\right)Q\left(\omega,t\right)N\left(\omega\right)e^{{\rm i}\omega\tau}-\sqrt{J_{i}\left(\omega\right)}\left(1-F_{i}\left(\omega,t^{\prime}\right)\right)Q^{*}\left(\omega,t\right)e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
 \\
 \\
@@ -4686,6 +6037,56 @@ Q\left(\omega,t\right) & =\frac{\sqrt{J_{1}\left(\omega\right)}F_{1}\left(\omega
 \\
 \\
 \\
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The integral version of the correlation functions 
+\begin_inset Formula $\mathscr{B}_{ij}\left(t,t^{\prime}\right)$
+\end_inset
+
+ is can be written in a neater form as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathscr{B}\left(t,t^{\prime}\right) & \equiv\begin{pmatrix}\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{23}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{26}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{31}\left(t,t^{\prime}\right) & \mathscr{B}_{32}\left(t,t^{\prime}\right) & \mathscr{B}_{33}\left(t,t^{\prime}\right) & \mathscr{B}_{32}\left(t,t^{\prime}\right) & \mathscr{B}_{31}\left(t,t^{\prime}\right) & \mathscr{B}_{36}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{23}\left(t,t^{\prime}\right) & \mathscr{B}_{22}\left(t,t^{\prime}\right) & \mathscr{B}_{21}\left(t,t^{\prime}\right) & \mathscr{B}_{26}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{13}\left(t,t^{\prime}\right) & \mathscr{B}_{12}\left(t,t^{\prime}\right) & \mathscr{B}_{11}\left(t,t^{\prime}\right) & \mathscr{B}_{16}\left(t,t^{\prime}\right)\\
+\mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{63}\left(t,t^{\prime}\right) & \mathscr{B}_{62}\left(t,t^{\prime}\right) & \mathscr{B}_{61}\left(t,t^{\prime}\right) & \mathscr{B}_{66}\left(t,t^{\prime}\right)
+\end{pmatrix},\\
+\mathscr{B}_{11}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)+\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)-B_{10}^{\Re}\left(t\right)B_{01}^{\Re}\left(t^{\prime}\right),\\
+\mathscr{B}_{22}\!\left(t,t^{\prime}\right)\! & =\!-\frac{1}{2}\left(\Re\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\!\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)-\Re\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\!\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)\right)+B_{01}^{\Im}\left(t\right)\!B_{10}^{\Im}\left(t^{\prime}\right),\\
+\mathscr{B}_{12}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{10}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Re}\left(t\right)B_{10}^{\Im}\left(t^{\prime}\right),\\
+\mathscr{B}_{21}\!\left(t,t^{\prime}\right)\! & =\!\frac{1}{2}\left(\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(t^{\prime}\right)}\right)\zeta_{10}^{*}\left(t,t^{\prime}\right)\xi_{10}^{-}\left(t,t^{\prime}\right)+\Im\left({\rm e}^{\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(t^{\prime}\right)}\right)\zeta_{10}\left(t,t^{\prime}\right)\xi_{10}^{+}\left(t,t^{\prime}\right)\right)+B_{10}^{\Im}\left(t\right)B_{10}^{\Re}\left(t^{\prime}\right),\\
+\mathscr{B}_{ij}\left(t,t^{\prime}\right)\! & =\!\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)P_{j}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)+P_{i}^{*}\left(\omega,t\right)P_{j}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,\ensuremath{i,j\in\left\{ 3,6\right\} },\\
+\mathscr{B}_{i1}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}\left(\omega,t\right)Q_{10}^{*}\left(\omega,t^{\prime}\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}^{*}\left(\omega,t\right)Q_{10}\left(\omega,t^{\prime}\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{1i}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{01}^{\Im}\left(t\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{i2}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t^{\prime}\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t^{\prime}\right)\left(N\left(\omega\right)+1\right){\rm e}^{-{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t^{\prime}\right){\rm e}^{{\rm i}\omega\tau}N\left(\omega\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\mathscr{B}_{2i}\left(t,t^{\prime}\right)\! & =\!{\rm i}B_{10}^{\Re}\left(t\right)\int_{0}^{\infty}\left(P_{i}^{*}\left(\omega,t^{\prime}\right)Q_{10}\left(\omega,t\right)N\left(\omega\right){\rm e}^{{\rm i}\omega\tau}-P_{i}\left(\omega,t^{\prime}\right)Q_{10}^{*}\left(\omega,t\right){\rm e}^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega,i\in\left\{ 3,6\right\} ,\\
+\zeta_{ij}\left(t,t^{\prime}\right)\! & =\!{\rm {\rm e}}^{\text{{\rm i}}\Im\left(\int_{0}^{\infty}\frac{\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right)\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)^{*}{\rm e}^{{\rm i}\omega\tau}}{\omega^{2}}{\rm d}\omega\right)},\\
+\xi_{ij}^{\pm}\left(t,t^{\prime}\right)\! & =\!{\rm e}^{-\int_{0}^{\infty}\frac{\left|\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)\right){\rm {\rm e}}^{{\rm i}\omega\tau}\pm\left(L_{i}\left(\omega\right)F_{i}\left(\omega,t^{\prime}\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t^{\prime}\right)\right)\right|^{2}}{2\omega^{2}}\coth\left(\frac{\beta\omega}{2}\right){\rm d}\omega},\\
+P_{i}\left(\omega,t\right)\! & =\!L_{i{\rm mod}2}\left(\omega\right)\left(1-F_{i{\rm mod}2}\left(\omega,t\right)\right),\\
+Q_{ij}(\omega,t)\! & =\!\frac{L_{i}\left(\omega\right)F_{1}\left(\omega,t\right)-L_{j}\left(\omega\right)F_{j}\left(\omega,t\right)}{\omega}.
 \end{align}
 
 \end_inset
@@ -6443,8 +7844,8 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle \!\widetilde{B_{1z}}\!\left(t\right)\!\widetilde{B_{1z}}\!\left(s\right)\!\right\rangle _{B} & =\sum_{\mathbf{k}}\left(\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right)\label{eq:ref a-1}\\
- & =\sum_{\mathbf{k}}\left|g_{1\mathbf{k}}-v_{1\mathbf{k}}\right|^{2}\left({\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right)\\
+\left\langle \!\widetilde{B_{1z}}\!\left(t\right)\!\widetilde{B_{1z}}\!\left(s\right)\!\right\rangle _{B} & =\sum_{\mathbf{k}}\left(\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right)\label{eq:ref a-1}\\
+ & =\sum_{\mathbf{k}}\left|g_{1\mathbf{k}}-v_{1\mathbf{k}}\right|^{2}\left({\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}+{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right)\\
  & \approx\int_{0}^{\infty}J_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)^{2}\left(e^{{\rm i}\omega\tau}N\left(\omega\right)+e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\right){\rm d}\omega\\
 G_{\pm}\left(\omega,\tau\right) & =e^{{\rm i}\omega\tau}N\left(\omega\right)+e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)\\
 \left\langle \!\widetilde{B_{1z}}\!\left(t\right)\!\widetilde{B_{1z}}\!\left(s\right)\!\right\rangle _{B} & \approx\int_{0}^{\infty}J_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)^{2}G_{+}\left(\omega,t\right){\rm d}\omega\\
@@ -6485,24 +7886,24 @@ B & \equiv{\rm exp}\left(-\frac{1}{2}\sum_{\mathbf{k}}\frac{v_{1\mathbf{k}}^{2}}
 \left\langle \!\widetilde{B_{y}}\!\left(t\right)\!\widetilde{B_{x}}\!\left(s\right)\!\right\rangle _{B} & ={\scriptstyle \frac{1}{2}\left(\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{10}\left(s\right)\right)\right)^{\Im}U_{10}^{*}\left(t,s\right){\scriptstyle \prod_{\mathbf{k}}{\scriptstyle {\rm exp}\left(-\frac{\left|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)\right)\right|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)}}\right.}\\
  & {\scriptstyle \left.+\left({\rm exp}\left(\text{\chi}_{01}\left(t\right)+\text{\chi}_{01}\left(s\right)\right)\right)^{\Im}U_{10}\left(t,s\right)\prod_{\mathbf{k}}\!{\rm exp}\left(-\frac{|\left(v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)\right){\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}+v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)|^{2}}{2\omega_{\mathbf{k}}^{2}}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\right)\right)+\left(B_{10}\left(t\right)\right)^{\Im}\left(B_{10}\left(s\right)\right)^{\Re}}\\
  & =0\,\text{(because the quantities studied are real)}\\
-\left\langle \widetilde{B_{1z}}\left(t\right)\widetilde{B_{x}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{01}^{\Im}\left(s\right)\sum_{\mathbf{k}}\left(\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
+\left\langle \widetilde{B_{1z}}\left(t\right)\widetilde{B_{x}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{01}^{\Im}\left(s\right)\sum_{\mathbf{k}}\left(\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)\right),\\
  & =0\,\text{(because \ensuremath{B_{01}\left(s\right)} is real)}\\
-\left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{1z}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right)\\
+\left\langle \widetilde{B_{x}}\left(t\right)\widetilde{B_{1z}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Im}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(N_{\mathbf{k}}+1\right)\!\right)\\
  & =0\,\text{(because \ensuremath{B_{10}\left(t\right)} is real)}\\
-\left\langle \widetilde{B_{1z}}\left(t\right)\widetilde{B_{y}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(s\right)\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!\left(\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
- & =iB\sum_{\mathbf{k}}\!\left(g_{1\mathbf{k}}-g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
- & =iB\sum_{\mathbf{k}}g_{1\mathbf{k}}^{2}\left(1-F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(\!e^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
+\left\langle \widetilde{B_{1z}}\left(t\right)\widetilde{B_{y}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(s\right)\sum_{\mathbf{k}}\!\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\left(s\right)-v_{0\mathbf{k}}\left(s\right)}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)^{*}\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\!\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!\left(\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right)^{*}\!N_{\mathbf{k}}\!\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
+ & =iB\sum_{\mathbf{k}}\!\left(g_{1\mathbf{k}}-g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
+ & =iB\sum_{\mathbf{k}}g_{1\mathbf{k}}^{2}\left(1-F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(\!{\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\left(N_{\mathbf{k}}+1\right)-{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}N_{\mathbf{k}}\!\right)\\
  & \approx iB\int_{0}^{\infty}J_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{F_{1}\left(\omega\right)}{\omega}\left(\!e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)-e^{{\rm i}\omega\tau}N\left(\omega\right)\!\right){\rm d}\omega\\
  & =iB\int_{0}^{\infty}F_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{J_{1}\left(\omega\right)}{\omega}\left(\!e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)-e^{{\rm i}\omega\tau}N\left(\omega\right)\!\right){\rm d}\omega\\
  & =iB\int_{0}^{\infty}F_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{J_{1}\left(\omega\right)}{\omega}G_{-}\left(\omega,\tau\right){\rm d}\omega\\
-\left\langle \widetilde{B_{y}}\left(t\right)\widetilde{B_{1z}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)\!\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}-g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
- & ={\rm i}B\sum_{\mathbf{k}}g_{1\mathbf{k}}^{2}\left(1-F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right)e^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+\left\langle \widetilde{B_{y}}\left(t\right)\widetilde{B_{1z}}\left(s\right)\right\rangle _{B} & ={\rm i}B_{10}^{\Re}\left(t\right)\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)^{*}\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\left(s\right)\right)\!\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\left(\frac{v_{1\mathbf{k}}\left(t\right)-v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\!\left(\!\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}\!\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}-\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\!\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\!\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}-v_{1\mathbf{k}}\right)\frac{v_{1\mathbf{k}}}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}\left(g_{1\mathbf{k}}-g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{g_{1\mathbf{k}}F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
+ & ={\rm i}B\sum_{\mathbf{k}}g_{1\mathbf{k}}^{2}\left(1-F_{1}\left(\omega_{\mathbf{k}}\right)\right)\frac{F_{1}\left(\omega_{\mathbf{k}}\right)}{\omega_{\mathbf{k}}}\left(N_{\mathbf{k}}{\rm e}^{{\rm i}\omega_{\mathbf{k}}\tau}-\left(N_{\mathbf{k}}+1\right){\rm e}^{-{\rm i}\omega_{\mathbf{k}}\tau}\right)\\
  & \approx iB\int_{0}^{\infty}J_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{F_{1}\left(\omega\right)}{\omega}\left(-e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)+e^{{\rm i}\omega\tau}N\left(\omega\right)\!\right){\rm d}\omega\\
  & =iB\int_{0}^{\infty}F_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{J_{1}\left(\omega\right)}{\omega}\left(\!-e^{-{\rm i}\omega\tau}\left(N\left(\omega\right)+1\right)+e^{{\rm i}\omega\tau}N\left(\omega\right)\!\right){\rm d}\omega\\
  & =-iB\int_{0}^{\infty}F_{1}\left(\omega\right)\left(1-F_{1}\left(\omega\right)\right)\frac{J_{1}\left(\omega\right)}{\omega}G_{-}\left(\omega,\tau\right){\rm d}\omega\\
