@@ -110,7 +110,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -131,7 +130,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -6989,7 +6987,7 @@ noindent
 \size small
 \begin_inset Formula 
 \begin{align}
-\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{S}}\!\left(t\right)\right]-\sum_{ijww^{\prime}}\int_{0}^{t}{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t-\tau\right)\left(\mathscr{B}_{ij}\!\left(\tau\right)\left[A_{i}\!\left(t\right),{\rm e}^{{\rm i}\tau w\left(t-\tau\right)}{\rm e}^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\!\left(t\right)\right]\right.\\
+\frac{{\rm d}\overline{\rho_{S}}\!\left(t\right)}{{\rm d}t}\! & =\!-{\rm i}\left[\overline{H_{\bar{S}}}\!\left(t\right),\overline{\rho_{S}}\!\left(t\right)\right]-\!\sum_{ijww^{\prime}}\int_{0}^{t}\!{\rm d}\tau C_{i}\!\left(t\right)C_{j}\!\left(t-\tau\right)\!\left(\mathscr{B}_{ij}\!\left(\tau\right)\left[A_{i}\!\left(t\right),{\rm e}^{{\rm i}\tau w\left(t-\tau\right)}{\rm e}^{-{\rm i}t\left(w\left(t-\tau\right)-w^{\prime}\left(t\right)\right)}A_{jww^{\prime}}\!\left(t-\tau,t\right)\overline{\rho_{S}}\!\left(t\right)\right]\right.\\
 \! & \,\,\,\,\,\,\left.+\mathscr{B}_{ij}^{*}\left(\tau\right)\left[\overline{\rho_{S}}\left(t\right){\rm e}^{-{\rm i}\tau w\left(t-\tau\right)}\!{\rm e}^{{\rm i}t\left(\!w\left(t-\tau\right)-w^{\prime}\left(t\right)\!\right)}\!A_{jww^{\prime}}^{\dagger}\left(t-\tau,t\right),A_{i}\left(t\right)\right]\right)
 \end{align}
 
@@ -10092,92 +10090,6 @@ noindent
 
 \end_inset
 
- Defining the moments respect to the origin as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-m_{k}=\left\langle \left(x-\left\langle x\right\rangle \right)^{k}\right\rangle 
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- so we find that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\left\langle \left(x-\left\langle x\right\rangle +\alpha\right)^{k}\right\rangle -\alpha^{k} & =\sum_{j=0}^{k}\binom{k}{j}\left\langle \left(x-\left\langle x\right\rangle \right)^{j}\right\rangle \alpha^{k-j}-\alpha^{k}\\
- & =\sum_{j=2}^{k}\binom{k}{j}\left\langle \left(x-\left\langle x\right\rangle \right)^{j}\right\rangle \alpha^{k-j}+\binom{k}{1}\left\langle x-\left\langle x\right\rangle \right\rangle \alpha^{k-1}+\alpha^{k}-\alpha^{k}\\
- & =\sum_{j=2}^{k}\binom{k}{j}\left\langle \left(x-\left\langle x\right\rangle \right)^{j}\right\rangle \alpha^{k-j}+\binom{k}{1}\left(\left\langle x\right\rangle -\left\langle x\right\rangle \right)\alpha^{k-1}\\
- & =\sum_{j=2}^{k}\binom{k}{j}\left\langle \left(x-\left\langle x\right\rangle \right)^{j}\right\rangle \alpha^{k-j}\\
- & =\sum_{j=2}^{k}\binom{k}{j}m_{j}\alpha^{k-j}.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- So we obtain that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\frac{\left\langle \left(x-\left\langle x\right\rangle +\alpha\right)^{k}\right\rangle -\alpha^{k}}{k!} & =1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\frac{\sum_{j=2}^{k}\binom{k}{j}m_{j}\alpha^{k-j}}{k!}\\
- & =1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\binom{k}{j}m_{j}\alpha^{k-j}}{k!}.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
  We consider the partition functions of 
 \begin_inset Formula $\overline{H}$
 \end_inset
@@ -10230,9 +10142,10 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-Z\geq Z_{0}{\rm e}^{-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}}\left(1+F_{M}\left(\overrightarrow{u}^{\prime\prime}\right)+F_{N}\left(\overrightarrow{v}^{\prime\prime}-\overrightarrow{u}^{\prime\prime}\right)\right).
-\end{equation}
+\begin{align}
+Z & \geq Z_{0}{\rm e}^{-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\\
+F_{N}\left(\overrightarrow{u}\right) & ={\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\frac{u_{k}}{k!}\sum_{i=0}^{2N-1-k}\frac{\alpha^{i}}{i!}.
+\end{align}
 
 \end_inset
 
@@ -10257,9 +10170,138 @@ noindent
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
-u_{k}^{\prime\prime} & =\\
-\end{align*}
+\begin{align}
+\overline{H_{\overline{I}}}_{D} & =\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|\,\,\,\,\text{(where \ensuremath{\left|n\right\rangle } is an eigenstate of \ensuremath{\overline{H_{0}}}),}\\
+\overline{H_{0}}\left|n\right\rangle  & =E_{0}^{n}\left|n\right\rangle ,\\
+Z_{0} & =\sum_{n}{\rm e}^{-\beta E_{0}^{n}},\\
+u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k}\right\rangle _{\overline{H_{0}}}\\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left(\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle -\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k},\\
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k}\right|n\right\rangle .
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ By construction 
+\begin_inset Formula $\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}=0$
+\end_inset
+
+, so we arrive to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+Z & \geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\label{eq:uk}\\
+u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}\right)^{k}\right\rangle _{\overline{H_{0}}},\\
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle .\label{eq:vk}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ As we can see the expression 
+\begin_inset Formula $\eqref{eq:uk}$
+\end_inset
+
+ was written in terms of the expected value of an operator, we want to do
+ the same for 
+\begin_inset Formula $\eqref{eq:vk}$
+\end_inset
+
+ in order to write that expressions in a short form, following this we obtained:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left(\overline{H_{0}}-E_{0}^{n}\right)\left|n\right\rangle  & =\overline{H_{0}}\left|n\right\rangle -E_{0}^{n}\left|n\right\rangle \\
+ & =E_{0}^{n}\left|n\right\rangle -E_{0}^{n}\left|n\right\rangle \\
+ & =0,\\
+\left\langle n\right|\left(\overline{H_{0}}-E_{0}^{n}\right) & =\left\langle n\right|\overline{H_{0}}-\left\langle n\right|E_{0}^{n}\\
+ & =\left\langle n\right|E_{0}^{n}-\left\langle n\right|E_{0}^{n}\\
+ & =0.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At first we calculated 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{1} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{0}}-E_{0}^{n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|E_{0}^{n}-E_{0}^{n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =0+\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\\
+ & =0.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $k\geq2$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in N$
+\end_inset
+
+ we calculated:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & ==\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle 
+\end{align}
 
 \end_inset
 
