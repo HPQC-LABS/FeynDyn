@@ -10300,7 +10300,7 @@ v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\l
  & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
  & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
  & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
- & ==\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle 
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle 
 \end{align}
 
 \end_inset
