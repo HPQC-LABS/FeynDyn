@@ -110,6 +110,7 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
+
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -130,6 +131,7 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
+
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -10137,7 +10139,7 @@ noindent
 
 \end_inset
 
- Taking the Quantum Bogoliubov inequality from [4]:
+ Taking the Quantum Bogoliubov inequality from [5]:
 \end_layout
 
 \begin_layout Standard
@@ -10171,12 +10173,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\overline{H_{\overline{I}}}_{D} & =\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|\,\,\,\,\text{(where \ensuremath{\left|n\right\rangle } is an eigenstate of \ensuremath{\overline{H_{0}}}),}\\
-\overline{H_{0}}\left|n\right\rangle  & =E_{0}^{n}\left|n\right\rangle ,\\
-Z_{0} & =\sum_{n}{\rm e}^{-\beta E_{0}^{n}},\\
+\overline{H_{\overline{I}}}_{D} & =\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|\,\,\,\,\text{(with \ensuremath{\left|n\right\rangle } is an eigenstate of \ensuremath{\overline{H_{0}}}),}\\
+\overline{H_{0}}\left|n\right\rangle  & =E_{0,n}\left|n\right\rangle ,\\
+Z_{0} & =\sum_{n}{\rm e}^{-\beta E_{0,n}},\\
 u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k}\right\rangle _{\overline{H_{0}}}\\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left(\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle -\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k},\\
-v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k}\right|n\right\rangle .
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left(\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle -\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k},\\
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\right)^{k}\right|n\right\rangle .
 \end{align}
 
 \end_inset
@@ -10209,8 +10211,19 @@ noindent
 \begin{align}
 Z & \geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\label{eq:uk}\\
 u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}\right)^{k}\right\rangle _{\overline{H_{0}}},\\
-v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle .\label{eq:vk}
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle .\label{eq:vk}
 \end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{H_{\overline{I}}}_{D}=\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|\,\,\,\,\text{(with \ensuremath{\left|n\right\rangle } is an eigenstate of \ensuremath{\overline{H_{0}}}),}
+\]
 
 \end_inset
 
@@ -10245,62 +10258,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left(\overline{H_{0}}-E_{0}^{n}\right)\left|n\right\rangle  & =\overline{H_{0}}\left|n\right\rangle -E_{0}^{n}\left|n\right\rangle \\
- & =E_{0}^{n}\left|n\right\rangle -E_{0}^{n}\left|n\right\rangle \\
+\left(\overline{H_{0}}-E_{0,n}\right)\left|n\right\rangle  & =\overline{H_{0}}\left|n\right\rangle -E_{0,n}\left|n\right\rangle \\
+ & =E_{0,n}\left|n\right\rangle -E_{0,n}\left|n\right\rangle \\
  & =0,\\
-\left\langle n\right|\left(\overline{H_{0}}-E_{0}^{n}\right) & =\left\langle n\right|\overline{H_{0}}-\left\langle n\right|E_{0}^{n}\\
- & =\left\langle n\right|E_{0}^{n}-\left\langle n\right|E_{0}^{n}\\
+\left\langle n\right|\left(\overline{H_{0}}-E_{0,n}\right) & =\left\langle n\right|\overline{H_{0}}-\left\langle n\right|E_{0,n}\\
+ & =\left\langle n\right|E_{0,n}-\left\langle n\right|E_{0,n}\\
  & =0.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At first we calculated 
-\begin_inset Formula $v_{1}$
-\end_inset
-
- like:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-v_{1} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{0}}-E_{0}^{n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|E_{0}^{n}-E_{0}^{n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
- & =0+\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\\
- & =0.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For 
-\begin_inset Formula $k\geq2$
-\end_inset
-
- and 
-\begin_inset Formula $k\in N$
-\end_inset
-
- we calculated:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(E_{0}^{n}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
- & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0}^{n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0}^{n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle 
 \end{align}
 
 \end_inset
@@ -10321,14 +10284,246 @@ noindent
 
 \end_inset
 
- Then we have the following inequality:
+ At first we calculated 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ like:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-Z\geq Z_{0}{\rm e}^{-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\binom{k}{j}\beta^{j}\alpha^{k-j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}}}{k!}\right).
-\end{equation}
+\begin{align}
+v_{1} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{0}}-E_{0,n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|E_{0,n}-E_{0,n}\right|n\right\rangle +\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =0+\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}\\
+ & =0.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ For 
+\begin_inset Formula $k\geq2$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in N$
+\end_inset
+
+ we calculated:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(E_{0,n}-E_{0,n}+\overline{H_{\overline{I}}}\right)\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k-2}\left(E_{0,n}-E_{0,n}+\overline{H_{\overline{I}}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle \label{eq:vk generator}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ We will obtain the explicit form of 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{3}$
+\end_inset
+
+ using 
+\begin_inset Formula $\eqref{eq:vk generator}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{2} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{2-2}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{0}\overline{H_{\overline{I}}}\right|n\right\rangle 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\mathbb{I}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}^{2}\right|n\right\rangle \\
+ & =\left\langle \overline{H_{\overline{I}}}^{2}\right\rangle _{\overline{H_{0}}},\\
+v_{3} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{3-2}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{1}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\overline{H_{\overline{I}}}\right|n\right\rangle ,\\
+\overline{H_{0}}\left|n\right\rangle  & =E_{0,n}\left|n\right\rangle ,\\
+\left\langle n\right|\overline{H_{0}} & =\left\langle n\right|E_{0,n},\\
+v_{3} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H_{0}}\,\overline{H_{\overline{I}}}-\overline{H_{\overline{I}}}E_{0,n}\overline{H_{\overline{I}}}+\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H_{0}}\,\overline{H_{\overline{I}}}+\overline{H_{\overline{I}}}^{3}-\overline{H_{\overline{I}}}E_{0,n}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H_{0}}\,\overline{H_{\overline{I}}}+\overline{H_{\overline{I}}}^{3}-\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}E_{0,n}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H_{0}}\,\overline{H_{\overline{I}}}+\overline{H_{\overline{I}}}^{3}-\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}\,\overline{H_{0}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\left(\overline{H_{0}}\,\overline{H_{\overline{I}}}-\overline{H_{\overline{I}}}\,\overline{H_{0}}\right)\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\left[\overline{H_{0}},\overline{H_{\overline{I}}}\right]\right|n\right\rangle \\
+ & =\left\langle \overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\left[\overline{H_{0}},\overline{H_{\overline{I}}}\right]\right\rangle _{\overline{H_{0}}}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In general we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H_{0}}+\overline{H_{\overline{I}}}-E_{0,n}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\overline{H}-E_{0,n}\right)^{k-2}\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\left(\sum_{j}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\overline{H}^{k-2-j}E_{0,n}^{j}\right)\overline{H_{\overline{I}}}\right|n\right\rangle \\
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H}^{k-2-j}\overline{H_{\overline{I}}}E_{0,n}^{j}\right|n\right\rangle 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H}^{k-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right|n\right\rangle \\
+ & =\sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\overline{H_{\overline{I}}}\,\overline{H}^{k-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right|n\right\rangle \\
+ & =\sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\left\langle \overline{H_{\overline{I}}}\,\overline{H}^{k-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{k-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}.\label{eq:vk Ho Hi}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ The formula 
+\begin_inset Formula $\eqref{eq:vk Ho Hi}$
+\end_inset
+
+ is well defined taking as example 
+\begin_inset Formula $k=2,3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v_{2} & =\left\langle \sum_{j=0}^{2-2}\left(-1\right)^{j}\binom{2-2}{j}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{2-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}\\
+ & =\left(-1\right)^{0}\left\langle \overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{0}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{0}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}^{2}\right\rangle _{\overline{H_{0}}},\\
+v_{3} & =\left\langle \sum_{j=0}^{3-2}\left(-1\right)^{j}\binom{3-2}{j}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{3-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \sum_{j=0}^{1}\left(-1\right)^{j}\binom{1}{j}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{1-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \left(-1\right)^{0}\binom{1}{0}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{1-0}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{0}+\left(-1\right)^{1}\binom{1}{1}\overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{1-1}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{1}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)\overline{H_{\overline{I}}}\,\mathbb{I}-\overline{H_{\overline{I}}}\mathbb{I}\overline{H_{\overline{I}}}\,\overline{H_{0}}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)\overline{H_{\overline{I}}}-\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}\,\overline{H_{0}}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\,\overline{H_{0}}\,\overline{H_{\overline{I}}}-\overline{H_{\overline{I}}}\,\overline{H_{\overline{I}}}\,\overline{H_{0}}\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\left(\overline{H_{0}}\,\overline{H_{\overline{I}}}-\overline{H_{\overline{I}}}\,\overline{H_{0}}\right)\right\rangle _{\overline{H_{0}}}\\
+ & =\left\langle \overline{H_{\overline{I}}}^{3}+\overline{H_{\overline{I}}}\left[\overline{H_{0}},\overline{H_{\overline{I}}}\right]\right\rangle _{\overline{H_{0}}}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ So we summarize:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\overline{H_{\overline{I}}}_{D} & =\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|,\label{eq:uk-1}\\
+u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}\right)^{k}\right\rangle _{\overline{H_{0}}},\\
+v_{k} & =\sum_{j=0}^{k-2}\left(-1\right)^{j}\binom{k-2}{j}\left\langle \overline{H_{\overline{I}}}\left(\overline{H_{\overline{I}}}+\overline{H_{0}}\right)^{k-2-j}\overline{H_{\overline{I}}}\,\overline{H_{0}}^{j}\right\rangle _{\overline{H_{0}}}.\label{eq:vk-1}
+\end{align}
 
 \end_inset
 
@@ -10352,13 +10547,13 @@ noindent
 \begin_inset Formula $\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}=0$
 \end_inset
 
- by construction, then obtain finally:
+ by construction, then obtained finally:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Z\geq Z_{0}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\binom{k}{j}\beta^{j}\alpha^{k-j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}}}{k!}\right).\label{eq:Z bigger or equal}
+Z\geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\label{eq:Z bigger or equal}
 \end{equation}
 
 \end_inset
@@ -10420,10 +10615,99 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-Z & \geq Z_{0}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\binom{k}{j}\beta^{j}\alpha^{k-j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}}}{k!}\right),\\
+Z & \geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\\
 E_{{\rm free,1}} & =-\frac{1}{\beta}{\rm ln}\left(Z_{0}\right),\\
-E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\binom{k}{j}\beta^{j}\alpha^{k-j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}}}{k!}\right)\\
- & \equiv E_{{\rm free,N}}.
+E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right)\\
+ & \equiv E_{{\rm free,MNs}}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ here 
+\begin_inset Formula $E_{{\rm free,MNs}}$
+\end_inset
+
+ is the free energy associate to the strong version of the Quantum Bogoliubov
+ inequality of MN order.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ In our approach we will set 
+\begin_inset Formula $N=M$
+\end_inset
+
+, so our quantum Bogoliubov inequality of N order is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+F_{N}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right)\\
+ & =E_{{\rm free,NN}}.\label{eq:EfreeN}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ A weaker form of the inequality 
+\begin_inset Formula $\eqref{eq:EfreeN}$
+\end_inset
+
+ making 
+\begin_inset Formula $\overrightarrow{u}=0$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+F_{N}\left(\overrightarrow{v}\right)\right)\\
+ & \equiv E_{{\rm free,N}}.\label{eq:EfreeN-1}
 \end{align}
 
 \end_inset
