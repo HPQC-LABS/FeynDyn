@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass revtex4-1
+\textclass ../../../Downloads/revtex4-1
 \begin_preamble
 \usepackage{amsfonts}
 \usepackage{palatino}
@@ -609,7 +609,7 @@ ion to each part of the Hamiltonian of the equation
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
-\overline{A\left(t\right)}={\rm e}^{V\left(t\right)}A\left(t\right){\rm e}^{-V\left(t\right)}=\left(|0\rangle\negmedspace\langle0|B_{0}^{+}\left(t\right)+|1\rangle\negmedspace\langle1|B_{1}^{+}\left(t\right)\right)A\left(t\right)\left(|0\rangle\negmedspace\langle0|B_{0}^{-}\left(t\right)+|1\rangle\negmedspace\langle1|B_{1}^{-}\left(t\right)\right)
+\overline{A\left(t\right)}=e^{V\left(t\right)}A\left(t\right)e^{-V\left(t\right)}=\left(|0\rangle\negmedspace\langle0|B_{0}^{+}\left(t\right)+|1\rangle\negmedspace\langle1|B_{1}^{+}\left(t\right)\right)A\left(t\right)\left(|0\rangle\negmedspace\langle0|B_{0}^{-}\left(t\right)+|1\rangle\negmedspace\langle1|B_{1}^{-}\left(t\right)\right)
 \end{equation}
 
 \end_inset
@@ -779,9 +779,6 @@ noindent
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -1053,7 +1050,7 @@ noindent
 
 \end_inset
 
- We reduced the lenght of the expression for the real and imaginary part
+ We reduced the length of the expression for the real and imaginary part
  as shown before.
  We assume that the bath is at equilibrium with inverse temperature 
 \begin_inset Formula $\beta=\frac{1}{k_{{\rm B}}T}$
@@ -1197,7 +1194,7 @@ noindent
 
 \end_inset
 
- So the density matrix 
+ The density matrix 
 \begin_inset Formula $\rho_{B}$
 \end_inset
 
@@ -2113,22 +2110,6 @@ noindent
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 B_{x}\left(t\right) & =B_{x}^{\dagger}\left(t\right)\\
@@ -2573,7 +2554,7 @@ noindent
 \end_inset
 
  But since 
-\begin_inset Formula $\bar{H}_{\bar{B}}=H_{B}$
+\begin_inset Formula $\overline{H_{\bar{B}}}=H_{B}$
 \end_inset
 
  which doesn't contain any 
@@ -3145,7 +3126,7 @@ noindent
 
 \end_inset
 
- Rearrannging this equation will lead to: 
+ Rearranging this equation will lead to: 
 \end_layout
 
 \begin_layout Standard
@@ -7227,7 +7208,7 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \frac{{\rm d}\overline{\rho_{\bar{S}}}\!\left(t\right)}{{\rm d}t} & =-{\rm i}\left[\overline{H_{\bar{S}}}\left(t\right),\overline{\rho_{\bar{S}}}\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\overline{\rho_{\bar{S}}}\left(t\right)\right]+\left[\overline{\rho_{\bar{S}}}\left(t\right)L{}_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right),\label{eq:mastereq2}\\
-\textcolor{red}{\ensuremath{\dot{\rho}}\left(t\right)} & \textcolor{red}{=}\textcolor{red}{-{\rm i}\left[H\left(t\right),\rho\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\rho\left(t\right)\right]+\left[\rho\left(t\right)L_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right).}\label{eq:VPQME2x2}
+\dot{\rho}\left(t\right) & =-{\rm i}\left[H\left(t\right),\rho\left(t\right)\right]-\sum_{ijww^{\prime}}\left(\left[A_{i},L_{ijww^{\prime}}\left(t\right)\rho\left(t\right)\right]+\left[\rho\left(t\right)L_{ijww^{\prime}}^{\dagger}\left(t\right),A_{i}\right]\right).\label{eq:VPQME2x2}
 \end{align}
 
 \end_inset
@@ -9969,7 +9950,7 @@ noindent
 \end_layout
 
 \begin_layout Section
-Free energy minimization with Nth Bogoliubov inequality
+General elements for free energy minimization with Nth Bogoliubov inequality
 \end_layout
 
 \begin_layout Standard
@@ -10146,7 +10127,7 @@ noindent
 \begin_inset Formula 
 \begin{align}
 Z & \geq Z_{0}{\rm e}^{-\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\\
-F_{N}\left(\overrightarrow{u}\right) & ={\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\frac{u_{k}}{k!}\sum_{i=0}^{2N-1-k}\frac{\alpha^{i}}{i!}.
+F_{N}\left(\overrightarrow{u}\right) & ={\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\left(-\beta\right)^{k}\frac{u_{k}}{k!}\sum_{i=0}^{2N-1-k}\frac{\alpha^{i}}{i!}.
 \end{align}
 
 \end_inset
@@ -10213,17 +10194,6 @@ Z & \geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overright
 u_{k} & =\left\langle \left(\overline{H_{\overline{I}}}_{D}\right)^{k}\right\rangle _{\overline{H_{0}}},\\
 v_{k} & =\frac{1}{Z_{0}}\sum_{n}{\rm e}^{-\beta E_{0,n}}\left\langle n\left|\left(\overline{H_{0}}-E_{0,n}+\overline{H_{\overline{I}}}\right)^{k}\right|n\right\rangle .\label{eq:vk}
 \end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\overline{H_{\overline{I}}}_{D}=\sum_{n}\left\langle n\left|\overline{H_{\overline{I}}}\right|n\right\rangle |n\rangle\negmedspace\langle n|\,\,\,\,\text{(with \ensuremath{\left|n\right\rangle } is an eigenstate of \ensuremath{\overline{H_{0}}}),}
-\]
 
 \end_inset
 
@@ -10547,7 +10517,7 @@ noindent
 \begin_inset Formula $\left\langle \overline{H_{\overline{I}}}\right\rangle _{\overline{H_{0}}}=0$
 \end_inset
 
- by construction, then obtained finally:
+ by construction, then we obtained finally:
 \end_layout
 
 \begin_layout Standard
@@ -10615,10 +10585,9 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-Z & \geq Z_{0}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right),\\
 E_{{\rm free,1}} & =-\frac{1}{\beta}{\rm ln}\left(Z_{0}\right),\\
 E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right)\\
- & \equiv E_{{\rm free,MNs}}.
+ & \equiv E_{{\rm free,MN}}.
 \end{align}
 
 \end_inset
@@ -10640,11 +10609,15 @@ noindent
 \end_inset
 
  here 
-\begin_inset Formula $E_{{\rm free,MNs}}$
+\begin_inset Formula $E_{{\rm free,MN}}$
 \end_inset
 
  is the free energy associate to the strong version of the Quantum Bogoliubov
- inequality of MN order.
+ inequality of 
+\begin_inset Formula $MN$
+\end_inset
+
+ order.
 \end_layout
 
 \begin_layout Standard
@@ -10664,14 +10637,18 @@ noindent
 \begin_inset Formula $N=M$
 \end_inset
 
-, so our quantum Bogoliubov inequality of N order is:
+, so our quantum Bogoliubov inequality of 
+\begin_inset Formula $N$
+\end_inset
+
+ order is:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 E_{{\rm free}} & \leq E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+F_{N}\left(\overrightarrow{u}\right)+F_{N}\left(\overrightarrow{v}-\overrightarrow{u}\right)\right)\\
- & =E_{{\rm free,NN}}.\label{eq:EfreeN}
+ & =E_{{\rm free,NN}}.\label{eq:EfreeNN}
 \end{align}
 
 \end_inset
@@ -10693,7 +10670,7 @@ noindent
 \end_inset
 
  A weaker form of the inequality 
-\begin_inset Formula $\eqref{eq:EfreeN}$
+\begin_inset Formula $\eqref{eq:EfreeNN}$
 \end_inset
 
  making 
@@ -10728,14 +10705,26 @@ noindent
 
 \end_inset
 
- Now we consider the expected value of the form:
+ The algebraic equation associated with 
+\begin_inset Formula $\alpha_{{\rm opt}}$
+\end_inset
+
+ such that 
+\begin_inset Formula $E_{{\rm free,N}}$
+\end_inset
+
+ is closer to 
+\begin_inset Formula $E_{{\rm free}}$
+\end_inset
+
+ is given by the following expression:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-G\left(t\right) & \equiv\left\langle {\rm e}^{-t\beta\overline{H_{\overline{I}}}}\right\rangle _{\overline{H_{0}}},\\
-G^{\left(j\right)}\left(t\right) & =\frac{{\rm d}^{j}}{{\rm d}t^{j}}\left\langle {\rm e}^{-t\beta\overline{H_{\overline{I}}}}\right\rangle _{\overline{H_{0}}}
+G\left(\alpha_{{\rm opt}}\right) & =\sum_{k=2}^{2N-1}\left(-\beta\right)^{k}\frac{u_{k}}{k!}\frac{\alpha_{{\rm opt}}^{2N-1-k}}{\left(2N-1-k\right)!}\\
+ & =0.
 \end{align}
 
 \end_inset
@@ -10744,19 +10733,26 @@ G^{\left(j\right)}\left(t\right) & =\frac{{\rm d}^{j}}{{\rm d}t^{j}}\left\langle
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{align}
- & =\left\langle \frac{{\rm d}^{j}}{{\rm d}t^{j}}{\rm e}^{-t\beta\overline{H_{\overline{I}}}}\right\rangle _{\overline{H_{0}}}\\
- & =\left\langle \frac{{\rm d}^{j}}{{\rm d}t^{j}}\left(\mathbb{I}-\frac{t\beta\overline{H_{\overline{I}}}}{1!}+\frac{t^{2}\beta^{2}\overline{H_{\overline{I}}}^{2}}{2!}-\dots\right)\right\rangle _{\overline{H_{0}}}\\
- & =\left\langle \frac{{\rm d}^{j}}{{\rm d}t^{j}}\left(\sum_{k=0}^{\infty}\frac{\left(-t\beta\overline{H_{\overline{I}}}\right)^{k}}{k!}\right)\right\rangle _{\overline{H_{0}}}\\
- & =\left\langle \frac{{\rm d}^{j}}{{\rm d}t^{j}}\left(\sum_{k=0}^{\infty}\frac{\left(-1\right)^{k}t^{k}\beta^{k}\overline{H_{\overline{I}}}^{k}}{k!}\right)\right\rangle _{\overline{H_{0}}},\\
-G^{\left(j\right)}\left(0\right) & =\left(-1\right)^{j}\beta^{j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}},\\
-\beta^{j}\left\langle \overline{H_{\overline{I}}}^{j}\right\rangle _{\overline{H_{0}}} & =\left(-1\right)^{j}G^{\left(j\right)}\left(0\right).
-\end{align}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
 
 \end_inset
 
+ The elements presented are the required to find variational parameters
+ through the determination of the SCE (self consistent equations) of the
+ system in particular to the order expected.
+ 
+\end_layout
 
+\begin_layout Section
+SCE from 3rd quantum Bogoliubov inequality
 \end_layout
 
 \begin_layout Standard
@@ -10772,109 +10768,28 @@ noindent
 
 \end_inset
 
- So we obtain that:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E_{{\rm free,N}}=E_{{\rm free,1}}-\frac{1}{\beta}{\rm ln}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right).
-\end{equation}
-
+ Our first approach is to obtain the SCE for the 3rd order, for this we
+ need to identify 
+\begin_inset Formula $v_{2},v_{3},v_{4},v_{5}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+ using the 
+\begin_inset Formula $\eqref{eq:vk-1}$
 \end_inset
 
- From the fact that 
-\begin_inset Formula $\alpha$
+, we have already 
+\begin_inset Formula $v_{2},v_{3}$
 \end_inset
 
- is a free parameter then we can minimize the expression:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-h\left(\alpha\right)={\rm ln}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right).
-\end{equation}
-
+ the form of 
+\begin_inset Formula $v_{4}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
+ and 
+\begin_inset Formula $v_{5}$
 \end_inset
 
- This process leads is to:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-h^{\prime}\left(\alpha\right) & =\frac{\frac{{\rm d}}{{\rm d}\alpha}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right)}{1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}}\\
- & =0,\\
-0 & =\frac{{\rm d}}{{\rm d}\alpha}\left(1+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right)\\
- & =-{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}+{\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\left(k-j\right)\alpha^{k-j-1}}{k!}\\
- & ={\rm e}^{-\alpha}\left(\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\left(k-j\right)\alpha^{k-j-1}}{k!}-\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right)\\
- & ={\rm e}^{-\alpha}\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\left(\frac{\left(-1\right)^{j}\binom{k-1}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j-1}}{\left(k-1\right)!}-\frac{\left(-1\right)^{j}\binom{k}{j}G^{\left(j\right)}\left(0\right)\alpha^{k-j}}{k!}\right).
-\end{align}
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Then 
-\begin_inset Formula $\alpha$
-\end_inset
-
- fullfils the following algebraic equation:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\sum_{k=2}^{2N-1}\sum_{j=2}^{k}\frac{\left(-1\right)^{j}G^{\left(j\right)}\left(0\right)}{\alpha^{j}}\left(\frac{\binom{k}{j}\alpha^{k}}{k!}-\frac{\binom{k-1}{j}\alpha^{k-1}}{\left(k-1\right)!}\right)=0.\label{eq:Algebraic alpha}
-\end{equation}
-
-\end_inset
-
-
+ is given by:
 \end_layout
 
 \begin_layout Section
@@ -13531,7 +13446,7 @@ noindent
 [1] McCutcheon D P S, Dattani N S, Gauger E M, Lovett B W and Nazir A 2011
  Phys.
  Rev.
- B 84 081305.
+ B 84 081305
 \end_layout
 
 \begin_layout Standard
@@ -13549,7 +13464,7 @@ noindent
 
 [2] Dara P S McCutcheon and Ahsan Nazir 2010 New J.
  Phys.
- 12 113042.
+ 12 113042
 \end_layout
 
 \begin_layout Standard
@@ -13585,27 +13500,7 @@ noindent
 
 [4] Felix A Pollock et al 2013 New J.
  Phys.
- 15 075018.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
-[5] Alain Decoster 2004 J.
- Phys.
- A: Math.
- Gen.
- 37 9051.
+ 15 075018
 \end_layout
 
 \end_body
