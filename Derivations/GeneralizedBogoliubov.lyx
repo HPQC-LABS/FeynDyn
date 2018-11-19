@@ -111,7 +111,6 @@ Nike Dattani
 \end_layout
 
 \begin_layout Author Email
-
 n.dattani@cfa.harvard.edu
 \end_layout
 
@@ -132,7 +131,6 @@ Camilo Chaparro Sogamoso
 \end_layout
 
 \begin_layout Author Email
-
 	edcchaparroso@unal.edu.co
 \end_layout
 
@@ -1083,7 +1081,7 @@ status open
 \begin_inset Formula 
 \begin{align}
 \overline{H_{\bar{S}}\left(t\right)} & =\left(\varepsilon_{0}\left(t\right)+R_{0}\left(t\right)\right)|0\rangle\negmedspace\langle0|+\left(\varepsilon_{1}\left(t\right)+R_{1}\left(t\right)\right)|1\rangle\negmedspace\langle1|+\sigma_{x}\left(B_{10}^{\Re}\left(t\right)V_{10}^{\Re}\left(t\right)-B_{10}^{\Im}\left(t\right)V_{10}^{\Im}\left(t\right)\right)-\sigma_{y}\left(B_{10}^{\Re}\left(t\right)V_{10}^{\Im}\left(t\right)+B_{10}^{\Im}\left(t\right)V_{10}^{\Re}\left(t\right)\right),\label{Transformation of barH(bar s)-1}\\
-\overline{H_{\bar{I}}} & =\sum_{i}B_{iz}\left(t\right)|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(\sigma_{x}B_{x}\left(t\right)+\sigma_{y}B_{y}\left(t\right)\right)+V_{10}^{\Im}\left(t\right)\left(\sigma_{x}B_{y}\left(t\right)-\sigma_{y}B_{x}\left(t\right)\right),\label{Transformation bar(Hbar(I))-1}\\
+\overline{H_{\bar{I}}}\left(t\right) & =\sum_{i}B_{iz}\left(t\right)|i\rangle\negmedspace\langle i|+V_{10}^{\Re}\left(t\right)\left(\sigma_{x}B_{x}\left(t\right)+\sigma_{y}B_{y}\left(t\right)\right)+V_{10}^{\Im}\left(t\right)\left(\sigma_{x}B_{y}\left(t\right)-\sigma_{y}B_{x}\left(t\right)\right),\label{Transformation bar(Hbar(I))-1}\\
 \overline{H_{\bar{B}}} & =\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}\label{eq:Hbb-1}\\
  & =H_{B}.
 \end{align}
@@ -1423,8 +1421,7 @@ noindent
 \size small
 \begin_inset Formula 
 \begin{align}
- & =\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}{\rm e}^{-\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\prod_{\mathbf{k}}{\rm e}^{-\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
- & =B_{ij}^{2}\left(t\right)B_{ij}\left(t\right)B_{ji}\left(t\right)\\
+ & =\left(\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\left(\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\\
  & =B_{ij}^{2}\left(t\right)\left|B_{ij}\left(t\right)\right|^{2},\\
 \left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right),\\
 \left\langle B_{x}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\left\langle \frac{B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2}\frac{B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}\\
