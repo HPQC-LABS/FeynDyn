@@ -443,7 +443,7 @@ noindent
 \begin{align}
 \prod_{j=1}^{2}\left(\mathbb{I}+\left({\rm e}^{-\beta E_{0,j}\left(t\right)}-1\right)|j\rangle\negmedspace\langle j|\right) & =\left(\mathbb{I}+\left({\rm e}^{-\beta E_{0,1}\left(t\right)}-1\right)|1\rangle\negmedspace\langle1|\right)\left(\mathbb{I}+\left({\rm e}^{-\beta E_{0,2}\left(t\right)}-1\right)|2\rangle\negmedspace\langle2|\right)\\
  & =\mathbb{I}+\left({\rm e}^{-\beta E_{0,1}\left(t\right)}-1\right)|1\rangle\negmedspace\langle1|+\left({\rm e}^{-\beta E_{0,2}\left(t\right)}-1\right)|2\rangle\negmedspace\langle2|\,\,\text{(by \ensuremath{\langle i|j\rangle=\delta_{ij}})}\\
- & =\mathbb{I}+\sum_{j=1}^{2}\left({\rm e}^{-\beta E_{0,j}\left(t\right)}-1\right)|n\rangle\negmedspace\langle n|.
+ & =\mathbb{I}+\sum_{j=1}^{2}\left({\rm e}^{-\beta E_{0,j}\left(t\right)}-1\right)|j\rangle\negmedspace\langle j|.
 \end{align}
 
 \end_inset
@@ -631,7 +631,7 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Z\left(t\right)\geq Z_{0}\left(t\right){\rm e}^{-\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right);\alpha\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right);\alpha\right)\right).
+Z\left(t\right)\geq Z_{0}\left(t\right){\rm e}^{-\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right);\alpha\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right);\alpha\right)\right).\label{eq:Z bigger or equal}
 \end{equation}
 
 \end_inset
@@ -1195,7 +1195,7 @@ v_{1}\left(t\right) & =\frac{1}{Z_{0}\left(t\right)}\sum_{n}{\rm e}^{-\beta E_{0
  & =\frac{1}{Z_{0}\left(t\right)}\sum_{n}{\rm e}^{-\beta E_{0,n}\left(t\right)}\left\langle n\left|\overline{H_{0}}\left(t\right)-E_{0,n}\left(t\right)\right|n\right\rangle +\frac{1}{Z_{0}\left(t\right)}\sum_{n}{\rm e}^{-\beta E_{0,n}\left(t\right)}\left\langle n\left|\overline{H_{\overline{I}}}\left(t\right)\right|n\right\rangle \\
  & =\frac{1}{Z_{0}\left(t\right)}\sum_{n}{\rm e}^{-\beta E_{0,n}\left(t\right)}\left(\left\langle n\left|\overline{H_{0}}\left(t\right)\right|n\right\rangle -\left\langle n\left|E_{0,n}\left(t\right)\right|n\right\rangle \right)+\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
  & =\frac{1}{Z_{0}\left(t\right)}\sum_{n}{\rm e}^{-\beta E_{0,n}\left(t\right)}\left(\left\langle n\left|E_{0,n}\left(t\right)\right|n\right\rangle -\left\langle n\left|E_{0,n}\left(t\right)\right|n\right\rangle \right)+\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
- & =0+\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
+ & =0+\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\,\,\,\text{(by construction \ensuremath{\left\langle \overline{H_{\overline{I}}}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}=0})}\\
  & =0.
 \end{align}
 
@@ -1389,33 +1389,6 @@ noindent
 
 \end_inset
 
- Then we obtained finally:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Z\left(t\right)\geq Z_{0}\left(t\right)\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right),\label{eq:Z bigger or equal}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
  The free energy is defined as:
 \end_layout
 
@@ -1443,11 +1416,35 @@ noindent
 
 \end_inset
 
- It is well-known that the function 
-\begin_inset Formula $f\left(x\right)={\rm ln}\left(x\right)$
+ We define the free energy at first order as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{{\rm free,1}}\left(t\right)\equiv-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\right).
+\end{equation}
+
 \end_inset
 
- is monotonic and increasing so we can transform 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ It is well-known that the function 
+\begin_inset Formula $f\left(x\right)=-{\rm ln}\left(x\right)$
+\end_inset
+
+ is a decreasing function so we can transform 
 \begin_inset Formula $\eqref{eq:Z bigger or equal}$
 \end_inset
 
@@ -1457,7 +1454,6 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-E_{{\rm free,1}}\left(t\right) & =-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\right),\\
 E_{{\rm free}}\left(t\right) & \leq-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\right)\\
 E_{{\rm free}}\left(t\right) & \leq-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\right)-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\\
 E_{{\rm free}}\left(t\right) & \leq E_{{\rm free,1}}\left(t\right)-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\\
@@ -1497,7 +1493,7 @@ noindent
 \end_inset
 
 , so our quantum Bogoliubov inequality of 
-\begin_inset Formula $N$
+\begin_inset Formula $N,N$
 \end_inset
 
  order is:
@@ -1676,11 +1672,11 @@ noindent
 \begin_inset Formula $\eqref{eq:EfreeN-1}$
 \end_inset
 
- and the self consistent equation 
+ and the self consistent equation (SCE) 
 \begin_inset Formula $\eqref{eq:SCE}$
 \end_inset
 
- to a particular order expected.
+ to a particular order required.
  
 \end_layout
 
@@ -1755,7 +1751,11 @@ v_{5}\left(t\right)\! & =\!\sum_{j=0}^{5-2}\left(-1\right)^{j}\binom{5-2}{j}\lef
 \! & =\!\left\langle \overline{H_{\overline{I}}}\!\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\right)^{3}\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}^{0}\!\left(t\right)\!-\!3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\right)^{2}\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)\!-\!\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\right)^{0}\!\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\!\left(t\right)\right.\\
 \! & \,\,\,\,\,\,\left.+3\overline{H_{\overline{I}}}\left(t\right)\left(\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{2}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
 \! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\!\right)^{3}\!\overline{H_{\overline{I}}}\left(t\right)\!-\!3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\!\right)^{2}\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)\!+\!3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\!\overline{H_{0}}\!\left(t\right)\!\right)\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}^{2}\!\!\left(t\right)\!-\!\overline{H_{\overline{I}}}\left(t\right)\right.\\
-\! & \,\,\,\,\,\,\left.\times\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}
+\! & \,\,\,\,\,\,\left.\times\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
+\! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\left(\overline{H_{\overline{I}}}\left(t\right)\!+\overline{H_{0}}\!\left(t\right)\right)^{3}\overline{H_{\overline{I}}}\left(t\right)-3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\overline{H_{0}}\!\left(t\right)\right)^{2}\!\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}\!\left(t\right)+3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\!\left(t\right)\right)\!\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{2}\!\left(t\right)\right.\\
+\! & \,\,\,\,\,\,\left.-\overline{H_{\overline{I}}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
+\! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\!\left(t\right)\!\right)^{3}\overline{H_{\overline{I}}}\left(t\right)-3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}^{2}\!\left(t\right)+\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)+\overline{H_{0}}\!\left(t\right)\!\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}^{2}\!\left(t\right)\!\right)\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)+3\overline{H_{\overline{I}}}\left(t\right)\right.\\
+\! & \,\,\,\,\,\,\left.\times\left(\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{2}\left(t\right)-\overline{H_{\overline{I}}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}
 \end{align}
 
 \end_inset
@@ -1768,10 +1768,6 @@ v_{5}\left(t\right)\! & =\!\sum_{j=0}^{5-2}\left(-1\right)^{j}\binom{5-2}{j}\lef
 \size small
 \begin_inset Formula 
 \begin{align}
-\! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\overline{H_{0}}\!\left(t\right)\right)^{3}\!\overline{H_{\overline{I}}}\left(t\right)-3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\overline{H_{0}}\!\left(t\right)\right)^{2}\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)+3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\!+\overline{H_{0}}\!\left(t\right)\right)\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}^{2}\!\left(t\right)-\overline{H_{\overline{I}}}\left(t\right)\right.\\
-\! & \,\,\,\,\,\,\left.\times\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
-\! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\!\left(t\right)\!\right)^{3}\overline{H_{\overline{I}}}\left(t\right)-3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}^{2}\!\left(t\right)+\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)+\overline{H_{0}}\!\left(t\right)\!\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}^{2}\!\left(t\right)\!\right)\!\overline{H_{\overline{I}}}\left(t\right)\!\overline{H_{0}}\!\left(t\right)+3\overline{H_{\overline{I}}}\left(t\right)\!\left(\overline{H_{\overline{I}}}\left(t\right)\right.\right.\\
-\! & \,\,\,\,\,\,\left.\left.+\overline{H_{0}}\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{2}\left(t\right)-\overline{H_{\overline{I}}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
 \! & =\!\left\langle \overline{H_{\overline{I}}}\left(t\right)\left(\overline{H_{\overline{I}}}^{3}\left(t\right)+\overline{H_{\overline{I}}}^{2}\left(t\right)\overline{H_{0}}\left(t\right)+\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\left(t\right)\overline{H_{\overline{I}}}^{2}\left(t\right)+\overline{H_{0}}^{2}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}\left(t\right)+\overline{H_{\overline{I}}}\left(t\right)\right.\right.\\
 \! & \,\,\,\,\,\,\left.\times\overline{H_{0}}^{2}\!\left(t\right)+\overline{H_{0}}^{3}\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)-3\overline{H_{\overline{I}}}\left(t\right)\left(\overline{H_{\overline{I}}}^{2}\left(t\right)+\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}\left(t\right)+\overline{H_{0}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)+\overline{H_{0}}^{2}\!\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}\left(t\right)+3\overline{H_{\overline{I}}}\left(t\right)\left(\overline{H_{\overline{I}}}\left(t\right)\right.\\
 \! & \,\,\,\,\,\,\left.\left.+\overline{H_{0}}\left(t\right)\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{2}\left(t\right)-\overline{H_{\overline{I}}}\left(t\right)\overline{H_{\overline{I}}}\left(t\right)\overline{H_{0}}^{3}\left(t\right)\right\rangle _{\overline{H_{0}}\left(t\right)}\\
