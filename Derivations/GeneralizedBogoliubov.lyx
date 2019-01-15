@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ../Downloads/revtex4-1
+\textclass revtex4-1
 \begin_preamble
 \usepackage{amsfonts}
 \usepackage{palatino}
@@ -1455,7 +1455,7 @@ noindent
 E_{{\rm free}}\left(t\right) & \leq-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\right)\\
  & =-\frac{1}{\beta}{\rm ln}\left(Z_{0}\left(t\right)\right)-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\\
  & =E_{{\rm free,1}}\left(t\right)-\frac{1}{\beta}{\rm ln}\left(1+F_{M}\left(\overrightarrow{u}\left(t\right)\right)+F_{N}\left(\overrightarrow{v}\left(t\right)-\overrightarrow{u}\left(t\right)\right)\right)\\
- & \equiv E_{{\rm free,MN}}\left(t\right).
+ & \equiv E_{{\rm free,MN}}\left(t\right).\label{eq:eMN}
 \end{align}
 
 \end_inset
@@ -1490,7 +1490,11 @@ noindent
 \begin_inset Formula $N=M$
 \end_inset
 
-, so our quantum Bogoliubov inequality of 
+, so the inequality 
+\begin_inset Formula $\eqref{eq:eMN}$
+\end_inset
+
+ of 
 \begin_inset Formula $N,N$
 \end_inset
 
@@ -2384,18 +2388,18 @@ noindent
 \end_inset
 
  , 
-\begin_inset Formula $\left\langle B_{x}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
-\end_inset
-
- , 
-\begin_inset Formula $\left\langle B_{y}\left(t\right)B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
-\end_inset
-
- , 
 \begin_inset Formula $\left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
 \end_inset
 
-.
+, 
+\begin_inset Formula $\left\langle B_{x}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle B_{y}\left(t\right)B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}$
+\end_inset
+
+ .
  Recalling the form of the hamiltonian 
 \begin_inset Formula $\overline{H_{\bar{B}}}=\sum_{\mathbf{k}}\omega_{\mathbf{k}}b_{\mathbf{k}}^{\dagger}b_{\mathbf{k}}^{\mathbf{}}$
 \end_inset
@@ -2404,7 +2408,7 @@ noindent
 \begin_inset Formula $\eqref{eq:factorization}$
 \end_inset
 
-, also we introduce the notation:
+, introducing the notation:
 \end_layout
 
 \begin_layout Standard
@@ -2844,86 +2848,27 @@ B_{i}^{+}\left(t\right)B_{j}^{-}\left(t\right) & ={\rm e}^{\chi_{ij}\left(t\righ
 \size small
 \begin_inset Formula 
 \begin{align}
- & \,\,\,\,\,\,\times\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\!\right)^{*}\left(\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)+{\rm e}^{\chi_{01}\!\left(t\right)}\\
- & \,\,\,\,\,\,\left.\times\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\left(\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\right)\\
-\\
-\\
-\\
-\\
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset Formula 
-\begin{align}
-\\
-\\
-\\
-\\
-\\
-\\
-\left\langle B_{x}\left(t\right)B_{iz}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{{\rm e}^{\chi_{10}\left(t\right)}}{2}\left\langle \prod_{\mathbf{k}^{\prime}}\left(\!D\left(\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\!\right)\!\left(\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\!\right)\!\right\rangle _{\overline{H_{\bar{B}}}}+\frac{{\rm e}^{\chi_{01}\left(t\right)}}{2}\\
- & \,\,\,\,\,\,\times\left\langle \prod_{\mathbf{k}^{\prime}}\left(D\left(\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)\left(\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{{\rm e}^{\chi_{10}\left(t\right)}}{2}\,\left\langle \sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\,\prod_{\mathbf{k}^{\prime}}\left(D\left(\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\,\prod_{\mathbf{k}^{\prime}}\left(D\left(\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right.\right.\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\left.\left.-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\!\right)b_{\mathbf{k}}^{\mathbf{}}\!\right)\!\right\rangle _{\overline{H_{\bar{B}}}}+\frac{{\rm e}^{\chi_{01}\left(t\right)}}{2}\left\langle \!\sum_{\mathbf{k}}\!\left(\left(g_{i\mathbf{k}}\!-v_{i\mathbf{k}}\!\left(t\right)\right)\!\prod_{\mathbf{k}^{\prime}}\!\left(\!D\!\left(\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}\!-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times\prod_{\mathbf{k}^{\prime}}\left(D\left(\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{{\rm e}^{\chi_{10}\left(t\right)}}{2}\left(\!\sum_{\mathbf{k}}\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left\langle \!\prod_{\mathbf{k}^{\prime}}\!\left(\!D\!\left(\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\!\right)b_{\mathbf{k}}^{\dagger}\right\rangle _{\overline{H_{\bar{B}}}}\!+\!\sum_{\mathbf{k}}\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left\langle \!\prod_{\mathbf{k}^{\prime}}\!\left(\!D\!\left(\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right.\right.\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\left.\left.-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\!\right)b_{\mathbf{k}}^{\mathbf{}}\right\rangle _{\overline{H_{\bar{B}}}}\right)+\frac{{\rm e}^{\chi_{01}\left(t\right)}}{2}\!\left(\!\sum_{\mathbf{k}}\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left\langle \prod_{\mathbf{k}^{\prime}}\left(\!D\!\left(\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\!\right)b_{\mathbf{k}}^{\dagger}\right\rangle _{\overline{H_{\bar{B}}}}+\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.-v_{i\mathbf{k}}\left(t\right)\right)^{*}\left\langle \prod_{\mathbf{k}^{\prime}}\left(D\left(\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\mathbf{}}\right\rangle _{\overline{H_{\bar{B}}}}\right)\\
- & =\frac{B_{10}\left(t\right)}{2}\,\left(\sum_{\mathbf{k}}\,{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\,\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\,+\left(g_{i\mathbf{k}}\right.\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\left.-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)+\frac{B_{01}\left(t\right)}{2}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)\\
- & =\frac{B_{10}\left(t\right)}{2}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}+\left(g_{i\mathbf{k}}\right.\right.\right.\\
-\! & \,\,\,\,\,\,\left.\left.\left.-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)+\frac{B_{01}\left(t\right)}{2}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\right.\right.\\
-\! & \,\,\,\,\,\,\left.\left.\times\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)\\
-\! & =\frac{B_{01}\!\left(t\right)-B_{10}\!\left(t\right)}{2}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(N_{\mathbf{k}}+1\right)\!\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\right.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size small
-\begin_inset Formula 
-\begin{align}
-\! & \,\,\,\,\,\,\left.\left.-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)\\
-\\
-\\
-\\
+ & \,\,\,\,\,\,\times\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\left(\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\!\right)+{\rm e}^{\chi_{01}\left(t\right)}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\\
+ & \,\,\,\,\,\,\left.\times\left(\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\right)\\
+ & =\frac{1}{2}\sum_{\mathbf{k}}\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!\left(N_{\mathbf{k}}+1\right)B_{10}\left(t\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\\
+ & \,\,\,\,\,\,\times\!\left(N_{\mathbf{k}}+1\right)\!B_{01}\!\left(t\right)+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)\!N_{\mathbf{k}}B_{10}\!\left(t\right)+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)\\
+ & \,\,\,\,\,\,\left.\times N_{\mathbf{k}}B_{01}\left(t\right)\right)\\
+ & =\!\frac{B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2}\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!N_{\mathbf{k}}-\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!\!\left(N_{\mathbf{k}}+1\right)\!\right)\\
 \left\langle B_{y}\left(t\right)B_{iz}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\left\langle \frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{2{\rm i}}\left\langle \!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)+B_{10}\!\left(t\right)-B_{01}\!\left(t\right)\right)\!\sum_{\mathbf{k}}\!\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!b_{\mathbf{k}}^{\mathbf{}}\right)\!\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{2{\rm i}}\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{B_{10}\!\left(t\right)}{2{\rm i}}\left(\!\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(N_{\mathbf{k}}\!+\!1\right)\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!-\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)+\frac{B_{01}\left(t\right)}{2{\rm i}}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)\\
- & =\frac{B_{10}\left(t\right)}{2{\rm i}}\left(\!\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\!\left(\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(N_{\mathbf{k}}\!+\!1\right)\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!-\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)+\frac{B_{01}\left(t\right)}{2{\rm i}}\left(\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\right.\right.\\
- & \,\,\,\,\,\,\left.\left.\times\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right)\\
- & =\frac{B_{10}\left(t\right)+B_{01}\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\\
- & \,\,\,\,\,\,\left.-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right),\\
-{\rm Var}_{\overline{H_{\bar{B}}}}\left(A\right) & \equiv\left\langle A^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left\langle A\right\rangle _{\overline{H_{\bar{B}}}}^{2},\\
-\left\langle B_{x}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{x}\left(t\right)\right)+\left\langle B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}^{2}\\
- & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(\frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2}\right)\\
- & =\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)\right)\\
- & =\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)\\
- & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
- & =\frac{1}{4}\left(\!\left\langle \left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)^{2}\!+\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\right.\\
- & \left.-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
- & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}+2\mathbb{I}+\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right),\\
-\left(D\left(h\right)\right)^{2} & =D\left(h\right)D\left(h\right)
+ & =\left\langle \frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2{\rm i}}\\
+ & \,\,\,\,\,\,\times\left\langle \sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\left\langle \frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)b_{\mathbf{k}}^{\dagger}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\frac{1}{2{\rm i}}\sum_{\mathbf{k}}\left\langle \left({\rm e}^{\chi_{01}\left(t\right)}\prod_{\mathbf{k}^{\prime}}D\left(\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)-{\rm e}^{\chi_{10}\left(t\right)}\prod_{\mathbf{k}^{\prime}}D\left(\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)b_{\mathbf{k}}^{\dagger}\right.\right.\\
+ & \,\,\,\,\,\,\left.\left.+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}b_{\mathbf{k}}^{\mathbf{}}\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\frac{1}{2{\rm i}}\,\sum_{\mathbf{k}}\,\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\,{\rm e}^{\chi_{01}\left(t\right)}\,\left\langle \left(\,\prod_{\mathbf{k}^{\prime}}\,D\left(\frac{v_{0\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\dagger}\right\rangle _{\overline{H_{\bar{B}}}}-\,{\rm e}^{\chi_{10}\left(t\right)}\,\left(\,g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\right.\\
+ & \,\,\,\,\,\,\times\left\langle \!\left(\prod_{\mathbf{k}^{\prime}}D\left(\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\dagger}\right\rangle _{\overline{H_{\bar{B}}}}+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\left\langle \!\left(\prod_{\mathbf{k}^{\prime}}D\left(\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\mathbf{}}\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & \,\,\,\,\,\,\left.\times{\rm e}^{\chi_{01}\left(t\right)}-{\rm e}^{\chi_{10}\left(t\right)}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\left\langle \left(\prod_{\mathbf{k}^{\prime}}\!D\!\left(\frac{v_{1\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}-\frac{v_{0\mathbf{k}^{\prime}}\!\left(t\right)}{\omega_{\mathbf{k}^{\prime}}}\right)\right)b_{\mathbf{k}}^{\mathbf{}}\right\rangle _{\overline{H_{\bar{B}}}}\right)\\
+ & =\frac{1}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right){\rm e}^{\chi_{01}\left(t\right)}\left(-\left(\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\left(N_{\mathbf{k}}+1\right){\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\right.\\
+ & \,\,\,\,\,\,-{\rm e}^{\chi_{10}\left(t\right)}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(-\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!\left(N_{\mathbf{k}}+1\right){\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)+{\rm e}^{\chi_{01}\left(t\right)}\\
+ & \,\,\,\,\,\,\times\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\left(\!\left(\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\!\right)-{\rm e}^{\chi_{10}\left(t\right)}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\\
+ & \,\,\,\,\,\,\left.\times\left(\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)N_{\mathbf{k}}{\rm e}^{-\sum_{\mathbf{k}}\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)\right)\\
+ & =\frac{1}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\!\left(N_{\mathbf{k}}+1\right)B_{01}\left(t\right)+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\\
+ & \,\,\,\,\,\,\times\!\left(N_{\mathbf{k}}+1\right)\!B_{10}\!\left(t\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)\!N_{\mathbf{k}}B_{01}\!\left(t\right)-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\right)
 \end{align}
 
 \end_inset
@@ -2936,32 +2881,74 @@ B_{i}^{+}\left(t\right)B_{j}^{-}\left(t\right) & ={\rm e}^{\chi_{ij}\left(t\righ
 \size small
 \begin_inset Formula 
 \begin{align}
- & =D\left(h+h\right){\rm e}^{\frac{1}{2}\left(\frac{h^{*}h-hh^{*}}{\omega^{2}}\right)}\\
- & =D\left(2h\right),\\
-\left\langle \left(B_{i}^{+}\!\left(t\right)\!B_{j}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}} & =\left\langle \left(\prod_{\mathbf{k}}D\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right){\rm e}^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}\right)}\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\left\langle \prod_{\mathbf{k}}D\left(2\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right){\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}{\rm e}^{-2\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
-\left\langle B_{x}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}+2\mathbb{I}+\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
+ & \,\,\,\,\,\,\left.\times N_{\mathbf{k}}B_{10}\left(t\right)\right)\\
+\! & =\!\frac{B_{01}\!\left(t\right)\!+\!B_{10}\!\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\!\left(\!\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!\!\left(N_{\mathbf{k}}+1\right)\!-\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!\!N_{\mathbf{k}}\right)\\
+{\rm Var}_{\overline{H_{\bar{B}}}}\left(A\right)\! & \equiv\left\langle A^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left\langle A\right\rangle _{\overline{H_{\bar{B}}}}^{2},\\
+{\rm Var}\left(aX+b\right)\! & =a^{2}{\rm Var}\left(X\right),\\
+\left\langle B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =0,\\
+\left\langle B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =0,\\
+\left\langle B_{x}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{x}\left(t\right)\right)+\left\langle B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}^{2}\\
+\! & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(\frac{B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)}{2}\right)\\
+\! & =\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{10}\left(t\right)-B_{01}\left(t\right)\right)\\
+\! & =\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)\\
+\! & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
+\! & =\frac{1}{4}\left(\!\left\langle \left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)^{2}\!+\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\right.\\
+\! & \left.-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
+\! & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}+2\mathbb{I}+\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right),\\
+\left(D\left(h\right)\right)^{2}\! & =D\left(h\right)D\left(h\right)\\
+\! & =D\left(h+h\right){\rm e}^{\frac{1}{2}\left(\frac{h^{*}h-hh^{*}}{\omega^{2}}\right)}\\
+\! & =D\left(2h\right),\\
+\left\langle \!\left(B_{i}^{+}\!\left(t\right)\!B_{j}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\! & =\left\langle \left(\prod_{\mathbf{k}}D\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right){\rm e}^{\frac{1}{2}\left(\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}\right)}\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\left\langle \prod_{\mathbf{k}}D\left(2\left(\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right){\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}{\rm e}^{-2\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
+\! & =\left(\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\left(\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\\
+\! & =B_{ij}^{2}\left(t\right)\left|B_{ij}\left(t\right)\right|^{2},\\
+\left\langle B_{x}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}+2\mathbb{I}+\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
+ & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+2\left\langle \mathbb{I}\right\rangle _{\overline{H_{\bar{B}}}}+\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
  & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+2+\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
- & =\frac{1}{4}\left(\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+2+\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
- & =\frac{1}{4}\left({\rm e}^{2\chi_{10}\left(t\right)}\prod_{\mathbf{k}}{\rm e}^{-2\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}+2+{\rm e}^{2\chi_{01}\left(t\right)}\prod_{\mathbf{k}}{\rm e}^{-2\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right.\\
- & \left.-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right)\\
  & =\frac{1}{4}\left(B_{10}^{2}\left(t\right)\left|B_{10}^{2}\left(t\right)\right|+2+B_{01}^{2}\left(t\right)\left|B_{01}^{2}\left(t\right)\right|-\left(B_{10}^{2}\left(t\right)+2B_{10}\left(t\right)B_{01}\left(t\right)+B_{01}^{2}\left(t\right)\right)\right)\\
-\left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{y}\left(t\right)\right)+\left\langle B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}^{2}\\
+ & =\frac{1}{4}\left(B_{10}^{2}\left(t\right)\left|B_{10}^{2}\left(t\right)\right|+2+B_{01}^{2}\left(t\right)\left|B_{10}^{2}\left(t\right)\right|-\left(B_{10}^{2}\left(t\right)+2\left|B_{10}^{2}\left(t\right)\right|+B_{01}^{2}\left(t\right)\right)\right)\\
+ & =\frac{1}{4}\left(B_{10}^{2}\left(t\right)+B_{01}^{2}\left(t\right)-2\right)\left(\left|B_{10}^{2}\left(t\right)\right|-1\right)\\
+\left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{y}\left(t\right)\right)+\left\langle B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}^{2}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\begin{align}
  & ={\rm Var}_{\overline{H_{\bar{B}}}}\left(\frac{B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)}{2{\rm i}}\right)\\
  & =-\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)+B_{10}\left(t\right)-B_{01}\left(t\right)\right)\\
  & =-\frac{1}{4}{\rm Var}_{\overline{H_{\bar{B}}}}\left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)\\
  & =-\frac{1}{4}\left(\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)-B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\right)\\
  & =-\frac{1}{4}\left(\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}-2\mathbb{I}+\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}\right)\\
- & =-\frac{1}{4}\left(\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-2-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right),\\
-\left\langle \left(B_{i}^{+}\!\left(t\right)\!B_{j}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}} & =\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{\omega_{\mathbf{k}}^{2}}}{\rm e}^{-2\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\\
- & =\left(\prod_{\mathbf{k}}{\rm e}^{\frac{v_{i\mathbf{k}}^{*}\left(t\right)v_{j\mathbf{k}}\left(t\right)-v_{i\mathbf{k}}\left(t\right)v_{j\mathbf{k}}^{*}\left(t\right)}{2\omega_{\mathbf{k}}^{2}}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\left(\prod_{\mathbf{k}}{\rm e}^{-\frac{\left|\frac{v_{i\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{j\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\right)^{2}\\
- & =B_{ij}^{2}\left(t\right)\left|B_{ij}\left(t\right)\right|^{2},\\
-\left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right),\\
-\left\langle B_{x}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\left\langle \frac{B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2}\frac{B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\!\frac{1}{4{\rm i}}\!\left\langle \!\left(\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)\!\right)\!\!\left(\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)\!\right)\!\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\!\left\langle \!\mathbb{I}-\!\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)^{2}+\!B_{10}^{2}\!\left(t\right)-\!B_{10}\!\left(t\right)\!B_{01}\!\left(t\right)+\!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)^{2}\!-\!\mathbb{I}+\!B_{10}\!\left(t\right)\!B_{01}\!\left(t\right)-\!B_{01}^{2}\!\left(t\right)\!\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}-\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}-\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}
+ & =-\frac{1}{4}\left(\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+\left\langle \left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-2\left\langle \mathbb{I}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right)\\
+ & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{01}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right)\\
+ & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{01}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{01}^{2}\left(t\right)+2B_{01}\left(t\right)B_{10}\left(t\right)-B_{10}^{2}\left(t\right)\right)\\
+ & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{01}^{2}\left(t\right)+2\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\right)\\
+ & =-\frac{1}{4}\left(B_{10}^{2}\left(t\right)+B_{01}^{2}\left(t\right)+2\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right),\\
+\left\langle B_{x}\!\left(t\right)\!B_{y}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\left\langle B_{x}\left(t\right)\frac{B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\left\langle B_{x}\left(t\right)\frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2{\rm i}}\left\langle B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\left\langle B_{x}\left(t\right)\frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2{\rm i}}\cdot0\\
+ & =\left\langle B_{x}\left(t\right)\frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\left\langle \frac{B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2}\frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)}{2{\rm i}}\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\frac{1}{4{\rm i}}\!\left(\!\left\langle \!\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)\!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)\!\right\rangle _{\overline{H_{\bar{B}}}}-\left\langle \!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}\right.\\
+ & \,\,\,\,\,\,\left.\times\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\!\left(\!\left\langle B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right.\right.\\
+ & \,\,\,\,\,\,\left.\left.\times B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(\left\langle \mathbb{I}-\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)^{2}+\left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)^{2}-\mathbb{I}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(\left\langle \left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)^{2}-\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(\left\langle \left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)^{2}-\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)\left(B_{01}\left(t\right)+B_{10}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(\left\langle \left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left\langle \left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{01}^{2}\left(t\right)+B_{10}^{2}\left(t\right)\right)\\
+ & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right),\\
+\left\langle B_{y}\!\left(t\right)\!B_{x}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\left\langle B_{y}\!\left(t\right)\frac{B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2}\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & =\left\langle B_{y}\!\left(t\right)\frac{B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)}{2}\right\rangle _{\overline{H_{\bar{B}}}}-\left\langle B_{y}\!\left(t\right)\frac{B_{10}\!\left(t\right)+B_{01}\!\left(t\right)}{2}\right\rangle _{\overline{H_{\bar{B}}}}
 \end{align}
 
 \end_inset
@@ -2974,12 +2961,57 @@ B_{i}^{+}\left(t\right)B_{j}^{-}\left(t\right) & ={\rm e}^{\chi_{ij}\left(t\righ
 \size small
 \begin_inset Formula 
 \begin{align}
- & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\right),\\
-\left\langle B_{y}\!\left(t\right)\!B_{x}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\left\langle \frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2{\rm i}}\frac{B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2}\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)\right)\!\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\left\langle \mathbb{I}+\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)^{2}-B_{10}\!\left(t\right)\!B_{01}\!\left(t\right)-B_{01}^{2}\!\left(t\right)-\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)^{2}-\mathbb{I}+B_{10}^{2}\!\left(t\right)+B_{10}\!\left(t\right)\!B_{01}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}-B_{01}^{2}\left(t\right)-\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}+B_{10}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
- & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{01}^{2}\left(t\right)-\left(B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\right)\right).
+\! & =\!\frac{1}{2}\left\langle B_{y}\!\left(t\right)\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}-\frac{B_{10}\!\left(t\right)+B_{01}\!\left(t\right)}{2}\left\langle B_{y}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\!\frac{1}{2}\left\langle B_{y}\!\left(t\right)\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}-\frac{B_{10}\!\left(t\right)+B_{01}\!\left(t\right)}{2}\cdot0\\
+\! & =\!\frac{1}{2}\left\langle B_{y}\!\left(t\right)\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\!\frac{1}{2}\left\langle \frac{B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2{\rm i}}\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\!\frac{1}{4{\rm i}}\!\left\langle \!\left(B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\right)\!\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)\!\right\rangle _{\overline{H_{\bar{B}}}}\!+\!\frac{\left(B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)\right)}{4{\rm i}}\left\langle \!\left(B_{1}^{+}\!\left(t\right)\!B_{0}^{-}\!\left(t\right)\!+\!B_{0}^{+}\!\left(t\right)\!B_{1}^{-}\!\left(t\right)\right)\!\right\rangle _{\overline{H_{\bar{B}}}}\\
+\! & =\!\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}+\frac{\left(B_{10}\!\left(t\right)-B_{01}\!\left(t\right)\right)\left(B_{10}\!\left(t\right)+B_{01}\!\left(t\right)\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)-B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left\langle B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)+B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\!-\!B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\\
+ & \,\,\,\,\,\,+\frac{B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left\langle \mathbb{I}+\left(B_{0}^{+}\!\left(t\right)B_{1}^{-}\!\left(t\right)\right)^{2}-\left(B_{1}^{+}\!\left(t\right)B_{0}^{-}\!\left(t\right)\right)^{2}-\mathbb{I}\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left\langle \left(B_{0}^{+}\left(t\right)B_{1}^{-}\left(t\right)\right)^{2}-\left(B_{1}^{+}\left(t\right)B_{0}^{-}\left(t\right)\right)^{2}\right\rangle _{\overline{H_{\bar{B}}}}+\frac{B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}\right)+\frac{B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)}{4{\rm i}}\\
+\! & =\!\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}+B_{10}^{2}\left(t\right)-B_{01}^{2}\left(t\right)\right)\\
+\! & =\!\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+ Summarizing the expected values obtained in the precedent lines we have:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\begin{align}
+\left\langle B_{iz}^{2}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right|^{2}{\rm coth}\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)\!,\\
+\left\langle B_{iz}\!\left(t\right)\!B_{x}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{B_{10}\!\left(t\right)\!-\!B_{01}\!\left(t\right)}{2}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\!\right)^{*}\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!\left(N_{\mathbf{k}}+1\right)-\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\!\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!N_{\mathbf{k}}\right)\!,\\
+\left\langle B_{iz}\!\left(t\right)\!B_{y}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{B_{10}\!\left(t\right)+B_{01}\!\left(t\right)}{2{\rm i}}\!\sum_{\mathbf{k}}\!\left(\!\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\!\left(t\right)\!\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!N_{\mathbf{k}}\!-\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\!\right)^{*}\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!\left(N_{\mathbf{k}}+1\right)\!\right)\!,\\
+\left\langle B_{x}\!\left(t\right)\!B_{iz}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{B_{10}\!\left(t\right)-B_{01}\!\left(t\right)}{2}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!N_{\mathbf{k}}\!-\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!\left(N_{\mathbf{k}}+1\right)\right)\!,\\
+\left\langle B_{y}\!\left(t\right)\!B_{iz}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{B_{01}\!\left(t\right)+B_{10}\!\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left(\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)^{*}\!\left(N_{\mathbf{k}}+1\right)\!-\!\left(g_{i\mathbf{k}}\!-\!v_{i\mathbf{k}}\!\left(t\right)\right)^{*}\!\left(\!\frac{v_{1\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!-\!\frac{v_{0\mathbf{k}}\!\left(t\right)}{\omega_{\mathbf{k}}}\!\right)\!N_{\mathbf{k}}\right)\!,\\
+\left\langle B_{x}^{2}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{1}{4}\left(B_{10}^{2}\left(t\right)+B_{01}^{2}\left(t\right)-2\right)\left(\left|B_{10}^{2}\left(t\right)\right|-1\right)\!,\\
+\left\langle B_{y}^{2}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!-\frac{1}{4}\left(B_{10}^{2}\left(t\right)+B_{01}^{2}\left(t\right)+2\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right)\!,\\
+\left\langle B_{x}\!\left(t\right)\!B_{y}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right)\!,\\
+\left\langle B_{y}\!\left(t\right)\!B_{x}\!\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}}\! & =\!\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\left(\left|B_{10}\left(t\right)\right|^{2}-1\right).
 \end{align}
 
 \end_inset
@@ -3082,7 +3114,10 @@ noindent
 \begin_inset Formula 
 \begin{align}
 \left\langle |0\rangle\negmedspace\langle0|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{1}{2}-\frac{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+\!R_{i}\left(t\right)\right)\right)\!{\rm tanh}\!\left(\!\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}\!+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{2\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
-\left\langle |1\rangle\negmedspace\langle1|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{1}{2}+\frac{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+\!R_{i}\left(t\right)\right)\right)\!{\rm tanh}\!\left(\!\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}\!+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{2\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},
+\left\langle |1\rangle\negmedspace\langle1|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{1}{2}+\frac{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+\!R_{i}\left(t\right)\right)\right)\!{\rm tanh}\!\left(\!\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\!\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}\!+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{2\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
+\left\langle |0\rangle\negmedspace\langle0|\sigma_{x}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
+\left\langle |1\rangle\negmedspace\langle1|\sigma_{x}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}^{*}\left(t\right)V_{10}^{*}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
+\left\langle |0\rangle\negmedspace\langle0|\sigma_{y}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{{\rm i}B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},
 \end{align}
 
 \end_inset
@@ -3093,69 +3128,12 @@ noindent
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\left\langle |0\rangle\negmedspace\langle0|\sigma_{x}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
-\left\langle |1\rangle\negmedspace\langle1|\sigma_{x}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}^{*}\left(t\right)V_{10}^{*}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
-\left\langle |0\rangle\negmedspace\langle0|\sigma_{y}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{{\rm i}B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle |1\rangle\negmedspace\langle1|\sigma_{y}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{{\rm i}B_{10}^{*}\left(t\right)V_{10}^{*}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)\right|^{2}\left|V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle \sigma_{x}|0\rangle\negmedspace\langle0|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}^{*}\left(t\right)V_{10}^{*}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle \sigma_{x}|1\rangle\negmedspace\langle1|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle \sigma_{y}|0\rangle\negmedspace\langle0|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{{\rm i}B_{10}^{*}\left(t\right)V_{10}^{*}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle \sigma_{y}|1\rangle\negmedspace\langle1|\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =-\frac{{\rm i}B_{10}\left(t\right)V_{10}\left(t\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}},\\
 \left\langle \sigma_{z}\right\rangle _{\overline{H_{\bar{S}}}\left(t\right)} & =\frac{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right){\rm tanh}\left(\frac{\beta}{2}\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}\right)}{\sqrt{\left(\sum_{i}\left(-1\right)^{i}\left(\varepsilon_{i}\left(t\right)+R_{i}\left(t\right)\right)\right)^{2}+4\left|B_{10}\left(t\right)V_{10}\left(t\right)\right|^{2}}}.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\end_layout
-
-\end_inset
-
- Summarizing the expected values obtained in 
-\begin_inset Formula $\eqref{eq:<Hi^2>}$
-\end_inset
-
-respect to the bath we have:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\left\langle B_{iz}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\sum_{\mathbf{k}}\left|g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right|^{2}{\rm coth}\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right),\\
-\left\langle B_{iz}\left(t\right)B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{B_{10}\left(t\right)-B_{01}\left(t\right)}{2}\sum_{\mathbf{k}}\left({\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}\right.\right.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\\
- & \,\,\,\,\,\,\left.\left.+\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\left(N_{\mathbf{k}}+1\right)\right)\right),\\
-\left\langle B_{iz}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{B_{10}\left(t\right)+B_{01}\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left({\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}N_{\mathbf{k}}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.-\sum_{\mathbf{k}}\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\left(N_{\mathbf{k}}+1\right)\right)\right),\\
-\left\langle B_{x}\left(t\right)B_{iz}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{B_{01}\left(t\right)-B_{10}\left(t\right)}{2}\sum_{\mathbf{k}}\left({\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right),\\
-\left\langle B_{y}\left(t\right)B_{iz}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{B_{10}\left(t\right)+B_{01}\left(t\right)}{2{\rm i}}\sum_{\mathbf{k}}\left({\rm e}^{-\frac{\left|\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right|^{2}}{2}\coth\left(\frac{\beta\omega_{\mathbf{k}}}{2}\right)}\left(\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)\left(N_{\mathbf{k}}+1\right)\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)^{*}\right.\right.\\
- & \,\,\,\,\,\,\left.\left.-\left(g_{i\mathbf{k}}-v_{i\mathbf{k}}\left(t\right)\right)^{*}N_{\mathbf{k}}\left(\frac{v_{1\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}-\frac{v_{0\mathbf{k}}\left(t\right)}{\omega_{\mathbf{k}}}\right)\right)\right),\\
-\left\langle B_{x}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{1}{4}\left(B_{10}^{2}\left(t\right)\left|B_{10}^{2}\left(t\right)\right|+2+B_{01}^{2}\left(t\right)\left|B_{01}^{2}\left(t\right)\right|-\left(B_{10}\left(t\right)+B_{01}\left(t\right)\right)^{2}\right),\\
-\left\langle B_{y}^{2}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =-\frac{1}{4}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-2+B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}\left(t\right)-B_{10}\left(t\right)\right)^{2}\right),\\
-\left\langle B_{x}\left(t\right)B_{y}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\right),\\
-\left\langle B_{y}\left(t\right)B_{x}\left(t\right)\right\rangle _{\overline{H_{\bar{B}}}} & =\frac{1}{4{\rm i}}\left(B_{01}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-B_{10}^{2}\left(t\right)\left|B_{10}\left(t\right)\right|^{2}-\left(B_{01}^{2}\left(t\right)-B_{10}^{2}\left(t\right)\right)\right).
 \end{align}
 
 \end_inset
@@ -3557,6 +3535,10 @@ noindent
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
