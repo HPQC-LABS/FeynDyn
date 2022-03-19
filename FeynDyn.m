@@ -1,7 +1,7 @@
 %% 1) The paper: N. Dattani (2013) Comp. Phys. Comm. Volume 184, Issue 12, Pg. 2828-2833 , AND
 %% 2) The code: N. Dattani (2013) FeynDyn. http://dx.doi.org/10.6084/m9.figshare.823549
 
-%% Bug reports, suggestions, and requests for extensions are more than encouraged: dattani.nike@gmail.com
+%% Bug reports, suggestions, and requests for extensions are more than encouraged: nike@hpqc.org (if it bounes, you can try nik.dattani@gmail.com or ndattani@uwaterloo.ca)
 
 %% FEYN DYN, VERSION 2013.11.28
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
